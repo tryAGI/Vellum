@@ -1,0 +1,43 @@
+
+#nullable enable
+
+namespace Vellum
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class MergeNodeResultData
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("paused_node_data")]
+        public object? PausedNodeData { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MergeNodeResultData" /> class.
+        /// </summary>
+        /// <param name="pausedNodeData"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public MergeNodeResultData(
+            object? pausedNodeData)
+        {
+            this.PausedNodeData = pausedNodeData;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MergeNodeResultData" /> class.
+        /// </summary>
+        public MergeNodeResultData()
+        {
+        }
+    }
+}
