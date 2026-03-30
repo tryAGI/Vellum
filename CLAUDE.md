@@ -14,7 +14,7 @@ dotnet test src/tests/IntegrationTests/
 
 ## Auth
 
-API key auth (sent as `X-API-KEY` header via PrepareRequest hook):
+API key auth via `X-API-KEY` header (native via `--security-scheme`):
 
 ```csharp
 var client = new VellumClient(apiKey); // VELLUM_API_KEY env var
@@ -25,7 +25,6 @@ var client = new VellumClient(apiKey); // VELLUM_API_KEY env var
 - `src/libs/Vellum/openapi.yaml` -- OpenAPI spec (downloaded from docs.vellum.ai)
 - `src/libs/Vellum/generate.sh` -- Downloads spec, fixes auth, strips X-API-KEY params, runs autosdk
 - `src/libs/Vellum/Generated/` -- **Never edit** -- auto-generated code
-- `src/libs/Vellum/Extensions/VellumClient.Auth.cs` -- PrepareRequest hook: `Bearer` -> `X-API-KEY`
 - `src/libs/Vellum/Extensions/VellumClient.AsTool.cs` -- MEAI AIFunction tools
 - `src/tests/IntegrationTests/Tests.cs` -- Test helper with API key auth
 - `src/tests/IntegrationTests/Examples/` -- Example tests (also generate docs)
@@ -35,28 +34,11 @@ var client = new VellumClient(apiKey); // VELLUM_API_KEY env var
 The `generate.sh` applies fixes via `jq` and `--security-scheme`:
 
 **CLI flags:**
-- `--security-scheme Http:Header:Bearer` -- Overrides spec's `apiKey` auth with standard HTTP bearer
+- `--security-scheme ApiKey:Header:X-API-KEY -- Native API key auth via X-API-KEY header
 
 **Pre-generation (`jq`):**
-1. Converts `apiKey` security scheme to `http/bearer`
-2. Adds top-level `security` array
 3. Sets single server URL to `https://api.vellum.ai` (spec has 3 servers)
 4. Strips per-operation `X-API-KEY` and `X-API-Version` header parameters (auth handled via security scheme)
-
-## Auth Hook
-
-Vellum uses `X-API-KEY: <key>` header (not `Authorization: Bearer`). The `PrepareRequest` hook in `Extensions/VellumClient.Auth.cs` rewrites the header:
-
-```csharp
-partial void PrepareRequest(HttpClient client, HttpRequestMessage request)
-{
-    if (request.Headers.Authorization is { Scheme: "Bearer", Parameter: { } apiKey })
-    {
-        request.Headers.Authorization = null;
-        request.Headers.TryAddWithoutValidation("X-API-KEY", apiKey);
-    }
-}
-```
 
 ## Sub-client Pattern
 
