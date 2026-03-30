@@ -2,17 +2,9 @@ dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
 curl -o openapi.yaml https://docs.vellum.ai/openapi.json
 
-# Fix auth: convert apiKey header → http/bearer, add top-level security,
-# and remove per-operation X-API-KEY / X-API-Version header parameters
-# (auth is handled via security scheme, not per-operation params)
+# Fix: add server URL and remove per-operation X-API-KEY / X-API-Version header parameters
+# (auth is handled via --security-scheme, not per-operation params)
 jq '
-  .components.securitySchemes = {
-    "BearerAuth": {
-      "type": "http",
-      "scheme": "bearer"
-    }
-  } |
-  .security = [{"BearerAuth": []}] |
   .servers = [{"url": "https://api.vellum.ai"}] |
   .paths |= with_entries(
     .value |= with_entries(
@@ -32,4 +24,4 @@ autosdk generate openapi.yaml \
   --targetFramework net10.0 \
   --output Generated \
   --exclude-deprecated-operations \
-  --security-scheme Http:Header:Bearer
+  --security-scheme ApiKey:Header:X-API-KEY

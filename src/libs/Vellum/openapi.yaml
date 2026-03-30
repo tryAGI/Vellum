@@ -21564,15 +21564,11 @@
       }
     },
     "securitySchemes": {
-      "BearerAuth": {
-        "type": "http",
-        "scheme": "bearer"
+      "default": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-KEY"
       }
     }
-  },
-  "security": [
-    {
-      "BearerAuth": []
-    }
-  ]
+  }
 }

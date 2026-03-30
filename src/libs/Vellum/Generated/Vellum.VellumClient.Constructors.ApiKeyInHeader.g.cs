@@ -15,7 +15,7 @@ namespace Vellum
         {
             Authorizing(HttpClient, ref apiKey);
 
-            AuthorizeUsingBearer(apiKey);
+            AuthorizeUsingApiKeyInHeader(apiKey);
 
             Authorized(HttpClient);
         }
