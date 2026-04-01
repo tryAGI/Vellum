@@ -342,49 +342,49 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestStringInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestStringInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestStringInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestStringInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestStringInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestJSONInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestJSONInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestJSONInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestJSONInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestJSONInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestJSONInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestChatHistoryInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestChatHistoryInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestChatHistoryInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestChatHistoryInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestChatHistoryInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestChatHistoryInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestNumberInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestNumberInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestNumberInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestNumberInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestNumberInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestNumberInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestAudioInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestAudioInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestAudioInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestAudioInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestAudioInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestAudioInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestVideoInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestVideoInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestVideoInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestVideoInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestVideoInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestVideoInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestImageInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestImageInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestImageInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestImageInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestImageInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestImageInputRequest!, typeInfo);
             }
             else if (value.IsWorkflowRequestDocumentInputRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestDocumentInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestDocumentInputRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestDocumentInputRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestDocumentInputRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowRequestDocumentInputRequest!, typeInfo);
             }
         }
     }

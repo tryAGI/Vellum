@@ -264,37 +264,37 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.StringChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.StringChatMessageContentRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.StringChatMessageContentRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StringChatMessageContentRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StringChatMessageContentRequest!, typeInfo);
             }
             else if (value.IsFunctionCallChatMessageContentRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FunctionCallChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FunctionCallChatMessageContentRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FunctionCallChatMessageContentRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionCallChatMessageContentRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionCallChatMessageContentRequest!, typeInfo);
             }
             else if (value.IsAudioChatMessageContentRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.AudioChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.AudioChatMessageContentRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.AudioChatMessageContentRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AudioChatMessageContentRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AudioChatMessageContentRequest!, typeInfo);
             }
             else if (value.IsVideoChatMessageContentRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VideoChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VideoChatMessageContentRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VideoChatMessageContentRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VideoChatMessageContentRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VideoChatMessageContentRequest!, typeInfo);
             }
             else if (value.IsImageChatMessageContentRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ImageChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ImageChatMessageContentRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ImageChatMessageContentRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ImageChatMessageContentRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ImageChatMessageContentRequest!, typeInfo);
             }
             else if (value.IsDocumentChatMessageContentRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.DocumentChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.DocumentChatMessageContentRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.DocumentChatMessageContentRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DocumentChatMessageContentRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DocumentChatMessageContentRequest!, typeInfo);
             }
         }
     }

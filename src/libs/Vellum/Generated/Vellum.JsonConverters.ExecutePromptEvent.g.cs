@@ -204,25 +204,25 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.InitiatedExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.InitiatedExecutePromptEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.InitiatedExecutePromptEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InitiatedExecutePromptEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InitiatedExecutePromptEvent!, typeInfo);
             }
             else if (value.IsStreamingExecutePromptEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.StreamingExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.StreamingExecutePromptEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.StreamingExecutePromptEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamingExecutePromptEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamingExecutePromptEvent!, typeInfo);
             }
             else if (value.IsFulfilledExecutePromptEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FulfilledExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FulfilledExecutePromptEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FulfilledExecutePromptEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FulfilledExecutePromptEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FulfilledExecutePromptEvent!, typeInfo);
             }
             else if (value.IsRejectedExecutePromptEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.RejectedExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.RejectedExecutePromptEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.RejectedExecutePromptEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RejectedExecutePromptEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RejectedExecutePromptEvent!, typeInfo);
             }
         }
     }

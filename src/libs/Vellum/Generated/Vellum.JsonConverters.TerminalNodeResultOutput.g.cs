@@ -350,49 +350,49 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeStringResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeStringResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeStringResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeStringResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeStringResult!, typeInfo);
             }
             else if (value.IsTerminalNodeNumberResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeNumberResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeNumberResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeNumberResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeNumberResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeNumberResult!, typeInfo);
             }
             else if (value.IsTerminalNodeJsonResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeJsonResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeJsonResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeJsonResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeJsonResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeJsonResult!, typeInfo);
             }
             else if (value.IsTerminalNodeChatHistoryResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeChatHistoryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeChatHistoryResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeChatHistoryResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeChatHistoryResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeChatHistoryResult!, typeInfo);
             }
             else if (value.IsTerminalNodeSearchResultsResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeSearchResultsResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeSearchResultsResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeSearchResultsResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeSearchResultsResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeSearchResultsResult!, typeInfo);
             }
             else if (value.IsTerminalNodeErrorResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeErrorResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeErrorResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeErrorResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeErrorResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeErrorResult!, typeInfo);
             }
             else if (value.IsTerminalNodeArrayResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeArrayResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeArrayResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeArrayResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeArrayResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeArrayResult!, typeInfo);
             }
             else if (value.IsTerminalNodeFunctionCallResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeFunctionCallResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeFunctionCallResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeFunctionCallResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeFunctionCallResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeFunctionCallResult!, typeInfo);
             }
         }
     }

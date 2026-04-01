@@ -128,13 +128,13 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VellumValueLogicalConditionRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VellumValueLogicalConditionRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VellumValueLogicalConditionRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VellumValueLogicalConditionRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VellumValueLogicalConditionRequest!, typeInfo);
             }
             else if (value.IsVellumValueLogicalConditionGroupRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VellumValueLogicalConditionGroupRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VellumValueLogicalConditionGroupRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VellumValueLogicalConditionGroupRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VellumValueLogicalConditionGroupRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VellumValueLogicalConditionGroupRequest!, typeInfo);
             }
         }
     }

@@ -472,73 +472,73 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.OpenAIVectorizerTextEmbedding3Small), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.OpenAIVectorizerTextEmbedding3Small?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.OpenAIVectorizerTextEmbedding3Small).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIVectorizerTextEmbedding3Small, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIVectorizerTextEmbedding3Small!, typeInfo);
             }
             else if (value.IsOpenAIVectorizerTextEmbedding3Large)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.OpenAIVectorizerTextEmbedding3Large), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.OpenAIVectorizerTextEmbedding3Large?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.OpenAIVectorizerTextEmbedding3Large).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIVectorizerTextEmbedding3Large, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIVectorizerTextEmbedding3Large!, typeInfo);
             }
             else if (value.IsOpenAIVectorizerTextEmbeddingAda002)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.OpenAIVectorizerTextEmbeddingAda002), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.OpenAIVectorizerTextEmbeddingAda002?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.OpenAIVectorizerTextEmbeddingAda002).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIVectorizerTextEmbeddingAda002, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIVectorizerTextEmbeddingAda002!, typeInfo);
             }
             else if (value.IsBasicVectorizerIntfloatMultilingualE5Large)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.BasicVectorizerIntfloatMultilingualE5Large), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.BasicVectorizerIntfloatMultilingualE5Large?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.BasicVectorizerIntfloatMultilingualE5Large).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicVectorizerIntfloatMultilingualE5Large, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicVectorizerIntfloatMultilingualE5Large!, typeInfo);
             }
             else if (value.IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1!, typeInfo);
             }
             else if (value.IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1!, typeInfo);
             }
             else if (value.IsHkunlpInstructorXlVectorizer)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.HkunlpInstructorXlVectorizer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.HkunlpInstructorXlVectorizer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.HkunlpInstructorXlVectorizer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.HkunlpInstructorXlVectorizer, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.HkunlpInstructorXlVectorizer!, typeInfo);
             }
             else if (value.IsGoogleVertexAIVectorizerTextEmbedding004)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.GoogleVertexAIVectorizerTextEmbedding004?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleVertexAIVectorizerTextEmbedding004, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleVertexAIVectorizerTextEmbedding004!, typeInfo);
             }
             else if (value.IsGoogleVertexAIVectorizerTextMultilingualEmbedding002)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleVertexAIVectorizerTextMultilingualEmbedding002, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleVertexAIVectorizerTextMultilingualEmbedding002!, typeInfo);
             }
             else if (value.IsGoogleVertexAIVectorizerGeminiEmbedding001)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleVertexAIVectorizerGeminiEmbedding001, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleVertexAIVectorizerGeminiEmbedding001!, typeInfo);
             }
             else if (value.IsFastEmbedVectorizerBAAIBgeSmallEnV15)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FastEmbedVectorizerBAAIBgeSmallEnV15, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FastEmbedVectorizerBAAIBgeSmallEnV15!, typeInfo);
             }
             else if (value.IsPrivateVectorizer)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PrivateVectorizer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PrivateVectorizer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PrivateVectorizer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PrivateVectorizer, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PrivateVectorizer!, typeInfo);
             }
         }
     }

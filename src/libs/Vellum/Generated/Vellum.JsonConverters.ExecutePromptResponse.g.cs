@@ -131,13 +131,13 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FulfilledExecutePromptResponse), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FulfilledExecutePromptResponse?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FulfilledExecutePromptResponse).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FulfilledExecutePromptResponse, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FulfilledExecutePromptResponse!, typeInfo);
             }
             else if (value.IsRejectedExecutePromptResponse)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.RejectedExecutePromptResponse), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.RejectedExecutePromptResponse?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.RejectedExecutePromptResponse).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RejectedExecutePromptResponse, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RejectedExecutePromptResponse!, typeInfo);
             }
         }
     }

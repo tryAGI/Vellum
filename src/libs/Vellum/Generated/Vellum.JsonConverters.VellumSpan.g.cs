@@ -136,13 +136,13 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowExecutionSpan), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowExecutionSpan?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowExecutionSpan).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowExecutionSpan, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowExecutionSpan!, typeInfo);
             }
             else if (value.IsNodeExecutionSpan)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionSpan), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionSpan?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionSpan).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionSpan, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionSpan!, typeInfo);
             }
         }
     }

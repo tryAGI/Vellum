@@ -350,49 +350,49 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionStringOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionStringOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionStringOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionStringOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionStringOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionNumberOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionNumberOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionNumberOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionNumberOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionNumberOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionNumberOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionJsonOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionJsonOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionJsonOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionJsonOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionJsonOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionJsonOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionChatHistoryOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionChatHistoryOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionChatHistoryOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionChatHistoryOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionChatHistoryOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionChatHistoryOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionSearchResultsOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionSearchResultsOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionSearchResultsOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionSearchResultsOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionSearchResultsOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionSearchResultsOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionErrorOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionErrorOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionErrorOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionErrorOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionErrorOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionErrorOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionFunctionCallOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionFunctionCallOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionFunctionCallOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionFunctionCallOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionFunctionCallOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionFunctionCallOutput!, typeInfo);
             }
             else if (value.IsTestSuiteRunExecutionArrayOutput)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionArrayOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionArrayOutput?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionArrayOutput).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionArrayOutput, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExecutionArrayOutput!, typeInfo);
             }
         }
     }

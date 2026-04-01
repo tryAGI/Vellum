@@ -194,25 +194,25 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ReductoChunking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ReductoChunking?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ReductoChunking).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReductoChunking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReductoChunking!, typeInfo);
             }
             else if (value.IsSentenceChunking)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.SentenceChunking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.SentenceChunking?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.SentenceChunking).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SentenceChunking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SentenceChunking!, typeInfo);
             }
             else if (value.IsTokenOverlappingWindowChunking)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TokenOverlappingWindowChunking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TokenOverlappingWindowChunking?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TokenOverlappingWindowChunking).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TokenOverlappingWindowChunking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TokenOverlappingWindowChunking!, typeInfo);
             }
             else if (value.IsDelimiterChunking)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.DelimiterChunking), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.DelimiterChunking?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.DelimiterChunking).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DelimiterChunking, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DelimiterChunking!, typeInfo);
             }
         }
     }

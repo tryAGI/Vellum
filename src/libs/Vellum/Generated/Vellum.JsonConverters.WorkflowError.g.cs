@@ -126,13 +126,13 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowEventError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowEventError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowEventError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowEventError, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowEventError!, typeInfo);
             }
             else if (value.IsWorkflowInitializationError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowInitializationError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowInitializationError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowInitializationError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowInitializationError, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowInitializationError!, typeInfo);
             }
         }
     }
