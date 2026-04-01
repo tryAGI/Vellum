@@ -498,73 +498,73 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseStringVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseStringVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseStringVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseStringVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseStringVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseNumberVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseNumberVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseNumberVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseNumberVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseNumberVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseNumberVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseJsonVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseJsonVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseJsonVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseJsonVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseJsonVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseJsonVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseChatHistoryVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseChatHistoryVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseChatHistoryVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseChatHistoryVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseChatHistoryVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseChatHistoryVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseSearchResultsVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseSearchResultsVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseSearchResultsVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseSearchResultsVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseSearchResultsVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseSearchResultsVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseErrorVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseErrorVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseErrorVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseErrorVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseErrorVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseErrorVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseFunctionCallVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseFunctionCallVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseFunctionCallVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseFunctionCallVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseFunctionCallVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseFunctionCallVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseArrayVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseArrayVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseArrayVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseArrayVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseArrayVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseArrayVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseAudioVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseAudioVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseAudioVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseAudioVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseAudioVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseAudioVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseImageVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseImageVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseImageVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseImageVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseImageVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseImageVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseVideoVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseVideoVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseVideoVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseVideoVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseVideoVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseVideoVariableValue!, typeInfo);
             }
             else if (value.IsTestCaseDocumentVariableValue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestCaseDocumentVariableValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestCaseDocumentVariableValue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestCaseDocumentVariableValue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseDocumentVariableValue, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestCaseDocumentVariableValue!, typeInfo);
             }
         }
     }

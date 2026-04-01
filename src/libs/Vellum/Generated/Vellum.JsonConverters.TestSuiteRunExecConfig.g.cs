@@ -234,31 +234,31 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunDeploymentReleaseTagExecConfig, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunDeploymentReleaseTagExecConfig!, typeInfo);
             }
             else if (value.IsTestSuiteRunPromptSandboxHistoryItemExecConfig)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunPromptSandboxHistoryItemExecConfig, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunPromptSandboxHistoryItemExecConfig!, typeInfo);
             }
             else if (value.IsTestSuiteRunWorkflowReleaseTagExecConfig)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunWorkflowReleaseTagExecConfig, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunWorkflowReleaseTagExecConfig!, typeInfo);
             }
             else if (value.IsTestSuiteRunWorkflowSandboxHistoryItemExecConfig)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunWorkflowSandboxHistoryItemExecConfig, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunWorkflowSandboxHistoryItemExecConfig!, typeInfo);
             }
             else if (value.IsTestSuiteRunExternalExecConfig)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExternalExecConfig), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExternalExecConfig?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExternalExecConfig).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExternalExecConfig, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteRunExternalExecConfig!, typeInfo);
             }
         }
     }

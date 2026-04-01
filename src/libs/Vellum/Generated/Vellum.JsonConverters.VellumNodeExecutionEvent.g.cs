@@ -348,43 +348,43 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionInitiatedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionInitiatedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionInitiatedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionInitiatedEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionInitiatedEvent!, typeInfo);
             }
             else if (value.IsNodeExecutionStreamingEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionStreamingEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionStreamingEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionStreamingEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionStreamingEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionStreamingEvent!, typeInfo);
             }
             else if (value.IsNodeExecutionFulfilledEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionFulfilledEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionFulfilledEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionFulfilledEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionFulfilledEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionFulfilledEvent!, typeInfo);
             }
             else if (value.IsNodeExecutionRejectedEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionRejectedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionRejectedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionRejectedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionRejectedEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionRejectedEvent!, typeInfo);
             }
             else if (value.IsNodeExecutionPausedEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionPausedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionPausedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionPausedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionPausedEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionPausedEvent!, typeInfo);
             }
             else if (value.IsNodeExecutionResumedEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionResumedEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionResumedEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionResumedEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionResumedEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionResumedEvent!, typeInfo);
             }
             else if (value.IsNodeExecutionLogEvent)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeExecutionLogEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeExecutionLogEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeExecutionLogEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionLogEvent, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NodeExecutionLogEvent!, typeInfo);
             }
         }
     }

@@ -270,37 +270,37 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityFolder), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityFolder?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityFolder).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityFolder, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityFolder!, typeInfo);
             }
             else if (value.IsFolderEntityPromptSandbox)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityPromptSandbox), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityPromptSandbox?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityPromptSandbox).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityPromptSandbox, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityPromptSandbox!, typeInfo);
             }
             else if (value.IsFolderEntityWorkflowSandbox)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityWorkflowSandbox), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityWorkflowSandbox?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityWorkflowSandbox).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityWorkflowSandbox, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityWorkflowSandbox!, typeInfo);
             }
             else if (value.IsFolderEntityDocumentIndex)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityDocumentIndex), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityDocumentIndex?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityDocumentIndex).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityDocumentIndex, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityDocumentIndex!, typeInfo);
             }
             else if (value.IsFolderEntityTestSuite)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityTestSuite), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityTestSuite?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityTestSuite).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityTestSuite, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityTestSuite!, typeInfo);
             }
             else if (value.IsFolderEntityDataset)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityDataset), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityDataset?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityDataset).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityDataset, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FolderEntityDataset!, typeInfo);
             }
         }
     }

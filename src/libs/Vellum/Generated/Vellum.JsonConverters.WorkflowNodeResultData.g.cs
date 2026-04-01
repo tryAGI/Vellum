@@ -438,67 +438,67 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PromptNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PromptNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PromptNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PromptNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PromptNodeResult!, typeInfo);
             }
             else if (value.IsSearchNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.SearchNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.SearchNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.SearchNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SearchNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SearchNodeResult!, typeInfo);
             }
             else if (value.IsTemplatingNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TemplatingNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TemplatingNodeResult!, typeInfo);
             }
             else if (value.IsCodeExecutionNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CodeExecutionNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CodeExecutionNodeResult!, typeInfo);
             }
             else if (value.IsConditionalNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ConditionalNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ConditionalNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ConditionalNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConditionalNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConditionalNodeResult!, typeInfo);
             }
             else if (value.IsApiNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ApiNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ApiNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ApiNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ApiNodeResult!, typeInfo);
             }
             else if (value.IsTerminalNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TerminalNodeResult!, typeInfo);
             }
             else if (value.IsMergeNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.MergeNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.MergeNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.MergeNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MergeNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MergeNodeResult!, typeInfo);
             }
             else if (value.IsSubworkflowNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.SubworkflowNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.SubworkflowNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.SubworkflowNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubworkflowNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubworkflowNodeResult!, typeInfo);
             }
             else if (value.IsMetricNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.MetricNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.MetricNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.MetricNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MetricNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MetricNodeResult!, typeInfo);
             }
             else if (value.IsMapNodeResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.MapNodeResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.MapNodeResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.MapNodeResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MapNodeResult, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MapNodeResult!, typeInfo);
             }
         }
     }

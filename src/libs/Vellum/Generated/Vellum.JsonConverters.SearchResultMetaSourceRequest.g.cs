@@ -90,7 +90,7 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PdfSearchResultMetaSourceRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PdfSearchResultMetaSourceRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PdfSearchResultMetaSourceRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PdfSearchResultMetaSourceRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PdfSearchResultMetaSourceRequest!, typeInfo);
             }
         }
     }

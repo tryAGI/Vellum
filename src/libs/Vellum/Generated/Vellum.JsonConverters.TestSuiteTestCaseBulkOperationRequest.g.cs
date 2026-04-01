@@ -198,25 +198,25 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseCreateBulkOperationRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseCreateBulkOperationRequest!, typeInfo);
             }
             else if (value.IsTestSuiteTestCaseReplaceBulkOperationRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseReplaceBulkOperationRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseReplaceBulkOperationRequest!, typeInfo);
             }
             else if (value.IsTestSuiteTestCaseUpsertBulkOperationRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseUpsertBulkOperationRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseUpsertBulkOperationRequest!, typeInfo);
             }
             else if (value.IsTestSuiteTestCaseDeleteBulkOperationRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseDeleteBulkOperationRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseDeleteBulkOperationRequest!, typeInfo);
             }
         }
     }

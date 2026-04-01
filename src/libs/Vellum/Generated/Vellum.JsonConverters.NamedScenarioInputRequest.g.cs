@@ -306,43 +306,43 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputStringVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputStringVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputStringVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputStringVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputStringVariableValueRequest!, typeInfo);
             }
             else if (value.IsNamedScenarioInputJsonVariableValueRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputJsonVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputJsonVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputJsonVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputJsonVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputJsonVariableValueRequest!, typeInfo);
             }
             else if (value.IsNamedScenarioInputChatHistoryVariableValueRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputChatHistoryVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputChatHistoryVariableValueRequest!, typeInfo);
             }
             else if (value.IsNamedScenarioInputAudioVariableValueRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputAudioVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputAudioVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputAudioVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputAudioVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputAudioVariableValueRequest!, typeInfo);
             }
             else if (value.IsNamedScenarioInputVideoVariableValueRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputVideoVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputVideoVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputVideoVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputVideoVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputVideoVariableValueRequest!, typeInfo);
             }
             else if (value.IsNamedScenarioInputImageVariableValueRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputImageVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputImageVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputImageVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputImageVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputImageVariableValueRequest!, typeInfo);
             }
             else if (value.IsNamedScenarioInputDocumentVariableValueRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedScenarioInputDocumentVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedScenarioInputDocumentVariableValueRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedScenarioInputDocumentVariableValueRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputDocumentVariableValueRequest, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NamedScenarioInputDocumentVariableValueRequest!, typeInfo);
             }
         }
     }

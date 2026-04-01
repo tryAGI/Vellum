@@ -374,49 +374,49 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataString?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataString).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataString, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataString!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataNumber)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataNumber), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataNumber?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataNumber).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataNumber, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataNumber!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataJSON)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataJSON), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataJSON?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataJSON).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataJSON, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataJSON!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataChatHistory)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataChatHistory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataChatHistory?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataChatHistory).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataChatHistory, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataChatHistory!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataSearchResults)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataSearchResults), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataSearchResults?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataSearchResults).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataSearchResults, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataSearchResults!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataArray)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataArray), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataArray?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataArray).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataArray, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataArray!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataFunctionCall)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataFunctionCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataFunctionCall?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataFunctionCall).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataFunctionCall, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataFunctionCall!, typeInfo);
             }
             else if (value.IsWorkflowResultEventOutputDataError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowResultEventOutputDataError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowResultEventOutputDataError?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowResultEventOutputDataError).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataError, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowResultEventOutputDataError!, typeInfo);
             }
         }
     }
