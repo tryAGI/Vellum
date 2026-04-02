@@ -13,35 +13,35 @@ namespace Vellum
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value1 { get; init; }
+        public object? WorkflowEventErrorRawDataVariant1 { get; init; }
 #else
-        public object? Value1 { get; }
+        public object? WorkflowEventErrorRawDataVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEventErrorRawDataVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsWorkflowEventErrorRawDataVariant1 => WorkflowEventErrorRawDataVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value2 { get; init; }
+        public string? WorkflowEventErrorRawDataVariant2 { get; init; }
 #else
-        public string? Value2 { get; }
+        public string? WorkflowEventErrorRawDataVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEventErrorRawDataVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsWorkflowEventErrorRawDataVariant2 => WorkflowEventErrorRawDataVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(WorkflowEventErrorRawData @this) => @this.Value2;
+        public static implicit operator string?(WorkflowEventErrorRawData @this) => @this.WorkflowEventErrorRawDataVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public WorkflowEventErrorRawData(string? value)
         {
-            Value2 = value;
+            WorkflowEventErrorRawDataVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public WorkflowEventErrorRawData(
-            object? value1,
-            string? value2
+            object? workflowEventErrorRawDataVariant1,
+            string? workflowEventErrorRawDataVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            WorkflowEventErrorRawDataVariant1 = workflowEventErrorRawDataVariant1;
+            WorkflowEventErrorRawDataVariant2 = workflowEventErrorRawDataVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            WorkflowEventErrorRawDataVariant2 as object ??
+            WorkflowEventErrorRawDataVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            WorkflowEventErrorRawDataVariant1?.ToString() ??
+            WorkflowEventErrorRawDataVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Vellum
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && !IsValue2 || !IsValue1 && IsValue2;
+            return IsWorkflowEventErrorRawDataVariant1 && !IsWorkflowEventErrorRawDataVariant2 || !IsWorkflowEventErrorRawDataVariant1 && IsWorkflowEventErrorRawDataVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? value1 = null,
-            global::System.Func<string?, TResult>? value2 = null,
+            global::System.Func<object?, TResult>? workflowEventErrorRawDataVariant1 = null,
+            global::System.Func<string?, TResult>? workflowEventErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsWorkflowEventErrorRawDataVariant1 && workflowEventErrorRawDataVariant1 != null)
             {
-                return value1(Value1!);
+                return workflowEventErrorRawDataVariant1(WorkflowEventErrorRawDataVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsWorkflowEventErrorRawDataVariant2 && workflowEventErrorRawDataVariant2 != null)
             {
-                return value2(Value2!);
+                return workflowEventErrorRawDataVariant2(WorkflowEventErrorRawDataVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? value1 = null,
-            global::System.Action<string?>? value2 = null,
+            global::System.Action<object?>? workflowEventErrorRawDataVariant1 = null,
+            global::System.Action<string?>? workflowEventErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsWorkflowEventErrorRawDataVariant1)
             {
-                value1?.Invoke(Value1!);
+                workflowEventErrorRawDataVariant1?.Invoke(WorkflowEventErrorRawDataVariant1!);
             }
-            else if (IsValue2)
+            else if (IsWorkflowEventErrorRawDataVariant2)
             {
-                value2?.Invoke(Value2!);
+                workflowEventErrorRawDataVariant2?.Invoke(WorkflowEventErrorRawDataVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Vellum
         {
             var fields = new object?[]
             {
-                Value1,
+                WorkflowEventErrorRawDataVariant1,
                 typeof(object),
-                Value2,
+                WorkflowEventErrorRawDataVariant2,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Vellum
         public bool Equals(WorkflowEventErrorRawData other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(WorkflowEventErrorRawDataVariant1, other.WorkflowEventErrorRawDataVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(WorkflowEventErrorRawDataVariant2, other.WorkflowEventErrorRawDataVariant2) 
                 ;
         }
 

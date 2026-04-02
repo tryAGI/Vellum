@@ -13,35 +13,35 @@ namespace Vellum
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value1 { get; init; }
+        public object? DeploymentProviderPayloadResponsePayloadVariant1 { get; init; }
 #else
-        public object? Value1 { get; }
+        public object? DeploymentProviderPayloadResponsePayloadVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeploymentProviderPayloadResponsePayloadVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsDeploymentProviderPayloadResponsePayloadVariant1 => DeploymentProviderPayloadResponsePayloadVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value2 { get; init; }
+        public string? DeploymentProviderPayloadResponsePayloadVariant2 { get; init; }
 #else
-        public string? Value2 { get; }
+        public string? DeploymentProviderPayloadResponsePayloadVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeploymentProviderPayloadResponsePayloadVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsDeploymentProviderPayloadResponsePayloadVariant2 => DeploymentProviderPayloadResponsePayloadVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(DeploymentProviderPayloadResponsePayload @this) => @this.Value2;
+        public static implicit operator string?(DeploymentProviderPayloadResponsePayload @this) => @this.DeploymentProviderPayloadResponsePayloadVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public DeploymentProviderPayloadResponsePayload(string? value)
         {
-            Value2 = value;
+            DeploymentProviderPayloadResponsePayloadVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public DeploymentProviderPayloadResponsePayload(
-            object? value1,
-            string? value2
+            object? deploymentProviderPayloadResponsePayloadVariant1,
+            string? deploymentProviderPayloadResponsePayloadVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            DeploymentProviderPayloadResponsePayloadVariant1 = deploymentProviderPayloadResponsePayloadVariant1;
+            DeploymentProviderPayloadResponsePayloadVariant2 = deploymentProviderPayloadResponsePayloadVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            DeploymentProviderPayloadResponsePayloadVariant2 as object ??
+            DeploymentProviderPayloadResponsePayloadVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            DeploymentProviderPayloadResponsePayloadVariant1?.ToString() ??
+            DeploymentProviderPayloadResponsePayloadVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Vellum
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && !IsValue2 || !IsValue1 && IsValue2;
+            return IsDeploymentProviderPayloadResponsePayloadVariant1 && !IsDeploymentProviderPayloadResponsePayloadVariant2 || !IsDeploymentProviderPayloadResponsePayloadVariant1 && IsDeploymentProviderPayloadResponsePayloadVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? value1 = null,
-            global::System.Func<string?, TResult>? value2 = null,
+            global::System.Func<object?, TResult>? deploymentProviderPayloadResponsePayloadVariant1 = null,
+            global::System.Func<string?, TResult>? deploymentProviderPayloadResponsePayloadVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsDeploymentProviderPayloadResponsePayloadVariant1 && deploymentProviderPayloadResponsePayloadVariant1 != null)
             {
-                return value1(Value1!);
+                return deploymentProviderPayloadResponsePayloadVariant1(DeploymentProviderPayloadResponsePayloadVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsDeploymentProviderPayloadResponsePayloadVariant2 && deploymentProviderPayloadResponsePayloadVariant2 != null)
             {
-                return value2(Value2!);
+                return deploymentProviderPayloadResponsePayloadVariant2(DeploymentProviderPayloadResponsePayloadVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? value1 = null,
-            global::System.Action<string?>? value2 = null,
+            global::System.Action<object?>? deploymentProviderPayloadResponsePayloadVariant1 = null,
+            global::System.Action<string?>? deploymentProviderPayloadResponsePayloadVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsDeploymentProviderPayloadResponsePayloadVariant1)
             {
-                value1?.Invoke(Value1!);
+                deploymentProviderPayloadResponsePayloadVariant1?.Invoke(DeploymentProviderPayloadResponsePayloadVariant1!);
             }
-            else if (IsValue2)
+            else if (IsDeploymentProviderPayloadResponsePayloadVariant2)
             {
-                value2?.Invoke(Value2!);
+                deploymentProviderPayloadResponsePayloadVariant2?.Invoke(DeploymentProviderPayloadResponsePayloadVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Vellum
         {
             var fields = new object?[]
             {
-                Value1,
+                DeploymentProviderPayloadResponsePayloadVariant1,
                 typeof(object),
-                Value2,
+                DeploymentProviderPayloadResponsePayloadVariant2,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Vellum
         public bool Equals(DeploymentProviderPayloadResponsePayload other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(DeploymentProviderPayloadResponsePayloadVariant1, other.DeploymentProviderPayloadResponsePayloadVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DeploymentProviderPayloadResponsePayloadVariant2, other.DeploymentProviderPayloadResponsePayloadVariant2) 
                 ;
         }
 

@@ -13,35 +13,35 @@ namespace Vellum
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value1 { get; init; }
+        public object? VellumSdkErrorRawDataVariant1 { get; init; }
 #else
-        public object? Value1 { get; }
+        public object? VellumSdkErrorRawDataVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumSdkErrorRawDataVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsVellumSdkErrorRawDataVariant1 => VellumSdkErrorRawDataVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value2 { get; init; }
+        public string? VellumSdkErrorRawDataVariant2 { get; init; }
 #else
-        public string? Value2 { get; }
+        public string? VellumSdkErrorRawDataVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumSdkErrorRawDataVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsVellumSdkErrorRawDataVariant2 => VellumSdkErrorRawDataVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(VellumSdkErrorRawData @this) => @this.Value2;
+        public static implicit operator string?(VellumSdkErrorRawData @this) => @this.VellumSdkErrorRawDataVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public VellumSdkErrorRawData(string? value)
         {
-            Value2 = value;
+            VellumSdkErrorRawDataVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public VellumSdkErrorRawData(
-            object? value1,
-            string? value2
+            object? vellumSdkErrorRawDataVariant1,
+            string? vellumSdkErrorRawDataVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            VellumSdkErrorRawDataVariant1 = vellumSdkErrorRawDataVariant1;
+            VellumSdkErrorRawDataVariant2 = vellumSdkErrorRawDataVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            VellumSdkErrorRawDataVariant2 as object ??
+            VellumSdkErrorRawDataVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            VellumSdkErrorRawDataVariant1?.ToString() ??
+            VellumSdkErrorRawDataVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Vellum
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && !IsValue2 || !IsValue1 && IsValue2;
+            return IsVellumSdkErrorRawDataVariant1 && !IsVellumSdkErrorRawDataVariant2 || !IsVellumSdkErrorRawDataVariant1 && IsVellumSdkErrorRawDataVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? value1 = null,
-            global::System.Func<string?, TResult>? value2 = null,
+            global::System.Func<object?, TResult>? vellumSdkErrorRawDataVariant1 = null,
+            global::System.Func<string?, TResult>? vellumSdkErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsVellumSdkErrorRawDataVariant1 && vellumSdkErrorRawDataVariant1 != null)
             {
-                return value1(Value1!);
+                return vellumSdkErrorRawDataVariant1(VellumSdkErrorRawDataVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsVellumSdkErrorRawDataVariant2 && vellumSdkErrorRawDataVariant2 != null)
             {
-                return value2(Value2!);
+                return vellumSdkErrorRawDataVariant2(VellumSdkErrorRawDataVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? value1 = null,
-            global::System.Action<string?>? value2 = null,
+            global::System.Action<object?>? vellumSdkErrorRawDataVariant1 = null,
+            global::System.Action<string?>? vellumSdkErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsVellumSdkErrorRawDataVariant1)
             {
-                value1?.Invoke(Value1!);
+                vellumSdkErrorRawDataVariant1?.Invoke(VellumSdkErrorRawDataVariant1!);
             }
-            else if (IsValue2)
+            else if (IsVellumSdkErrorRawDataVariant2)
             {
-                value2?.Invoke(Value2!);
+                vellumSdkErrorRawDataVariant2?.Invoke(VellumSdkErrorRawDataVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Vellum
         {
             var fields = new object?[]
             {
-                Value1,
+                VellumSdkErrorRawDataVariant1,
                 typeof(object),
-                Value2,
+                VellumSdkErrorRawDataVariant2,
                 typeof(string),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Vellum
         public bool Equals(VellumSdkErrorRawData other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(VellumSdkErrorRawDataVariant1, other.VellumSdkErrorRawDataVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VellumSdkErrorRawDataVariant2, other.VellumSdkErrorRawDataVariant2) 
                 ;
         }
 
