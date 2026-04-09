@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageUploadedFilesClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_RetrieveSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_RetrieveSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_RetrieveSecurityRequirement0,
+            };
         partial void PrepareRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid id,
@@ -43,12 +62,18 @@ namespace Vellum
                 id: ref id,
                 expirySeconds: ref expirySeconds);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RetrieveSecurityRequirements,
+                operationName: "RetrieveAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/uploaded-files/{id}",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("expiry_seconds", expirySeconds?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -58,7 +83,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

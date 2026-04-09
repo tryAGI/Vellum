@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageFolderEntitiesClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_AddEntityToFolderSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_AddEntityToFolderSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_AddEntityToFolderSecurityRequirement0,
+            };
         partial void PrepareAddEntityToFolderArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string folderId,
@@ -47,9 +66,15 @@ namespace Vellum
                 folderId: ref folderId,
                 request: request);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AddEntityToFolderSecurityRequirements,
+                operationName: "AddEntityToFolderAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/folders/{folderId}/add-entity",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -59,7 +84,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

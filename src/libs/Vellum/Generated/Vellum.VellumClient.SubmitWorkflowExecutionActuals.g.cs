@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class VellumClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_SubmitWorkflowExecutionActualsSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_SubmitWorkflowExecutionActualsSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_SubmitWorkflowExecutionActualsSecurityRequirement0,
+            };
         partial void PrepareSubmitWorkflowExecutionActualsArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Vellum.SubmitWorkflowExecutionActualsRequest request);
@@ -42,9 +61,15 @@ namespace Vellum
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SubmitWorkflowExecutionActualsSecurityRequirements,
+                operationName: "SubmitWorkflowExecutionActualsAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: "/v1/submit-workflow-execution-actuals",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -54,7 +79,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageWorkflowDeploymentsClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_WorkflowDeploymentHistoryItemRetrieveSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_WorkflowDeploymentHistoryItemRetrieveSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_WorkflowDeploymentHistoryItemRetrieveSecurityRequirement0,
+            };
         partial void PrepareWorkflowDeploymentHistoryItemRetrieveArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid historyIdOrReleaseTag,
@@ -44,9 +63,15 @@ namespace Vellum
                 historyIdOrReleaseTag: ref historyIdOrReleaseTag,
                 id: ref id);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_WorkflowDeploymentHistoryItemRetrieveSecurityRequirements,
+                operationName: "WorkflowDeploymentHistoryItemRetrieveAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/workflow-deployments/{id}/history/{historyIdOrReleaseTag}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -56,7 +81,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
