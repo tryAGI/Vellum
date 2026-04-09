@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageWorkflowExecutionsClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_RetrieveWorkflowExecutionDetailSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_RetrieveWorkflowExecutionDetailSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_RetrieveWorkflowExecutionDetailSecurityRequirement0,
+            };
         partial void PrepareRetrieveWorkflowExecutionDetailArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid executionId,
@@ -47,13 +66,19 @@ namespace Vellum
                 prevSpanId: ref prevSpanId,
                 spanLimit: ref spanLimit);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RetrieveWorkflowExecutionDetailSecurityRequirements,
+                operationName: "RetrieveWorkflowExecutionDetailAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/workflow-executions/{executionId}/detail",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("prev_span_id", prevSpanId?.ToString())
                 .AddOptionalParameter("span_limit", spanLimit?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -63,7 +88,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

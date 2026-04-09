@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageWorkflowDeploymentsClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_ListWorkflowDeploymentReleasesSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_ListWorkflowDeploymentReleasesSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_ListWorkflowDeploymentReleasesSecurityRequirement0,
+            };
         partial void PrepareListWorkflowDeploymentReleasesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -53,6 +72,12 @@ namespace Vellum
                 offset: ref offset,
                 ordering: ref ordering);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListWorkflowDeploymentReleasesSecurityRequirements,
+                operationName: "ListWorkflowDeploymentReleasesAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/workflow-deployments/{id}/releases",
                 baseUri: HttpClient.BaseAddress); 
@@ -60,7 +85,7 @@ namespace Vellum
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("offset", offset?.ToString())
                 .AddOptionalParameter("ordering", ordering) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -70,7 +95,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

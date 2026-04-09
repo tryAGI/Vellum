@@ -12,7 +12,7 @@ namespace Vellum
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vellum.ApiException"></exception>
-        global::System.Collections.Generic.IAsyncEnumerable<global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkResult>> TestSuiteTestCasesBulkAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vellum.TestSuiteTestCaseBulkResult> TestSuiteTestCasesBulkAsync(
             string id,
 
             global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkOperationRequest> request,

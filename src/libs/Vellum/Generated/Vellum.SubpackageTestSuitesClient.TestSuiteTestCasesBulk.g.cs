@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageTestSuitesClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_TestSuiteTestCasesBulkSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_TestSuiteTestCasesBulkSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_TestSuiteTestCasesBulkSecurityRequirement0,
+            };
         partial void PrepareTestSuiteTestCasesBulkArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -26,7 +45,7 @@ namespace Vellum
         /// <param name="request"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vellum.ApiException"></exception>
-        public async global::System.Collections.Generic.IAsyncEnumerable<global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkResult>> TestSuiteTestCasesBulkAsync(
+        public async global::System.Collections.Generic.IAsyncEnumerable<global::Vellum.TestSuiteTestCaseBulkResult> TestSuiteTestCasesBulkAsync(
             string id,
 
             global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkOperationRequest> request,
@@ -41,9 +60,15 @@ namespace Vellum
                 id: ref id,
                 request: request);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TestSuiteTestCasesBulkSecurityRequirements,
+                operationName: "TestSuiteTestCasesBulkAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/test-suites/{id}/test-cases-bulk",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -53,7 +78,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
@@ -143,7 +168,7 @@ namespace Vellum
                     yield break;
                 }
 
-                var __streamedResponse = (global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkResult>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkResult>), JsonSerializerContext) ??
+                var __streamedResponse = global::Vellum.TestSuiteTestCaseBulkResult.FromJson(__content, JsonSerializerContext) ??
                                        throw new global::Vellum.ApiException(
                                            message: $"Response deserialization failed for \"{__content}\" ",
                                            statusCode: __response.StatusCode)

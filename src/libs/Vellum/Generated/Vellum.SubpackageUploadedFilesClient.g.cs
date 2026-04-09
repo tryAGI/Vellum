@@ -12,7 +12,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.vellum.ai";
+        public const string DefaultBaseUrl = "https://api.vellum.ai/";
 
         private bool _disposeHttpClient = true;
 

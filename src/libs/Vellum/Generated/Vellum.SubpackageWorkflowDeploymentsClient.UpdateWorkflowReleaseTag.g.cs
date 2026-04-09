@@ -5,6 +5,25 @@ namespace Vellum
 {
     public partial class SubpackageWorkflowDeploymentsClient
     {
+
+
+        private static readonly global::Vellum.EndPointSecurityRequirement s_UpdateWorkflowReleaseTagSecurityRequirement0 =
+            new global::Vellum.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Vellum.EndPointAuthorizationRequirement[]
+                {                    new global::Vellum.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "X-API-KEY",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Vellum.EndPointSecurityRequirement[] s_UpdateWorkflowReleaseTagSecurityRequirements =
+            new global::Vellum.EndPointSecurityRequirement[]
+            {                s_UpdateWorkflowReleaseTagSecurityRequirement0,
+            };
         partial void PrepareUpdateWorkflowReleaseTagArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
@@ -51,9 +70,15 @@ namespace Vellum
                 name: ref name,
                 request: request);
 
+
+            var __authorizations = global::Vellum.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UpdateWorkflowReleaseTagSecurityRequirements,
+                operationName: "UpdateWorkflowReleaseTagAsync");
+
             var __pathBuilder = new global::Vellum.PathBuilder(
                 path: $"/v1/workflow-deployments/{id}/release-tags/{name}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -63,7 +88,7 @@ namespace Vellum
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
