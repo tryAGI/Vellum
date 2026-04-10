@@ -16,11 +16,13 @@ namespace Vellum
         /// We encourage you to seek advise from Vellum Support before integrating with this API for production use.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vellum.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.DeploymentProviderPayloadResponse> RetrieveProviderPayloadAsync(
 
             global::Vellum.DeploymentProviderPayloadRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Retrieve Provider Payload<br/>
@@ -46,6 +48,7 @@ namespace Vellum
         /// Optionally specify a release tag if you want to pin to a specific release of the Workflow Deployment
         /// </param>
         /// <param name="expandMeta"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.DeploymentProviderPayloadResponse> RetrieveProviderPayloadAsync(
@@ -54,6 +57,7 @@ namespace Vellum
             string? deploymentName = default,
             string? releaseTag = default,
             global::Vellum.OneOf<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>? expandMeta = default,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

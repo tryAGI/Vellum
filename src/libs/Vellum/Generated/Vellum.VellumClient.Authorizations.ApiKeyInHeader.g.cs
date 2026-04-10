@@ -26,6 +26,7 @@ namespace Vellum
             Authorizations.Add(new global::Vellum.EndPointAuthorization
             {
                 Type = "ApiKey",
+                SchemeId = "ApikeyXApiKey",
                 Location = "Header",
                 Name = "X-API-KEY",
                 Value = apiKey,

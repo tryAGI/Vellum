@@ -10,11 +10,13 @@ namespace Vellum
         ///     **Note:** Uses a base url of `https://predict.vellum.ai`.    
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vellum.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.SubmitWorkflowExecutionActualsResponse200> SubmitWorkflowExecutionActualsAsync(
 
             global::Vellum.SubmitWorkflowExecutionActualsRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Submit Workflow Execution Actuals<br/>
@@ -30,12 +32,14 @@ namespace Vellum
         /// <param name="externalId">
         /// The external ID that was originally provided by when executing the workflow, if applicable, that you'd now like to submit actuals for. Must provide either this or execution_id.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.SubmitWorkflowExecutionActualsResponse200> SubmitWorkflowExecutionActualsAsync(
             global::System.Collections.Generic.IList<global::Vellum.SubmitWorkflowExecutionActualRequest> actuals,
             global::System.Guid? executionId = default,
             string? externalId = default,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
