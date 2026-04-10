@@ -9,11 +9,13 @@ namespace Vellum
         /// Executes a deployed Workflow and returns its outputs.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vellum.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.ExecuteWorkflowResponse> ExecuteWorkflowAsync(
 
             global::Vellum.ExecuteWorkflowRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Execute Workflow<br/>
@@ -43,6 +45,7 @@ namespace Vellum
         /// <param name="previousExecutionId">
         /// The ID of a previous Workflow Execution to reference for initial State loading.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.ExecuteWorkflowResponse> ExecuteWorkflowAsync(
@@ -54,6 +57,7 @@ namespace Vellum
             string? externalId = default,
             object? metadata = default,
             global::System.Guid? previousExecutionId = default,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

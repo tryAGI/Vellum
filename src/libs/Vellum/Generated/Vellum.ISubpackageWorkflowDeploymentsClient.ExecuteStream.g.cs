@@ -10,12 +10,14 @@ namespace Vellum
         /// </summary>
         /// <param name="id"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vellum.ApiException"></exception>
         global::System.Collections.Generic.IAsyncEnumerable<global::Vellum.WorkflowEvent> ExecuteStreamAsync(
             string id,
 
             global::Vellum.ExecuteWorkflowDeploymentStreamRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Execute Stream<br/>
@@ -40,6 +42,7 @@ namespace Vellum
         /// <param name="previousExecutionId">
         /// The ID of a previous workflow execution to reference for context.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Collections.Generic.IAsyncEnumerable<global::Vellum.WorkflowEvent> ExecuteStreamAsync(
@@ -50,6 +53,7 @@ namespace Vellum
             string? externalId = default,
             object? metadata = default,
             global::System.Guid? previousExecutionId = default,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
