@@ -23,6 +23,14 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
@@ -32,9 +40,17 @@ namespace Vellum.JsonConverters
             if (__jsonProps.Contains("span_id")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             if (__jsonProps.Contains("workflow_definition")) __score0++;
+            if (__jsonProps.Contains("workflow_definition.exclude_from_monitoring")) __score0++;
+            if (__jsonProps.Contains("workflow_definition.id")) __score0++;
+            if (__jsonProps.Contains("workflow_definition.module")) __score0++;
+            if (__jsonProps.Contains("workflow_definition.name")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("links")) __score1++;
             if (__jsonProps.Contains("node_definition")) __score1++;
+            if (__jsonProps.Contains("node_definition.exclude_from_monitoring")) __score1++;
+            if (__jsonProps.Contains("node_definition.id")) __score1++;
+            if (__jsonProps.Contains("node_definition.module")) __score1++;
+            if (__jsonProps.Contains("node_definition.name")) __score1++;
             if (__jsonProps.Contains("parent")) __score1++;
             if (__jsonProps.Contains("span_id")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;

@@ -23,12 +23,22 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("api_version")) __score0++;
             if (__jsonProps.Contains("body")) __score0++;
+            if (__jsonProps.Contains("body.inputs")) __score0++;
+            if (__jsonProps.Contains("body.node_definition")) __score0++;
             if (__jsonProps.Contains("id")) __score0++;
             if (__jsonProps.Contains("links")) __score0++;
             if (__jsonProps.Contains("name")) __score0++;
@@ -39,6 +49,8 @@ namespace Vellum.JsonConverters
             var __score1 = 0;
             if (__jsonProps.Contains("api_version")) __score1++;
             if (__jsonProps.Contains("body")) __score1++;
+            if (__jsonProps.Contains("body.node_definition")) __score1++;
+            if (__jsonProps.Contains("body.output")) __score1++;
             if (__jsonProps.Contains("id")) __score1++;
             if (__jsonProps.Contains("links")) __score1++;
             if (__jsonProps.Contains("name")) __score1++;
@@ -49,6 +61,11 @@ namespace Vellum.JsonConverters
             var __score2 = 0;
             if (__jsonProps.Contains("api_version")) __score2++;
             if (__jsonProps.Contains("body")) __score2++;
+            if (__jsonProps.Contains("body.invoked_ports")) __score2++;
+            if (__jsonProps.Contains("body.mocked")) __score2++;
+            if (__jsonProps.Contains("body.node_definition")) __score2++;
+            if (__jsonProps.Contains("body.outputs")) __score2++;
+            if (__jsonProps.Contains("body.redacted")) __score2++;
             if (__jsonProps.Contains("id")) __score2++;
             if (__jsonProps.Contains("links")) __score2++;
             if (__jsonProps.Contains("name")) __score2++;
@@ -59,6 +76,9 @@ namespace Vellum.JsonConverters
             var __score3 = 0;
             if (__jsonProps.Contains("api_version")) __score3++;
             if (__jsonProps.Contains("body")) __score3++;
+            if (__jsonProps.Contains("body.error")) __score3++;
+            if (__jsonProps.Contains("body.node_definition")) __score3++;
+            if (__jsonProps.Contains("body.stacktrace")) __score3++;
             if (__jsonProps.Contains("id")) __score3++;
             if (__jsonProps.Contains("links")) __score3++;
             if (__jsonProps.Contains("name")) __score3++;
@@ -69,6 +89,7 @@ namespace Vellum.JsonConverters
             var __score4 = 0;
             if (__jsonProps.Contains("api_version")) __score4++;
             if (__jsonProps.Contains("body")) __score4++;
+            if (__jsonProps.Contains("body.node_definition")) __score4++;
             if (__jsonProps.Contains("id")) __score4++;
             if (__jsonProps.Contains("links")) __score4++;
             if (__jsonProps.Contains("name")) __score4++;
@@ -79,6 +100,7 @@ namespace Vellum.JsonConverters
             var __score5 = 0;
             if (__jsonProps.Contains("api_version")) __score5++;
             if (__jsonProps.Contains("body")) __score5++;
+            if (__jsonProps.Contains("body.node_definition")) __score5++;
             if (__jsonProps.Contains("id")) __score5++;
             if (__jsonProps.Contains("links")) __score5++;
             if (__jsonProps.Contains("name")) __score5++;
@@ -89,6 +111,10 @@ namespace Vellum.JsonConverters
             var __score6 = 0;
             if (__jsonProps.Contains("api_version")) __score6++;
             if (__jsonProps.Contains("body")) __score6++;
+            if (__jsonProps.Contains("body.attributes")) __score6++;
+            if (__jsonProps.Contains("body.message")) __score6++;
+            if (__jsonProps.Contains("body.node_definition")) __score6++;
+            if (__jsonProps.Contains("body.severity")) __score6++;
             if (__jsonProps.Contains("id")) __score6++;
             if (__jsonProps.Contains("links")) __score6++;
             if (__jsonProps.Contains("name")) __score6++;
@@ -99,6 +125,9 @@ namespace Vellum.JsonConverters
             var __score7 = 0;
             if (__jsonProps.Contains("api_version")) __score7++;
             if (__jsonProps.Contains("body")) __score7++;
+            if (__jsonProps.Contains("body.inputs")) __score7++;
+            if (__jsonProps.Contains("body.trigger")) __score7++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score7++;
             if (__jsonProps.Contains("id")) __score7++;
             if (__jsonProps.Contains("links")) __score7++;
             if (__jsonProps.Contains("name")) __score7++;
@@ -109,6 +138,8 @@ namespace Vellum.JsonConverters
             var __score8 = 0;
             if (__jsonProps.Contains("api_version")) __score8++;
             if (__jsonProps.Contains("body")) __score8++;
+            if (__jsonProps.Contains("body.output")) __score8++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score8++;
             if (__jsonProps.Contains("id")) __score8++;
             if (__jsonProps.Contains("links")) __score8++;
             if (__jsonProps.Contains("name")) __score8++;
@@ -119,6 +150,9 @@ namespace Vellum.JsonConverters
             var __score9 = 0;
             if (__jsonProps.Contains("api_version")) __score9++;
             if (__jsonProps.Contains("body")) __score9++;
+            if (__jsonProps.Contains("body.error")) __score9++;
+            if (__jsonProps.Contains("body.stacktrace")) __score9++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score9++;
             if (__jsonProps.Contains("id")) __score9++;
             if (__jsonProps.Contains("links")) __score9++;
             if (__jsonProps.Contains("name")) __score9++;
@@ -129,6 +163,11 @@ namespace Vellum.JsonConverters
             var __score10 = 0;
             if (__jsonProps.Contains("api_version")) __score10++;
             if (__jsonProps.Contains("body")) __score10++;
+            if (__jsonProps.Contains("body.final_state")) __score10++;
+            if (__jsonProps.Contains("body.outputs")) __score10++;
+            if (__jsonProps.Contains("body.redacted")) __score10++;
+            if (__jsonProps.Contains("body.server_metadata")) __score10++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score10++;
             if (__jsonProps.Contains("id")) __score10++;
             if (__jsonProps.Contains("links")) __score10++;
             if (__jsonProps.Contains("name")) __score10++;
@@ -139,6 +178,8 @@ namespace Vellum.JsonConverters
             var __score11 = 0;
             if (__jsonProps.Contains("api_version")) __score11++;
             if (__jsonProps.Contains("body")) __score11++;
+            if (__jsonProps.Contains("body.external_inputs")) __score11++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score11++;
             if (__jsonProps.Contains("id")) __score11++;
             if (__jsonProps.Contains("links")) __score11++;
             if (__jsonProps.Contains("name")) __score11++;
@@ -149,6 +190,7 @@ namespace Vellum.JsonConverters
             var __score12 = 0;
             if (__jsonProps.Contains("api_version")) __score12++;
             if (__jsonProps.Contains("body")) __score12++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score12++;
             if (__jsonProps.Contains("id")) __score12++;
             if (__jsonProps.Contains("links")) __score12++;
             if (__jsonProps.Contains("name")) __score12++;
@@ -159,6 +201,9 @@ namespace Vellum.JsonConverters
             var __score13 = 0;
             if (__jsonProps.Contains("api_version")) __score13++;
             if (__jsonProps.Contains("body")) __score13++;
+            if (__jsonProps.Contains("body.edited_by")) __score13++;
+            if (__jsonProps.Contains("body.state")) __score13++;
+            if (__jsonProps.Contains("body.workflow_definition")) __score13++;
             if (__jsonProps.Contains("id")) __score13++;
             if (__jsonProps.Contains("links")) __score13++;
             if (__jsonProps.Contains("name")) __score13++;

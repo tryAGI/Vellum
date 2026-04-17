@@ -23,11 +23,26 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("data")) __score0++;
+            if (__jsonProps.Contains("data.error")) __score0++;
+            if (__jsonProps.Contains("data.id")) __score0++;
+            if (__jsonProps.Contains("data.inputs")) __score0++;
+            if (__jsonProps.Contains("data.output")) __score0++;
+            if (__jsonProps.Contains("data.outputs")) __score0++;
+            if (__jsonProps.Contains("data.state")) __score0++;
+            if (__jsonProps.Contains("data.ts")) __score0++;
             if (__jsonProps.Contains("execution_id")) __score0++;
             if (__jsonProps.Contains("external_id")) __score0++;
             if (__jsonProps.Contains("run_id")) __score0++;

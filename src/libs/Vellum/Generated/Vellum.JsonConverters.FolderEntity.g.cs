@@ -23,31 +23,76 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("data")) __score0++;
+            if (__jsonProps.Contains("data.created")) __score0++;
+            if (__jsonProps.Contains("data.has_contents")) __score0++;
+            if (__jsonProps.Contains("data.id")) __score0++;
+            if (__jsonProps.Contains("data.label")) __score0++;
+            if (__jsonProps.Contains("data.modified")) __score0++;
             if (__jsonProps.Contains("id")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("data")) __score1++;
+            if (__jsonProps.Contains("data.created")) __score1++;
+            if (__jsonProps.Contains("data.description")) __score1++;
+            if (__jsonProps.Contains("data.id")) __score1++;
+            if (__jsonProps.Contains("data.label")) __score1++;
+            if (__jsonProps.Contains("data.last_deployed_on")) __score1++;
+            if (__jsonProps.Contains("data.modified")) __score1++;
+            if (__jsonProps.Contains("data.status")) __score1++;
             if (__jsonProps.Contains("id")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("data")) __score2++;
+            if (__jsonProps.Contains("data.created")) __score2++;
+            if (__jsonProps.Contains("data.description")) __score2++;
+            if (__jsonProps.Contains("data.display_data")) __score2++;
+            if (__jsonProps.Contains("data.id")) __score2++;
+            if (__jsonProps.Contains("data.label")) __score2++;
+            if (__jsonProps.Contains("data.last_deployed_on")) __score2++;
+            if (__jsonProps.Contains("data.modified")) __score2++;
+            if (__jsonProps.Contains("data.status")) __score2++;
             if (__jsonProps.Contains("id")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             var __score3 = 0;
             if (__jsonProps.Contains("data")) __score3++;
+            if (__jsonProps.Contains("data.created")) __score3++;
+            if (__jsonProps.Contains("data.id")) __score3++;
+            if (__jsonProps.Contains("data.indexing_config")) __score3++;
+            if (__jsonProps.Contains("data.label")) __score3++;
+            if (__jsonProps.Contains("data.modified")) __score3++;
+            if (__jsonProps.Contains("data.status")) __score3++;
             if (__jsonProps.Contains("id")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("data")) __score4++;
+            if (__jsonProps.Contains("data.created")) __score4++;
+            if (__jsonProps.Contains("data.id")) __score4++;
+            if (__jsonProps.Contains("data.label")) __score4++;
+            if (__jsonProps.Contains("data.modified")) __score4++;
+            if (__jsonProps.Contains("data.status")) __score4++;
             if (__jsonProps.Contains("id")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             var __score5 = 0;
             if (__jsonProps.Contains("data")) __score5++;
+            if (__jsonProps.Contains("data.created")) __score5++;
+            if (__jsonProps.Contains("data.description")) __score5++;
+            if (__jsonProps.Contains("data.id")) __score5++;
+            if (__jsonProps.Contains("data.label")) __score5++;
+            if (__jsonProps.Contains("data.modified")) __score5++;
+            if (__jsonProps.Contains("data.name")) __score5++;
             if (__jsonProps.Contains("id")) __score5++;
             if (__jsonProps.Contains("type")) __score5++;
             var __bestScore = 0;
