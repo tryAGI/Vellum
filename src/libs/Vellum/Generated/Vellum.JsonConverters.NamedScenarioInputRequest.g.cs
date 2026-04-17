@@ -23,6 +23,14 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
@@ -42,18 +50,26 @@ namespace Vellum.JsonConverters
             if (__jsonProps.Contains("name")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             if (__jsonProps.Contains("value")) __score3++;
+            if (__jsonProps.Contains("value.metadata")) __score3++;
+            if (__jsonProps.Contains("value.src")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("name")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             if (__jsonProps.Contains("value")) __score4++;
+            if (__jsonProps.Contains("value.metadata")) __score4++;
+            if (__jsonProps.Contains("value.src")) __score4++;
             var __score5 = 0;
             if (__jsonProps.Contains("name")) __score5++;
             if (__jsonProps.Contains("type")) __score5++;
             if (__jsonProps.Contains("value")) __score5++;
+            if (__jsonProps.Contains("value.metadata")) __score5++;
+            if (__jsonProps.Contains("value.src")) __score5++;
             var __score6 = 0;
             if (__jsonProps.Contains("name")) __score6++;
             if (__jsonProps.Contains("type")) __score6++;
             if (__jsonProps.Contains("value")) __score6++;
+            if (__jsonProps.Contains("value.metadata")) __score6++;
+            if (__jsonProps.Contains("value.src")) __score6++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }

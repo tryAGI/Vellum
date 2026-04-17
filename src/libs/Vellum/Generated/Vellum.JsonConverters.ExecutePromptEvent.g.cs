@@ -23,16 +23,29 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("execution_id")) __score0++;
             if (__jsonProps.Contains("meta")) __score0++;
+            if (__jsonProps.Contains("meta.deployment_release_tag")) __score0++;
+            if (__jsonProps.Contains("meta.latency")) __score0++;
+            if (__jsonProps.Contains("meta.model_name")) __score0++;
+            if (__jsonProps.Contains("meta.prompt_version_id")) __score0++;
             if (__jsonProps.Contains("state")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("execution_id")) __score1++;
             if (__jsonProps.Contains("meta")) __score1++;
+            if (__jsonProps.Contains("meta.latency")) __score1++;
             if (__jsonProps.Contains("output")) __score1++;
             if (__jsonProps.Contains("output_index")) __score1++;
             if (__jsonProps.Contains("raw")) __score1++;
@@ -41,12 +54,21 @@ namespace Vellum.JsonConverters
             if (__jsonProps.Contains("chat_message_metadata")) __score2++;
             if (__jsonProps.Contains("execution_id")) __score2++;
             if (__jsonProps.Contains("meta")) __score2++;
+            if (__jsonProps.Contains("meta.cost")) __score2++;
+            if (__jsonProps.Contains("meta.finish_reason")) __score2++;
+            if (__jsonProps.Contains("meta.latency")) __score2++;
+            if (__jsonProps.Contains("meta.usage")) __score2++;
             if (__jsonProps.Contains("outputs")) __score2++;
             if (__jsonProps.Contains("state")) __score2++;
             var __score3 = 0;
             if (__jsonProps.Contains("error")) __score3++;
+            if (__jsonProps.Contains("error.code")) __score3++;
+            if (__jsonProps.Contains("error.message")) __score3++;
+            if (__jsonProps.Contains("error.raw_data")) __score3++;
             if (__jsonProps.Contains("execution_id")) __score3++;
             if (__jsonProps.Contains("meta")) __score3++;
+            if (__jsonProps.Contains("meta.finish_reason")) __score3++;
+            if (__jsonProps.Contains("meta.latency")) __score3++;
             if (__jsonProps.Contains("state")) __score3++;
             var __bestScore = 0;
             var __bestIndex = -1;

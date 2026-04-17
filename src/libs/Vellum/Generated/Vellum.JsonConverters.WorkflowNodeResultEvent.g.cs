@@ -23,6 +23,14 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
@@ -58,6 +66,10 @@ namespace Vellum.JsonConverters
             var __score3 = 0;
             if (__jsonProps.Contains("data")) __score3++;
             if (__jsonProps.Contains("error")) __score3++;
+            if (__jsonProps.Contains("error.code")) __score3++;
+            if (__jsonProps.Contains("error.message")) __score3++;
+            if (__jsonProps.Contains("error.raw_data")) __score3++;
+            if (__jsonProps.Contains("error.stacktrace")) __score3++;
             if (__jsonProps.Contains("id")) __score3++;
             if (__jsonProps.Contains("node_id")) __score3++;
             if (__jsonProps.Contains("node_result_id")) __score3++;

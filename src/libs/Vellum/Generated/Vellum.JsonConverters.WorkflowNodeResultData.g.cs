@@ -23,40 +23,73 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("data")) __score0++;
+            if (__jsonProps.Contains("data.array_output_id")) __score0++;
+            if (__jsonProps.Contains("data.delta")) __score0++;
+            if (__jsonProps.Contains("data.execution_id")) __score0++;
+            if (__jsonProps.Contains("data.execution_meta")) __score0++;
+            if (__jsonProps.Contains("data.output_id")) __score0++;
+            if (__jsonProps.Contains("data.text")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("data")) __score1++;
+            if (__jsonProps.Contains("data.results")) __score1++;
+            if (__jsonProps.Contains("data.results_output_id")) __score1++;
+            if (__jsonProps.Contains("data.text")) __score1++;
+            if (__jsonProps.Contains("data.text_output_id")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("data")) __score2++;
+            if (__jsonProps.Contains("data.output")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             var __score3 = 0;
             if (__jsonProps.Contains("data")) __score3++;
+            if (__jsonProps.Contains("data.log_output_id")) __score3++;
+            if (__jsonProps.Contains("data.output")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("data")) __score4++;
+            if (__jsonProps.Contains("data.source_handle_id")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             var __score5 = 0;
             if (__jsonProps.Contains("data")) __score5++;
+            if (__jsonProps.Contains("data.json")) __score5++;
+            if (__jsonProps.Contains("data.json_output_id")) __score5++;
+            if (__jsonProps.Contains("data.status_code")) __score5++;
+            if (__jsonProps.Contains("data.status_code_output_id")) __score5++;
+            if (__jsonProps.Contains("data.text")) __score5++;
+            if (__jsonProps.Contains("data.text_output_id")) __score5++;
             if (__jsonProps.Contains("type")) __score5++;
             var __score6 = 0;
             if (__jsonProps.Contains("data")) __score6++;
+            if (__jsonProps.Contains("data.output")) __score6++;
             if (__jsonProps.Contains("type")) __score6++;
             var __score7 = 0;
             if (__jsonProps.Contains("data")) __score7++;
+            if (__jsonProps.Contains("data.paused_node_data")) __score7++;
             if (__jsonProps.Contains("type")) __score7++;
             var __score8 = 0;
             if (__jsonProps.Contains("data")) __score8++;
+            if (__jsonProps.Contains("data.execution_id")) __score8++;
             if (__jsonProps.Contains("type")) __score8++;
             var __score9 = 0;
             if (__jsonProps.Contains("type")) __score9++;
             var __score10 = 0;
             if (__jsonProps.Contains("data")) __score10++;
+            if (__jsonProps.Contains("data.execution_ids")) __score10++;
+            if (__jsonProps.Contains("data.iteration_state")) __score10++;
             if (__jsonProps.Contains("type")) __score10++;
             var __bestScore = 0;
             var __bestIndex = -1;

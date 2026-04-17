@@ -23,11 +23,21 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("attributes")) __score0++;
+            if (__jsonProps.Contains("attributes.label")) __score0++;
+            if (__jsonProps.Contains("attributes.workflow_id")) __score0++;
             if (__jsonProps.Contains("end_ts")) __score0++;
             if (__jsonProps.Contains("events")) __score0++;
             if (__jsonProps.Contains("name")) __score0++;
@@ -37,6 +47,9 @@ namespace Vellum.JsonConverters
             if (__jsonProps.Contains("usage_result")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("attributes")) __score1++;
+            if (__jsonProps.Contains("attributes.filepath")) __score1++;
+            if (__jsonProps.Contains("attributes.label")) __score1++;
+            if (__jsonProps.Contains("attributes.node_id")) __score1++;
             if (__jsonProps.Contains("end_ts")) __score1++;
             if (__jsonProps.Contains("events")) __score1++;
             if (__jsonProps.Contains("name")) __score1++;

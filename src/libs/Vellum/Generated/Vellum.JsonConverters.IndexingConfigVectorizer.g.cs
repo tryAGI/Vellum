@@ -23,17 +23,28 @@ namespace Vellum.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("config")) __score0++;
+            if (__jsonProps.Contains("config.add_openai_api_key")) __score0++;
             if (__jsonProps.Contains("model_name")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("config")) __score1++;
+            if (__jsonProps.Contains("config.add_openai_api_key")) __score1++;
             if (__jsonProps.Contains("model_name")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("config")) __score2++;
+            if (__jsonProps.Contains("config.add_openai_api_key")) __score2++;
             if (__jsonProps.Contains("model_name")) __score2++;
             var __score3 = 0;
             if (__jsonProps.Contains("config")) __score3++;
@@ -46,15 +57,24 @@ namespace Vellum.JsonConverters
             if (__jsonProps.Contains("model_name")) __score5++;
             var __score6 = 0;
             if (__jsonProps.Contains("config")) __score6++;
+            if (__jsonProps.Contains("config.instruction_document_text_type")) __score6++;
+            if (__jsonProps.Contains("config.instruction_domain")) __score6++;
+            if (__jsonProps.Contains("config.instruction_query_text_type")) __score6++;
             if (__jsonProps.Contains("model_name")) __score6++;
             var __score7 = 0;
             if (__jsonProps.Contains("config")) __score7++;
+            if (__jsonProps.Contains("config.project_id")) __score7++;
+            if (__jsonProps.Contains("config.region")) __score7++;
             if (__jsonProps.Contains("model_name")) __score7++;
             var __score8 = 0;
             if (__jsonProps.Contains("config")) __score8++;
+            if (__jsonProps.Contains("config.project_id")) __score8++;
+            if (__jsonProps.Contains("config.region")) __score8++;
             if (__jsonProps.Contains("model_name")) __score8++;
             var __score9 = 0;
             if (__jsonProps.Contains("config")) __score9++;
+            if (__jsonProps.Contains("config.project_id")) __score9++;
+            if (__jsonProps.Contains("config.region")) __score9++;
             if (__jsonProps.Contains("model_name")) __score9++;
             var __score10 = 0;
             if (__jsonProps.Contains("model_name")) __score10++;
