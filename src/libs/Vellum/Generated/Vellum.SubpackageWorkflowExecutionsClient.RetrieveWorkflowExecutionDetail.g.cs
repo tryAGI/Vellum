@@ -138,7 +138,7 @@ namespace Vellum
                 PrepareRetrieveWorkflowExecutionDetailRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    executionId: executionId,
+                    executionId: executionId!,
                     prevSpanId: prevSpanId,
                     spanLimit: spanLimit);
 

@@ -151,7 +151,7 @@ namespace Vellum
                 PrepareListWorkflowReleaseTagsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     limit: limit,
                     offset: offset,
                     ordering: ordering,

@@ -130,16 +130,44 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ExternalId}"),
+                                    content: new global::System.Net.Http.StringContent(request.ExternalId ?? string.Empty),
                                     name: "\"external_id\"");
                             }
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{request.Label}"),
+                                content: new global::System.Net.Http.StringContent(request.Label ?? string.Empty),
                                 name: "\"label\"");
                             if (request.Contents != default)
                             {
 
                                 var __contentContents = new global::System.Net.Http.ByteArrayContent(request.Contents ?? global::System.Array.Empty<byte>());
+                                __contentContents.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
+                                    request.Contentsname is null
+                                        ? "application/octet-stream"
+                                        : (global::System.IO.Path.GetExtension(request.Contentsname) ?? string.Empty).ToLowerInvariant() switch
+                                        {
+                                            ".aac" => "audio/aac",
+                                            ".flac" => "audio/flac",
+                                            ".gif" => "image/gif",
+                                            ".jpeg" => "image/jpeg",
+                                            ".jpg" => "image/jpeg",
+                                            ".json" => "application/json",
+                                            ".m4a" => "audio/mp4",
+                                            ".mp3" => "audio/mpeg",
+                                            ".mp4" => "video/mp4",
+                                            ".mpeg" => "audio/mpeg",
+                                            ".mpga" => "audio/mpeg",
+                                            ".oga" => "audio/ogg",
+                                            ".ogg" => "audio/ogg",
+                                            ".opus" => "audio/ogg",
+                                            ".pdf" => "application/pdf",
+                                            ".png" => "image/png",
+                                            ".txt" => "text/plain",
+                                            ".wav" => "audio/wav",
+                                            ".weba" => "audio/webm",
+                                            ".webm" => "video/webm",
+                                            ".webp" => "image/webp",
+                                            _ => "application/octet-stream",
+                                        });
                                 __httpRequestContent.Add(
                                     content: __contentContents,
                                     name: "\"contents\"",
@@ -153,7 +181,7 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Url}"),
+                                    content: new global::System.Net.Http.StringContent(request.Url ?? string.Empty),
                                     name: "\"url\"");
                             } 
                             if (request.Keywords != default)
@@ -167,7 +195,7 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Metadata}"),
+                                    content: new global::System.Net.Http.StringContent(request.Metadata.ToString() ?? string.Empty),
                                     name: "\"metadata\"");
                             }
                             __httpRequest.Content = __httpRequestContent;

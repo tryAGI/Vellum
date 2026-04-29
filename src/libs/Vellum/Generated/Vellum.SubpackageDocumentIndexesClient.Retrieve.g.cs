@@ -133,7 +133,7 @@ namespace Vellum
                 PrepareRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     maskIndexingConfig: maskIndexingConfig);
 
                 return __httpRequest;

@@ -130,8 +130,8 @@ namespace Vellum
                 PrepareRetrievePromptDeploymentReleaseRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    releaseIdOrReleaseTag: releaseIdOrReleaseTag);
+                    id: id!,
+                    releaseIdOrReleaseTag: releaseIdOrReleaseTag!);
 
                 return __httpRequest;
             }

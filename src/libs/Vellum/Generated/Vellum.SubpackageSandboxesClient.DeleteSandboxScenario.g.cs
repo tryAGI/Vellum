@@ -130,8 +130,8 @@ namespace Vellum
                 PrepareDeleteSandboxScenarioRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    scenarioId: scenarioId);
+                    id: id!,
+                    scenarioId: scenarioId!);
 
                 return __httpRequest;
             }

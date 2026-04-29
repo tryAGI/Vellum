@@ -139,7 +139,7 @@ namespace Vellum
                 PrepareListTestSuiteTestCasesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     limit: limit,
                     offset: offset);
 

@@ -150,7 +150,7 @@ namespace Vellum
                 PrepareListWorkflowDeploymentEventExecutionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     filters: filters,
                     limit: limit,
                     offset: offset,

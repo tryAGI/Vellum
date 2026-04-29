@@ -129,8 +129,8 @@ namespace Vellum
                 PrepareWorkflowDeploymentEventExecutionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    executionId: executionId,
-                    id: id);
+                    executionId: executionId!,
+                    id: id!);
 
                 return __httpRequest;
             }

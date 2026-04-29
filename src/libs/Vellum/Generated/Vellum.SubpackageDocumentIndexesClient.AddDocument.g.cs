@@ -130,8 +130,8 @@ namespace Vellum
                 PrepareAddDocumentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    documentId: documentId,
-                    id: id);
+                    documentId: documentId!,
+                    id: id!);
 
                 return __httpRequest;
             }

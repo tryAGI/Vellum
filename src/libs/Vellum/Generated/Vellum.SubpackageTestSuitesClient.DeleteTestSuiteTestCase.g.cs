@@ -130,8 +130,8 @@ namespace Vellum
                 PrepareDeleteTestSuiteTestCaseRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    testCaseId: testCaseId);
+                    id: id!,
+                    testCaseId: testCaseId!);
 
                 return __httpRequest;
             }

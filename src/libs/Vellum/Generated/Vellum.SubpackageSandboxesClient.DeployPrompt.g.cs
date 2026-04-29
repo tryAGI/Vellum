@@ -143,8 +143,8 @@ namespace Vellum
                 PrepareDeployPromptRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
-                    promptVariantId: promptVariantId,
+                    id: id!,
+                    promptVariantId: promptVariantId!,
                     request: request);
 
                 return __httpRequest;
