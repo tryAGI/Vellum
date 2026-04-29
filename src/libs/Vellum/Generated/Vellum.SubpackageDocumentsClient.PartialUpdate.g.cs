@@ -124,20 +124,20 @@ namespace Vellum
             }
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{id}"),
+                                content: new global::System.Net.Http.StringContent(id ?? string.Empty),
                                 name: "\"id\"");
                             if (request.Label != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Label}"),
+                                    content: new global::System.Net.Http.StringContent(request.Label ?? string.Empty),
                                     name: "\"label\"");
                             } 
                             if (request.Status != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Status?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((request.Status).HasValue ? (request.Status).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"status\"");
                             } 
                             if (request.Keywords != default)
@@ -151,7 +151,7 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Metadata}"),
+                                    content: new global::System.Net.Http.StringContent(request.Metadata.ToString() ?? string.Empty),
                                     name: "\"metadata\"");
                             }
                             __httpRequest.Content = __httpRequestContent;
@@ -166,7 +166,7 @@ namespace Vellum
                 PreparePartialUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     request: request);
 
                 return __httpRequest;

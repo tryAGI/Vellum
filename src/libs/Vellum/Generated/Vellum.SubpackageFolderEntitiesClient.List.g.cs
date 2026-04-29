@@ -156,7 +156,7 @@ namespace Vellum
                     limit: limit,
                     offset: offset,
                     ordering: ordering,
-                    parentFolderId: parentFolderId);
+                    parentFolderId: parentFolderId!);
 
                 return __httpRequest;
             }

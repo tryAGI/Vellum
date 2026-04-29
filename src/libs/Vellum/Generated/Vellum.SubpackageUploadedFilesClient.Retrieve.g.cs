@@ -133,7 +133,7 @@ namespace Vellum
                 PrepareRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     expirySeconds: expirySeconds);
 
                 return __httpRequest;

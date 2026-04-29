@@ -126,7 +126,7 @@ namespace Vellum
                 PrepareWorkflowExecutionStatusRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    executionId: executionId);
+                    executionId: executionId!);
 
                 return __httpRequest;
             }

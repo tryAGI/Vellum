@@ -140,7 +140,7 @@ namespace Vellum
                 PrepareAddEntityToFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
+                    folderId: folderId!,
                     request: request);
 
                 return __httpRequest;

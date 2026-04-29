@@ -145,7 +145,7 @@ namespace Vellum
                 PrepareListWorkflowDeploymentReleasesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    id: id,
+                    id: id!,
                     limit: limit,
                     offset: offset,
                     ordering: ordering);

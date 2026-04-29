@@ -131,8 +131,8 @@ namespace Vellum
                 PrepareDeploymentHistoryItemRetrieveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    historyIdOrReleaseTag: historyIdOrReleaseTag,
-                    id: id);
+                    historyIdOrReleaseTag: historyIdOrReleaseTag!,
+                    id: id!);
 
                 return __httpRequest;
             }
