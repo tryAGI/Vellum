@@ -21,6 +21,19 @@ namespace Vellum
         /// Search<br/>
         /// Perform a search against a document index.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vellum.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.SearchResponse>> SearchAsResponseAsync(
+
+            global::Vellum.SearchRequestBodyRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Search<br/>
+        /// Perform a search against a document index.
+        /// </summary>
         /// <param name="indexId">
         /// The ID of the index to search against. Must provide either this, index_name or document_index.
         /// </param>

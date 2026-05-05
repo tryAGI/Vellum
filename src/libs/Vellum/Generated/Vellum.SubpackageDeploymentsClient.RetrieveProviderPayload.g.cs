@@ -62,6 +62,36 @@ namespace Vellum
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await RetrieveProviderPayloadAsResponseAsync(
+
+                request: request,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// Retrieve Provider Payload<br/>
+        /// Given a set of input variable values, compile the exact payload that Vellum would send to the configured model provider<br/>
+        /// for execution if the execute-prompt endpoint had been invoked. Note that this endpoint does not actually execute the<br/>
+        /// prompt or make an API call to the model provider.<br/>
+        /// This endpoint is useful if you don't want to proxy LLM provider requests through Vellum and prefer to send them directly<br/>
+        /// to the provider yourself. Note that no guarantees are made on the format of this API's response schema, other than<br/>
+        /// that it will be a valid payload for the configured model provider. It's not recommended that you try to parse or<br/>
+        /// derive meaning from the response body and instead, should simply pass it directly to the model provider as is.<br/>
+        /// We encourage you to seek advise from Vellum Support before integrating with this API for production use.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vellum.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.DeploymentProviderPayloadResponse>> RetrieveProviderPayloadAsResponseAsync(
+
+            global::Vellum.DeploymentProviderPayloadRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
             PrepareArguments(
@@ -92,6 +122,7 @@ namespace Vellum
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: "/v1/deployments/provider-payload",
                                 baseUri: HttpClient.BaseAddress);
@@ -171,6 +202,8 @@ namespace Vellum
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -181,6 +214,11 @@ namespace Vellum
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Vellum.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Vellum.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -198,6 +236,8 @@ namespace Vellum
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -207,8 +247,7 @@ namespace Vellum
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vellum.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -217,6 +256,11 @@ namespace Vellum
                         __attempt < __maxAttempts &&
                         global::Vellum.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Vellum.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Vellum.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vellum.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -233,14 +277,15 @@ namespace Vellum
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Vellum.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -280,6 +325,8 @@ namespace Vellum
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -300,6 +347,8 @@ namespace Vellum
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // 
@@ -476,9 +525,13 @@ namespace Vellum
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Vellum.DeploymentProviderPayloadResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vellum.DeploymentProviderPayloadResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Vellum.AutoSDKHttpResponse<global::Vellum.DeploymentProviderPayloadResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vellum.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -506,9 +559,13 @@ namespace Vellum
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Vellum.DeploymentProviderPayloadResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vellum.DeploymentProviderPayloadResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Vellum.AutoSDKHttpResponse<global::Vellum.DeploymentProviderPayloadResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Vellum.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
