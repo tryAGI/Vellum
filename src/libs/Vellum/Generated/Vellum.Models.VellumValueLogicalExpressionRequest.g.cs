@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsVellumValueLogicalConditionRequest => VellumValueLogicalConditionRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVellumValueLogicalConditionRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.VellumValueLogicalConditionRequest? value)
+        {
+            value = VellumValueLogicalConditionRequest;
+            return IsVellumValueLogicalConditionRequest;
+        }
+
+        /// <summary>
         /// A higher-order condition that combines one or more basic conditions or other higher-order conditions.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumValueLogicalConditionGroupRequest))]
 #endif
         public bool IsVellumValueLogicalConditionGroupRequest => VellumValueLogicalConditionGroupRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVellumValueLogicalConditionGroupRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.VellumValueLogicalConditionGroupRequest? value)
+        {
+            value = VellumValueLogicalConditionGroupRequest;
+            return IsVellumValueLogicalConditionGroupRequest;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.VellumValueLogicalConditionRequest?, TResult>? vellumValueLogicalConditionRequest = null,
-            global::System.Func<global::Vellum.VellumValueLogicalConditionGroupRequest?, TResult>? vellumValueLogicalConditionGroupRequest = null,
+            global::System.Func<global::Vellum.VellumValueLogicalConditionRequest, TResult>? vellumValueLogicalConditionRequest = null,
+            global::System.Func<global::Vellum.VellumValueLogicalConditionGroupRequest, TResult>? vellumValueLogicalConditionGroupRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.VellumValueLogicalConditionRequest?>? vellumValueLogicalConditionRequest = null,
-            global::System.Action<global::Vellum.VellumValueLogicalConditionGroupRequest?>? vellumValueLogicalConditionGroupRequest = null,
+            global::System.Action<global::Vellum.VellumValueLogicalConditionRequest>? vellumValueLogicalConditionRequest = null,
+
+            global::System.Action<global::Vellum.VellumValueLogicalConditionGroupRequest>? vellumValueLogicalConditionGroupRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsVellumValueLogicalConditionRequest)
+            {
+                vellumValueLogicalConditionRequest?.Invoke(VellumValueLogicalConditionRequest!);
+            }
+            else if (IsVellumValueLogicalConditionGroupRequest)
+            {
+                vellumValueLogicalConditionGroupRequest?.Invoke(VellumValueLogicalConditionGroupRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.VellumValueLogicalConditionRequest>? vellumValueLogicalConditionRequest = null,
+            global::System.Action<global::Vellum.VellumValueLogicalConditionGroupRequest>? vellumValueLogicalConditionGroupRequest = null,
             bool validate = true)
         {
             if (validate)

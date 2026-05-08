@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledStringValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledStringValue? value)
+        {
+            value = NodeInputCompiledStringValue;
+            return IsNodeInputCompiledStringValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledNumberValue? NodeInputCompiledNumberValue { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeInputCompiledNumberValue))]
 #endif
         public bool IsNodeInputCompiledNumberValue => NodeInputCompiledNumberValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeInputCompiledNumberValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledNumberValue? value)
+        {
+            value = NodeInputCompiledNumberValue;
+            return IsNodeInputCompiledNumberValue;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledJsonValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledJsonValue? value)
+        {
+            value = NodeInputCompiledJsonValue;
+            return IsNodeInputCompiledJsonValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledChatHistoryValue? NodeInputCompiledChatHistoryValue { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeInputCompiledChatHistoryValue))]
 #endif
         public bool IsNodeInputCompiledChatHistoryValue => NodeInputCompiledChatHistoryValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeInputCompiledChatHistoryValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledChatHistoryValue? value)
+        {
+            value = NodeInputCompiledChatHistoryValue;
+            return IsNodeInputCompiledChatHistoryValue;
+        }
 
         /// <summary>
         /// 
@@ -97,6 +149,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledSearchResultsValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledSearchResultsValue? value)
+        {
+            value = NodeInputCompiledSearchResultsValue;
+            return IsNodeInputCompiledSearchResultsValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledErrorValue? NodeInputCompiledErrorValue { get; init; }
 #else
@@ -110,6 +175,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeInputCompiledErrorValue))]
 #endif
         public bool IsNodeInputCompiledErrorValue => NodeInputCompiledErrorValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeInputCompiledErrorValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledErrorValue? value)
+        {
+            value = NodeInputCompiledErrorValue;
+            return IsNodeInputCompiledErrorValue;
+        }
 
         /// <summary>
         /// 
@@ -131,6 +209,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledArrayValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledArrayValue? value)
+        {
+            value = NodeInputCompiledArrayValue;
+            return IsNodeInputCompiledArrayValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledFunctionCallValue? NodeInputCompiledFunctionCallValue { get; init; }
 #else
@@ -144,6 +235,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeInputCompiledFunctionCallValue))]
 #endif
         public bool IsNodeInputCompiledFunctionCallValue => NodeInputCompiledFunctionCallValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeInputCompiledFunctionCallValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledFunctionCallValue? value)
+        {
+            value = NodeInputCompiledFunctionCallValue;
+            return IsNodeInputCompiledFunctionCallValue;
+        }
 
         /// <summary>
         /// 
@@ -165,6 +269,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledSecretValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledSecretValue? value)
+        {
+            value = NodeInputCompiledSecretValue;
+            return IsNodeInputCompiledSecretValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledAudioValue? NodeInputCompiledAudioValue { get; init; }
 #else
@@ -178,6 +295,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeInputCompiledAudioValue))]
 #endif
         public bool IsNodeInputCompiledAudioValue => NodeInputCompiledAudioValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeInputCompiledAudioValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledAudioValue? value)
+        {
+            value = NodeInputCompiledAudioValue;
+            return IsNodeInputCompiledAudioValue;
+        }
 
         /// <summary>
         /// 
@@ -199,6 +329,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledVideoValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledVideoValue? value)
+        {
+            value = NodeInputCompiledVideoValue;
+            return IsNodeInputCompiledVideoValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledImageValue? NodeInputCompiledImageValue { get; init; }
 #else
@@ -216,6 +359,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNodeInputCompiledImageValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledImageValue? value)
+        {
+            value = NodeInputCompiledImageValue;
+            return IsNodeInputCompiledImageValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeInputCompiledDocumentValue? NodeInputCompiledDocumentValue { get; init; }
 #else
@@ -229,6 +385,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeInputCompiledDocumentValue))]
 #endif
         public bool IsNodeInputCompiledDocumentValue => NodeInputCompiledDocumentValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeInputCompiledDocumentValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeInputCompiledDocumentValue? value)
+        {
+            value = NodeInputCompiledDocumentValue;
+            return IsNodeInputCompiledDocumentValue;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -547,19 +716,19 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.NodeInputCompiledStringValue?, TResult>? nodeInputCompiledStringValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledNumberValue?, TResult>? nodeInputCompiledNumberValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledJsonValue?, TResult>? nodeInputCompiledJsonValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledChatHistoryValue?, TResult>? nodeInputCompiledChatHistoryValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledSearchResultsValue?, TResult>? nodeInputCompiledSearchResultsValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledErrorValue?, TResult>? nodeInputCompiledErrorValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledArrayValue?, TResult>? nodeInputCompiledArrayValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledFunctionCallValue?, TResult>? nodeInputCompiledFunctionCallValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledSecretValue?, TResult>? nodeInputCompiledSecretValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledAudioValue?, TResult>? nodeInputCompiledAudioValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledVideoValue?, TResult>? nodeInputCompiledVideoValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledImageValue?, TResult>? nodeInputCompiledImageValue = null,
-            global::System.Func<global::Vellum.NodeInputCompiledDocumentValue?, TResult>? nodeInputCompiledDocumentValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledStringValue, TResult>? nodeInputCompiledStringValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledNumberValue, TResult>? nodeInputCompiledNumberValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledJsonValue, TResult>? nodeInputCompiledJsonValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledChatHistoryValue, TResult>? nodeInputCompiledChatHistoryValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledSearchResultsValue, TResult>? nodeInputCompiledSearchResultsValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledErrorValue, TResult>? nodeInputCompiledErrorValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledArrayValue, TResult>? nodeInputCompiledArrayValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledFunctionCallValue, TResult>? nodeInputCompiledFunctionCallValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledSecretValue, TResult>? nodeInputCompiledSecretValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledAudioValue, TResult>? nodeInputCompiledAudioValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledVideoValue, TResult>? nodeInputCompiledVideoValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledImageValue, TResult>? nodeInputCompiledImageValue = null,
+            global::System.Func<global::Vellum.NodeInputCompiledDocumentValue, TResult>? nodeInputCompiledDocumentValue = null,
             bool validate = true)
         {
             if (validate)
@@ -627,19 +796,109 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.NodeInputCompiledStringValue?>? nodeInputCompiledStringValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledNumberValue?>? nodeInputCompiledNumberValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledJsonValue?>? nodeInputCompiledJsonValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledChatHistoryValue?>? nodeInputCompiledChatHistoryValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledSearchResultsValue?>? nodeInputCompiledSearchResultsValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledErrorValue?>? nodeInputCompiledErrorValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledArrayValue?>? nodeInputCompiledArrayValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledFunctionCallValue?>? nodeInputCompiledFunctionCallValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledSecretValue?>? nodeInputCompiledSecretValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledAudioValue?>? nodeInputCompiledAudioValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledVideoValue?>? nodeInputCompiledVideoValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledImageValue?>? nodeInputCompiledImageValue = null,
-            global::System.Action<global::Vellum.NodeInputCompiledDocumentValue?>? nodeInputCompiledDocumentValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledStringValue>? nodeInputCompiledStringValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledNumberValue>? nodeInputCompiledNumberValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledJsonValue>? nodeInputCompiledJsonValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledChatHistoryValue>? nodeInputCompiledChatHistoryValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledSearchResultsValue>? nodeInputCompiledSearchResultsValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledErrorValue>? nodeInputCompiledErrorValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledArrayValue>? nodeInputCompiledArrayValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledFunctionCallValue>? nodeInputCompiledFunctionCallValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledSecretValue>? nodeInputCompiledSecretValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledAudioValue>? nodeInputCompiledAudioValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledVideoValue>? nodeInputCompiledVideoValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledImageValue>? nodeInputCompiledImageValue = null,
+
+            global::System.Action<global::Vellum.NodeInputCompiledDocumentValue>? nodeInputCompiledDocumentValue = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsNodeInputCompiledStringValue)
+            {
+                nodeInputCompiledStringValue?.Invoke(NodeInputCompiledStringValue!);
+            }
+            else if (IsNodeInputCompiledNumberValue)
+            {
+                nodeInputCompiledNumberValue?.Invoke(NodeInputCompiledNumberValue!);
+            }
+            else if (IsNodeInputCompiledJsonValue)
+            {
+                nodeInputCompiledJsonValue?.Invoke(NodeInputCompiledJsonValue!);
+            }
+            else if (IsNodeInputCompiledChatHistoryValue)
+            {
+                nodeInputCompiledChatHistoryValue?.Invoke(NodeInputCompiledChatHistoryValue!);
+            }
+            else if (IsNodeInputCompiledSearchResultsValue)
+            {
+                nodeInputCompiledSearchResultsValue?.Invoke(NodeInputCompiledSearchResultsValue!);
+            }
+            else if (IsNodeInputCompiledErrorValue)
+            {
+                nodeInputCompiledErrorValue?.Invoke(NodeInputCompiledErrorValue!);
+            }
+            else if (IsNodeInputCompiledArrayValue)
+            {
+                nodeInputCompiledArrayValue?.Invoke(NodeInputCompiledArrayValue!);
+            }
+            else if (IsNodeInputCompiledFunctionCallValue)
+            {
+                nodeInputCompiledFunctionCallValue?.Invoke(NodeInputCompiledFunctionCallValue!);
+            }
+            else if (IsNodeInputCompiledSecretValue)
+            {
+                nodeInputCompiledSecretValue?.Invoke(NodeInputCompiledSecretValue!);
+            }
+            else if (IsNodeInputCompiledAudioValue)
+            {
+                nodeInputCompiledAudioValue?.Invoke(NodeInputCompiledAudioValue!);
+            }
+            else if (IsNodeInputCompiledVideoValue)
+            {
+                nodeInputCompiledVideoValue?.Invoke(NodeInputCompiledVideoValue!);
+            }
+            else if (IsNodeInputCompiledImageValue)
+            {
+                nodeInputCompiledImageValue?.Invoke(NodeInputCompiledImageValue!);
+            }
+            else if (IsNodeInputCompiledDocumentValue)
+            {
+                nodeInputCompiledDocumentValue?.Invoke(NodeInputCompiledDocumentValue!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.NodeInputCompiledStringValue>? nodeInputCompiledStringValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledNumberValue>? nodeInputCompiledNumberValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledJsonValue>? nodeInputCompiledJsonValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledChatHistoryValue>? nodeInputCompiledChatHistoryValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledSearchResultsValue>? nodeInputCompiledSearchResultsValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledErrorValue>? nodeInputCompiledErrorValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledArrayValue>? nodeInputCompiledArrayValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledFunctionCallValue>? nodeInputCompiledFunctionCallValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledSecretValue>? nodeInputCompiledSecretValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledAudioValue>? nodeInputCompiledAudioValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledVideoValue>? nodeInputCompiledVideoValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledImageValue>? nodeInputCompiledImageValue = null,
+            global::System.Action<global::Vellum.NodeInputCompiledDocumentValue>? nodeInputCompiledDocumentValue = null,
             bool validate = true)
         {
             if (validate)

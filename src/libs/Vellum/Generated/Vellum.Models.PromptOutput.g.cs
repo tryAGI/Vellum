@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsStringVellumValue => StringVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStringVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.StringVellumValue? value)
+        {
+            value = StringVellumValue;
+            return IsStringVellumValue;
+        }
+
+        /// <summary>
         /// A value representing a JSON object.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVellumValue))]
 #endif
         public bool IsJsonVellumValue => JsonVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJsonVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.JsonVellumValue? value)
+        {
+            value = JsonVellumValue;
+            return IsJsonVellumValue;
+        }
 
         /// <summary>
         /// A value representing an Error.
@@ -61,6 +87,19 @@ namespace Vellum
         public bool IsErrorVellumValue => ErrorVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickErrorVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ErrorVellumValue? value)
+        {
+            value = ErrorVellumValue;
+            return IsErrorVellumValue;
+        }
+
+        /// <summary>
         /// A value representing a Function Call.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -78,6 +117,19 @@ namespace Vellum
         public bool IsFunctionCallVellumValue => FunctionCallVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFunctionCallVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.FunctionCallVellumValue? value)
+        {
+            value = FunctionCallVellumValue;
+            return IsFunctionCallVellumValue;
+        }
+
+        /// <summary>
         /// A value representing Thinking mode output.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -93,6 +145,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkingVellumValue))]
 #endif
         public bool IsThinkingVellumValue => ThinkingVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickThinkingVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ThinkingVellumValue? value)
+        {
+            value = ThinkingVellumValue;
+            return IsThinkingVellumValue;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -235,11 +300,11 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.StringVellumValue?, TResult>? stringVellumValue = null,
-            global::System.Func<global::Vellum.JsonVellumValue?, TResult>? jsonVellumValue = null,
-            global::System.Func<global::Vellum.ErrorVellumValue?, TResult>? errorVellumValue = null,
-            global::System.Func<global::Vellum.FunctionCallVellumValue?, TResult>? functionCallVellumValue = null,
-            global::System.Func<global::Vellum.ThinkingVellumValue?, TResult>? thinkingVellumValue = null,
+            global::System.Func<global::Vellum.StringVellumValue, TResult>? stringVellumValue = null,
+            global::System.Func<global::Vellum.JsonVellumValue, TResult>? jsonVellumValue = null,
+            global::System.Func<global::Vellum.ErrorVellumValue, TResult>? errorVellumValue = null,
+            global::System.Func<global::Vellum.FunctionCallVellumValue, TResult>? functionCallVellumValue = null,
+            global::System.Func<global::Vellum.ThinkingVellumValue, TResult>? thinkingVellumValue = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +340,53 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.StringVellumValue?>? stringVellumValue = null,
-            global::System.Action<global::Vellum.JsonVellumValue?>? jsonVellumValue = null,
-            global::System.Action<global::Vellum.ErrorVellumValue?>? errorVellumValue = null,
-            global::System.Action<global::Vellum.FunctionCallVellumValue?>? functionCallVellumValue = null,
-            global::System.Action<global::Vellum.ThinkingVellumValue?>? thinkingVellumValue = null,
+            global::System.Action<global::Vellum.StringVellumValue>? stringVellumValue = null,
+
+            global::System.Action<global::Vellum.JsonVellumValue>? jsonVellumValue = null,
+
+            global::System.Action<global::Vellum.ErrorVellumValue>? errorVellumValue = null,
+
+            global::System.Action<global::Vellum.FunctionCallVellumValue>? functionCallVellumValue = null,
+
+            global::System.Action<global::Vellum.ThinkingVellumValue>? thinkingVellumValue = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStringVellumValue)
+            {
+                stringVellumValue?.Invoke(StringVellumValue!);
+            }
+            else if (IsJsonVellumValue)
+            {
+                jsonVellumValue?.Invoke(JsonVellumValue!);
+            }
+            else if (IsErrorVellumValue)
+            {
+                errorVellumValue?.Invoke(ErrorVellumValue!);
+            }
+            else if (IsFunctionCallVellumValue)
+            {
+                functionCallVellumValue?.Invoke(FunctionCallVellumValue!);
+            }
+            else if (IsThinkingVellumValue)
+            {
+                thinkingVellumValue?.Invoke(ThinkingVellumValue!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.StringVellumValue>? stringVellumValue = null,
+            global::System.Action<global::Vellum.JsonVellumValue>? jsonVellumValue = null,
+            global::System.Action<global::Vellum.ErrorVellumValue>? errorVellumValue = null,
+            global::System.Action<global::Vellum.FunctionCallVellumValue>? functionCallVellumValue = null,
+            global::System.Action<global::Vellum.ThinkingVellumValue>? thinkingVellumValue = null,
             bool validate = true)
         {
             if (validate)

@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsWorkflowOutputString => WorkflowOutputString != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputString(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputString? value)
+        {
+            value = WorkflowOutputString;
+            return IsWorkflowOutputString;
+        }
+
+        /// <summary>
         /// A number output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowOutputNumber))]
 #endif
         public bool IsWorkflowOutputNumber => WorkflowOutputNumber != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputNumber(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputNumber? value)
+        {
+            value = WorkflowOutputNumber;
+            return IsWorkflowOutputNumber;
+        }
 
         /// <summary>
         /// A JSON output from a Workflow execution.
@@ -61,6 +87,19 @@ namespace Vellum
         public bool IsWorkflowOutputJSON => WorkflowOutputJSON != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputJSON(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputJSON? value)
+        {
+            value = WorkflowOutputJSON;
+            return IsWorkflowOutputJSON;
+        }
+
+        /// <summary>
         /// A chat history output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowOutputChatHistory))]
 #endif
         public bool IsWorkflowOutputChatHistory => WorkflowOutputChatHistory != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputChatHistory(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputChatHistory? value)
+        {
+            value = WorkflowOutputChatHistory;
+            return IsWorkflowOutputChatHistory;
+        }
 
         /// <summary>
         /// A search results output from a Workflow execution.
@@ -95,6 +147,19 @@ namespace Vellum
         public bool IsWorkflowOutputSearchResults => WorkflowOutputSearchResults != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputSearchResults(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputSearchResults? value)
+        {
+            value = WorkflowOutputSearchResults;
+            return IsWorkflowOutputSearchResults;
+        }
+
+        /// <summary>
         /// An array output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +175,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowOutputArray))]
 #endif
         public bool IsWorkflowOutputArray => WorkflowOutputArray != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputArray(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputArray? value)
+        {
+            value = WorkflowOutputArray;
+            return IsWorkflowOutputArray;
+        }
 
         /// <summary>
         /// An error output from a Workflow execution.
@@ -129,6 +207,19 @@ namespace Vellum
         public bool IsWorkflowOutputError => WorkflowOutputError != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputError? value)
+        {
+            value = WorkflowOutputError;
+            return IsWorkflowOutputError;
+        }
+
+        /// <summary>
         /// A function call output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -144,6 +235,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowOutputFunctionCall))]
 #endif
         public bool IsWorkflowOutputFunctionCall => WorkflowOutputFunctionCall != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputFunctionCall(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputFunctionCall? value)
+        {
+            value = WorkflowOutputFunctionCall;
+            return IsWorkflowOutputFunctionCall;
+        }
 
         /// <summary>
         /// An image output from a Workflow execution.
@@ -163,6 +267,19 @@ namespace Vellum
         public bool IsWorkflowOutputImage => WorkflowOutputImage != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputImage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputImage? value)
+        {
+            value = WorkflowOutputImage;
+            return IsWorkflowOutputImage;
+        }
+
+        /// <summary>
         /// An audio output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -178,6 +295,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowOutputAudio))]
 #endif
         public bool IsWorkflowOutputAudio => WorkflowOutputAudio != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputAudio(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputAudio? value)
+        {
+            value = WorkflowOutputAudio;
+            return IsWorkflowOutputAudio;
+        }
 
         /// <summary>
         /// A video output from a Workflow execution.
@@ -197,6 +327,19 @@ namespace Vellum
         public bool IsWorkflowOutputVideo => WorkflowOutputVideo != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputVideo(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputVideo? value)
+        {
+            value = WorkflowOutputVideo;
+            return IsWorkflowOutputVideo;
+        }
+
+        /// <summary>
         /// A document output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -212,6 +355,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowOutputDocument))]
 #endif
         public bool IsWorkflowOutputDocument => WorkflowOutputDocument != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowOutputDocument(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowOutputDocument? value)
+        {
+            value = WorkflowOutputDocument;
+            return IsWorkflowOutputDocument;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -508,18 +664,18 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowOutputString?, TResult>? workflowOutputString = null,
-            global::System.Func<global::Vellum.WorkflowOutputNumber?, TResult>? workflowOutputNumber = null,
-            global::System.Func<global::Vellum.WorkflowOutputJSON?, TResult>? workflowOutputJSON = null,
-            global::System.Func<global::Vellum.WorkflowOutputChatHistory?, TResult>? workflowOutputChatHistory = null,
-            global::System.Func<global::Vellum.WorkflowOutputSearchResults?, TResult>? workflowOutputSearchResults = null,
-            global::System.Func<global::Vellum.WorkflowOutputArray?, TResult>? workflowOutputArray = null,
-            global::System.Func<global::Vellum.WorkflowOutputError?, TResult>? workflowOutputError = null,
-            global::System.Func<global::Vellum.WorkflowOutputFunctionCall?, TResult>? workflowOutputFunctionCall = null,
-            global::System.Func<global::Vellum.WorkflowOutputImage?, TResult>? workflowOutputImage = null,
-            global::System.Func<global::Vellum.WorkflowOutputAudio?, TResult>? workflowOutputAudio = null,
-            global::System.Func<global::Vellum.WorkflowOutputVideo?, TResult>? workflowOutputVideo = null,
-            global::System.Func<global::Vellum.WorkflowOutputDocument?, TResult>? workflowOutputDocument = null,
+            global::System.Func<global::Vellum.WorkflowOutputString, TResult>? workflowOutputString = null,
+            global::System.Func<global::Vellum.WorkflowOutputNumber, TResult>? workflowOutputNumber = null,
+            global::System.Func<global::Vellum.WorkflowOutputJSON, TResult>? workflowOutputJSON = null,
+            global::System.Func<global::Vellum.WorkflowOutputChatHistory, TResult>? workflowOutputChatHistory = null,
+            global::System.Func<global::Vellum.WorkflowOutputSearchResults, TResult>? workflowOutputSearchResults = null,
+            global::System.Func<global::Vellum.WorkflowOutputArray, TResult>? workflowOutputArray = null,
+            global::System.Func<global::Vellum.WorkflowOutputError, TResult>? workflowOutputError = null,
+            global::System.Func<global::Vellum.WorkflowOutputFunctionCall, TResult>? workflowOutputFunctionCall = null,
+            global::System.Func<global::Vellum.WorkflowOutputImage, TResult>? workflowOutputImage = null,
+            global::System.Func<global::Vellum.WorkflowOutputAudio, TResult>? workflowOutputAudio = null,
+            global::System.Func<global::Vellum.WorkflowOutputVideo, TResult>? workflowOutputVideo = null,
+            global::System.Func<global::Vellum.WorkflowOutputDocument, TResult>? workflowOutputDocument = null,
             bool validate = true)
         {
             if (validate)
@@ -583,18 +739,102 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowOutputString?>? workflowOutputString = null,
-            global::System.Action<global::Vellum.WorkflowOutputNumber?>? workflowOutputNumber = null,
-            global::System.Action<global::Vellum.WorkflowOutputJSON?>? workflowOutputJSON = null,
-            global::System.Action<global::Vellum.WorkflowOutputChatHistory?>? workflowOutputChatHistory = null,
-            global::System.Action<global::Vellum.WorkflowOutputSearchResults?>? workflowOutputSearchResults = null,
-            global::System.Action<global::Vellum.WorkflowOutputArray?>? workflowOutputArray = null,
-            global::System.Action<global::Vellum.WorkflowOutputError?>? workflowOutputError = null,
-            global::System.Action<global::Vellum.WorkflowOutputFunctionCall?>? workflowOutputFunctionCall = null,
-            global::System.Action<global::Vellum.WorkflowOutputImage?>? workflowOutputImage = null,
-            global::System.Action<global::Vellum.WorkflowOutputAudio?>? workflowOutputAudio = null,
-            global::System.Action<global::Vellum.WorkflowOutputVideo?>? workflowOutputVideo = null,
-            global::System.Action<global::Vellum.WorkflowOutputDocument?>? workflowOutputDocument = null,
+            global::System.Action<global::Vellum.WorkflowOutputString>? workflowOutputString = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputNumber>? workflowOutputNumber = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputJSON>? workflowOutputJSON = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputChatHistory>? workflowOutputChatHistory = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputSearchResults>? workflowOutputSearchResults = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputArray>? workflowOutputArray = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputError>? workflowOutputError = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputFunctionCall>? workflowOutputFunctionCall = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputImage>? workflowOutputImage = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputAudio>? workflowOutputAudio = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputVideo>? workflowOutputVideo = null,
+
+            global::System.Action<global::Vellum.WorkflowOutputDocument>? workflowOutputDocument = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowOutputString)
+            {
+                workflowOutputString?.Invoke(WorkflowOutputString!);
+            }
+            else if (IsWorkflowOutputNumber)
+            {
+                workflowOutputNumber?.Invoke(WorkflowOutputNumber!);
+            }
+            else if (IsWorkflowOutputJSON)
+            {
+                workflowOutputJSON?.Invoke(WorkflowOutputJSON!);
+            }
+            else if (IsWorkflowOutputChatHistory)
+            {
+                workflowOutputChatHistory?.Invoke(WorkflowOutputChatHistory!);
+            }
+            else if (IsWorkflowOutputSearchResults)
+            {
+                workflowOutputSearchResults?.Invoke(WorkflowOutputSearchResults!);
+            }
+            else if (IsWorkflowOutputArray)
+            {
+                workflowOutputArray?.Invoke(WorkflowOutputArray!);
+            }
+            else if (IsWorkflowOutputError)
+            {
+                workflowOutputError?.Invoke(WorkflowOutputError!);
+            }
+            else if (IsWorkflowOutputFunctionCall)
+            {
+                workflowOutputFunctionCall?.Invoke(WorkflowOutputFunctionCall!);
+            }
+            else if (IsWorkflowOutputImage)
+            {
+                workflowOutputImage?.Invoke(WorkflowOutputImage!);
+            }
+            else if (IsWorkflowOutputAudio)
+            {
+                workflowOutputAudio?.Invoke(WorkflowOutputAudio!);
+            }
+            else if (IsWorkflowOutputVideo)
+            {
+                workflowOutputVideo?.Invoke(WorkflowOutputVideo!);
+            }
+            else if (IsWorkflowOutputDocument)
+            {
+                workflowOutputDocument?.Invoke(WorkflowOutputDocument!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowOutputString>? workflowOutputString = null,
+            global::System.Action<global::Vellum.WorkflowOutputNumber>? workflowOutputNumber = null,
+            global::System.Action<global::Vellum.WorkflowOutputJSON>? workflowOutputJSON = null,
+            global::System.Action<global::Vellum.WorkflowOutputChatHistory>? workflowOutputChatHistory = null,
+            global::System.Action<global::Vellum.WorkflowOutputSearchResults>? workflowOutputSearchResults = null,
+            global::System.Action<global::Vellum.WorkflowOutputArray>? workflowOutputArray = null,
+            global::System.Action<global::Vellum.WorkflowOutputError>? workflowOutputError = null,
+            global::System.Action<global::Vellum.WorkflowOutputFunctionCall>? workflowOutputFunctionCall = null,
+            global::System.Action<global::Vellum.WorkflowOutputImage>? workflowOutputImage = null,
+            global::System.Action<global::Vellum.WorkflowOutputAudio>? workflowOutputAudio = null,
+            global::System.Action<global::Vellum.WorkflowOutputVideo>? workflowOutputVideo = null,
+            global::System.Action<global::Vellum.WorkflowOutputDocument>? workflowOutputDocument = null,
             bool validate = true)
         {
             if (validate)

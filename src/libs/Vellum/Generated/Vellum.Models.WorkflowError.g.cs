@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsWorkflowEventError => WorkflowEventError != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowEventError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowEventError? value)
+        {
+            value = WorkflowEventError;
+            return IsWorkflowEventError;
+        }
+
+        /// <summary>
         /// Workflow initialization error.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowInitializationError))]
 #endif
         public bool IsWorkflowInitializationError => WorkflowInitializationError != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowInitializationError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowInitializationError? value)
+        {
+            value = WorkflowInitializationError;
+            return IsWorkflowInitializationError;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowEventError?, TResult>? workflowEventError = null,
-            global::System.Func<global::Vellum.WorkflowInitializationError?, TResult>? workflowInitializationError = null,
+            global::System.Func<global::Vellum.WorkflowEventError, TResult>? workflowEventError = null,
+            global::System.Func<global::Vellum.WorkflowInitializationError, TResult>? workflowInitializationError = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowEventError?>? workflowEventError = null,
-            global::System.Action<global::Vellum.WorkflowInitializationError?>? workflowInitializationError = null,
+            global::System.Action<global::Vellum.WorkflowEventError>? workflowEventError = null,
+
+            global::System.Action<global::Vellum.WorkflowInitializationError>? workflowInitializationError = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowEventError)
+            {
+                workflowEventError?.Invoke(WorkflowEventError!);
+            }
+            else if (IsWorkflowInitializationError)
+            {
+                workflowInitializationError?.Invoke(WorkflowInitializationError!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowEventError>? workflowEventError = null,
+            global::System.Action<global::Vellum.WorkflowInitializationError>? workflowInitializationError = null,
             bool validate = true)
         {
             if (validate)

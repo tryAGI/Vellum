@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsTestSuiteTestCaseCreatedBulkResult => TestSuiteTestCaseCreatedBulkResult != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseCreatedBulkResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseCreatedBulkResult? value)
+        {
+            value = TestSuiteTestCaseCreatedBulkResult;
+            return IsTestSuiteTestCaseCreatedBulkResult;
+        }
+
+        /// <summary>
         /// The result of a bulk operation that replaced a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseReplacedBulkResult))]
 #endif
         public bool IsTestSuiteTestCaseReplacedBulkResult => TestSuiteTestCaseReplacedBulkResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseReplacedBulkResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseReplacedBulkResult? value)
+        {
+            value = TestSuiteTestCaseReplacedBulkResult;
+            return IsTestSuiteTestCaseReplacedBulkResult;
+        }
 
         /// <summary>
         /// The result of a bulk operation that deleted a Test Case.
@@ -61,6 +87,19 @@ namespace Vellum
         public bool IsTestSuiteTestCaseDeletedBulkResult => TestSuiteTestCaseDeletedBulkResult != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseDeletedBulkResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseDeletedBulkResult? value)
+        {
+            value = TestSuiteTestCaseDeletedBulkResult;
+            return IsTestSuiteTestCaseDeletedBulkResult;
+        }
+
+        /// <summary>
         /// The result of a bulk operation that failed to operate on a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseRejectedBulkResult))]
 #endif
         public bool IsTestSuiteTestCaseRejectedBulkResult => TestSuiteTestCaseRejectedBulkResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseRejectedBulkResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseRejectedBulkResult? value)
+        {
+            value = TestSuiteTestCaseRejectedBulkResult;
+            return IsTestSuiteTestCaseRejectedBulkResult;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -196,10 +248,10 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.TestSuiteTestCaseCreatedBulkResult?, TResult>? testSuiteTestCaseCreatedBulkResult = null,
-            global::System.Func<global::Vellum.TestSuiteTestCaseReplacedBulkResult?, TResult>? testSuiteTestCaseReplacedBulkResult = null,
-            global::System.Func<global::Vellum.TestSuiteTestCaseDeletedBulkResult?, TResult>? testSuiteTestCaseDeletedBulkResult = null,
-            global::System.Func<global::Vellum.TestSuiteTestCaseRejectedBulkResult?, TResult>? testSuiteTestCaseRejectedBulkResult = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseCreatedBulkResult, TResult>? testSuiteTestCaseCreatedBulkResult = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseReplacedBulkResult, TResult>? testSuiteTestCaseReplacedBulkResult = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseDeletedBulkResult, TResult>? testSuiteTestCaseDeletedBulkResult = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseRejectedBulkResult, TResult>? testSuiteTestCaseRejectedBulkResult = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +283,46 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.TestSuiteTestCaseCreatedBulkResult?>? testSuiteTestCaseCreatedBulkResult = null,
-            global::System.Action<global::Vellum.TestSuiteTestCaseReplacedBulkResult?>? testSuiteTestCaseReplacedBulkResult = null,
-            global::System.Action<global::Vellum.TestSuiteTestCaseDeletedBulkResult?>? testSuiteTestCaseDeletedBulkResult = null,
-            global::System.Action<global::Vellum.TestSuiteTestCaseRejectedBulkResult?>? testSuiteTestCaseRejectedBulkResult = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseCreatedBulkResult>? testSuiteTestCaseCreatedBulkResult = null,
+
+            global::System.Action<global::Vellum.TestSuiteTestCaseReplacedBulkResult>? testSuiteTestCaseReplacedBulkResult = null,
+
+            global::System.Action<global::Vellum.TestSuiteTestCaseDeletedBulkResult>? testSuiteTestCaseDeletedBulkResult = null,
+
+            global::System.Action<global::Vellum.TestSuiteTestCaseRejectedBulkResult>? testSuiteTestCaseRejectedBulkResult = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTestSuiteTestCaseCreatedBulkResult)
+            {
+                testSuiteTestCaseCreatedBulkResult?.Invoke(TestSuiteTestCaseCreatedBulkResult!);
+            }
+            else if (IsTestSuiteTestCaseReplacedBulkResult)
+            {
+                testSuiteTestCaseReplacedBulkResult?.Invoke(TestSuiteTestCaseReplacedBulkResult!);
+            }
+            else if (IsTestSuiteTestCaseDeletedBulkResult)
+            {
+                testSuiteTestCaseDeletedBulkResult?.Invoke(TestSuiteTestCaseDeletedBulkResult!);
+            }
+            else if (IsTestSuiteTestCaseRejectedBulkResult)
+            {
+                testSuiteTestCaseRejectedBulkResult?.Invoke(TestSuiteTestCaseRejectedBulkResult!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.TestSuiteTestCaseCreatedBulkResult>? testSuiteTestCaseCreatedBulkResult = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseReplacedBulkResult>? testSuiteTestCaseReplacedBulkResult = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseDeletedBulkResult>? testSuiteTestCaseDeletedBulkResult = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseRejectedBulkResult>? testSuiteTestCaseRejectedBulkResult = null,
             bool validate = true)
         {
             if (validate)
