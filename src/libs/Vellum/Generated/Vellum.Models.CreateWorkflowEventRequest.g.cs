@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCreateWorkflowEventRequest0(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>? value)
+        {
+            value = CreateWorkflowEventRequest0;
+            return IsCreateWorkflowEventRequest0;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowEvent? WorkflowEvent { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEvent))]
 #endif
         public bool IsWorkflowEvent => WorkflowEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowEvent? value)
+        {
+            value = WorkflowEvent;
+            return IsWorkflowEvent;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,7 +126,7 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>?, TResult>? createWorkflowEventRequest0 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>, TResult>? createWorkflowEventRequest0 = null,
             global::System.Func<global::Vellum.WorkflowEvent?, TResult>? workflowEvent = null,
             bool validate = true)
         {
@@ -125,7 +151,31 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>?>? createWorkflowEventRequest0 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>>? createWorkflowEventRequest0 = null,
+
+            global::System.Action<global::Vellum.WorkflowEvent?>? workflowEvent = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCreateWorkflowEventRequest0)
+            {
+                createWorkflowEventRequest0?.Invoke(CreateWorkflowEventRequest0!);
+            }
+            else if (IsWorkflowEvent)
+            {
+                workflowEvent?.Invoke(WorkflowEvent!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>>? createWorkflowEventRequest0 = null,
             global::System.Action<global::Vellum.WorkflowEvent?>? workflowEvent = null,
             bool validate = true)
         {

@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsWorkflowExecutionWorkflowResultEvent => WorkflowExecutionWorkflowResultEvent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowExecutionWorkflowResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowExecutionWorkflowResultEvent? value)
+        {
+            value = WorkflowExecutionWorkflowResultEvent;
+            return IsWorkflowExecutionWorkflowResultEvent;
+        }
+
+        /// <summary>
         /// A NODE-level event emitted from the workflow's execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionNodeResultEvent))]
 #endif
         public bool IsWorkflowExecutionNodeResultEvent => WorkflowExecutionNodeResultEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowExecutionNodeResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowExecutionNodeResultEvent? value)
+        {
+            value = WorkflowExecutionNodeResultEvent;
+            return IsWorkflowExecutionNodeResultEvent;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowExecutionWorkflowResultEvent?, TResult>? workflowExecutionWorkflowResultEvent = null,
-            global::System.Func<global::Vellum.WorkflowExecutionNodeResultEvent?, TResult>? workflowExecutionNodeResultEvent = null,
+            global::System.Func<global::Vellum.WorkflowExecutionWorkflowResultEvent, TResult>? workflowExecutionWorkflowResultEvent = null,
+            global::System.Func<global::Vellum.WorkflowExecutionNodeResultEvent, TResult>? workflowExecutionNodeResultEvent = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowExecutionWorkflowResultEvent?>? workflowExecutionWorkflowResultEvent = null,
-            global::System.Action<global::Vellum.WorkflowExecutionNodeResultEvent?>? workflowExecutionNodeResultEvent = null,
+            global::System.Action<global::Vellum.WorkflowExecutionWorkflowResultEvent>? workflowExecutionWorkflowResultEvent = null,
+
+            global::System.Action<global::Vellum.WorkflowExecutionNodeResultEvent>? workflowExecutionNodeResultEvent = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowExecutionWorkflowResultEvent)
+            {
+                workflowExecutionWorkflowResultEvent?.Invoke(WorkflowExecutionWorkflowResultEvent!);
+            }
+            else if (IsWorkflowExecutionNodeResultEvent)
+            {
+                workflowExecutionNodeResultEvent?.Invoke(WorkflowExecutionNodeResultEvent!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowExecutionWorkflowResultEvent>? workflowExecutionWorkflowResultEvent = null,
+            global::System.Action<global::Vellum.WorkflowExecutionNodeResultEvent>? workflowExecutionNodeResultEvent = null,
             bool validate = true)
         {
             if (validate)

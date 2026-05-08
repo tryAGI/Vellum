@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsStringInputRequest => StringInputRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStringInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.StringInputRequest? value)
+        {
+            value = StringInputRequest;
+            return IsStringInputRequest;
+        }
+
+        /// <summary>
         /// A user input representing a JSON object
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JSONInputRequest))]
 #endif
         public bool IsJSONInputRequest => JSONInputRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJSONInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.JSONInputRequest? value)
+        {
+            value = JSONInputRequest;
+            return IsJSONInputRequest;
+        }
 
         /// <summary>
         /// A user input representing a list of chat messages
@@ -61,6 +87,19 @@ namespace Vellum
         public bool IsChatHistoryInputRequest => ChatHistoryInputRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickChatHistoryInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ChatHistoryInputRequest? value)
+        {
+            value = ChatHistoryInputRequest;
+            return IsChatHistoryInputRequest;
+        }
+
+        /// <summary>
         /// A user input representing a Vellum Audio value
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AudioInputRequest))]
 #endif
         public bool IsAudioInputRequest => AudioInputRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAudioInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.AudioInputRequest? value)
+        {
+            value = AudioInputRequest;
+            return IsAudioInputRequest;
+        }
 
         /// <summary>
         /// A user input representing a Vellum Video value
@@ -95,6 +147,19 @@ namespace Vellum
         public bool IsVideoInputRequest => VideoInputRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVideoInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.VideoInputRequest? value)
+        {
+            value = VideoInputRequest;
+            return IsVideoInputRequest;
+        }
+
+        /// <summary>
         /// A user input representing a Vellum Image value
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -112,6 +177,19 @@ namespace Vellum
         public bool IsImageInputRequest => ImageInputRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickImageInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ImageInputRequest? value)
+        {
+            value = ImageInputRequest;
+            return IsImageInputRequest;
+        }
+
+        /// <summary>
         /// A user input representing a Vellum Document value
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -127,6 +205,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DocumentInputRequest))]
 #endif
         public bool IsDocumentInputRequest => DocumentInputRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDocumentInputRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.DocumentInputRequest? value)
+        {
+            value = DocumentInputRequest;
+            return IsDocumentInputRequest;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -313,13 +404,13 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.StringInputRequest?, TResult>? stringInputRequest = null,
-            global::System.Func<global::Vellum.JSONInputRequest?, TResult>? jSONInputRequest = null,
-            global::System.Func<global::Vellum.ChatHistoryInputRequest?, TResult>? chatHistoryInputRequest = null,
-            global::System.Func<global::Vellum.AudioInputRequest?, TResult>? audioInputRequest = null,
-            global::System.Func<global::Vellum.VideoInputRequest?, TResult>? videoInputRequest = null,
-            global::System.Func<global::Vellum.ImageInputRequest?, TResult>? imageInputRequest = null,
-            global::System.Func<global::Vellum.DocumentInputRequest?, TResult>? documentInputRequest = null,
+            global::System.Func<global::Vellum.StringInputRequest, TResult>? stringInputRequest = null,
+            global::System.Func<global::Vellum.JSONInputRequest, TResult>? jSONInputRequest = null,
+            global::System.Func<global::Vellum.ChatHistoryInputRequest, TResult>? chatHistoryInputRequest = null,
+            global::System.Func<global::Vellum.AudioInputRequest, TResult>? audioInputRequest = null,
+            global::System.Func<global::Vellum.VideoInputRequest, TResult>? videoInputRequest = null,
+            global::System.Func<global::Vellum.ImageInputRequest, TResult>? imageInputRequest = null,
+            global::System.Func<global::Vellum.DocumentInputRequest, TResult>? documentInputRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -363,13 +454,67 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.StringInputRequest?>? stringInputRequest = null,
-            global::System.Action<global::Vellum.JSONInputRequest?>? jSONInputRequest = null,
-            global::System.Action<global::Vellum.ChatHistoryInputRequest?>? chatHistoryInputRequest = null,
-            global::System.Action<global::Vellum.AudioInputRequest?>? audioInputRequest = null,
-            global::System.Action<global::Vellum.VideoInputRequest?>? videoInputRequest = null,
-            global::System.Action<global::Vellum.ImageInputRequest?>? imageInputRequest = null,
-            global::System.Action<global::Vellum.DocumentInputRequest?>? documentInputRequest = null,
+            global::System.Action<global::Vellum.StringInputRequest>? stringInputRequest = null,
+
+            global::System.Action<global::Vellum.JSONInputRequest>? jSONInputRequest = null,
+
+            global::System.Action<global::Vellum.ChatHistoryInputRequest>? chatHistoryInputRequest = null,
+
+            global::System.Action<global::Vellum.AudioInputRequest>? audioInputRequest = null,
+
+            global::System.Action<global::Vellum.VideoInputRequest>? videoInputRequest = null,
+
+            global::System.Action<global::Vellum.ImageInputRequest>? imageInputRequest = null,
+
+            global::System.Action<global::Vellum.DocumentInputRequest>? documentInputRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStringInputRequest)
+            {
+                stringInputRequest?.Invoke(StringInputRequest!);
+            }
+            else if (IsJSONInputRequest)
+            {
+                jSONInputRequest?.Invoke(JSONInputRequest!);
+            }
+            else if (IsChatHistoryInputRequest)
+            {
+                chatHistoryInputRequest?.Invoke(ChatHistoryInputRequest!);
+            }
+            else if (IsAudioInputRequest)
+            {
+                audioInputRequest?.Invoke(AudioInputRequest!);
+            }
+            else if (IsVideoInputRequest)
+            {
+                videoInputRequest?.Invoke(VideoInputRequest!);
+            }
+            else if (IsImageInputRequest)
+            {
+                imageInputRequest?.Invoke(ImageInputRequest!);
+            }
+            else if (IsDocumentInputRequest)
+            {
+                documentInputRequest?.Invoke(DocumentInputRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.StringInputRequest>? stringInputRequest = null,
+            global::System.Action<global::Vellum.JSONInputRequest>? jSONInputRequest = null,
+            global::System.Action<global::Vellum.ChatHistoryInputRequest>? chatHistoryInputRequest = null,
+            global::System.Action<global::Vellum.AudioInputRequest>? audioInputRequest = null,
+            global::System.Action<global::Vellum.VideoInputRequest>? videoInputRequest = null,
+            global::System.Action<global::Vellum.ImageInputRequest>? imageInputRequest = null,
+            global::System.Action<global::Vellum.DocumentInputRequest>? documentInputRequest = null,
             bool validate = true)
         {
             if (validate)

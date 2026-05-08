@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowIntegrationDependency(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowIntegrationDependency? value)
+        {
+            value = WorkflowIntegrationDependency;
+            return IsWorkflowIntegrationDependency;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowModelProviderDependency? WorkflowModelProviderDependency { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowModelProviderDependency))]
 #endif
         public bool IsWorkflowModelProviderDependency => WorkflowModelProviderDependency != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowModelProviderDependency(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowModelProviderDependency? value)
+        {
+            value = WorkflowModelProviderDependency;
+            return IsWorkflowModelProviderDependency;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowIntegrationDependency?, TResult>? workflowIntegrationDependency = null,
-            global::System.Func<global::Vellum.WorkflowModelProviderDependency?, TResult>? workflowModelProviderDependency = null,
+            global::System.Func<global::Vellum.WorkflowIntegrationDependency, TResult>? workflowIntegrationDependency = null,
+            global::System.Func<global::Vellum.WorkflowModelProviderDependency, TResult>? workflowModelProviderDependency = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowIntegrationDependency?>? workflowIntegrationDependency = null,
-            global::System.Action<global::Vellum.WorkflowModelProviderDependency?>? workflowModelProviderDependency = null,
+            global::System.Action<global::Vellum.WorkflowIntegrationDependency>? workflowIntegrationDependency = null,
+
+            global::System.Action<global::Vellum.WorkflowModelProviderDependency>? workflowModelProviderDependency = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowIntegrationDependency)
+            {
+                workflowIntegrationDependency?.Invoke(WorkflowIntegrationDependency!);
+            }
+            else if (IsWorkflowModelProviderDependency)
+            {
+                workflowModelProviderDependency?.Invoke(WorkflowModelProviderDependency!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowIntegrationDependency>? workflowIntegrationDependency = null,
+            global::System.Action<global::Vellum.WorkflowModelProviderDependency>? workflowModelProviderDependency = null,
             bool validate = true)
         {
             if (validate)

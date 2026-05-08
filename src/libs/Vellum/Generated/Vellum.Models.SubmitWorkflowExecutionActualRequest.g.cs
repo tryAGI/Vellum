@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowExecutionActualStringRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowExecutionActualStringRequest? value)
+        {
+            value = WorkflowExecutionActualStringRequest;
+            return IsWorkflowExecutionActualStringRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualJsonRequest? WorkflowExecutionActualJsonRequest { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowExecutionActualJsonRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowExecutionActualJsonRequest? value)
+        {
+            value = WorkflowExecutionActualJsonRequest;
+            return IsWorkflowExecutionActualJsonRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualChatHistoryRequest? WorkflowExecutionActualChatHistoryRequest { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionActualChatHistoryRequest))]
 #endif
         public bool IsWorkflowExecutionActualChatHistoryRequest => WorkflowExecutionActualChatHistoryRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowExecutionActualChatHistoryRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowExecutionActualChatHistoryRequest? value)
+        {
+            value = WorkflowExecutionActualChatHistoryRequest;
+            return IsWorkflowExecutionActualChatHistoryRequest;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,9 +196,9 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowExecutionActualStringRequest?, TResult>? workflowExecutionActualStringRequest = null,
-            global::System.Func<global::Vellum.WorkflowExecutionActualJsonRequest?, TResult>? workflowExecutionActualJsonRequest = null,
-            global::System.Func<global::Vellum.WorkflowExecutionActualChatHistoryRequest?, TResult>? workflowExecutionActualChatHistoryRequest = null,
+            global::System.Func<global::Vellum.WorkflowExecutionActualStringRequest, TResult>? workflowExecutionActualStringRequest = null,
+            global::System.Func<global::Vellum.WorkflowExecutionActualJsonRequest, TResult>? workflowExecutionActualJsonRequest = null,
+            global::System.Func<global::Vellum.WorkflowExecutionActualChatHistoryRequest, TResult>? workflowExecutionActualChatHistoryRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +226,39 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowExecutionActualStringRequest?>? workflowExecutionActualStringRequest = null,
-            global::System.Action<global::Vellum.WorkflowExecutionActualJsonRequest?>? workflowExecutionActualJsonRequest = null,
-            global::System.Action<global::Vellum.WorkflowExecutionActualChatHistoryRequest?>? workflowExecutionActualChatHistoryRequest = null,
+            global::System.Action<global::Vellum.WorkflowExecutionActualStringRequest>? workflowExecutionActualStringRequest = null,
+
+            global::System.Action<global::Vellum.WorkflowExecutionActualJsonRequest>? workflowExecutionActualJsonRequest = null,
+
+            global::System.Action<global::Vellum.WorkflowExecutionActualChatHistoryRequest>? workflowExecutionActualChatHistoryRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowExecutionActualStringRequest)
+            {
+                workflowExecutionActualStringRequest?.Invoke(WorkflowExecutionActualStringRequest!);
+            }
+            else if (IsWorkflowExecutionActualJsonRequest)
+            {
+                workflowExecutionActualJsonRequest?.Invoke(WorkflowExecutionActualJsonRequest!);
+            }
+            else if (IsWorkflowExecutionActualChatHistoryRequest)
+            {
+                workflowExecutionActualChatHistoryRequest?.Invoke(WorkflowExecutionActualChatHistoryRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowExecutionActualStringRequest>? workflowExecutionActualStringRequest = null,
+            global::System.Action<global::Vellum.WorkflowExecutionActualJsonRequest>? workflowExecutionActualJsonRequest = null,
+            global::System.Action<global::Vellum.WorkflowExecutionActualChatHistoryRequest>? workflowExecutionActualChatHistoryRequest = null,
             bool validate = true)
         {
             if (validate)

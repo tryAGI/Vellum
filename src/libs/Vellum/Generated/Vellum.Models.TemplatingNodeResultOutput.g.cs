@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTemplatingNodeStringResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeStringResult? value)
+        {
+            value = TemplatingNodeStringResult;
+            return IsTemplatingNodeStringResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeNumberResult? TemplatingNodeNumberResult { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TemplatingNodeNumberResult))]
 #endif
         public bool IsTemplatingNodeNumberResult => TemplatingNodeNumberResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTemplatingNodeNumberResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeNumberResult? value)
+        {
+            value = TemplatingNodeNumberResult;
+            return IsTemplatingNodeNumberResult;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTemplatingNodeJsonResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeJsonResult? value)
+        {
+            value = TemplatingNodeJsonResult;
+            return IsTemplatingNodeJsonResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeChatHistoryResult? TemplatingNodeChatHistoryResult { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TemplatingNodeChatHistoryResult))]
 #endif
         public bool IsTemplatingNodeChatHistoryResult => TemplatingNodeChatHistoryResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTemplatingNodeChatHistoryResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeChatHistoryResult? value)
+        {
+            value = TemplatingNodeChatHistoryResult;
+            return IsTemplatingNodeChatHistoryResult;
+        }
 
         /// <summary>
         /// 
@@ -97,6 +149,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTemplatingNodeSearchResultsResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeSearchResultsResult? value)
+        {
+            value = TemplatingNodeSearchResultsResult;
+            return IsTemplatingNodeSearchResultsResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeErrorResult? TemplatingNodeErrorResult { get; init; }
 #else
@@ -110,6 +175,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TemplatingNodeErrorResult))]
 #endif
         public bool IsTemplatingNodeErrorResult => TemplatingNodeErrorResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTemplatingNodeErrorResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeErrorResult? value)
+        {
+            value = TemplatingNodeErrorResult;
+            return IsTemplatingNodeErrorResult;
+        }
 
         /// <summary>
         /// 
@@ -131,6 +209,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTemplatingNodeArrayResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeArrayResult? value)
+        {
+            value = TemplatingNodeArrayResult;
+            return IsTemplatingNodeArrayResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeFunctionCallResult? TemplatingNodeFunctionCallResult { get; init; }
 #else
@@ -144,6 +235,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TemplatingNodeFunctionCallResult))]
 #endif
         public bool IsTemplatingNodeFunctionCallResult => TemplatingNodeFunctionCallResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTemplatingNodeFunctionCallResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TemplatingNodeFunctionCallResult? value)
+        {
+            value = TemplatingNodeFunctionCallResult;
+            return IsTemplatingNodeFunctionCallResult;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -352,14 +456,14 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.TemplatingNodeStringResult?, TResult>? templatingNodeStringResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeNumberResult?, TResult>? templatingNodeNumberResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeJsonResult?, TResult>? templatingNodeJsonResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeChatHistoryResult?, TResult>? templatingNodeChatHistoryResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeSearchResultsResult?, TResult>? templatingNodeSearchResultsResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeErrorResult?, TResult>? templatingNodeErrorResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeArrayResult?, TResult>? templatingNodeArrayResult = null,
-            global::System.Func<global::Vellum.TemplatingNodeFunctionCallResult?, TResult>? templatingNodeFunctionCallResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeStringResult, TResult>? templatingNodeStringResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeNumberResult, TResult>? templatingNodeNumberResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeJsonResult, TResult>? templatingNodeJsonResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeChatHistoryResult, TResult>? templatingNodeChatHistoryResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeSearchResultsResult, TResult>? templatingNodeSearchResultsResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeErrorResult, TResult>? templatingNodeErrorResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeArrayResult, TResult>? templatingNodeArrayResult = null,
+            global::System.Func<global::Vellum.TemplatingNodeFunctionCallResult, TResult>? templatingNodeFunctionCallResult = null,
             bool validate = true)
         {
             if (validate)
@@ -407,14 +511,74 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.TemplatingNodeStringResult?>? templatingNodeStringResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeNumberResult?>? templatingNodeNumberResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeJsonResult?>? templatingNodeJsonResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeChatHistoryResult?>? templatingNodeChatHistoryResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeSearchResultsResult?>? templatingNodeSearchResultsResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeErrorResult?>? templatingNodeErrorResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeArrayResult?>? templatingNodeArrayResult = null,
-            global::System.Action<global::Vellum.TemplatingNodeFunctionCallResult?>? templatingNodeFunctionCallResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeStringResult>? templatingNodeStringResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeNumberResult>? templatingNodeNumberResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeJsonResult>? templatingNodeJsonResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeChatHistoryResult>? templatingNodeChatHistoryResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeSearchResultsResult>? templatingNodeSearchResultsResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeErrorResult>? templatingNodeErrorResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeArrayResult>? templatingNodeArrayResult = null,
+
+            global::System.Action<global::Vellum.TemplatingNodeFunctionCallResult>? templatingNodeFunctionCallResult = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTemplatingNodeStringResult)
+            {
+                templatingNodeStringResult?.Invoke(TemplatingNodeStringResult!);
+            }
+            else if (IsTemplatingNodeNumberResult)
+            {
+                templatingNodeNumberResult?.Invoke(TemplatingNodeNumberResult!);
+            }
+            else if (IsTemplatingNodeJsonResult)
+            {
+                templatingNodeJsonResult?.Invoke(TemplatingNodeJsonResult!);
+            }
+            else if (IsTemplatingNodeChatHistoryResult)
+            {
+                templatingNodeChatHistoryResult?.Invoke(TemplatingNodeChatHistoryResult!);
+            }
+            else if (IsTemplatingNodeSearchResultsResult)
+            {
+                templatingNodeSearchResultsResult?.Invoke(TemplatingNodeSearchResultsResult!);
+            }
+            else if (IsTemplatingNodeErrorResult)
+            {
+                templatingNodeErrorResult?.Invoke(TemplatingNodeErrorResult!);
+            }
+            else if (IsTemplatingNodeArrayResult)
+            {
+                templatingNodeArrayResult?.Invoke(TemplatingNodeArrayResult!);
+            }
+            else if (IsTemplatingNodeFunctionCallResult)
+            {
+                templatingNodeFunctionCallResult?.Invoke(TemplatingNodeFunctionCallResult!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.TemplatingNodeStringResult>? templatingNodeStringResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeNumberResult>? templatingNodeNumberResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeJsonResult>? templatingNodeJsonResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeChatHistoryResult>? templatingNodeChatHistoryResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeSearchResultsResult>? templatingNodeSearchResultsResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeErrorResult>? templatingNodeErrorResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeArrayResult>? templatingNodeArrayResult = null,
+            global::System.Action<global::Vellum.TemplatingNodeFunctionCallResult>? templatingNodeFunctionCallResult = null,
             bool validate = true)
         {
             if (validate)

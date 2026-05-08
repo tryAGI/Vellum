@@ -27,6 +27,19 @@ namespace Vellum
         public bool IsTestSuiteRunDeploymentReleaseTagExecConfigRequest => TestSuiteRunDeploymentReleaseTagExecConfigRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunDeploymentReleaseTagExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest? value)
+        {
+            value = TestSuiteRunDeploymentReleaseTagExecConfigRequest;
+            return IsTestSuiteRunDeploymentReleaseTagExecConfigRequest;
+        }
+
+        /// <summary>
         /// Execution configuration for running a Test Suite against a Prompt Sandbox
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunPromptSandboxExecConfigRequest))]
 #endif
         public bool IsTestSuiteRunPromptSandboxExecConfigRequest => TestSuiteRunPromptSandboxExecConfigRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunPromptSandboxExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest? value)
+        {
+            value = TestSuiteRunPromptSandboxExecConfigRequest;
+            return IsTestSuiteRunPromptSandboxExecConfigRequest;
+        }
 
         /// <summary>
         /// Execution configuration for running a Test Suite against a Prompt Sandbox History Item
@@ -61,6 +87,19 @@ namespace Vellum
         public bool IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest => TestSuiteRunPromptSandboxHistoryItemExecConfigRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunPromptSandboxHistoryItemExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest? value)
+        {
+            value = TestSuiteRunPromptSandboxHistoryItemExecConfigRequest;
+            return IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest;
+        }
+
+        /// <summary>
         /// Execution configuration for running a Test Suite against a Workflow Deployment
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunWorkflowReleaseTagExecConfigRequest))]
 #endif
         public bool IsTestSuiteRunWorkflowReleaseTagExecConfigRequest => TestSuiteRunWorkflowReleaseTagExecConfigRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunWorkflowReleaseTagExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest? value)
+        {
+            value = TestSuiteRunWorkflowReleaseTagExecConfigRequest;
+            return IsTestSuiteRunWorkflowReleaseTagExecConfigRequest;
+        }
 
         /// <summary>
         /// Execution configuration for running a Test Suite against a Workflow Sandbox
@@ -95,6 +147,19 @@ namespace Vellum
         public bool IsTestSuiteRunWorkflowSandboxExecConfigRequest => TestSuiteRunWorkflowSandboxExecConfigRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunWorkflowSandboxExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest? value)
+        {
+            value = TestSuiteRunWorkflowSandboxExecConfigRequest;
+            return IsTestSuiteRunWorkflowSandboxExecConfigRequest;
+        }
+
+        /// <summary>
         /// Execution configuration for running a Test Suite against a Workflow Sandbox History Item
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -112,6 +177,19 @@ namespace Vellum
         public bool IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest => TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest? value)
+        {
+            value = TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest;
+            return IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest;
+        }
+
+        /// <summary>
         /// Execution configuration for running a Vellum Test Suite against an external callable
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -127,6 +205,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunExternalExecConfigRequest))]
 #endif
         public bool IsTestSuiteRunExternalExecConfigRequest => TestSuiteRunExternalExecConfigRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExternalExecConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExternalExecConfigRequest? value)
+        {
+            value = TestSuiteRunExternalExecConfigRequest;
+            return IsTestSuiteRunExternalExecConfigRequest;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -313,13 +404,13 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest?, TResult>? testSuiteRunDeploymentReleaseTagExecConfigRequest = null,
-            global::System.Func<global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest?, TResult>? testSuiteRunPromptSandboxExecConfigRequest = null,
-            global::System.Func<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest?, TResult>? testSuiteRunPromptSandboxHistoryItemExecConfigRequest = null,
-            global::System.Func<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest?, TResult>? testSuiteRunWorkflowReleaseTagExecConfigRequest = null,
-            global::System.Func<global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest?, TResult>? testSuiteRunWorkflowSandboxExecConfigRequest = null,
-            global::System.Func<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?, TResult>? testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest = null,
-            global::System.Func<global::Vellum.TestSuiteRunExternalExecConfigRequest?, TResult>? testSuiteRunExternalExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest, TResult>? testSuiteRunDeploymentReleaseTagExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest, TResult>? testSuiteRunPromptSandboxExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest, TResult>? testSuiteRunPromptSandboxHistoryItemExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest, TResult>? testSuiteRunWorkflowReleaseTagExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest, TResult>? testSuiteRunWorkflowSandboxExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest, TResult>? testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest = null,
+            global::System.Func<global::Vellum.TestSuiteRunExternalExecConfigRequest, TResult>? testSuiteRunExternalExecConfigRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -363,13 +454,67 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest?>? testSuiteRunDeploymentReleaseTagExecConfigRequest = null,
-            global::System.Action<global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest?>? testSuiteRunPromptSandboxExecConfigRequest = null,
-            global::System.Action<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest?>? testSuiteRunPromptSandboxHistoryItemExecConfigRequest = null,
-            global::System.Action<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest?>? testSuiteRunWorkflowReleaseTagExecConfigRequest = null,
-            global::System.Action<global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest?>? testSuiteRunWorkflowSandboxExecConfigRequest = null,
-            global::System.Action<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?>? testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest = null,
-            global::System.Action<global::Vellum.TestSuiteRunExternalExecConfigRequest?>? testSuiteRunExternalExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest>? testSuiteRunDeploymentReleaseTagExecConfigRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest>? testSuiteRunPromptSandboxExecConfigRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest>? testSuiteRunPromptSandboxHistoryItemExecConfigRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest>? testSuiteRunWorkflowReleaseTagExecConfigRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest>? testSuiteRunWorkflowSandboxExecConfigRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest>? testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExternalExecConfigRequest>? testSuiteRunExternalExecConfigRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTestSuiteRunDeploymentReleaseTagExecConfigRequest)
+            {
+                testSuiteRunDeploymentReleaseTagExecConfigRequest?.Invoke(TestSuiteRunDeploymentReleaseTagExecConfigRequest!);
+            }
+            else if (IsTestSuiteRunPromptSandboxExecConfigRequest)
+            {
+                testSuiteRunPromptSandboxExecConfigRequest?.Invoke(TestSuiteRunPromptSandboxExecConfigRequest!);
+            }
+            else if (IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest)
+            {
+                testSuiteRunPromptSandboxHistoryItemExecConfigRequest?.Invoke(TestSuiteRunPromptSandboxHistoryItemExecConfigRequest!);
+            }
+            else if (IsTestSuiteRunWorkflowReleaseTagExecConfigRequest)
+            {
+                testSuiteRunWorkflowReleaseTagExecConfigRequest?.Invoke(TestSuiteRunWorkflowReleaseTagExecConfigRequest!);
+            }
+            else if (IsTestSuiteRunWorkflowSandboxExecConfigRequest)
+            {
+                testSuiteRunWorkflowSandboxExecConfigRequest?.Invoke(TestSuiteRunWorkflowSandboxExecConfigRequest!);
+            }
+            else if (IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest)
+            {
+                testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?.Invoke(TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest!);
+            }
+            else if (IsTestSuiteRunExternalExecConfigRequest)
+            {
+                testSuiteRunExternalExecConfigRequest?.Invoke(TestSuiteRunExternalExecConfigRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest>? testSuiteRunDeploymentReleaseTagExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest>? testSuiteRunPromptSandboxExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest>? testSuiteRunPromptSandboxHistoryItemExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest>? testSuiteRunWorkflowReleaseTagExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest>? testSuiteRunWorkflowSandboxExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest>? testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest = null,
+            global::System.Action<global::Vellum.TestSuiteRunExternalExecConfigRequest>? testSuiteRunExternalExecConfigRequest = null,
             bool validate = true)
         {
             if (validate)

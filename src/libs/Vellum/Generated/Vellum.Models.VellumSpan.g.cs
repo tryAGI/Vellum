@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowExecutionSpan(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowExecutionSpan? value)
+        {
+            value = WorkflowExecutionSpan;
+            return IsWorkflowExecutionSpan;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionSpan? NodeExecutionSpan { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionSpan))]
 #endif
         public bool IsNodeExecutionSpan => NodeExecutionSpan != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeExecutionSpan(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeExecutionSpan? value)
+        {
+            value = NodeExecutionSpan;
+            return IsNodeExecutionSpan;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowExecutionSpan?, TResult>? workflowExecutionSpan = null,
-            global::System.Func<global::Vellum.NodeExecutionSpan?, TResult>? nodeExecutionSpan = null,
+            global::System.Func<global::Vellum.WorkflowExecutionSpan, TResult>? workflowExecutionSpan = null,
+            global::System.Func<global::Vellum.NodeExecutionSpan, TResult>? nodeExecutionSpan = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowExecutionSpan?>? workflowExecutionSpan = null,
-            global::System.Action<global::Vellum.NodeExecutionSpan?>? nodeExecutionSpan = null,
+            global::System.Action<global::Vellum.WorkflowExecutionSpan>? workflowExecutionSpan = null,
+
+            global::System.Action<global::Vellum.NodeExecutionSpan>? nodeExecutionSpan = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowExecutionSpan)
+            {
+                workflowExecutionSpan?.Invoke(WorkflowExecutionSpan!);
+            }
+            else if (IsNodeExecutionSpan)
+            {
+                nodeExecutionSpan?.Invoke(NodeExecutionSpan!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowExecutionSpan>? workflowExecutionSpan = null,
+            global::System.Action<global::Vellum.NodeExecutionSpan>? nodeExecutionSpan = null,
             bool validate = true)
         {
             if (validate)

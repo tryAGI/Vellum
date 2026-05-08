@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDeploymentProviderPayloadResponsePayloadVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = DeploymentProviderPayloadResponsePayloadVariant1;
+            return IsDeploymentProviderPayloadResponsePayloadVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? DeploymentProviderPayloadResponsePayloadVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeploymentProviderPayloadResponsePayloadVariant2))]
 #endif
         public bool IsDeploymentProviderPayloadResponsePayloadVariant2 => DeploymentProviderPayloadResponsePayloadVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDeploymentProviderPayloadResponsePayloadVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = DeploymentProviderPayloadResponsePayloadVariant2;
+            return IsDeploymentProviderPayloadResponsePayloadVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? deploymentProviderPayloadResponsePayloadVariant1 = null,
-            global::System.Func<string?, TResult>? deploymentProviderPayloadResponsePayloadVariant2 = null,
+            global::System.Func<object, TResult>? deploymentProviderPayloadResponsePayloadVariant1 = null,
+            global::System.Func<string, TResult>? deploymentProviderPayloadResponsePayloadVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? deploymentProviderPayloadResponsePayloadVariant1 = null,
-            global::System.Action<string?>? deploymentProviderPayloadResponsePayloadVariant2 = null,
+            global::System.Action<object>? deploymentProviderPayloadResponsePayloadVariant1 = null,
+
+            global::System.Action<string>? deploymentProviderPayloadResponsePayloadVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsDeploymentProviderPayloadResponsePayloadVariant1)
+            {
+                deploymentProviderPayloadResponsePayloadVariant1?.Invoke(DeploymentProviderPayloadResponsePayloadVariant1!);
+            }
+            else if (IsDeploymentProviderPayloadResponsePayloadVariant2)
+            {
+                deploymentProviderPayloadResponsePayloadVariant2?.Invoke(DeploymentProviderPayloadResponsePayloadVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<object>? deploymentProviderPayloadResponsePayloadVariant1 = null,
+            global::System.Action<string>? deploymentProviderPayloadResponsePayloadVariant2 = null,
             bool validate = true)
         {
             if (validate)

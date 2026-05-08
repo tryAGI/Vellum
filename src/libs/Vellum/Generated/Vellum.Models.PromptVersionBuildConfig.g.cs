@@ -25,6 +25,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptVersionBuildConfigSandbox))]
 #endif
         public bool IsPromptVersionBuildConfigSandbox => PromptVersionBuildConfigSandbox != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPromptVersionBuildConfigSandbox(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.PromptVersionBuildConfigSandbox? value)
+        {
+            value = PromptVersionBuildConfigSandbox;
+            return IsPromptVersionBuildConfigSandbox;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -69,7 +82,7 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.PromptVersionBuildConfigSandbox?, TResult>? promptVersionBuildConfigSandbox = null,
+            global::System.Func<global::Vellum.PromptVersionBuildConfigSandbox, TResult>? promptVersionBuildConfigSandbox = null,
             bool validate = true)
         {
             if (validate)
@@ -89,7 +102,25 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.PromptVersionBuildConfigSandbox?>? promptVersionBuildConfigSandbox = null,
+            global::System.Action<global::Vellum.PromptVersionBuildConfigSandbox>? promptVersionBuildConfigSandbox = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPromptVersionBuildConfigSandbox)
+            {
+                promptVersionBuildConfigSandbox?.Invoke(PromptVersionBuildConfigSandbox!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.PromptVersionBuildConfigSandbox>? promptVersionBuildConfigSandbox = null,
             bool validate = true)
         {
             if (validate)

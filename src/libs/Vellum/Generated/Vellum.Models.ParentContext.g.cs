@@ -29,6 +29,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowParentContext? value)
+        {
+            value = WorkflowParentContext;
+            return IsWorkflowParentContext;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeParentContext? NodeParentContext { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeParentContext))]
 #endif
         public bool IsNodeParentContext => NodeParentContext != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNodeParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NodeParentContext? value)
+        {
+            value = NodeParentContext;
+            return IsNodeParentContext;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowDeploymentParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowDeploymentParentContext? value)
+        {
+            value = WorkflowDeploymentParentContext;
+            return IsWorkflowDeploymentParentContext;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowSandboxParentContext? WorkflowSandboxParentContext { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowSandboxParentContext))]
 #endif
         public bool IsWorkflowSandboxParentContext => WorkflowSandboxParentContext != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowSandboxParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.WorkflowSandboxParentContext? value)
+        {
+            value = WorkflowSandboxParentContext;
+            return IsWorkflowSandboxParentContext;
+        }
 
         /// <summary>
         /// 
@@ -97,6 +149,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPromptDeploymentParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.PromptDeploymentParentContext? value)
+        {
+            value = PromptDeploymentParentContext;
+            return IsPromptDeploymentParentContext;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.APIRequestParentContext? APIRequestParentContext { get; init; }
 #else
@@ -110,6 +175,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(APIRequestParentContext))]
 #endif
         public bool IsAPIRequestParentContext => APIRequestParentContext != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAPIRequestParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.APIRequestParentContext? value)
+        {
+            value = APIRequestParentContext;
+            return IsAPIRequestParentContext;
+        }
 
         /// <summary>
         /// 
@@ -131,6 +209,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickExternalParentContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExternalParentContext? value)
+        {
+            value = ExternalParentContext;
+            return IsExternalParentContext;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.ScheduledTriggerContext? ScheduledTriggerContext { get; init; }
 #else
@@ -148,6 +239,19 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickScheduledTriggerContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ScheduledTriggerContext? value)
+        {
+            value = ScheduledTriggerContext;
+            return IsScheduledTriggerContext;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.IntegrationTriggerContext? IntegrationTriggerContext { get; init; }
 #else
@@ -161,6 +265,19 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IntegrationTriggerContext))]
 #endif
         public bool IsIntegrationTriggerContext => IntegrationTriggerContext != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIntegrationTriggerContext(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.IntegrationTriggerContext? value)
+        {
+            value = IntegrationTriggerContext;
+            return IsIntegrationTriggerContext;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -391,15 +508,15 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.WorkflowParentContext?, TResult>? workflowParentContext = null,
-            global::System.Func<global::Vellum.NodeParentContext?, TResult>? nodeParentContext = null,
-            global::System.Func<global::Vellum.WorkflowDeploymentParentContext?, TResult>? workflowDeploymentParentContext = null,
-            global::System.Func<global::Vellum.WorkflowSandboxParentContext?, TResult>? workflowSandboxParentContext = null,
-            global::System.Func<global::Vellum.PromptDeploymentParentContext?, TResult>? promptDeploymentParentContext = null,
-            global::System.Func<global::Vellum.APIRequestParentContext?, TResult>? aPIRequestParentContext = null,
-            global::System.Func<global::Vellum.ExternalParentContext?, TResult>? externalParentContext = null,
-            global::System.Func<global::Vellum.ScheduledTriggerContext?, TResult>? scheduledTriggerContext = null,
-            global::System.Func<global::Vellum.IntegrationTriggerContext?, TResult>? integrationTriggerContext = null,
+            global::System.Func<global::Vellum.WorkflowParentContext, TResult>? workflowParentContext = null,
+            global::System.Func<global::Vellum.NodeParentContext, TResult>? nodeParentContext = null,
+            global::System.Func<global::Vellum.WorkflowDeploymentParentContext, TResult>? workflowDeploymentParentContext = null,
+            global::System.Func<global::Vellum.WorkflowSandboxParentContext, TResult>? workflowSandboxParentContext = null,
+            global::System.Func<global::Vellum.PromptDeploymentParentContext, TResult>? promptDeploymentParentContext = null,
+            global::System.Func<global::Vellum.APIRequestParentContext, TResult>? aPIRequestParentContext = null,
+            global::System.Func<global::Vellum.ExternalParentContext, TResult>? externalParentContext = null,
+            global::System.Func<global::Vellum.ScheduledTriggerContext, TResult>? scheduledTriggerContext = null,
+            global::System.Func<global::Vellum.IntegrationTriggerContext, TResult>? integrationTriggerContext = null,
             bool validate = true)
         {
             if (validate)
@@ -451,15 +568,81 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.WorkflowParentContext?>? workflowParentContext = null,
-            global::System.Action<global::Vellum.NodeParentContext?>? nodeParentContext = null,
-            global::System.Action<global::Vellum.WorkflowDeploymentParentContext?>? workflowDeploymentParentContext = null,
-            global::System.Action<global::Vellum.WorkflowSandboxParentContext?>? workflowSandboxParentContext = null,
-            global::System.Action<global::Vellum.PromptDeploymentParentContext?>? promptDeploymentParentContext = null,
-            global::System.Action<global::Vellum.APIRequestParentContext?>? aPIRequestParentContext = null,
-            global::System.Action<global::Vellum.ExternalParentContext?>? externalParentContext = null,
-            global::System.Action<global::Vellum.ScheduledTriggerContext?>? scheduledTriggerContext = null,
-            global::System.Action<global::Vellum.IntegrationTriggerContext?>? integrationTriggerContext = null,
+            global::System.Action<global::Vellum.WorkflowParentContext>? workflowParentContext = null,
+
+            global::System.Action<global::Vellum.NodeParentContext>? nodeParentContext = null,
+
+            global::System.Action<global::Vellum.WorkflowDeploymentParentContext>? workflowDeploymentParentContext = null,
+
+            global::System.Action<global::Vellum.WorkflowSandboxParentContext>? workflowSandboxParentContext = null,
+
+            global::System.Action<global::Vellum.PromptDeploymentParentContext>? promptDeploymentParentContext = null,
+
+            global::System.Action<global::Vellum.APIRequestParentContext>? aPIRequestParentContext = null,
+
+            global::System.Action<global::Vellum.ExternalParentContext>? externalParentContext = null,
+
+            global::System.Action<global::Vellum.ScheduledTriggerContext>? scheduledTriggerContext = null,
+
+            global::System.Action<global::Vellum.IntegrationTriggerContext>? integrationTriggerContext = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowParentContext)
+            {
+                workflowParentContext?.Invoke(WorkflowParentContext!);
+            }
+            else if (IsNodeParentContext)
+            {
+                nodeParentContext?.Invoke(NodeParentContext!);
+            }
+            else if (IsWorkflowDeploymentParentContext)
+            {
+                workflowDeploymentParentContext?.Invoke(WorkflowDeploymentParentContext!);
+            }
+            else if (IsWorkflowSandboxParentContext)
+            {
+                workflowSandboxParentContext?.Invoke(WorkflowSandboxParentContext!);
+            }
+            else if (IsPromptDeploymentParentContext)
+            {
+                promptDeploymentParentContext?.Invoke(PromptDeploymentParentContext!);
+            }
+            else if (IsAPIRequestParentContext)
+            {
+                aPIRequestParentContext?.Invoke(APIRequestParentContext!);
+            }
+            else if (IsExternalParentContext)
+            {
+                externalParentContext?.Invoke(ExternalParentContext!);
+            }
+            else if (IsScheduledTriggerContext)
+            {
+                scheduledTriggerContext?.Invoke(ScheduledTriggerContext!);
+            }
+            else if (IsIntegrationTriggerContext)
+            {
+                integrationTriggerContext?.Invoke(IntegrationTriggerContext!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.WorkflowParentContext>? workflowParentContext = null,
+            global::System.Action<global::Vellum.NodeParentContext>? nodeParentContext = null,
+            global::System.Action<global::Vellum.WorkflowDeploymentParentContext>? workflowDeploymentParentContext = null,
+            global::System.Action<global::Vellum.WorkflowSandboxParentContext>? workflowSandboxParentContext = null,
+            global::System.Action<global::Vellum.PromptDeploymentParentContext>? promptDeploymentParentContext = null,
+            global::System.Action<global::Vellum.APIRequestParentContext>? aPIRequestParentContext = null,
+            global::System.Action<global::Vellum.ExternalParentContext>? externalParentContext = null,
+            global::System.Action<global::Vellum.ScheduledTriggerContext>? scheduledTriggerContext = null,
+            global::System.Action<global::Vellum.IntegrationTriggerContext>? integrationTriggerContext = null,
             bool validate = true)
         {
             if (validate)
