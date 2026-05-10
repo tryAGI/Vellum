@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent> PickCreateWorkflowEventRequest0() => IsCreateWorkflowEventRequest0
+            ? CreateWorkflowEventRequest0!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CreateWorkflowEventRequest0' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowEvent? WorkflowEvent { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowEvent;
             return IsWorkflowEvent;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowEvent PickWorkflowEvent() => IsWorkflowEvent
+            ? WorkflowEvent!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEvent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Vellum
         {
             WorkflowEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CreateWorkflowEventRequest FromWorkflowEvent(global::Vellum.WorkflowEvent? value) => new CreateWorkflowEventRequest(value);
 
         /// <summary>
         /// 

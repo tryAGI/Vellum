@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.StringChatMessageContentRequest PickStringChatMessageContentRequest() => IsStringChatMessageContentRequest
+            ? StringChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StringChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A function call value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = FunctionCallChatMessageContentRequest;
             return IsFunctionCallChatMessageContentRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FunctionCallChatMessageContentRequest PickFunctionCallChatMessageContentRequest() => IsFunctionCallChatMessageContentRequest
+            ? FunctionCallChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// An audio value that is used in a chat message.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.AudioChatMessageContentRequest PickAudioChatMessageContentRequest() => IsAudioChatMessageContentRequest
+            ? AudioChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AudioChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A video value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = VideoChatMessageContentRequest;
             return IsVideoChatMessageContentRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.VideoChatMessageContentRequest PickVideoChatMessageContentRequest() => IsVideoChatMessageContentRequest
+            ? VideoChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VideoChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// An image value that is used in a chat message.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ImageChatMessageContentRequest PickImageChatMessageContentRequest() => IsImageChatMessageContentRequest
+            ? ImageChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ImageChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A document value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = DocumentChatMessageContentRequest;
             return IsDocumentChatMessageContentRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.DocumentChatMessageContentRequest PickDocumentChatMessageContentRequest() => IsDocumentChatMessageContentRequest
+            ? DocumentChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentChatMessageContentRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -205,6 +247,11 @@ namespace Vellum
         {
             StringChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ArrayChatMessageContentItemRequest FromStringChatMessageContentRequest(global::Vellum.StringChatMessageContentRequest? value) => new ArrayChatMessageContentItemRequest(value);
 
         /// <summary>
         /// 
@@ -227,6 +274,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ArrayChatMessageContentItemRequest FromFunctionCallChatMessageContentRequest(global::Vellum.FunctionCallChatMessageContentRequest? value) => new ArrayChatMessageContentItemRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ArrayChatMessageContentItemRequest(global::Vellum.AudioChatMessageContentRequest value) => new ArrayChatMessageContentItemRequest((global::Vellum.AudioChatMessageContentRequest?)value);
 
         /// <summary>
@@ -241,6 +293,11 @@ namespace Vellum
         {
             AudioChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ArrayChatMessageContentItemRequest FromAudioChatMessageContentRequest(global::Vellum.AudioChatMessageContentRequest? value) => new ArrayChatMessageContentItemRequest(value);
 
         /// <summary>
         /// 
@@ -263,6 +320,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ArrayChatMessageContentItemRequest FromVideoChatMessageContentRequest(global::Vellum.VideoChatMessageContentRequest? value) => new ArrayChatMessageContentItemRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ArrayChatMessageContentItemRequest(global::Vellum.ImageChatMessageContentRequest value) => new ArrayChatMessageContentItemRequest((global::Vellum.ImageChatMessageContentRequest?)value);
 
         /// <summary>
@@ -281,6 +343,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ArrayChatMessageContentItemRequest FromImageChatMessageContentRequest(global::Vellum.ImageChatMessageContentRequest? value) => new ArrayChatMessageContentItemRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ArrayChatMessageContentItemRequest(global::Vellum.DocumentChatMessageContentRequest value) => new ArrayChatMessageContentItemRequest((global::Vellum.DocumentChatMessageContentRequest?)value);
 
         /// <summary>
@@ -295,6 +362,11 @@ namespace Vellum
         {
             DocumentChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ArrayChatMessageContentItemRequest FromDocumentChatMessageContentRequest(global::Vellum.DocumentChatMessageContentRequest? value) => new ArrayChatMessageContentItemRequest(value);
 
         /// <summary>
         /// 

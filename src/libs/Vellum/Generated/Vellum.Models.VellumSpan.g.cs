@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.WorkflowExecutionSpan PickWorkflowExecutionSpan() => IsWorkflowExecutionSpan
+            ? WorkflowExecutionSpan!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionSpan' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionSpan? NodeExecutionSpan { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = NodeExecutionSpan;
             return IsNodeExecutionSpan;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeExecutionSpan PickNodeExecutionSpan() => IsNodeExecutionSpan
+            ? NodeExecutionSpan!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionSpan' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumSpan FromWorkflowExecutionSpan(global::Vellum.WorkflowExecutionSpan? value) => new VellumSpan(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumSpan(global::Vellum.NodeExecutionSpan value) => new VellumSpan((global::Vellum.NodeExecutionSpan?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Vellum
         {
             NodeExecutionSpan = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumSpan FromNodeExecutionSpan(global::Vellum.NodeExecutionSpan? value) => new VellumSpan(value);
 
         /// <summary>
         /// 

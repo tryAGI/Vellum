@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.PromptNodeResult PickPromptNodeResult() => IsPromptNodeResult
+            ? PromptNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PromptNodeResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// A Node Result Event emitted from a Search Node.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = SearchNodeResult;
             return IsSearchNodeResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.SearchNodeResult PickSearchNodeResult() => IsSearchNodeResult
+            ? SearchNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SearchNodeResult' but the value was {ToString()}.");
 
         /// <summary>
         /// A Node Result Event emitted from a Templating Node.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TemplatingNodeResult PickTemplatingNodeResult() => IsTemplatingNodeResult
+            ? TemplatingNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// A Node Result Event emitted from a Code Execution Node.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = CodeExecutionNodeResult;
             return IsCodeExecutionNodeResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeResult PickCodeExecutionNodeResult() => IsCodeExecutionNodeResult
+            ? CodeExecutionNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeResult' but the value was {ToString()}.");
 
         /// <summary>
         /// A Node Result Event emitted from a Conditional Node.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ConditionalNodeResult PickConditionalNodeResult() => IsConditionalNodeResult
+            ? ConditionalNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ConditionalNodeResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// A Node Result Event emitted from an API Node.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = ApiNodeResult;
             return IsApiNodeResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ApiNodeResult PickApiNodeResult() => IsApiNodeResult
+            ? ApiNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ApiNodeResult' but the value was {ToString()}.");
 
         /// <summary>
         /// A Node Result Event emitted from a Terminal Node.
@@ -220,6 +262,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TerminalNodeResult PickTerminalNodeResult() => IsTerminalNodeResult
+            ? TerminalNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// A Node Result Event emitted from a Merge Node.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Vellum
             value = MergeNodeResult;
             return IsMergeNodeResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.MergeNodeResult PickMergeNodeResult() => IsMergeNodeResult
+            ? MergeNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MergeNodeResult' but the value was {ToString()}.");
 
         /// <summary>
         /// A Node Result Event emitted from a Subworkflow Node.
@@ -280,6 +336,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.SubworkflowNodeResult PickSubworkflowNodeResult() => IsSubworkflowNodeResult
+            ? SubworkflowNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubworkflowNodeResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// A Node Result Event emitted from a Metric Node.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -310,6 +373,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.MetricNodeResult PickMetricNodeResult() => IsMetricNodeResult
+            ? MetricNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MetricNodeResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// A Node Result Event emitted from a Map Node.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -338,6 +408,13 @@ namespace Vellum
             value = MapNodeResult;
             return IsMapNodeResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.MapNodeResult PickMapNodeResult() => IsMapNodeResult
+            ? MapNodeResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MapNodeResult' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -355,6 +432,11 @@ namespace Vellum
         {
             PromptNodeResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultData FromPromptNodeResult(global::Vellum.PromptNodeResult? value) => new WorkflowNodeResultData(value);
 
         /// <summary>
         /// 
@@ -377,6 +459,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultData FromSearchNodeResult(global::Vellum.SearchNodeResult? value) => new WorkflowNodeResultData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultData(global::Vellum.TemplatingNodeResult value) => new WorkflowNodeResultData((global::Vellum.TemplatingNodeResult?)value);
 
         /// <summary>
@@ -391,6 +478,11 @@ namespace Vellum
         {
             TemplatingNodeResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultData FromTemplatingNodeResult(global::Vellum.TemplatingNodeResult? value) => new WorkflowNodeResultData(value);
 
         /// <summary>
         /// 
@@ -413,6 +505,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultData FromCodeExecutionNodeResult(global::Vellum.CodeExecutionNodeResult? value) => new WorkflowNodeResultData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultData(global::Vellum.ConditionalNodeResult value) => new WorkflowNodeResultData((global::Vellum.ConditionalNodeResult?)value);
 
         /// <summary>
@@ -427,6 +524,11 @@ namespace Vellum
         {
             ConditionalNodeResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultData FromConditionalNodeResult(global::Vellum.ConditionalNodeResult? value) => new WorkflowNodeResultData(value);
 
         /// <summary>
         /// 
@@ -449,6 +551,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultData FromApiNodeResult(global::Vellum.ApiNodeResult? value) => new WorkflowNodeResultData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultData(global::Vellum.TerminalNodeResult value) => new WorkflowNodeResultData((global::Vellum.TerminalNodeResult?)value);
 
         /// <summary>
@@ -463,6 +570,11 @@ namespace Vellum
         {
             TerminalNodeResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultData FromTerminalNodeResult(global::Vellum.TerminalNodeResult? value) => new WorkflowNodeResultData(value);
 
         /// <summary>
         /// 
@@ -485,6 +597,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultData FromMergeNodeResult(global::Vellum.MergeNodeResult? value) => new WorkflowNodeResultData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultData(global::Vellum.SubworkflowNodeResult value) => new WorkflowNodeResultData((global::Vellum.SubworkflowNodeResult?)value);
 
         /// <summary>
@@ -499,6 +616,11 @@ namespace Vellum
         {
             SubworkflowNodeResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultData FromSubworkflowNodeResult(global::Vellum.SubworkflowNodeResult? value) => new WorkflowNodeResultData(value);
 
         /// <summary>
         /// 
@@ -521,6 +643,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultData FromMetricNodeResult(global::Vellum.MetricNodeResult? value) => new WorkflowNodeResultData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultData(global::Vellum.MapNodeResult value) => new WorkflowNodeResultData((global::Vellum.MapNodeResult?)value);
 
         /// <summary>
@@ -535,6 +662,11 @@ namespace Vellum
         {
             MapNodeResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultData FromMapNodeResult(global::Vellum.MapNodeResult? value) => new WorkflowNodeResultData(value);
 
         /// <summary>
         /// 

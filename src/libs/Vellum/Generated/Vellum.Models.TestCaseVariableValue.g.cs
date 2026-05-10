@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseStringVariableValue PickTestCaseStringVariableValue() => IsTestCaseStringVariableValue
+            ? TestCaseStringVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseStringVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A numerical value for a variable in a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = TestCaseNumberVariableValue;
             return IsTestCaseNumberVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseNumberVariableValue PickTestCaseNumberVariableValue() => IsTestCaseNumberVariableValue
+            ? TestCaseNumberVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseNumberVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A JSON value for a variable in a Test Case.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseJsonVariableValue PickTestCaseJsonVariableValue() => IsTestCaseJsonVariableValue
+            ? TestCaseJsonVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseJsonVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A chat history value for a variable in a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = TestCaseChatHistoryVariableValue;
             return IsTestCaseChatHistoryVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseChatHistoryVariableValue PickTestCaseChatHistoryVariableValue() => IsTestCaseChatHistoryVariableValue
+            ? TestCaseChatHistoryVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseChatHistoryVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A search results value for a variable in a Test Case.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseSearchResultsVariableValue PickTestCaseSearchResultsVariableValue() => IsTestCaseSearchResultsVariableValue
+            ? TestCaseSearchResultsVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseSearchResultsVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An error value for a variable in a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = TestCaseErrorVariableValue;
             return IsTestCaseErrorVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseErrorVariableValue PickTestCaseErrorVariableValue() => IsTestCaseErrorVariableValue
+            ? TestCaseErrorVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseErrorVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A function call value for a variable in a Test Case.
@@ -220,6 +262,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseFunctionCallVariableValue PickTestCaseFunctionCallVariableValue() => IsTestCaseFunctionCallVariableValue
+            ? TestCaseFunctionCallVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseFunctionCallVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An Array value for a variable in a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Vellum
             value = TestCaseArrayVariableValue;
             return IsTestCaseArrayVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseArrayVariableValue PickTestCaseArrayVariableValue() => IsTestCaseArrayVariableValue
+            ? TestCaseArrayVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseArrayVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// An audio value for a variable in a Test Case.
@@ -280,6 +336,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseAudioVariableValue PickTestCaseAudioVariableValue() => IsTestCaseAudioVariableValue
+            ? TestCaseAudioVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseAudioVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An image value for a variable in a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -308,6 +371,13 @@ namespace Vellum
             value = TestCaseImageVariableValue;
             return IsTestCaseImageVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseImageVariableValue PickTestCaseImageVariableValue() => IsTestCaseImageVariableValue
+            ? TestCaseImageVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseImageVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A video value for a variable in a Test Case.
@@ -340,6 +410,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseVideoVariableValue PickTestCaseVideoVariableValue() => IsTestCaseVideoVariableValue
+            ? TestCaseVideoVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseVideoVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A document value for a variable in a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -368,6 +445,13 @@ namespace Vellum
             value = TestCaseDocumentVariableValue;
             return IsTestCaseDocumentVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestCaseDocumentVariableValue PickTestCaseDocumentVariableValue() => IsTestCaseDocumentVariableValue
+            ? TestCaseDocumentVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestCaseDocumentVariableValue' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -385,6 +469,11 @@ namespace Vellum
         {
             TestCaseStringVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestCaseVariableValue FromTestCaseStringVariableValue(global::Vellum.TestCaseStringVariableValue? value) => new TestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -407,6 +496,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestCaseVariableValue FromTestCaseNumberVariableValue(global::Vellum.TestCaseNumberVariableValue? value) => new TestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestCaseVariableValue(global::Vellum.TestCaseJsonVariableValue value) => new TestCaseVariableValue((global::Vellum.TestCaseJsonVariableValue?)value);
 
         /// <summary>
@@ -421,6 +515,11 @@ namespace Vellum
         {
             TestCaseJsonVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestCaseVariableValue FromTestCaseJsonVariableValue(global::Vellum.TestCaseJsonVariableValue? value) => new TestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -443,6 +542,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestCaseVariableValue FromTestCaseChatHistoryVariableValue(global::Vellum.TestCaseChatHistoryVariableValue? value) => new TestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestCaseVariableValue(global::Vellum.TestCaseSearchResultsVariableValue value) => new TestCaseVariableValue((global::Vellum.TestCaseSearchResultsVariableValue?)value);
 
         /// <summary>
@@ -457,6 +561,11 @@ namespace Vellum
         {
             TestCaseSearchResultsVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestCaseVariableValue FromTestCaseSearchResultsVariableValue(global::Vellum.TestCaseSearchResultsVariableValue? value) => new TestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -479,6 +588,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestCaseVariableValue FromTestCaseErrorVariableValue(global::Vellum.TestCaseErrorVariableValue? value) => new TestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestCaseVariableValue(global::Vellum.TestCaseFunctionCallVariableValue value) => new TestCaseVariableValue((global::Vellum.TestCaseFunctionCallVariableValue?)value);
 
         /// <summary>
@@ -493,6 +607,11 @@ namespace Vellum
         {
             TestCaseFunctionCallVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestCaseVariableValue FromTestCaseFunctionCallVariableValue(global::Vellum.TestCaseFunctionCallVariableValue? value) => new TestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -515,6 +634,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestCaseVariableValue FromTestCaseArrayVariableValue(global::Vellum.TestCaseArrayVariableValue? value) => new TestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestCaseVariableValue(global::Vellum.TestCaseAudioVariableValue value) => new TestCaseVariableValue((global::Vellum.TestCaseAudioVariableValue?)value);
 
         /// <summary>
@@ -529,6 +653,11 @@ namespace Vellum
         {
             TestCaseAudioVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestCaseVariableValue FromTestCaseAudioVariableValue(global::Vellum.TestCaseAudioVariableValue? value) => new TestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -551,6 +680,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestCaseVariableValue FromTestCaseImageVariableValue(global::Vellum.TestCaseImageVariableValue? value) => new TestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestCaseVariableValue(global::Vellum.TestCaseVideoVariableValue value) => new TestCaseVariableValue((global::Vellum.TestCaseVideoVariableValue?)value);
 
         /// <summary>
@@ -569,6 +703,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestCaseVariableValue FromTestCaseVideoVariableValue(global::Vellum.TestCaseVideoVariableValue? value) => new TestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestCaseVariableValue(global::Vellum.TestCaseDocumentVariableValue value) => new TestCaseVariableValue((global::Vellum.TestCaseDocumentVariableValue?)value);
 
         /// <summary>
@@ -583,6 +722,11 @@ namespace Vellum
         {
             TestCaseDocumentVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestCaseVariableValue FromTestCaseDocumentVariableValue(global::Vellum.TestCaseDocumentVariableValue? value) => new TestCaseVariableValue(value);
 
         /// <summary>
         /// 

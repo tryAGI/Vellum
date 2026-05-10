@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ReductoChunkingRequest PickReductoChunkingRequest() => IsReductoChunkingRequest
+            ? ReductoChunkingRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReductoChunkingRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sentence chunking
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = SentenceChunkingRequest;
             return IsSentenceChunkingRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.SentenceChunkingRequest PickSentenceChunkingRequest() => IsSentenceChunkingRequest
+            ? SentenceChunkingRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SentenceChunkingRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// Token overlapping window chunking
@@ -102,6 +116,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TokenOverlappingWindowChunkingRequest PickTokenOverlappingWindowChunkingRequest() => IsTokenOverlappingWindowChunkingRequest
+            ? TokenOverlappingWindowChunkingRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenOverlappingWindowChunkingRequest' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.DelimiterChunkingRequest? DelimiterChunkingRequest { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Vellum
             value = DelimiterChunkingRequest;
             return IsDelimiterChunkingRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.DelimiterChunkingRequest PickDelimiterChunkingRequest() => IsDelimiterChunkingRequest
+            ? DelimiterChunkingRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DelimiterChunkingRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +173,11 @@ namespace Vellum
         {
             ReductoChunkingRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DocumentIndexChunkingRequest FromReductoChunkingRequest(global::Vellum.ReductoChunkingRequest? value) => new DocumentIndexChunkingRequest(value);
 
         /// <summary>
         /// 
@@ -167,6 +200,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static DocumentIndexChunkingRequest FromSentenceChunkingRequest(global::Vellum.SentenceChunkingRequest? value) => new DocumentIndexChunkingRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DocumentIndexChunkingRequest(global::Vellum.TokenOverlappingWindowChunkingRequest value) => new DocumentIndexChunkingRequest((global::Vellum.TokenOverlappingWindowChunkingRequest?)value);
 
         /// <summary>
@@ -185,6 +223,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static DocumentIndexChunkingRequest FromTokenOverlappingWindowChunkingRequest(global::Vellum.TokenOverlappingWindowChunkingRequest? value) => new DocumentIndexChunkingRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DocumentIndexChunkingRequest(global::Vellum.DelimiterChunkingRequest value) => new DocumentIndexChunkingRequest((global::Vellum.DelimiterChunkingRequest?)value);
 
         /// <summary>
@@ -199,6 +242,11 @@ namespace Vellum
         {
             DelimiterChunkingRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DocumentIndexChunkingRequest FromDelimiterChunkingRequest(global::Vellum.DelimiterChunkingRequest? value) => new DocumentIndexChunkingRequest(value);
 
         /// <summary>
         /// 

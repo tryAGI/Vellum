@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent PickFulfilledExecuteWorkflowWorkflowResultEvent() => IsFulfilledExecuteWorkflowWorkflowResultEvent
+            ? FulfilledExecuteWorkflowWorkflowResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// The unsuccessful response from the Workflow execution containing an error specifying what went wrong.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = RejectedExecuteWorkflowWorkflowResultEvent;
             return IsRejectedExecuteWorkflowWorkflowResultEvent;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent PickRejectedExecuteWorkflowWorkflowResultEvent() => IsRejectedExecuteWorkflowWorkflowResultEvent
+            ? RejectedExecuteWorkflowWorkflowResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecuteWorkflowWorkflowResultEvent FromFulfilledExecuteWorkflowWorkflowResultEvent(global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? value) => new ExecuteWorkflowWorkflowResultEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent value) => new ExecuteWorkflowWorkflowResultEvent((global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Vellum
         {
             RejectedExecuteWorkflowWorkflowResultEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecuteWorkflowWorkflowResultEvent FromRejectedExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? value) => new ExecuteWorkflowWorkflowResultEvent(value);
 
         /// <summary>
         /// 

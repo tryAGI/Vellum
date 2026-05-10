@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseCreatedBulkResult PickTestSuiteTestCaseCreatedBulkResult() => IsTestSuiteTestCaseCreatedBulkResult
+            ? TestSuiteTestCaseCreatedBulkResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseCreatedBulkResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// The result of a bulk operation that replaced a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = TestSuiteTestCaseReplacedBulkResult;
             return IsTestSuiteTestCaseReplacedBulkResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseReplacedBulkResult PickTestSuiteTestCaseReplacedBulkResult() => IsTestSuiteTestCaseReplacedBulkResult
+            ? TestSuiteTestCaseReplacedBulkResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseReplacedBulkResult' but the value was {ToString()}.");
 
         /// <summary>
         /// The result of a bulk operation that deleted a Test Case.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseDeletedBulkResult PickTestSuiteTestCaseDeletedBulkResult() => IsTestSuiteTestCaseDeletedBulkResult
+            ? TestSuiteTestCaseDeletedBulkResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseDeletedBulkResult' but the value was {ToString()}.");
+
+        /// <summary>
         /// The result of a bulk operation that failed to operate on a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = TestSuiteTestCaseRejectedBulkResult;
             return IsTestSuiteTestCaseRejectedBulkResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseRejectedBulkResult PickTestSuiteTestCaseRejectedBulkResult() => IsTestSuiteTestCaseRejectedBulkResult
+            ? TestSuiteTestCaseRejectedBulkResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseRejectedBulkResult' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +173,11 @@ namespace Vellum
         {
             TestSuiteTestCaseCreatedBulkResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseCreatedBulkResult(global::Vellum.TestSuiteTestCaseCreatedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
 
         /// <summary>
         /// 
@@ -167,6 +200,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseReplacedBulkResult(global::Vellum.TestSuiteTestCaseReplacedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseDeletedBulkResult value) => new TestSuiteTestCaseBulkResult((global::Vellum.TestSuiteTestCaseDeletedBulkResult?)value);
 
         /// <summary>
@@ -185,6 +223,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseDeletedBulkResult(global::Vellum.TestSuiteTestCaseDeletedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseRejectedBulkResult value) => new TestSuiteTestCaseBulkResult((global::Vellum.TestSuiteTestCaseRejectedBulkResult?)value);
 
         /// <summary>
@@ -199,6 +242,11 @@ namespace Vellum
         {
             TestSuiteTestCaseRejectedBulkResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseRejectedBulkResult(global::Vellum.TestSuiteTestCaseRejectedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
 
         /// <summary>
         /// 

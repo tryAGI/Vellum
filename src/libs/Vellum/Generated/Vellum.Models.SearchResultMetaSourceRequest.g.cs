@@ -38,6 +38,13 @@ namespace Vellum
             value = PdfSearchResultMetaSourceRequest;
             return IsPdfSearchResultMetaSourceRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.PdfSearchResultMetaSourceRequest PickPdfSearchResultMetaSourceRequest() => IsPdfSearchResultMetaSourceRequest
+            ? PdfSearchResultMetaSourceRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PdfSearchResultMetaSourceRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -55,6 +62,11 @@ namespace Vellum
         {
             PdfSearchResultMetaSourceRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SearchResultMetaSourceRequest FromPdfSearchResultMetaSourceRequest(global::Vellum.PdfSearchResultMetaSourceRequest? value) => new SearchResultMetaSourceRequest(value);
 
         /// <summary>
         /// 

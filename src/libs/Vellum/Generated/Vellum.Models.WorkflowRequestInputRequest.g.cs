@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestStringInputRequest PickWorkflowRequestStringInputRequest() => IsWorkflowRequestStringInputRequest
+            ? WorkflowRequestStringInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestStringInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// The input for a JSON variable in a Workflow.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowRequestJSONInputRequest;
             return IsWorkflowRequestJSONInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestJSONInputRequest PickWorkflowRequestJSONInputRequest() => IsWorkflowRequestJSONInputRequest
+            ? WorkflowRequestJSONInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestJSONInputRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// The input for a chat history variable in a Workflow.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestChatHistoryInputRequest PickWorkflowRequestChatHistoryInputRequest() => IsWorkflowRequestChatHistoryInputRequest
+            ? WorkflowRequestChatHistoryInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestChatHistoryInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// The input for a number variable in a Workflow.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = WorkflowRequestNumberInputRequest;
             return IsWorkflowRequestNumberInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestNumberInputRequest PickWorkflowRequestNumberInputRequest() => IsWorkflowRequestNumberInputRequest
+            ? WorkflowRequestNumberInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestNumberInputRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// The input for an audio variable in a Workflow.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestAudioInputRequest PickWorkflowRequestAudioInputRequest() => IsWorkflowRequestAudioInputRequest
+            ? WorkflowRequestAudioInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestAudioInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// The input for a video variable in a Workflow.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = WorkflowRequestVideoInputRequest;
             return IsWorkflowRequestVideoInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestVideoInputRequest PickWorkflowRequestVideoInputRequest() => IsWorkflowRequestVideoInputRequest
+            ? WorkflowRequestVideoInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestVideoInputRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// The input for an image variable in a Workflow.
@@ -220,6 +262,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestImageInputRequest PickWorkflowRequestImageInputRequest() => IsWorkflowRequestImageInputRequest
+            ? WorkflowRequestImageInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestImageInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// The input for a document variable in a Workflow.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Vellum
             value = WorkflowRequestDocumentInputRequest;
             return IsWorkflowRequestDocumentInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowRequestDocumentInputRequest PickWorkflowRequestDocumentInputRequest() => IsWorkflowRequestDocumentInputRequest
+            ? WorkflowRequestDocumentInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestDocumentInputRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -265,6 +321,11 @@ namespace Vellum
         {
             WorkflowRequestStringInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestStringInputRequest(global::Vellum.WorkflowRequestStringInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
         /// 
@@ -287,6 +348,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestJSONInputRequest(global::Vellum.WorkflowRequestJSONInputRequest? value) => new WorkflowRequestInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestChatHistoryInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestChatHistoryInputRequest?)value);
 
         /// <summary>
@@ -301,6 +367,11 @@ namespace Vellum
         {
             WorkflowRequestChatHistoryInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestChatHistoryInputRequest(global::Vellum.WorkflowRequestChatHistoryInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
         /// 
@@ -323,6 +394,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestNumberInputRequest(global::Vellum.WorkflowRequestNumberInputRequest? value) => new WorkflowRequestInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestAudioInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestAudioInputRequest?)value);
 
         /// <summary>
@@ -337,6 +413,11 @@ namespace Vellum
         {
             WorkflowRequestAudioInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestAudioInputRequest(global::Vellum.WorkflowRequestAudioInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
         /// 
@@ -359,6 +440,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestVideoInputRequest(global::Vellum.WorkflowRequestVideoInputRequest? value) => new WorkflowRequestInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestImageInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestImageInputRequest?)value);
 
         /// <summary>
@@ -377,6 +463,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestImageInputRequest(global::Vellum.WorkflowRequestImageInputRequest? value) => new WorkflowRequestInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestDocumentInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestDocumentInputRequest?)value);
 
         /// <summary>
@@ -391,6 +482,11 @@ namespace Vellum
         {
             WorkflowRequestDocumentInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowRequestInputRequest FromWorkflowRequestDocumentInputRequest(global::Vellum.WorkflowRequestDocumentInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
         /// 

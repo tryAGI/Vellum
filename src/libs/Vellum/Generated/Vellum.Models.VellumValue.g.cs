@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.StringVellumValue PickStringVellumValue() => IsStringVellumValue
+            ? StringVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StringVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing a number.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = NumberVellumValue;
             return IsNumberVellumValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NumberVellumValue PickNumberVellumValue() => IsNumberVellumValue
+            ? NumberVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NumberVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing a JSON object.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.JsonVellumValue PickJsonVellumValue() => IsJsonVellumValue
+            ? JsonVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A base Vellum primitive value representing audio.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = AudioVellumValue;
             return IsAudioVellumValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.AudioVellumValue PickAudioVellumValue() => IsAudioVellumValue
+            ? AudioVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AudioVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A base Vellum primitive value representing a video.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.VideoVellumValue PickVideoVellumValue() => IsVideoVellumValue
+            ? VideoVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VideoVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A base Vellum primitive value representing an image.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = ImageVellumValue;
             return IsImageVellumValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ImageVellumValue PickImageVellumValue() => IsImageVellumValue
+            ? ImageVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ImageVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A base Vellum primitive value representing a document.
@@ -220,6 +262,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.DocumentVellumValue PickDocumentVellumValue() => IsDocumentVellumValue
+            ? DocumentVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing a Function Call.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Vellum
             value = FunctionCallVellumValue;
             return IsFunctionCallVellumValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FunctionCallVellumValue PickFunctionCallVellumValue() => IsFunctionCallVellumValue
+            ? FunctionCallVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing an Error.
@@ -280,6 +336,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ErrorVellumValue PickErrorVellumValue() => IsErrorVellumValue
+            ? ErrorVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing an array of Vellum variable values.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -308,6 +371,13 @@ namespace Vellum
             value = ArrayVellumValue;
             return IsArrayVellumValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ArrayVellumValue PickArrayVellumValue() => IsArrayVellumValue
+            ? ArrayVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ArrayVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing Chat History.
@@ -340,6 +410,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ChatHistoryVellumValue PickChatHistoryVellumValue() => IsChatHistoryVellumValue
+            ? ChatHistoryVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChatHistoryVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing Search Results.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -370,6 +447,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.SearchResultsVellumValue PickSearchResultsVellumValue() => IsSearchResultsVellumValue
+            ? SearchResultsVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SearchResultsVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing Thinking mode output.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -398,6 +482,13 @@ namespace Vellum
             value = ThinkingVellumValue;
             return IsThinkingVellumValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ThinkingVellumValue PickThinkingVellumValue() => IsThinkingVellumValue
+            ? ThinkingVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkingVellumValue' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -415,6 +506,11 @@ namespace Vellum
         {
             StringVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromStringVellumValue(global::Vellum.StringVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 
@@ -437,6 +533,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumValue FromNumberVellumValue(global::Vellum.NumberVellumValue? value) => new VellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumValue(global::Vellum.JsonVellumValue value) => new VellumValue((global::Vellum.JsonVellumValue?)value);
 
         /// <summary>
@@ -451,6 +552,11 @@ namespace Vellum
         {
             JsonVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromJsonVellumValue(global::Vellum.JsonVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 
@@ -473,6 +579,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumValue FromAudioVellumValue(global::Vellum.AudioVellumValue? value) => new VellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumValue(global::Vellum.VideoVellumValue value) => new VellumValue((global::Vellum.VideoVellumValue?)value);
 
         /// <summary>
@@ -487,6 +598,11 @@ namespace Vellum
         {
             VideoVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromVideoVellumValue(global::Vellum.VideoVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 
@@ -509,6 +625,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumValue FromImageVellumValue(global::Vellum.ImageVellumValue? value) => new VellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumValue(global::Vellum.DocumentVellumValue value) => new VellumValue((global::Vellum.DocumentVellumValue?)value);
 
         /// <summary>
@@ -523,6 +644,11 @@ namespace Vellum
         {
             DocumentVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromDocumentVellumValue(global::Vellum.DocumentVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 
@@ -545,6 +671,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumValue FromFunctionCallVellumValue(global::Vellum.FunctionCallVellumValue? value) => new VellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumValue(global::Vellum.ErrorVellumValue value) => new VellumValue((global::Vellum.ErrorVellumValue?)value);
 
         /// <summary>
@@ -559,6 +690,11 @@ namespace Vellum
         {
             ErrorVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromErrorVellumValue(global::Vellum.ErrorVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 
@@ -581,6 +717,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumValue FromArrayVellumValue(global::Vellum.ArrayVellumValue? value) => new VellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumValue(global::Vellum.ChatHistoryVellumValue value) => new VellumValue((global::Vellum.ChatHistoryVellumValue?)value);
 
         /// <summary>
@@ -595,6 +736,11 @@ namespace Vellum
         {
             ChatHistoryVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromChatHistoryVellumValue(global::Vellum.ChatHistoryVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 
@@ -617,6 +763,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static VellumValue FromSearchResultsVellumValue(global::Vellum.SearchResultsVellumValue? value) => new VellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator VellumValue(global::Vellum.ThinkingVellumValue value) => new VellumValue((global::Vellum.ThinkingVellumValue?)value);
 
         /// <summary>
@@ -631,6 +782,11 @@ namespace Vellum
         {
             ThinkingVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumValue FromThinkingVellumValue(global::Vellum.ThinkingVellumValue? value) => new VellumValue(value);
 
         /// <summary>
         /// 

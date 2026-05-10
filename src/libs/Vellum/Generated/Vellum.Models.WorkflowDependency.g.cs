@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.WorkflowIntegrationDependency PickWorkflowIntegrationDependency() => IsWorkflowIntegrationDependency
+            ? WorkflowIntegrationDependency!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowIntegrationDependency' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowModelProviderDependency? WorkflowModelProviderDependency { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowModelProviderDependency;
             return IsWorkflowModelProviderDependency;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowModelProviderDependency PickWorkflowModelProviderDependency() => IsWorkflowModelProviderDependency
+            ? WorkflowModelProviderDependency!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowModelProviderDependency' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowDependency FromWorkflowIntegrationDependency(global::Vellum.WorkflowIntegrationDependency? value) => new WorkflowDependency(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowDependency(global::Vellum.WorkflowModelProviderDependency value) => new WorkflowDependency((global::Vellum.WorkflowModelProviderDependency?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Vellum
         {
             WorkflowModelProviderDependency = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowDependency FromWorkflowModelProviderDependency(global::Vellum.WorkflowModelProviderDependency? value) => new WorkflowDependency(value);
 
         /// <summary>
         /// 

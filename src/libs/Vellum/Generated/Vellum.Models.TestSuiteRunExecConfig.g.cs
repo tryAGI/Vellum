@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig PickTestSuiteRunDeploymentReleaseTagExecConfig() => IsTestSuiteRunDeploymentReleaseTagExecConfig
+            ? TestSuiteRunDeploymentReleaseTagExecConfig!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunDeploymentReleaseTagExecConfig' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution configuration for running a Test Suite against a Prompt Sandbox History Item
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = TestSuiteRunPromptSandboxHistoryItemExecConfig;
             return IsTestSuiteRunPromptSandboxHistoryItemExecConfig;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig PickTestSuiteRunPromptSandboxHistoryItemExecConfig() => IsTestSuiteRunPromptSandboxHistoryItemExecConfig
+            ? TestSuiteRunPromptSandboxHistoryItemExecConfig!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunPromptSandboxHistoryItemExecConfig' but the value was {ToString()}.");
 
         /// <summary>
         /// Execution configuration for running a Test Suite against a Workflow Deployment
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig PickTestSuiteRunWorkflowReleaseTagExecConfig() => IsTestSuiteRunWorkflowReleaseTagExecConfig
+            ? TestSuiteRunWorkflowReleaseTagExecConfig!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunWorkflowReleaseTagExecConfig' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution configuration for running a Test Suite against a Workflow Sandbox History Item
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig PickTestSuiteRunWorkflowSandboxHistoryItemExecConfig() => IsTestSuiteRunWorkflowSandboxHistoryItemExecConfig
+            ? TestSuiteRunWorkflowSandboxHistoryItemExecConfig!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunWorkflowSandboxHistoryItemExecConfig' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution configuration for running a Vellum Test Suite against an external callable
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Vellum
             value = TestSuiteRunExternalExecConfig;
             return IsTestSuiteRunExternalExecConfig;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExternalExecConfig PickTestSuiteRunExternalExecConfig() => IsTestSuiteRunExternalExecConfig
+            ? TestSuiteRunExternalExecConfig!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExternalExecConfig' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Vellum
         {
             TestSuiteRunDeploymentReleaseTagExecConfig = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecConfig FromTestSuiteRunDeploymentReleaseTagExecConfig(global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig? value) => new TestSuiteRunExecConfig(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunExecConfig FromTestSuiteRunPromptSandboxHistoryItemExecConfig(global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig? value) => new TestSuiteRunExecConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunExecConfig(global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig value) => new TestSuiteRunExecConfig((global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Vellum
         {
             TestSuiteRunWorkflowReleaseTagExecConfig = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecConfig FromTestSuiteRunWorkflowReleaseTagExecConfig(global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig? value) => new TestSuiteRunExecConfig(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunExecConfig FromTestSuiteRunWorkflowSandboxHistoryItemExecConfig(global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig? value) => new TestSuiteRunExecConfig(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunExecConfig(global::Vellum.TestSuiteRunExternalExecConfig value) => new TestSuiteRunExecConfig((global::Vellum.TestSuiteRunExternalExecConfig?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Vellum
         {
             TestSuiteRunExternalExecConfig = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecConfig FromTestSuiteRunExternalExecConfig(global::Vellum.TestSuiteRunExternalExecConfig? value) => new TestSuiteRunExecConfig(value);
 
         /// <summary>
         /// 
