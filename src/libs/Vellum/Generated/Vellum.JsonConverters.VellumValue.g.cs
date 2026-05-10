@@ -298,6 +298,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.StringVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.StringVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.StringVellumValue).Name}");
                     stringVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -308,9 +309,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NumberVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NumberVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NumberVellumValue).Name}");
                     numberVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -321,9 +326,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.JsonVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.JsonVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.JsonVellumValue).Name}");
                     jsonVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -334,9 +343,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.AudioVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.AudioVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.AudioVellumValue).Name}");
                     audioVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -347,9 +360,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VideoVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VideoVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VideoVellumValue).Name}");
                     videoVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -360,9 +377,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ImageVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ImageVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ImageVellumValue).Name}");
                     imageVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -373,9 +394,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.DocumentVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.DocumentVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.DocumentVellumValue).Name}");
                     documentVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -386,9 +411,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FunctionCallVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FunctionCallVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FunctionCallVellumValue).Name}");
                     functionCallVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -399,9 +428,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ErrorVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ErrorVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ErrorVellumValue).Name}");
                     errorVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -412,9 +445,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ArrayVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ArrayVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ArrayVellumValue).Name}");
                     arrayVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -425,9 +462,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ChatHistoryVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ChatHistoryVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ChatHistoryVellumValue).Name}");
                     chatHistoryVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -438,9 +479,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.SearchResultsVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.SearchResultsVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.SearchResultsVellumValue).Name}");
                     searchResultsVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -451,9 +496,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringVellumValue == null && numberVellumValue == null && jsonVellumValue == null && audioVellumValue == null && videoVellumValue == null && imageVellumValue == null && documentVellumValue == null && functionCallVellumValue == null && errorVellumValue == null && arrayVellumValue == null && chatHistoryVellumValue == null && searchResultsVellumValue == null && thinkingVellumValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ThinkingVellumValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ThinkingVellumValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ThinkingVellumValue).Name}");
                     thinkingVellumValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -332,6 +332,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledStringValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledStringValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledStringValue).Name}");
                     nodeInputCompiledStringValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -342,9 +343,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledNumberValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledNumberValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledNumberValue).Name}");
                     nodeInputCompiledNumberValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -355,9 +360,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledJsonValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledJsonValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledJsonValue).Name}");
                     nodeInputCompiledJsonValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -368,9 +377,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledChatHistoryValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledChatHistoryValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledChatHistoryValue).Name}");
                     nodeInputCompiledChatHistoryValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -381,9 +394,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledSearchResultsValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledSearchResultsValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledSearchResultsValue).Name}");
                     nodeInputCompiledSearchResultsValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -394,9 +411,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledErrorValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledErrorValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledErrorValue).Name}");
                     nodeInputCompiledErrorValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -407,9 +428,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledArrayValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledArrayValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledArrayValue).Name}");
                     nodeInputCompiledArrayValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -420,9 +445,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledFunctionCallValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledFunctionCallValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledFunctionCallValue).Name}");
                     nodeInputCompiledFunctionCallValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -433,9 +462,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledSecretValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledSecretValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledSecretValue).Name}");
                     nodeInputCompiledSecretValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -446,9 +479,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledAudioValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledAudioValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledAudioValue).Name}");
                     nodeInputCompiledAudioValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -459,9 +496,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledVideoValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledVideoValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledVideoValue).Name}");
                     nodeInputCompiledVideoValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -472,9 +513,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledImageValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledImageValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledImageValue).Name}");
                     nodeInputCompiledImageValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -485,9 +530,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (nodeInputCompiledStringValue == null && nodeInputCompiledNumberValue == null && nodeInputCompiledJsonValue == null && nodeInputCompiledChatHistoryValue == null && nodeInputCompiledSearchResultsValue == null && nodeInputCompiledErrorValue == null && nodeInputCompiledArrayValue == null && nodeInputCompiledFunctionCallValue == null && nodeInputCompiledSecretValue == null && nodeInputCompiledAudioValue == null && nodeInputCompiledVideoValue == null && nodeInputCompiledImageValue == null && nodeInputCompiledDocumentValue == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeInputCompiledDocumentValue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeInputCompiledDocumentValue> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeInputCompiledDocumentValue).Name}");
                     nodeInputCompiledDocumentValue = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

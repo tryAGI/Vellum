@@ -153,6 +153,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunMetricStringOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunMetricStringOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunMetricStringOutput).Name}");
                     testSuiteRunMetricStringOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -163,9 +164,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunMetricStringOutput == null && testSuiteRunMetricNumberOutput == null && testSuiteRunMetricJSONOutput == null && testSuiteRunMetricErrorOutput == null && testSuiteRunMetricArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunMetricNumberOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunMetricNumberOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunMetricNumberOutput).Name}");
                     testSuiteRunMetricNumberOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -176,9 +181,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunMetricStringOutput == null && testSuiteRunMetricNumberOutput == null && testSuiteRunMetricJSONOutput == null && testSuiteRunMetricErrorOutput == null && testSuiteRunMetricArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunMetricJSONOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunMetricJSONOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunMetricJSONOutput).Name}");
                     testSuiteRunMetricJSONOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -189,9 +198,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunMetricStringOutput == null && testSuiteRunMetricNumberOutput == null && testSuiteRunMetricJSONOutput == null && testSuiteRunMetricErrorOutput == null && testSuiteRunMetricArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunMetricErrorOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunMetricErrorOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunMetricErrorOutput).Name}");
                     testSuiteRunMetricErrorOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -202,9 +215,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunMetricStringOutput == null && testSuiteRunMetricNumberOutput == null && testSuiteRunMetricJSONOutput == null && testSuiteRunMetricErrorOutput == null && testSuiteRunMetricArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunMetricArrayOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunMetricArrayOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunMetricArrayOutput).Name}");
                     testSuiteRunMetricArrayOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

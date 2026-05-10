@@ -214,6 +214,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeStringResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeStringResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeStringResult).Name}");
                     terminalNodeStringResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -224,9 +225,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeNumberResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeNumberResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeNumberResult).Name}");
                     terminalNodeNumberResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -237,9 +242,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeJsonResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeJsonResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeJsonResult).Name}");
                     terminalNodeJsonResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -250,9 +259,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeChatHistoryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeChatHistoryResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeChatHistoryResult).Name}");
                     terminalNodeChatHistoryResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -263,9 +276,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeSearchResultsResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeSearchResultsResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeSearchResultsResult).Name}");
                     terminalNodeSearchResultsResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -276,9 +293,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeErrorResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeErrorResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeErrorResult).Name}");
                     terminalNodeErrorResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -289,9 +310,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeArrayResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeArrayResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeArrayResult).Name}");
                     terminalNodeArrayResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -302,9 +327,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (terminalNodeStringResult == null && terminalNodeNumberResult == null && terminalNodeJsonResult == null && terminalNodeChatHistoryResult == null && terminalNodeSearchResultsResult == null && terminalNodeErrorResult == null && terminalNodeArrayResult == null && terminalNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TerminalNodeFunctionCallResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TerminalNodeFunctionCallResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TerminalNodeFunctionCallResult).Name}");
                     terminalNodeFunctionCallResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

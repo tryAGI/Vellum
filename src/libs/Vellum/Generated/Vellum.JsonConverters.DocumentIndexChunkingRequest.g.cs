@@ -132,6 +132,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ReductoChunkingRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ReductoChunkingRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ReductoChunkingRequest).Name}");
                     reductoChunkingRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -142,9 +143,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (reductoChunkingRequest == null && sentenceChunkingRequest == null && tokenOverlappingWindowChunkingRequest == null && delimiterChunkingRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.SentenceChunkingRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.SentenceChunkingRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.SentenceChunkingRequest).Name}");
                     sentenceChunkingRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -155,9 +160,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (reductoChunkingRequest == null && sentenceChunkingRequest == null && tokenOverlappingWindowChunkingRequest == null && delimiterChunkingRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TokenOverlappingWindowChunkingRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TokenOverlappingWindowChunkingRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TokenOverlappingWindowChunkingRequest).Name}");
                     tokenOverlappingWindowChunkingRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -168,9 +177,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (reductoChunkingRequest == null && sentenceChunkingRequest == null && tokenOverlappingWindowChunkingRequest == null && delimiterChunkingRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.DelimiterChunkingRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.DelimiterChunkingRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.DelimiterChunkingRequest).Name}");
                     delimiterChunkingRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

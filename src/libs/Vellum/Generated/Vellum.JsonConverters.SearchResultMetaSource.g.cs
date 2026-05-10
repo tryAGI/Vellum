@@ -59,6 +59,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PdfSearchResultMetaSource), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PdfSearchResultMetaSource> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PdfSearchResultMetaSource).Name}");
                     pdfSearchResultMetaSource = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

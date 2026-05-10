@@ -82,6 +82,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VellumValueLogicalConditionRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VellumValueLogicalConditionRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VellumValueLogicalConditionRequest).Name}");
                     vellumValueLogicalConditionRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -92,9 +93,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (vellumValueLogicalConditionRequest == null && vellumValueLogicalConditionGroupRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VellumValueLogicalConditionGroupRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VellumValueLogicalConditionGroupRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VellumValueLogicalConditionGroupRequest).Name}");
                     vellumValueLogicalConditionGroupRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

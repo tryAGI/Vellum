@@ -290,6 +290,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseStringVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseStringVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseStringVariableValueRequest).Name}");
                     namedTestCaseStringVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -300,9 +301,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseNumberVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseNumberVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseNumberVariableValueRequest).Name}");
                     namedTestCaseNumberVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -313,9 +318,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseJsonVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseJsonVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseJsonVariableValueRequest).Name}");
                     namedTestCaseJsonVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -326,9 +335,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseChatHistoryVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseChatHistoryVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseChatHistoryVariableValueRequest).Name}");
                     namedTestCaseChatHistoryVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -339,9 +352,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseSearchResultsVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseSearchResultsVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseSearchResultsVariableValueRequest).Name}");
                     namedTestCaseSearchResultsVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -352,9 +369,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseErrorVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseErrorVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseErrorVariableValueRequest).Name}");
                     namedTestCaseErrorVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -365,9 +386,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseFunctionCallVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseFunctionCallVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseFunctionCallVariableValueRequest).Name}");
                     namedTestCaseFunctionCallVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -378,9 +403,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseArrayVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseArrayVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseArrayVariableValueRequest).Name}");
                     namedTestCaseArrayVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -391,9 +420,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseAudioVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseAudioVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseAudioVariableValueRequest).Name}");
                     namedTestCaseAudioVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -404,9 +437,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseVideoVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseVideoVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseVideoVariableValueRequest).Name}");
                     namedTestCaseVideoVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -417,9 +454,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseImageVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseImageVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseImageVariableValueRequest).Name}");
                     namedTestCaseImageVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -430,9 +471,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (namedTestCaseStringVariableValueRequest == null && namedTestCaseNumberVariableValueRequest == null && namedTestCaseJsonVariableValueRequest == null && namedTestCaseChatHistoryVariableValueRequest == null && namedTestCaseSearchResultsVariableValueRequest == null && namedTestCaseErrorVariableValueRequest == null && namedTestCaseFunctionCallVariableValueRequest == null && namedTestCaseArrayVariableValueRequest == null && namedTestCaseAudioVariableValueRequest == null && namedTestCaseVideoVariableValueRequest == null && namedTestCaseImageVariableValueRequest == null && namedTestCaseDocumentVariableValueRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NamedTestCaseDocumentVariableValueRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NamedTestCaseDocumentVariableValueRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NamedTestCaseDocumentVariableValueRequest).Name}");
                     namedTestCaseDocumentVariableValueRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
