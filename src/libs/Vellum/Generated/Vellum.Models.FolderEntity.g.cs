@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FolderEntityFolder PickFolderEntityFolder() => IsFolderEntityFolder
+            ? FolderEntityFolder!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityFolder' but the value was {ToString()}.");
+
+        /// <summary>
         /// A slim representation of a Prompt Sandbox, as it exists within a Folder.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = FolderEntityPromptSandbox;
             return IsFolderEntityPromptSandbox;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FolderEntityPromptSandbox PickFolderEntityPromptSandbox() => IsFolderEntityPromptSandbox
+            ? FolderEntityPromptSandbox!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityPromptSandbox' but the value was {ToString()}.");
 
         /// <summary>
         /// A slim representation of a Workflow Sandbox, as it exists within a Folder.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FolderEntityWorkflowSandbox PickFolderEntityWorkflowSandbox() => IsFolderEntityWorkflowSandbox
+            ? FolderEntityWorkflowSandbox!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityWorkflowSandbox' but the value was {ToString()}.");
+
+        /// <summary>
         /// A slim representation of a Document Index, as it exists within a Folder.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = FolderEntityDocumentIndex;
             return IsFolderEntityDocumentIndex;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FolderEntityDocumentIndex PickFolderEntityDocumentIndex() => IsFolderEntityDocumentIndex
+            ? FolderEntityDocumentIndex!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityDocumentIndex' but the value was {ToString()}.");
 
         /// <summary>
         /// A slim representation of a Test Suite, as it exists within a Folder.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FolderEntityTestSuite PickFolderEntityTestSuite() => IsFolderEntityTestSuite
+            ? FolderEntityTestSuite!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityTestSuite' but the value was {ToString()}.");
+
+        /// <summary>
         /// A slim representation of a Dataset, as it exists within a Folder.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = FolderEntityDataset;
             return IsFolderEntityDataset;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FolderEntityDataset PickFolderEntityDataset() => IsFolderEntityDataset
+            ? FolderEntityDataset!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityDataset' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -205,6 +247,11 @@ namespace Vellum
         {
             FolderEntityFolder = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FolderEntity FromFolderEntityFolder(global::Vellum.FolderEntityFolder? value) => new FolderEntity(value);
 
         /// <summary>
         /// 
@@ -227,6 +274,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static FolderEntity FromFolderEntityPromptSandbox(global::Vellum.FolderEntityPromptSandbox? value) => new FolderEntity(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityWorkflowSandbox value) => new FolderEntity((global::Vellum.FolderEntityWorkflowSandbox?)value);
 
         /// <summary>
@@ -241,6 +293,11 @@ namespace Vellum
         {
             FolderEntityWorkflowSandbox = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FolderEntity FromFolderEntityWorkflowSandbox(global::Vellum.FolderEntityWorkflowSandbox? value) => new FolderEntity(value);
 
         /// <summary>
         /// 
@@ -263,6 +320,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static FolderEntity FromFolderEntityDocumentIndex(global::Vellum.FolderEntityDocumentIndex? value) => new FolderEntity(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityTestSuite value) => new FolderEntity((global::Vellum.FolderEntityTestSuite?)value);
 
         /// <summary>
@@ -281,6 +343,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static FolderEntity FromFolderEntityTestSuite(global::Vellum.FolderEntityTestSuite? value) => new FolderEntity(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityDataset value) => new FolderEntity((global::Vellum.FolderEntityDataset?)value);
 
         /// <summary>
@@ -295,6 +362,11 @@ namespace Vellum
         {
             FolderEntityDataset = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FolderEntity FromFolderEntityDataset(global::Vellum.FolderEntityDataset? value) => new FolderEntity(value);
 
         /// <summary>
         /// 

@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public object PickVellumSdkErrorRawDataVariant1() => IsVellumSdkErrorRawDataVariant1
+            ? VellumSdkErrorRawDataVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? VellumSdkErrorRawDataVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = VellumSdkErrorRawDataVariant2;
             return IsVellumSdkErrorRawDataVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickVellumSdkErrorRawDataVariant2() => IsVellumSdkErrorRawDataVariant2
+            ? VellumSdkErrorRawDataVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Vellum
         {
             VellumSdkErrorRawDataVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumSdkErrorRawData FromVellumSdkErrorRawDataVariant2(string? value) => new VellumSdkErrorRawData(value);
 
         /// <summary>
         /// 

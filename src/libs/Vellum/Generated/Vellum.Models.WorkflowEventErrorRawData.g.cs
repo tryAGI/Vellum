@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public object PickWorkflowEventErrorRawDataVariant1() => IsWorkflowEventErrorRawDataVariant1
+            ? WorkflowEventErrorRawDataVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? WorkflowEventErrorRawDataVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowEventErrorRawDataVariant2;
             return IsWorkflowEventErrorRawDataVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickWorkflowEventErrorRawDataVariant2() => IsWorkflowEventErrorRawDataVariant2
+            ? WorkflowEventErrorRawDataVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Vellum
         {
             WorkflowEventErrorRawDataVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowEventErrorRawData FromWorkflowEventErrorRawDataVariant2(string? value) => new WorkflowEventErrorRawData(value);
 
         /// <summary>
         /// 

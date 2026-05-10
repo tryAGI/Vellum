@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.StringInputRequest PickStringInputRequest() => IsStringInputRequest
+            ? StringInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StringInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A user input representing a JSON object
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = JSONInputRequest;
             return IsJSONInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.JSONInputRequest PickJSONInputRequest() => IsJSONInputRequest
+            ? JSONInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JSONInputRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// A user input representing a list of chat messages
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ChatHistoryInputRequest PickChatHistoryInputRequest() => IsChatHistoryInputRequest
+            ? ChatHistoryInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChatHistoryInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A user input representing a Vellum Audio value
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = AudioInputRequest;
             return IsAudioInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.AudioInputRequest PickAudioInputRequest() => IsAudioInputRequest
+            ? AudioInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AudioInputRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// A user input representing a Vellum Video value
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.VideoInputRequest PickVideoInputRequest() => IsVideoInputRequest
+            ? VideoInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VideoInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A user input representing a Vellum Image value
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -190,6 +225,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ImageInputRequest PickImageInputRequest() => IsImageInputRequest
+            ? ImageInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ImageInputRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A user input representing a Vellum Document value
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -218,6 +260,13 @@ namespace Vellum
             value = DocumentInputRequest;
             return IsDocumentInputRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.DocumentInputRequest PickDocumentInputRequest() => IsDocumentInputRequest
+            ? DocumentInputRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentInputRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -235,6 +284,11 @@ namespace Vellum
         {
             StringInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptDeploymentInputRequest FromStringInputRequest(global::Vellum.StringInputRequest? value) => new PromptDeploymentInputRequest(value);
 
         /// <summary>
         /// 
@@ -257,6 +311,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static PromptDeploymentInputRequest FromJSONInputRequest(global::Vellum.JSONInputRequest? value) => new PromptDeploymentInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptDeploymentInputRequest(global::Vellum.ChatHistoryInputRequest value) => new PromptDeploymentInputRequest((global::Vellum.ChatHistoryInputRequest?)value);
 
         /// <summary>
@@ -271,6 +330,11 @@ namespace Vellum
         {
             ChatHistoryInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptDeploymentInputRequest FromChatHistoryInputRequest(global::Vellum.ChatHistoryInputRequest? value) => new PromptDeploymentInputRequest(value);
 
         /// <summary>
         /// 
@@ -293,6 +357,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static PromptDeploymentInputRequest FromAudioInputRequest(global::Vellum.AudioInputRequest? value) => new PromptDeploymentInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptDeploymentInputRequest(global::Vellum.VideoInputRequest value) => new PromptDeploymentInputRequest((global::Vellum.VideoInputRequest?)value);
 
         /// <summary>
@@ -307,6 +376,11 @@ namespace Vellum
         {
             VideoInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptDeploymentInputRequest FromVideoInputRequest(global::Vellum.VideoInputRequest? value) => new PromptDeploymentInputRequest(value);
 
         /// <summary>
         /// 
@@ -329,6 +403,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static PromptDeploymentInputRequest FromImageInputRequest(global::Vellum.ImageInputRequest? value) => new PromptDeploymentInputRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptDeploymentInputRequest(global::Vellum.DocumentInputRequest value) => new PromptDeploymentInputRequest((global::Vellum.DocumentInputRequest?)value);
 
         /// <summary>
@@ -343,6 +422,11 @@ namespace Vellum
         {
             DocumentInputRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptDeploymentInputRequest FromDocumentInputRequest(global::Vellum.DocumentInputRequest? value) => new PromptDeploymentInputRequest(value);
 
         /// <summary>
         /// 

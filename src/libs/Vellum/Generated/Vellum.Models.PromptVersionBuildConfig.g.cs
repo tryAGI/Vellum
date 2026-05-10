@@ -38,6 +38,13 @@ namespace Vellum
             value = PromptVersionBuildConfigSandbox;
             return IsPromptVersionBuildConfigSandbox;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.PromptVersionBuildConfigSandbox PickPromptVersionBuildConfigSandbox() => IsPromptVersionBuildConfigSandbox
+            ? PromptVersionBuildConfigSandbox!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PromptVersionBuildConfigSandbox' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -55,6 +62,11 @@ namespace Vellum
         {
             PromptVersionBuildConfigSandbox = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptVersionBuildConfig FromPromptVersionBuildConfigSandbox(global::Vellum.PromptVersionBuildConfigSandbox? value) => new PromptVersionBuildConfig(value);
 
         /// <summary>
         /// 

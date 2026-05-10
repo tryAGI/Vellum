@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledStringValue PickNodeOutputCompiledStringValue() => IsNodeOutputCompiledStringValue
+            ? NodeOutputCompiledStringValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledStringValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An output returned by a node that is of type NUMBER.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = NodeOutputCompiledNumberValue;
             return IsNodeOutputCompiledNumberValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledNumberValue PickNodeOutputCompiledNumberValue() => IsNodeOutputCompiledNumberValue
+            ? NodeOutputCompiledNumberValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledNumberValue' but the value was {ToString()}.");
 
         /// <summary>
         /// An output returned by a node that is of type JSON.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledJsonValue PickNodeOutputCompiledJsonValue() => IsNodeOutputCompiledJsonValue
+            ? NodeOutputCompiledJsonValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledJsonValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An output returned by a node that is of type CHAT_HISTORY.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = NodeOutputCompiledChatHistoryValue;
             return IsNodeOutputCompiledChatHistoryValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledChatHistoryValue PickNodeOutputCompiledChatHistoryValue() => IsNodeOutputCompiledChatHistoryValue
+            ? NodeOutputCompiledChatHistoryValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledChatHistoryValue' but the value was {ToString()}.");
 
         /// <summary>
         /// An output returned by a node that is of type SEARCH_RESULTS.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledSearchResultsValue PickNodeOutputCompiledSearchResultsValue() => IsNodeOutputCompiledSearchResultsValue
+            ? NodeOutputCompiledSearchResultsValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledSearchResultsValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An output returned by a node that is of type ERROR.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = NodeOutputCompiledErrorValue;
             return IsNodeOutputCompiledErrorValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledErrorValue PickNodeOutputCompiledErrorValue() => IsNodeOutputCompiledErrorValue
+            ? NodeOutputCompiledErrorValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledErrorValue' but the value was {ToString()}.");
 
         /// <summary>
         /// An output returned by a node that is of type ARRAY.
@@ -220,6 +262,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledArrayValue PickNodeOutputCompiledArrayValue() => IsNodeOutputCompiledArrayValue
+            ? NodeOutputCompiledArrayValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledArrayValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An output returned by a node that is of type FUNCTION_CALL.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -250,6 +299,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledFunctionCallValue PickNodeOutputCompiledFunctionCallValue() => IsNodeOutputCompiledFunctionCallValue
+            ? NodeOutputCompiledFunctionCallValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledFunctionCallValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// An output returned by a node that is of type THINKING.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -278,6 +334,13 @@ namespace Vellum
             value = NodeOutputCompiledThinkingValue;
             return IsNodeOutputCompiledThinkingValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NodeOutputCompiledThinkingValue PickNodeOutputCompiledThinkingValue() => IsNodeOutputCompiledThinkingValue
+            ? NodeOutputCompiledThinkingValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledThinkingValue' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -295,6 +358,11 @@ namespace Vellum
         {
             NodeOutputCompiledStringValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledStringValue(global::Vellum.NodeOutputCompiledStringValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
         /// 
@@ -317,6 +385,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledNumberValue(global::Vellum.NodeOutputCompiledNumberValue? value) => new NodeOutputCompiledValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledJsonValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledJsonValue?)value);
 
         /// <summary>
@@ -331,6 +404,11 @@ namespace Vellum
         {
             NodeOutputCompiledJsonValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledJsonValue(global::Vellum.NodeOutputCompiledJsonValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
         /// 
@@ -353,6 +431,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledChatHistoryValue(global::Vellum.NodeOutputCompiledChatHistoryValue? value) => new NodeOutputCompiledValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledSearchResultsValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledSearchResultsValue?)value);
 
         /// <summary>
@@ -367,6 +450,11 @@ namespace Vellum
         {
             NodeOutputCompiledSearchResultsValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledSearchResultsValue(global::Vellum.NodeOutputCompiledSearchResultsValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
         /// 
@@ -389,6 +477,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledErrorValue(global::Vellum.NodeOutputCompiledErrorValue? value) => new NodeOutputCompiledValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledArrayValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledArrayValue?)value);
 
         /// <summary>
@@ -403,6 +496,11 @@ namespace Vellum
         {
             NodeOutputCompiledArrayValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledArrayValue(global::Vellum.NodeOutputCompiledArrayValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
         /// 
@@ -425,6 +523,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledFunctionCallValue(global::Vellum.NodeOutputCompiledFunctionCallValue? value) => new NodeOutputCompiledValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledThinkingValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledThinkingValue?)value);
 
         /// <summary>
@@ -439,6 +542,11 @@ namespace Vellum
         {
             NodeOutputCompiledThinkingValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NodeOutputCompiledValue FromNodeOutputCompiledThinkingValue(global::Vellum.NodeOutputCompiledThinkingValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
         /// 

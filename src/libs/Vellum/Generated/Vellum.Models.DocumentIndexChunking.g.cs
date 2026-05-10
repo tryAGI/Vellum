@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ReductoChunking PickReductoChunking() => IsReductoChunking
+            ? ReductoChunking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReductoChunking' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sentence chunking
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = SentenceChunking;
             return IsSentenceChunking;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.SentenceChunking PickSentenceChunking() => IsSentenceChunking
+            ? SentenceChunking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SentenceChunking' but the value was {ToString()}.");
 
         /// <summary>
         /// Token overlapping window chunking
@@ -102,6 +116,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TokenOverlappingWindowChunking PickTokenOverlappingWindowChunking() => IsTokenOverlappingWindowChunking
+            ? TokenOverlappingWindowChunking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TokenOverlappingWindowChunking' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.DelimiterChunking? DelimiterChunking { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Vellum
             value = DelimiterChunking;
             return IsDelimiterChunking;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.DelimiterChunking PickDelimiterChunking() => IsDelimiterChunking
+            ? DelimiterChunking!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DelimiterChunking' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -145,6 +173,11 @@ namespace Vellum
         {
             ReductoChunking = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DocumentIndexChunking FromReductoChunking(global::Vellum.ReductoChunking? value) => new DocumentIndexChunking(value);
 
         /// <summary>
         /// 
@@ -167,6 +200,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static DocumentIndexChunking FromSentenceChunking(global::Vellum.SentenceChunking? value) => new DocumentIndexChunking(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DocumentIndexChunking(global::Vellum.TokenOverlappingWindowChunking value) => new DocumentIndexChunking((global::Vellum.TokenOverlappingWindowChunking?)value);
 
         /// <summary>
@@ -185,6 +223,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static DocumentIndexChunking FromTokenOverlappingWindowChunking(global::Vellum.TokenOverlappingWindowChunking? value) => new DocumentIndexChunking(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DocumentIndexChunking(global::Vellum.DelimiterChunking value) => new DocumentIndexChunking((global::Vellum.DelimiterChunking?)value);
 
         /// <summary>
@@ -199,6 +242,11 @@ namespace Vellum
         {
             DelimiterChunking = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DocumentIndexChunking FromDelimiterChunking(global::Vellum.DelimiterChunking? value) => new DocumentIndexChunking(value);
 
         /// <summary>
         /// 

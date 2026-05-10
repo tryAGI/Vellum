@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputString PickWorkflowOutputString() => IsWorkflowOutputString
+            ? WorkflowOutputString!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputString' but the value was {ToString()}.");
+
+        /// <summary>
         /// A number output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowOutputNumber;
             return IsWorkflowOutputNumber;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputNumber PickWorkflowOutputNumber() => IsWorkflowOutputNumber
+            ? WorkflowOutputNumber!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputNumber' but the value was {ToString()}.");
 
         /// <summary>
         /// A JSON output from a Workflow execution.
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputJSON PickWorkflowOutputJSON() => IsWorkflowOutputJSON
+            ? WorkflowOutputJSON!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputJSON' but the value was {ToString()}.");
+
+        /// <summary>
         /// A chat history output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Vellum
             value = WorkflowOutputChatHistory;
             return IsWorkflowOutputChatHistory;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputChatHistory PickWorkflowOutputChatHistory() => IsWorkflowOutputChatHistory
+            ? WorkflowOutputChatHistory!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputChatHistory' but the value was {ToString()}.");
 
         /// <summary>
         /// A search results output from a Workflow execution.
@@ -160,6 +188,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputSearchResults PickWorkflowOutputSearchResults() => IsWorkflowOutputSearchResults
+            ? WorkflowOutputSearchResults!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputSearchResults' but the value was {ToString()}.");
+
+        /// <summary>
         /// An array output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -188,6 +223,13 @@ namespace Vellum
             value = WorkflowOutputArray;
             return IsWorkflowOutputArray;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputArray PickWorkflowOutputArray() => IsWorkflowOutputArray
+            ? WorkflowOutputArray!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputArray' but the value was {ToString()}.");
 
         /// <summary>
         /// An error output from a Workflow execution.
@@ -220,6 +262,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputError PickWorkflowOutputError() => IsWorkflowOutputError
+            ? WorkflowOutputError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputError' but the value was {ToString()}.");
+
+        /// <summary>
         /// A function call output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -248,6 +297,13 @@ namespace Vellum
             value = WorkflowOutputFunctionCall;
             return IsWorkflowOutputFunctionCall;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputFunctionCall PickWorkflowOutputFunctionCall() => IsWorkflowOutputFunctionCall
+            ? WorkflowOutputFunctionCall!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputFunctionCall' but the value was {ToString()}.");
 
         /// <summary>
         /// An image output from a Workflow execution.
@@ -280,6 +336,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputImage PickWorkflowOutputImage() => IsWorkflowOutputImage
+            ? WorkflowOutputImage!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputImage' but the value was {ToString()}.");
+
+        /// <summary>
         /// An audio output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -308,6 +371,13 @@ namespace Vellum
             value = WorkflowOutputAudio;
             return IsWorkflowOutputAudio;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputAudio PickWorkflowOutputAudio() => IsWorkflowOutputAudio
+            ? WorkflowOutputAudio!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputAudio' but the value was {ToString()}.");
 
         /// <summary>
         /// A video output from a Workflow execution.
@@ -340,6 +410,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputVideo PickWorkflowOutputVideo() => IsWorkflowOutputVideo
+            ? WorkflowOutputVideo!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputVideo' but the value was {ToString()}.");
+
+        /// <summary>
         /// A document output from a Workflow execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -368,6 +445,13 @@ namespace Vellum
             value = WorkflowOutputDocument;
             return IsWorkflowOutputDocument;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowOutputDocument PickWorkflowOutputDocument() => IsWorkflowOutputDocument
+            ? WorkflowOutputDocument!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputDocument' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -385,6 +469,11 @@ namespace Vellum
         {
             WorkflowOutputString = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowOutput FromWorkflowOutputString(global::Vellum.WorkflowOutputString? value) => new WorkflowOutput(value);
 
         /// <summary>
         /// 
@@ -407,6 +496,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowOutput FromWorkflowOutputNumber(global::Vellum.WorkflowOutputNumber? value) => new WorkflowOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowOutput(global::Vellum.WorkflowOutputJSON value) => new WorkflowOutput((global::Vellum.WorkflowOutputJSON?)value);
 
         /// <summary>
@@ -421,6 +515,11 @@ namespace Vellum
         {
             WorkflowOutputJSON = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowOutput FromWorkflowOutputJSON(global::Vellum.WorkflowOutputJSON? value) => new WorkflowOutput(value);
 
         /// <summary>
         /// 
@@ -443,6 +542,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowOutput FromWorkflowOutputChatHistory(global::Vellum.WorkflowOutputChatHistory? value) => new WorkflowOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowOutput(global::Vellum.WorkflowOutputSearchResults value) => new WorkflowOutput((global::Vellum.WorkflowOutputSearchResults?)value);
 
         /// <summary>
@@ -457,6 +561,11 @@ namespace Vellum
         {
             WorkflowOutputSearchResults = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowOutput FromWorkflowOutputSearchResults(global::Vellum.WorkflowOutputSearchResults? value) => new WorkflowOutput(value);
 
         /// <summary>
         /// 
@@ -479,6 +588,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowOutput FromWorkflowOutputArray(global::Vellum.WorkflowOutputArray? value) => new WorkflowOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowOutput(global::Vellum.WorkflowOutputError value) => new WorkflowOutput((global::Vellum.WorkflowOutputError?)value);
 
         /// <summary>
@@ -493,6 +607,11 @@ namespace Vellum
         {
             WorkflowOutputError = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowOutput FromWorkflowOutputError(global::Vellum.WorkflowOutputError? value) => new WorkflowOutput(value);
 
         /// <summary>
         /// 
@@ -515,6 +634,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowOutput FromWorkflowOutputFunctionCall(global::Vellum.WorkflowOutputFunctionCall? value) => new WorkflowOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowOutput(global::Vellum.WorkflowOutputImage value) => new WorkflowOutput((global::Vellum.WorkflowOutputImage?)value);
 
         /// <summary>
@@ -529,6 +653,11 @@ namespace Vellum
         {
             WorkflowOutputImage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowOutput FromWorkflowOutputImage(global::Vellum.WorkflowOutputImage? value) => new WorkflowOutput(value);
 
         /// <summary>
         /// 
@@ -551,6 +680,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowOutput FromWorkflowOutputAudio(global::Vellum.WorkflowOutputAudio? value) => new WorkflowOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowOutput(global::Vellum.WorkflowOutputVideo value) => new WorkflowOutput((global::Vellum.WorkflowOutputVideo?)value);
 
         /// <summary>
@@ -569,6 +703,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowOutput FromWorkflowOutputVideo(global::Vellum.WorkflowOutputVideo? value) => new WorkflowOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowOutput(global::Vellum.WorkflowOutputDocument value) => new WorkflowOutput((global::Vellum.WorkflowOutputDocument?)value);
 
         /// <summary>
@@ -583,6 +722,11 @@ namespace Vellum
         {
             WorkflowOutputDocument = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowOutput FromWorkflowOutputDocument(global::Vellum.WorkflowOutputDocument? value) => new WorkflowOutput(value);
 
         /// <summary>
         /// 

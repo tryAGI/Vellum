@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TemplatingNodeStringResult PickTemplatingNodeStringResult() => IsTemplatingNodeStringResult
+            ? TemplatingNodeStringResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeStringResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeNumberResult? TemplatingNodeNumberResult { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = TemplatingNodeNumberResult;
             return IsTemplatingNodeNumberResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TemplatingNodeNumberResult PickTemplatingNodeNumberResult() => IsTemplatingNodeNumberResult
+            ? TemplatingNodeNumberResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TemplatingNodeJsonResult PickTemplatingNodeJsonResult() => IsTemplatingNodeJsonResult
+            ? TemplatingNodeJsonResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeJsonResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeChatHistoryResult? TemplatingNodeChatHistoryResult { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Vellum
             value = TemplatingNodeChatHistoryResult;
             return IsTemplatingNodeChatHistoryResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TemplatingNodeChatHistoryResult PickTemplatingNodeChatHistoryResult() => IsTemplatingNodeChatHistoryResult
+            ? TemplatingNodeChatHistoryResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -162,6 +190,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TemplatingNodeSearchResultsResult PickTemplatingNodeSearchResultsResult() => IsTemplatingNodeSearchResultsResult
+            ? TemplatingNodeSearchResultsResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeSearchResultsResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeErrorResult? TemplatingNodeErrorResult { get; init; }
 #else
@@ -188,6 +223,13 @@ namespace Vellum
             value = TemplatingNodeErrorResult;
             return IsTemplatingNodeErrorResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TemplatingNodeErrorResult PickTemplatingNodeErrorResult() => IsTemplatingNodeErrorResult
+            ? TemplatingNodeErrorResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -222,6 +264,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TemplatingNodeArrayResult PickTemplatingNodeArrayResult() => IsTemplatingNodeArrayResult
+            ? TemplatingNodeArrayResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeArrayResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TemplatingNodeFunctionCallResult? TemplatingNodeFunctionCallResult { get; init; }
 #else
@@ -248,6 +297,13 @@ namespace Vellum
             value = TemplatingNodeFunctionCallResult;
             return IsTemplatingNodeFunctionCallResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TemplatingNodeFunctionCallResult PickTemplatingNodeFunctionCallResult() => IsTemplatingNodeFunctionCallResult
+            ? TemplatingNodeFunctionCallResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -265,6 +321,11 @@ namespace Vellum
         {
             TemplatingNodeStringResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeStringResult(global::Vellum.TemplatingNodeStringResult? value) => new TemplatingNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -287,6 +348,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeNumberResult(global::Vellum.TemplatingNodeNumberResult? value) => new TemplatingNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TemplatingNodeResultOutput(global::Vellum.TemplatingNodeJsonResult value) => new TemplatingNodeResultOutput((global::Vellum.TemplatingNodeJsonResult?)value);
 
         /// <summary>
@@ -301,6 +367,11 @@ namespace Vellum
         {
             TemplatingNodeJsonResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeJsonResult(global::Vellum.TemplatingNodeJsonResult? value) => new TemplatingNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -323,6 +394,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeChatHistoryResult(global::Vellum.TemplatingNodeChatHistoryResult? value) => new TemplatingNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TemplatingNodeResultOutput(global::Vellum.TemplatingNodeSearchResultsResult value) => new TemplatingNodeResultOutput((global::Vellum.TemplatingNodeSearchResultsResult?)value);
 
         /// <summary>
@@ -337,6 +413,11 @@ namespace Vellum
         {
             TemplatingNodeSearchResultsResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeSearchResultsResult(global::Vellum.TemplatingNodeSearchResultsResult? value) => new TemplatingNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -359,6 +440,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeErrorResult(global::Vellum.TemplatingNodeErrorResult? value) => new TemplatingNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TemplatingNodeResultOutput(global::Vellum.TemplatingNodeArrayResult value) => new TemplatingNodeResultOutput((global::Vellum.TemplatingNodeArrayResult?)value);
 
         /// <summary>
@@ -377,6 +463,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeArrayResult(global::Vellum.TemplatingNodeArrayResult? value) => new TemplatingNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TemplatingNodeResultOutput(global::Vellum.TemplatingNodeFunctionCallResult value) => new TemplatingNodeResultOutput((global::Vellum.TemplatingNodeFunctionCallResult?)value);
 
         /// <summary>
@@ -391,6 +482,11 @@ namespace Vellum
         {
             TemplatingNodeFunctionCallResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TemplatingNodeResultOutput FromTemplatingNodeFunctionCallResult(global::Vellum.TemplatingNodeFunctionCallResult? value) => new TemplatingNodeResultOutput(value);
 
         /// <summary>
         /// 

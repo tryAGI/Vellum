@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunMetricStringOutput PickTestSuiteRunMetricStringOutput() => IsTestSuiteRunMetricStringOutput
+            ? TestSuiteRunMetricStringOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricStringOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Output for a test suite run metric that is of type NUMBER
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = TestSuiteRunMetricNumberOutput;
             return IsTestSuiteRunMetricNumberOutput;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunMetricNumberOutput PickTestSuiteRunMetricNumberOutput() => IsTestSuiteRunMetricNumberOutput
+            ? TestSuiteRunMetricNumberOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricNumberOutput' but the value was {ToString()}.");
 
         /// <summary>
         /// Output for a test suite run metric that is of type NUMBER
@@ -100,6 +114,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunMetricJSONOutput PickTestSuiteRunMetricJSONOutput() => IsTestSuiteRunMetricJSONOutput
+            ? TestSuiteRunMetricJSONOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricJSONOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Output for a test suite run metric that is of type ERROR
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -130,6 +151,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunMetricErrorOutput PickTestSuiteRunMetricErrorOutput() => IsTestSuiteRunMetricErrorOutput
+            ? TestSuiteRunMetricErrorOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricErrorOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Output for a test suite run metric that is of type ARRAY
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -158,6 +186,13 @@ namespace Vellum
             value = TestSuiteRunMetricArrayOutput;
             return IsTestSuiteRunMetricArrayOutput;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunMetricArrayOutput PickTestSuiteRunMetricArrayOutput() => IsTestSuiteRunMetricArrayOutput
+            ? TestSuiteRunMetricArrayOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricArrayOutput' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Vellum
         {
             TestSuiteRunMetricStringOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunMetricOutput FromTestSuiteRunMetricStringOutput(global::Vellum.TestSuiteRunMetricStringOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunMetricOutput FromTestSuiteRunMetricNumberOutput(global::Vellum.TestSuiteRunMetricNumberOutput? value) => new TestSuiteRunMetricOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricJSONOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricJSONOutput?)value);
 
         /// <summary>
@@ -211,6 +256,11 @@ namespace Vellum
         {
             TestSuiteRunMetricJSONOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunMetricOutput FromTestSuiteRunMetricJSONOutput(global::Vellum.TestSuiteRunMetricJSONOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
         /// 
@@ -233,6 +283,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunMetricOutput FromTestSuiteRunMetricErrorOutput(global::Vellum.TestSuiteRunMetricErrorOutput? value) => new TestSuiteRunMetricOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricArrayOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricArrayOutput?)value);
 
         /// <summary>
@@ -247,6 +302,11 @@ namespace Vellum
         {
             TestSuiteRunMetricArrayOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunMetricOutput FromTestSuiteRunMetricArrayOutput(global::Vellum.TestSuiteRunMetricArrayOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
         /// 

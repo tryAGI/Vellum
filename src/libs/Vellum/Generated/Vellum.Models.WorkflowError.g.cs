@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowEventError PickWorkflowEventError() => IsWorkflowEventError
+            ? WorkflowEventError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventError' but the value was {ToString()}.");
+
+        /// <summary>
         /// Workflow initialization error.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowInitializationError;
             return IsWorkflowInitializationError;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowInitializationError PickWorkflowInitializationError() => IsWorkflowInitializationError
+            ? WorkflowInitializationError!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowInitializationError' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowError FromWorkflowEventError(global::Vellum.WorkflowEventError? value) => new WorkflowError(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowError(global::Vellum.WorkflowInitializationError value) => new WorkflowError((global::Vellum.WorkflowInitializationError?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Vellum
         {
             WorkflowInitializationError = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowError FromWorkflowInitializationError(global::Vellum.WorkflowInitializationError? value) => new WorkflowError(value);
 
         /// <summary>
         /// 

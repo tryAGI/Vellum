@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowExecutionWorkflowResultEvent PickWorkflowExecutionWorkflowResultEvent() => IsWorkflowExecutionWorkflowResultEvent
+            ? WorkflowExecutionWorkflowResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionWorkflowResultEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// A NODE-level event emitted from the workflow's execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = WorkflowExecutionNodeResultEvent;
             return IsWorkflowExecutionNodeResultEvent;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowExecutionNodeResultEvent PickWorkflowExecutionNodeResultEvent() => IsWorkflowExecutionNodeResultEvent
+            ? WorkflowExecutionNodeResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionNodeResultEvent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowStreamEvent FromWorkflowExecutionWorkflowResultEvent(global::Vellum.WorkflowExecutionWorkflowResultEvent? value) => new WorkflowStreamEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowStreamEvent(global::Vellum.WorkflowExecutionNodeResultEvent value) => new WorkflowStreamEvent((global::Vellum.WorkflowExecutionNodeResultEvent?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Vellum
         {
             WorkflowExecutionNodeResultEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowStreamEvent FromWorkflowExecutionNodeResultEvent(global::Vellum.WorkflowExecutionNodeResultEvent? value) => new WorkflowStreamEvent(value);
 
         /// <summary>
         /// 

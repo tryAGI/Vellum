@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TerminalNodeStringResult PickTerminalNodeStringResult() => IsTerminalNodeStringResult
+            ? TerminalNodeStringResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeStringResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TerminalNodeNumberResult? TerminalNodeNumberResult { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = TerminalNodeNumberResult;
             return IsTerminalNodeNumberResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TerminalNodeNumberResult PickTerminalNodeNumberResult() => IsTerminalNodeNumberResult
+            ? TerminalNodeNumberResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TerminalNodeJsonResult PickTerminalNodeJsonResult() => IsTerminalNodeJsonResult
+            ? TerminalNodeJsonResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeJsonResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TerminalNodeChatHistoryResult? TerminalNodeChatHistoryResult { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Vellum
             value = TerminalNodeChatHistoryResult;
             return IsTerminalNodeChatHistoryResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TerminalNodeChatHistoryResult PickTerminalNodeChatHistoryResult() => IsTerminalNodeChatHistoryResult
+            ? TerminalNodeChatHistoryResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -162,6 +190,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TerminalNodeSearchResultsResult PickTerminalNodeSearchResultsResult() => IsTerminalNodeSearchResultsResult
+            ? TerminalNodeSearchResultsResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeSearchResultsResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TerminalNodeErrorResult? TerminalNodeErrorResult { get; init; }
 #else
@@ -188,6 +223,13 @@ namespace Vellum
             value = TerminalNodeErrorResult;
             return IsTerminalNodeErrorResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TerminalNodeErrorResult PickTerminalNodeErrorResult() => IsTerminalNodeErrorResult
+            ? TerminalNodeErrorResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -222,6 +264,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.TerminalNodeArrayResult PickTerminalNodeArrayResult() => IsTerminalNodeArrayResult
+            ? TerminalNodeArrayResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeArrayResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.TerminalNodeFunctionCallResult? TerminalNodeFunctionCallResult { get; init; }
 #else
@@ -248,6 +297,13 @@ namespace Vellum
             value = TerminalNodeFunctionCallResult;
             return IsTerminalNodeFunctionCallResult;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TerminalNodeFunctionCallResult PickTerminalNodeFunctionCallResult() => IsTerminalNodeFunctionCallResult
+            ? TerminalNodeFunctionCallResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -265,6 +321,11 @@ namespace Vellum
         {
             TerminalNodeStringResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeStringResult(global::Vellum.TerminalNodeStringResult? value) => new TerminalNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -287,6 +348,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeNumberResult(global::Vellum.TerminalNodeNumberResult? value) => new TerminalNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TerminalNodeResultOutput(global::Vellum.TerminalNodeJsonResult value) => new TerminalNodeResultOutput((global::Vellum.TerminalNodeJsonResult?)value);
 
         /// <summary>
@@ -301,6 +367,11 @@ namespace Vellum
         {
             TerminalNodeJsonResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeJsonResult(global::Vellum.TerminalNodeJsonResult? value) => new TerminalNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -323,6 +394,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeChatHistoryResult(global::Vellum.TerminalNodeChatHistoryResult? value) => new TerminalNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TerminalNodeResultOutput(global::Vellum.TerminalNodeSearchResultsResult value) => new TerminalNodeResultOutput((global::Vellum.TerminalNodeSearchResultsResult?)value);
 
         /// <summary>
@@ -337,6 +413,11 @@ namespace Vellum
         {
             TerminalNodeSearchResultsResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeSearchResultsResult(global::Vellum.TerminalNodeSearchResultsResult? value) => new TerminalNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -359,6 +440,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeErrorResult(global::Vellum.TerminalNodeErrorResult? value) => new TerminalNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TerminalNodeResultOutput(global::Vellum.TerminalNodeArrayResult value) => new TerminalNodeResultOutput((global::Vellum.TerminalNodeArrayResult?)value);
 
         /// <summary>
@@ -377,6 +463,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeArrayResult(global::Vellum.TerminalNodeArrayResult? value) => new TerminalNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TerminalNodeResultOutput(global::Vellum.TerminalNodeFunctionCallResult value) => new TerminalNodeResultOutput((global::Vellum.TerminalNodeFunctionCallResult?)value);
 
         /// <summary>
@@ -391,6 +482,11 @@ namespace Vellum
         {
             TerminalNodeFunctionCallResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TerminalNodeResultOutput FromTerminalNodeFunctionCallResult(global::Vellum.TerminalNodeFunctionCallResult? value) => new TerminalNodeResultOutput(value);
 
         /// <summary>
         /// 

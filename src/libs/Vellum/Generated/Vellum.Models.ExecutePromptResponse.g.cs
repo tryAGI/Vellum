@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FulfilledExecutePromptResponse PickFulfilledExecutePromptResponse() => IsFulfilledExecutePromptResponse
+            ? FulfilledExecutePromptResponse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecutePromptResponse' but the value was {ToString()}.");
+
+        /// <summary>
         /// The unsuccessful response from the model containing an error of what went wrong.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = RejectedExecutePromptResponse;
             return IsRejectedExecutePromptResponse;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.RejectedExecutePromptResponse PickRejectedExecutePromptResponse() => IsRejectedExecutePromptResponse
+            ? RejectedExecutePromptResponse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecutePromptResponse' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutePromptResponse FromFulfilledExecutePromptResponse(global::Vellum.FulfilledExecutePromptResponse? value) => new ExecutePromptResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse value) => new ExecutePromptResponse((global::Vellum.RejectedExecutePromptResponse?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Vellum
         {
             RejectedExecutePromptResponse = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutePromptResponse FromRejectedExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse? value) => new ExecutePromptResponse(value);
 
         /// <summary>
         /// 

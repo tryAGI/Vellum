@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.WorkflowExecutionActualStringRequest PickWorkflowExecutionActualStringRequest() => IsWorkflowExecutionActualStringRequest
+            ? WorkflowExecutionActualStringRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualStringRequest' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualJsonRequest? WorkflowExecutionActualJsonRequest { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.WorkflowExecutionActualJsonRequest PickWorkflowExecutionActualJsonRequest() => IsWorkflowExecutionActualJsonRequest
+            ? WorkflowExecutionActualJsonRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualJsonRequest' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualChatHistoryRequest? WorkflowExecutionActualChatHistoryRequest { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Vellum
             value = WorkflowExecutionActualChatHistoryRequest;
             return IsWorkflowExecutionActualChatHistoryRequest;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.WorkflowExecutionActualChatHistoryRequest PickWorkflowExecutionActualChatHistoryRequest() => IsWorkflowExecutionActualChatHistoryRequest
+            ? WorkflowExecutionActualChatHistoryRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualChatHistoryRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Vellum
         {
             WorkflowExecutionActualStringRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SubmitWorkflowExecutionActualRequest FromWorkflowExecutionActualStringRequest(global::Vellum.WorkflowExecutionActualStringRequest? value) => new SubmitWorkflowExecutionActualRequest(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static SubmitWorkflowExecutionActualRequest FromWorkflowExecutionActualJsonRequest(global::Vellum.WorkflowExecutionActualJsonRequest? value) => new SubmitWorkflowExecutionActualRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualChatHistoryRequest value) => new SubmitWorkflowExecutionActualRequest((global::Vellum.WorkflowExecutionActualChatHistoryRequest?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Vellum
         {
             WorkflowExecutionActualChatHistoryRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SubmitWorkflowExecutionActualRequest FromWorkflowExecutionActualChatHistoryRequest(global::Vellum.WorkflowExecutionActualChatHistoryRequest? value) => new SubmitWorkflowExecutionActualRequest(value);
 
         /// <summary>
         /// 

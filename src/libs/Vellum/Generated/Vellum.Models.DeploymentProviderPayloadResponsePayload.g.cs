@@ -42,6 +42,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public object PickDeploymentProviderPayloadResponsePayloadVariant1() => IsDeploymentProviderPayloadResponsePayloadVariant1
+            ? DeploymentProviderPayloadResponsePayloadVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DeploymentProviderPayloadResponsePayloadVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? DeploymentProviderPayloadResponsePayloadVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Vellum
             value = DeploymentProviderPayloadResponsePayloadVariant2;
             return IsDeploymentProviderPayloadResponsePayloadVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickDeploymentProviderPayloadResponsePayloadVariant2() => IsDeploymentProviderPayloadResponsePayloadVariant2
+            ? DeploymentProviderPayloadResponsePayloadVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DeploymentProviderPayloadResponsePayloadVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Vellum
         {
             DeploymentProviderPayloadResponsePayloadVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DeploymentProviderPayloadResponsePayload FromDeploymentProviderPayloadResponsePayloadVariant2(string? value) => new DeploymentProviderPayloadResponsePayload(value);
 
         /// <summary>
         /// 

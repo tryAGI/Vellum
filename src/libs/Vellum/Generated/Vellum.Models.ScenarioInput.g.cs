@@ -40,6 +40,13 @@ namespace Vellum
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ScenarioInputStringVariableValue PickScenarioInputStringVariableValue() => IsScenarioInputStringVariableValue
+            ? ScenarioInputStringVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputStringVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// Prompt Sandbox Scenario input value that is of type JSON
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Vellum
             value = ScenarioInputJsonVariableValue;
             return IsScenarioInputJsonVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ScenarioInputJsonVariableValue PickScenarioInputJsonVariableValue() => IsScenarioInputJsonVariableValue
+            ? ScenarioInputJsonVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputJsonVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// Prompt Sandbox Scenario input value that is of type CHAT_HISTORY
@@ -102,6 +116,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.ScenarioInputChatHistoryVariableValue PickScenarioInputChatHistoryVariableValue() => IsScenarioInputChatHistoryVariableValue
+            ? ScenarioInputChatHistoryVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputChatHistoryVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.ScenarioInputAudioVariableValue? ScenarioInputAudioVariableValue { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Vellum
             value = ScenarioInputAudioVariableValue;
             return IsScenarioInputAudioVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ScenarioInputAudioVariableValue PickScenarioInputAudioVariableValue() => IsScenarioInputAudioVariableValue
+            ? ScenarioInputAudioVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputAudioVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -162,6 +190,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.ScenarioInputVideoVariableValue PickScenarioInputVideoVariableValue() => IsScenarioInputVideoVariableValue
+            ? ScenarioInputVideoVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputVideoVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.ScenarioInputImageVariableValue? ScenarioInputImageVariableValue { get; init; }
 #else
@@ -192,6 +227,13 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public global::Vellum.ScenarioInputImageVariableValue PickScenarioInputImageVariableValue() => IsScenarioInputImageVariableValue
+            ? ScenarioInputImageVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputImageVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.ScenarioInputDocumentVariableValue? ScenarioInputDocumentVariableValue { get; init; }
 #else
@@ -218,6 +260,13 @@ namespace Vellum
             value = ScenarioInputDocumentVariableValue;
             return IsScenarioInputDocumentVariableValue;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ScenarioInputDocumentVariableValue PickScenarioInputDocumentVariableValue() => IsScenarioInputDocumentVariableValue
+            ? ScenarioInputDocumentVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputDocumentVariableValue' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -235,6 +284,11 @@ namespace Vellum
         {
             ScenarioInputStringVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ScenarioInput FromScenarioInputStringVariableValue(global::Vellum.ScenarioInputStringVariableValue? value) => new ScenarioInput(value);
 
         /// <summary>
         /// 
@@ -257,6 +311,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ScenarioInput FromScenarioInputJsonVariableValue(global::Vellum.ScenarioInputJsonVariableValue? value) => new ScenarioInput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ScenarioInput(global::Vellum.ScenarioInputChatHistoryVariableValue value) => new ScenarioInput((global::Vellum.ScenarioInputChatHistoryVariableValue?)value);
 
         /// <summary>
@@ -271,6 +330,11 @@ namespace Vellum
         {
             ScenarioInputChatHistoryVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ScenarioInput FromScenarioInputChatHistoryVariableValue(global::Vellum.ScenarioInputChatHistoryVariableValue? value) => new ScenarioInput(value);
 
         /// <summary>
         /// 
@@ -293,6 +357,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ScenarioInput FromScenarioInputAudioVariableValue(global::Vellum.ScenarioInputAudioVariableValue? value) => new ScenarioInput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ScenarioInput(global::Vellum.ScenarioInputVideoVariableValue value) => new ScenarioInput((global::Vellum.ScenarioInputVideoVariableValue?)value);
 
         /// <summary>
@@ -307,6 +376,11 @@ namespace Vellum
         {
             ScenarioInputVideoVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ScenarioInput FromScenarioInputVideoVariableValue(global::Vellum.ScenarioInputVideoVariableValue? value) => new ScenarioInput(value);
 
         /// <summary>
         /// 
@@ -329,6 +403,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ScenarioInput FromScenarioInputImageVariableValue(global::Vellum.ScenarioInputImageVariableValue? value) => new ScenarioInput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ScenarioInput(global::Vellum.ScenarioInputDocumentVariableValue value) => new ScenarioInput((global::Vellum.ScenarioInputDocumentVariableValue?)value);
 
         /// <summary>
@@ -343,6 +422,11 @@ namespace Vellum
         {
             ScenarioInputDocumentVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ScenarioInput FromScenarioInputDocumentVariableValue(global::Vellum.ScenarioInputDocumentVariableValue? value) => new ScenarioInput(value);
 
         /// <summary>
         /// 
