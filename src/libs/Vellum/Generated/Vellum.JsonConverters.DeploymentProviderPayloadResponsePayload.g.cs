@@ -108,7 +108,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (deploymentProviderPayloadResponsePayloadVariant1 == null && deploymentProviderPayloadResponsePayloadVariant2 == null)
+            {
                 try
                 {
 

@@ -206,6 +206,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeStringResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeStringResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeStringResult).Name}");
                     templatingNodeStringResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -216,9 +217,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeNumberResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeNumberResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeNumberResult).Name}");
                     templatingNodeNumberResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -229,9 +234,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeJsonResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeJsonResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeJsonResult).Name}");
                     templatingNodeJsonResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -242,9 +251,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeChatHistoryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeChatHistoryResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeChatHistoryResult).Name}");
                     templatingNodeChatHistoryResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -255,9 +268,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeSearchResultsResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeSearchResultsResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeSearchResultsResult).Name}");
                     templatingNodeSearchResultsResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -268,9 +285,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeErrorResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeErrorResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeErrorResult).Name}");
                     templatingNodeErrorResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -281,9 +302,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeArrayResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeArrayResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeArrayResult).Name}");
                     templatingNodeArrayResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -294,9 +319,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (templatingNodeStringResult == null && templatingNodeNumberResult == null && templatingNodeJsonResult == null && templatingNodeChatHistoryResult == null && templatingNodeSearchResultsResult == null && templatingNodeErrorResult == null && templatingNodeArrayResult == null && templatingNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TemplatingNodeFunctionCallResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TemplatingNodeFunctionCallResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TemplatingNodeFunctionCallResult).Name}");
                     templatingNodeFunctionCallResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -204,6 +204,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest).Name}");
                     testSuiteRunDeploymentReleaseTagExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -214,9 +215,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunDeploymentReleaseTagExecConfigRequest == null && testSuiteRunPromptSandboxExecConfigRequest == null && testSuiteRunPromptSandboxHistoryItemExecConfigRequest == null && testSuiteRunWorkflowReleaseTagExecConfigRequest == null && testSuiteRunWorkflowSandboxExecConfigRequest == null && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest == null && testSuiteRunExternalExecConfigRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest).Name}");
                     testSuiteRunPromptSandboxExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -227,9 +232,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunDeploymentReleaseTagExecConfigRequest == null && testSuiteRunPromptSandboxExecConfigRequest == null && testSuiteRunPromptSandboxHistoryItemExecConfigRequest == null && testSuiteRunWorkflowReleaseTagExecConfigRequest == null && testSuiteRunWorkflowSandboxExecConfigRequest == null && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest == null && testSuiteRunExternalExecConfigRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest).Name}");
                     testSuiteRunPromptSandboxHistoryItemExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -240,9 +249,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunDeploymentReleaseTagExecConfigRequest == null && testSuiteRunPromptSandboxExecConfigRequest == null && testSuiteRunPromptSandboxHistoryItemExecConfigRequest == null && testSuiteRunWorkflowReleaseTagExecConfigRequest == null && testSuiteRunWorkflowSandboxExecConfigRequest == null && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest == null && testSuiteRunExternalExecConfigRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest).Name}");
                     testSuiteRunWorkflowReleaseTagExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -253,9 +266,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunDeploymentReleaseTagExecConfigRequest == null && testSuiteRunPromptSandboxExecConfigRequest == null && testSuiteRunPromptSandboxHistoryItemExecConfigRequest == null && testSuiteRunWorkflowReleaseTagExecConfigRequest == null && testSuiteRunWorkflowSandboxExecConfigRequest == null && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest == null && testSuiteRunExternalExecConfigRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest).Name}");
                     testSuiteRunWorkflowSandboxExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -266,9 +283,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunDeploymentReleaseTagExecConfigRequest == null && testSuiteRunPromptSandboxExecConfigRequest == null && testSuiteRunPromptSandboxHistoryItemExecConfigRequest == null && testSuiteRunWorkflowReleaseTagExecConfigRequest == null && testSuiteRunWorkflowSandboxExecConfigRequest == null && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest == null && testSuiteRunExternalExecConfigRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest).Name}");
                     testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -279,9 +300,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunDeploymentReleaseTagExecConfigRequest == null && testSuiteRunPromptSandboxExecConfigRequest == null && testSuiteRunPromptSandboxHistoryItemExecConfigRequest == null && testSuiteRunWorkflowReleaseTagExecConfigRequest == null && testSuiteRunWorkflowSandboxExecConfigRequest == null && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest == null && testSuiteRunExternalExecConfigRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExternalExecConfigRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExternalExecConfigRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExternalExecConfigRequest).Name}");
                     testSuiteRunExternalExecConfigRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

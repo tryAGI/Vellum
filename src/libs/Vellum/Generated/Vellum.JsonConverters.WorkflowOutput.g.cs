@@ -302,6 +302,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputString> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputString).Name}");
                     workflowOutputString = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -312,9 +313,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputNumber), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputNumber> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputNumber).Name}");
                     workflowOutputNumber = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -325,9 +330,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputJSON), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputJSON> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputJSON).Name}");
                     workflowOutputJSON = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -338,9 +347,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputChatHistory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputChatHistory> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputChatHistory).Name}");
                     workflowOutputChatHistory = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -351,9 +364,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputSearchResults), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputSearchResults> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputSearchResults).Name}");
                     workflowOutputSearchResults = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -364,9 +381,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputArray), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputArray> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputArray).Name}");
                     workflowOutputArray = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -377,9 +398,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputError), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputError> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputError).Name}");
                     workflowOutputError = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -390,9 +415,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputFunctionCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputFunctionCall> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputFunctionCall).Name}");
                     workflowOutputFunctionCall = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -403,9 +432,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputImage> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputImage).Name}");
                     workflowOutputImage = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -416,9 +449,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputAudio), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputAudio> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputAudio).Name}");
                     workflowOutputAudio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -429,9 +466,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputVideo), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputVideo> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputVideo).Name}");
                     workflowOutputVideo = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -442,9 +483,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowOutputString == null && workflowOutputNumber == null && workflowOutputJSON == null && workflowOutputChatHistory == null && workflowOutputSearchResults == null && workflowOutputArray == null && workflowOutputError == null && workflowOutputFunctionCall == null && workflowOutputImage == null && workflowOutputAudio == null && workflowOutputVideo == null && workflowOutputDocument == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowOutputDocument), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowOutputDocument> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowOutputDocument).Name}");
                     workflowOutputDocument = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

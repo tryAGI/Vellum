@@ -196,6 +196,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.StringChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.StringChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.StringChatMessageContentRequest).Name}");
                     stringChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -206,9 +207,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringChatMessageContentRequest == null && functionCallChatMessageContentRequest == null && arrayChatMessageContentRequest == null && audioChatMessageContentRequest == null && videoChatMessageContentRequest == null && imageChatMessageContentRequest == null && documentChatMessageContentRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FunctionCallChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FunctionCallChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FunctionCallChatMessageContentRequest).Name}");
                     functionCallChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -219,9 +224,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringChatMessageContentRequest == null && functionCallChatMessageContentRequest == null && arrayChatMessageContentRequest == null && audioChatMessageContentRequest == null && videoChatMessageContentRequest == null && imageChatMessageContentRequest == null && documentChatMessageContentRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ArrayChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ArrayChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ArrayChatMessageContentRequest).Name}");
                     arrayChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -232,9 +241,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringChatMessageContentRequest == null && functionCallChatMessageContentRequest == null && arrayChatMessageContentRequest == null && audioChatMessageContentRequest == null && videoChatMessageContentRequest == null && imageChatMessageContentRequest == null && documentChatMessageContentRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.AudioChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.AudioChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.AudioChatMessageContentRequest).Name}");
                     audioChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -245,9 +258,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringChatMessageContentRequest == null && functionCallChatMessageContentRequest == null && arrayChatMessageContentRequest == null && audioChatMessageContentRequest == null && videoChatMessageContentRequest == null && imageChatMessageContentRequest == null && documentChatMessageContentRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.VideoChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.VideoChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.VideoChatMessageContentRequest).Name}");
                     videoChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -258,9 +275,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringChatMessageContentRequest == null && functionCallChatMessageContentRequest == null && arrayChatMessageContentRequest == null && audioChatMessageContentRequest == null && videoChatMessageContentRequest == null && imageChatMessageContentRequest == null && documentChatMessageContentRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ImageChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ImageChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ImageChatMessageContentRequest).Name}");
                     imageChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -271,9 +292,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (stringChatMessageContentRequest == null && functionCallChatMessageContentRequest == null && arrayChatMessageContentRequest == null && audioChatMessageContentRequest == null && videoChatMessageContentRequest == null && imageChatMessageContentRequest == null && documentChatMessageContentRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.DocumentChatMessageContentRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.DocumentChatMessageContentRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.DocumentChatMessageContentRequest).Name}");
                     documentChatMessageContentRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

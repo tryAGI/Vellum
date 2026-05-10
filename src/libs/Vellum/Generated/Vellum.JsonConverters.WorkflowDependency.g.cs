@@ -82,6 +82,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowIntegrationDependency), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowIntegrationDependency> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowIntegrationDependency).Name}");
                     workflowIntegrationDependency = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -92,9 +93,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowIntegrationDependency == null && workflowModelProviderDependency == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowModelProviderDependency), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowModelProviderDependency> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowModelProviderDependency).Name}");
                     workflowModelProviderDependency = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

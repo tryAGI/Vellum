@@ -277,6 +277,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowParentContext).Name}");
                     workflowParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -287,9 +288,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.NodeParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.NodeParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.NodeParentContext).Name}");
                     nodeParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -300,9 +305,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowDeploymentParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowDeploymentParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowDeploymentParentContext).Name}");
                     workflowDeploymentParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -313,9 +322,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowSandboxParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowSandboxParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowSandboxParentContext).Name}");
                     workflowSandboxParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -326,9 +339,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PromptDeploymentParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PromptDeploymentParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PromptDeploymentParentContext).Name}");
                     promptDeploymentParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -339,9 +356,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.APIRequestParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.APIRequestParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.APIRequestParentContext).Name}");
                     aPIRequestParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -352,9 +373,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ExternalParentContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ExternalParentContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ExternalParentContext).Name}");
                     externalParentContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -365,9 +390,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.ScheduledTriggerContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.ScheduledTriggerContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.ScheduledTriggerContext).Name}");
                     scheduledTriggerContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -378,9 +407,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowParentContext == null && nodeParentContext == null && workflowDeploymentParentContext == null && workflowSandboxParentContext == null && promptDeploymentParentContext == null && aPIRequestParentContext == null && externalParentContext == null && scheduledTriggerContext == null && integrationTriggerContext == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.IntegrationTriggerContext), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.IntegrationTriggerContext> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.IntegrationTriggerContext).Name}");
                     integrationTriggerContext = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

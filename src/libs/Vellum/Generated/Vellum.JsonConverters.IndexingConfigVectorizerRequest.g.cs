@@ -295,6 +295,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest).Name}");
                     openAIVectorizerTextEmbedding3SmallRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -305,9 +306,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest).Name}");
                     openAIVectorizerTextEmbedding3LargeRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -318,9 +323,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request).Name}");
                     openAIVectorizerTextEmbeddingAda002Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -331,9 +340,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest).Name}");
                     basicVectorizerIntfloatMultilingualE5LargeRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -344,9 +357,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request).Name}");
                     basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -357,9 +374,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request).Name}");
                     basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -370,9 +391,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.HkunlpInstructorXlVectorizerRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.HkunlpInstructorXlVectorizerRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.HkunlpInstructorXlVectorizerRequest).Name}");
                     hkunlpInstructorXlVectorizerRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -383,9 +408,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request).Name}");
                     googleVertexAIVectorizerTextEmbedding004Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -396,9 +425,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request).Name}");
                     googleVertexAIVectorizerTextMultilingualEmbedding002Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -409,9 +442,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request).Name}");
                     googleVertexAIVectorizerGeminiEmbedding001Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -422,9 +459,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request).Name}");
                     fastEmbedVectorizerBAAIBgeSmallEnV15Request = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -435,9 +476,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIVectorizerTextEmbedding3SmallRequest == null && openAIVectorizerTextEmbedding3LargeRequest == null && openAIVectorizerTextEmbeddingAda002Request == null && basicVectorizerIntfloatMultilingualE5LargeRequest == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request == null && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request == null && hkunlpInstructorXlVectorizerRequest == null && googleVertexAIVectorizerTextEmbedding004Request == null && googleVertexAIVectorizerTextMultilingualEmbedding002Request == null && googleVertexAIVectorizerGeminiEmbedding001Request == null && fastEmbedVectorizerBAAIBgeSmallEnV15Request == null && privateVectorizerRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PrivateVectorizerRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PrivateVectorizerRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PrivateVectorizerRequest).Name}");
                     privateVectorizerRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -208,6 +208,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityFolder), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityFolder> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityFolder).Name}");
                     folderEntityFolder = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -218,9 +219,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (folderEntityFolder == null && folderEntityPromptSandbox == null && folderEntityWorkflowSandbox == null && folderEntityDocumentIndex == null && folderEntityTestSuite == null && folderEntityDataset == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityPromptSandbox), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityPromptSandbox> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityPromptSandbox).Name}");
                     folderEntityPromptSandbox = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -231,9 +236,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (folderEntityFolder == null && folderEntityPromptSandbox == null && folderEntityWorkflowSandbox == null && folderEntityDocumentIndex == null && folderEntityTestSuite == null && folderEntityDataset == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityWorkflowSandbox), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityWorkflowSandbox> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityWorkflowSandbox).Name}");
                     folderEntityWorkflowSandbox = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -244,9 +253,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (folderEntityFolder == null && folderEntityPromptSandbox == null && folderEntityWorkflowSandbox == null && folderEntityDocumentIndex == null && folderEntityTestSuite == null && folderEntityDataset == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityDocumentIndex), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityDocumentIndex> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityDocumentIndex).Name}");
                     folderEntityDocumentIndex = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -257,9 +270,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (folderEntityFolder == null && folderEntityPromptSandbox == null && folderEntityWorkflowSandbox == null && folderEntityDocumentIndex == null && folderEntityTestSuite == null && folderEntityDataset == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityTestSuite), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityTestSuite> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityTestSuite).Name}");
                     folderEntityTestSuite = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -270,9 +287,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (folderEntityFolder == null && folderEntityPromptSandbox == null && folderEntityWorkflowSandbox == null && folderEntityDocumentIndex == null && folderEntityTestSuite == null && folderEntityDataset == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FolderEntityDataset), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FolderEntityDataset> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FolderEntityDataset).Name}");
                     folderEntityDataset = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
