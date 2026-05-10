@@ -84,5 +84,6 @@ namespace Vellum
         public VellumErrorRequest()
         {
         }
+
     }
 }

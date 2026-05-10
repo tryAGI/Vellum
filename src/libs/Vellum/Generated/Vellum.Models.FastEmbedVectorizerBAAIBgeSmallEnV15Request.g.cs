@@ -40,5 +40,6 @@ namespace Vellum
         public FastEmbedVectorizerBAAIBgeSmallEnV15Request()
         {
         }
+
     }
 }

@@ -130,5 +130,6 @@ namespace Vellum
         public WorkflowModelProviderDependency()
         {
         }
+
     }
 }

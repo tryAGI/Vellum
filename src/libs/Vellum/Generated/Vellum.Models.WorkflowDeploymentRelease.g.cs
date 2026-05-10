@@ -122,5 +122,6 @@ namespace Vellum
         public WorkflowDeploymentRelease()
         {
         }
+
     }
 }

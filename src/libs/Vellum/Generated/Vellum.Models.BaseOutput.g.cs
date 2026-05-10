@@ -58,5 +58,6 @@ namespace Vellum
         public BaseOutput()
         {
         }
+
     }
 }

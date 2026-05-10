@@ -43,5 +43,6 @@ namespace Vellum
         public SearchResultMergingRequest()
         {
         }
+
     }
 }

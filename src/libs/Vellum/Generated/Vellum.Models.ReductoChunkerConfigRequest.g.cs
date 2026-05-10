@@ -41,5 +41,6 @@ namespace Vellum
         public ReductoChunkerConfigRequest()
         {
         }
+
     }
 }

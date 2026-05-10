@@ -135,5 +135,6 @@ namespace Vellum
         public SlimDeploymentRead()
         {
         }
+
     }
 }

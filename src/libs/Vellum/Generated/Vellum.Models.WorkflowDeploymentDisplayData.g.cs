@@ -42,5 +42,6 @@ namespace Vellum
         public WorkflowDeploymentDisplayData()
         {
         }
+
     }
 }

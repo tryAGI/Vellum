@@ -70,5 +70,6 @@ namespace Vellum
         public TerminalNodeArrayResult()
         {
         }
+
     }
 }

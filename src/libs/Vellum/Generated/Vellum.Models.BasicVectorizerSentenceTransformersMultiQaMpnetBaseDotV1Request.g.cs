@@ -49,5 +49,6 @@ namespace Vellum
         public BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request()
         {
         }
+
     }
 }

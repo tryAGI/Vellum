@@ -71,5 +71,6 @@ namespace Vellum
         public SearchNodeResultData()
         {
         }
+
     }
 }
