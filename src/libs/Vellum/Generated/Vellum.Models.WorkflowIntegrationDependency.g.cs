@@ -286,5 +286,6 @@ namespace Vellum
         public WorkflowIntegrationDependency()
         {
         }
+
     }
 }

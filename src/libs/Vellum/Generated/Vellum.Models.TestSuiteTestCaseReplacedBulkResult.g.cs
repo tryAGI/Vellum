@@ -64,5 +64,6 @@ namespace Vellum
         public TestSuiteTestCaseReplacedBulkResult()
         {
         }
+
     }
 }

@@ -115,5 +115,6 @@ namespace Vellum
         public WorkflowDeploymentHistoryItem()
         {
         }
+
     }
 }

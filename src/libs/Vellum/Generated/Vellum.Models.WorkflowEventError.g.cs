@@ -100,5 +100,6 @@ namespace Vellum
         public WorkflowEventError()
         {
         }
+
     }
 }

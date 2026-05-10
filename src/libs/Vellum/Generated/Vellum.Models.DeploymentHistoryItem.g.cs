@@ -105,5 +105,6 @@ namespace Vellum
         public DeploymentHistoryItem()
         {
         }
+
     }
 }

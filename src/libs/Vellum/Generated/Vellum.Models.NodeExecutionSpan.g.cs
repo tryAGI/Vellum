@@ -109,5 +109,6 @@ namespace Vellum
         public NodeExecutionSpan()
         {
         }
+
     }
 }

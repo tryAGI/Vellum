@@ -69,5 +69,6 @@ namespace Vellum
         public NodeInputCompiledChatHistoryValue()
         {
         }
+
     }
 }

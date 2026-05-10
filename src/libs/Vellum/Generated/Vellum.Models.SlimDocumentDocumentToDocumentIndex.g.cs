@@ -96,5 +96,6 @@ namespace Vellum
         public SlimDocumentDocumentToDocumentIndex()
         {
         }
+
     }
 }
