@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsFulfilledExecuteWorkflowWorkflowResultEvent => FulfilledExecuteWorkflowWorkflowResultEvent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFulfilledExecuteWorkflowWorkflowResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? value)
+        {
+            value = FulfilledExecuteWorkflowWorkflowResultEvent;
+            return IsFulfilledExecuteWorkflowWorkflowResultEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent PickFulfilledExecuteWorkflowWorkflowResultEvent() => IsFulfilledExecuteWorkflowWorkflowResultEvent
+            ? FulfilledExecuteWorkflowWorkflowResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// The unsuccessful response from the Workflow execution containing an error specifying what went wrong.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RejectedExecuteWorkflowWorkflowResultEvent))]
 #endif
         public bool IsRejectedExecuteWorkflowWorkflowResultEvent => RejectedExecuteWorkflowWorkflowResultEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRejectedExecuteWorkflowWorkflowResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? value)
+        {
+            value = RejectedExecuteWorkflowWorkflowResultEvent;
+            return IsRejectedExecuteWorkflowWorkflowResultEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent PickRejectedExecuteWorkflowWorkflowResultEvent() => IsRejectedExecuteWorkflowWorkflowResultEvent
+            ? RejectedExecuteWorkflowWorkflowResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecuteWorkflowWorkflowResultEvent FromFulfilledExecuteWorkflowWorkflowResultEvent(global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? value) => new ExecuteWorkflowWorkflowResultEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent value) => new ExecuteWorkflowWorkflowResultEvent((global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Vellum
         {
             RejectedExecuteWorkflowWorkflowResultEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecuteWorkflowWorkflowResultEvent FromRejectedExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? value) => new ExecuteWorkflowWorkflowResultEvent(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent?, TResult>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
-            global::System.Func<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?, TResult>? rejectedExecuteWorkflowWorkflowResultEvent = null,
+            global::System.Func<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent, TResult>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
+            global::System.Func<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent, TResult>? rejectedExecuteWorkflowWorkflowResultEvent = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent?>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
-            global::System.Action<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?>? rejectedExecuteWorkflowWorkflowResultEvent = null,
+            global::System.Action<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
+
+            global::System.Action<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent>? rejectedExecuteWorkflowWorkflowResultEvent = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFulfilledExecuteWorkflowWorkflowResultEvent)
+            {
+                fulfilledExecuteWorkflowWorkflowResultEvent?.Invoke(FulfilledExecuteWorkflowWorkflowResultEvent!);
+            }
+            else if (IsRejectedExecuteWorkflowWorkflowResultEvent)
+            {
+                rejectedExecuteWorkflowWorkflowResultEvent?.Invoke(RejectedExecuteWorkflowWorkflowResultEvent!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
+            global::System.Action<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent>? rejectedExecuteWorkflowWorkflowResultEvent = null,
             bool validate = true)
         {
             if (validate)

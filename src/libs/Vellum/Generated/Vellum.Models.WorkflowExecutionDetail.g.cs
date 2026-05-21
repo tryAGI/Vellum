@@ -129,5 +129,6 @@ namespace Vellum
         public WorkflowExecutionDetail()
         {
         }
+
     }
 }

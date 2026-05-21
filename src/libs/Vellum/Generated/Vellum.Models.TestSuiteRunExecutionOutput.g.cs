@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsTestSuiteRunExecutionStringOutput => TestSuiteRunExecutionStringOutput != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionStringOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionStringOutput? value)
+        {
+            value = TestSuiteRunExecutionStringOutput;
+            return IsTestSuiteRunExecutionStringOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionStringOutput PickTestSuiteRunExecutionStringOutput() => IsTestSuiteRunExecutionStringOutput
+            ? TestSuiteRunExecutionStringOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionStringOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type NUMBER
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunExecutionNumberOutput))]
 #endif
         public bool IsTestSuiteRunExecutionNumberOutput => TestSuiteRunExecutionNumberOutput != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionNumberOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionNumberOutput? value)
+        {
+            value = TestSuiteRunExecutionNumberOutput;
+            return IsTestSuiteRunExecutionNumberOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionNumberOutput PickTestSuiteRunExecutionNumberOutput() => IsTestSuiteRunExecutionNumberOutput
+            ? TestSuiteRunExecutionNumberOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionNumberOutput' but the value was {ToString()}.");
 
         /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type JSON
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsTestSuiteRunExecutionJsonOutput => TestSuiteRunExecutionJsonOutput != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionJsonOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionJsonOutput? value)
+        {
+            value = TestSuiteRunExecutionJsonOutput;
+            return IsTestSuiteRunExecutionJsonOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionJsonOutput PickTestSuiteRunExecutionJsonOutput() => IsTestSuiteRunExecutionJsonOutput
+            ? TestSuiteRunExecutionJsonOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionJsonOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type CHAT_HISTORY
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunExecutionChatHistoryOutput))]
 #endif
         public bool IsTestSuiteRunExecutionChatHistoryOutput => TestSuiteRunExecutionChatHistoryOutput != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionChatHistoryOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionChatHistoryOutput? value)
+        {
+            value = TestSuiteRunExecutionChatHistoryOutput;
+            return IsTestSuiteRunExecutionChatHistoryOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionChatHistoryOutput PickTestSuiteRunExecutionChatHistoryOutput() => IsTestSuiteRunExecutionChatHistoryOutput
+            ? TestSuiteRunExecutionChatHistoryOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionChatHistoryOutput' but the value was {ToString()}.");
 
         /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type SEARCH_RESULTS
@@ -95,6 +175,26 @@ namespace Vellum
         public bool IsTestSuiteRunExecutionSearchResultsOutput => TestSuiteRunExecutionSearchResultsOutput != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionSearchResultsOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionSearchResultsOutput? value)
+        {
+            value = TestSuiteRunExecutionSearchResultsOutput;
+            return IsTestSuiteRunExecutionSearchResultsOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionSearchResultsOutput PickTestSuiteRunExecutionSearchResultsOutput() => IsTestSuiteRunExecutionSearchResultsOutput
+            ? TestSuiteRunExecutionSearchResultsOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionSearchResultsOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type ERROR
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +210,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunExecutionErrorOutput))]
 #endif
         public bool IsTestSuiteRunExecutionErrorOutput => TestSuiteRunExecutionErrorOutput != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionErrorOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionErrorOutput? value)
+        {
+            value = TestSuiteRunExecutionErrorOutput;
+            return IsTestSuiteRunExecutionErrorOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionErrorOutput PickTestSuiteRunExecutionErrorOutput() => IsTestSuiteRunExecutionErrorOutput
+            ? TestSuiteRunExecutionErrorOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionErrorOutput' but the value was {ToString()}.");
 
         /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type FUNCTION_CALL
@@ -129,6 +249,26 @@ namespace Vellum
         public bool IsTestSuiteRunExecutionFunctionCallOutput => TestSuiteRunExecutionFunctionCallOutput != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionFunctionCallOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionFunctionCallOutput? value)
+        {
+            value = TestSuiteRunExecutionFunctionCallOutput;
+            return IsTestSuiteRunExecutionFunctionCallOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionFunctionCallOutput PickTestSuiteRunExecutionFunctionCallOutput() => IsTestSuiteRunExecutionFunctionCallOutput
+            ? TestSuiteRunExecutionFunctionCallOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionFunctionCallOutput' but the value was {ToString()}.");
+
+        /// <summary>
         /// Execution output of an entity evaluated during a Test Suite Run that is of type ARRAY
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -144,6 +284,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunExecutionArrayOutput))]
 #endif
         public bool IsTestSuiteRunExecutionArrayOutput => TestSuiteRunExecutionArrayOutput != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteRunExecutionArrayOutput(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteRunExecutionArrayOutput? value)
+        {
+            value = TestSuiteRunExecutionArrayOutput;
+            return IsTestSuiteRunExecutionArrayOutput;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteRunExecutionArrayOutput PickTestSuiteRunExecutionArrayOutput() => IsTestSuiteRunExecutionArrayOutput
+            ? TestSuiteRunExecutionArrayOutput!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionArrayOutput' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -161,6 +321,11 @@ namespace Vellum
         {
             TestSuiteRunExecutionStringOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionStringOutput(global::Vellum.TestSuiteRunExecutionStringOutput? value) => new TestSuiteRunExecutionOutput(value);
 
         /// <summary>
         /// 
@@ -183,6 +348,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionNumberOutput(global::Vellum.TestSuiteRunExecutionNumberOutput? value) => new TestSuiteRunExecutionOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunExecutionOutput(global::Vellum.TestSuiteRunExecutionJsonOutput value) => new TestSuiteRunExecutionOutput((global::Vellum.TestSuiteRunExecutionJsonOutput?)value);
 
         /// <summary>
@@ -197,6 +367,11 @@ namespace Vellum
         {
             TestSuiteRunExecutionJsonOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionJsonOutput(global::Vellum.TestSuiteRunExecutionJsonOutput? value) => new TestSuiteRunExecutionOutput(value);
 
         /// <summary>
         /// 
@@ -219,6 +394,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionChatHistoryOutput(global::Vellum.TestSuiteRunExecutionChatHistoryOutput? value) => new TestSuiteRunExecutionOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunExecutionOutput(global::Vellum.TestSuiteRunExecutionSearchResultsOutput value) => new TestSuiteRunExecutionOutput((global::Vellum.TestSuiteRunExecutionSearchResultsOutput?)value);
 
         /// <summary>
@@ -233,6 +413,11 @@ namespace Vellum
         {
             TestSuiteRunExecutionSearchResultsOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionSearchResultsOutput(global::Vellum.TestSuiteRunExecutionSearchResultsOutput? value) => new TestSuiteRunExecutionOutput(value);
 
         /// <summary>
         /// 
@@ -255,6 +440,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionErrorOutput(global::Vellum.TestSuiteRunExecutionErrorOutput? value) => new TestSuiteRunExecutionOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunExecutionOutput(global::Vellum.TestSuiteRunExecutionFunctionCallOutput value) => new TestSuiteRunExecutionOutput((global::Vellum.TestSuiteRunExecutionFunctionCallOutput?)value);
 
         /// <summary>
@@ -273,6 +463,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionFunctionCallOutput(global::Vellum.TestSuiteRunExecutionFunctionCallOutput? value) => new TestSuiteRunExecutionOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteRunExecutionOutput(global::Vellum.TestSuiteRunExecutionArrayOutput value) => new TestSuiteRunExecutionOutput((global::Vellum.TestSuiteRunExecutionArrayOutput?)value);
 
         /// <summary>
@@ -287,6 +482,11 @@ namespace Vellum
         {
             TestSuiteRunExecutionArrayOutput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteRunExecutionOutput FromTestSuiteRunExecutionArrayOutput(global::Vellum.TestSuiteRunExecutionArrayOutput? value) => new TestSuiteRunExecutionOutput(value);
 
         /// <summary>
         /// 
@@ -352,14 +552,14 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.TestSuiteRunExecutionStringOutput?, TResult>? testSuiteRunExecutionStringOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionNumberOutput?, TResult>? testSuiteRunExecutionNumberOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionJsonOutput?, TResult>? testSuiteRunExecutionJsonOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionChatHistoryOutput?, TResult>? testSuiteRunExecutionChatHistoryOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionSearchResultsOutput?, TResult>? testSuiteRunExecutionSearchResultsOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionErrorOutput?, TResult>? testSuiteRunExecutionErrorOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionFunctionCallOutput?, TResult>? testSuiteRunExecutionFunctionCallOutput = null,
-            global::System.Func<global::Vellum.TestSuiteRunExecutionArrayOutput?, TResult>? testSuiteRunExecutionArrayOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionStringOutput, TResult>? testSuiteRunExecutionStringOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionNumberOutput, TResult>? testSuiteRunExecutionNumberOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionJsonOutput, TResult>? testSuiteRunExecutionJsonOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionChatHistoryOutput, TResult>? testSuiteRunExecutionChatHistoryOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionSearchResultsOutput, TResult>? testSuiteRunExecutionSearchResultsOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionErrorOutput, TResult>? testSuiteRunExecutionErrorOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionFunctionCallOutput, TResult>? testSuiteRunExecutionFunctionCallOutput = null,
+            global::System.Func<global::Vellum.TestSuiteRunExecutionArrayOutput, TResult>? testSuiteRunExecutionArrayOutput = null,
             bool validate = true)
         {
             if (validate)
@@ -407,14 +607,74 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.TestSuiteRunExecutionStringOutput?>? testSuiteRunExecutionStringOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionNumberOutput?>? testSuiteRunExecutionNumberOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionJsonOutput?>? testSuiteRunExecutionJsonOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionChatHistoryOutput?>? testSuiteRunExecutionChatHistoryOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionSearchResultsOutput?>? testSuiteRunExecutionSearchResultsOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionErrorOutput?>? testSuiteRunExecutionErrorOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionFunctionCallOutput?>? testSuiteRunExecutionFunctionCallOutput = null,
-            global::System.Action<global::Vellum.TestSuiteRunExecutionArrayOutput?>? testSuiteRunExecutionArrayOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionStringOutput>? testSuiteRunExecutionStringOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionNumberOutput>? testSuiteRunExecutionNumberOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionJsonOutput>? testSuiteRunExecutionJsonOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionChatHistoryOutput>? testSuiteRunExecutionChatHistoryOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionSearchResultsOutput>? testSuiteRunExecutionSearchResultsOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionErrorOutput>? testSuiteRunExecutionErrorOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionFunctionCallOutput>? testSuiteRunExecutionFunctionCallOutput = null,
+
+            global::System.Action<global::Vellum.TestSuiteRunExecutionArrayOutput>? testSuiteRunExecutionArrayOutput = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTestSuiteRunExecutionStringOutput)
+            {
+                testSuiteRunExecutionStringOutput?.Invoke(TestSuiteRunExecutionStringOutput!);
+            }
+            else if (IsTestSuiteRunExecutionNumberOutput)
+            {
+                testSuiteRunExecutionNumberOutput?.Invoke(TestSuiteRunExecutionNumberOutput!);
+            }
+            else if (IsTestSuiteRunExecutionJsonOutput)
+            {
+                testSuiteRunExecutionJsonOutput?.Invoke(TestSuiteRunExecutionJsonOutput!);
+            }
+            else if (IsTestSuiteRunExecutionChatHistoryOutput)
+            {
+                testSuiteRunExecutionChatHistoryOutput?.Invoke(TestSuiteRunExecutionChatHistoryOutput!);
+            }
+            else if (IsTestSuiteRunExecutionSearchResultsOutput)
+            {
+                testSuiteRunExecutionSearchResultsOutput?.Invoke(TestSuiteRunExecutionSearchResultsOutput!);
+            }
+            else if (IsTestSuiteRunExecutionErrorOutput)
+            {
+                testSuiteRunExecutionErrorOutput?.Invoke(TestSuiteRunExecutionErrorOutput!);
+            }
+            else if (IsTestSuiteRunExecutionFunctionCallOutput)
+            {
+                testSuiteRunExecutionFunctionCallOutput?.Invoke(TestSuiteRunExecutionFunctionCallOutput!);
+            }
+            else if (IsTestSuiteRunExecutionArrayOutput)
+            {
+                testSuiteRunExecutionArrayOutput?.Invoke(TestSuiteRunExecutionArrayOutput!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.TestSuiteRunExecutionStringOutput>? testSuiteRunExecutionStringOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionNumberOutput>? testSuiteRunExecutionNumberOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionJsonOutput>? testSuiteRunExecutionJsonOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionChatHistoryOutput>? testSuiteRunExecutionChatHistoryOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionSearchResultsOutput>? testSuiteRunExecutionSearchResultsOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionErrorOutput>? testSuiteRunExecutionErrorOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionFunctionCallOutput>? testSuiteRunExecutionFunctionCallOutput = null,
+            global::System.Action<global::Vellum.TestSuiteRunExecutionArrayOutput>? testSuiteRunExecutionArrayOutput = null,
             bool validate = true)
         {
             if (validate)

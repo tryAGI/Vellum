@@ -29,6 +29,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWorkflowEventErrorRawDataVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = WorkflowEventErrorRawDataVariant1;
+            return IsWorkflowEventErrorRawDataVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickWorkflowEventErrorRawDataVariant1() => IsWorkflowEventErrorRawDataVariant1
+            ? WorkflowEventErrorRawDataVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? WorkflowEventErrorRawDataVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEventErrorRawDataVariant2))]
 #endif
         public bool IsWorkflowEventErrorRawDataVariant2 => WorkflowEventErrorRawDataVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickWorkflowEventErrorRawDataVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = WorkflowEventErrorRawDataVariant2;
+            return IsWorkflowEventErrorRawDataVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickWorkflowEventErrorRawDataVariant2() => IsWorkflowEventErrorRawDataVariant2
+            ? WorkflowEventErrorRawDataVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Vellum
         {
             WorkflowEventErrorRawDataVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowEventErrorRawData FromWorkflowEventErrorRawDataVariant2(string? value) => new WorkflowEventErrorRawData(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? workflowEventErrorRawDataVariant1 = null,
-            global::System.Func<string?, TResult>? workflowEventErrorRawDataVariant2 = null,
+            global::System.Func<object, TResult>? workflowEventErrorRawDataVariant1 = null,
+            global::System.Func<string, TResult>? workflowEventErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? workflowEventErrorRawDataVariant1 = null,
-            global::System.Action<string?>? workflowEventErrorRawDataVariant2 = null,
+            global::System.Action<object>? workflowEventErrorRawDataVariant1 = null,
+
+            global::System.Action<string>? workflowEventErrorRawDataVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsWorkflowEventErrorRawDataVariant1)
+            {
+                workflowEventErrorRawDataVariant1?.Invoke(WorkflowEventErrorRawDataVariant1!);
+            }
+            else if (IsWorkflowEventErrorRawDataVariant2)
+            {
+                workflowEventErrorRawDataVariant2?.Invoke(WorkflowEventErrorRawDataVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<object>? workflowEventErrorRawDataVariant1 = null,
+            global::System.Action<string>? workflowEventErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)

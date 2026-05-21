@@ -60,6 +60,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.PromptVersionBuildConfigSandbox), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.PromptVersionBuildConfigSandbox> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.PromptVersionBuildConfigSandbox).Name}");
                     promptVersionBuildConfigSandbox = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -132,6 +132,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseCreatedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseCreatedBulkResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseCreatedBulkResult).Name}");
                     testSuiteTestCaseCreatedBulkResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -142,9 +143,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteTestCaseCreatedBulkResult == null && testSuiteTestCaseReplacedBulkResult == null && testSuiteTestCaseDeletedBulkResult == null && testSuiteTestCaseRejectedBulkResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseReplacedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseReplacedBulkResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseReplacedBulkResult).Name}");
                     testSuiteTestCaseReplacedBulkResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -155,9 +160,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteTestCaseCreatedBulkResult == null && testSuiteTestCaseReplacedBulkResult == null && testSuiteTestCaseDeletedBulkResult == null && testSuiteTestCaseRejectedBulkResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseDeletedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseDeletedBulkResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseDeletedBulkResult).Name}");
                     testSuiteTestCaseDeletedBulkResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -168,9 +177,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteTestCaseCreatedBulkResult == null && testSuiteTestCaseReplacedBulkResult == null && testSuiteTestCaseDeletedBulkResult == null && testSuiteTestCaseRejectedBulkResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseRejectedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseRejectedBulkResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseRejectedBulkResult).Name}");
                     testSuiteTestCaseRejectedBulkResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

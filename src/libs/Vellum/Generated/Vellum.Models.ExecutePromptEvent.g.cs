@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsInitiatedExecutePromptEvent => InitiatedExecutePromptEvent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInitiatedExecutePromptEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.InitiatedExecutePromptEvent? value)
+        {
+            value = InitiatedExecutePromptEvent;
+            return IsInitiatedExecutePromptEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.InitiatedExecutePromptEvent PickInitiatedExecutePromptEvent() => IsInitiatedExecutePromptEvent
+            ? InitiatedExecutePromptEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InitiatedExecutePromptEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// The data returned for each delta during the prompt execution stream.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamingExecutePromptEvent))]
 #endif
         public bool IsStreamingExecutePromptEvent => StreamingExecutePromptEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStreamingExecutePromptEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.StreamingExecutePromptEvent? value)
+        {
+            value = StreamingExecutePromptEvent;
+            return IsStreamingExecutePromptEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.StreamingExecutePromptEvent PickStreamingExecutePromptEvent() => IsStreamingExecutePromptEvent
+            ? StreamingExecutePromptEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StreamingExecutePromptEvent' but the value was {ToString()}.");
 
         /// <summary>
         /// The final data event returned indicating that the stream has ended and all final resolved values from the model can be found.
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsFulfilledExecutePromptEvent => FulfilledExecutePromptEvent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFulfilledExecutePromptEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.FulfilledExecutePromptEvent? value)
+        {
+            value = FulfilledExecutePromptEvent;
+            return IsFulfilledExecutePromptEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FulfilledExecutePromptEvent PickFulfilledExecutePromptEvent() => IsFulfilledExecutePromptEvent
+            ? FulfilledExecutePromptEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecutePromptEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// The final data returned indicating an error occurred during the stream.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RejectedExecutePromptEvent))]
 #endif
         public bool IsRejectedExecutePromptEvent => RejectedExecutePromptEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRejectedExecutePromptEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.RejectedExecutePromptEvent? value)
+        {
+            value = RejectedExecutePromptEvent;
+            return IsRejectedExecutePromptEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.RejectedExecutePromptEvent PickRejectedExecutePromptEvent() => IsRejectedExecutePromptEvent
+            ? RejectedExecutePromptEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecutePromptEvent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace Vellum
         {
             InitiatedExecutePromptEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutePromptEvent FromInitiatedExecutePromptEvent(global::Vellum.InitiatedExecutePromptEvent? value) => new ExecutePromptEvent(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutePromptEvent FromStreamingExecutePromptEvent(global::Vellum.StreamingExecutePromptEvent? value) => new ExecutePromptEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutePromptEvent(global::Vellum.FulfilledExecutePromptEvent value) => new ExecutePromptEvent((global::Vellum.FulfilledExecutePromptEvent?)value);
 
         /// <summary>
@@ -133,6 +223,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutePromptEvent FromFulfilledExecutePromptEvent(global::Vellum.FulfilledExecutePromptEvent? value) => new ExecutePromptEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutePromptEvent(global::Vellum.RejectedExecutePromptEvent value) => new ExecutePromptEvent((global::Vellum.RejectedExecutePromptEvent?)value);
 
         /// <summary>
@@ -147,6 +242,11 @@ namespace Vellum
         {
             RejectedExecutePromptEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutePromptEvent FromRejectedExecutePromptEvent(global::Vellum.RejectedExecutePromptEvent? value) => new ExecutePromptEvent(value);
 
         /// <summary>
         /// 
@@ -196,10 +296,10 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.InitiatedExecutePromptEvent?, TResult>? initiatedExecutePromptEvent = null,
-            global::System.Func<global::Vellum.StreamingExecutePromptEvent?, TResult>? streamingExecutePromptEvent = null,
-            global::System.Func<global::Vellum.FulfilledExecutePromptEvent?, TResult>? fulfilledExecutePromptEvent = null,
-            global::System.Func<global::Vellum.RejectedExecutePromptEvent?, TResult>? rejectedExecutePromptEvent = null,
+            global::System.Func<global::Vellum.InitiatedExecutePromptEvent, TResult>? initiatedExecutePromptEvent = null,
+            global::System.Func<global::Vellum.StreamingExecutePromptEvent, TResult>? streamingExecutePromptEvent = null,
+            global::System.Func<global::Vellum.FulfilledExecutePromptEvent, TResult>? fulfilledExecutePromptEvent = null,
+            global::System.Func<global::Vellum.RejectedExecutePromptEvent, TResult>? rejectedExecutePromptEvent = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +331,46 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.InitiatedExecutePromptEvent?>? initiatedExecutePromptEvent = null,
-            global::System.Action<global::Vellum.StreamingExecutePromptEvent?>? streamingExecutePromptEvent = null,
-            global::System.Action<global::Vellum.FulfilledExecutePromptEvent?>? fulfilledExecutePromptEvent = null,
-            global::System.Action<global::Vellum.RejectedExecutePromptEvent?>? rejectedExecutePromptEvent = null,
+            global::System.Action<global::Vellum.InitiatedExecutePromptEvent>? initiatedExecutePromptEvent = null,
+
+            global::System.Action<global::Vellum.StreamingExecutePromptEvent>? streamingExecutePromptEvent = null,
+
+            global::System.Action<global::Vellum.FulfilledExecutePromptEvent>? fulfilledExecutePromptEvent = null,
+
+            global::System.Action<global::Vellum.RejectedExecutePromptEvent>? rejectedExecutePromptEvent = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsInitiatedExecutePromptEvent)
+            {
+                initiatedExecutePromptEvent?.Invoke(InitiatedExecutePromptEvent!);
+            }
+            else if (IsStreamingExecutePromptEvent)
+            {
+                streamingExecutePromptEvent?.Invoke(StreamingExecutePromptEvent!);
+            }
+            else if (IsFulfilledExecutePromptEvent)
+            {
+                fulfilledExecutePromptEvent?.Invoke(FulfilledExecutePromptEvent!);
+            }
+            else if (IsRejectedExecutePromptEvent)
+            {
+                rejectedExecutePromptEvent?.Invoke(RejectedExecutePromptEvent!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.InitiatedExecutePromptEvent>? initiatedExecutePromptEvent = null,
+            global::System.Action<global::Vellum.StreamingExecutePromptEvent>? streamingExecutePromptEvent = null,
+            global::System.Action<global::Vellum.FulfilledExecutePromptEvent>? fulfilledExecutePromptEvent = null,
+            global::System.Action<global::Vellum.RejectedExecutePromptEvent>? rejectedExecutePromptEvent = null,
             bool validate = true)
         {
             if (validate)

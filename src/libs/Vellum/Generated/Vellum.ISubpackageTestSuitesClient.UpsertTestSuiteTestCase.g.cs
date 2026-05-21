@@ -32,6 +32,25 @@ namespace Vellum
         /// or overwritten with default values.
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vellum.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.TestSuiteTestCase>> UpsertTestSuiteTestCaseAsResponseAsync(
+            string id,
+
+            global::Vellum.UpsertTestSuiteTestCaseRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Upsert Test Suite Test Case<br/>
+        /// Upserts a new test case for a test suite, keying off of the optionally provided test case id.<br/>
+        /// If an id is provided and has a match, the test case will be updated. If no id is provided or no match<br/>
+        /// is found, a new test case will be appended to the end.<br/>
+        /// Note that a full replacement of the test case is performed, so any fields not provided will be removed<br/>
+        /// or overwritten with default values.
+        /// </summary>
+        /// <param name="id"></param>
         /// <param name="requestId">
         /// The Vellum-generated ID of an existing Test Case whose data you'd like to replace. If specified and no Test Case exists with this ID, a 404 will be returned.
         /// </param>

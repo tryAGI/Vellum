@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsExecutionStringVellumValue => ExecutionStringVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionStringVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionStringVellumValue? value)
+        {
+            value = ExecutionStringVellumValue;
+            return IsExecutionStringVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionStringVellumValue PickExecutionStringVellumValue() => IsExecutionStringVellumValue
+            ? ExecutionStringVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionStringVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing a number.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionNumberVellumValue))]
 #endif
         public bool IsExecutionNumberVellumValue => ExecutionNumberVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionNumberVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionNumberVellumValue? value)
+        {
+            value = ExecutionNumberVellumValue;
+            return IsExecutionNumberVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionNumberVellumValue PickExecutionNumberVellumValue() => IsExecutionNumberVellumValue
+            ? ExecutionNumberVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionNumberVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing a JSON object.
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsExecutionJsonVellumValue => ExecutionJsonVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionJsonVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionJsonVellumValue? value)
+        {
+            value = ExecutionJsonVellumValue;
+            return IsExecutionJsonVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionJsonVellumValue PickExecutionJsonVellumValue() => IsExecutionJsonVellumValue
+            ? ExecutionJsonVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionJsonVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing Chat History.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionChatHistoryVellumValue))]
 #endif
         public bool IsExecutionChatHistoryVellumValue => ExecutionChatHistoryVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionChatHistoryVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionChatHistoryVellumValue? value)
+        {
+            value = ExecutionChatHistoryVellumValue;
+            return IsExecutionChatHistoryVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionChatHistoryVellumValue PickExecutionChatHistoryVellumValue() => IsExecutionChatHistoryVellumValue
+            ? ExecutionChatHistoryVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionChatHistoryVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing Search Results.
@@ -95,6 +175,26 @@ namespace Vellum
         public bool IsExecutionSearchResultsVellumValue => ExecutionSearchResultsVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionSearchResultsVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionSearchResultsVellumValue? value)
+        {
+            value = ExecutionSearchResultsVellumValue;
+            return IsExecutionSearchResultsVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionSearchResultsVellumValue PickExecutionSearchResultsVellumValue() => IsExecutionSearchResultsVellumValue
+            ? ExecutionSearchResultsVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionSearchResultsVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing an Error.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +210,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionErrorVellumValue))]
 #endif
         public bool IsExecutionErrorVellumValue => ExecutionErrorVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionErrorVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionErrorVellumValue? value)
+        {
+            value = ExecutionErrorVellumValue;
+            return IsExecutionErrorVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionErrorVellumValue PickExecutionErrorVellumValue() => IsExecutionErrorVellumValue
+            ? ExecutionErrorVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionErrorVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing an array of Vellum variable values.
@@ -129,6 +249,26 @@ namespace Vellum
         public bool IsExecutionArrayVellumValue => ExecutionArrayVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionArrayVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionArrayVellumValue? value)
+        {
+            value = ExecutionArrayVellumValue;
+            return IsExecutionArrayVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionArrayVellumValue PickExecutionArrayVellumValue() => IsExecutionArrayVellumValue
+            ? ExecutionArrayVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionArrayVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A value representing a Function Call.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -144,6 +284,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionFunctionCallVellumValue))]
 #endif
         public bool IsExecutionFunctionCallVellumValue => ExecutionFunctionCallVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionFunctionCallVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionFunctionCallVellumValue? value)
+        {
+            value = ExecutionFunctionCallVellumValue;
+            return IsExecutionFunctionCallVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionFunctionCallVellumValue PickExecutionFunctionCallVellumValue() => IsExecutionFunctionCallVellumValue
+            ? ExecutionFunctionCallVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionFunctionCallVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A value representing Thinking mode output.
@@ -163,6 +323,26 @@ namespace Vellum
         public bool IsExecutionThinkingVellumValue => ExecutionThinkingVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionThinkingVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionThinkingVellumValue? value)
+        {
+            value = ExecutionThinkingVellumValue;
+            return IsExecutionThinkingVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionThinkingVellumValue PickExecutionThinkingVellumValue() => IsExecutionThinkingVellumValue
+            ? ExecutionThinkingVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionThinkingVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A base Vellum primitive value representing audio.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -178,6 +358,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionAudioVellumValue))]
 #endif
         public bool IsExecutionAudioVellumValue => ExecutionAudioVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionAudioVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionAudioVellumValue? value)
+        {
+            value = ExecutionAudioVellumValue;
+            return IsExecutionAudioVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionAudioVellumValue PickExecutionAudioVellumValue() => IsExecutionAudioVellumValue
+            ? ExecutionAudioVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionAudioVellumValue' but the value was {ToString()}.");
 
         /// <summary>
         /// A base Vellum primitive value representing a video.
@@ -197,6 +397,26 @@ namespace Vellum
         public bool IsExecutionVideoVellumValue => ExecutionVideoVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionVideoVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionVideoVellumValue? value)
+        {
+            value = ExecutionVideoVellumValue;
+            return IsExecutionVideoVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionVideoVellumValue PickExecutionVideoVellumValue() => IsExecutionVideoVellumValue
+            ? ExecutionVideoVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionVideoVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A base Vellum primitive value representing an image.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -214,6 +434,26 @@ namespace Vellum
         public bool IsExecutionImageVellumValue => ExecutionImageVellumValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionImageVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionImageVellumValue? value)
+        {
+            value = ExecutionImageVellumValue;
+            return IsExecutionImageVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionImageVellumValue PickExecutionImageVellumValue() => IsExecutionImageVellumValue
+            ? ExecutionImageVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionImageVellumValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// A base Vellum primitive value representing a document.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -229,6 +469,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionDocumentVellumValue))]
 #endif
         public bool IsExecutionDocumentVellumValue => ExecutionDocumentVellumValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExecutionDocumentVellumValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ExecutionDocumentVellumValue? value)
+        {
+            value = ExecutionDocumentVellumValue;
+            return IsExecutionDocumentVellumValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ExecutionDocumentVellumValue PickExecutionDocumentVellumValue() => IsExecutionDocumentVellumValue
+            ? ExecutionDocumentVellumValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionDocumentVellumValue' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -246,6 +506,11 @@ namespace Vellum
         {
             ExecutionStringVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionStringVellumValue(global::Vellum.ExecutionStringVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -268,6 +533,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutionVellumValue FromExecutionNumberVellumValue(global::Vellum.ExecutionNumberVellumValue? value) => new ExecutionVellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionJsonVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionJsonVellumValue?)value);
 
         /// <summary>
@@ -282,6 +552,11 @@ namespace Vellum
         {
             ExecutionJsonVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionJsonVellumValue(global::Vellum.ExecutionJsonVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -304,6 +579,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutionVellumValue FromExecutionChatHistoryVellumValue(global::Vellum.ExecutionChatHistoryVellumValue? value) => new ExecutionVellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionSearchResultsVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionSearchResultsVellumValue?)value);
 
         /// <summary>
@@ -318,6 +598,11 @@ namespace Vellum
         {
             ExecutionSearchResultsVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionSearchResultsVellumValue(global::Vellum.ExecutionSearchResultsVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -340,6 +625,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutionVellumValue FromExecutionErrorVellumValue(global::Vellum.ExecutionErrorVellumValue? value) => new ExecutionVellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionArrayVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionArrayVellumValue?)value);
 
         /// <summary>
@@ -354,6 +644,11 @@ namespace Vellum
         {
             ExecutionArrayVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionArrayVellumValue(global::Vellum.ExecutionArrayVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -376,6 +671,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutionVellumValue FromExecutionFunctionCallVellumValue(global::Vellum.ExecutionFunctionCallVellumValue? value) => new ExecutionVellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionThinkingVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionThinkingVellumValue?)value);
 
         /// <summary>
@@ -390,6 +690,11 @@ namespace Vellum
         {
             ExecutionThinkingVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionThinkingVellumValue(global::Vellum.ExecutionThinkingVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -412,6 +717,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutionVellumValue FromExecutionAudioVellumValue(global::Vellum.ExecutionAudioVellumValue? value) => new ExecutionVellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionVideoVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionVideoVellumValue?)value);
 
         /// <summary>
@@ -426,6 +736,11 @@ namespace Vellum
         {
             ExecutionVideoVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionVideoVellumValue(global::Vellum.ExecutionVideoVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -448,6 +763,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutionVellumValue FromExecutionImageVellumValue(global::Vellum.ExecutionImageVellumValue? value) => new ExecutionVellumValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionDocumentVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionDocumentVellumValue?)value);
 
         /// <summary>
@@ -462,6 +782,11 @@ namespace Vellum
         {
             ExecutionDocumentVellumValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutionVellumValue FromExecutionDocumentVellumValue(global::Vellum.ExecutionDocumentVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
         /// 
@@ -547,19 +872,19 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.ExecutionStringVellumValue?, TResult>? executionStringVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionNumberVellumValue?, TResult>? executionNumberVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionJsonVellumValue?, TResult>? executionJsonVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionChatHistoryVellumValue?, TResult>? executionChatHistoryVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionSearchResultsVellumValue?, TResult>? executionSearchResultsVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionErrorVellumValue?, TResult>? executionErrorVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionArrayVellumValue?, TResult>? executionArrayVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionFunctionCallVellumValue?, TResult>? executionFunctionCallVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionThinkingVellumValue?, TResult>? executionThinkingVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionAudioVellumValue?, TResult>? executionAudioVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionVideoVellumValue?, TResult>? executionVideoVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionImageVellumValue?, TResult>? executionImageVellumValue = null,
-            global::System.Func<global::Vellum.ExecutionDocumentVellumValue?, TResult>? executionDocumentVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionStringVellumValue, TResult>? executionStringVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionNumberVellumValue, TResult>? executionNumberVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionJsonVellumValue, TResult>? executionJsonVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionChatHistoryVellumValue, TResult>? executionChatHistoryVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionSearchResultsVellumValue, TResult>? executionSearchResultsVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionErrorVellumValue, TResult>? executionErrorVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionArrayVellumValue, TResult>? executionArrayVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionFunctionCallVellumValue, TResult>? executionFunctionCallVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionThinkingVellumValue, TResult>? executionThinkingVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionAudioVellumValue, TResult>? executionAudioVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionVideoVellumValue, TResult>? executionVideoVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionImageVellumValue, TResult>? executionImageVellumValue = null,
+            global::System.Func<global::Vellum.ExecutionDocumentVellumValue, TResult>? executionDocumentVellumValue = null,
             bool validate = true)
         {
             if (validate)
@@ -627,19 +952,109 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.ExecutionStringVellumValue?>? executionStringVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionNumberVellumValue?>? executionNumberVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionJsonVellumValue?>? executionJsonVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionChatHistoryVellumValue?>? executionChatHistoryVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionSearchResultsVellumValue?>? executionSearchResultsVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionErrorVellumValue?>? executionErrorVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionArrayVellumValue?>? executionArrayVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionFunctionCallVellumValue?>? executionFunctionCallVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionThinkingVellumValue?>? executionThinkingVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionAudioVellumValue?>? executionAudioVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionVideoVellumValue?>? executionVideoVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionImageVellumValue?>? executionImageVellumValue = null,
-            global::System.Action<global::Vellum.ExecutionDocumentVellumValue?>? executionDocumentVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionStringVellumValue>? executionStringVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionNumberVellumValue>? executionNumberVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionJsonVellumValue>? executionJsonVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionChatHistoryVellumValue>? executionChatHistoryVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionSearchResultsVellumValue>? executionSearchResultsVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionErrorVellumValue>? executionErrorVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionArrayVellumValue>? executionArrayVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionFunctionCallVellumValue>? executionFunctionCallVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionThinkingVellumValue>? executionThinkingVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionAudioVellumValue>? executionAudioVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionVideoVellumValue>? executionVideoVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionImageVellumValue>? executionImageVellumValue = null,
+
+            global::System.Action<global::Vellum.ExecutionDocumentVellumValue>? executionDocumentVellumValue = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsExecutionStringVellumValue)
+            {
+                executionStringVellumValue?.Invoke(ExecutionStringVellumValue!);
+            }
+            else if (IsExecutionNumberVellumValue)
+            {
+                executionNumberVellumValue?.Invoke(ExecutionNumberVellumValue!);
+            }
+            else if (IsExecutionJsonVellumValue)
+            {
+                executionJsonVellumValue?.Invoke(ExecutionJsonVellumValue!);
+            }
+            else if (IsExecutionChatHistoryVellumValue)
+            {
+                executionChatHistoryVellumValue?.Invoke(ExecutionChatHistoryVellumValue!);
+            }
+            else if (IsExecutionSearchResultsVellumValue)
+            {
+                executionSearchResultsVellumValue?.Invoke(ExecutionSearchResultsVellumValue!);
+            }
+            else if (IsExecutionErrorVellumValue)
+            {
+                executionErrorVellumValue?.Invoke(ExecutionErrorVellumValue!);
+            }
+            else if (IsExecutionArrayVellumValue)
+            {
+                executionArrayVellumValue?.Invoke(ExecutionArrayVellumValue!);
+            }
+            else if (IsExecutionFunctionCallVellumValue)
+            {
+                executionFunctionCallVellumValue?.Invoke(ExecutionFunctionCallVellumValue!);
+            }
+            else if (IsExecutionThinkingVellumValue)
+            {
+                executionThinkingVellumValue?.Invoke(ExecutionThinkingVellumValue!);
+            }
+            else if (IsExecutionAudioVellumValue)
+            {
+                executionAudioVellumValue?.Invoke(ExecutionAudioVellumValue!);
+            }
+            else if (IsExecutionVideoVellumValue)
+            {
+                executionVideoVellumValue?.Invoke(ExecutionVideoVellumValue!);
+            }
+            else if (IsExecutionImageVellumValue)
+            {
+                executionImageVellumValue?.Invoke(ExecutionImageVellumValue!);
+            }
+            else if (IsExecutionDocumentVellumValue)
+            {
+                executionDocumentVellumValue?.Invoke(ExecutionDocumentVellumValue!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.ExecutionStringVellumValue>? executionStringVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionNumberVellumValue>? executionNumberVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionJsonVellumValue>? executionJsonVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionChatHistoryVellumValue>? executionChatHistoryVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionSearchResultsVellumValue>? executionSearchResultsVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionErrorVellumValue>? executionErrorVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionArrayVellumValue>? executionArrayVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionFunctionCallVellumValue>? executionFunctionCallVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionThinkingVellumValue>? executionThinkingVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionAudioVellumValue>? executionAudioVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionVideoVellumValue>? executionVideoVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionImageVellumValue>? executionImageVellumValue = null,
+            global::System.Action<global::Vellum.ExecutionDocumentVellumValue>? executionDocumentVellumValue = null,
             bool validate = true)
         {
             if (validate)

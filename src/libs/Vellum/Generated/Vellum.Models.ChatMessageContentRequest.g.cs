@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsStringChatMessageContentRequest => StringChatMessageContentRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStringChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.StringChatMessageContentRequest? value)
+        {
+            value = StringChatMessageContentRequest;
+            return IsStringChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.StringChatMessageContentRequest PickStringChatMessageContentRequest() => IsStringChatMessageContentRequest
+            ? StringChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StringChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A function call value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallChatMessageContentRequest))]
 #endif
         public bool IsFunctionCallChatMessageContentRequest => FunctionCallChatMessageContentRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFunctionCallChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.FunctionCallChatMessageContentRequest? value)
+        {
+            value = FunctionCallChatMessageContentRequest;
+            return IsFunctionCallChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FunctionCallChatMessageContentRequest PickFunctionCallChatMessageContentRequest() => IsFunctionCallChatMessageContentRequest
+            ? FunctionCallChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// A list of chat message content items.
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsArrayChatMessageContentRequest => ArrayChatMessageContentRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickArrayChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ArrayChatMessageContentRequest? value)
+        {
+            value = ArrayChatMessageContentRequest;
+            return IsArrayChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ArrayChatMessageContentRequest PickArrayChatMessageContentRequest() => IsArrayChatMessageContentRequest
+            ? ArrayChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ArrayChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// An audio value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AudioChatMessageContentRequest))]
 #endif
         public bool IsAudioChatMessageContentRequest => AudioChatMessageContentRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAudioChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.AudioChatMessageContentRequest? value)
+        {
+            value = AudioChatMessageContentRequest;
+            return IsAudioChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.AudioChatMessageContentRequest PickAudioChatMessageContentRequest() => IsAudioChatMessageContentRequest
+            ? AudioChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AudioChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// A video value that is used in a chat message.
@@ -95,6 +175,26 @@ namespace Vellum
         public bool IsVideoChatMessageContentRequest => VideoChatMessageContentRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVideoChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.VideoChatMessageContentRequest? value)
+        {
+            value = VideoChatMessageContentRequest;
+            return IsVideoChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.VideoChatMessageContentRequest PickVideoChatMessageContentRequest() => IsVideoChatMessageContentRequest
+            ? VideoChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VideoChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// An image value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -112,6 +212,26 @@ namespace Vellum
         public bool IsImageChatMessageContentRequest => ImageChatMessageContentRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickImageChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.ImageChatMessageContentRequest? value)
+        {
+            value = ImageChatMessageContentRequest;
+            return IsImageChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.ImageChatMessageContentRequest PickImageChatMessageContentRequest() => IsImageChatMessageContentRequest
+            ? ImageChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ImageChatMessageContentRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A document value that is used in a chat message.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -127,6 +247,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DocumentChatMessageContentRequest))]
 #endif
         public bool IsDocumentChatMessageContentRequest => DocumentChatMessageContentRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDocumentChatMessageContentRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.DocumentChatMessageContentRequest? value)
+        {
+            value = DocumentChatMessageContentRequest;
+            return IsDocumentChatMessageContentRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.DocumentChatMessageContentRequest PickDocumentChatMessageContentRequest() => IsDocumentChatMessageContentRequest
+            ? DocumentChatMessageContentRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentChatMessageContentRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -144,6 +284,11 @@ namespace Vellum
         {
             StringChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatMessageContentRequest FromStringChatMessageContentRequest(global::Vellum.StringChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
 
         /// <summary>
         /// 
@@ -166,6 +311,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ChatMessageContentRequest FromFunctionCallChatMessageContentRequest(global::Vellum.FunctionCallChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatMessageContentRequest(global::Vellum.ArrayChatMessageContentRequest value) => new ChatMessageContentRequest((global::Vellum.ArrayChatMessageContentRequest?)value);
 
         /// <summary>
@@ -180,6 +330,11 @@ namespace Vellum
         {
             ArrayChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatMessageContentRequest FromArrayChatMessageContentRequest(global::Vellum.ArrayChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
 
         /// <summary>
         /// 
@@ -202,6 +357,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ChatMessageContentRequest FromAudioChatMessageContentRequest(global::Vellum.AudioChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatMessageContentRequest(global::Vellum.VideoChatMessageContentRequest value) => new ChatMessageContentRequest((global::Vellum.VideoChatMessageContentRequest?)value);
 
         /// <summary>
@@ -216,6 +376,11 @@ namespace Vellum
         {
             VideoChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatMessageContentRequest FromVideoChatMessageContentRequest(global::Vellum.VideoChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
 
         /// <summary>
         /// 
@@ -238,6 +403,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ChatMessageContentRequest FromImageChatMessageContentRequest(global::Vellum.ImageChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatMessageContentRequest(global::Vellum.DocumentChatMessageContentRequest value) => new ChatMessageContentRequest((global::Vellum.DocumentChatMessageContentRequest?)value);
 
         /// <summary>
@@ -252,6 +422,11 @@ namespace Vellum
         {
             DocumentChatMessageContentRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatMessageContentRequest FromDocumentChatMessageContentRequest(global::Vellum.DocumentChatMessageContentRequest? value) => new ChatMessageContentRequest(value);
 
         /// <summary>
         /// 
@@ -313,13 +488,13 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.StringChatMessageContentRequest?, TResult>? stringChatMessageContentRequest = null,
-            global::System.Func<global::Vellum.FunctionCallChatMessageContentRequest?, TResult>? functionCallChatMessageContentRequest = null,
-            global::System.Func<global::Vellum.ArrayChatMessageContentRequest?, TResult>? arrayChatMessageContentRequest = null,
-            global::System.Func<global::Vellum.AudioChatMessageContentRequest?, TResult>? audioChatMessageContentRequest = null,
-            global::System.Func<global::Vellum.VideoChatMessageContentRequest?, TResult>? videoChatMessageContentRequest = null,
-            global::System.Func<global::Vellum.ImageChatMessageContentRequest?, TResult>? imageChatMessageContentRequest = null,
-            global::System.Func<global::Vellum.DocumentChatMessageContentRequest?, TResult>? documentChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.StringChatMessageContentRequest, TResult>? stringChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.FunctionCallChatMessageContentRequest, TResult>? functionCallChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.ArrayChatMessageContentRequest, TResult>? arrayChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.AudioChatMessageContentRequest, TResult>? audioChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.VideoChatMessageContentRequest, TResult>? videoChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.ImageChatMessageContentRequest, TResult>? imageChatMessageContentRequest = null,
+            global::System.Func<global::Vellum.DocumentChatMessageContentRequest, TResult>? documentChatMessageContentRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -363,13 +538,67 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.StringChatMessageContentRequest?>? stringChatMessageContentRequest = null,
-            global::System.Action<global::Vellum.FunctionCallChatMessageContentRequest?>? functionCallChatMessageContentRequest = null,
-            global::System.Action<global::Vellum.ArrayChatMessageContentRequest?>? arrayChatMessageContentRequest = null,
-            global::System.Action<global::Vellum.AudioChatMessageContentRequest?>? audioChatMessageContentRequest = null,
-            global::System.Action<global::Vellum.VideoChatMessageContentRequest?>? videoChatMessageContentRequest = null,
-            global::System.Action<global::Vellum.ImageChatMessageContentRequest?>? imageChatMessageContentRequest = null,
-            global::System.Action<global::Vellum.DocumentChatMessageContentRequest?>? documentChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.StringChatMessageContentRequest>? stringChatMessageContentRequest = null,
+
+            global::System.Action<global::Vellum.FunctionCallChatMessageContentRequest>? functionCallChatMessageContentRequest = null,
+
+            global::System.Action<global::Vellum.ArrayChatMessageContentRequest>? arrayChatMessageContentRequest = null,
+
+            global::System.Action<global::Vellum.AudioChatMessageContentRequest>? audioChatMessageContentRequest = null,
+
+            global::System.Action<global::Vellum.VideoChatMessageContentRequest>? videoChatMessageContentRequest = null,
+
+            global::System.Action<global::Vellum.ImageChatMessageContentRequest>? imageChatMessageContentRequest = null,
+
+            global::System.Action<global::Vellum.DocumentChatMessageContentRequest>? documentChatMessageContentRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStringChatMessageContentRequest)
+            {
+                stringChatMessageContentRequest?.Invoke(StringChatMessageContentRequest!);
+            }
+            else if (IsFunctionCallChatMessageContentRequest)
+            {
+                functionCallChatMessageContentRequest?.Invoke(FunctionCallChatMessageContentRequest!);
+            }
+            else if (IsArrayChatMessageContentRequest)
+            {
+                arrayChatMessageContentRequest?.Invoke(ArrayChatMessageContentRequest!);
+            }
+            else if (IsAudioChatMessageContentRequest)
+            {
+                audioChatMessageContentRequest?.Invoke(AudioChatMessageContentRequest!);
+            }
+            else if (IsVideoChatMessageContentRequest)
+            {
+                videoChatMessageContentRequest?.Invoke(VideoChatMessageContentRequest!);
+            }
+            else if (IsImageChatMessageContentRequest)
+            {
+                imageChatMessageContentRequest?.Invoke(ImageChatMessageContentRequest!);
+            }
+            else if (IsDocumentChatMessageContentRequest)
+            {
+                documentChatMessageContentRequest?.Invoke(DocumentChatMessageContentRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.StringChatMessageContentRequest>? stringChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.FunctionCallChatMessageContentRequest>? functionCallChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.ArrayChatMessageContentRequest>? arrayChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.AudioChatMessageContentRequest>? audioChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.VideoChatMessageContentRequest>? videoChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.ImageChatMessageContentRequest>? imageChatMessageContentRequest = null,
+            global::System.Action<global::Vellum.DocumentChatMessageContentRequest>? documentChatMessageContentRequest = null,
             bool validate = true)
         {
             if (validate)

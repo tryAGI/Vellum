@@ -149,6 +149,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.InitiatedExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.InitiatedExecutePromptEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.InitiatedExecutePromptEvent).Name}");
                     initiatedExecutePromptEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -159,9 +160,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (initiatedExecutePromptEvent == null && streamingExecutePromptEvent == null && fulfilledExecutePromptEvent == null && rejectedExecutePromptEvent == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.StreamingExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.StreamingExecutePromptEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.StreamingExecutePromptEvent).Name}");
                     streamingExecutePromptEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -172,9 +177,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (initiatedExecutePromptEvent == null && streamingExecutePromptEvent == null && fulfilledExecutePromptEvent == null && rejectedExecutePromptEvent == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FulfilledExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FulfilledExecutePromptEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FulfilledExecutePromptEvent).Name}");
                     fulfilledExecutePromptEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -185,9 +194,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (initiatedExecutePromptEvent == null && streamingExecutePromptEvent == null && fulfilledExecutePromptEvent == null && rejectedExecutePromptEvent == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.RejectedExecutePromptEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.RejectedExecutePromptEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.RejectedExecutePromptEvent).Name}");
                     rejectedExecutePromptEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

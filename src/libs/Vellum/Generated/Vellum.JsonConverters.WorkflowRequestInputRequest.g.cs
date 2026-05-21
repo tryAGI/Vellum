@@ -221,6 +221,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestStringInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestStringInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestStringInputRequest).Name}");
                     workflowRequestStringInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -231,9 +232,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestJSONInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestJSONInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestJSONInputRequest).Name}");
                     workflowRequestJSONInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -244,9 +249,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestChatHistoryInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestChatHistoryInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestChatHistoryInputRequest).Name}");
                     workflowRequestChatHistoryInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -257,9 +266,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestNumberInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestNumberInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestNumberInputRequest).Name}");
                     workflowRequestNumberInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -270,9 +283,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestAudioInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestAudioInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestAudioInputRequest).Name}");
                     workflowRequestAudioInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -283,9 +300,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestVideoInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestVideoInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestVideoInputRequest).Name}");
                     workflowRequestVideoInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -296,9 +317,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestImageInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestImageInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestImageInputRequest).Name}");
                     workflowRequestImageInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -309,9 +334,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowRequestStringInputRequest == null && workflowRequestJSONInputRequest == null && workflowRequestChatHistoryInputRequest == null && workflowRequestNumberInputRequest == null && workflowRequestAudioInputRequest == null && workflowRequestVideoInputRequest == null && workflowRequestImageInputRequest == null && workflowRequestDocumentInputRequest == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowRequestDocumentInputRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowRequestDocumentInputRequest> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowRequestDocumentInputRequest).Name}");
                     workflowRequestDocumentInputRequest = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

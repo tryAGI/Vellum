@@ -107,5 +107,6 @@ namespace Vellum
         public WorkflowResultEventOutputDataSearchResults()
         {
         }
+
     }
 }

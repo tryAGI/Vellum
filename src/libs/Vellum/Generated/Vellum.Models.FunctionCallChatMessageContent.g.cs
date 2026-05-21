@@ -52,5 +52,6 @@ namespace Vellum
         public FunctionCallChatMessageContent()
         {
         }
+
     }
 }

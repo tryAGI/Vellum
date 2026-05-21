@@ -155,6 +155,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.InitiatedWorkflowNodeResultEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.InitiatedWorkflowNodeResultEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.InitiatedWorkflowNodeResultEvent).Name}");
                     initiatedWorkflowNodeResultEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -165,9 +166,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (initiatedWorkflowNodeResultEvent == null && streamingWorkflowNodeResultEvent == null && fulfilledWorkflowNodeResultEvent == null && rejectedWorkflowNodeResultEvent == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.StreamingWorkflowNodeResultEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.StreamingWorkflowNodeResultEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.StreamingWorkflowNodeResultEvent).Name}");
                     streamingWorkflowNodeResultEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -178,9 +183,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (initiatedWorkflowNodeResultEvent == null && streamingWorkflowNodeResultEvent == null && fulfilledWorkflowNodeResultEvent == null && rejectedWorkflowNodeResultEvent == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.FulfilledWorkflowNodeResultEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.FulfilledWorkflowNodeResultEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.FulfilledWorkflowNodeResultEvent).Name}");
                     fulfilledWorkflowNodeResultEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -191,9 +200,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (initiatedWorkflowNodeResultEvent == null && streamingWorkflowNodeResultEvent == null && fulfilledWorkflowNodeResultEvent == null && rejectedWorkflowNodeResultEvent == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.RejectedWorkflowNodeResultEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.RejectedWorkflowNodeResultEvent> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.RejectedWorkflowNodeResultEvent).Name}");
                     rejectedWorkflowNodeResultEvent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

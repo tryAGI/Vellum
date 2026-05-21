@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsFulfilledExecutePromptResponse => FulfilledExecutePromptResponse != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFulfilledExecutePromptResponse(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.FulfilledExecutePromptResponse? value)
+        {
+            value = FulfilledExecutePromptResponse;
+            return IsFulfilledExecutePromptResponse;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FulfilledExecutePromptResponse PickFulfilledExecutePromptResponse() => IsFulfilledExecutePromptResponse
+            ? FulfilledExecutePromptResponse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecutePromptResponse' but the value was {ToString()}.");
+
+        /// <summary>
         /// The unsuccessful response from the model containing an error of what went wrong.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RejectedExecutePromptResponse))]
 #endif
         public bool IsRejectedExecutePromptResponse => RejectedExecutePromptResponse != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRejectedExecutePromptResponse(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.RejectedExecutePromptResponse? value)
+        {
+            value = RejectedExecutePromptResponse;
+            return IsRejectedExecutePromptResponse;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.RejectedExecutePromptResponse PickRejectedExecutePromptResponse() => IsRejectedExecutePromptResponse
+            ? RejectedExecutePromptResponse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecutePromptResponse' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static ExecutePromptResponse FromFulfilledExecutePromptResponse(global::Vellum.FulfilledExecutePromptResponse? value) => new ExecutePromptResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse value) => new ExecutePromptResponse((global::Vellum.RejectedExecutePromptResponse?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Vellum
         {
             RejectedExecutePromptResponse = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExecutePromptResponse FromRejectedExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse? value) => new ExecutePromptResponse(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.FulfilledExecutePromptResponse?, TResult>? fulfilledExecutePromptResponse = null,
-            global::System.Func<global::Vellum.RejectedExecutePromptResponse?, TResult>? rejectedExecutePromptResponse = null,
+            global::System.Func<global::Vellum.FulfilledExecutePromptResponse, TResult>? fulfilledExecutePromptResponse = null,
+            global::System.Func<global::Vellum.RejectedExecutePromptResponse, TResult>? rejectedExecutePromptResponse = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.FulfilledExecutePromptResponse?>? fulfilledExecutePromptResponse = null,
-            global::System.Action<global::Vellum.RejectedExecutePromptResponse?>? rejectedExecutePromptResponse = null,
+            global::System.Action<global::Vellum.FulfilledExecutePromptResponse>? fulfilledExecutePromptResponse = null,
+
+            global::System.Action<global::Vellum.RejectedExecutePromptResponse>? rejectedExecutePromptResponse = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFulfilledExecutePromptResponse)
+            {
+                fulfilledExecutePromptResponse?.Invoke(FulfilledExecutePromptResponse!);
+            }
+            else if (IsRejectedExecutePromptResponse)
+            {
+                rejectedExecutePromptResponse?.Invoke(RejectedExecutePromptResponse!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.FulfilledExecutePromptResponse>? fulfilledExecutePromptResponse = null,
+            global::System.Action<global::Vellum.RejectedExecutePromptResponse>? rejectedExecutePromptResponse = null,
             bool validate = true)
         {
             if (validate)

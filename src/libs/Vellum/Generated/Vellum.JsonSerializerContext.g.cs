@@ -1509,6 +1509,1013 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowDependency>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentReleaseWorkflowDeployment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentRelease))]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Vellum.JsonConverters.StringEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.StringEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.JsonEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.JsonEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ChatHistoryEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ChatHistoryEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ChatMessageRoleJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ChatMessageRoleNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FunctionCallEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FunctionCallEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ArrayEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ArrayEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.AudioEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.AudioEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VideoEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VideoEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ImageEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ImageEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FinishReasonEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FinishReasonEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.UnitEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.UnitEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FulfilledEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FulfilledEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ErrorEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ErrorEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumErrorCodeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumErrorCodeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ThinkingEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ThinkingEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.RejectedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.RejectedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.InitiatedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.InitiatedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.StreamingEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.StreamingEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.EntityStatusJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.EntityStatusNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.EnvironmentEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.EnvironmentEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumVariableTypeJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumVariableTypeNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NumberEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NumberEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SearchResultsEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SearchResultsEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PdfEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PdfEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1DeploymentsGetParametersStatusJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1DeploymentsGetParametersStatusNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SandboxEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SandboxEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReleaseTagSourceJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReleaseTagSourceNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReleaseReviewStateJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReleaseReviewStateNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1DeploymentsIdReleaseTagsGetParametersSourceJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1DeploymentsIdReleaseTagsGetParametersSourceNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionEventErrorCodeJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionEventErrorCodeNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionEventTypeJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionEventTypeNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowResultEventStateJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowResultEventStateNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowNodeResultEventStateJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowNodeResultEventStateNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SearchEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SearchEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TemplatingEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TemplatingEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CodeExecutionEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CodeExecutionEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ConditionalEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ConditionalEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TerminalEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TerminalEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MergeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MergeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SubworkflowEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SubworkflowEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MetricEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MetricEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MapEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MapEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IterationStateEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IterationStateEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SecretEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SecretEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SpanLinkTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SpanLinkTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowNodeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowNodeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowReleaseTagEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowReleaseTagEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowSandboxEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowSandboxEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptReleaseTagEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptReleaseTagEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiRequestEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiRequestEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiActorTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiActorTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ExternalEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ExternalEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ScheduledEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ScheduledEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IntegrationEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IntegrationEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionInitiatedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionInitiatedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiVersionEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ApiVersionEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionStreamingEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionStreamingEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionFulfilledEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionFulfilledEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionRejectedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionRejectedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumSdkErrorCodeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumSdkErrorCodeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionPausedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionPausedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionResumedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionResumedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionLogEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionLogEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SeverityEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SeverityEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionInitiatedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionInitiatedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionStreamingEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionStreamingEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionRejectedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionRejectedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionFulfilledEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionFulfilledEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionPausedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionPausedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionResumedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionResumedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionSnapshottedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionSnapshottedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1WorkflowDeploymentsGetParametersStatusJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1WorkflowDeploymentsGetParametersStatusNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IntegrationNameJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IntegrationNameNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ModelProviderEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ModelProviderEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MLModelHostingInterfaceJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MLModelHostingInterfaceNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1WorkflowDeploymentsIdReleaseTagsGetParametersSourceJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1WorkflowDeploymentsIdReleaseTagsGetParametersSourceNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionUsageCalculationErrorCodeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionUsageCalculationErrorCodeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowExecutionEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeExecutionEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MetadataFilterRuleCombinatorJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MetadataFilterRuleCombinatorNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.LogicalOperatorJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.LogicalOperatorNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.LogicalConditionEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.LogicalConditionEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.LogicalConditionGroupEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.LogicalConditionGroupEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ConditionCombinatorJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ConditionCombinatorNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbedding3SmallEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbedding3SmallEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbedding3LargeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbedding3LargeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbeddingAda002EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbeddingAda002EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IntfloatMultilingualE5LargeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IntfloatMultilingualE5LargeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseCosV1EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseCosV1EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseDotV1EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseDotV1EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.HkunlpInstructorXlEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.HkunlpInstructorXlEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbedding004EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextEmbedding004EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextMultilingualEmbedding002EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TextMultilingualEmbedding002EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.GeminiEmbedding001EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.GeminiEmbedding001EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.BaaiBgeSmallEnV15EnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.BaaiBgeSmallEnV15EnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PrivateVectorizerEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PrivateVectorizerEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReductoChunkerEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReductoChunkerEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SentenceChunkerEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SentenceChunkerEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TokenOverlappingWindowChunkerEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TokenOverlappingWindowChunkerEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DelimiterChunkerEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DelimiterChunkerEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1DocumentIndexesGetParametersStatusJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1DocumentIndexesGetParametersStatusNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentProcessingStateJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentProcessingStateNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentStatusJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentStatusNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IndexingStateEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IndexingStateEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ProcessingFailureReasonEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ProcessingFailureReasonEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CreateEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CreateEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReplaceEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReplaceEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.UpsertEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.UpsertEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DeleteEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DeleteEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CreatedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CreatedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReplacedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ReplacedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DeletedEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DeletedEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunDeploymentReleaseTagExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunDeploymentReleaseTagExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunPromptSandboxExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunPromptSandboxExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunPromptSandboxHistoryItemExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunPromptSandboxHistoryItemExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunWorkflowReleaseTagExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunWorkflowReleaseTagExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxHistoryItemExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxHistoryItemExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunExternalExecConfigTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunExternalExecConfigTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunStateJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunStateNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricStringOutputTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricStringOutputTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricNumberOutputTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricNumberOutputTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricJSONOutputTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricJSONOutputTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricErrorOutputTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricErrorOutputTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricArrayOutputTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricArrayOutputTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1FolderEntitiesGetParametersEntityStatusJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.V1FolderEntitiesGetParametersEntityStatusNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FolderEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FolderEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptSandboxEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptSandboxEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentIndexEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentIndexEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DatasetEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DatasetEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SecretTypeEnumJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SecretTypeEnumNullableJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ArrayChatMessageContentItemRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ChatMessageContentRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptDeploymentInputRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ExecutePromptResponseJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ExecutePromptEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DeploymentProviderPayloadResponsePayloadJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ArrayChatMessageContentItemJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ChatMessageContentJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SearchResultMetaSourceJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumValueJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NamedScenarioInputRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ScenarioInputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.PromptVersionBuildConfigJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowRequestInputRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowEventErrorRawDataJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ExecuteWorkflowWorkflowResultEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowResultEventOutputDataJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ExecutionVellumValueJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TemplatingNodeResultOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CodeExecutionNodeResultOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TerminalNodeResultOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowNodeResultDataJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeInputVariableCompiledValueJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NodeOutputCompiledValueJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowNodeResultEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowStreamEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SubmitWorkflowExecutionActualRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.ParentContextJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumSdkErrorRawDataJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowDependencyJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.WorkflowErrorJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumWorkflowExecutionEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumNodeExecutionEventJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumSpanJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.CreateWorkflowEventRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.SearchResultMetaSourceRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumValueRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.VellumValueLogicalExpressionRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.MetadataFiltersRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IndexingConfigVectorizerRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentIndexChunkingRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.IndexingConfigVectorizerJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.DocumentIndexChunkingJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestCaseVariableValueJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NamedTestCaseVariableValueRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteTestCaseBulkOperationRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteTestCaseBulkResultJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunExecConfigRequestJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.NamedTestCaseVariableValueJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunExecConfigJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunExecutionOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.TestSuiteRunMetricOutputJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.FolderEntityJsonConverter),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContentRequest?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptMeta, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContent?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSource?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMeta, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumValue?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVariableExtensions, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventErrorRawData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowResultEventOutputData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptNodeExecutionMeta, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.IterationStateEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.NodeOutputCompiledValue?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionEventErrorCode?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CheckWorkflowExecutionStatusError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentDisplayData, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ApiActorTypeEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumSdkErrorRawData?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CodeResourceDefinition, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImageRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCallRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSourceRequest?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValueRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFiltersRequest?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchWeightsRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMergingRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchFiltersRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchRequestOptionsRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunkingRequest?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunking?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ProcessingFailureReasonEnum?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCallRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImageRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.TestSuiteRunExecConfig?, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>),
+
+            typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowSandboxDisplayData, object>),
+
+            typeof(global::Vellum.JsonConverters.UnixTimestampJsonConverter),
+        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PaginatedWorkflowDeploymentReleaseList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowDeploymentRelease>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowReleaseTagWorkflowDeploymentHistoryItem))]
@@ -1951,7 +2958,548 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vellum.FolderEntity>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCaseBulkOperationRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCaseBulkResult>))]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
+            SourceGenerationContextChunk0.Default,
+
+            SourceGenerationContextChunk1.Default
+            );
+
+        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SourceGenerationContext Default { get; } = new(DefaultOptions);
+
+        private SourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
+            : base(options)
+        {
+        }
+
+        /// <inheritdoc />
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
+
+        /// <inheritdoc />
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
+        {
+            return Resolver.GetTypeInfo(type, Options);
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            options.Converters.Add(new global::Vellum.JsonConverters.StringEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.StringEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.JsonEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.JsonEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ChatHistoryEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ChatHistoryEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ChatMessageRoleJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ChatMessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FunctionCallEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FunctionCallEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ArrayEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ArrayEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.AudioEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.AudioEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VideoEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VideoEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ImageEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ImageEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FinishReasonEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FinishReasonEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.UnitEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.UnitEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FulfilledEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FulfilledEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ErrorEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ErrorEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumErrorCodeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumErrorCodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ThinkingEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ThinkingEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.RejectedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.RejectedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.InitiatedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.InitiatedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.StreamingEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.StreamingEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.EntityStatusJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.EntityStatusNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.EnvironmentEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.EnvironmentEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumVariableTypeJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumVariableTypeNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NumberEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NumberEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SearchResultsEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SearchResultsEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PdfEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PdfEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1DeploymentsGetParametersStatusJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1DeploymentsGetParametersStatusNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SandboxEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SandboxEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReleaseTagSourceJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReleaseTagSourceNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReleaseReviewStateJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReleaseReviewStateNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1DeploymentsIdReleaseTagsGetParametersSourceJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1DeploymentsIdReleaseTagsGetParametersSourceNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionEventErrorCodeJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionEventErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionEventTypeJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionEventTypeNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowResultEventStateJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowResultEventStateNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowNodeResultEventStateJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowNodeResultEventStateNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SearchEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SearchEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TemplatingEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TemplatingEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CodeExecutionEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CodeExecutionEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ConditionalEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ConditionalEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TerminalEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TerminalEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MergeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MergeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SubworkflowEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SubworkflowEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MetricEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MetricEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MapEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MapEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IterationStateEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IterationStateEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SecretEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SecretEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SpanLinkTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SpanLinkTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowNodeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowReleaseTagEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowReleaseTagEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowSandboxEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowSandboxEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptReleaseTagEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptReleaseTagEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiRequestEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiRequestEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiActorTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiActorTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ExternalEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ExternalEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ScheduledEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ScheduledEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IntegrationEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IntegrationEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionInitiatedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionInitiatedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiVersionEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ApiVersionEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionStreamingEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionStreamingEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionFulfilledEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionFulfilledEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionRejectedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionRejectedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumSdkErrorCodeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumSdkErrorCodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionPausedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionPausedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionResumedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionResumedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionLogEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionLogEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SeverityEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SeverityEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionInitiatedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionInitiatedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionStreamingEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionStreamingEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionRejectedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionRejectedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionFulfilledEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionFulfilledEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionPausedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionPausedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionResumedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionResumedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionSnapshottedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionSnapshottedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1WorkflowDeploymentsGetParametersStatusJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1WorkflowDeploymentsGetParametersStatusNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IntegrationNameJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IntegrationNameNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ModelProviderEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ModelProviderEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MLModelHostingInterfaceJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MLModelHostingInterfaceNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1WorkflowDeploymentsIdReleaseTagsGetParametersSourceJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1WorkflowDeploymentsIdReleaseTagsGetParametersSourceNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionUsageCalculationErrorCodeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionUsageCalculationErrorCodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowExecutionEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeExecutionEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MetadataFilterRuleCombinatorJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MetadataFilterRuleCombinatorNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.LogicalOperatorJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.LogicalOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.LogicalConditionEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.LogicalConditionEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.LogicalConditionGroupEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.LogicalConditionGroupEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ConditionCombinatorJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ConditionCombinatorNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbedding3SmallEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbedding3SmallEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbedding3LargeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbedding3LargeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbeddingAda002EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbeddingAda002EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IntfloatMultilingualE5LargeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IntfloatMultilingualE5LargeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseCosV1EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseCosV1EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseDotV1EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SentenceTransformersMultiQaMpnetBaseDotV1EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.HkunlpInstructorXlEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.HkunlpInstructorXlEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbedding004EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextEmbedding004EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextMultilingualEmbedding002EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TextMultilingualEmbedding002EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.GeminiEmbedding001EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.GeminiEmbedding001EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.BaaiBgeSmallEnV15EnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.BaaiBgeSmallEnV15EnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PrivateVectorizerEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PrivateVectorizerEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReductoChunkerEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReductoChunkerEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SentenceChunkerEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SentenceChunkerEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TokenOverlappingWindowChunkerEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TokenOverlappingWindowChunkerEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DelimiterChunkerEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DelimiterChunkerEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1DocumentIndexesGetParametersStatusJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1DocumentIndexesGetParametersStatusNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentProcessingStateJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentProcessingStateNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentStatusJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentStatusNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IndexingStateEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IndexingStateEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ProcessingFailureReasonEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ProcessingFailureReasonEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CreateEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CreateEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReplaceEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReplaceEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.UpsertEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.UpsertEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DeleteEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DeleteEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CreatedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CreatedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReplacedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ReplacedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DeletedEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DeletedEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunDeploymentReleaseTagExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunDeploymentReleaseTagExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunPromptSandboxExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunPromptSandboxExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunPromptSandboxHistoryItemExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunPromptSandboxHistoryItemExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunWorkflowReleaseTagExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunWorkflowReleaseTagExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxHistoryItemExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunWorkflowSandboxHistoryItemExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunExternalExecConfigTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunExternalExecConfigTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunStateJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunStateNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricStringOutputTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricStringOutputTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricNumberOutputTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricNumberOutputTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricJSONOutputTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricJSONOutputTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricErrorOutputTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricErrorOutputTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricArrayOutputTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricArrayOutputTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1FolderEntitiesGetParametersEntityStatusJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.V1FolderEntitiesGetParametersEntityStatusNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FolderEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FolderEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptSandboxEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptSandboxEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentIndexEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentIndexEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DatasetEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DatasetEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SecretTypeEnumJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SecretTypeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ArrayChatMessageContentItemRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ChatMessageContentRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptDeploymentInputRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ExecutePromptResponseJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ExecutePromptEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DeploymentProviderPayloadResponsePayloadJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ArrayChatMessageContentItemJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ChatMessageContentJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SearchResultMetaSourceJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumValueJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NamedScenarioInputRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ScenarioInputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.PromptVersionBuildConfigJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowRequestInputRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowEventErrorRawDataJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ExecuteWorkflowWorkflowResultEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowResultEventOutputDataJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ExecutionVellumValueJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TemplatingNodeResultOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CodeExecutionNodeResultOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TerminalNodeResultOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowNodeResultDataJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeInputVariableCompiledValueJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NodeOutputCompiledValueJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowNodeResultEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowStreamEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SubmitWorkflowExecutionActualRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.ParentContextJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumSdkErrorRawDataJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowDependencyJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.WorkflowErrorJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumWorkflowExecutionEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumNodeExecutionEventJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumSpanJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.CreateWorkflowEventRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.SearchResultMetaSourceRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumValueRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.VellumValueLogicalExpressionRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.MetadataFiltersRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IndexingConfigVectorizerRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentIndexChunkingRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.IndexingConfigVectorizerJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.DocumentIndexChunkingJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestCaseVariableValueJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NamedTestCaseVariableValueRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteTestCaseBulkOperationRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteTestCaseBulkResultJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunExecConfigRequestJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.NamedTestCaseVariableValueJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunExecConfigJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunExecutionOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricOutputJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.FolderEntityJsonConverter());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContentRequest?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptMeta, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContent?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSource?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMeta, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumValue?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVariableExtensions, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventErrorRawData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowResultEventOutputData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptNodeExecutionMeta, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.IterationStateEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.NodeOutputCompiledValue?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionEventErrorCode?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CheckWorkflowExecutionStatusError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentDisplayData, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ApiActorTypeEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumSdkErrorRawData?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CodeResourceDefinition, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImageRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCallRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSourceRequest?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValueRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFiltersRequest?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchWeightsRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMergingRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchFiltersRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchRequestOptionsRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunkingRequest?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunking?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ProcessingFailureReasonEnum?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCallRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImageRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.TestSuiteRunExecConfig?, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowSandboxDisplayData, object>());
+            options.Converters.Add(new global::Vellum.JsonConverters.UnixTimestampJsonConverter());
+
+            return options;
+        }
     }
 }

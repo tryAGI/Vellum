@@ -25,6 +25,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PdfSearchResultMetaSourceRequest))]
 #endif
         public bool IsPdfSearchResultMetaSourceRequest => PdfSearchResultMetaSourceRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPdfSearchResultMetaSourceRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.PdfSearchResultMetaSourceRequest? value)
+        {
+            value = PdfSearchResultMetaSourceRequest;
+            return IsPdfSearchResultMetaSourceRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.PdfSearchResultMetaSourceRequest PickPdfSearchResultMetaSourceRequest() => IsPdfSearchResultMetaSourceRequest
+            ? PdfSearchResultMetaSourceRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PdfSearchResultMetaSourceRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -42,6 +62,11 @@ namespace Vellum
         {
             PdfSearchResultMetaSourceRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SearchResultMetaSourceRequest FromPdfSearchResultMetaSourceRequest(global::Vellum.PdfSearchResultMetaSourceRequest? value) => new SearchResultMetaSourceRequest(value);
 
         /// <summary>
         /// 
@@ -69,7 +94,7 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.PdfSearchResultMetaSourceRequest?, TResult>? pdfSearchResultMetaSourceRequest = null,
+            global::System.Func<global::Vellum.PdfSearchResultMetaSourceRequest, TResult>? pdfSearchResultMetaSourceRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -89,7 +114,25 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.PdfSearchResultMetaSourceRequest?>? pdfSearchResultMetaSourceRequest = null,
+            global::System.Action<global::Vellum.PdfSearchResultMetaSourceRequest>? pdfSearchResultMetaSourceRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPdfSearchResultMetaSourceRequest)
+            {
+                pdfSearchResultMetaSourceRequest?.Invoke(PdfSearchResultMetaSourceRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.PdfSearchResultMetaSourceRequest>? pdfSearchResultMetaSourceRequest = null,
             bool validate = true)
         {
             if (validate)

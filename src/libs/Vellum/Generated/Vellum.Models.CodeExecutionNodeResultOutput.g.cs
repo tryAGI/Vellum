@@ -29,6 +29,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCodeExecutionNodeStringResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeStringResult? value)
+        {
+            value = CodeExecutionNodeStringResult;
+            return IsCodeExecutionNodeStringResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeStringResult PickCodeExecutionNodeStringResult() => IsCodeExecutionNodeStringResult
+            ? CodeExecutionNodeStringResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeStringResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeNumberResult? CodeExecutionNodeNumberResult { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeNumberResult))]
 #endif
         public bool IsCodeExecutionNodeNumberResult => CodeExecutionNodeNumberResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCodeExecutionNodeNumberResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeNumberResult? value)
+        {
+            value = CodeExecutionNodeNumberResult;
+            return IsCodeExecutionNodeNumberResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeNumberResult PickCodeExecutionNodeNumberResult() => IsCodeExecutionNodeNumberResult
+            ? CodeExecutionNodeNumberResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCodeExecutionNodeJsonResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeJsonResult? value)
+        {
+            value = CodeExecutionNodeJsonResult;
+            return IsCodeExecutionNodeJsonResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeJsonResult PickCodeExecutionNodeJsonResult() => IsCodeExecutionNodeJsonResult
+            ? CodeExecutionNodeJsonResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeJsonResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeChatHistoryResult? CodeExecutionNodeChatHistoryResult { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeChatHistoryResult))]
 #endif
         public bool IsCodeExecutionNodeChatHistoryResult => CodeExecutionNodeChatHistoryResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCodeExecutionNodeChatHistoryResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeChatHistoryResult? value)
+        {
+            value = CodeExecutionNodeChatHistoryResult;
+            return IsCodeExecutionNodeChatHistoryResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeChatHistoryResult PickCodeExecutionNodeChatHistoryResult() => IsCodeExecutionNodeChatHistoryResult
+            ? CodeExecutionNodeChatHistoryResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -97,6 +177,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCodeExecutionNodeSearchResultsResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeSearchResultsResult? value)
+        {
+            value = CodeExecutionNodeSearchResultsResult;
+            return IsCodeExecutionNodeSearchResultsResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeSearchResultsResult PickCodeExecutionNodeSearchResultsResult() => IsCodeExecutionNodeSearchResultsResult
+            ? CodeExecutionNodeSearchResultsResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeSearchResultsResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeErrorResult? CodeExecutionNodeErrorResult { get; init; }
 #else
@@ -110,6 +210,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeErrorResult))]
 #endif
         public bool IsCodeExecutionNodeErrorResult => CodeExecutionNodeErrorResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCodeExecutionNodeErrorResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeErrorResult? value)
+        {
+            value = CodeExecutionNodeErrorResult;
+            return IsCodeExecutionNodeErrorResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeErrorResult PickCodeExecutionNodeErrorResult() => IsCodeExecutionNodeErrorResult
+            ? CodeExecutionNodeErrorResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -131,6 +251,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCodeExecutionNodeArrayResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeArrayResult? value)
+        {
+            value = CodeExecutionNodeArrayResult;
+            return IsCodeExecutionNodeArrayResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeArrayResult PickCodeExecutionNodeArrayResult() => IsCodeExecutionNodeArrayResult
+            ? CodeExecutionNodeArrayResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeArrayResult' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeFunctionCallResult? CodeExecutionNodeFunctionCallResult { get; init; }
 #else
@@ -144,6 +284,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeFunctionCallResult))]
 #endif
         public bool IsCodeExecutionNodeFunctionCallResult => CodeExecutionNodeFunctionCallResult != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCodeExecutionNodeFunctionCallResult(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.CodeExecutionNodeFunctionCallResult? value)
+        {
+            value = CodeExecutionNodeFunctionCallResult;
+            return IsCodeExecutionNodeFunctionCallResult;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.CodeExecutionNodeFunctionCallResult PickCodeExecutionNodeFunctionCallResult() => IsCodeExecutionNodeFunctionCallResult
+            ? CodeExecutionNodeFunctionCallResult!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -161,6 +321,11 @@ namespace Vellum
         {
             CodeExecutionNodeStringResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeStringResult(global::Vellum.CodeExecutionNodeStringResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -183,6 +348,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeNumberResult(global::Vellum.CodeExecutionNodeNumberResult? value) => new CodeExecutionNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeJsonResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeJsonResult?)value);
 
         /// <summary>
@@ -197,6 +367,11 @@ namespace Vellum
         {
             CodeExecutionNodeJsonResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeJsonResult(global::Vellum.CodeExecutionNodeJsonResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -219,6 +394,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeChatHistoryResult(global::Vellum.CodeExecutionNodeChatHistoryResult? value) => new CodeExecutionNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeSearchResultsResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeSearchResultsResult?)value);
 
         /// <summary>
@@ -233,6 +413,11 @@ namespace Vellum
         {
             CodeExecutionNodeSearchResultsResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeSearchResultsResult(global::Vellum.CodeExecutionNodeSearchResultsResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -255,6 +440,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeErrorResult(global::Vellum.CodeExecutionNodeErrorResult? value) => new CodeExecutionNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeArrayResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeArrayResult?)value);
 
         /// <summary>
@@ -273,6 +463,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeArrayResult(global::Vellum.CodeExecutionNodeArrayResult? value) => new CodeExecutionNodeResultOutput(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeFunctionCallResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeFunctionCallResult?)value);
 
         /// <summary>
@@ -287,6 +482,11 @@ namespace Vellum
         {
             CodeExecutionNodeFunctionCallResult = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static CodeExecutionNodeResultOutput FromCodeExecutionNodeFunctionCallResult(global::Vellum.CodeExecutionNodeFunctionCallResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
         /// 
@@ -352,14 +552,14 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.CodeExecutionNodeStringResult?, TResult>? codeExecutionNodeStringResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeNumberResult?, TResult>? codeExecutionNodeNumberResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeJsonResult?, TResult>? codeExecutionNodeJsonResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeChatHistoryResult?, TResult>? codeExecutionNodeChatHistoryResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeSearchResultsResult?, TResult>? codeExecutionNodeSearchResultsResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeErrorResult?, TResult>? codeExecutionNodeErrorResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeArrayResult?, TResult>? codeExecutionNodeArrayResult = null,
-            global::System.Func<global::Vellum.CodeExecutionNodeFunctionCallResult?, TResult>? codeExecutionNodeFunctionCallResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeStringResult, TResult>? codeExecutionNodeStringResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeNumberResult, TResult>? codeExecutionNodeNumberResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeJsonResult, TResult>? codeExecutionNodeJsonResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeChatHistoryResult, TResult>? codeExecutionNodeChatHistoryResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeSearchResultsResult, TResult>? codeExecutionNodeSearchResultsResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeErrorResult, TResult>? codeExecutionNodeErrorResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeArrayResult, TResult>? codeExecutionNodeArrayResult = null,
+            global::System.Func<global::Vellum.CodeExecutionNodeFunctionCallResult, TResult>? codeExecutionNodeFunctionCallResult = null,
             bool validate = true)
         {
             if (validate)
@@ -407,14 +607,74 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.CodeExecutionNodeStringResult?>? codeExecutionNodeStringResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeNumberResult?>? codeExecutionNodeNumberResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeJsonResult?>? codeExecutionNodeJsonResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeChatHistoryResult?>? codeExecutionNodeChatHistoryResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeSearchResultsResult?>? codeExecutionNodeSearchResultsResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeErrorResult?>? codeExecutionNodeErrorResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeArrayResult?>? codeExecutionNodeArrayResult = null,
-            global::System.Action<global::Vellum.CodeExecutionNodeFunctionCallResult?>? codeExecutionNodeFunctionCallResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeStringResult>? codeExecutionNodeStringResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeNumberResult>? codeExecutionNodeNumberResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeJsonResult>? codeExecutionNodeJsonResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeChatHistoryResult>? codeExecutionNodeChatHistoryResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeSearchResultsResult>? codeExecutionNodeSearchResultsResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeErrorResult>? codeExecutionNodeErrorResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeArrayResult>? codeExecutionNodeArrayResult = null,
+
+            global::System.Action<global::Vellum.CodeExecutionNodeFunctionCallResult>? codeExecutionNodeFunctionCallResult = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsCodeExecutionNodeStringResult)
+            {
+                codeExecutionNodeStringResult?.Invoke(CodeExecutionNodeStringResult!);
+            }
+            else if (IsCodeExecutionNodeNumberResult)
+            {
+                codeExecutionNodeNumberResult?.Invoke(CodeExecutionNodeNumberResult!);
+            }
+            else if (IsCodeExecutionNodeJsonResult)
+            {
+                codeExecutionNodeJsonResult?.Invoke(CodeExecutionNodeJsonResult!);
+            }
+            else if (IsCodeExecutionNodeChatHistoryResult)
+            {
+                codeExecutionNodeChatHistoryResult?.Invoke(CodeExecutionNodeChatHistoryResult!);
+            }
+            else if (IsCodeExecutionNodeSearchResultsResult)
+            {
+                codeExecutionNodeSearchResultsResult?.Invoke(CodeExecutionNodeSearchResultsResult!);
+            }
+            else if (IsCodeExecutionNodeErrorResult)
+            {
+                codeExecutionNodeErrorResult?.Invoke(CodeExecutionNodeErrorResult!);
+            }
+            else if (IsCodeExecutionNodeArrayResult)
+            {
+                codeExecutionNodeArrayResult?.Invoke(CodeExecutionNodeArrayResult!);
+            }
+            else if (IsCodeExecutionNodeFunctionCallResult)
+            {
+                codeExecutionNodeFunctionCallResult?.Invoke(CodeExecutionNodeFunctionCallResult!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.CodeExecutionNodeStringResult>? codeExecutionNodeStringResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeNumberResult>? codeExecutionNodeNumberResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeJsonResult>? codeExecutionNodeJsonResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeChatHistoryResult>? codeExecutionNodeChatHistoryResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeSearchResultsResult>? codeExecutionNodeSearchResultsResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeErrorResult>? codeExecutionNodeErrorResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeArrayResult>? codeExecutionNodeArrayResult = null,
+            global::System.Action<global::Vellum.CodeExecutionNodeFunctionCallResult>? codeExecutionNodeFunctionCallResult = null,
             bool validate = true)
         {
             if (validate)

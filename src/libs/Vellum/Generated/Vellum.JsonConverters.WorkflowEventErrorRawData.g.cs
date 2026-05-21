@@ -108,7 +108,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (workflowEventErrorRawDataVariant1 == null && workflowEventErrorRawDataVariant2 == null)
+            {
                 try
                 {
 

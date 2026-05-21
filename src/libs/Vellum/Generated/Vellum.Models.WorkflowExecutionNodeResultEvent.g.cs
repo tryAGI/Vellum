@@ -79,5 +79,6 @@ namespace Vellum
         public WorkflowExecutionNodeResultEvent()
         {
         }
+
     }
 }

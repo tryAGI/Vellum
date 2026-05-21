@@ -23,6 +23,20 @@ namespace Vellum
         /// Upload a document to be indexed and used for search.<br/>
         /// **Note:** Uses a base url of `https://documents.vellum.ai`.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Vellum.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.UploadDocumentResponse>> UploadAsResponseAsync(
+
+            global::Vellum.UploadRequest request,
+            global::Vellum.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Upload<br/>
+        /// Upload a document to be indexed and used for search.<br/>
+        /// **Note:** Uses a base url of `https://documents.vellum.ai`.
+        /// </summary>
         /// <param name="addToIndexNames">
         /// Optionally include the names of all indexes that you'd like this document to be included in
         /// </param>

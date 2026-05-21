@@ -206,6 +206,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeStringResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeStringResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeStringResult).Name}");
                     codeExecutionNodeStringResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -216,9 +217,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeNumberResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeNumberResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeNumberResult).Name}");
                     codeExecutionNodeNumberResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -229,9 +234,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeJsonResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeJsonResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeJsonResult).Name}");
                     codeExecutionNodeJsonResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -242,9 +251,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeChatHistoryResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeChatHistoryResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeChatHistoryResult).Name}");
                     codeExecutionNodeChatHistoryResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -255,9 +268,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeSearchResultsResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeSearchResultsResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeSearchResultsResult).Name}");
                     codeExecutionNodeSearchResultsResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -268,9 +285,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeErrorResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeErrorResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeErrorResult).Name}");
                     codeExecutionNodeErrorResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -281,9 +302,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeArrayResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeArrayResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeArrayResult).Name}");
                     codeExecutionNodeArrayResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -294,9 +319,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (codeExecutionNodeStringResult == null && codeExecutionNodeNumberResult == null && codeExecutionNodeJsonResult == null && codeExecutionNodeChatHistoryResult == null && codeExecutionNodeSearchResultsResult == null && codeExecutionNodeErrorResult == null && codeExecutionNodeArrayResult == null && codeExecutionNodeFunctionCallResult == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.CodeExecutionNodeFunctionCallResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.CodeExecutionNodeFunctionCallResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.CodeExecutionNodeFunctionCallResult).Name}");
                     codeExecutionNodeFunctionCallResult = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

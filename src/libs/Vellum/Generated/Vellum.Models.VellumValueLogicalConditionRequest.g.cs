@@ -133,5 +133,6 @@ namespace Vellum
         public VellumValueLogicalConditionRequest()
         {
         }
+
     }
 }

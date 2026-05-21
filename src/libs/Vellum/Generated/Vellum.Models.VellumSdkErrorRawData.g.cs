@@ -29,6 +29,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickVellumSdkErrorRawDataVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = VellumSdkErrorRawDataVariant1;
+            return IsVellumSdkErrorRawDataVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickVellumSdkErrorRawDataVariant1() => IsVellumSdkErrorRawDataVariant1
+            ? VellumSdkErrorRawDataVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public string? VellumSdkErrorRawDataVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumSdkErrorRawDataVariant2))]
 #endif
         public bool IsVellumSdkErrorRawDataVariant2 => VellumSdkErrorRawDataVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVellumSdkErrorRawDataVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = VellumSdkErrorRawDataVariant2;
+            return IsVellumSdkErrorRawDataVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public string PickVellumSdkErrorRawDataVariant2() => IsVellumSdkErrorRawDataVariant2
+            ? VellumSdkErrorRawDataVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +99,11 @@ namespace Vellum
         {
             VellumSdkErrorRawDataVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static VellumSdkErrorRawData FromVellumSdkErrorRawDataVariant2(string? value) => new VellumSdkErrorRawData(value);
 
         /// <summary>
         /// 
@@ -100,8 +145,8 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<object?, TResult>? vellumSdkErrorRawDataVariant1 = null,
-            global::System.Func<string?, TResult>? vellumSdkErrorRawDataVariant2 = null,
+            global::System.Func<object, TResult>? vellumSdkErrorRawDataVariant1 = null,
+            global::System.Func<string, TResult>? vellumSdkErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +170,32 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<object?>? vellumSdkErrorRawDataVariant1 = null,
-            global::System.Action<string?>? vellumSdkErrorRawDataVariant2 = null,
+            global::System.Action<object>? vellumSdkErrorRawDataVariant1 = null,
+
+            global::System.Action<string>? vellumSdkErrorRawDataVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsVellumSdkErrorRawDataVariant1)
+            {
+                vellumSdkErrorRawDataVariant1?.Invoke(VellumSdkErrorRawDataVariant1!);
+            }
+            else if (IsVellumSdkErrorRawDataVariant2)
+            {
+                vellumSdkErrorRawDataVariant2?.Invoke(VellumSdkErrorRawDataVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<object>? vellumSdkErrorRawDataVariant1 = null,
+            global::System.Action<string>? vellumSdkErrorRawDataVariant2 = null,
             bool validate = true)
         {
             if (validate)

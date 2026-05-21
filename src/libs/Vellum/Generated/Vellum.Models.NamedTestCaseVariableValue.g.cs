@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsNamedTestCaseStringVariableValue => NamedTestCaseStringVariableValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseStringVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseStringVariableValue? value)
+        {
+            value = NamedTestCaseStringVariableValue;
+            return IsNamedTestCaseStringVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseStringVariableValue PickNamedTestCaseStringVariableValue() => IsNamedTestCaseStringVariableValue
+            ? NamedTestCaseStringVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseStringVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// Named Test Case value that is of type NUMBER
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseNumberVariableValue))]
 #endif
         public bool IsNamedTestCaseNumberVariableValue => NamedTestCaseNumberVariableValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseNumberVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseNumberVariableValue? value)
+        {
+            value = NamedTestCaseNumberVariableValue;
+            return IsNamedTestCaseNumberVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseNumberVariableValue PickNamedTestCaseNumberVariableValue() => IsNamedTestCaseNumberVariableValue
+            ? NamedTestCaseNumberVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseNumberVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// Named Test Case value that is of type JSON
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsNamedTestCaseJsonVariableValue => NamedTestCaseJsonVariableValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseJsonVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseJsonVariableValue? value)
+        {
+            value = NamedTestCaseJsonVariableValue;
+            return IsNamedTestCaseJsonVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseJsonVariableValue PickNamedTestCaseJsonVariableValue() => IsNamedTestCaseJsonVariableValue
+            ? NamedTestCaseJsonVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseJsonVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// Named Test Case value that is of type CHAT_HISTORY
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseChatHistoryVariableValue))]
 #endif
         public bool IsNamedTestCaseChatHistoryVariableValue => NamedTestCaseChatHistoryVariableValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseChatHistoryVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseChatHistoryVariableValue? value)
+        {
+            value = NamedTestCaseChatHistoryVariableValue;
+            return IsNamedTestCaseChatHistoryVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseChatHistoryVariableValue PickNamedTestCaseChatHistoryVariableValue() => IsNamedTestCaseChatHistoryVariableValue
+            ? NamedTestCaseChatHistoryVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseChatHistoryVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// Named Test Case value that is of type SEARCH_RESULTS
@@ -95,6 +175,26 @@ namespace Vellum
         public bool IsNamedTestCaseSearchResultsVariableValue => NamedTestCaseSearchResultsVariableValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseSearchResultsVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseSearchResultsVariableValue? value)
+        {
+            value = NamedTestCaseSearchResultsVariableValue;
+            return IsNamedTestCaseSearchResultsVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseSearchResultsVariableValue PickNamedTestCaseSearchResultsVariableValue() => IsNamedTestCaseSearchResultsVariableValue
+            ? NamedTestCaseSearchResultsVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseSearchResultsVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// Named Test Case value that is of type ERROR
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -110,6 +210,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseErrorVariableValue))]
 #endif
         public bool IsNamedTestCaseErrorVariableValue => NamedTestCaseErrorVariableValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseErrorVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseErrorVariableValue? value)
+        {
+            value = NamedTestCaseErrorVariableValue;
+            return IsNamedTestCaseErrorVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseErrorVariableValue PickNamedTestCaseErrorVariableValue() => IsNamedTestCaseErrorVariableValue
+            ? NamedTestCaseErrorVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseErrorVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// Named Test Case value that is of type FUNCTION_CALL
@@ -129,6 +249,26 @@ namespace Vellum
         public bool IsNamedTestCaseFunctionCallVariableValue => NamedTestCaseFunctionCallVariableValue != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseFunctionCallVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseFunctionCallVariableValue? value)
+        {
+            value = NamedTestCaseFunctionCallVariableValue;
+            return IsNamedTestCaseFunctionCallVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseFunctionCallVariableValue PickNamedTestCaseFunctionCallVariableValue() => IsNamedTestCaseFunctionCallVariableValue
+            ? NamedTestCaseFunctionCallVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseFunctionCallVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
         /// Named Test Case value that is of type ARRAY
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -144,6 +284,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseArrayVariableValue))]
 #endif
         public bool IsNamedTestCaseArrayVariableValue => NamedTestCaseArrayVariableValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseArrayVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseArrayVariableValue? value)
+        {
+            value = NamedTestCaseArrayVariableValue;
+            return IsNamedTestCaseArrayVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseArrayVariableValue PickNamedTestCaseArrayVariableValue() => IsNamedTestCaseArrayVariableValue
+            ? NamedTestCaseArrayVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseArrayVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// Named Test Case value that is of type AUDIO
@@ -165,6 +325,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNamedTestCaseAudioVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseAudioVariableValue? value)
+        {
+            value = NamedTestCaseAudioVariableValue;
+            return IsNamedTestCaseAudioVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseAudioVariableValue PickNamedTestCaseAudioVariableValue() => IsNamedTestCaseAudioVariableValue
+            ? NamedTestCaseAudioVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseAudioVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedTestCaseVideoVariableValue? NamedTestCaseVideoVariableValue { get; init; }
 #else
@@ -178,6 +358,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseVideoVariableValue))]
 #endif
         public bool IsNamedTestCaseVideoVariableValue => NamedTestCaseVideoVariableValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseVideoVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseVideoVariableValue? value)
+        {
+            value = NamedTestCaseVideoVariableValue;
+            return IsNamedTestCaseVideoVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseVideoVariableValue PickNamedTestCaseVideoVariableValue() => IsNamedTestCaseVideoVariableValue
+            ? NamedTestCaseVideoVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseVideoVariableValue' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -199,6 +399,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickNamedTestCaseImageVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseImageVariableValue? value)
+        {
+            value = NamedTestCaseImageVariableValue;
+            return IsNamedTestCaseImageVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseImageVariableValue PickNamedTestCaseImageVariableValue() => IsNamedTestCaseImageVariableValue
+            ? NamedTestCaseImageVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseImageVariableValue' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedTestCaseDocumentVariableValue? NamedTestCaseDocumentVariableValue { get; init; }
 #else
@@ -212,6 +432,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseDocumentVariableValue))]
 #endif
         public bool IsNamedTestCaseDocumentVariableValue => NamedTestCaseDocumentVariableValue != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickNamedTestCaseDocumentVariableValue(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.NamedTestCaseDocumentVariableValue? value)
+        {
+            value = NamedTestCaseDocumentVariableValue;
+            return IsNamedTestCaseDocumentVariableValue;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.NamedTestCaseDocumentVariableValue PickNamedTestCaseDocumentVariableValue() => IsNamedTestCaseDocumentVariableValue
+            ? NamedTestCaseDocumentVariableValue!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseDocumentVariableValue' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -229,6 +469,11 @@ namespace Vellum
         {
             NamedTestCaseStringVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseStringVariableValue(global::Vellum.NamedTestCaseStringVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -251,6 +496,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseNumberVariableValue(global::Vellum.NamedTestCaseNumberVariableValue? value) => new NamedTestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseJsonVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseJsonVariableValue?)value);
 
         /// <summary>
@@ -265,6 +515,11 @@ namespace Vellum
         {
             NamedTestCaseJsonVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseJsonVariableValue(global::Vellum.NamedTestCaseJsonVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -287,6 +542,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseChatHistoryVariableValue(global::Vellum.NamedTestCaseChatHistoryVariableValue? value) => new NamedTestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseSearchResultsVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseSearchResultsVariableValue?)value);
 
         /// <summary>
@@ -301,6 +561,11 @@ namespace Vellum
         {
             NamedTestCaseSearchResultsVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseSearchResultsVariableValue(global::Vellum.NamedTestCaseSearchResultsVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -323,6 +588,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseErrorVariableValue(global::Vellum.NamedTestCaseErrorVariableValue? value) => new NamedTestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseFunctionCallVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseFunctionCallVariableValue?)value);
 
         /// <summary>
@@ -337,6 +607,11 @@ namespace Vellum
         {
             NamedTestCaseFunctionCallVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseFunctionCallVariableValue(global::Vellum.NamedTestCaseFunctionCallVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -359,6 +634,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseArrayVariableValue(global::Vellum.NamedTestCaseArrayVariableValue? value) => new NamedTestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseAudioVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseAudioVariableValue?)value);
 
         /// <summary>
@@ -373,6 +653,11 @@ namespace Vellum
         {
             NamedTestCaseAudioVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseAudioVariableValue(global::Vellum.NamedTestCaseAudioVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -395,6 +680,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseVideoVariableValue(global::Vellum.NamedTestCaseVideoVariableValue? value) => new NamedTestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseImageVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseImageVariableValue?)value);
 
         /// <summary>
@@ -413,6 +703,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseImageVariableValue(global::Vellum.NamedTestCaseImageVariableValue? value) => new NamedTestCaseVariableValue(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseDocumentVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseDocumentVariableValue?)value);
 
         /// <summary>
@@ -427,6 +722,11 @@ namespace Vellum
         {
             NamedTestCaseDocumentVariableValue = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NamedTestCaseVariableValue FromNamedTestCaseDocumentVariableValue(global::Vellum.NamedTestCaseDocumentVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
         /// 
@@ -508,18 +808,18 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.NamedTestCaseStringVariableValue?, TResult>? namedTestCaseStringVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseNumberVariableValue?, TResult>? namedTestCaseNumberVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseJsonVariableValue?, TResult>? namedTestCaseJsonVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseChatHistoryVariableValue?, TResult>? namedTestCaseChatHistoryVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseSearchResultsVariableValue?, TResult>? namedTestCaseSearchResultsVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseErrorVariableValue?, TResult>? namedTestCaseErrorVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseFunctionCallVariableValue?, TResult>? namedTestCaseFunctionCallVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseArrayVariableValue?, TResult>? namedTestCaseArrayVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseAudioVariableValue?, TResult>? namedTestCaseAudioVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseVideoVariableValue?, TResult>? namedTestCaseVideoVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseImageVariableValue?, TResult>? namedTestCaseImageVariableValue = null,
-            global::System.Func<global::Vellum.NamedTestCaseDocumentVariableValue?, TResult>? namedTestCaseDocumentVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseStringVariableValue, TResult>? namedTestCaseStringVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseNumberVariableValue, TResult>? namedTestCaseNumberVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseJsonVariableValue, TResult>? namedTestCaseJsonVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseChatHistoryVariableValue, TResult>? namedTestCaseChatHistoryVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseSearchResultsVariableValue, TResult>? namedTestCaseSearchResultsVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseErrorVariableValue, TResult>? namedTestCaseErrorVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseFunctionCallVariableValue, TResult>? namedTestCaseFunctionCallVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseArrayVariableValue, TResult>? namedTestCaseArrayVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseAudioVariableValue, TResult>? namedTestCaseAudioVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseVideoVariableValue, TResult>? namedTestCaseVideoVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseImageVariableValue, TResult>? namedTestCaseImageVariableValue = null,
+            global::System.Func<global::Vellum.NamedTestCaseDocumentVariableValue, TResult>? namedTestCaseDocumentVariableValue = null,
             bool validate = true)
         {
             if (validate)
@@ -583,18 +883,102 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.NamedTestCaseStringVariableValue?>? namedTestCaseStringVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseNumberVariableValue?>? namedTestCaseNumberVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseJsonVariableValue?>? namedTestCaseJsonVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseChatHistoryVariableValue?>? namedTestCaseChatHistoryVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseSearchResultsVariableValue?>? namedTestCaseSearchResultsVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseErrorVariableValue?>? namedTestCaseErrorVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseFunctionCallVariableValue?>? namedTestCaseFunctionCallVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseArrayVariableValue?>? namedTestCaseArrayVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseAudioVariableValue?>? namedTestCaseAudioVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseVideoVariableValue?>? namedTestCaseVideoVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseImageVariableValue?>? namedTestCaseImageVariableValue = null,
-            global::System.Action<global::Vellum.NamedTestCaseDocumentVariableValue?>? namedTestCaseDocumentVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseStringVariableValue>? namedTestCaseStringVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseNumberVariableValue>? namedTestCaseNumberVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseJsonVariableValue>? namedTestCaseJsonVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseChatHistoryVariableValue>? namedTestCaseChatHistoryVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseSearchResultsVariableValue>? namedTestCaseSearchResultsVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseErrorVariableValue>? namedTestCaseErrorVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseFunctionCallVariableValue>? namedTestCaseFunctionCallVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseArrayVariableValue>? namedTestCaseArrayVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseAudioVariableValue>? namedTestCaseAudioVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseVideoVariableValue>? namedTestCaseVideoVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseImageVariableValue>? namedTestCaseImageVariableValue = null,
+
+            global::System.Action<global::Vellum.NamedTestCaseDocumentVariableValue>? namedTestCaseDocumentVariableValue = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsNamedTestCaseStringVariableValue)
+            {
+                namedTestCaseStringVariableValue?.Invoke(NamedTestCaseStringVariableValue!);
+            }
+            else if (IsNamedTestCaseNumberVariableValue)
+            {
+                namedTestCaseNumberVariableValue?.Invoke(NamedTestCaseNumberVariableValue!);
+            }
+            else if (IsNamedTestCaseJsonVariableValue)
+            {
+                namedTestCaseJsonVariableValue?.Invoke(NamedTestCaseJsonVariableValue!);
+            }
+            else if (IsNamedTestCaseChatHistoryVariableValue)
+            {
+                namedTestCaseChatHistoryVariableValue?.Invoke(NamedTestCaseChatHistoryVariableValue!);
+            }
+            else if (IsNamedTestCaseSearchResultsVariableValue)
+            {
+                namedTestCaseSearchResultsVariableValue?.Invoke(NamedTestCaseSearchResultsVariableValue!);
+            }
+            else if (IsNamedTestCaseErrorVariableValue)
+            {
+                namedTestCaseErrorVariableValue?.Invoke(NamedTestCaseErrorVariableValue!);
+            }
+            else if (IsNamedTestCaseFunctionCallVariableValue)
+            {
+                namedTestCaseFunctionCallVariableValue?.Invoke(NamedTestCaseFunctionCallVariableValue!);
+            }
+            else if (IsNamedTestCaseArrayVariableValue)
+            {
+                namedTestCaseArrayVariableValue?.Invoke(NamedTestCaseArrayVariableValue!);
+            }
+            else if (IsNamedTestCaseAudioVariableValue)
+            {
+                namedTestCaseAudioVariableValue?.Invoke(NamedTestCaseAudioVariableValue!);
+            }
+            else if (IsNamedTestCaseVideoVariableValue)
+            {
+                namedTestCaseVideoVariableValue?.Invoke(NamedTestCaseVideoVariableValue!);
+            }
+            else if (IsNamedTestCaseImageVariableValue)
+            {
+                namedTestCaseImageVariableValue?.Invoke(NamedTestCaseImageVariableValue!);
+            }
+            else if (IsNamedTestCaseDocumentVariableValue)
+            {
+                namedTestCaseDocumentVariableValue?.Invoke(NamedTestCaseDocumentVariableValue!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.NamedTestCaseStringVariableValue>? namedTestCaseStringVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseNumberVariableValue>? namedTestCaseNumberVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseJsonVariableValue>? namedTestCaseJsonVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseChatHistoryVariableValue>? namedTestCaseChatHistoryVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseSearchResultsVariableValue>? namedTestCaseSearchResultsVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseErrorVariableValue>? namedTestCaseErrorVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseFunctionCallVariableValue>? namedTestCaseFunctionCallVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseArrayVariableValue>? namedTestCaseArrayVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseAudioVariableValue>? namedTestCaseAudioVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseVideoVariableValue>? namedTestCaseVideoVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseImageVariableValue>? namedTestCaseImageVariableValue = null,
+            global::System.Action<global::Vellum.NamedTestCaseDocumentVariableValue>? namedTestCaseDocumentVariableValue = null,
             bool validate = true)
         {
             if (validate)

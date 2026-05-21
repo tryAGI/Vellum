@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsTestSuiteTestCaseCreateBulkOperationRequest => TestSuiteTestCaseCreateBulkOperationRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseCreateBulkOperationRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest? value)
+        {
+            value = TestSuiteTestCaseCreateBulkOperationRequest;
+            return IsTestSuiteTestCaseCreateBulkOperationRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest PickTestSuiteTestCaseCreateBulkOperationRequest() => IsTestSuiteTestCaseCreateBulkOperationRequest
+            ? TestSuiteTestCaseCreateBulkOperationRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseCreateBulkOperationRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A bulk operation that represents the replacing of a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseReplaceBulkOperationRequest))]
 #endif
         public bool IsTestSuiteTestCaseReplaceBulkOperationRequest => TestSuiteTestCaseReplaceBulkOperationRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseReplaceBulkOperationRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest? value)
+        {
+            value = TestSuiteTestCaseReplaceBulkOperationRequest;
+            return IsTestSuiteTestCaseReplaceBulkOperationRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest PickTestSuiteTestCaseReplaceBulkOperationRequest() => IsTestSuiteTestCaseReplaceBulkOperationRequest
+            ? TestSuiteTestCaseReplaceBulkOperationRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseReplaceBulkOperationRequest' but the value was {ToString()}.");
 
         /// <summary>
         /// A bulk operation that represents the upserting of a Test Case.
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsTestSuiteTestCaseUpsertBulkOperationRequest => TestSuiteTestCaseUpsertBulkOperationRequest != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseUpsertBulkOperationRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest? value)
+        {
+            value = TestSuiteTestCaseUpsertBulkOperationRequest;
+            return IsTestSuiteTestCaseUpsertBulkOperationRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest PickTestSuiteTestCaseUpsertBulkOperationRequest() => IsTestSuiteTestCaseUpsertBulkOperationRequest
+            ? TestSuiteTestCaseUpsertBulkOperationRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseUpsertBulkOperationRequest' but the value was {ToString()}.");
+
+        /// <summary>
         /// A bulk operation that represents the deletion of a Test Case.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseDeleteBulkOperationRequest))]
 #endif
         public bool IsTestSuiteTestCaseDeleteBulkOperationRequest => TestSuiteTestCaseDeleteBulkOperationRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTestSuiteTestCaseDeleteBulkOperationRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest? value)
+        {
+            value = TestSuiteTestCaseDeleteBulkOperationRequest;
+            return IsTestSuiteTestCaseDeleteBulkOperationRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest PickTestSuiteTestCaseDeleteBulkOperationRequest() => IsTestSuiteTestCaseDeleteBulkOperationRequest
+            ? TestSuiteTestCaseDeleteBulkOperationRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseDeleteBulkOperationRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace Vellum
         {
             TestSuiteTestCaseCreateBulkOperationRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteTestCaseBulkOperationRequest FromTestSuiteTestCaseCreateBulkOperationRequest(global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest? value) => new TestSuiteTestCaseBulkOperationRequest(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteTestCaseBulkOperationRequest FromTestSuiteTestCaseReplaceBulkOperationRequest(global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest? value) => new TestSuiteTestCaseBulkOperationRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteTestCaseBulkOperationRequest(global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest value) => new TestSuiteTestCaseBulkOperationRequest((global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest?)value);
 
         /// <summary>
@@ -133,6 +223,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static TestSuiteTestCaseBulkOperationRequest FromTestSuiteTestCaseUpsertBulkOperationRequest(global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest? value) => new TestSuiteTestCaseBulkOperationRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TestSuiteTestCaseBulkOperationRequest(global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest value) => new TestSuiteTestCaseBulkOperationRequest((global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest?)value);
 
         /// <summary>
@@ -147,6 +242,11 @@ namespace Vellum
         {
             TestSuiteTestCaseDeleteBulkOperationRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TestSuiteTestCaseBulkOperationRequest FromTestSuiteTestCaseDeleteBulkOperationRequest(global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest? value) => new TestSuiteTestCaseBulkOperationRequest(value);
 
         /// <summary>
         /// 
@@ -196,10 +296,10 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest?, TResult>? testSuiteTestCaseCreateBulkOperationRequest = null,
-            global::System.Func<global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest?, TResult>? testSuiteTestCaseReplaceBulkOperationRequest = null,
-            global::System.Func<global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest?, TResult>? testSuiteTestCaseUpsertBulkOperationRequest = null,
-            global::System.Func<global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest?, TResult>? testSuiteTestCaseDeleteBulkOperationRequest = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest, TResult>? testSuiteTestCaseCreateBulkOperationRequest = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest, TResult>? testSuiteTestCaseReplaceBulkOperationRequest = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest, TResult>? testSuiteTestCaseUpsertBulkOperationRequest = null,
+            global::System.Func<global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest, TResult>? testSuiteTestCaseDeleteBulkOperationRequest = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +331,46 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest?>? testSuiteTestCaseCreateBulkOperationRequest = null,
-            global::System.Action<global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest?>? testSuiteTestCaseReplaceBulkOperationRequest = null,
-            global::System.Action<global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest?>? testSuiteTestCaseUpsertBulkOperationRequest = null,
-            global::System.Action<global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest?>? testSuiteTestCaseDeleteBulkOperationRequest = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest>? testSuiteTestCaseCreateBulkOperationRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest>? testSuiteTestCaseReplaceBulkOperationRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest>? testSuiteTestCaseUpsertBulkOperationRequest = null,
+
+            global::System.Action<global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest>? testSuiteTestCaseDeleteBulkOperationRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTestSuiteTestCaseCreateBulkOperationRequest)
+            {
+                testSuiteTestCaseCreateBulkOperationRequest?.Invoke(TestSuiteTestCaseCreateBulkOperationRequest!);
+            }
+            else if (IsTestSuiteTestCaseReplaceBulkOperationRequest)
+            {
+                testSuiteTestCaseReplaceBulkOperationRequest?.Invoke(TestSuiteTestCaseReplaceBulkOperationRequest!);
+            }
+            else if (IsTestSuiteTestCaseUpsertBulkOperationRequest)
+            {
+                testSuiteTestCaseUpsertBulkOperationRequest?.Invoke(TestSuiteTestCaseUpsertBulkOperationRequest!);
+            }
+            else if (IsTestSuiteTestCaseDeleteBulkOperationRequest)
+            {
+                testSuiteTestCaseDeleteBulkOperationRequest?.Invoke(TestSuiteTestCaseDeleteBulkOperationRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest>? testSuiteTestCaseCreateBulkOperationRequest = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest>? testSuiteTestCaseReplaceBulkOperationRequest = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest>? testSuiteTestCaseUpsertBulkOperationRequest = null,
+            global::System.Action<global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest>? testSuiteTestCaseDeleteBulkOperationRequest = null,
             bool validate = true)
         {
             if (validate)

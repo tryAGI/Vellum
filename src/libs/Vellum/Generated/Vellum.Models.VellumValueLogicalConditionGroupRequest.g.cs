@@ -75,5 +75,6 @@ namespace Vellum
         public VellumValueLogicalConditionGroupRequest()
         {
         }
+
     }
 }

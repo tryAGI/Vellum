@@ -72,5 +72,6 @@ namespace Vellum
         public WorkflowOutputJSON()
         {
         }
+
     }
 }

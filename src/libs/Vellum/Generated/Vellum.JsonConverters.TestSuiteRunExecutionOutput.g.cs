@@ -214,6 +214,7 @@ namespace Vellum.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionStringOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionStringOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionStringOutput).Name}");
                     testSuiteRunExecutionStringOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -224,9 +225,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionNumberOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionNumberOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionNumberOutput).Name}");
                     testSuiteRunExecutionNumberOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -237,9 +242,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionJsonOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionJsonOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionJsonOutput).Name}");
                     testSuiteRunExecutionJsonOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -250,9 +259,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionChatHistoryOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionChatHistoryOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionChatHistoryOutput).Name}");
                     testSuiteRunExecutionChatHistoryOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -263,9 +276,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionSearchResultsOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionSearchResultsOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionSearchResultsOutput).Name}");
                     testSuiteRunExecutionSearchResultsOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -276,9 +293,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionErrorOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionErrorOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionErrorOutput).Name}");
                     testSuiteRunExecutionErrorOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -289,9 +310,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionFunctionCallOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionFunctionCallOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionFunctionCallOutput).Name}");
                     testSuiteRunExecutionFunctionCallOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -302,9 +327,13 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (testSuiteRunExecutionStringOutput == null && testSuiteRunExecutionNumberOutput == null && testSuiteRunExecutionJsonOutput == null && testSuiteRunExecutionChatHistoryOutput == null && testSuiteRunExecutionSearchResultsOutput == null && testSuiteRunExecutionErrorOutput == null && testSuiteRunExecutionFunctionCallOutput == null && testSuiteRunExecutionArrayOutput == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteRunExecutionArrayOutput), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteRunExecutionArrayOutput> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteRunExecutionArrayOutput).Name}");
                     testSuiteRunExecutionArrayOutput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

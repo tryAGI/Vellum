@@ -29,6 +29,26 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickMetadataFilterConfigRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.MetadataFilterConfigRequest? value)
+        {
+            value = MetadataFilterConfigRequest;
+            return IsMetadataFilterConfigRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.MetadataFilterConfigRequest PickMetadataFilterConfigRequest() => IsMetadataFilterConfigRequest
+            ? MetadataFilterConfigRequest!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MetadataFilterConfigRequest' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.VellumValueLogicalExpressionRequest? VellumValueLogicalExpressionRequest { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumValueLogicalExpressionRequest))]
 #endif
         public bool IsVellumValueLogicalExpressionRequest => VellumValueLogicalExpressionRequest != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVellumValueLogicalExpressionRequest(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.VellumValueLogicalExpressionRequest? value)
+        {
+            value = VellumValueLogicalExpressionRequest;
+            return IsVellumValueLogicalExpressionRequest;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.VellumValueLogicalExpressionRequest PickVellumValueLogicalExpressionRequest() => IsVellumValueLogicalExpressionRequest
+            ? VellumValueLogicalExpressionRequest!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VellumValueLogicalExpressionRequest' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static MetadataFiltersRequest FromMetadataFilterConfigRequest(global::Vellum.MetadataFilterConfigRequest? value) => new MetadataFiltersRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator MetadataFiltersRequest(global::Vellum.VellumValueLogicalExpressionRequest value) => new MetadataFiltersRequest((global::Vellum.VellumValueLogicalExpressionRequest?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Vellum
         {
             VellumValueLogicalExpressionRequest = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static MetadataFiltersRequest FromVellumValueLogicalExpressionRequest(global::Vellum.VellumValueLogicalExpressionRequest? value) => new MetadataFiltersRequest(value);
 
         /// <summary>
         /// 
@@ -118,7 +168,7 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.MetadataFilterConfigRequest?, TResult>? metadataFilterConfigRequest = null,
+            global::System.Func<global::Vellum.MetadataFilterConfigRequest, TResult>? metadataFilterConfigRequest = null,
             global::System.Func<global::Vellum.VellumValueLogicalExpressionRequest?, TResult>? vellumValueLogicalExpressionRequest = null,
             bool validate = true)
         {
@@ -143,7 +193,31 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.MetadataFilterConfigRequest?>? metadataFilterConfigRequest = null,
+            global::System.Action<global::Vellum.MetadataFilterConfigRequest>? metadataFilterConfigRequest = null,
+
+            global::System.Action<global::Vellum.VellumValueLogicalExpressionRequest?>? vellumValueLogicalExpressionRequest = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsMetadataFilterConfigRequest)
+            {
+                metadataFilterConfigRequest?.Invoke(MetadataFilterConfigRequest!);
+            }
+            else if (IsVellumValueLogicalExpressionRequest)
+            {
+                vellumValueLogicalExpressionRequest?.Invoke(VellumValueLogicalExpressionRequest!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.MetadataFilterConfigRequest>? metadataFilterConfigRequest = null,
             global::System.Action<global::Vellum.VellumValueLogicalExpressionRequest?>? vellumValueLogicalExpressionRequest = null,
             bool validate = true)
         {

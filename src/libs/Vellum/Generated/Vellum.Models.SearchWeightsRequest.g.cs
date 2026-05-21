@@ -56,5 +56,6 @@ namespace Vellum
         public SearchWeightsRequest()
         {
         }
+
     }
 }

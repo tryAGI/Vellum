@@ -118,5 +118,6 @@ namespace Vellum
         public StreamingWorkflowNodeResultEvent()
         {
         }
+
     }
 }

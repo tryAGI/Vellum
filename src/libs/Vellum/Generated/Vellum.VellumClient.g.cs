@@ -42,7 +42,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageDeploymentsClient SubpackageDeployments => new SubpackageDeploymentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageDeploymentsClient SubpackageDeployments => new SubpackageDeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -51,7 +51,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageDocumentIndexesClient SubpackageDocumentIndexes => new SubpackageDocumentIndexesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageDocumentIndexesClient SubpackageDocumentIndexes => new SubpackageDocumentIndexesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -60,7 +60,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageDocumentsClient SubpackageDocuments => new SubpackageDocumentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageDocumentsClient SubpackageDocuments => new SubpackageDocumentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -69,7 +69,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageEventsClient SubpackageEvents => new SubpackageEventsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageEventsClient SubpackageEvents => new SubpackageEventsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -78,7 +78,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageFolderEntitiesClient SubpackageFolderEntities => new SubpackageFolderEntitiesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageFolderEntitiesClient SubpackageFolderEntities => new SubpackageFolderEntitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -87,7 +87,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageSandboxesClient SubpackageSandboxes => new SubpackageSandboxesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageSandboxesClient SubpackageSandboxes => new SubpackageSandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -96,7 +96,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageTestSuiteRunsClient SubpackageTestSuiteRuns => new SubpackageTestSuiteRunsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageTestSuiteRunsClient SubpackageTestSuiteRuns => new SubpackageTestSuiteRunsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +105,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageTestSuitesClient SubpackageTestSuites => new SubpackageTestSuitesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageTestSuitesClient SubpackageTestSuites => new SubpackageTestSuitesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -114,7 +114,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageUploadedFilesClient SubpackageUploadedFiles => new SubpackageUploadedFilesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageUploadedFilesClient SubpackageUploadedFiles => new SubpackageUploadedFilesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -123,7 +123,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowDeploymentsClient SubpackageWorkflowDeployments => new SubpackageWorkflowDeploymentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageWorkflowDeploymentsClient SubpackageWorkflowDeployments => new SubpackageWorkflowDeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -132,7 +132,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowExecutionsClient SubpackageWorkflowExecutions => new SubpackageWorkflowExecutionsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageWorkflowExecutionsClient SubpackageWorkflowExecutions => new SubpackageWorkflowExecutionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -141,7 +141,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowSandboxesClient SubpackageWorkflowSandboxes => new SubpackageWorkflowSandboxesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageWorkflowSandboxesClient SubpackageWorkflowSandboxes => new SubpackageWorkflowSandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -150,7 +150,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowsClient SubpackageWorkflows => new SubpackageWorkflowsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageWorkflowsClient SubpackageWorkflows => new SubpackageWorkflowsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -159,7 +159,7 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkspaceSecretsClient SubpackageWorkspaceSecrets => new SubpackageWorkspaceSecretsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SubpackageWorkspaceSecretsClient SubpackageWorkspaceSecrets => new SubpackageWorkspaceSecretsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -188,6 +188,27 @@ namespace Vellum
         }
 
         /// <summary>
+        /// Creates a new instance of the VellumClient with explicit options but no base URL override.
+        /// Skips passing <c>baseUri</c> so the default base URL from the OpenAPI spec applies.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public VellumClient(
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Collections.Generic.List<global::Vellum.EndPointAuthorization>? authorizations,
+            global::Vellum.AutoSDKClientOptions? options,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri: null,
+                authorizations,
+                options,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
         /// Creates a new instance of the VellumClient.
         /// If no httpClient is provided, a new one will be created.
         /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
@@ -198,10 +219,10 @@ namespace Vellum
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public VellumClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Vellum.EndPointAuthorization>? authorizations = null,
-            global::Vellum.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Vellum.EndPointAuthorization>? authorizations,
+            global::Vellum.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

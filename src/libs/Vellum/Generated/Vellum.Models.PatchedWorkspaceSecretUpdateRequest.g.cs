@@ -48,5 +48,6 @@ namespace Vellum
         public PatchedWorkspaceSecretUpdateRequest()
         {
         }
+
     }
 }

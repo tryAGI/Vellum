@@ -27,6 +27,26 @@ namespace Vellum
         public bool IsInitiatedWorkflowNodeResultEvent => InitiatedWorkflowNodeResultEvent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInitiatedWorkflowNodeResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.InitiatedWorkflowNodeResultEvent? value)
+        {
+            value = InitiatedWorkflowNodeResultEvent;
+            return IsInitiatedWorkflowNodeResultEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.InitiatedWorkflowNodeResultEvent PickInitiatedWorkflowNodeResultEvent() => IsInitiatedWorkflowNodeResultEvent
+            ? InitiatedWorkflowNodeResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InitiatedWorkflowNodeResultEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// An event that indicates that the node has execution is in progress.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamingWorkflowNodeResultEvent))]
 #endif
         public bool IsStreamingWorkflowNodeResultEvent => StreamingWorkflowNodeResultEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStreamingWorkflowNodeResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.StreamingWorkflowNodeResultEvent? value)
+        {
+            value = StreamingWorkflowNodeResultEvent;
+            return IsStreamingWorkflowNodeResultEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.StreamingWorkflowNodeResultEvent PickStreamingWorkflowNodeResultEvent() => IsStreamingWorkflowNodeResultEvent
+            ? StreamingWorkflowNodeResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StreamingWorkflowNodeResultEvent' but the value was {ToString()}.");
 
         /// <summary>
         /// An event that indicates that the node has fulfilled its execution.
@@ -61,6 +101,26 @@ namespace Vellum
         public bool IsFulfilledWorkflowNodeResultEvent => FulfilledWorkflowNodeResultEvent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFulfilledWorkflowNodeResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.FulfilledWorkflowNodeResultEvent? value)
+        {
+            value = FulfilledWorkflowNodeResultEvent;
+            return IsFulfilledWorkflowNodeResultEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.FulfilledWorkflowNodeResultEvent PickFulfilledWorkflowNodeResultEvent() => IsFulfilledWorkflowNodeResultEvent
+            ? FulfilledWorkflowNodeResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledWorkflowNodeResultEvent' but the value was {ToString()}.");
+
+        /// <summary>
         /// An event that indicates that the node has rejected its execution.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +136,26 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RejectedWorkflowNodeResultEvent))]
 #endif
         public bool IsRejectedWorkflowNodeResultEvent => RejectedWorkflowNodeResultEvent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRejectedWorkflowNodeResultEvent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Vellum.RejectedWorkflowNodeResultEvent? value)
+        {
+            value = RejectedWorkflowNodeResultEvent;
+            return IsRejectedWorkflowNodeResultEvent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Vellum.RejectedWorkflowNodeResultEvent PickRejectedWorkflowNodeResultEvent() => IsRejectedWorkflowNodeResultEvent
+            ? RejectedWorkflowNodeResultEvent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedWorkflowNodeResultEvent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace Vellum
         {
             InitiatedWorkflowNodeResultEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultEvent FromInitiatedWorkflowNodeResultEvent(global::Vellum.InitiatedWorkflowNodeResultEvent? value) => new WorkflowNodeResultEvent(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultEvent FromStreamingWorkflowNodeResultEvent(global::Vellum.StreamingWorkflowNodeResultEvent? value) => new WorkflowNodeResultEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultEvent(global::Vellum.FulfilledWorkflowNodeResultEvent value) => new WorkflowNodeResultEvent((global::Vellum.FulfilledWorkflowNodeResultEvent?)value);
 
         /// <summary>
@@ -133,6 +223,11 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
+        public static WorkflowNodeResultEvent FromFulfilledWorkflowNodeResultEvent(global::Vellum.FulfilledWorkflowNodeResultEvent? value) => new WorkflowNodeResultEvent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator WorkflowNodeResultEvent(global::Vellum.RejectedWorkflowNodeResultEvent value) => new WorkflowNodeResultEvent((global::Vellum.RejectedWorkflowNodeResultEvent?)value);
 
         /// <summary>
@@ -147,6 +242,11 @@ namespace Vellum
         {
             RejectedWorkflowNodeResultEvent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static WorkflowNodeResultEvent FromRejectedWorkflowNodeResultEvent(global::Vellum.RejectedWorkflowNodeResultEvent? value) => new WorkflowNodeResultEvent(value);
 
         /// <summary>
         /// 
@@ -196,10 +296,10 @@ namespace Vellum
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Vellum.InitiatedWorkflowNodeResultEvent?, TResult>? initiatedWorkflowNodeResultEvent = null,
-            global::System.Func<global::Vellum.StreamingWorkflowNodeResultEvent?, TResult>? streamingWorkflowNodeResultEvent = null,
-            global::System.Func<global::Vellum.FulfilledWorkflowNodeResultEvent?, TResult>? fulfilledWorkflowNodeResultEvent = null,
-            global::System.Func<global::Vellum.RejectedWorkflowNodeResultEvent?, TResult>? rejectedWorkflowNodeResultEvent = null,
+            global::System.Func<global::Vellum.InitiatedWorkflowNodeResultEvent, TResult>? initiatedWorkflowNodeResultEvent = null,
+            global::System.Func<global::Vellum.StreamingWorkflowNodeResultEvent, TResult>? streamingWorkflowNodeResultEvent = null,
+            global::System.Func<global::Vellum.FulfilledWorkflowNodeResultEvent, TResult>? fulfilledWorkflowNodeResultEvent = null,
+            global::System.Func<global::Vellum.RejectedWorkflowNodeResultEvent, TResult>? rejectedWorkflowNodeResultEvent = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +331,46 @@ namespace Vellum
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Vellum.InitiatedWorkflowNodeResultEvent?>? initiatedWorkflowNodeResultEvent = null,
-            global::System.Action<global::Vellum.StreamingWorkflowNodeResultEvent?>? streamingWorkflowNodeResultEvent = null,
-            global::System.Action<global::Vellum.FulfilledWorkflowNodeResultEvent?>? fulfilledWorkflowNodeResultEvent = null,
-            global::System.Action<global::Vellum.RejectedWorkflowNodeResultEvent?>? rejectedWorkflowNodeResultEvent = null,
+            global::System.Action<global::Vellum.InitiatedWorkflowNodeResultEvent>? initiatedWorkflowNodeResultEvent = null,
+
+            global::System.Action<global::Vellum.StreamingWorkflowNodeResultEvent>? streamingWorkflowNodeResultEvent = null,
+
+            global::System.Action<global::Vellum.FulfilledWorkflowNodeResultEvent>? fulfilledWorkflowNodeResultEvent = null,
+
+            global::System.Action<global::Vellum.RejectedWorkflowNodeResultEvent>? rejectedWorkflowNodeResultEvent = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsInitiatedWorkflowNodeResultEvent)
+            {
+                initiatedWorkflowNodeResultEvent?.Invoke(InitiatedWorkflowNodeResultEvent!);
+            }
+            else if (IsStreamingWorkflowNodeResultEvent)
+            {
+                streamingWorkflowNodeResultEvent?.Invoke(StreamingWorkflowNodeResultEvent!);
+            }
+            else if (IsFulfilledWorkflowNodeResultEvent)
+            {
+                fulfilledWorkflowNodeResultEvent?.Invoke(FulfilledWorkflowNodeResultEvent!);
+            }
+            else if (IsRejectedWorkflowNodeResultEvent)
+            {
+                rejectedWorkflowNodeResultEvent?.Invoke(RejectedWorkflowNodeResultEvent!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Vellum.InitiatedWorkflowNodeResultEvent>? initiatedWorkflowNodeResultEvent = null,
+            global::System.Action<global::Vellum.StreamingWorkflowNodeResultEvent>? streamingWorkflowNodeResultEvent = null,
+            global::System.Action<global::Vellum.FulfilledWorkflowNodeResultEvent>? fulfilledWorkflowNodeResultEvent = null,
+            global::System.Action<global::Vellum.RejectedWorkflowNodeResultEvent>? rejectedWorkflowNodeResultEvent = null,
             bool validate = true)
         {
             if (validate)
