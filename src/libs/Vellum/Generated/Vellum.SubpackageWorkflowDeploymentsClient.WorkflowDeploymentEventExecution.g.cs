@@ -358,18 +358,17 @@ namespace Vellum
                                     __exception_400 = __ex;
                                 }
 
-                                throw new global::Vellum.ApiException<global::Vellum.ErrorDetailResponse>(
+
+                                throw global::Vellum.ApiException<global::Vellum.ErrorDetailResponse>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_400,
-                                    ResponseObject = __value_400,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_400,
+                                    responseObject: __value_400,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
                             // 
                             if ((int)__response.StatusCode == 404)
@@ -396,18 +395,17 @@ namespace Vellum
                                     __exception_404 = __ex;
                                 }
 
-                                throw new global::Vellum.ApiException<global::Vellum.ErrorDetailResponse>(
+
+                                throw global::Vellum.ApiException<global::Vellum.ErrorDetailResponse>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_404,
-                                    ResponseObject = __value_404,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_404,
+                                    responseObject: __value_404,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
                             // 
                             if ((int)__response.StatusCode == 421)
@@ -434,18 +432,17 @@ namespace Vellum
                                     __exception_421 = __ex;
                                 }
 
-                                throw new global::Vellum.ApiException<global::Vellum.UpdateActiveWorkspaceResponse>(
+
+                                throw global::Vellum.ApiException<global::Vellum.UpdateActiveWorkspaceResponse>.Create(
+                                    statusCode: __response.StatusCode,
                                     message: __content_421 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_421,
-                                    statusCode: __response.StatusCode)
-                                {
-                                    ResponseBody = __content_421,
-                                    ResponseObject = __value_421,
-                                    ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                    responseBody: __content_421,
+                                    responseObject: __value_421,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
-                                        h => h.Value),
-                                };
+                                        h => h.Value));
                             }
 
                             if (__effectiveReadResponseAsString)
@@ -479,17 +476,15 @@ namespace Vellum
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::Vellum.ApiException(
+                                    throw global::Vellum.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -526,17 +521,15 @@ namespace Vellum
                                     {
                                     }
 
-                                    throw new global::Vellum.ApiException(
+                                    throw global::Vellum.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 
