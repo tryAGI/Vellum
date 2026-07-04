@@ -217,7 +217,7 @@
         "summary": "Retrieve Provider Payload",
         "description": "Given a set of input variable values, compile the exact payload that Vellum would send to the configured model provider\nfor execution if the execute-prompt endpoint had been invoked. Note that this endpoint does not actually execute the\nprompt or make an API call to the model provider.\n\nThis endpoint is useful if you don't want to proxy LLM provider requests through Vellum and prefer to send them directly\nto the provider yourself. Note that no guarantees are made on the format of this API's response schema, other than\nthat it will be a valid payload for the configured model provider. It's not recommended that you try to parse or\nderive meaning from the response body and instead, should simply pass it directly to the model provider as is.\n\nWe encourage you to seek advise from Vellum Support before integrating with this API for production use.\n",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [],
         "responses": {
@@ -288,7 +288,7 @@
         "operationId": "deploy-prompt",
         "summary": "Deploy Prompt",
         "tags": [
-          "subpackage_sandboxes"
+          "sandboxes"
         ],
         "parameters": [
           {
@@ -340,7 +340,7 @@
         "summary": "Upsert Sandbox Scenario",
         "description": "Upserts a new scenario for a sandbox, keying off of the optionally provided scenario id.\n\nIf an id is provided and has a match, the scenario will be updated. If no id is provided or no match\nis found, a new scenario will be appended to the end.\n\nNote that a full replacement of the scenario is performed, so any fields not provided will be removed\nor overwritten with default values.",
         "tags": [
-          "subpackage_sandboxes"
+          "sandboxes"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
         "summary": "Delete Sandbox Scenario",
         "description": "Deletes an existing scenario from a sandbox, keying off of the provided scenario id.",
         "tags": [
-          "subpackage_sandboxes"
+          "sandboxes"
         ],
         "parameters": [
           {
@@ -426,7 +426,7 @@
         "summary": "List",
         "description": "Used to list all Prompt Deployments.",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -486,7 +486,7 @@
         "summary": "Retrieve",
         "description": "Used to retrieve a Prompt Deployment given its ID or name.",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -519,7 +519,7 @@
         "summary": "Retrieve Prompt Deployment Release",
         "description": "Retrieve a specific Prompt Deployment Release by either its UUID or the name of a Release Tag that points to it.",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -561,7 +561,7 @@
         "summary": "Retrieve Deployment Release Tag",
         "description": "Retrieve a Deployment Release Tag by tag name, associated with a specified Deployment.",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -601,7 +601,7 @@
         "summary": "Update Deployment Release Tag",
         "description": "Updates an existing Release Tag associated with the specified Prompt Deployment.",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -652,7 +652,7 @@
         "summary": "List Deployment Release Tags",
         "description": "List Release Tags associated with the specified Prompt Deployment",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -720,7 +720,7 @@
         "summary": "Deployment History Item Retrieve",
         "description": "DEPRECATED: This endpoint is deprecated and will be removed in a future release. Please use the\n`retrieve_prompt_deployment_release` xendpoint instead.",
         "tags": [
-          "subpackage_deployments"
+          "deployments"
         ],
         "parameters": [
           {
@@ -964,7 +964,7 @@
         "summary": "Workflow Execution Status",
         "description": "Checks if a workflow execution is currently executing (not fulfilled, not rejected, and has no end time).\nUses the ClickHouse Prime summary materialized view.",
         "tags": [
-          "subpackage_workflows"
+          "workflows"
         ],
         "parameters": [
           {
@@ -1058,7 +1058,7 @@
         "operationId": "deploy-workflow",
         "summary": "Deploy Workflow",
         "tags": [
-          "subpackage_workflowSandboxes"
+          "workflow-sandboxes"
         ],
         "parameters": [
           {
@@ -1101,7 +1101,7 @@
         "summary": "Execute Stream",
         "description": "Executes a deployed Workflow and streams back its results.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1182,7 +1182,7 @@
         "summary": "List",
         "description": "Used to list all Workflow Deployments.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1269,7 +1269,7 @@
         "summary": "List Workflow Deployment Releases",
         "description": "List the Releases of the specified Workflow Deployment for the current Environment.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1329,7 +1329,7 @@
         "summary": "Retrieve",
         "description": "Used to retrieve a workflow deployment given its ID or name.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1362,7 +1362,7 @@
         "summary": "Retrieve Workflow Deployment Release",
         "description": "Retrieve a specific Workflow Deployment Release by either its UUID or the name of a Release Tag that points to it.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1404,7 +1404,7 @@
         "summary": "Retrieve Workflow Release Tag",
         "description": "Retrieve a Workflow Release Tag by tag name, associated with a specified Workflow Deployment.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1444,7 +1444,7 @@
         "summary": "Update Workflow Release Tag",
         "description": "Updates an existing Release Tag associated with the specified Workflow Deployment.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1495,7 +1495,7 @@
         "summary": "List Workflow Release Tags",
         "description": "List Release Tags associated with the specified Workflow Deployment",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1563,7 +1563,7 @@
         "summary": "Workflow Deployment History Item Retrieve",
         "description": "DEPRECATED: This endpoint is deprecated and will be removed in a future release. Please use the\n`retrieve_workflow_deployment_release` endpoint instead.",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1605,7 +1605,7 @@
         "operationId": "list-workflow-deployment-event-executions",
         "summary": "List Workflow Deployment Event Executions",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1670,7 +1670,7 @@
         "operationId": "workflow-deployment-event-execution",
         "summary": "Workflow Deployment Event Execution",
         "tags": [
-          "subpackage_workflowDeployments"
+          "workflow-deployments"
         ],
         "parameters": [
           {
@@ -1740,7 +1740,7 @@
         "operationId": "retrieve-workflow-execution-detail",
         "summary": "Retrieve Workflow Execution Detail",
         "tags": [
-          "subpackage_workflowExecutions"
+          "workflow-executions"
         ],
         "parameters": [
           {
@@ -1812,7 +1812,7 @@
         "summary": "Create",
         "description": "Accept an event or list of events and publish them to ClickHouse for analytics processing.",
         "tags": [
-          "subpackage_events"
+          "events"
         ],
         "parameters": [],
         "responses": {
@@ -1946,7 +1946,7 @@
         "summary": "Add Document",
         "description": "Adds a previously uploaded Document to the specified Document Index.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -1986,7 +1986,7 @@
         "summary": "Remove Document",
         "description": "Removes a Document from a Document Index without deleting the Document itself.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -2028,7 +2028,7 @@
         "summary": "Create",
         "description": "Creates a new document index.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [],
         "responses": {
@@ -2058,7 +2058,7 @@
         "summary": "List",
         "description": "Used to retrieve a list of Document Indexes.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -2127,7 +2127,7 @@
         "summary": "Retrieve",
         "description": "Used to retrieve a Document Index given its ID or name.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -2167,7 +2167,7 @@
         "summary": "Partial Update",
         "description": "Used to partial update a Document Index given its ID or name.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -2207,7 +2207,7 @@
         "summary": "Update",
         "description": "Used to fully update a Document Index given its ID or name.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -2247,7 +2247,7 @@
         "summary": "Destroy",
         "description": "Used to delete a Document Index given its ID or name.",
         "tags": [
-          "subpackage_documentIndexes"
+          "document-indexes"
         ],
         "parameters": [
           {
@@ -2280,7 +2280,7 @@
         "summary": "Upload",
         "description": "Upload a document to be indexed and used for search.\n\n**Note:** Uses a base url of `https://documents.vellum.ai`.\n",
         "tags": [
-          "subpackage_documents"
+          "documents"
         ],
         "parameters": [],
         "responses": {
@@ -2399,7 +2399,7 @@
         "summary": "Retrieve",
         "description": "Retrieve a Document, keying off of either its Vellum-generated ID or its external ID.",
         "tags": [
-          "subpackage_documents"
+          "documents"
         ],
         "parameters": [
           {
@@ -2429,7 +2429,7 @@
         "summary": "Partial Update",
         "description": "Update a Document, keying off of either its Vellum-generated ID or its external ID. Particularly useful for updating its metadata.",
         "tags": [
-          "subpackage_documents"
+          "documents"
         ],
         "parameters": [
           {
@@ -2495,7 +2495,7 @@
         "summary": "Destroy",
         "description": "Delete a Document, keying off of either its Vellum-generated ID or its external ID.",
         "tags": [
-          "subpackage_documents"
+          "documents"
         ],
         "parameters": [
           {
@@ -2527,7 +2527,7 @@
         "summary": "List",
         "description": "Used to list documents. Optionally filter on supported fields.",
         "tags": [
-          "subpackage_documents"
+          "documents"
         ],
         "parameters": [
           {
@@ -2597,7 +2597,7 @@
         "summary": "Retrieve",
         "description": "Retrieve a previously uploaded file by its ID",
         "tags": [
-          "subpackage_uploadedFiles"
+          "uploaded-files"
         ],
         "parameters": [
           {
@@ -2640,7 +2640,7 @@
         "summary": "List Test Suite Test Cases",
         "description": "List the Test Cases associated with a Test Suite",
         "tags": [
-          "subpackage_testSuites"
+          "test-suites"
         ],
         "parameters": [
           {
@@ -2689,7 +2689,7 @@
         "summary": "Upsert Test Suite Test Case",
         "description": "Upserts a new test case for a test suite, keying off of the optionally provided test case id.\n\nIf an id is provided and has a match, the test case will be updated. If no id is provided or no match\nis found, a new test case will be appended to the end.\n\nNote that a full replacement of the test case is performed, so any fields not provided will be removed\nor overwritten with default values.",
         "tags": [
-          "subpackage_testSuites"
+          "test-suites"
         ],
         "parameters": [
           {
@@ -2731,7 +2731,7 @@
         "summary": "Test Suite Test Cases Bulk",
         "description": "Created, replace, and delete Test Cases within the specified Test Suite in bulk",
         "tags": [
-          "subpackage_testSuites"
+          "test-suites"
         ],
         "parameters": [
           {
@@ -2779,7 +2779,7 @@
         "summary": "Delete Test Suite Test Case",
         "description": "Deletes an existing test case for a test suite, keying off of the test case id.\n",
         "tags": [
-          "subpackage_testSuites"
+          "test-suites"
         ],
         "parameters": [
           {
@@ -2821,7 +2821,7 @@
         "summary": "Create",
         "description": "Trigger a Test Suite and create a new Test Suite Run",
         "tags": [
-          "subpackage_testSuiteRuns"
+          "test-suite-runs"
         ],
         "parameters": [],
         "responses": {
@@ -2853,7 +2853,7 @@
         "summary": "Retrieve",
         "description": "Retrieve a specific Test Suite Run by ID",
         "tags": [
-          "subpackage_testSuiteRuns"
+          "test-suite-runs"
         ],
         "parameters": [
           {
@@ -2886,7 +2886,7 @@
         "operationId": "list-executions",
         "summary": "List Executions",
         "tags": [
-          "subpackage_testSuiteRuns"
+          "test-suite-runs"
         ],
         "parameters": [
           {
@@ -2950,7 +2950,7 @@
         "summary": "Add Entity To Folder",
         "description": "Add an entity to a specific folder or root directory.\n\nAdding an entity to a folder will remove it from any other folders it might have been a member of.",
         "tags": [
-          "subpackage_folderEntities"
+          "folder-entities"
         ],
         "parameters": [
           {
@@ -2992,7 +2992,7 @@
         "summary": "List",
         "description": "List all folder entities within a specified folder.",
         "tags": [
-          "subpackage_folderEntities"
+          "folder-entities"
         ],
         "parameters": [
           {
@@ -3061,7 +3061,7 @@
         "summary": "Retrieve",
         "description": "Used to retrieve a Workspace Secret given its ID or name.",
         "tags": [
-          "subpackage_workspaceSecrets"
+          "workspace-secrets"
         ],
         "parameters": [
           {
@@ -3092,7 +3092,7 @@
         "summary": "Partial Update",
         "description": "Used to update a Workspace Secret given its ID or name.",
         "tags": [
-          "subpackage_workspaceSecrets"
+          "workspace-secrets"
         ],
         "parameters": [
           {
