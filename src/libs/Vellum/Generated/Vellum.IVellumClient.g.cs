@@ -47,72 +47,72 @@ namespace Vellum
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageDeploymentsClient SubpackageDeployments { get; }
+        public DeploymentsClient Deployments { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageDocumentIndexesClient SubpackageDocumentIndexes { get; }
+        public DocumentIndexesClient DocumentIndexes { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageDocumentsClient SubpackageDocuments { get; }
+        public DocumentsClient Documents { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageEventsClient SubpackageEvents { get; }
+        public EventsClient Events { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageFolderEntitiesClient SubpackageFolderEntities { get; }
+        public FolderEntitiesClient FolderEntities { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageSandboxesClient SubpackageSandboxes { get; }
+        public SandboxesClient Sandboxes { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageTestSuiteRunsClient SubpackageTestSuiteRuns { get; }
+        public TestSuiteRunsClient TestSuiteRuns { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageTestSuitesClient SubpackageTestSuites { get; }
+        public TestSuitesClient TestSuites { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageUploadedFilesClient SubpackageUploadedFiles { get; }
+        public UploadedFilesClient UploadedFiles { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowDeploymentsClient SubpackageWorkflowDeployments { get; }
+        public WorkflowDeploymentsClient WorkflowDeployments { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowExecutionsClient SubpackageWorkflowExecutions { get; }
+        public WorkflowExecutionsClient WorkflowExecutions { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowSandboxesClient SubpackageWorkflowSandboxes { get; }
+        public WorkflowSandboxesClient WorkflowSandboxes { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkflowsClient SubpackageWorkflows { get; }
+        public WorkflowsClient Workflows { get; }
 
         /// <summary>
         /// 
         /// </summary>
-        public SubpackageWorkspaceSecretsClient SubpackageWorkspaceSecrets { get; }
+        public WorkspaceSecretsClient WorkspaceSecrets { get; }
 
     }
 }
