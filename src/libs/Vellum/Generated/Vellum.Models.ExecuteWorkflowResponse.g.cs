@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Vellum
@@ -19,6 +21,7 @@ namespace Vellum
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("run_id")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public string? RunId { get; set; }
 
         /// <summary>
@@ -46,7 +49,6 @@ namespace Vellum
         /// </summary>
         /// <param name="executionId"></param>
         /// <param name="data"></param>
-        /// <param name="runId"></param>
         /// <param name="externalId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -54,11 +56,9 @@ namespace Vellum
         public ExecuteWorkflowResponse(
             string executionId,
             global::Vellum.ExecuteWorkflowWorkflowResultEvent data,
-            string? runId,
             string? externalId)
         {
             this.ExecutionId = executionId ?? throw new global::System.ArgumentNullException(nameof(executionId));
-            this.RunId = runId;
             this.ExternalId = externalId;
             this.Data = data;
         }

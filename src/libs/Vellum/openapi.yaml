@@ -10,9 +10,6 @@
         "operationId": "execute-prompt",
         "summary": "Execute Prompt",
         "description": "Executes a deployed Prompt and returns the result.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -82,9 +79,6 @@
         "operationId": "execute-prompt-stream",
         "summary": "Execute Prompt Stream",
         "description": "Executes a deployed Prompt and streams back the results.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -154,9 +148,6 @@
         "operationId": "submit-completion-actuals",
         "summary": "Submit Completion Actuals",
         "description": "Used to submit feedback regarding the quality of previously generated completions.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -754,7 +745,8 @@
               }
             }
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/v1/execute-workflow": {
@@ -762,9 +754,6 @@
         "operationId": "execute-workflow",
         "summary": "Execute Workflow",
         "description": "Executes a deployed Workflow and returns its outputs.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -830,9 +819,6 @@
         "operationId": "execute-workflow-async",
         "summary": "Execute Workflow Async",
         "description": "Executes a deployed Workflow asynchronously and returns the execution ID.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -898,9 +884,6 @@
         "operationId": "execute-workflow-stream",
         "summary": "Execute Workflow Stream",
         "description": "Executes a deployed Workflow and streams back its results.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1026,9 +1009,6 @@
         "operationId": "submit-workflow-execution-actuals",
         "summary": "Submit Workflow Execution Actuals",
         "description": "    Used to submit feedback regarding the quality of previous workflow execution and its outputs.\n\n    **Note:** Uses a base url of `https://predict.vellum.ai`.    ",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1597,7 +1577,8 @@
               }
             }
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/v1/workflow-deployments/{id}/execution-events": {
@@ -1883,9 +1864,6 @@
         "operationId": "search",
         "summary": "Search",
         "description": "Perform a search against a document index.",
-        "tags": [
-          ""
-        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2337,7 +2315,8 @@
                       "null"
                     ],
                     "items": {
-                      "type": "string"
+                      "type": "string",
+                      "minLength": 1
                     },
                     "description": "Optionally include the names of all indexes that you'd like this document to be included in"
                   },
@@ -2346,10 +2325,14 @@
                       "string",
                       "null"
                     ],
+                    "minLength": 1,
+                    "maxLength": 1000,
                     "description": "Optionally include an external ID for this document. This is useful if you want to re-upload the same document later when its contents change and would like it to be re-indexed."
                   },
                   "label": {
                     "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000,
                     "description": "A human-friendly name for this document. Typically the filename."
                   },
                   "contents": {
@@ -2363,6 +2346,8 @@
                       "null"
                     ],
                     "format": "uri",
+                    "minLength": 1,
+                    "maxLength": 2000,
                     "description": "A URL from which the document can be downloaded. Either contents or url must be provided."
                   },
                   "keywords": {
@@ -2371,7 +2356,8 @@
                       "null"
                     ],
                     "items": {
-                      "type": "string"
+                      "type": "string",
+                      "minLength": 1
                     },
                     "description": "Optionally include a list of keywords that'll be associated with this document. Used when performing keyword searches."
                   },
@@ -2407,7 +2393,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[^/]+$"
             }
           }
         ],
@@ -2437,7 +2424,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[^/]+$"
             }
           }
         ],
@@ -2461,6 +2449,8 @@
                 "properties": {
                   "label": {
                     "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000,
                     "description": "A human-readable label for the document. Defaults to the originally uploaded file's file name."
                   },
                   "status": {
@@ -2470,7 +2460,8 @@
                   "keywords": {
                     "type": "array",
                     "items": {
-                      "type": "string"
+                      "type": "string",
+                      "minLength": 1
                     },
                     "description": "A list of keywords that'll be associated with the document. Used as part of keyword search."
                   },
@@ -2503,7 +2494,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[^/]+$"
             }
           }
         ],
@@ -3148,6 +3140,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name"
           },
           "type": {
@@ -3177,6 +3170,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name"
           },
           "type": {
@@ -3259,7 +3253,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           }
         },
         "required": [
@@ -3595,6 +3590,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the deployment."
           },
           "type": {
@@ -3620,6 +3616,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name"
           },
           "type": {
@@ -3642,6 +3639,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name"
           },
           "type": {
@@ -3664,6 +3662,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name"
           },
           "type": {
@@ -3686,6 +3685,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name"
           },
           "type": {
@@ -3802,7 +3802,8 @@
               "null"
             ],
             "additionalProperties": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "The raw headers to send to the model host."
           },
@@ -3811,6 +3812,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The raw URL to send to the model host."
           }
         },
@@ -3839,6 +3841,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The unique name of the Prompt Deployment. Must provide either this or prompt_deployment_id."
           },
           "release_tag": {
@@ -3846,6 +3849,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Prompt Deployment"
           },
           "external_id": {
@@ -3853,6 +3857,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally include a unique identifier for tracking purposes. Must be unique within a given Workspace."
           },
           "expand_meta": {
@@ -3883,7 +3888,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "A list of keys whose values you'd like to directly return from the JSON response of the model provider. Useful if you need lower-level info returned by model providers that Vellum would otherwise omit. Corresponding key/value pairs will be returned under the `raw` key of the API response."
           },
@@ -4186,7 +4192,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "name": {
             "type": "string"
@@ -4414,6 +4421,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The unique name of the Prompt Deployment. Must provide either this or prompt_deployment_id."
           },
           "release_tag": {
@@ -4421,6 +4429,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Prompt Deployment"
           },
           "external_id": {
@@ -4428,6 +4437,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally include a unique identifier for tracking purposes. Must be unique within a given Workspace."
           },
           "expand_meta": {
@@ -4458,7 +4468,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "A list of keys whose values you'd like to directly return from the JSON response of the model provider. Useful if you need lower-level info returned by model providers that Vellum would otherwise omit. Corresponding key/value pairs will be returned under the `raw` key of the API response."
           },
@@ -4742,6 +4753,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The Vellum-generated ID of a previously generated completion. Must provide either this or external_id."
           },
           "external_id": {
@@ -4749,6 +4761,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The external ID that was originally provided when generating the completion that you'd now like to submit actuals for. Must provide either this or id."
           },
           "text": {
@@ -4764,6 +4777,8 @@
               "null"
             ],
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "description": "A number between 0 and 1 representing the quality of the completion. 0 is the worst, 1 is the best."
           },
           "timestamp": {
@@ -4803,6 +4818,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name of the deployment. Must provide either this or deployment_id."
           },
           "actuals": {
@@ -4879,6 +4895,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name of the deployment. Must provide either this or deployment_id."
           },
           "inputs": {
@@ -4893,6 +4910,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Workflow Deployment"
           },
           "expand_meta": {
@@ -4989,6 +5007,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The unique name of the Prompt Deployment you'd like to either create or update. Cannot specify both this and prompt_deployment_id. If provided and matches an existing Prompt Deployment, that Prompt Deployment will be updated. Otherwise, a new Prompt Deployment will be created."
           },
           "label": {
@@ -4996,6 +5015,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "In the event that a new Prompt Deployment is created, this will be the label it's given."
           },
           "release_tags": {
@@ -5004,7 +5024,9 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 150
             },
             "description": "Optionally provide the release tags that you'd like to be associated with the latest release of the created/updated Prompt Deployment."
           },
@@ -5013,6 +5035,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "default": "",
             "description": "Optionally provide a description that details what's new in this Release."
           }
@@ -5328,7 +5351,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           }
         },
         "required": [
@@ -5579,6 +5603,8 @@
           },
           "label": {
             "type": "string",
+            "minLength": 1,
+            "maxLength": 1000,
             "description": "The human-readable name for the document."
           },
           "external_id": {
@@ -5586,6 +5612,8 @@
               "string",
               "null"
             ],
+            "minLength": 1,
+            "maxLength": 1000,
             "description": "The unique ID of the document as represented in an external system and specified when it was originally uploaded."
           },
           "metadata": {
@@ -5679,7 +5707,8 @@
           "keywords": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             }
           },
           "document": {
@@ -5780,19 +5809,22 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "description": {
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "title": {
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           }
         },
         "description": "A set of fields with additional properties for use in Vellum Variables.",
@@ -5802,7 +5834,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "key": {
             "type": "string"
@@ -5866,10 +5899,12 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the deployment"
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this deployment within its workspace"
           },
           "status": {
@@ -5913,7 +5948,8 @@
               "type": "string",
               "format": "uuid"
             },
-            "description": "Deprecated. This now always returns an empty array."
+            "description": "Deprecated. This now always returns an empty array.",
+            "deprecated": true
           },
           "last_deployed_history_item_id": {
             "type": "string",
@@ -5947,7 +5983,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -5975,7 +6012,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -6002,7 +6040,8 @@
             }
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -6023,7 +6062,8 @@
             "$ref": "#/components/schemas/VellumAudioRequest"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -6043,7 +6083,8 @@
             "$ref": "#/components/schemas/VellumVideoRequest"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -6063,7 +6104,8 @@
             "$ref": "#/components/schemas/VellumImageRequest"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -6083,7 +6125,8 @@
             "$ref": "#/components/schemas/VellumDocumentRequest"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -6135,6 +6178,7 @@
           },
           "scenario_id": {
             "type": "string",
+            "minLength": 1,
             "description": "The id of the scenario to update. If none is provided, an id will be generated and a new scenario will be appended."
           }
         },
@@ -6410,10 +6454,12 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the deployment"
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this deployment within its workspace"
           },
           "status": {
@@ -6497,10 +6543,12 @@
             "format": "uuid"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 150
           },
           "label": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 150
           }
         },
         "required": [
@@ -6518,11 +6566,13 @@
             "format": "uuid"
           },
           "full_name": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 300
           },
           "email": {
             "type": "string",
-            "format": "email"
+            "format": "email",
+            "maxLength": 254
           }
         },
         "required": [
@@ -6647,7 +6697,8 @@
             "format": "uuid"
           },
           "full_name": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 300
           }
         },
         "required": [
@@ -6878,10 +6929,12 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the deployment"
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this deployment within its workspace"
           },
           "input_variables": {
@@ -6913,6 +6966,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -6935,6 +6989,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -6964,6 +7019,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -6989,6 +7045,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -7012,6 +7069,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -7034,6 +7092,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -7056,6 +7115,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -7078,6 +7138,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The variable's name, as defined in the Workflow."
           },
           "type": {
@@ -7185,6 +7246,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name of the Workflow Deployment. Must provide either this or workflow_deployment_id."
           },
           "release_tag": {
@@ -7192,6 +7254,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Workflow Deployment"
           },
           "external_id": {
@@ -7199,6 +7262,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally include a unique identifier for tracking purposes. Must be unique within a given Workspace."
           },
           "metadata": {
@@ -7797,7 +7861,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "deprecated": true
           },
           "external_id": {
             "type": [
@@ -7851,6 +7916,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name of the Workflow Deployment. Must provide either this or workflow_deployment_id."
           },
           "release_tag": {
@@ -7858,6 +7924,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Workflow Deployment"
           },
           "external_id": {
@@ -7865,6 +7932,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally include a unique identifier for tracking purposes. Must be unique within a given Workspace."
           },
           "previous_execution_id": {
@@ -7962,6 +8030,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name of the Workflow Deployment. Must provide either this or workflow_deployment_id."
           },
           "release_tag": {
@@ -7969,6 +8038,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Workflow Deployment"
           },
           "external_id": {
@@ -7976,6 +8046,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally include a unique identifier for tracking purposes. Must be unique within a given Workspace."
           },
           "event_types": {
@@ -9017,7 +9088,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "deprecated": true
           },
           "external_id": {
             "type": [
@@ -10627,7 +10699,8 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -11517,6 +11590,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The user-defined name of a workflow output. Must provide either this or output_id. Should correspond to the `Name` specified in a Final Output Node. Generally preferred over output_id."
           },
           "quality": {
@@ -11578,6 +11652,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The user-defined name of a workflow output. Must provide either this or output_id. Should correspond to the `Name` specified in a Final Output Node. Generally preferred over output_id."
           },
           "quality": {
@@ -11642,6 +11717,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The user-defined name of a workflow output. Must provide either this or output_id. Should correspond to the `Name` specified in a Final Output Node. Generally preferred over output_id."
           },
           "quality": {
@@ -11727,6 +11803,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The external ID that was originally provided by when executing the workflow, if applicable, that you'd now like to submit actuals for. Must provide either this or execution_id."
           }
         },
@@ -11757,6 +11834,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The unique name of the Workflow Deployment you'd like to either create or update. Cannot specify both this and workflow_deployment_id. If provided and matches an existing Workflow Deployment, that Workflow Deployment will be updated. Otherwise, a new Prompt Deployment will be created."
           },
           "label": {
@@ -11764,6 +11842,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "In the event that a new Workflow Deployment is created, this will be the label it's given."
           },
           "release_tags": {
@@ -11772,7 +11851,9 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 150
             },
             "description": "Optionally provide the release tags that you'd like to be associated with the latest release of the created/updated Prompt Deployment."
           },
@@ -11781,6 +11862,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "default": "",
             "description": "Optionally provide a description that details what's new in this Release."
           }
@@ -11833,10 +11915,12 @@
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this workflow deployment within its workspace"
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the workflow deployment"
           },
           "status": {
@@ -11928,6 +12012,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name or ID of a workflow trigger to use for this execution. If not specified, then a default manual trigger will be chosen."
           },
           "release_tag": {
@@ -11935,6 +12020,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally specify a release tag if you want to pin to a specific release of the Workflow Deployment"
           },
           "external_id": {
@@ -11942,6 +12028,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally include a unique identifier for tracking purposes. Must be unique within a given Workspace."
           },
           "metadata": {
@@ -12157,7 +12244,8 @@
             "format": "uuid"
           },
           "deployment_name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "deployment_history_item_id": {
             "type": "string",
@@ -12168,13 +12256,15 @@
             "format": "uuid"
           },
           "release_tag_name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "external_id": {
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "metadata": {
             "type": [
@@ -12301,7 +12391,8 @@
             "format": "uuid"
           },
           "deployment_name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "deployment_history_item_id": {
             "type": "string",
@@ -12312,13 +12403,15 @@
             "format": "uuid"
           },
           "release_tag_name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "external_id": {
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "metadata": {
             "type": [
@@ -12398,7 +12491,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "api_actor_type": {
             "oneOf": [
@@ -12414,7 +12508,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           }
         },
         "required": [
@@ -12722,7 +12817,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -12815,7 +12911,8 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -12937,7 +13034,8 @@
             }
           },
           {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         ],
         "title": "VellumSdkErrorRawData"
@@ -13713,6 +13811,7 @@
         "properties": {
           "name": {
             "type": "string",
+            "minLength": 1,
             "description": "The name of the resource, typically a class name."
           },
           "module": {
@@ -13760,7 +13859,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -14082,10 +14182,12 @@
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this workflow deployment within its workspace"
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the workflow deployment"
           },
           "status": {
@@ -14648,10 +14750,12 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the workflow deployment"
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this workflow deployment within its workspace"
           },
           "input_variables": {
@@ -15488,12 +15592,16 @@
           "semantic_similarity": {
             "type": "number",
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "default": 0.8,
             "description": "The relative weight to give to semantic similarity"
           },
           "keywords": {
             "type": "number",
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "default": 0.2,
             "description": "The relative weight to give to keywords"
           }
@@ -15589,7 +15697,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "operator": {
             "oneOf": [
@@ -15605,7 +15714,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           }
         },
         "title": "MetadataFilterRuleRequest"
@@ -15642,7 +15752,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "operator": {
             "oneOf": [
@@ -15658,7 +15769,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           }
         },
         "description": "A deprecated pattern for filtering on metadata. Please use MetadataFilters instead.",
@@ -15845,7 +15957,8 @@
             "type": [
               "string",
               "null"
-            ]
+            ],
+            "minLength": 1
           },
           "name": {
             "type": "string"
@@ -15990,6 +16103,8 @@
           },
           "label": {
             "type": "string",
+            "minLength": 1,
+            "maxLength": 1000,
             "description": "The human-readable name for the document."
           },
           "external_id": {
@@ -15997,6 +16112,8 @@
               "string",
               "null"
             ],
+            "minLength": 1,
+            "maxLength": 1000,
             "description": "The unique ID of the document as represented in an external system and specified when it was originally uploaded."
           },
           "metadata": {
@@ -16083,7 +16200,8 @@
           "keywords": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             }
           },
           "document": {
@@ -16301,7 +16419,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "The document external IDs to filter by"
           },
@@ -16327,6 +16446,8 @@
               "integer",
               "null"
             ],
+            "minimum": 1,
+            "maximum": 1000,
             "default": 10,
             "description": "The maximum number of results to return."
           },
@@ -16382,10 +16503,12 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The name of the index to search against. Must provide either this, index_id or document_index."
           },
           "query": {
             "type": "string",
+            "minLength": 1,
             "description": "The query to search for."
           },
           "options": {
@@ -16404,6 +16527,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Either the index name or index ID to search against. Must provide either this, index_id or index_name."
           }
         },
@@ -16635,10 +16759,12 @@
             "type": "string"
           },
           "instruction_query_text_type": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "instruction_document_text_type": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -16677,10 +16803,12 @@
         "type": "object",
         "properties": {
           "project_id": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "region": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -16844,6 +16972,7 @@
         "properties": {
           "character_limit": {
             "type": "integer",
+            "minimum": 0,
             "default": 1000
           }
         },
@@ -16878,11 +17007,14 @@
         "properties": {
           "character_limit": {
             "type": "integer",
+            "minimum": 0,
             "default": 1000
           },
           "min_overlap_ratio": {
             "type": "number",
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "default": 0.5
           }
         },
@@ -16917,11 +17049,14 @@
         "properties": {
           "token_limit": {
             "type": "integer",
+            "minimum": 0,
             "default": 250
           },
           "overlap_ratio": {
             "type": "number",
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "default": 0.5
           }
         },
@@ -16956,6 +17091,7 @@
         "properties": {
           "delimiter": {
             "type": "string",
+            "minLength": 1,
             "default": "\\n\\n"
           },
           "is_regex": {
@@ -17024,10 +17160,14 @@
         "properties": {
           "label": {
             "type": "string",
+            "minLength": 1,
+            "maxLength": 150,
             "description": "A human-readable label for the document index"
           },
           "name": {
             "type": "string",
+            "minLength": 1,
+            "maxLength": 150,
             "description": "A name that uniquely identifies this index within its workspace"
           },
           "status": {
@@ -17351,6 +17491,7 @@
         "properties": {
           "character_limit": {
             "type": "integer",
+            "minimum": 0,
             "default": 1000
           }
         },
@@ -17378,11 +17519,14 @@
         "properties": {
           "character_limit": {
             "type": "integer",
+            "minimum": 0,
             "default": 1000
           },
           "min_overlap_ratio": {
             "type": "number",
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "default": 0.5
           }
         },
@@ -17410,11 +17554,14 @@
         "properties": {
           "token_limit": {
             "type": "integer",
+            "minimum": 0,
             "default": 250
           },
           "overlap_ratio": {
             "type": "number",
             "format": "double",
+            "minimum": 0,
+            "maximum": 1,
             "default": 0.5
           }
         },
@@ -17518,10 +17665,12 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 150,
             "description": "A human-readable label for the document index"
           },
           "name": {
             "type": "string",
+            "maxLength": 150,
             "description": "A name that uniquely identifies this index within its workspace"
           },
           "status": {
@@ -17584,6 +17733,8 @@
         "properties": {
           "label": {
             "type": "string",
+            "minLength": 1,
+            "maxLength": 150,
             "description": "A human-readable label for the document index"
           },
           "status": {
@@ -17598,6 +17749,8 @@
         "properties": {
           "label": {
             "type": "string",
+            "minLength": 1,
+            "maxLength": 150,
             "description": "A human-readable label for the document index"
           },
           "status": {
@@ -17740,6 +17893,7 @@
               "string",
               "null"
             ],
+            "maxLength": 1000,
             "description": "The unique id of this document as it exists in the user's system."
           },
           "last_uploaded_at": {
@@ -17748,6 +17902,7 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 1000,
             "description": "A human-readable label for the document. Defaults to the originally uploaded file's file name."
           },
           "processing_state": {
@@ -17861,6 +18016,7 @@
               "string",
               "null"
             ],
+            "maxLength": 1000,
             "description": "The external ID that was originally provided when uploading the document."
           },
           "last_uploaded_at": {
@@ -17870,6 +18026,7 @@
           },
           "label": {
             "type": "string",
+            "maxLength": 1000,
             "description": "Human-friendly name for this document."
           },
           "processing_state": {
@@ -18480,7 +18637,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18505,7 +18663,8 @@
             "format": "double"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18533,7 +18692,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18560,7 +18720,8 @@
             }
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18587,7 +18748,8 @@
             }
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18615,7 +18777,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18643,7 +18806,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18670,7 +18834,8 @@
             }
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18698,7 +18863,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18726,7 +18892,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18753,7 +18920,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18780,7 +18948,8 @@
             ]
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -18841,6 +19010,7 @@
           },
           "external_id": {
             "type": "string",
+            "minLength": 1,
             "description": "An ID external to Vellum that uniquely identifies the Test Case that you'd like to create/update. If there's a match on a Test Case that was previously created with the same external_id, it will be updated. Otherwise, a new Test Case will be created with this value as its external_id. If no external_id is specified, then a new Test Case will always be created."
           },
           "label": {
@@ -18907,6 +19077,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "Optionally provide an ID that uniquely identifies this Test Case in your system. Useful for updating this Test Cases data after initial creation. Cannot be changed later."
           }
         },
@@ -18963,6 +19134,7 @@
               "string",
               "null"
             ],
+            "minLength": 1,
             "description": "The ID that was originally provided upon Test Case creation that uniquely identifies the Test Case whose data you'd like to replace. Must specify either this of id."
           },
           "label": {
@@ -19058,7 +19230,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -19305,6 +19478,7 @@
           },
           "tag": {
             "type": "string",
+            "minLength": 1,
             "default": "LATEST",
             "description": "A tag identifying which release of the Prompt Deployment to run the Test Suite against. Useful for testing past versions of the Prompt Deployment"
           }
@@ -19329,7 +19503,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           }
@@ -19383,7 +19558,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           }
@@ -19437,7 +19613,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           }
@@ -19466,6 +19643,7 @@
           },
           "tag": {
             "type": "string",
+            "minLength": 1,
             "default": "LATEST",
             "description": "A tag identifying which release of the Workflow Deployment to run the Test Suite against. Useful for testing past versions of the Workflow Deployment"
           }
@@ -19490,7 +19668,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           }
@@ -19538,7 +19717,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           }
@@ -19592,7 +19772,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           }
@@ -19614,7 +19795,8 @@
             "description": "The output values of a callable that was executed against a Test Case outside of Vellum"
           },
           "test_case_id": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -19659,7 +19841,8 @@
               "null"
             ],
             "items": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1
             },
             "description": "Optionally specify a subset of test case ids to run. If not provided, all test cases within the test suite will be run by default."
           },
@@ -19709,6 +19892,7 @@
           },
           "test_suite_name": {
             "type": "string",
+            "minLength": 1,
             "description": "The name of the Test Suite to run. Must provide either this or test_suite_id."
           },
           "exec_config": {
@@ -21532,7 +21716,8 @@
             "format": "date-time"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "maxLength": 250
           },
           "label": {
             "type": "string"
@@ -21554,10 +21739,12 @@
         "type": "object",
         "properties": {
           "label": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           },
           "value": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
         "title": "PatchedWorkspaceSecretUpdateRequest"
