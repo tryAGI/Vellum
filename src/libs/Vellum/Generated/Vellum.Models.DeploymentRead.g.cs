@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Vellum
@@ -77,6 +79,7 @@ namespace Vellum
         /// Deprecated. This now always returns an empty array.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("active_model_version_ids")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public global::System.Collections.Generic.IList<global::System.Guid>? ActiveModelVersionIds { get; set; }
 
         /// <summary>
@@ -120,9 +123,6 @@ namespace Vellum
         /// <param name="description">
         /// A human-readable description of the deployment
         /// </param>
-        /// <param name="activeModelVersionIds">
-        /// Deprecated. This now always returns an empty array.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -136,8 +136,7 @@ namespace Vellum
             global::System.Guid lastDeployedHistoryItemId,
             global::Vellum.EntityStatus? status,
             global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>? environment,
-            string? description,
-            global::System.Collections.Generic.IList<global::System.Guid>? activeModelVersionIds)
+            string? description)
         {
             this.Id = id;
             this.Created = created;
@@ -148,7 +147,6 @@ namespace Vellum
             this.LastDeployedOn = lastDeployedOn;
             this.InputVariables = inputVariables ?? throw new global::System.ArgumentNullException(nameof(inputVariables));
             this.Description = description;
-            this.ActiveModelVersionIds = activeModelVersionIds;
             this.LastDeployedHistoryItemId = lastDeployedHistoryItemId;
         }
 
