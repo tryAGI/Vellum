@@ -125,7 +125,7 @@ public static class VellumToolExtensions
         return AIFunctionFactory.Create(
             async (CancellationToken cancellationToken) =>
             {
-                var response = await client.SubpackageDeployments.ListAsync(
+                var response = await client.Deployments.ListAsync(
                     limit: limit,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
@@ -169,7 +169,7 @@ public static class VellumToolExtensions
         return AIFunctionFactory.Create(
             async (CancellationToken cancellationToken) =>
             {
-                var response = await client.SubpackageDocumentIndexes.ListAsync(
+                var response = await client.DocumentIndexes.ListAsync(
                     limit: limit,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 

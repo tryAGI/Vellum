@@ -17,7 +17,7 @@ public partial class Tests
         using var client = GetAuthenticatedClient();
 
         //// List all prompt deployments in your workspace.
-        var deployments = await client.SubpackageDeployments.ListAsync(
+        var deployments = await client.Deployments.ListAsync(
             limit: 10);
 
         deployments.Should().NotBeNull();
