@@ -171,7 +171,7 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Keywords, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Keywords!, x => x))}]"),
                                     name: "\"keywords\"");
 
                             }

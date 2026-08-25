@@ -149,7 +149,7 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.AddToIndexNames, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.AddToIndexNames!, x => x))}]"),
                                     name: "\"add_to_index_names\"");
 
                             }
@@ -219,7 +219,7 @@ namespace Vellum
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Keywords, x => x))}]"),
+                                    content: new global::System.Net.Http.StringContent($"[{string.Join(",", global::System.Linq.Enumerable.Select(request.Keywords!, x => x))}]"),
                                     name: "\"keywords\"");
 
                             }
