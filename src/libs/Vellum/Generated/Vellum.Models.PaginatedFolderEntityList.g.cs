@@ -4,30 +4,30 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PaginatedFolderEntityList
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("count")]
         public int? Count { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("next")]
         public string? Next { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previous")]
         public string? Previous { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         public global::System.Collections.Generic.IList<global::Vellum.FolderEntity>? Results { get; set; }

@@ -4,19 +4,19 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class WorkflowDeploymentEventExecutionsResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("count")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Count { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("results")]
         [global::System.Text.Json.Serialization.JsonRequired]

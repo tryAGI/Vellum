@@ -11,15 +11,15 @@ namespace Vellum
     public enum IterationStateEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fulfilled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Initiated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
     }

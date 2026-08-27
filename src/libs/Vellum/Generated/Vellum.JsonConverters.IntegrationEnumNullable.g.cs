@@ -20,7 +20,7 @@ namespace Vellum.JsonConverters
                     {
                         return global::Vellum.IntegrationEnumExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

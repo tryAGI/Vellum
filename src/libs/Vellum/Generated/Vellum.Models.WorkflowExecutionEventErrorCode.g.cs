@@ -23,63 +23,63 @@ namespace Vellum
     public enum WorkflowExecutionEventErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationCredentialsUnavailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalServerError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidInputs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidTemplate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LlmProvider,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NodeCancelled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NodeExecution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NodeExecutionCountLimitReached,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NodeTimeout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProviderCredentialsUnavailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProviderQuotaExceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDefinedError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowCancelled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowInitialization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowTimeout,
     }

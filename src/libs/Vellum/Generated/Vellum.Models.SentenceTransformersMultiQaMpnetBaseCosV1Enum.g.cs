@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SentenceTransformersMultiQaMpnetBaseCosV1Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SentenceTransformersMultiQaMpnetBaseCosV1,
     }

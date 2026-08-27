@@ -4,19 +4,19 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MLModelUsageWrapper
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ml_model_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string MlModelName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ml_model_usage")]
         [global::System.Text.Json.Serialization.JsonRequired]

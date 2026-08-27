@@ -4,26 +4,26 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NodeExecutionRejectedBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("node_definition")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vellum.VellumCodeResourceDefinition NodeDefinition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vellum.VellumSdkError Error { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stacktrace")]
         public string? Stacktrace { get; set; }

@@ -4,38 +4,38 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NodeExecutionFulfilledBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("node_definition")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vellum.VellumCodeResourceDefinition NodeDefinition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("invoked_ports")]
         public global::System.Collections.Generic.IList<global::Vellum.InvokedPort>? InvokedPorts { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outputs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required object Outputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mocked")]
         public bool? Mocked { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redacted")]
         public bool? Redacted { get; set; }

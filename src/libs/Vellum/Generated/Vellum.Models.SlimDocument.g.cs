@@ -4,7 +4,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SlimDocument
     {
@@ -78,7 +78,7 @@ namespace Vellum
         public object? Metadata { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document_to_document_indexes")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VellumValueLogicalExpressionRequest : global::System.IEquatable<VellumValueLogicalExpressionRequest>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumValueLogicalConditionRequest))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsVellumValueLogicalConditionRequest => VellumValueLogicalConditionRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVellumValueLogicalConditionRequest(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.VellumValueLogicalConditionRequest PickVellumValueLogicalConditionRequest() => IsVellumValueLogicalConditionRequest
             ? VellumValueLogicalConditionRequest!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumValueLogicalConditionGroupRequest))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsVellumValueLogicalConditionGroupRequest => VellumValueLogicalConditionGroupRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVellumValueLogicalConditionGroupRequest(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.VellumValueLogicalConditionGroupRequest PickVellumValueLogicalConditionGroupRequest() => IsVellumValueLogicalConditionGroupRequest
             ? VellumValueLogicalConditionGroupRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumValueLogicalConditionGroupRequest' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueLogicalExpressionRequest(global::Vellum.VellumValueLogicalConditionRequest value) => new VellumValueLogicalExpressionRequest((global::Vellum.VellumValueLogicalConditionRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.VellumValueLogicalConditionRequest?(VellumValueLogicalExpressionRequest @this) => @this.VellumValueLogicalConditionRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueLogicalExpressionRequest(global::Vellum.VellumValueLogicalConditionRequest? value)
         {
@@ -101,22 +101,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueLogicalExpressionRequest FromVellumValueLogicalConditionRequest(global::Vellum.VellumValueLogicalConditionRequest? value) => new VellumValueLogicalExpressionRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueLogicalExpressionRequest(global::Vellum.VellumValueLogicalConditionGroupRequest value) => new VellumValueLogicalExpressionRequest((global::Vellum.VellumValueLogicalConditionGroupRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.VellumValueLogicalConditionGroupRequest?(VellumValueLogicalExpressionRequest @this) => @this.VellumValueLogicalConditionGroupRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueLogicalExpressionRequest(global::Vellum.VellumValueLogicalConditionGroupRequest? value)
         {
@@ -124,12 +124,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueLogicalExpressionRequest FromVellumValueLogicalConditionGroupRequest(global::Vellum.VellumValueLogicalConditionGroupRequest? value) => new VellumValueLogicalExpressionRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueLogicalExpressionRequest(
             global::Vellum.VellumValueLogicalConditionRequest? vellumValueLogicalConditionRequest,
@@ -141,23 +141,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             VellumValueLogicalConditionGroupRequest as object ??
-            VellumValueLogicalConditionRequest as object 
+            VellumValueLogicalConditionRequest as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             VellumValueLogicalConditionRequest?.ToString() ??
-            VellumValueLogicalConditionGroupRequest?.ToString() 
+            VellumValueLogicalConditionGroupRequest?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.VellumValueLogicalConditionRequest, TResult>? vellumValueLogicalConditionRequest = null,
@@ -190,7 +190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.VellumValueLogicalConditionRequest>? vellumValueLogicalConditionRequest = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.VellumValueLogicalConditionRequest>? vellumValueLogicalConditionRequest = null,
@@ -237,7 +237,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VellumValueLogicalExpressionRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.VellumValueLogicalConditionRequest?>.Default.Equals(VellumValueLogicalConditionRequest, other.VellumValueLogicalConditionRequest) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.VellumValueLogicalConditionGroupRequest?>.Default.Equals(VellumValueLogicalConditionGroupRequest, other.VellumValueLogicalConditionGroupRequest) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.VellumValueLogicalConditionGroupRequest?>.Default.Equals(VellumValueLogicalConditionGroupRequest, other.VellumValueLogicalConditionGroupRequest)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VellumValueLogicalExpressionRequest obj1, VellumValueLogicalExpressionRequest obj2)
         {
@@ -277,7 +277,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VellumValueLogicalExpressionRequest obj1, VellumValueLogicalExpressionRequest obj2)
         {
@@ -285,7 +285,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

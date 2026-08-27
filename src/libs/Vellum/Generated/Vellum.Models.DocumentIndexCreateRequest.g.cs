@@ -4,7 +4,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DocumentIndexCreateRequest
     {
@@ -33,7 +33,7 @@ namespace Vellum
         public global::Vellum.EntityStatus? Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("indexing_config")]
         [global::System.Text.Json.Serialization.JsonRequired]

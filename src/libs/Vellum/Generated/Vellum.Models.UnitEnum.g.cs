@@ -9,7 +9,7 @@ namespace Vellum
     public enum UnitEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usd,
     }

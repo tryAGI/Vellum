@@ -9,41 +9,41 @@ namespace Vellum
     public sealed partial class StreamingWorkflowNodeResultEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("node_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string NodeId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("node_result_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string NodeResultId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.StreamingEnumJsonConverter))]
         public global::Vellum.StreamingEnum State { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ts")]
         public global::System.DateTime? Ts { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>))]
@@ -51,20 +51,20 @@ namespace Vellum
         public required global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source_execution_id")]
         public string? SourceExecutionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.NodeOutputCompiledValue?, object>))]
         public global::Vellum.OneOf<global::Vellum.NodeOutputCompiledValue?, object>? Output { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output_index")]
         public int? OutputIndex { get; set; }

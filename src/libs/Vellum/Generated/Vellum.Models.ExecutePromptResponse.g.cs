@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExecutePromptResponse : global::System.IEquatable<ExecutePromptResponse>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FulfilledExecutePromptResponse))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsFulfilledExecutePromptResponse => FulfilledExecutePromptResponse != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFulfilledExecutePromptResponse(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FulfilledExecutePromptResponse PickFulfilledExecutePromptResponse() => IsFulfilledExecutePromptResponse
             ? FulfilledExecutePromptResponse!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RejectedExecutePromptResponse))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsRejectedExecutePromptResponse => RejectedExecutePromptResponse != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRejectedExecutePromptResponse(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.RejectedExecutePromptResponse PickRejectedExecutePromptResponse() => IsRejectedExecutePromptResponse
             ? RejectedExecutePromptResponse!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecutePromptResponse' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutePromptResponse(global::Vellum.FulfilledExecutePromptResponse value) => new ExecutePromptResponse((global::Vellum.FulfilledExecutePromptResponse?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FulfilledExecutePromptResponse?(ExecutePromptResponse @this) => @this.FulfilledExecutePromptResponse;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutePromptResponse(global::Vellum.FulfilledExecutePromptResponse? value)
         {
@@ -101,22 +101,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutePromptResponse FromFulfilledExecutePromptResponse(global::Vellum.FulfilledExecutePromptResponse? value) => new ExecutePromptResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse value) => new ExecutePromptResponse((global::Vellum.RejectedExecutePromptResponse?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.RejectedExecutePromptResponse?(ExecutePromptResponse @this) => @this.RejectedExecutePromptResponse;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse? value)
         {
@@ -124,12 +124,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutePromptResponse FromRejectedExecutePromptResponse(global::Vellum.RejectedExecutePromptResponse? value) => new ExecutePromptResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutePromptResponse(
             global::Vellum.FulfilledExecutePromptResponse? fulfilledExecutePromptResponse,
@@ -141,23 +141,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             RejectedExecutePromptResponse as object ??
-            FulfilledExecutePromptResponse as object 
+            FulfilledExecutePromptResponse as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FulfilledExecutePromptResponse?.ToString() ??
-            RejectedExecutePromptResponse?.ToString() 
+            RejectedExecutePromptResponse?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.FulfilledExecutePromptResponse, TResult>? fulfilledExecutePromptResponse = null,
@@ -190,7 +190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.FulfilledExecutePromptResponse>? fulfilledExecutePromptResponse = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.FulfilledExecutePromptResponse>? fulfilledExecutePromptResponse = null,
@@ -237,7 +237,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExecutePromptResponse other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FulfilledExecutePromptResponse?>.Default.Equals(FulfilledExecutePromptResponse, other.FulfilledExecutePromptResponse) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.RejectedExecutePromptResponse?>.Default.Equals(RejectedExecutePromptResponse, other.RejectedExecutePromptResponse) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.RejectedExecutePromptResponse?>.Default.Equals(RejectedExecutePromptResponse, other.RejectedExecutePromptResponse)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExecutePromptResponse obj1, ExecutePromptResponse obj2)
         {
@@ -277,7 +277,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExecutePromptResponse obj1, ExecutePromptResponse obj2)
         {
@@ -285,7 +285,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

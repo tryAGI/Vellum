@@ -41,7 +41,7 @@ namespace Vellum
         public global::Vellum.IndexingStateEnum? IndexingState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processing_state")]
         public string? ProcessingState { get; set; }

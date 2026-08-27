@@ -12,19 +12,19 @@ namespace Vellum
     public enum WorkflowExecutionUsageCalculationErrorCodeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DependenciesFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalServerError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoUsageCalculated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

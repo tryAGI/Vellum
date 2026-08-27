@@ -4,33 +4,33 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PromptVersionBuildConfigSandbox
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.SandboxEnumJsonConverter))]
         public global::Vellum.SandboxEnum Source { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandbox_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid SandboxId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sandbox_snapshot_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid SandboxSnapshotId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

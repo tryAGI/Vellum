@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class NodeOutputCompiledFunctionCallValue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.FunctionCallEnumJsonConverter))]
         public global::Vellum.FunctionCallEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>))]
@@ -24,7 +24,7 @@ namespace Vellum
         public required global::Vellum.OneOf<global::Vellum.FunctionCall, object> Value { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("node_output_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

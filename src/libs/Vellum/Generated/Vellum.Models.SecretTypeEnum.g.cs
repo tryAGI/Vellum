@@ -12,19 +12,19 @@ namespace Vellum
     public enum SecretTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternallyProvisioned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hmac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalApiKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDefined,
     }

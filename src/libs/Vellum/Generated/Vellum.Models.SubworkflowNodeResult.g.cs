@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class SubworkflowNodeResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.SubworkflowEnumJsonConverter))]
         public global::Vellum.SubworkflowEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::Vellum.SubworkflowNodeResultData? Data { get; set; }

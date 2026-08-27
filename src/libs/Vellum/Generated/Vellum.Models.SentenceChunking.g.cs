@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class SentenceChunking
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunker_name")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.SentenceChunkerEnumJsonConverter))]

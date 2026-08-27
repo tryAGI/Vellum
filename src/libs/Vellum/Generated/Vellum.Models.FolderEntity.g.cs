@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct FolderEntity : global::System.IEquatable<FolderEntity>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FolderEntityFolder))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsFolderEntityFolder => FolderEntityFolder != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFolderEntityFolder(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FolderEntityFolder PickFolderEntityFolder() => IsFolderEntityFolder
             ? FolderEntityFolder!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FolderEntityPromptSandbox))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsFolderEntityPromptSandbox => FolderEntityPromptSandbox != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFolderEntityPromptSandbox(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FolderEntityPromptSandbox PickFolderEntityPromptSandbox() => IsFolderEntityPromptSandbox
             ? FolderEntityPromptSandbox!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FolderEntityWorkflowSandbox))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsFolderEntityWorkflowSandbox => FolderEntityWorkflowSandbox != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFolderEntityWorkflowSandbox(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FolderEntityWorkflowSandbox PickFolderEntityWorkflowSandbox() => IsFolderEntityWorkflowSandbox
             ? FolderEntityWorkflowSandbox!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FolderEntityDocumentIndex))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsFolderEntityDocumentIndex => FolderEntityDocumentIndex != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFolderEntityDocumentIndex(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FolderEntityDocumentIndex PickFolderEntityDocumentIndex() => IsFolderEntityDocumentIndex
             ? FolderEntityDocumentIndex!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FolderEntityTestSuite))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsFolderEntityTestSuite => FolderEntityTestSuite != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFolderEntityTestSuite(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FolderEntityTestSuite PickFolderEntityTestSuite() => IsFolderEntityTestSuite
             ? FolderEntityTestSuite!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FolderEntityDataset))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsFolderEntityDataset => FolderEntityDataset != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFolderEntityDataset(
 #if NET6_0_OR_GREATER
@@ -225,23 +225,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FolderEntityDataset PickFolderEntityDataset() => IsFolderEntityDataset
             ? FolderEntityDataset!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityDataset' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityFolder value) => new FolderEntity((global::Vellum.FolderEntityFolder?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FolderEntityFolder?(FolderEntity @this) => @this.FolderEntityFolder;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(global::Vellum.FolderEntityFolder? value)
         {
@@ -249,22 +249,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FolderEntity FromFolderEntityFolder(global::Vellum.FolderEntityFolder? value) => new FolderEntity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityPromptSandbox value) => new FolderEntity((global::Vellum.FolderEntityPromptSandbox?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FolderEntityPromptSandbox?(FolderEntity @this) => @this.FolderEntityPromptSandbox;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(global::Vellum.FolderEntityPromptSandbox? value)
         {
@@ -272,22 +272,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FolderEntity FromFolderEntityPromptSandbox(global::Vellum.FolderEntityPromptSandbox? value) => new FolderEntity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityWorkflowSandbox value) => new FolderEntity((global::Vellum.FolderEntityWorkflowSandbox?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FolderEntityWorkflowSandbox?(FolderEntity @this) => @this.FolderEntityWorkflowSandbox;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(global::Vellum.FolderEntityWorkflowSandbox? value)
         {
@@ -295,22 +295,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FolderEntity FromFolderEntityWorkflowSandbox(global::Vellum.FolderEntityWorkflowSandbox? value) => new FolderEntity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityDocumentIndex value) => new FolderEntity((global::Vellum.FolderEntityDocumentIndex?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FolderEntityDocumentIndex?(FolderEntity @this) => @this.FolderEntityDocumentIndex;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(global::Vellum.FolderEntityDocumentIndex? value)
         {
@@ -318,22 +318,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FolderEntity FromFolderEntityDocumentIndex(global::Vellum.FolderEntityDocumentIndex? value) => new FolderEntity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityTestSuite value) => new FolderEntity((global::Vellum.FolderEntityTestSuite?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FolderEntityTestSuite?(FolderEntity @this) => @this.FolderEntityTestSuite;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(global::Vellum.FolderEntityTestSuite? value)
         {
@@ -341,22 +341,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FolderEntity FromFolderEntityTestSuite(global::Vellum.FolderEntityTestSuite? value) => new FolderEntity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FolderEntity(global::Vellum.FolderEntityDataset value) => new FolderEntity((global::Vellum.FolderEntityDataset?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FolderEntityDataset?(FolderEntity @this) => @this.FolderEntityDataset;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(global::Vellum.FolderEntityDataset? value)
         {
@@ -364,12 +364,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FolderEntity FromFolderEntityDataset(global::Vellum.FolderEntityDataset? value) => new FolderEntity(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntity(
             global::Vellum.FolderEntityFolder? folderEntityFolder,
@@ -389,7 +389,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FolderEntityDataset as object ??
@@ -397,11 +397,11 @@ namespace Vellum
             FolderEntityDocumentIndex as object ??
             FolderEntityWorkflowSandbox as object ??
             FolderEntityPromptSandbox as object ??
-            FolderEntityFolder as object 
+            FolderEntityFolder as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FolderEntityFolder?.ToString() ??
@@ -409,11 +409,11 @@ namespace Vellum
             FolderEntityWorkflowSandbox?.ToString() ??
             FolderEntityDocumentIndex?.ToString() ??
             FolderEntityTestSuite?.ToString() ??
-            FolderEntityDataset?.ToString() 
+            FolderEntityDataset?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -421,7 +421,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.FolderEntityFolder, TResult>? folderEntityFolder = null,
@@ -466,7 +466,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.FolderEntityFolder>? folderEntityFolder = null,
@@ -514,7 +514,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.FolderEntityFolder>? folderEntityFolder = null,
@@ -557,7 +557,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -586,7 +586,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FolderEntity other)
         {
@@ -596,12 +596,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FolderEntityWorkflowSandbox?>.Default.Equals(FolderEntityWorkflowSandbox, other.FolderEntityWorkflowSandbox) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FolderEntityDocumentIndex?>.Default.Equals(FolderEntityDocumentIndex, other.FolderEntityDocumentIndex) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FolderEntityTestSuite?>.Default.Equals(FolderEntityTestSuite, other.FolderEntityTestSuite) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.FolderEntityDataset?>.Default.Equals(FolderEntityDataset, other.FolderEntityDataset) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.FolderEntityDataset?>.Default.Equals(FolderEntityDataset, other.FolderEntityDataset)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FolderEntity obj1, FolderEntity obj2)
         {
@@ -609,7 +609,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FolderEntity obj1, FolderEntity obj2)
         {
@@ -617,7 +617,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -10,11 +10,11 @@ namespace Vellum
     public enum ReleaseTagSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

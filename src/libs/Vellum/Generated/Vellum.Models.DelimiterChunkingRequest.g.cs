@@ -4,19 +4,19 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DelimiterChunkingRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunker_name")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.DelimiterChunkerEnumJsonConverter))]
         public global::Vellum.DelimiterChunkerEnum ChunkerName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunker_config")]
         public global::Vellum.DelimiterChunkerConfigRequest? ChunkerConfig { get; set; }

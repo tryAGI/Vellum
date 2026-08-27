@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VellumSpan : global::System.IEquatable<VellumSpan>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionSpan? WorkflowExecutionSpan { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionSpan))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowExecutionSpan => WorkflowExecutionSpan != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionSpan(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionSpan PickWorkflowExecutionSpan() => IsWorkflowExecutionSpan
             ? WorkflowExecutionSpan!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionSpan' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionSpan? NodeExecutionSpan { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionSpan))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNodeExecutionSpan => NodeExecutionSpan != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionSpan(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionSpan PickNodeExecutionSpan() => IsNodeExecutionSpan
             ? NodeExecutionSpan!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionSpan' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumSpan(global::Vellum.WorkflowExecutionSpan value) => new VellumSpan((global::Vellum.WorkflowExecutionSpan?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionSpan?(VellumSpan @this) => @this.WorkflowExecutionSpan;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumSpan(global::Vellum.WorkflowExecutionSpan? value)
         {
@@ -101,22 +101,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumSpan FromWorkflowExecutionSpan(global::Vellum.WorkflowExecutionSpan? value) => new VellumSpan(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumSpan(global::Vellum.NodeExecutionSpan value) => new VellumSpan((global::Vellum.NodeExecutionSpan?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionSpan?(VellumSpan @this) => @this.NodeExecutionSpan;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumSpan(global::Vellum.NodeExecutionSpan? value)
         {
@@ -124,12 +124,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumSpan FromNodeExecutionSpan(global::Vellum.NodeExecutionSpan? value) => new VellumSpan(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumSpan(
             global::Vellum.WorkflowExecutionSpan? workflowExecutionSpan,
@@ -141,23 +141,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             NodeExecutionSpan as object ??
-            WorkflowExecutionSpan as object 
+            WorkflowExecutionSpan as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowExecutionSpan?.ToString() ??
-            NodeExecutionSpan?.ToString() 
+            NodeExecutionSpan?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowExecutionSpan, TResult>? workflowExecutionSpan = null,
@@ -190,7 +190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowExecutionSpan>? workflowExecutionSpan = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowExecutionSpan>? workflowExecutionSpan = null,
@@ -237,7 +237,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VellumSpan other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionSpan?>.Default.Equals(WorkflowExecutionSpan, other.WorkflowExecutionSpan) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionSpan?>.Default.Equals(NodeExecutionSpan, other.NodeExecutionSpan) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionSpan?>.Default.Equals(NodeExecutionSpan, other.NodeExecutionSpan)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VellumSpan obj1, VellumSpan obj2)
         {
@@ -277,7 +277,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VellumSpan obj1, VellumSpan obj2)
         {
@@ -285,7 +285,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

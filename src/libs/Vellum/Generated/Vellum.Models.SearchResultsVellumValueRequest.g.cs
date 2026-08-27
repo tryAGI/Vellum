@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class SearchResultsVellumValueRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.SearchResultsEnumJsonConverter))]
         public global::Vellum.SearchResultsEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public global::System.Collections.Generic.IList<global::Vellum.SearchResultRequest>? Value { get; set; }

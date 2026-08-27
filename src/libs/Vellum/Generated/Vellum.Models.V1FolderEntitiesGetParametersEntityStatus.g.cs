@@ -4,20 +4,20 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum V1FolderEntitiesGetParametersEntityStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingDeletion,
     }

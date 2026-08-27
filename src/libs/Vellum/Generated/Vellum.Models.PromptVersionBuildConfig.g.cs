@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PromptVersionBuildConfig : global::System.IEquatable<PromptVersionBuildConfig>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.PromptVersionBuildConfigSandbox? PromptVersionBuildConfigSandbox { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptVersionBuildConfigSandbox))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsPromptVersionBuildConfigSandbox => PromptVersionBuildConfigSandbox != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPromptVersionBuildConfigSandbox(
 #if NET6_0_OR_GREATER
@@ -40,23 +40,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.PromptVersionBuildConfigSandbox PickPromptVersionBuildConfigSandbox() => IsPromptVersionBuildConfigSandbox
             ? PromptVersionBuildConfigSandbox!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptVersionBuildConfigSandbox' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptVersionBuildConfig(global::Vellum.PromptVersionBuildConfigSandbox value) => new PromptVersionBuildConfig((global::Vellum.PromptVersionBuildConfigSandbox?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.PromptVersionBuildConfigSandbox?(PromptVersionBuildConfig @this) => @this.PromptVersionBuildConfigSandbox;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptVersionBuildConfig(global::Vellum.PromptVersionBuildConfigSandbox? value)
         {
@@ -64,26 +64,26 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptVersionBuildConfig FromPromptVersionBuildConfigSandbox(global::Vellum.PromptVersionBuildConfigSandbox? value) => new PromptVersionBuildConfig(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
-            PromptVersionBuildConfigSandbox as object 
+            PromptVersionBuildConfigSandbox as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
-            PromptVersionBuildConfigSandbox?.ToString() 
+            PromptVersionBuildConfigSandbox?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -91,7 +91,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.PromptVersionBuildConfigSandbox, TResult>? promptVersionBuildConfigSandbox = null,
@@ -111,7 +111,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.PromptVersionBuildConfigSandbox>? promptVersionBuildConfigSandbox = null,
@@ -129,7 +129,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.PromptVersionBuildConfigSandbox>? promptVersionBuildConfigSandbox = null,
@@ -147,7 +147,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -166,17 +166,17 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PromptVersionBuildConfig other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.PromptVersionBuildConfigSandbox?>.Default.Equals(PromptVersionBuildConfigSandbox, other.PromptVersionBuildConfigSandbox) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.PromptVersionBuildConfigSandbox?>.Default.Equals(PromptVersionBuildConfigSandbox, other.PromptVersionBuildConfigSandbox)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PromptVersionBuildConfig obj1, PromptVersionBuildConfig obj2)
         {
@@ -184,7 +184,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PromptVersionBuildConfig obj1, PromptVersionBuildConfig obj2)
         {
@@ -192,7 +192,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

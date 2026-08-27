@@ -9,7 +9,7 @@ namespace Vellum
     public enum TestSuiteRunPromptSandboxExecConfigTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromptSandbox,
     }

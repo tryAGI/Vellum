@@ -11,15 +11,15 @@ namespace Vellum
     public enum EntityStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingDeletion,
     }

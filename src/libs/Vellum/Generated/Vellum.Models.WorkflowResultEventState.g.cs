@@ -13,23 +13,23 @@ namespace Vellum
     public enum WorkflowResultEventState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fulfilled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Initiated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Streaming,
     }

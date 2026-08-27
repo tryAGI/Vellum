@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TestSuiteEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TestSuite,
     }

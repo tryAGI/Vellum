@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class InitiatedExecutePromptEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.InitiatedEnumJsonConverter))]
@@ -22,7 +22,7 @@ namespace Vellum
         public global::Vellum.InitiatedPromptExecutionMeta? Meta { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("execution_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

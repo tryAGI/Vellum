@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VellumValueRequest : global::System.IEquatable<VellumValueRequest>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StringVellumValueRequest))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsStringVellumValueRequest => StringVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStringVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.StringVellumValueRequest PickStringVellumValueRequest() => IsStringVellumValueRequest
             ? StringVellumValueRequest!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NumberVellumValueRequest))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNumberVellumValueRequest => NumberVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNumberVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NumberVellumValueRequest PickNumberVellumValueRequest() => IsNumberVellumValueRequest
             ? NumberVellumValueRequest!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVellumValueRequest))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsJsonVellumValueRequest => JsonVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.JsonVellumValueRequest PickJsonVellumValueRequest() => IsJsonVellumValueRequest
             ? JsonVellumValueRequest!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AudioVellumValueRequest))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsAudioVellumValueRequest => AudioVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAudioVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.AudioVellumValueRequest PickAudioVellumValueRequest() => IsAudioVellumValueRequest
             ? AudioVellumValueRequest!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VideoVellumValueRequest))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsVideoVellumValueRequest => VideoVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVideoVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.VideoVellumValueRequest PickVideoVellumValueRequest() => IsVideoVellumValueRequest
             ? VideoVellumValueRequest!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ImageVellumValueRequest))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsImageVellumValueRequest => ImageVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickImageVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ImageVellumValueRequest PickImageVellumValueRequest() => IsImageVellumValueRequest
             ? ImageVellumValueRequest!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DocumentVellumValueRequest))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsDocumentVellumValueRequest => DocumentVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDocumentVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.DocumentVellumValueRequest PickDocumentVellumValueRequest() => IsDocumentVellumValueRequest
             ? DocumentVellumValueRequest!
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallVellumValueRequest))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsFunctionCallVellumValueRequest => FunctionCallVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunctionCallVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FunctionCallVellumValueRequest PickFunctionCallVellumValueRequest() => IsFunctionCallVellumValueRequest
             ? FunctionCallVellumValueRequest!
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ErrorVellumValueRequest))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsErrorVellumValueRequest => ErrorVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickErrorVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -336,7 +336,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ErrorVellumValueRequest PickErrorVellumValueRequest() => IsErrorVellumValueRequest
             ? ErrorVellumValueRequest!
@@ -352,7 +352,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ArrayVellumValueRequest))]
@@ -360,7 +360,7 @@ namespace Vellum
         public bool IsArrayVellumValueRequest => ArrayVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickArrayVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -373,7 +373,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ArrayVellumValueRequest PickArrayVellumValueRequest() => IsArrayVellumValueRequest
             ? ArrayVellumValueRequest!
@@ -389,7 +389,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChatHistoryVellumValueRequest))]
@@ -397,7 +397,7 @@ namespace Vellum
         public bool IsChatHistoryVellumValueRequest => ChatHistoryVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChatHistoryVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -410,7 +410,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ChatHistoryVellumValueRequest PickChatHistoryVellumValueRequest() => IsChatHistoryVellumValueRequest
             ? ChatHistoryVellumValueRequest!
@@ -426,7 +426,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SearchResultsVellumValueRequest))]
@@ -434,7 +434,7 @@ namespace Vellum
         public bool IsSearchResultsVellumValueRequest => SearchResultsVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSearchResultsVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -447,7 +447,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.SearchResultsVellumValueRequest PickSearchResultsVellumValueRequest() => IsSearchResultsVellumValueRequest
             ? SearchResultsVellumValueRequest!
@@ -463,7 +463,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkingVellumValueRequest))]
@@ -471,7 +471,7 @@ namespace Vellum
         public bool IsThinkingVellumValueRequest => ThinkingVellumValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickThinkingVellumValueRequest(
 #if NET6_0_OR_GREATER
@@ -484,23 +484,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ThinkingVellumValueRequest PickThinkingVellumValueRequest() => IsThinkingVellumValueRequest
             ? ThinkingVellumValueRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkingVellumValueRequest' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.StringVellumValueRequest value) => new VellumValueRequest((global::Vellum.StringVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.StringVellumValueRequest?(VellumValueRequest @this) => @this.StringVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.StringVellumValueRequest? value)
         {
@@ -508,22 +508,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromStringVellumValueRequest(global::Vellum.StringVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.NumberVellumValueRequest value) => new VellumValueRequest((global::Vellum.NumberVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NumberVellumValueRequest?(VellumValueRequest @this) => @this.NumberVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.NumberVellumValueRequest? value)
         {
@@ -531,22 +531,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromNumberVellumValueRequest(global::Vellum.NumberVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.JsonVellumValueRequest value) => new VellumValueRequest((global::Vellum.JsonVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.JsonVellumValueRequest?(VellumValueRequest @this) => @this.JsonVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.JsonVellumValueRequest? value)
         {
@@ -554,22 +554,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromJsonVellumValueRequest(global::Vellum.JsonVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.AudioVellumValueRequest value) => new VellumValueRequest((global::Vellum.AudioVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.AudioVellumValueRequest?(VellumValueRequest @this) => @this.AudioVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.AudioVellumValueRequest? value)
         {
@@ -577,22 +577,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromAudioVellumValueRequest(global::Vellum.AudioVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.VideoVellumValueRequest value) => new VellumValueRequest((global::Vellum.VideoVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.VideoVellumValueRequest?(VellumValueRequest @this) => @this.VideoVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.VideoVellumValueRequest? value)
         {
@@ -600,22 +600,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromVideoVellumValueRequest(global::Vellum.VideoVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.ImageVellumValueRequest value) => new VellumValueRequest((global::Vellum.ImageVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ImageVellumValueRequest?(VellumValueRequest @this) => @this.ImageVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.ImageVellumValueRequest? value)
         {
@@ -623,22 +623,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromImageVellumValueRequest(global::Vellum.ImageVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.DocumentVellumValueRequest value) => new VellumValueRequest((global::Vellum.DocumentVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.DocumentVellumValueRequest?(VellumValueRequest @this) => @this.DocumentVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.DocumentVellumValueRequest? value)
         {
@@ -646,22 +646,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromDocumentVellumValueRequest(global::Vellum.DocumentVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.FunctionCallVellumValueRequest value) => new VellumValueRequest((global::Vellum.FunctionCallVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FunctionCallVellumValueRequest?(VellumValueRequest @this) => @this.FunctionCallVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.FunctionCallVellumValueRequest? value)
         {
@@ -669,22 +669,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromFunctionCallVellumValueRequest(global::Vellum.FunctionCallVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.ErrorVellumValueRequest value) => new VellumValueRequest((global::Vellum.ErrorVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ErrorVellumValueRequest?(VellumValueRequest @this) => @this.ErrorVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.ErrorVellumValueRequest? value)
         {
@@ -692,22 +692,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromErrorVellumValueRequest(global::Vellum.ErrorVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.ArrayVellumValueRequest value) => new VellumValueRequest((global::Vellum.ArrayVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ArrayVellumValueRequest?(VellumValueRequest @this) => @this.ArrayVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.ArrayVellumValueRequest? value)
         {
@@ -715,22 +715,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromArrayVellumValueRequest(global::Vellum.ArrayVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.ChatHistoryVellumValueRequest value) => new VellumValueRequest((global::Vellum.ChatHistoryVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ChatHistoryVellumValueRequest?(VellumValueRequest @this) => @this.ChatHistoryVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.ChatHistoryVellumValueRequest? value)
         {
@@ -738,22 +738,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromChatHistoryVellumValueRequest(global::Vellum.ChatHistoryVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.SearchResultsVellumValueRequest value) => new VellumValueRequest((global::Vellum.SearchResultsVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.SearchResultsVellumValueRequest?(VellumValueRequest @this) => @this.SearchResultsVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.SearchResultsVellumValueRequest? value)
         {
@@ -761,22 +761,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromSearchResultsVellumValueRequest(global::Vellum.SearchResultsVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumValueRequest(global::Vellum.ThinkingVellumValueRequest value) => new VellumValueRequest((global::Vellum.ThinkingVellumValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ThinkingVellumValueRequest?(VellumValueRequest @this) => @this.ThinkingVellumValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(global::Vellum.ThinkingVellumValueRequest? value)
         {
@@ -784,12 +784,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumValueRequest FromThinkingVellumValueRequest(global::Vellum.ThinkingVellumValueRequest? value) => new VellumValueRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumValueRequest(
             global::Vellum.StringVellumValueRequest? stringVellumValueRequest,
@@ -823,7 +823,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ThinkingVellumValueRequest as object ??
@@ -838,11 +838,11 @@ namespace Vellum
             AudioVellumValueRequest as object ??
             JsonVellumValueRequest as object ??
             NumberVellumValueRequest as object ??
-            StringVellumValueRequest as object 
+            StringVellumValueRequest as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StringVellumValueRequest?.ToString() ??
@@ -857,11 +857,11 @@ namespace Vellum
             ArrayVellumValueRequest?.ToString() ??
             ChatHistoryVellumValueRequest?.ToString() ??
             SearchResultsVellumValueRequest?.ToString() ??
-            ThinkingVellumValueRequest?.ToString() 
+            ThinkingVellumValueRequest?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -869,7 +869,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.StringVellumValueRequest, TResult>? stringVellumValueRequest = null,
@@ -949,7 +949,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.StringVellumValueRequest>? stringVellumValueRequest = null,
@@ -1039,7 +1039,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.StringVellumValueRequest>? stringVellumValueRequest = null,
@@ -1117,7 +1117,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1160,7 +1160,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VellumValueRequest other)
         {
@@ -1177,12 +1177,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ArrayVellumValueRequest?>.Default.Equals(ArrayVellumValueRequest, other.ArrayVellumValueRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ChatHistoryVellumValueRequest?>.Default.Equals(ChatHistoryVellumValueRequest, other.ChatHistoryVellumValueRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.SearchResultsVellumValueRequest?>.Default.Equals(SearchResultsVellumValueRequest, other.SearchResultsVellumValueRequest) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.ThinkingVellumValueRequest?>.Default.Equals(ThinkingVellumValueRequest, other.ThinkingVellumValueRequest) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.ThinkingVellumValueRequest?>.Default.Equals(ThinkingVellumValueRequest, other.ThinkingVellumValueRequest)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VellumValueRequest obj1, VellumValueRequest obj2)
         {
@@ -1190,7 +1190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VellumValueRequest obj1, VellumValueRequest obj2)
         {
@@ -1198,7 +1198,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

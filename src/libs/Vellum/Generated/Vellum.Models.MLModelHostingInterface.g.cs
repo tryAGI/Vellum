@@ -38,123 +38,123 @@ namespace Vellum
     public enum MLModelHostingInterface
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsBedrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureAiFoundry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AzureOpenai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baseten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cerebras,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cohere,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeepSeek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fastweb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FireworksAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleVertexAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Groq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Huggingface,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IbmWatsonx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MistralAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mosaicml,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mystic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nvidia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openpipe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenRouter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Perplexity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pyq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replicate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sambanova,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Swisscom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TogetherAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XAi,
     }

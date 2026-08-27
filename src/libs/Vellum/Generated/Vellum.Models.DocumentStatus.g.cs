@@ -9,7 +9,7 @@ namespace Vellum
     public enum DocumentStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
     }

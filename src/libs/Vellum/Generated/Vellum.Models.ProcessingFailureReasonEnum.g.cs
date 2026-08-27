@@ -11,15 +11,15 @@ namespace Vellum
     public enum ProcessingFailureReasonEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExceededCharacterLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidCredentials,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidFile,
     }

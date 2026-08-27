@@ -38,123 +38,123 @@ namespace Vellum
     public enum LogicalOperator
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gte,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessField,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         And,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BeginsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Between,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blank,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Coalesce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Concat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Contains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoesNotBeginWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoesNotContain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoesNotEndWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndsWith,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         In,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Length,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotBetween,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotBlank,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotNull,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Null,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Or,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ParseJson,
     }

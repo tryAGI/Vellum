@@ -9,7 +9,7 @@ namespace Vellum
     public enum TestSuiteRunWorkflowSandboxExecConfigTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowSandbox,
     }

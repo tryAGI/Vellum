@@ -39,78 +39,78 @@ namespace Vellum
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentsClient Deployments { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexesClient DocumentIndexes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentsClient Documents { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsClient Events { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntitiesClient FolderEntities { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SandboxesClient Sandboxes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunsClient TestSuiteRuns { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuitesClient TestSuites { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UploadedFilesClient UploadedFiles { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowDeploymentsClient WorkflowDeployments { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowExecutionsClient WorkflowExecutions { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowSandboxesClient WorkflowSandboxes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowsClient Workflows { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkspaceSecretsClient WorkspaceSecrets { get; }
 

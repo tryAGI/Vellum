@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExecuteWorkflowWorkflowResultEvent : global::System.IEquatable<ExecuteWorkflowWorkflowResultEvent>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FulfilledExecuteWorkflowWorkflowResultEvent))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsFulfilledExecuteWorkflowWorkflowResultEvent => FulfilledExecuteWorkflowWorkflowResultEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFulfilledExecuteWorkflowWorkflowResultEvent(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent PickFulfilledExecuteWorkflowWorkflowResultEvent() => IsFulfilledExecuteWorkflowWorkflowResultEvent
             ? FulfilledExecuteWorkflowWorkflowResultEvent!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RejectedExecuteWorkflowWorkflowResultEvent))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsRejectedExecuteWorkflowWorkflowResultEvent => RejectedExecuteWorkflowWorkflowResultEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRejectedExecuteWorkflowWorkflowResultEvent(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent PickRejectedExecuteWorkflowWorkflowResultEvent() => IsRejectedExecuteWorkflowWorkflowResultEvent
             ? RejectedExecuteWorkflowWorkflowResultEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecuteWorkflowWorkflowResultEvent(global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent value) => new ExecuteWorkflowWorkflowResultEvent((global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent?(ExecuteWorkflowWorkflowResultEvent @this) => @this.FulfilledExecuteWorkflowWorkflowResultEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecuteWorkflowWorkflowResultEvent(global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? value)
         {
@@ -101,22 +101,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecuteWorkflowWorkflowResultEvent FromFulfilledExecuteWorkflowWorkflowResultEvent(global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? value) => new ExecuteWorkflowWorkflowResultEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent value) => new ExecuteWorkflowWorkflowResultEvent((global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?(ExecuteWorkflowWorkflowResultEvent @this) => @this.RejectedExecuteWorkflowWorkflowResultEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? value)
         {
@@ -124,12 +124,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecuteWorkflowWorkflowResultEvent FromRejectedExecuteWorkflowWorkflowResultEvent(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? value) => new ExecuteWorkflowWorkflowResultEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecuteWorkflowWorkflowResultEvent(
             global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? fulfilledExecuteWorkflowWorkflowResultEvent,
@@ -141,23 +141,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             RejectedExecuteWorkflowWorkflowResultEvent as object ??
-            FulfilledExecuteWorkflowWorkflowResultEvent as object 
+            FulfilledExecuteWorkflowWorkflowResultEvent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             FulfilledExecuteWorkflowWorkflowResultEvent?.ToString() ??
-            RejectedExecuteWorkflowWorkflowResultEvent?.ToString() 
+            RejectedExecuteWorkflowWorkflowResultEvent?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent, TResult>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
@@ -190,7 +190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent>? fulfilledExecuteWorkflowWorkflowResultEvent = null,
@@ -237,7 +237,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExecuteWorkflowWorkflowResultEvent other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent?>.Default.Equals(FulfilledExecuteWorkflowWorkflowResultEvent, other.FulfilledExecuteWorkflowWorkflowResultEvent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?>.Default.Equals(RejectedExecuteWorkflowWorkflowResultEvent, other.RejectedExecuteWorkflowWorkflowResultEvent) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent?>.Default.Equals(RejectedExecuteWorkflowWorkflowResultEvent, other.RejectedExecuteWorkflowWorkflowResultEvent)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExecuteWorkflowWorkflowResultEvent obj1, ExecuteWorkflowWorkflowResultEvent obj2)
         {
@@ -277,7 +277,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExecuteWorkflowWorkflowResultEvent obj1, ExecuteWorkflowWorkflowResultEvent obj2)
         {
@@ -285,7 +285,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

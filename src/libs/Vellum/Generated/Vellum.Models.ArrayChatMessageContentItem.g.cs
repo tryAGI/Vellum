@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ArrayChatMessageContentItem : global::System.IEquatable<ArrayChatMessageContentItem>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StringChatMessageContent))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsStringChatMessageContent => StringChatMessageContent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStringChatMessageContent(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.StringChatMessageContent PickStringChatMessageContent() => IsStringChatMessageContent
             ? StringChatMessageContent!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallChatMessageContent))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsFunctionCallChatMessageContent => FunctionCallChatMessageContent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunctionCallChatMessageContent(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FunctionCallChatMessageContent PickFunctionCallChatMessageContent() => IsFunctionCallChatMessageContent
             ? FunctionCallChatMessageContent!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AudioChatMessageContent))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsAudioChatMessageContent => AudioChatMessageContent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAudioChatMessageContent(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.AudioChatMessageContent PickAudioChatMessageContent() => IsAudioChatMessageContent
             ? AudioChatMessageContent!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VideoChatMessageContent))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsVideoChatMessageContent => VideoChatMessageContent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVideoChatMessageContent(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.VideoChatMessageContent PickVideoChatMessageContent() => IsVideoChatMessageContent
             ? VideoChatMessageContent!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ImageChatMessageContent))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsImageChatMessageContent => ImageChatMessageContent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickImageChatMessageContent(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ImageChatMessageContent PickImageChatMessageContent() => IsImageChatMessageContent
             ? ImageChatMessageContent!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DocumentChatMessageContent))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsDocumentChatMessageContent => DocumentChatMessageContent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDocumentChatMessageContent(
 #if NET6_0_OR_GREATER
@@ -225,23 +225,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.DocumentChatMessageContent PickDocumentChatMessageContent() => IsDocumentChatMessageContent
             ? DocumentChatMessageContent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentChatMessageContent' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArrayChatMessageContentItem(global::Vellum.StringChatMessageContent value) => new ArrayChatMessageContentItem((global::Vellum.StringChatMessageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.StringChatMessageContent?(ArrayChatMessageContentItem @this) => @this.StringChatMessageContent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(global::Vellum.StringChatMessageContent? value)
         {
@@ -249,22 +249,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArrayChatMessageContentItem FromStringChatMessageContent(global::Vellum.StringChatMessageContent? value) => new ArrayChatMessageContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArrayChatMessageContentItem(global::Vellum.FunctionCallChatMessageContent value) => new ArrayChatMessageContentItem((global::Vellum.FunctionCallChatMessageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FunctionCallChatMessageContent?(ArrayChatMessageContentItem @this) => @this.FunctionCallChatMessageContent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(global::Vellum.FunctionCallChatMessageContent? value)
         {
@@ -272,22 +272,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArrayChatMessageContentItem FromFunctionCallChatMessageContent(global::Vellum.FunctionCallChatMessageContent? value) => new ArrayChatMessageContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArrayChatMessageContentItem(global::Vellum.AudioChatMessageContent value) => new ArrayChatMessageContentItem((global::Vellum.AudioChatMessageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.AudioChatMessageContent?(ArrayChatMessageContentItem @this) => @this.AudioChatMessageContent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(global::Vellum.AudioChatMessageContent? value)
         {
@@ -295,22 +295,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArrayChatMessageContentItem FromAudioChatMessageContent(global::Vellum.AudioChatMessageContent? value) => new ArrayChatMessageContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArrayChatMessageContentItem(global::Vellum.VideoChatMessageContent value) => new ArrayChatMessageContentItem((global::Vellum.VideoChatMessageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.VideoChatMessageContent?(ArrayChatMessageContentItem @this) => @this.VideoChatMessageContent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(global::Vellum.VideoChatMessageContent? value)
         {
@@ -318,22 +318,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArrayChatMessageContentItem FromVideoChatMessageContent(global::Vellum.VideoChatMessageContent? value) => new ArrayChatMessageContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArrayChatMessageContentItem(global::Vellum.ImageChatMessageContent value) => new ArrayChatMessageContentItem((global::Vellum.ImageChatMessageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ImageChatMessageContent?(ArrayChatMessageContentItem @this) => @this.ImageChatMessageContent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(global::Vellum.ImageChatMessageContent? value)
         {
@@ -341,22 +341,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArrayChatMessageContentItem FromImageChatMessageContent(global::Vellum.ImageChatMessageContent? value) => new ArrayChatMessageContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ArrayChatMessageContentItem(global::Vellum.DocumentChatMessageContent value) => new ArrayChatMessageContentItem((global::Vellum.DocumentChatMessageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.DocumentChatMessageContent?(ArrayChatMessageContentItem @this) => @this.DocumentChatMessageContent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(global::Vellum.DocumentChatMessageContent? value)
         {
@@ -364,12 +364,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ArrayChatMessageContentItem FromDocumentChatMessageContent(global::Vellum.DocumentChatMessageContent? value) => new ArrayChatMessageContentItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArrayChatMessageContentItem(
             global::Vellum.StringChatMessageContent? stringChatMessageContent,
@@ -389,7 +389,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DocumentChatMessageContent as object ??
@@ -397,11 +397,11 @@ namespace Vellum
             VideoChatMessageContent as object ??
             AudioChatMessageContent as object ??
             FunctionCallChatMessageContent as object ??
-            StringChatMessageContent as object 
+            StringChatMessageContent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StringChatMessageContent?.ToString() ??
@@ -409,11 +409,11 @@ namespace Vellum
             AudioChatMessageContent?.ToString() ??
             VideoChatMessageContent?.ToString() ??
             ImageChatMessageContent?.ToString() ??
-            DocumentChatMessageContent?.ToString() 
+            DocumentChatMessageContent?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -421,7 +421,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.StringChatMessageContent, TResult>? stringChatMessageContent = null,
@@ -466,7 +466,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.StringChatMessageContent>? stringChatMessageContent = null,
@@ -514,7 +514,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.StringChatMessageContent>? stringChatMessageContent = null,
@@ -557,7 +557,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -586,7 +586,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ArrayChatMessageContentItem other)
         {
@@ -596,12 +596,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.AudioChatMessageContent?>.Default.Equals(AudioChatMessageContent, other.AudioChatMessageContent) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.VideoChatMessageContent?>.Default.Equals(VideoChatMessageContent, other.VideoChatMessageContent) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ImageChatMessageContent?>.Default.Equals(ImageChatMessageContent, other.ImageChatMessageContent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.DocumentChatMessageContent?>.Default.Equals(DocumentChatMessageContent, other.DocumentChatMessageContent) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.DocumentChatMessageContent?>.Default.Equals(DocumentChatMessageContent, other.DocumentChatMessageContent)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ArrayChatMessageContentItem obj1, ArrayChatMessageContentItem obj2)
         {
@@ -609,7 +609,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ArrayChatMessageContentItem obj1, ArrayChatMessageContentItem obj2)
         {
@@ -617,7 +617,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class TestSuiteRunMetricStringOutput
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public string? Value { get; set; }
@@ -22,7 +22,7 @@ namespace Vellum
         public global::Vellum.TestSuiteRunMetricStringOutputTypeEnum? Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]

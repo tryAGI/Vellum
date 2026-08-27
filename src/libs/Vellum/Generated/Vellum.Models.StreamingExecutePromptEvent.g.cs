@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class StreamingExecutePromptEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.StreamingEnumJsonConverter))]
         public global::Vellum.StreamingEnum State { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.PromptOutputJsonConverter))]
@@ -24,14 +24,14 @@ namespace Vellum
         public required global::Vellum.PromptOutput Output { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output_index")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int OutputIndex { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("execution_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

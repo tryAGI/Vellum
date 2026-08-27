@@ -9,20 +9,20 @@ namespace Vellum
     public sealed partial class ScenarioInputChatHistoryVariableValue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.ChatHistoryEnumJsonConverter))]
         public global::Vellum.ChatHistoryEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public global::System.Collections.Generic.IList<global::Vellum.ChatMessage>? Value { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_variable_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

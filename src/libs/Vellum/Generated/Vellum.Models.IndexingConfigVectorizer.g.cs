@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IndexingConfigVectorizer : global::System.IEquatable<IndexingConfigVectorizer>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAIVectorizerTextEmbedding3Small))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsOpenAIVectorizerTextEmbedding3Small => OpenAIVectorizerTextEmbedding3Small != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenAIVectorizerTextEmbedding3Small(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.OpenAIVectorizerTextEmbedding3Small PickOpenAIVectorizerTextEmbedding3Small() => IsOpenAIVectorizerTextEmbedding3Small
             ? OpenAIVectorizerTextEmbedding3Small!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAIVectorizerTextEmbedding3Large))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsOpenAIVectorizerTextEmbedding3Large => OpenAIVectorizerTextEmbedding3Large != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenAIVectorizerTextEmbedding3Large(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.OpenAIVectorizerTextEmbedding3Large PickOpenAIVectorizerTextEmbedding3Large() => IsOpenAIVectorizerTextEmbedding3Large
             ? OpenAIVectorizerTextEmbedding3Large!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAIVectorizerTextEmbeddingAda002))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsOpenAIVectorizerTextEmbeddingAda002 => OpenAIVectorizerTextEmbeddingAda002 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenAIVectorizerTextEmbeddingAda002(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.OpenAIVectorizerTextEmbeddingAda002 PickOpenAIVectorizerTextEmbeddingAda002() => IsOpenAIVectorizerTextEmbeddingAda002
             ? OpenAIVectorizerTextEmbeddingAda002!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BasicVectorizerIntfloatMultilingualE5Large))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsBasicVectorizerIntfloatMultilingualE5Large => BasicVectorizerIntfloatMultilingualE5Large != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBasicVectorizerIntfloatMultilingualE5Large(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.BasicVectorizerIntfloatMultilingualE5Large PickBasicVectorizerIntfloatMultilingualE5Large() => IsBasicVectorizerIntfloatMultilingualE5Large
             ? BasicVectorizerIntfloatMultilingualE5Large!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1 => BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1 PickBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1() => IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1
             ? BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1 => BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1 PickBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1() => IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1
             ? BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HkunlpInstructorXlVectorizer))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsHkunlpInstructorXlVectorizer => HkunlpInstructorXlVectorizer != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHkunlpInstructorXlVectorizer(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.HkunlpInstructorXlVectorizer PickHkunlpInstructorXlVectorizer() => IsHkunlpInstructorXlVectorizer
             ? HkunlpInstructorXlVectorizer!
             : throw new global::System.InvalidOperationException($"Expected union variant 'HkunlpInstructorXlVectorizer' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004? GoogleVertexAIVectorizerTextEmbedding004 { get; init; }
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleVertexAIVectorizerTextEmbedding004))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsGoogleVertexAIVectorizerTextEmbedding004 => GoogleVertexAIVectorizerTextEmbedding004 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGoogleVertexAIVectorizerTextEmbedding004(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004 PickGoogleVertexAIVectorizerTextEmbedding004() => IsGoogleVertexAIVectorizerTextEmbedding004
             ? GoogleVertexAIVectorizerTextEmbedding004!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertexAIVectorizerTextEmbedding004' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002? GoogleVertexAIVectorizerTextMultilingualEmbedding002 { get; init; }
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleVertexAIVectorizerTextMultilingualEmbedding002))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsGoogleVertexAIVectorizerTextMultilingualEmbedding002 => GoogleVertexAIVectorizerTextMultilingualEmbedding002 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGoogleVertexAIVectorizerTextMultilingualEmbedding002(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002 PickGoogleVertexAIVectorizerTextMultilingualEmbedding002() => IsGoogleVertexAIVectorizerTextMultilingualEmbedding002
             ? GoogleVertexAIVectorizerTextMultilingualEmbedding002!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertexAIVectorizerTextMultilingualEmbedding002' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001? GoogleVertexAIVectorizerGeminiEmbedding001 { get; init; }
@@ -352,7 +352,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleVertexAIVectorizerGeminiEmbedding001))]
@@ -360,7 +360,7 @@ namespace Vellum
         public bool IsGoogleVertexAIVectorizerGeminiEmbedding001 => GoogleVertexAIVectorizerGeminiEmbedding001 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGoogleVertexAIVectorizerGeminiEmbedding001(
 #if NET6_0_OR_GREATER
@@ -373,7 +373,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001 PickGoogleVertexAIVectorizerGeminiEmbedding001() => IsGoogleVertexAIVectorizerGeminiEmbedding001
             ? GoogleVertexAIVectorizerGeminiEmbedding001!
@@ -389,7 +389,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FastEmbedVectorizerBAAIBgeSmallEnV15))]
@@ -397,7 +397,7 @@ namespace Vellum
         public bool IsFastEmbedVectorizerBAAIBgeSmallEnV15 => FastEmbedVectorizerBAAIBgeSmallEnV15 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFastEmbedVectorizerBAAIBgeSmallEnV15(
 #if NET6_0_OR_GREATER
@@ -410,7 +410,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15 PickFastEmbedVectorizerBAAIBgeSmallEnV15() => IsFastEmbedVectorizerBAAIBgeSmallEnV15
             ? FastEmbedVectorizerBAAIBgeSmallEnV15!
@@ -426,7 +426,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PrivateVectorizer))]
@@ -434,7 +434,7 @@ namespace Vellum
         public bool IsPrivateVectorizer => PrivateVectorizer != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPrivateVectorizer(
 #if NET6_0_OR_GREATER
@@ -447,23 +447,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.PrivateVectorizer PickPrivateVectorizer() => IsPrivateVectorizer
             ? PrivateVectorizer!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PrivateVectorizer' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.OpenAIVectorizerTextEmbedding3Small value) => new IndexingConfigVectorizer((global::Vellum.OpenAIVectorizerTextEmbedding3Small?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.OpenAIVectorizerTextEmbedding3Small?(IndexingConfigVectorizer @this) => @this.OpenAIVectorizerTextEmbedding3Small;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.OpenAIVectorizerTextEmbedding3Small? value)
         {
@@ -471,22 +471,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromOpenAIVectorizerTextEmbedding3Small(global::Vellum.OpenAIVectorizerTextEmbedding3Small? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.OpenAIVectorizerTextEmbedding3Large value) => new IndexingConfigVectorizer((global::Vellum.OpenAIVectorizerTextEmbedding3Large?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.OpenAIVectorizerTextEmbedding3Large?(IndexingConfigVectorizer @this) => @this.OpenAIVectorizerTextEmbedding3Large;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.OpenAIVectorizerTextEmbedding3Large? value)
         {
@@ -494,22 +494,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromOpenAIVectorizerTextEmbedding3Large(global::Vellum.OpenAIVectorizerTextEmbedding3Large? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.OpenAIVectorizerTextEmbeddingAda002 value) => new IndexingConfigVectorizer((global::Vellum.OpenAIVectorizerTextEmbeddingAda002?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.OpenAIVectorizerTextEmbeddingAda002?(IndexingConfigVectorizer @this) => @this.OpenAIVectorizerTextEmbeddingAda002;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.OpenAIVectorizerTextEmbeddingAda002? value)
         {
@@ -517,22 +517,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromOpenAIVectorizerTextEmbeddingAda002(global::Vellum.OpenAIVectorizerTextEmbeddingAda002? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.BasicVectorizerIntfloatMultilingualE5Large value) => new IndexingConfigVectorizer((global::Vellum.BasicVectorizerIntfloatMultilingualE5Large?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.BasicVectorizerIntfloatMultilingualE5Large?(IndexingConfigVectorizer @this) => @this.BasicVectorizerIntfloatMultilingualE5Large;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.BasicVectorizerIntfloatMultilingualE5Large? value)
         {
@@ -540,22 +540,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromBasicVectorizerIntfloatMultilingualE5Large(global::Vellum.BasicVectorizerIntfloatMultilingualE5Large? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1 value) => new IndexingConfigVectorizer((global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1?(IndexingConfigVectorizer @this) => @this.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1? value)
         {
@@ -563,22 +563,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1 value) => new IndexingConfigVectorizer((global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1?(IndexingConfigVectorizer @this) => @this.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1? value)
         {
@@ -586,22 +586,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1(global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.HkunlpInstructorXlVectorizer value) => new IndexingConfigVectorizer((global::Vellum.HkunlpInstructorXlVectorizer?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.HkunlpInstructorXlVectorizer?(IndexingConfigVectorizer @this) => @this.HkunlpInstructorXlVectorizer;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.HkunlpInstructorXlVectorizer? value)
         {
@@ -609,22 +609,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromHkunlpInstructorXlVectorizer(global::Vellum.HkunlpInstructorXlVectorizer? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004 value) => new IndexingConfigVectorizer((global::Vellum.GoogleVertexAIVectorizerTextEmbedding004?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.GoogleVertexAIVectorizerTextEmbedding004?(IndexingConfigVectorizer @this) => @this.GoogleVertexAIVectorizerTextEmbedding004;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004? value)
         {
@@ -632,22 +632,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromGoogleVertexAIVectorizerTextEmbedding004(global::Vellum.GoogleVertexAIVectorizerTextEmbedding004? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002 value) => new IndexingConfigVectorizer((global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002?(IndexingConfigVectorizer @this) => @this.GoogleVertexAIVectorizerTextMultilingualEmbedding002;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002? value)
         {
@@ -655,22 +655,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromGoogleVertexAIVectorizerTextMultilingualEmbedding002(global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001 value) => new IndexingConfigVectorizer((global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001?(IndexingConfigVectorizer @this) => @this.GoogleVertexAIVectorizerGeminiEmbedding001;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001? value)
         {
@@ -678,22 +678,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromGoogleVertexAIVectorizerGeminiEmbedding001(global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15 value) => new IndexingConfigVectorizer((global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15?(IndexingConfigVectorizer @this) => @this.FastEmbedVectorizerBAAIBgeSmallEnV15;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15? value)
         {
@@ -701,22 +701,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromFastEmbedVectorizerBAAIBgeSmallEnV15(global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IndexingConfigVectorizer(global::Vellum.PrivateVectorizer value) => new IndexingConfigVectorizer((global::Vellum.PrivateVectorizer?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.PrivateVectorizer?(IndexingConfigVectorizer @this) => @this.PrivateVectorizer;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(global::Vellum.PrivateVectorizer? value)
         {
@@ -724,12 +724,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IndexingConfigVectorizer FromPrivateVectorizer(global::Vellum.PrivateVectorizer? value) => new IndexingConfigVectorizer(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IndexingConfigVectorizer(
             global::Vellum.OpenAIVectorizerTextEmbedding3Small? openAIVectorizerTextEmbedding3Small,
@@ -761,7 +761,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PrivateVectorizer as object ??
@@ -775,11 +775,11 @@ namespace Vellum
             BasicVectorizerIntfloatMultilingualE5Large as object ??
             OpenAIVectorizerTextEmbeddingAda002 as object ??
             OpenAIVectorizerTextEmbedding3Large as object ??
-            OpenAIVectorizerTextEmbedding3Small as object 
+            OpenAIVectorizerTextEmbedding3Small as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             OpenAIVectorizerTextEmbedding3Small?.ToString() ??
@@ -793,11 +793,11 @@ namespace Vellum
             GoogleVertexAIVectorizerTextMultilingualEmbedding002?.ToString() ??
             GoogleVertexAIVectorizerGeminiEmbedding001?.ToString() ??
             FastEmbedVectorizerBAAIBgeSmallEnV15?.ToString() ??
-            PrivateVectorizer?.ToString() 
+            PrivateVectorizer?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -805,7 +805,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.OpenAIVectorizerTextEmbedding3Small, TResult>? openAIVectorizerTextEmbedding3Small = null,
@@ -880,7 +880,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.OpenAIVectorizerTextEmbedding3Small>? openAIVectorizerTextEmbedding3Small = null,
@@ -964,7 +964,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.OpenAIVectorizerTextEmbedding3Small>? openAIVectorizerTextEmbedding3Small = null,
@@ -1037,7 +1037,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1078,7 +1078,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IndexingConfigVectorizer other)
         {
@@ -1094,12 +1094,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002?>.Default.Equals(GoogleVertexAIVectorizerTextMultilingualEmbedding002, other.GoogleVertexAIVectorizerTextMultilingualEmbedding002) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001?>.Default.Equals(GoogleVertexAIVectorizerGeminiEmbedding001, other.GoogleVertexAIVectorizerGeminiEmbedding001) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15?>.Default.Equals(FastEmbedVectorizerBAAIBgeSmallEnV15, other.FastEmbedVectorizerBAAIBgeSmallEnV15) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.PrivateVectorizer?>.Default.Equals(PrivateVectorizer, other.PrivateVectorizer) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.PrivateVectorizer?>.Default.Equals(PrivateVectorizer, other.PrivateVectorizer)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IndexingConfigVectorizer obj1, IndexingConfigVectorizer obj2)
         {
@@ -1107,7 +1107,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IndexingConfigVectorizer obj1, IndexingConfigVectorizer obj2)
         {
@@ -1115,7 +1115,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

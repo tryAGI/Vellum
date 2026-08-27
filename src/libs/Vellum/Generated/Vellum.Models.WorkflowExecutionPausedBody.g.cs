@@ -4,19 +4,19 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class WorkflowExecutionPausedBody
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflow_definition")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vellum.VellumCodeResourceDefinition WorkflowDefinition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("external_inputs")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,7 +4,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DeploymentProviderPayloadRequest
     {
@@ -34,7 +34,7 @@ namespace Vellum
         public string? ReleaseTag { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expand_meta")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>))]

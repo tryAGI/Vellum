@@ -10,11 +10,11 @@ namespace Vellum
     public enum ApiVersionEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x20241025,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x20250730,
     }

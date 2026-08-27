@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VellumSdkErrorRawData : global::System.IEquatable<VellumSdkErrorRawData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? VellumSdkErrorRawDataVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumSdkErrorRawDataVariant1))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsVellumSdkErrorRawDataVariant1 => VellumSdkErrorRawDataVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVellumSdkErrorRawDataVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickVellumSdkErrorRawDataVariant1() => IsVellumSdkErrorRawDataVariant1
             ? VellumSdkErrorRawDataVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? VellumSdkErrorRawDataVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VellumSdkErrorRawDataVariant2))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsVellumSdkErrorRawDataVariant2 => VellumSdkErrorRawDataVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickVellumSdkErrorRawDataVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickVellumSdkErrorRawDataVariant2() => IsVellumSdkErrorRawDataVariant2
             ? VellumSdkErrorRawDataVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumSdkErrorRawData(string value) => new VellumSdkErrorRawData((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(VellumSdkErrorRawData @this) => @this.VellumSdkErrorRawDataVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumSdkErrorRawData(string? value)
         {
@@ -101,12 +101,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumSdkErrorRawData FromVellumSdkErrorRawDataVariant2(string? value) => new VellumSdkErrorRawData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumSdkErrorRawData(
             object? vellumSdkErrorRawDataVariant1,
@@ -118,23 +118,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             VellumSdkErrorRawDataVariant2 as object ??
-            VellumSdkErrorRawDataVariant1 as object 
+            VellumSdkErrorRawDataVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             VellumSdkErrorRawDataVariant1?.ToString() ??
-            VellumSdkErrorRawDataVariant2?.ToString() 
+            VellumSdkErrorRawDataVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<object, TResult>? vellumSdkErrorRawDataVariant1 = null,
@@ -167,7 +167,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<object>? vellumSdkErrorRawDataVariant1 = null,
@@ -191,7 +191,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<object>? vellumSdkErrorRawDataVariant1 = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VellumSdkErrorRawData other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(VellumSdkErrorRawDataVariant1, other.VellumSdkErrorRawDataVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VellumSdkErrorRawDataVariant2, other.VellumSdkErrorRawDataVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(VellumSdkErrorRawDataVariant2, other.VellumSdkErrorRawDataVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VellumSdkErrorRawData obj1, VellumSdkErrorRawData obj2)
         {
@@ -254,7 +254,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VellumSdkErrorRawData obj1, VellumSdkErrorRawData obj2)
         {
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

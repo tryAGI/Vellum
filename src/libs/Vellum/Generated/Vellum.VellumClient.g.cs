@@ -10,7 +10,7 @@ namespace Vellum
     public sealed partial class VellumClient : global::Vellum.IVellumClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.vellum.ai/";
 
@@ -37,7 +37,7 @@ namespace Vellum
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Vellum.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -47,7 +47,7 @@ namespace Vellum
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -56,7 +56,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexesClient DocumentIndexes => new DocumentIndexesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -65,7 +65,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentsClient Documents => new DocumentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -74,7 +74,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsClient Events => new EventsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -83,7 +83,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FolderEntitiesClient FolderEntities => new FolderEntitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -92,7 +92,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -101,7 +101,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunsClient TestSuiteRuns => new TestSuiteRunsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -110,7 +110,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuitesClient TestSuites => new TestSuitesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -119,7 +119,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UploadedFilesClient UploadedFiles => new UploadedFilesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -128,7 +128,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowDeploymentsClient WorkflowDeployments => new WorkflowDeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -137,7 +137,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowExecutionsClient WorkflowExecutions => new WorkflowExecutionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -146,7 +146,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowSandboxesClient WorkflowSandboxes => new WorkflowSandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -155,7 +155,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowsClient Workflows => new WorkflowsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -164,7 +164,7 @@ namespace Vellum
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkspaceSecretsClient WorkspaceSecrets => new WorkspaceSecretsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

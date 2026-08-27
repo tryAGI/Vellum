@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GeminiEmbedding001Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GeminiEmbedding001,
     }

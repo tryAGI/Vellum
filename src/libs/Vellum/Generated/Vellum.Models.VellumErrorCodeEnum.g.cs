@@ -20,51 +20,51 @@ namespace Vellum
     public enum VellumErrorCodeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatQuotaExceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationCredentialsUnavailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalServerError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidInputs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NodeCancelled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProviderCredentialsUnavailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProviderError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProviderQuotaExceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestTimeout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserDefinedError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowCancelled,
     }

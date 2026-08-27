@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct VellumNodeExecutionEvent : global::System.IEquatable<VellumNodeExecutionEvent>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionInitiatedEvent? NodeExecutionInitiatedEvent { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionInitiatedEvent))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsNodeExecutionInitiatedEvent => NodeExecutionInitiatedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionInitiatedEvent(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionInitiatedEvent PickNodeExecutionInitiatedEvent() => IsNodeExecutionInitiatedEvent
             ? NodeExecutionInitiatedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionInitiatedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionStreamingEvent? NodeExecutionStreamingEvent { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionStreamingEvent))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNodeExecutionStreamingEvent => NodeExecutionStreamingEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionStreamingEvent(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionStreamingEvent PickNodeExecutionStreamingEvent() => IsNodeExecutionStreamingEvent
             ? NodeExecutionStreamingEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionStreamingEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionFulfilledEvent? NodeExecutionFulfilledEvent { get; init; }
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionFulfilledEvent))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsNodeExecutionFulfilledEvent => NodeExecutionFulfilledEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionFulfilledEvent(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionFulfilledEvent PickNodeExecutionFulfilledEvent() => IsNodeExecutionFulfilledEvent
             ? NodeExecutionFulfilledEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionFulfilledEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionRejectedEvent? NodeExecutionRejectedEvent { get; init; }
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionRejectedEvent))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsNodeExecutionRejectedEvent => NodeExecutionRejectedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionRejectedEvent(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionRejectedEvent PickNodeExecutionRejectedEvent() => IsNodeExecutionRejectedEvent
             ? NodeExecutionRejectedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionRejectedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionPausedEvent? NodeExecutionPausedEvent { get; init; }
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionPausedEvent))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsNodeExecutionPausedEvent => NodeExecutionPausedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionPausedEvent(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionPausedEvent PickNodeExecutionPausedEvent() => IsNodeExecutionPausedEvent
             ? NodeExecutionPausedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionPausedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionResumedEvent? NodeExecutionResumedEvent { get; init; }
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionResumedEvent))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsNodeExecutionResumedEvent => NodeExecutionResumedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionResumedEvent(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionResumedEvent PickNodeExecutionResumedEvent() => IsNodeExecutionResumedEvent
             ? NodeExecutionResumedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionResumedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionLogEvent? NodeExecutionLogEvent { get; init; }
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionLogEvent))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsNodeExecutionLogEvent => NodeExecutionLogEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionLogEvent(
 #if NET6_0_OR_GREATER
@@ -262,23 +262,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionLogEvent PickNodeExecutionLogEvent() => IsNodeExecutionLogEvent
             ? NodeExecutionLogEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionLogEvent' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionInitiatedEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionInitiatedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionInitiatedEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionInitiatedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionInitiatedEvent? value)
         {
@@ -286,22 +286,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionInitiatedEvent(global::Vellum.NodeExecutionInitiatedEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionStreamingEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionStreamingEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionStreamingEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionStreamingEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionStreamingEvent? value)
         {
@@ -309,22 +309,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionStreamingEvent(global::Vellum.NodeExecutionStreamingEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionFulfilledEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionFulfilledEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionFulfilledEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionFulfilledEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionFulfilledEvent? value)
         {
@@ -332,22 +332,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionFulfilledEvent(global::Vellum.NodeExecutionFulfilledEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionRejectedEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionRejectedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionRejectedEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionRejectedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionRejectedEvent? value)
         {
@@ -355,22 +355,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionRejectedEvent(global::Vellum.NodeExecutionRejectedEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionPausedEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionPausedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionPausedEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionPausedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionPausedEvent? value)
         {
@@ -378,22 +378,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionPausedEvent(global::Vellum.NodeExecutionPausedEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionResumedEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionResumedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionResumedEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionResumedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionResumedEvent? value)
         {
@@ -401,22 +401,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionResumedEvent(global::Vellum.NodeExecutionResumedEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator VellumNodeExecutionEvent(global::Vellum.NodeExecutionLogEvent value) => new VellumNodeExecutionEvent((global::Vellum.NodeExecutionLogEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionLogEvent?(VellumNodeExecutionEvent @this) => @this.NodeExecutionLogEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(global::Vellum.NodeExecutionLogEvent? value)
         {
@@ -424,12 +424,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static VellumNodeExecutionEvent FromNodeExecutionLogEvent(global::Vellum.NodeExecutionLogEvent? value) => new VellumNodeExecutionEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VellumNodeExecutionEvent(
             global::Vellum.NodeExecutionInitiatedEvent? nodeExecutionInitiatedEvent,
@@ -451,7 +451,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             NodeExecutionLogEvent as object ??
@@ -460,11 +460,11 @@ namespace Vellum
             NodeExecutionRejectedEvent as object ??
             NodeExecutionFulfilledEvent as object ??
             NodeExecutionStreamingEvent as object ??
-            NodeExecutionInitiatedEvent as object 
+            NodeExecutionInitiatedEvent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             NodeExecutionInitiatedEvent?.ToString() ??
@@ -473,11 +473,11 @@ namespace Vellum
             NodeExecutionRejectedEvent?.ToString() ??
             NodeExecutionPausedEvent?.ToString() ??
             NodeExecutionResumedEvent?.ToString() ??
-            NodeExecutionLogEvent?.ToString() 
+            NodeExecutionLogEvent?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -485,7 +485,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.NodeExecutionInitiatedEvent, TResult>? nodeExecutionInitiatedEvent = null,
@@ -535,7 +535,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.NodeExecutionInitiatedEvent>? nodeExecutionInitiatedEvent = null,
@@ -589,7 +589,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.NodeExecutionInitiatedEvent>? nodeExecutionInitiatedEvent = null,
@@ -637,7 +637,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -668,7 +668,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(VellumNodeExecutionEvent other)
         {
@@ -679,12 +679,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionRejectedEvent?>.Default.Equals(NodeExecutionRejectedEvent, other.NodeExecutionRejectedEvent) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionPausedEvent?>.Default.Equals(NodeExecutionPausedEvent, other.NodeExecutionPausedEvent) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionResumedEvent?>.Default.Equals(NodeExecutionResumedEvent, other.NodeExecutionResumedEvent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionLogEvent?>.Default.Equals(NodeExecutionLogEvent, other.NodeExecutionLogEvent) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeExecutionLogEvent?>.Default.Equals(NodeExecutionLogEvent, other.NodeExecutionLogEvent)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(VellumNodeExecutionEvent obj1, VellumNodeExecutionEvent obj2)
         {
@@ -692,7 +692,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(VellumNodeExecutionEvent obj1, VellumNodeExecutionEvent obj2)
         {
@@ -700,7 +700,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

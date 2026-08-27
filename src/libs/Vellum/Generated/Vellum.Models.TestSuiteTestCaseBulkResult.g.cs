@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct TestSuiteTestCaseBulkResult : global::System.IEquatable<TestSuiteTestCaseBulkResult>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseCreatedBulkResult))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsTestSuiteTestCaseCreatedBulkResult => TestSuiteTestCaseCreatedBulkResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteTestCaseCreatedBulkResult(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteTestCaseCreatedBulkResult PickTestSuiteTestCaseCreatedBulkResult() => IsTestSuiteTestCaseCreatedBulkResult
             ? TestSuiteTestCaseCreatedBulkResult!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseReplacedBulkResult))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsTestSuiteTestCaseReplacedBulkResult => TestSuiteTestCaseReplacedBulkResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteTestCaseReplacedBulkResult(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteTestCaseReplacedBulkResult PickTestSuiteTestCaseReplacedBulkResult() => IsTestSuiteTestCaseReplacedBulkResult
             ? TestSuiteTestCaseReplacedBulkResult!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseDeletedBulkResult))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsTestSuiteTestCaseDeletedBulkResult => TestSuiteTestCaseDeletedBulkResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteTestCaseDeletedBulkResult(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteTestCaseDeletedBulkResult PickTestSuiteTestCaseDeletedBulkResult() => IsTestSuiteTestCaseDeletedBulkResult
             ? TestSuiteTestCaseDeletedBulkResult!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteTestCaseRejectedBulkResult))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsTestSuiteTestCaseRejectedBulkResult => TestSuiteTestCaseRejectedBulkResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteTestCaseRejectedBulkResult(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteTestCaseRejectedBulkResult PickTestSuiteTestCaseRejectedBulkResult() => IsTestSuiteTestCaseRejectedBulkResult
             ? TestSuiteTestCaseRejectedBulkResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseRejectedBulkResult' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseCreatedBulkResult value) => new TestSuiteTestCaseBulkResult((global::Vellum.TestSuiteTestCaseCreatedBulkResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteTestCaseCreatedBulkResult?(TestSuiteTestCaseBulkResult @this) => @this.TestSuiteTestCaseCreatedBulkResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseCreatedBulkResult? value)
         {
@@ -175,22 +175,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseCreatedBulkResult(global::Vellum.TestSuiteTestCaseCreatedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseReplacedBulkResult value) => new TestSuiteTestCaseBulkResult((global::Vellum.TestSuiteTestCaseReplacedBulkResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteTestCaseReplacedBulkResult?(TestSuiteTestCaseBulkResult @this) => @this.TestSuiteTestCaseReplacedBulkResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseReplacedBulkResult? value)
         {
@@ -198,22 +198,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseReplacedBulkResult(global::Vellum.TestSuiteTestCaseReplacedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseDeletedBulkResult value) => new TestSuiteTestCaseBulkResult((global::Vellum.TestSuiteTestCaseDeletedBulkResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteTestCaseDeletedBulkResult?(TestSuiteTestCaseBulkResult @this) => @this.TestSuiteTestCaseDeletedBulkResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseDeletedBulkResult? value)
         {
@@ -221,22 +221,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseDeletedBulkResult(global::Vellum.TestSuiteTestCaseDeletedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseRejectedBulkResult value) => new TestSuiteTestCaseBulkResult((global::Vellum.TestSuiteTestCaseRejectedBulkResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteTestCaseRejectedBulkResult?(TestSuiteTestCaseBulkResult @this) => @this.TestSuiteTestCaseRejectedBulkResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteTestCaseBulkResult(global::Vellum.TestSuiteTestCaseRejectedBulkResult? value)
         {
@@ -244,12 +244,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteTestCaseBulkResult FromTestSuiteTestCaseRejectedBulkResult(global::Vellum.TestSuiteTestCaseRejectedBulkResult? value) => new TestSuiteTestCaseBulkResult(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteTestCaseBulkResult(
             global::Vellum.TestSuiteTestCaseCreatedBulkResult? testSuiteTestCaseCreatedBulkResult,
@@ -265,27 +265,27 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TestSuiteTestCaseRejectedBulkResult as object ??
             TestSuiteTestCaseDeletedBulkResult as object ??
             TestSuiteTestCaseReplacedBulkResult as object ??
-            TestSuiteTestCaseCreatedBulkResult as object 
+            TestSuiteTestCaseCreatedBulkResult as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TestSuiteTestCaseCreatedBulkResult?.ToString() ??
             TestSuiteTestCaseReplacedBulkResult?.ToString() ??
             TestSuiteTestCaseDeletedBulkResult?.ToString() ??
-            TestSuiteTestCaseRejectedBulkResult?.ToString() 
+            TestSuiteTestCaseRejectedBulkResult?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -293,7 +293,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.TestSuiteTestCaseCreatedBulkResult, TResult>? testSuiteTestCaseCreatedBulkResult = null,
@@ -328,7 +328,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.TestSuiteTestCaseCreatedBulkResult>? testSuiteTestCaseCreatedBulkResult = null,
@@ -364,7 +364,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.TestSuiteTestCaseCreatedBulkResult>? testSuiteTestCaseCreatedBulkResult = null,
@@ -397,7 +397,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -422,7 +422,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TestSuiteTestCaseBulkResult other)
         {
@@ -430,12 +430,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteTestCaseCreatedBulkResult?>.Default.Equals(TestSuiteTestCaseCreatedBulkResult, other.TestSuiteTestCaseCreatedBulkResult) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteTestCaseReplacedBulkResult?>.Default.Equals(TestSuiteTestCaseReplacedBulkResult, other.TestSuiteTestCaseReplacedBulkResult) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteTestCaseDeletedBulkResult?>.Default.Equals(TestSuiteTestCaseDeletedBulkResult, other.TestSuiteTestCaseDeletedBulkResult) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteTestCaseRejectedBulkResult?>.Default.Equals(TestSuiteTestCaseRejectedBulkResult, other.TestSuiteTestCaseRejectedBulkResult) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteTestCaseRejectedBulkResult?>.Default.Equals(TestSuiteTestCaseRejectedBulkResult, other.TestSuiteTestCaseRejectedBulkResult)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TestSuiteTestCaseBulkResult obj1, TestSuiteTestCaseBulkResult obj2)
         {
@@ -443,7 +443,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TestSuiteTestCaseBulkResult obj1, TestSuiteTestCaseBulkResult obj2)
         {
@@ -451,7 +451,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

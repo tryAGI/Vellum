@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct NamedScenarioInputRequest : global::System.IEquatable<NamedScenarioInputRequest>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputStringVariableValueRequest))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsNamedScenarioInputStringVariableValueRequest => NamedScenarioInputStringVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputStringVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputStringVariableValueRequest PickNamedScenarioInputStringVariableValueRequest() => IsNamedScenarioInputStringVariableValueRequest
             ? NamedScenarioInputStringVariableValueRequest!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputJsonVariableValueRequest))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNamedScenarioInputJsonVariableValueRequest => NamedScenarioInputJsonVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputJsonVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputJsonVariableValueRequest PickNamedScenarioInputJsonVariableValueRequest() => IsNamedScenarioInputJsonVariableValueRequest
             ? NamedScenarioInputJsonVariableValueRequest!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputChatHistoryVariableValueRequest))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsNamedScenarioInputChatHistoryVariableValueRequest => NamedScenarioInputChatHistoryVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputChatHistoryVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest PickNamedScenarioInputChatHistoryVariableValueRequest() => IsNamedScenarioInputChatHistoryVariableValueRequest
             ? NamedScenarioInputChatHistoryVariableValueRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedScenarioInputChatHistoryVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedScenarioInputAudioVariableValueRequest? NamedScenarioInputAudioVariableValueRequest { get; init; }
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputAudioVariableValueRequest))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsNamedScenarioInputAudioVariableValueRequest => NamedScenarioInputAudioVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputAudioVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputAudioVariableValueRequest PickNamedScenarioInputAudioVariableValueRequest() => IsNamedScenarioInputAudioVariableValueRequest
             ? NamedScenarioInputAudioVariableValueRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedScenarioInputAudioVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedScenarioInputVideoVariableValueRequest? NamedScenarioInputVideoVariableValueRequest { get; init; }
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputVideoVariableValueRequest))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsNamedScenarioInputVideoVariableValueRequest => NamedScenarioInputVideoVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputVideoVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputVideoVariableValueRequest PickNamedScenarioInputVideoVariableValueRequest() => IsNamedScenarioInputVideoVariableValueRequest
             ? NamedScenarioInputVideoVariableValueRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedScenarioInputVideoVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedScenarioInputImageVariableValueRequest? NamedScenarioInputImageVariableValueRequest { get; init; }
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputImageVariableValueRequest))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsNamedScenarioInputImageVariableValueRequest => NamedScenarioInputImageVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputImageVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputImageVariableValueRequest PickNamedScenarioInputImageVariableValueRequest() => IsNamedScenarioInputImageVariableValueRequest
             ? NamedScenarioInputImageVariableValueRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedScenarioInputImageVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedScenarioInputDocumentVariableValueRequest? NamedScenarioInputDocumentVariableValueRequest { get; init; }
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedScenarioInputDocumentVariableValueRequest))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsNamedScenarioInputDocumentVariableValueRequest => NamedScenarioInputDocumentVariableValueRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedScenarioInputDocumentVariableValueRequest(
 #if NET6_0_OR_GREATER
@@ -262,23 +262,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedScenarioInputDocumentVariableValueRequest PickNamedScenarioInputDocumentVariableValueRequest() => IsNamedScenarioInputDocumentVariableValueRequest
             ? NamedScenarioInputDocumentVariableValueRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedScenarioInputDocumentVariableValueRequest' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputStringVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputStringVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputStringVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputStringVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputStringVariableValueRequest? value)
         {
@@ -286,22 +286,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputStringVariableValueRequest(global::Vellum.NamedScenarioInputStringVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputJsonVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputJsonVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputJsonVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputJsonVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputJsonVariableValueRequest? value)
         {
@@ -309,22 +309,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputJsonVariableValueRequest(global::Vellum.NamedScenarioInputJsonVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputChatHistoryVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest? value)
         {
@@ -332,22 +332,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputChatHistoryVariableValueRequest(global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputAudioVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputAudioVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputAudioVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputAudioVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputAudioVariableValueRequest? value)
         {
@@ -355,22 +355,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputAudioVariableValueRequest(global::Vellum.NamedScenarioInputAudioVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputVideoVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputVideoVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputVideoVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputVideoVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputVideoVariableValueRequest? value)
         {
@@ -378,22 +378,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputVideoVariableValueRequest(global::Vellum.NamedScenarioInputVideoVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputImageVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputImageVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputImageVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputImageVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputImageVariableValueRequest? value)
         {
@@ -401,22 +401,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputImageVariableValueRequest(global::Vellum.NamedScenarioInputImageVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedScenarioInputRequest(global::Vellum.NamedScenarioInputDocumentVariableValueRequest value) => new NamedScenarioInputRequest((global::Vellum.NamedScenarioInputDocumentVariableValueRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedScenarioInputDocumentVariableValueRequest?(NamedScenarioInputRequest @this) => @this.NamedScenarioInputDocumentVariableValueRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(global::Vellum.NamedScenarioInputDocumentVariableValueRequest? value)
         {
@@ -424,12 +424,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedScenarioInputRequest FromNamedScenarioInputDocumentVariableValueRequest(global::Vellum.NamedScenarioInputDocumentVariableValueRequest? value) => new NamedScenarioInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedScenarioInputRequest(
             global::Vellum.NamedScenarioInputStringVariableValueRequest? namedScenarioInputStringVariableValueRequest,
@@ -451,7 +451,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             NamedScenarioInputDocumentVariableValueRequest as object ??
@@ -460,11 +460,11 @@ namespace Vellum
             NamedScenarioInputAudioVariableValueRequest as object ??
             NamedScenarioInputChatHistoryVariableValueRequest as object ??
             NamedScenarioInputJsonVariableValueRequest as object ??
-            NamedScenarioInputStringVariableValueRequest as object 
+            NamedScenarioInputStringVariableValueRequest as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             NamedScenarioInputStringVariableValueRequest?.ToString() ??
@@ -473,11 +473,11 @@ namespace Vellum
             NamedScenarioInputAudioVariableValueRequest?.ToString() ??
             NamedScenarioInputVideoVariableValueRequest?.ToString() ??
             NamedScenarioInputImageVariableValueRequest?.ToString() ??
-            NamedScenarioInputDocumentVariableValueRequest?.ToString() 
+            NamedScenarioInputDocumentVariableValueRequest?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -485,7 +485,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.NamedScenarioInputStringVariableValueRequest, TResult>? namedScenarioInputStringVariableValueRequest = null,
@@ -535,7 +535,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.NamedScenarioInputStringVariableValueRequest>? namedScenarioInputStringVariableValueRequest = null,
@@ -589,7 +589,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.NamedScenarioInputStringVariableValueRequest>? namedScenarioInputStringVariableValueRequest = null,
@@ -637,7 +637,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -668,7 +668,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(NamedScenarioInputRequest other)
         {
@@ -679,12 +679,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedScenarioInputAudioVariableValueRequest?>.Default.Equals(NamedScenarioInputAudioVariableValueRequest, other.NamedScenarioInputAudioVariableValueRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedScenarioInputVideoVariableValueRequest?>.Default.Equals(NamedScenarioInputVideoVariableValueRequest, other.NamedScenarioInputVideoVariableValueRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedScenarioInputImageVariableValueRequest?>.Default.Equals(NamedScenarioInputImageVariableValueRequest, other.NamedScenarioInputImageVariableValueRequest) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedScenarioInputDocumentVariableValueRequest?>.Default.Equals(NamedScenarioInputDocumentVariableValueRequest, other.NamedScenarioInputDocumentVariableValueRequest) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedScenarioInputDocumentVariableValueRequest?>.Default.Equals(NamedScenarioInputDocumentVariableValueRequest, other.NamedScenarioInputDocumentVariableValueRequest)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(NamedScenarioInputRequest obj1, NamedScenarioInputRequest obj2)
         {
@@ -692,7 +692,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(NamedScenarioInputRequest obj1, NamedScenarioInputRequest obj2)
         {
@@ -700,7 +700,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

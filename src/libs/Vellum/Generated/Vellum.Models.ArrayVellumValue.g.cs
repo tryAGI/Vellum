@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class ArrayVellumValue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.ArrayEnumJsonConverter))]
         public global::Vellum.ArrayEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public global::System.Collections.Generic.IList<global::Vellum.VellumValue>? Value { get; set; }

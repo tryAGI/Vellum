@@ -12,19 +12,19 @@ namespace Vellum
     public enum WorkflowNodeResultEventState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fulfilled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Initiated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Streaming,
     }

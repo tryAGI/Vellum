@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct WorkflowError : global::System.IEquatable<WorkflowError>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowEventError? WorkflowEventError { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEventError))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowEventError => WorkflowEventError != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowEventError(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowEventError PickWorkflowEventError() => IsWorkflowEventError
             ? WorkflowEventError!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowInitializationError))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowInitializationError => WorkflowInitializationError != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowInitializationError(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowInitializationError PickWorkflowInitializationError() => IsWorkflowInitializationError
             ? WorkflowInitializationError!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowInitializationError' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowError(global::Vellum.WorkflowEventError value) => new WorkflowError((global::Vellum.WorkflowEventError?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowEventError?(WorkflowError @this) => @this.WorkflowEventError;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowError(global::Vellum.WorkflowEventError? value)
         {
@@ -101,22 +101,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowError FromWorkflowEventError(global::Vellum.WorkflowEventError? value) => new WorkflowError(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowError(global::Vellum.WorkflowInitializationError value) => new WorkflowError((global::Vellum.WorkflowInitializationError?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowInitializationError?(WorkflowError @this) => @this.WorkflowInitializationError;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowError(global::Vellum.WorkflowInitializationError? value)
         {
@@ -124,12 +124,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowError FromWorkflowInitializationError(global::Vellum.WorkflowInitializationError? value) => new WorkflowError(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowError(
             global::Vellum.WorkflowEventError? workflowEventError,
@@ -141,23 +141,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowInitializationError as object ??
-            WorkflowEventError as object 
+            WorkflowEventError as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowEventError?.ToString() ??
-            WorkflowInitializationError?.ToString() 
+            WorkflowInitializationError?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowEventError, TResult>? workflowEventError = null,
@@ -190,7 +190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowEventError>? workflowEventError = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowEventError>? workflowEventError = null,
@@ -237,7 +237,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkflowError other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowEventError?>.Default.Equals(WorkflowEventError, other.WorkflowEventError) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowInitializationError?>.Default.Equals(WorkflowInitializationError, other.WorkflowInitializationError) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowInitializationError?>.Default.Equals(WorkflowInitializationError, other.WorkflowInitializationError)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkflowError obj1, WorkflowError obj2)
         {
@@ -277,7 +277,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkflowError obj1, WorkflowError obj2)
         {
@@ -285,7 +285,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

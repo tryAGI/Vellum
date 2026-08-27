@@ -10,11 +10,11 @@ namespace Vellum
     public enum WorkflowExecutionEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Node,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

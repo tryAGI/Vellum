@@ -4,19 +4,19 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TestSuiteRunProgress
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("number_of_requested_test_cases")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int NumberOfRequestedTestCases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("number_of_completed_test_cases")]
         [global::System.Text.Json.Serialization.JsonRequired]

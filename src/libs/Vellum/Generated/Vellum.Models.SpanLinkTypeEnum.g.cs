@@ -11,15 +11,15 @@ namespace Vellum
     public enum SpanLinkTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviousSpan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RootSpan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TriggeredBy,
     }

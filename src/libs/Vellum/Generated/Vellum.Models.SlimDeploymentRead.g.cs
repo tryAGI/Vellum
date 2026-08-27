@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class SlimDeploymentRead
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Guid Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -54,14 +54,14 @@ namespace Vellum
         public global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>? Environment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_deployed_on")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.DateTime LastDeployedOn { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_variables")]
         [global::System.Text.Json.Serialization.JsonRequired]
