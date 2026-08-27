@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct NamedTestCaseVariableValue : global::System.IEquatable<NamedTestCaseVariableValue>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseStringVariableValue))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsNamedTestCaseStringVariableValue => NamedTestCaseStringVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseStringVariableValue(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseStringVariableValue PickNamedTestCaseStringVariableValue() => IsNamedTestCaseStringVariableValue
             ? NamedTestCaseStringVariableValue!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseNumberVariableValue))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNamedTestCaseNumberVariableValue => NamedTestCaseNumberVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseNumberVariableValue(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseNumberVariableValue PickNamedTestCaseNumberVariableValue() => IsNamedTestCaseNumberVariableValue
             ? NamedTestCaseNumberVariableValue!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseJsonVariableValue))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsNamedTestCaseJsonVariableValue => NamedTestCaseJsonVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseJsonVariableValue(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseJsonVariableValue PickNamedTestCaseJsonVariableValue() => IsNamedTestCaseJsonVariableValue
             ? NamedTestCaseJsonVariableValue!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseChatHistoryVariableValue))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsNamedTestCaseChatHistoryVariableValue => NamedTestCaseChatHistoryVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseChatHistoryVariableValue(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseChatHistoryVariableValue PickNamedTestCaseChatHistoryVariableValue() => IsNamedTestCaseChatHistoryVariableValue
             ? NamedTestCaseChatHistoryVariableValue!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseSearchResultsVariableValue))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsNamedTestCaseSearchResultsVariableValue => NamedTestCaseSearchResultsVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseSearchResultsVariableValue(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseSearchResultsVariableValue PickNamedTestCaseSearchResultsVariableValue() => IsNamedTestCaseSearchResultsVariableValue
             ? NamedTestCaseSearchResultsVariableValue!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseErrorVariableValue))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsNamedTestCaseErrorVariableValue => NamedTestCaseErrorVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseErrorVariableValue(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseErrorVariableValue PickNamedTestCaseErrorVariableValue() => IsNamedTestCaseErrorVariableValue
             ? NamedTestCaseErrorVariableValue!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseFunctionCallVariableValue))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsNamedTestCaseFunctionCallVariableValue => NamedTestCaseFunctionCallVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseFunctionCallVariableValue(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseFunctionCallVariableValue PickNamedTestCaseFunctionCallVariableValue() => IsNamedTestCaseFunctionCallVariableValue
             ? NamedTestCaseFunctionCallVariableValue!
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseArrayVariableValue))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsNamedTestCaseArrayVariableValue => NamedTestCaseArrayVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseArrayVariableValue(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseArrayVariableValue PickNamedTestCaseArrayVariableValue() => IsNamedTestCaseArrayVariableValue
             ? NamedTestCaseArrayVariableValue!
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseAudioVariableValue))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsNamedTestCaseAudioVariableValue => NamedTestCaseAudioVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseAudioVariableValue(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseAudioVariableValue PickNamedTestCaseAudioVariableValue() => IsNamedTestCaseAudioVariableValue
             ? NamedTestCaseAudioVariableValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseAudioVariableValue' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedTestCaseVideoVariableValue? NamedTestCaseVideoVariableValue { get; init; }
@@ -352,7 +352,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseVideoVariableValue))]
@@ -360,7 +360,7 @@ namespace Vellum
         public bool IsNamedTestCaseVideoVariableValue => NamedTestCaseVideoVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseVideoVariableValue(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseVideoVariableValue PickNamedTestCaseVideoVariableValue() => IsNamedTestCaseVideoVariableValue
             ? NamedTestCaseVideoVariableValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseVideoVariableValue' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedTestCaseImageVariableValue? NamedTestCaseImageVariableValue { get; init; }
@@ -389,7 +389,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseImageVariableValue))]
@@ -397,7 +397,7 @@ namespace Vellum
         public bool IsNamedTestCaseImageVariableValue => NamedTestCaseImageVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseImageVariableValue(
 #if NET6_0_OR_GREATER
@@ -410,14 +410,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseImageVariableValue PickNamedTestCaseImageVariableValue() => IsNamedTestCaseImageVariableValue
             ? NamedTestCaseImageVariableValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseImageVariableValue' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NamedTestCaseDocumentVariableValue? NamedTestCaseDocumentVariableValue { get; init; }
@@ -426,7 +426,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NamedTestCaseDocumentVariableValue))]
@@ -434,7 +434,7 @@ namespace Vellum
         public bool IsNamedTestCaseDocumentVariableValue => NamedTestCaseDocumentVariableValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNamedTestCaseDocumentVariableValue(
 #if NET6_0_OR_GREATER
@@ -447,23 +447,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NamedTestCaseDocumentVariableValue PickNamedTestCaseDocumentVariableValue() => IsNamedTestCaseDocumentVariableValue
             ? NamedTestCaseDocumentVariableValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseDocumentVariableValue' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseStringVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseStringVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseStringVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseStringVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseStringVariableValue? value)
         {
@@ -471,22 +471,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseStringVariableValue(global::Vellum.NamedTestCaseStringVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseNumberVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseNumberVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseNumberVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseNumberVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseNumberVariableValue? value)
         {
@@ -494,22 +494,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseNumberVariableValue(global::Vellum.NamedTestCaseNumberVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseJsonVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseJsonVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseJsonVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseJsonVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseJsonVariableValue? value)
         {
@@ -517,22 +517,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseJsonVariableValue(global::Vellum.NamedTestCaseJsonVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseChatHistoryVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseChatHistoryVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseChatHistoryVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseChatHistoryVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseChatHistoryVariableValue? value)
         {
@@ -540,22 +540,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseChatHistoryVariableValue(global::Vellum.NamedTestCaseChatHistoryVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseSearchResultsVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseSearchResultsVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseSearchResultsVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseSearchResultsVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseSearchResultsVariableValue? value)
         {
@@ -563,22 +563,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseSearchResultsVariableValue(global::Vellum.NamedTestCaseSearchResultsVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseErrorVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseErrorVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseErrorVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseErrorVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseErrorVariableValue? value)
         {
@@ -586,22 +586,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseErrorVariableValue(global::Vellum.NamedTestCaseErrorVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseFunctionCallVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseFunctionCallVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseFunctionCallVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseFunctionCallVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseFunctionCallVariableValue? value)
         {
@@ -609,22 +609,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseFunctionCallVariableValue(global::Vellum.NamedTestCaseFunctionCallVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseArrayVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseArrayVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseArrayVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseArrayVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseArrayVariableValue? value)
         {
@@ -632,22 +632,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseArrayVariableValue(global::Vellum.NamedTestCaseArrayVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseAudioVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseAudioVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseAudioVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseAudioVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseAudioVariableValue? value)
         {
@@ -655,22 +655,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseAudioVariableValue(global::Vellum.NamedTestCaseAudioVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseVideoVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseVideoVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseVideoVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseVideoVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseVideoVariableValue? value)
         {
@@ -678,22 +678,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseVideoVariableValue(global::Vellum.NamedTestCaseVideoVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseImageVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseImageVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseImageVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseImageVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseImageVariableValue? value)
         {
@@ -701,22 +701,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseImageVariableValue(global::Vellum.NamedTestCaseImageVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NamedTestCaseVariableValue(global::Vellum.NamedTestCaseDocumentVariableValue value) => new NamedTestCaseVariableValue((global::Vellum.NamedTestCaseDocumentVariableValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NamedTestCaseDocumentVariableValue?(NamedTestCaseVariableValue @this) => @this.NamedTestCaseDocumentVariableValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(global::Vellum.NamedTestCaseDocumentVariableValue? value)
         {
@@ -724,12 +724,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NamedTestCaseVariableValue FromNamedTestCaseDocumentVariableValue(global::Vellum.NamedTestCaseDocumentVariableValue? value) => new NamedTestCaseVariableValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NamedTestCaseVariableValue(
             global::Vellum.NamedTestCaseStringVariableValue? namedTestCaseStringVariableValue,
@@ -761,7 +761,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             NamedTestCaseDocumentVariableValue as object ??
@@ -775,11 +775,11 @@ namespace Vellum
             NamedTestCaseChatHistoryVariableValue as object ??
             NamedTestCaseJsonVariableValue as object ??
             NamedTestCaseNumberVariableValue as object ??
-            NamedTestCaseStringVariableValue as object 
+            NamedTestCaseStringVariableValue as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             NamedTestCaseStringVariableValue?.ToString() ??
@@ -793,11 +793,11 @@ namespace Vellum
             NamedTestCaseAudioVariableValue?.ToString() ??
             NamedTestCaseVideoVariableValue?.ToString() ??
             NamedTestCaseImageVariableValue?.ToString() ??
-            NamedTestCaseDocumentVariableValue?.ToString() 
+            NamedTestCaseDocumentVariableValue?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -805,7 +805,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.NamedTestCaseStringVariableValue, TResult>? namedTestCaseStringVariableValue = null,
@@ -880,7 +880,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.NamedTestCaseStringVariableValue>? namedTestCaseStringVariableValue = null,
@@ -964,7 +964,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.NamedTestCaseStringVariableValue>? namedTestCaseStringVariableValue = null,
@@ -1037,7 +1037,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1078,7 +1078,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(NamedTestCaseVariableValue other)
         {
@@ -1094,12 +1094,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedTestCaseAudioVariableValue?>.Default.Equals(NamedTestCaseAudioVariableValue, other.NamedTestCaseAudioVariableValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedTestCaseVideoVariableValue?>.Default.Equals(NamedTestCaseVideoVariableValue, other.NamedTestCaseVideoVariableValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedTestCaseImageVariableValue?>.Default.Equals(NamedTestCaseImageVariableValue, other.NamedTestCaseImageVariableValue) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedTestCaseDocumentVariableValue?>.Default.Equals(NamedTestCaseDocumentVariableValue, other.NamedTestCaseDocumentVariableValue) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.NamedTestCaseDocumentVariableValue?>.Default.Equals(NamedTestCaseDocumentVariableValue, other.NamedTestCaseDocumentVariableValue)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(NamedTestCaseVariableValue obj1, NamedTestCaseVariableValue obj2)
         {
@@ -1107,7 +1107,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(NamedTestCaseVariableValue obj1, NamedTestCaseVariableValue obj2)
         {
@@ -1115,7 +1115,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

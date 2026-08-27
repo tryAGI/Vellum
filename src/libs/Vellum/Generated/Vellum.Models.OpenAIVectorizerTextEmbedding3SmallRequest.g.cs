@@ -16,7 +16,7 @@ namespace Vellum
         public required global::Vellum.OpenAIVectorizerConfigRequest Config { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_name")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.TextEmbedding3SmallEnumJsonConverter))]

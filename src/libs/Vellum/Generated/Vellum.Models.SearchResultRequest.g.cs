@@ -4,7 +4,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SearchResultRequest
     {
@@ -23,7 +23,7 @@ namespace Vellum
         public required double Score { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keywords")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ParentContext : global::System.IEquatable<ParentContext>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowParentContext? WorkflowParentContext { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowParentContext))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowParentContext => WorkflowParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowParentContext(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowParentContext PickWorkflowParentContext() => IsWorkflowParentContext
             ? WorkflowParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeParentContext? NodeParentContext { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeParentContext))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNodeParentContext => NodeParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeParentContext(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeParentContext PickNodeParentContext() => IsNodeParentContext
             ? NodeParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowDeploymentParentContext? WorkflowDeploymentParentContext { get; init; }
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowDeploymentParentContext))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsWorkflowDeploymentParentContext => WorkflowDeploymentParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowDeploymentParentContext(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowDeploymentParentContext PickWorkflowDeploymentParentContext() => IsWorkflowDeploymentParentContext
             ? WorkflowDeploymentParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowDeploymentParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowSandboxParentContext? WorkflowSandboxParentContext { get; init; }
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowSandboxParentContext))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsWorkflowSandboxParentContext => WorkflowSandboxParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowSandboxParentContext(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowSandboxParentContext PickWorkflowSandboxParentContext() => IsWorkflowSandboxParentContext
             ? WorkflowSandboxParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowSandboxParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.PromptDeploymentParentContext? PromptDeploymentParentContext { get; init; }
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptDeploymentParentContext))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsPromptDeploymentParentContext => PromptDeploymentParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPromptDeploymentParentContext(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.PromptDeploymentParentContext PickPromptDeploymentParentContext() => IsPromptDeploymentParentContext
             ? PromptDeploymentParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptDeploymentParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.APIRequestParentContext? APIRequestParentContext { get; init; }
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(APIRequestParentContext))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsAPIRequestParentContext => APIRequestParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAPIRequestParentContext(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.APIRequestParentContext PickAPIRequestParentContext() => IsAPIRequestParentContext
             ? APIRequestParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'APIRequestParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.ExternalParentContext? ExternalParentContext { get; init; }
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExternalParentContext))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsExternalParentContext => ExternalParentContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExternalParentContext(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExternalParentContext PickExternalParentContext() => IsExternalParentContext
             ? ExternalParentContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExternalParentContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.ScheduledTriggerContext? ScheduledTriggerContext { get; init; }
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScheduledTriggerContext))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsScheduledTriggerContext => ScheduledTriggerContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickScheduledTriggerContext(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ScheduledTriggerContext PickScheduledTriggerContext() => IsScheduledTriggerContext
             ? ScheduledTriggerContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScheduledTriggerContext' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.IntegrationTriggerContext? IntegrationTriggerContext { get; init; }
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IntegrationTriggerContext))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsIntegrationTriggerContext => IntegrationTriggerContext != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickIntegrationTriggerContext(
 #if NET6_0_OR_GREATER
@@ -336,23 +336,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.IntegrationTriggerContext PickIntegrationTriggerContext() => IsIntegrationTriggerContext
             ? IntegrationTriggerContext!
             : throw new global::System.InvalidOperationException($"Expected union variant 'IntegrationTriggerContext' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.WorkflowParentContext value) => new ParentContext((global::Vellum.WorkflowParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowParentContext?(ParentContext @this) => @this.WorkflowParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.WorkflowParentContext? value)
         {
@@ -360,22 +360,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromWorkflowParentContext(global::Vellum.WorkflowParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.NodeParentContext value) => new ParentContext((global::Vellum.NodeParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeParentContext?(ParentContext @this) => @this.NodeParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.NodeParentContext? value)
         {
@@ -383,22 +383,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromNodeParentContext(global::Vellum.NodeParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.WorkflowDeploymentParentContext value) => new ParentContext((global::Vellum.WorkflowDeploymentParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowDeploymentParentContext?(ParentContext @this) => @this.WorkflowDeploymentParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.WorkflowDeploymentParentContext? value)
         {
@@ -406,22 +406,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromWorkflowDeploymentParentContext(global::Vellum.WorkflowDeploymentParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.WorkflowSandboxParentContext value) => new ParentContext((global::Vellum.WorkflowSandboxParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowSandboxParentContext?(ParentContext @this) => @this.WorkflowSandboxParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.WorkflowSandboxParentContext? value)
         {
@@ -429,22 +429,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromWorkflowSandboxParentContext(global::Vellum.WorkflowSandboxParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.PromptDeploymentParentContext value) => new ParentContext((global::Vellum.PromptDeploymentParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.PromptDeploymentParentContext?(ParentContext @this) => @this.PromptDeploymentParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.PromptDeploymentParentContext? value)
         {
@@ -452,22 +452,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromPromptDeploymentParentContext(global::Vellum.PromptDeploymentParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.APIRequestParentContext value) => new ParentContext((global::Vellum.APIRequestParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.APIRequestParentContext?(ParentContext @this) => @this.APIRequestParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.APIRequestParentContext? value)
         {
@@ -475,22 +475,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromAPIRequestParentContext(global::Vellum.APIRequestParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.ExternalParentContext value) => new ParentContext((global::Vellum.ExternalParentContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExternalParentContext?(ParentContext @this) => @this.ExternalParentContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.ExternalParentContext? value)
         {
@@ -498,22 +498,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromExternalParentContext(global::Vellum.ExternalParentContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.ScheduledTriggerContext value) => new ParentContext((global::Vellum.ScheduledTriggerContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ScheduledTriggerContext?(ParentContext @this) => @this.ScheduledTriggerContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.ScheduledTriggerContext? value)
         {
@@ -521,22 +521,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromScheduledTriggerContext(global::Vellum.ScheduledTriggerContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ParentContext(global::Vellum.IntegrationTriggerContext value) => new ParentContext((global::Vellum.IntegrationTriggerContext?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.IntegrationTriggerContext?(ParentContext @this) => @this.IntegrationTriggerContext;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(global::Vellum.IntegrationTriggerContext? value)
         {
@@ -544,12 +544,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ParentContext FromIntegrationTriggerContext(global::Vellum.IntegrationTriggerContext? value) => new ParentContext(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ParentContext(
             global::Vellum.WorkflowParentContext? workflowParentContext,
@@ -575,7 +575,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             IntegrationTriggerContext as object ??
@@ -586,11 +586,11 @@ namespace Vellum
             WorkflowSandboxParentContext as object ??
             WorkflowDeploymentParentContext as object ??
             NodeParentContext as object ??
-            WorkflowParentContext as object 
+            WorkflowParentContext as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowParentContext?.ToString() ??
@@ -601,11 +601,11 @@ namespace Vellum
             APIRequestParentContext?.ToString() ??
             ExternalParentContext?.ToString() ??
             ScheduledTriggerContext?.ToString() ??
-            IntegrationTriggerContext?.ToString() 
+            IntegrationTriggerContext?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -613,7 +613,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowParentContext, TResult>? workflowParentContext = null,
@@ -673,7 +673,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowParentContext>? workflowParentContext = null,
@@ -739,7 +739,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowParentContext>? workflowParentContext = null,
@@ -797,7 +797,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -832,7 +832,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ParentContext other)
         {
@@ -845,12 +845,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.APIRequestParentContext?>.Default.Equals(APIRequestParentContext, other.APIRequestParentContext) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ExternalParentContext?>.Default.Equals(ExternalParentContext, other.ExternalParentContext) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ScheduledTriggerContext?>.Default.Equals(ScheduledTriggerContext, other.ScheduledTriggerContext) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.IntegrationTriggerContext?>.Default.Equals(IntegrationTriggerContext, other.IntegrationTriggerContext) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.IntegrationTriggerContext?>.Default.Equals(IntegrationTriggerContext, other.IntegrationTriggerContext)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ParentContext obj1, ParentContext obj2)
         {
@@ -858,7 +858,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ParentContext obj1, ParentContext obj2)
         {
@@ -866,7 +866,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

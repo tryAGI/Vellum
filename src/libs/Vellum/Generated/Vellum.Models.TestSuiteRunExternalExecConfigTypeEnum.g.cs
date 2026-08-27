@@ -9,7 +9,7 @@ namespace Vellum
     public enum TestSuiteRunExternalExecConfigTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
     }

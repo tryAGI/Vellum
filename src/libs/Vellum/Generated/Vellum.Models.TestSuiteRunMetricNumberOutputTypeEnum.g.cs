@@ -9,7 +9,7 @@ namespace Vellum
     public enum TestSuiteRunMetricNumberOutputTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Number,
     }

@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct WorkflowEvent : global::System.IEquatable<WorkflowEvent>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionInitiatedEvent? NodeExecutionInitiatedEvent { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionInitiatedEvent))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsNodeExecutionInitiatedEvent => NodeExecutionInitiatedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionInitiatedEvent(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionInitiatedEvent PickNodeExecutionInitiatedEvent() => IsNodeExecutionInitiatedEvent
             ? NodeExecutionInitiatedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionInitiatedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionStreamingEvent? NodeExecutionStreamingEvent { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionStreamingEvent))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNodeExecutionStreamingEvent => NodeExecutionStreamingEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionStreamingEvent(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionStreamingEvent PickNodeExecutionStreamingEvent() => IsNodeExecutionStreamingEvent
             ? NodeExecutionStreamingEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionStreamingEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionFulfilledEvent? NodeExecutionFulfilledEvent { get; init; }
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionFulfilledEvent))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsNodeExecutionFulfilledEvent => NodeExecutionFulfilledEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionFulfilledEvent(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionFulfilledEvent PickNodeExecutionFulfilledEvent() => IsNodeExecutionFulfilledEvent
             ? NodeExecutionFulfilledEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionFulfilledEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionRejectedEvent? NodeExecutionRejectedEvent { get; init; }
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionRejectedEvent))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsNodeExecutionRejectedEvent => NodeExecutionRejectedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionRejectedEvent(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionRejectedEvent PickNodeExecutionRejectedEvent() => IsNodeExecutionRejectedEvent
             ? NodeExecutionRejectedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionRejectedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionPausedEvent? NodeExecutionPausedEvent { get; init; }
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionPausedEvent))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsNodeExecutionPausedEvent => NodeExecutionPausedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionPausedEvent(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionPausedEvent PickNodeExecutionPausedEvent() => IsNodeExecutionPausedEvent
             ? NodeExecutionPausedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionPausedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionResumedEvent? NodeExecutionResumedEvent { get; init; }
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionResumedEvent))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsNodeExecutionResumedEvent => NodeExecutionResumedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionResumedEvent(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionResumedEvent PickNodeExecutionResumedEvent() => IsNodeExecutionResumedEvent
             ? NodeExecutionResumedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionResumedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.NodeExecutionLogEvent? NodeExecutionLogEvent { get; init; }
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeExecutionLogEvent))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsNodeExecutionLogEvent => NodeExecutionLogEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeExecutionLogEvent(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeExecutionLogEvent PickNodeExecutionLogEvent() => IsNodeExecutionLogEvent
             ? NodeExecutionLogEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionLogEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionInitiatedEvent? WorkflowExecutionInitiatedEvent { get; init; }
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionInitiatedEvent))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsWorkflowExecutionInitiatedEvent => WorkflowExecutionInitiatedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionInitiatedEvent(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionInitiatedEvent PickWorkflowExecutionInitiatedEvent() => IsWorkflowExecutionInitiatedEvent
             ? WorkflowExecutionInitiatedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionInitiatedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionStreamingEvent? WorkflowExecutionStreamingEvent { get; init; }
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionStreamingEvent))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsWorkflowExecutionStreamingEvent => WorkflowExecutionStreamingEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionStreamingEvent(
 #if NET6_0_OR_GREATER
@@ -336,14 +336,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionStreamingEvent PickWorkflowExecutionStreamingEvent() => IsWorkflowExecutionStreamingEvent
             ? WorkflowExecutionStreamingEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionStreamingEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionRejectedEvent? WorkflowExecutionRejectedEvent { get; init; }
@@ -352,7 +352,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionRejectedEvent))]
@@ -360,7 +360,7 @@ namespace Vellum
         public bool IsWorkflowExecutionRejectedEvent => WorkflowExecutionRejectedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionRejectedEvent(
 #if NET6_0_OR_GREATER
@@ -373,14 +373,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionRejectedEvent PickWorkflowExecutionRejectedEvent() => IsWorkflowExecutionRejectedEvent
             ? WorkflowExecutionRejectedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionRejectedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionFulfilledEvent? WorkflowExecutionFulfilledEvent { get; init; }
@@ -389,7 +389,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionFulfilledEvent))]
@@ -397,7 +397,7 @@ namespace Vellum
         public bool IsWorkflowExecutionFulfilledEvent => WorkflowExecutionFulfilledEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionFulfilledEvent(
 #if NET6_0_OR_GREATER
@@ -410,14 +410,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionFulfilledEvent PickWorkflowExecutionFulfilledEvent() => IsWorkflowExecutionFulfilledEvent
             ? WorkflowExecutionFulfilledEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionFulfilledEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionPausedEvent? WorkflowExecutionPausedEvent { get; init; }
@@ -426,7 +426,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionPausedEvent))]
@@ -434,7 +434,7 @@ namespace Vellum
         public bool IsWorkflowExecutionPausedEvent => WorkflowExecutionPausedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionPausedEvent(
 #if NET6_0_OR_GREATER
@@ -447,14 +447,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionPausedEvent PickWorkflowExecutionPausedEvent() => IsWorkflowExecutionPausedEvent
             ? WorkflowExecutionPausedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionPausedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionResumedEvent? WorkflowExecutionResumedEvent { get; init; }
@@ -463,7 +463,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionResumedEvent))]
@@ -471,7 +471,7 @@ namespace Vellum
         public bool IsWorkflowExecutionResumedEvent => WorkflowExecutionResumedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionResumedEvent(
 #if NET6_0_OR_GREATER
@@ -484,14 +484,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionResumedEvent PickWorkflowExecutionResumedEvent() => IsWorkflowExecutionResumedEvent
             ? WorkflowExecutionResumedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionResumedEvent' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionSnapshottedEvent? WorkflowExecutionSnapshottedEvent { get; init; }
@@ -500,7 +500,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionSnapshottedEvent))]
@@ -508,7 +508,7 @@ namespace Vellum
         public bool IsWorkflowExecutionSnapshottedEvent => WorkflowExecutionSnapshottedEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionSnapshottedEvent(
 #if NET6_0_OR_GREATER
@@ -521,23 +521,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionSnapshottedEvent PickWorkflowExecutionSnapshottedEvent() => IsWorkflowExecutionSnapshottedEvent
             ? WorkflowExecutionSnapshottedEvent!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionSnapshottedEvent' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionInitiatedEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionInitiatedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionInitiatedEvent?(WorkflowEvent @this) => @this.NodeExecutionInitiatedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionInitiatedEvent? value)
         {
@@ -545,22 +545,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionInitiatedEvent(global::Vellum.NodeExecutionInitiatedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionStreamingEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionStreamingEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionStreamingEvent?(WorkflowEvent @this) => @this.NodeExecutionStreamingEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionStreamingEvent? value)
         {
@@ -568,22 +568,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionStreamingEvent(global::Vellum.NodeExecutionStreamingEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionFulfilledEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionFulfilledEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionFulfilledEvent?(WorkflowEvent @this) => @this.NodeExecutionFulfilledEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionFulfilledEvent? value)
         {
@@ -591,22 +591,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionFulfilledEvent(global::Vellum.NodeExecutionFulfilledEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionRejectedEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionRejectedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionRejectedEvent?(WorkflowEvent @this) => @this.NodeExecutionRejectedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionRejectedEvent? value)
         {
@@ -614,22 +614,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionRejectedEvent(global::Vellum.NodeExecutionRejectedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionPausedEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionPausedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionPausedEvent?(WorkflowEvent @this) => @this.NodeExecutionPausedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionPausedEvent? value)
         {
@@ -637,22 +637,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionPausedEvent(global::Vellum.NodeExecutionPausedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionResumedEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionResumedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionResumedEvent?(WorkflowEvent @this) => @this.NodeExecutionResumedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionResumedEvent? value)
         {
@@ -660,22 +660,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionResumedEvent(global::Vellum.NodeExecutionResumedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.NodeExecutionLogEvent value) => new WorkflowEvent((global::Vellum.NodeExecutionLogEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeExecutionLogEvent?(WorkflowEvent @this) => @this.NodeExecutionLogEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.NodeExecutionLogEvent? value)
         {
@@ -683,22 +683,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromNodeExecutionLogEvent(global::Vellum.NodeExecutionLogEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionInitiatedEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionInitiatedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionInitiatedEvent?(WorkflowEvent @this) => @this.WorkflowExecutionInitiatedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionInitiatedEvent? value)
         {
@@ -706,22 +706,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionInitiatedEvent(global::Vellum.WorkflowExecutionInitiatedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionStreamingEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionStreamingEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionStreamingEvent?(WorkflowEvent @this) => @this.WorkflowExecutionStreamingEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionStreamingEvent? value)
         {
@@ -729,22 +729,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionStreamingEvent(global::Vellum.WorkflowExecutionStreamingEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionRejectedEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionRejectedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionRejectedEvent?(WorkflowEvent @this) => @this.WorkflowExecutionRejectedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionRejectedEvent? value)
         {
@@ -752,22 +752,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionRejectedEvent(global::Vellum.WorkflowExecutionRejectedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionFulfilledEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionFulfilledEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionFulfilledEvent?(WorkflowEvent @this) => @this.WorkflowExecutionFulfilledEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionFulfilledEvent? value)
         {
@@ -775,22 +775,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionFulfilledEvent(global::Vellum.WorkflowExecutionFulfilledEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionPausedEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionPausedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionPausedEvent?(WorkflowEvent @this) => @this.WorkflowExecutionPausedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionPausedEvent? value)
         {
@@ -798,22 +798,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionPausedEvent(global::Vellum.WorkflowExecutionPausedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionResumedEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionResumedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionResumedEvent?(WorkflowEvent @this) => @this.WorkflowExecutionResumedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionResumedEvent? value)
         {
@@ -821,22 +821,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionResumedEvent(global::Vellum.WorkflowExecutionResumedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEvent(global::Vellum.WorkflowExecutionSnapshottedEvent value) => new WorkflowEvent((global::Vellum.WorkflowExecutionSnapshottedEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionSnapshottedEvent?(WorkflowEvent @this) => @this.WorkflowExecutionSnapshottedEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(global::Vellum.WorkflowExecutionSnapshottedEvent? value)
         {
@@ -844,12 +844,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEvent FromWorkflowExecutionSnapshottedEvent(global::Vellum.WorkflowExecutionSnapshottedEvent? value) => new WorkflowEvent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEvent(
             global::Vellum.NodeExecutionInitiatedEvent? nodeExecutionInitiatedEvent,
@@ -885,7 +885,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowExecutionSnapshottedEvent as object ??
@@ -901,11 +901,11 @@ namespace Vellum
             NodeExecutionRejectedEvent as object ??
             NodeExecutionFulfilledEvent as object ??
             NodeExecutionStreamingEvent as object ??
-            NodeExecutionInitiatedEvent as object 
+            NodeExecutionInitiatedEvent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             NodeExecutionInitiatedEvent?.ToString() ??
@@ -921,11 +921,11 @@ namespace Vellum
             WorkflowExecutionFulfilledEvent?.ToString() ??
             WorkflowExecutionPausedEvent?.ToString() ??
             WorkflowExecutionResumedEvent?.ToString() ??
-            WorkflowExecutionSnapshottedEvent?.ToString() 
+            WorkflowExecutionSnapshottedEvent?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -933,7 +933,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.NodeExecutionInitiatedEvent, TResult>? nodeExecutionInitiatedEvent = null,
@@ -1018,7 +1018,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.NodeExecutionInitiatedEvent>? nodeExecutionInitiatedEvent = null,
@@ -1114,7 +1114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.NodeExecutionInitiatedEvent>? nodeExecutionInitiatedEvent = null,
@@ -1197,7 +1197,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1242,7 +1242,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkflowEvent other)
         {
@@ -1260,12 +1260,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionFulfilledEvent?>.Default.Equals(WorkflowExecutionFulfilledEvent, other.WorkflowExecutionFulfilledEvent) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionPausedEvent?>.Default.Equals(WorkflowExecutionPausedEvent, other.WorkflowExecutionPausedEvent) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionResumedEvent?>.Default.Equals(WorkflowExecutionResumedEvent, other.WorkflowExecutionResumedEvent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionSnapshottedEvent?>.Default.Equals(WorkflowExecutionSnapshottedEvent, other.WorkflowExecutionSnapshottedEvent) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionSnapshottedEvent?>.Default.Equals(WorkflowExecutionSnapshottedEvent, other.WorkflowExecutionSnapshottedEvent)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkflowEvent obj1, WorkflowEvent obj2)
         {
@@ -1273,7 +1273,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkflowEvent obj1, WorkflowEvent obj2)
         {
@@ -1281,7 +1281,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

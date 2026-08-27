@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct WorkflowResultEventOutputData : global::System.IEquatable<WorkflowResultEventOutputData>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataString))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataString => WorkflowResultEventOutputDataString != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataString(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataString PickWorkflowResultEventOutputDataString() => IsWorkflowResultEventOutputDataString
             ? WorkflowResultEventOutputDataString!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataNumber))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataNumber => WorkflowResultEventOutputDataNumber != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataNumber(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataNumber PickWorkflowResultEventOutputDataNumber() => IsWorkflowResultEventOutputDataNumber
             ? WorkflowResultEventOutputDataNumber!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataJSON))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataJSON => WorkflowResultEventOutputDataJSON != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataJSON(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataJSON PickWorkflowResultEventOutputDataJSON() => IsWorkflowResultEventOutputDataJSON
             ? WorkflowResultEventOutputDataJSON!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataChatHistory))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataChatHistory => WorkflowResultEventOutputDataChatHistory != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataChatHistory(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataChatHistory PickWorkflowResultEventOutputDataChatHistory() => IsWorkflowResultEventOutputDataChatHistory
             ? WorkflowResultEventOutputDataChatHistory!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataSearchResults))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataSearchResults => WorkflowResultEventOutputDataSearchResults != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataSearchResults(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataSearchResults PickWorkflowResultEventOutputDataSearchResults() => IsWorkflowResultEventOutputDataSearchResults
             ? WorkflowResultEventOutputDataSearchResults!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataArray))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataArray => WorkflowResultEventOutputDataArray != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataArray(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataArray PickWorkflowResultEventOutputDataArray() => IsWorkflowResultEventOutputDataArray
             ? WorkflowResultEventOutputDataArray!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataFunctionCall))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataFunctionCall => WorkflowResultEventOutputDataFunctionCall != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataFunctionCall(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataFunctionCall PickWorkflowResultEventOutputDataFunctionCall() => IsWorkflowResultEventOutputDataFunctionCall
             ? WorkflowResultEventOutputDataFunctionCall!
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowResultEventOutputDataError))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsWorkflowResultEventOutputDataError => WorkflowResultEventOutputDataError != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowResultEventOutputDataError(
 #if NET6_0_OR_GREATER
@@ -299,23 +299,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowResultEventOutputDataError PickWorkflowResultEventOutputDataError() => IsWorkflowResultEventOutputDataError
             ? WorkflowResultEventOutputDataError!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataError' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataString value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataString?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataString?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataString;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataString? value)
         {
@@ -323,22 +323,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataString(global::Vellum.WorkflowResultEventOutputDataString? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataNumber value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataNumber?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataNumber?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataNumber;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataNumber? value)
         {
@@ -346,22 +346,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataNumber(global::Vellum.WorkflowResultEventOutputDataNumber? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataJSON value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataJSON?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataJSON?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataJSON;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataJSON? value)
         {
@@ -369,22 +369,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataJSON(global::Vellum.WorkflowResultEventOutputDataJSON? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataChatHistory value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataChatHistory?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataChatHistory?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataChatHistory;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataChatHistory? value)
         {
@@ -392,22 +392,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataChatHistory(global::Vellum.WorkflowResultEventOutputDataChatHistory? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataSearchResults value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataSearchResults?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataSearchResults?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataSearchResults;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataSearchResults? value)
         {
@@ -415,22 +415,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataSearchResults(global::Vellum.WorkflowResultEventOutputDataSearchResults? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataArray value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataArray?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataArray?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataArray;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataArray? value)
         {
@@ -438,22 +438,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataArray(global::Vellum.WorkflowResultEventOutputDataArray? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataFunctionCall value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataFunctionCall?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataFunctionCall?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataFunctionCall;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataFunctionCall? value)
         {
@@ -461,22 +461,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataFunctionCall(global::Vellum.WorkflowResultEventOutputDataFunctionCall? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataError value) => new WorkflowResultEventOutputData((global::Vellum.WorkflowResultEventOutputDataError?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowResultEventOutputDataError?(WorkflowResultEventOutputData @this) => @this.WorkflowResultEventOutputDataError;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(global::Vellum.WorkflowResultEventOutputDataError? value)
         {
@@ -484,12 +484,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowResultEventOutputData FromWorkflowResultEventOutputDataError(global::Vellum.WorkflowResultEventOutputDataError? value) => new WorkflowResultEventOutputData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowResultEventOutputData(
             global::Vellum.WorkflowResultEventOutputDataString? workflowResultEventOutputDataString,
@@ -513,7 +513,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowResultEventOutputDataError as object ??
@@ -523,11 +523,11 @@ namespace Vellum
             WorkflowResultEventOutputDataChatHistory as object ??
             WorkflowResultEventOutputDataJSON as object ??
             WorkflowResultEventOutputDataNumber as object ??
-            WorkflowResultEventOutputDataString as object 
+            WorkflowResultEventOutputDataString as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowResultEventOutputDataString?.ToString() ??
@@ -537,11 +537,11 @@ namespace Vellum
             WorkflowResultEventOutputDataSearchResults?.ToString() ??
             WorkflowResultEventOutputDataArray?.ToString() ??
             WorkflowResultEventOutputDataFunctionCall?.ToString() ??
-            WorkflowResultEventOutputDataError?.ToString() 
+            WorkflowResultEventOutputDataError?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -549,7 +549,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowResultEventOutputDataString, TResult>? workflowResultEventOutputDataString = null,
@@ -604,7 +604,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowResultEventOutputDataString>? workflowResultEventOutputDataString = null,
@@ -664,7 +664,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowResultEventOutputDataString>? workflowResultEventOutputDataString = null,
@@ -717,7 +717,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -750,7 +750,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkflowResultEventOutputData other)
         {
@@ -762,12 +762,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowResultEventOutputDataSearchResults?>.Default.Equals(WorkflowResultEventOutputDataSearchResults, other.WorkflowResultEventOutputDataSearchResults) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowResultEventOutputDataArray?>.Default.Equals(WorkflowResultEventOutputDataArray, other.WorkflowResultEventOutputDataArray) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowResultEventOutputDataFunctionCall?>.Default.Equals(WorkflowResultEventOutputDataFunctionCall, other.WorkflowResultEventOutputDataFunctionCall) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowResultEventOutputDataError?>.Default.Equals(WorkflowResultEventOutputDataError, other.WorkflowResultEventOutputDataError) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowResultEventOutputDataError?>.Default.Equals(WorkflowResultEventOutputDataError, other.WorkflowResultEventOutputDataError)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkflowResultEventOutputData obj1, WorkflowResultEventOutputData obj2)
         {
@@ -775,7 +775,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkflowResultEventOutputData obj1, WorkflowResultEventOutputData obj2)
         {
@@ -783,7 +783,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

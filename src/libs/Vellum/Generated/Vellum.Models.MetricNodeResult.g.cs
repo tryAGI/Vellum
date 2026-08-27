@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class MetricNodeResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.MetricEnumJsonConverter))]

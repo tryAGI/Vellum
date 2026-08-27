@@ -13,23 +13,23 @@ namespace Vellum
     public enum ApiActorTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anonymous,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvironmentApiKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jwt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ServiceToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkspaceApiKey,
     }

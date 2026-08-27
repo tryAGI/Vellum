@@ -11,15 +11,15 @@ namespace Vellum
     public enum FinishReasonEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Length,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
     }

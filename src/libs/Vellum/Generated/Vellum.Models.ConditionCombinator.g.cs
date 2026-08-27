@@ -10,11 +10,11 @@ namespace Vellum
     public enum ConditionCombinator
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         And,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Or,
     }

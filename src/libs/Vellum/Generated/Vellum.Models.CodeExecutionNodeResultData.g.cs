@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CodeExecutionNodeResultData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.CodeExecutionNodeResultOutputJsonConverter))]
@@ -17,7 +17,7 @@ namespace Vellum
         public required global::Vellum.CodeExecutionNodeResultOutput Output { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("log_output_id")]
         public string? LogOutputId { get; set; }

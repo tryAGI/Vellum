@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct TestSuiteRunMetricOutput : global::System.IEquatable<TestSuiteRunMetricOutput>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunMetricStringOutput))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsTestSuiteRunMetricStringOutput => TestSuiteRunMetricStringOutput != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteRunMetricStringOutput(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteRunMetricStringOutput PickTestSuiteRunMetricStringOutput() => IsTestSuiteRunMetricStringOutput
             ? TestSuiteRunMetricStringOutput!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunMetricNumberOutput))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsTestSuiteRunMetricNumberOutput => TestSuiteRunMetricNumberOutput != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteRunMetricNumberOutput(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteRunMetricNumberOutput PickTestSuiteRunMetricNumberOutput() => IsTestSuiteRunMetricNumberOutput
             ? TestSuiteRunMetricNumberOutput!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunMetricJSONOutput))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsTestSuiteRunMetricJSONOutput => TestSuiteRunMetricJSONOutput != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteRunMetricJSONOutput(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteRunMetricJSONOutput PickTestSuiteRunMetricJSONOutput() => IsTestSuiteRunMetricJSONOutput
             ? TestSuiteRunMetricJSONOutput!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunMetricErrorOutput))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsTestSuiteRunMetricErrorOutput => TestSuiteRunMetricErrorOutput != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteRunMetricErrorOutput(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteRunMetricErrorOutput PickTestSuiteRunMetricErrorOutput() => IsTestSuiteRunMetricErrorOutput
             ? TestSuiteRunMetricErrorOutput!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TestSuiteRunMetricArrayOutput))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsTestSuiteRunMetricArrayOutput => TestSuiteRunMetricArrayOutput != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTestSuiteRunMetricArrayOutput(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TestSuiteRunMetricArrayOutput PickTestSuiteRunMetricArrayOutput() => IsTestSuiteRunMetricArrayOutput
             ? TestSuiteRunMetricArrayOutput!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricArrayOutput' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricStringOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricStringOutput?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteRunMetricStringOutput?(TestSuiteRunMetricOutput @this) => @this.TestSuiteRunMetricStringOutput;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricStringOutput? value)
         {
@@ -212,22 +212,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteRunMetricOutput FromTestSuiteRunMetricStringOutput(global::Vellum.TestSuiteRunMetricStringOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricNumberOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricNumberOutput?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteRunMetricNumberOutput?(TestSuiteRunMetricOutput @this) => @this.TestSuiteRunMetricNumberOutput;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricNumberOutput? value)
         {
@@ -235,22 +235,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteRunMetricOutput FromTestSuiteRunMetricNumberOutput(global::Vellum.TestSuiteRunMetricNumberOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricJSONOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricJSONOutput?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteRunMetricJSONOutput?(TestSuiteRunMetricOutput @this) => @this.TestSuiteRunMetricJSONOutput;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricJSONOutput? value)
         {
@@ -258,22 +258,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteRunMetricOutput FromTestSuiteRunMetricJSONOutput(global::Vellum.TestSuiteRunMetricJSONOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricErrorOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricErrorOutput?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteRunMetricErrorOutput?(TestSuiteRunMetricOutput @this) => @this.TestSuiteRunMetricErrorOutput;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricErrorOutput? value)
         {
@@ -281,22 +281,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteRunMetricOutput FromTestSuiteRunMetricErrorOutput(global::Vellum.TestSuiteRunMetricErrorOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricArrayOutput value) => new TestSuiteRunMetricOutput((global::Vellum.TestSuiteRunMetricArrayOutput?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TestSuiteRunMetricArrayOutput?(TestSuiteRunMetricOutput @this) => @this.TestSuiteRunMetricArrayOutput;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunMetricOutput(global::Vellum.TestSuiteRunMetricArrayOutput? value)
         {
@@ -304,12 +304,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TestSuiteRunMetricOutput FromTestSuiteRunMetricArrayOutput(global::Vellum.TestSuiteRunMetricArrayOutput? value) => new TestSuiteRunMetricOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestSuiteRunMetricOutput(
             global::Vellum.TestSuiteRunMetricStringOutput? testSuiteRunMetricStringOutput,
@@ -327,29 +327,29 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TestSuiteRunMetricArrayOutput as object ??
             TestSuiteRunMetricErrorOutput as object ??
             TestSuiteRunMetricJSONOutput as object ??
             TestSuiteRunMetricNumberOutput as object ??
-            TestSuiteRunMetricStringOutput as object 
+            TestSuiteRunMetricStringOutput as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TestSuiteRunMetricStringOutput?.ToString() ??
             TestSuiteRunMetricNumberOutput?.ToString() ??
             TestSuiteRunMetricJSONOutput?.ToString() ??
             TestSuiteRunMetricErrorOutput?.ToString() ??
-            TestSuiteRunMetricArrayOutput?.ToString() 
+            TestSuiteRunMetricArrayOutput?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.TestSuiteRunMetricStringOutput, TResult>? testSuiteRunMetricStringOutput = null,
@@ -397,7 +397,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.TestSuiteRunMetricStringOutput>? testSuiteRunMetricStringOutput = null,
@@ -439,7 +439,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.TestSuiteRunMetricStringOutput>? testSuiteRunMetricStringOutput = null,
@@ -477,7 +477,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TestSuiteRunMetricOutput other)
         {
@@ -513,12 +513,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteRunMetricNumberOutput?>.Default.Equals(TestSuiteRunMetricNumberOutput, other.TestSuiteRunMetricNumberOutput) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteRunMetricJSONOutput?>.Default.Equals(TestSuiteRunMetricJSONOutput, other.TestSuiteRunMetricJSONOutput) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteRunMetricErrorOutput?>.Default.Equals(TestSuiteRunMetricErrorOutput, other.TestSuiteRunMetricErrorOutput) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteRunMetricArrayOutput?>.Default.Equals(TestSuiteRunMetricArrayOutput, other.TestSuiteRunMetricArrayOutput) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.TestSuiteRunMetricArrayOutput?>.Default.Equals(TestSuiteRunMetricArrayOutput, other.TestSuiteRunMetricArrayOutput)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TestSuiteRunMetricOutput obj1, TestSuiteRunMetricOutput obj2)
         {
@@ -526,7 +526,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TestSuiteRunMetricOutput obj1, TestSuiteRunMetricOutput obj2)
         {
@@ -534,7 +534,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -9,7 +9,7 @@ namespace Vellum
     public enum TestSuiteRunMetricJSONOutputTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
     }

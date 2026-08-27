@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class PrivateVectorizer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_name")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.PrivateVectorizerEnumJsonConverter))]

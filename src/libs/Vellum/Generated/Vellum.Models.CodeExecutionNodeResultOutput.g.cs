@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CodeExecutionNodeResultOutput : global::System.IEquatable<CodeExecutionNodeResultOutput>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeStringResult? CodeExecutionNodeStringResult { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeStringResult))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeStringResult => CodeExecutionNodeStringResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeStringResult(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeStringResult PickCodeExecutionNodeStringResult() => IsCodeExecutionNodeStringResult
             ? CodeExecutionNodeStringResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeStringResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeNumberResult? CodeExecutionNodeNumberResult { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeNumberResult))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeNumberResult => CodeExecutionNodeNumberResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeNumberResult(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeNumberResult PickCodeExecutionNodeNumberResult() => IsCodeExecutionNodeNumberResult
             ? CodeExecutionNodeNumberResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeJsonResult? CodeExecutionNodeJsonResult { get; init; }
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeJsonResult))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeJsonResult => CodeExecutionNodeJsonResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeJsonResult(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeJsonResult PickCodeExecutionNodeJsonResult() => IsCodeExecutionNodeJsonResult
             ? CodeExecutionNodeJsonResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeJsonResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeChatHistoryResult? CodeExecutionNodeChatHistoryResult { get; init; }
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeChatHistoryResult))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeChatHistoryResult => CodeExecutionNodeChatHistoryResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeChatHistoryResult(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeChatHistoryResult PickCodeExecutionNodeChatHistoryResult() => IsCodeExecutionNodeChatHistoryResult
             ? CodeExecutionNodeChatHistoryResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeSearchResultsResult? CodeExecutionNodeSearchResultsResult { get; init; }
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeSearchResultsResult))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeSearchResultsResult => CodeExecutionNodeSearchResultsResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeSearchResultsResult(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeSearchResultsResult PickCodeExecutionNodeSearchResultsResult() => IsCodeExecutionNodeSearchResultsResult
             ? CodeExecutionNodeSearchResultsResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeSearchResultsResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeErrorResult? CodeExecutionNodeErrorResult { get; init; }
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeErrorResult))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeErrorResult => CodeExecutionNodeErrorResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeErrorResult(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeErrorResult PickCodeExecutionNodeErrorResult() => IsCodeExecutionNodeErrorResult
             ? CodeExecutionNodeErrorResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeArrayResult? CodeExecutionNodeArrayResult { get; init; }
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeArrayResult))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeArrayResult => CodeExecutionNodeArrayResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeArrayResult(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeArrayResult PickCodeExecutionNodeArrayResult() => IsCodeExecutionNodeArrayResult
             ? CodeExecutionNodeArrayResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeArrayResult' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.CodeExecutionNodeFunctionCallResult? CodeExecutionNodeFunctionCallResult { get; init; }
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CodeExecutionNodeFunctionCallResult))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsCodeExecutionNodeFunctionCallResult => CodeExecutionNodeFunctionCallResult != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCodeExecutionNodeFunctionCallResult(
 #if NET6_0_OR_GREATER
@@ -299,23 +299,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.CodeExecutionNodeFunctionCallResult PickCodeExecutionNodeFunctionCallResult() => IsCodeExecutionNodeFunctionCallResult
             ? CodeExecutionNodeFunctionCallResult!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeStringResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeStringResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeStringResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeStringResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeStringResult? value)
         {
@@ -323,22 +323,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeStringResult(global::Vellum.CodeExecutionNodeStringResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeNumberResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeNumberResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeNumberResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeNumberResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeNumberResult? value)
         {
@@ -346,22 +346,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeNumberResult(global::Vellum.CodeExecutionNodeNumberResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeJsonResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeJsonResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeJsonResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeJsonResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeJsonResult? value)
         {
@@ -369,22 +369,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeJsonResult(global::Vellum.CodeExecutionNodeJsonResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeChatHistoryResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeChatHistoryResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeChatHistoryResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeChatHistoryResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeChatHistoryResult? value)
         {
@@ -392,22 +392,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeChatHistoryResult(global::Vellum.CodeExecutionNodeChatHistoryResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeSearchResultsResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeSearchResultsResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeSearchResultsResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeSearchResultsResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeSearchResultsResult? value)
         {
@@ -415,22 +415,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeSearchResultsResult(global::Vellum.CodeExecutionNodeSearchResultsResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeErrorResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeErrorResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeErrorResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeErrorResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeErrorResult? value)
         {
@@ -438,22 +438,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeErrorResult(global::Vellum.CodeExecutionNodeErrorResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeArrayResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeArrayResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeArrayResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeArrayResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeArrayResult? value)
         {
@@ -461,22 +461,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeArrayResult(global::Vellum.CodeExecutionNodeArrayResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeFunctionCallResult value) => new CodeExecutionNodeResultOutput((global::Vellum.CodeExecutionNodeFunctionCallResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.CodeExecutionNodeFunctionCallResult?(CodeExecutionNodeResultOutput @this) => @this.CodeExecutionNodeFunctionCallResult;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(global::Vellum.CodeExecutionNodeFunctionCallResult? value)
         {
@@ -484,12 +484,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CodeExecutionNodeResultOutput FromCodeExecutionNodeFunctionCallResult(global::Vellum.CodeExecutionNodeFunctionCallResult? value) => new CodeExecutionNodeResultOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CodeExecutionNodeResultOutput(
             global::Vellum.CodeExecutionNodeStringResult? codeExecutionNodeStringResult,
@@ -513,7 +513,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             CodeExecutionNodeFunctionCallResult as object ??
@@ -523,11 +523,11 @@ namespace Vellum
             CodeExecutionNodeChatHistoryResult as object ??
             CodeExecutionNodeJsonResult as object ??
             CodeExecutionNodeNumberResult as object ??
-            CodeExecutionNodeStringResult as object 
+            CodeExecutionNodeStringResult as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CodeExecutionNodeStringResult?.ToString() ??
@@ -537,11 +537,11 @@ namespace Vellum
             CodeExecutionNodeSearchResultsResult?.ToString() ??
             CodeExecutionNodeErrorResult?.ToString() ??
             CodeExecutionNodeArrayResult?.ToString() ??
-            CodeExecutionNodeFunctionCallResult?.ToString() 
+            CodeExecutionNodeFunctionCallResult?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -549,7 +549,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.CodeExecutionNodeStringResult, TResult>? codeExecutionNodeStringResult = null,
@@ -604,7 +604,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.CodeExecutionNodeStringResult>? codeExecutionNodeStringResult = null,
@@ -664,7 +664,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.CodeExecutionNodeStringResult>? codeExecutionNodeStringResult = null,
@@ -717,7 +717,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -750,7 +750,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CodeExecutionNodeResultOutput other)
         {
@@ -762,12 +762,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.CodeExecutionNodeSearchResultsResult?>.Default.Equals(CodeExecutionNodeSearchResultsResult, other.CodeExecutionNodeSearchResultsResult) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.CodeExecutionNodeErrorResult?>.Default.Equals(CodeExecutionNodeErrorResult, other.CodeExecutionNodeErrorResult) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.CodeExecutionNodeArrayResult?>.Default.Equals(CodeExecutionNodeArrayResult, other.CodeExecutionNodeArrayResult) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.CodeExecutionNodeFunctionCallResult?>.Default.Equals(CodeExecutionNodeFunctionCallResult, other.CodeExecutionNodeFunctionCallResult) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.CodeExecutionNodeFunctionCallResult?>.Default.Equals(CodeExecutionNodeFunctionCallResult, other.CodeExecutionNodeFunctionCallResult)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CodeExecutionNodeResultOutput obj1, CodeExecutionNodeResultOutput obj2)
         {
@@ -775,7 +775,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CodeExecutionNodeResultOutput obj1, CodeExecutionNodeResultOutput obj2)
         {
@@ -783,7 +783,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

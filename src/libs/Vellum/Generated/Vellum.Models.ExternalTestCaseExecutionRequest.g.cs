@@ -4,7 +4,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExternalTestCaseExecutionRequest
     {
@@ -16,7 +16,7 @@ namespace Vellum
         public required global::System.Collections.Generic.IList<global::Vellum.NamedTestCaseVariableValueRequest> Outputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("test_case_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

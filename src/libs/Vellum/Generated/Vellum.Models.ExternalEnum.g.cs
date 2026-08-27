@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExternalEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
     }

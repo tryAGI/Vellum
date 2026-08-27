@@ -9,14 +9,14 @@ namespace Vellum
     public sealed partial class VellumValueLogicalConditionGroupRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.LogicalConditionGroupEnumJsonConverter))]
         public global::Vellum.LogicalConditionGroupEnum Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,7 +32,7 @@ namespace Vellum
         public required global::Vellum.ConditionCombinator Combinator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("negated")]
         [global::System.Text.Json.Serialization.JsonRequired]

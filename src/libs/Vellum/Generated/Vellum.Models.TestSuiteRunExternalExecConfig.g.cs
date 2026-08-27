@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class TestSuiteRunExternalExecConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]

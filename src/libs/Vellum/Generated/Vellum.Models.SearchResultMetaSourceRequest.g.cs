@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct SearchResultMetaSourceRequest : global::System.IEquatable<SearchResultMetaSourceRequest>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PdfSearchResultMetaSourceRequest))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsPdfSearchResultMetaSourceRequest => PdfSearchResultMetaSourceRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPdfSearchResultMetaSourceRequest(
 #if NET6_0_OR_GREATER
@@ -40,23 +40,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.PdfSearchResultMetaSourceRequest PickPdfSearchResultMetaSourceRequest() => IsPdfSearchResultMetaSourceRequest
             ? PdfSearchResultMetaSourceRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PdfSearchResultMetaSourceRequest' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SearchResultMetaSourceRequest(global::Vellum.PdfSearchResultMetaSourceRequest value) => new SearchResultMetaSourceRequest((global::Vellum.PdfSearchResultMetaSourceRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.PdfSearchResultMetaSourceRequest?(SearchResultMetaSourceRequest @this) => @this.PdfSearchResultMetaSourceRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchResultMetaSourceRequest(global::Vellum.PdfSearchResultMetaSourceRequest? value)
         {
@@ -64,26 +64,26 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SearchResultMetaSourceRequest FromPdfSearchResultMetaSourceRequest(global::Vellum.PdfSearchResultMetaSourceRequest? value) => new SearchResultMetaSourceRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
-            PdfSearchResultMetaSourceRequest as object 
+            PdfSearchResultMetaSourceRequest as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
-            PdfSearchResultMetaSourceRequest?.ToString() 
+            PdfSearchResultMetaSourceRequest?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -91,7 +91,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.PdfSearchResultMetaSourceRequest, TResult>? pdfSearchResultMetaSourceRequest = null,
@@ -111,7 +111,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.PdfSearchResultMetaSourceRequest>? pdfSearchResultMetaSourceRequest = null,
@@ -129,7 +129,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.PdfSearchResultMetaSourceRequest>? pdfSearchResultMetaSourceRequest = null,
@@ -147,7 +147,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -166,17 +166,17 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SearchResultMetaSourceRequest other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.PdfSearchResultMetaSourceRequest?>.Default.Equals(PdfSearchResultMetaSourceRequest, other.PdfSearchResultMetaSourceRequest) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.PdfSearchResultMetaSourceRequest?>.Default.Equals(PdfSearchResultMetaSourceRequest, other.PdfSearchResultMetaSourceRequest)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SearchResultMetaSourceRequest obj1, SearchResultMetaSourceRequest obj2)
         {
@@ -184,7 +184,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SearchResultMetaSourceRequest obj1, SearchResultMetaSourceRequest obj2)
         {
@@ -192,7 +192,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

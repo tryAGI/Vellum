@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TextEmbedding3SmallEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TextEmbedding3Small,
     }

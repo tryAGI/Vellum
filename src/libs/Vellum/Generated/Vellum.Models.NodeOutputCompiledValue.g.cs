@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct NodeOutputCompiledValue : global::System.IEquatable<NodeOutputCompiledValue>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledStringValue))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledStringValue => NodeOutputCompiledStringValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledStringValue(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledStringValue PickNodeOutputCompiledStringValue() => IsNodeOutputCompiledStringValue
             ? NodeOutputCompiledStringValue!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledNumberValue))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledNumberValue => NodeOutputCompiledNumberValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledNumberValue(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledNumberValue PickNodeOutputCompiledNumberValue() => IsNodeOutputCompiledNumberValue
             ? NodeOutputCompiledNumberValue!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledJsonValue))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledJsonValue => NodeOutputCompiledJsonValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledJsonValue(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledJsonValue PickNodeOutputCompiledJsonValue() => IsNodeOutputCompiledJsonValue
             ? NodeOutputCompiledJsonValue!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledChatHistoryValue))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledChatHistoryValue => NodeOutputCompiledChatHistoryValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledChatHistoryValue(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledChatHistoryValue PickNodeOutputCompiledChatHistoryValue() => IsNodeOutputCompiledChatHistoryValue
             ? NodeOutputCompiledChatHistoryValue!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledSearchResultsValue))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledSearchResultsValue => NodeOutputCompiledSearchResultsValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledSearchResultsValue(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledSearchResultsValue PickNodeOutputCompiledSearchResultsValue() => IsNodeOutputCompiledSearchResultsValue
             ? NodeOutputCompiledSearchResultsValue!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledErrorValue))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledErrorValue => NodeOutputCompiledErrorValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledErrorValue(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledErrorValue PickNodeOutputCompiledErrorValue() => IsNodeOutputCompiledErrorValue
             ? NodeOutputCompiledErrorValue!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledArrayValue))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledArrayValue => NodeOutputCompiledArrayValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledArrayValue(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledArrayValue PickNodeOutputCompiledArrayValue() => IsNodeOutputCompiledArrayValue
             ? NodeOutputCompiledArrayValue!
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledFunctionCallValue))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledFunctionCallValue => NodeOutputCompiledFunctionCallValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledFunctionCallValue(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledFunctionCallValue PickNodeOutputCompiledFunctionCallValue() => IsNodeOutputCompiledFunctionCallValue
             ? NodeOutputCompiledFunctionCallValue!
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NodeOutputCompiledThinkingValue))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsNodeOutputCompiledThinkingValue => NodeOutputCompiledThinkingValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickNodeOutputCompiledThinkingValue(
 #if NET6_0_OR_GREATER
@@ -336,23 +336,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.NodeOutputCompiledThinkingValue PickNodeOutputCompiledThinkingValue() => IsNodeOutputCompiledThinkingValue
             ? NodeOutputCompiledThinkingValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeOutputCompiledThinkingValue' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledStringValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledStringValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledStringValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledStringValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledStringValue? value)
         {
@@ -360,22 +360,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledStringValue(global::Vellum.NodeOutputCompiledStringValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledNumberValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledNumberValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledNumberValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledNumberValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledNumberValue? value)
         {
@@ -383,22 +383,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledNumberValue(global::Vellum.NodeOutputCompiledNumberValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledJsonValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledJsonValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledJsonValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledJsonValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledJsonValue? value)
         {
@@ -406,22 +406,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledJsonValue(global::Vellum.NodeOutputCompiledJsonValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledChatHistoryValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledChatHistoryValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledChatHistoryValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledChatHistoryValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledChatHistoryValue? value)
         {
@@ -429,22 +429,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledChatHistoryValue(global::Vellum.NodeOutputCompiledChatHistoryValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledSearchResultsValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledSearchResultsValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledSearchResultsValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledSearchResultsValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledSearchResultsValue? value)
         {
@@ -452,22 +452,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledSearchResultsValue(global::Vellum.NodeOutputCompiledSearchResultsValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledErrorValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledErrorValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledErrorValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledErrorValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledErrorValue? value)
         {
@@ -475,22 +475,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledErrorValue(global::Vellum.NodeOutputCompiledErrorValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledArrayValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledArrayValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledArrayValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledArrayValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledArrayValue? value)
         {
@@ -498,22 +498,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledArrayValue(global::Vellum.NodeOutputCompiledArrayValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledFunctionCallValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledFunctionCallValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledFunctionCallValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledFunctionCallValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledFunctionCallValue? value)
         {
@@ -521,22 +521,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledFunctionCallValue(global::Vellum.NodeOutputCompiledFunctionCallValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledThinkingValue value) => new NodeOutputCompiledValue((global::Vellum.NodeOutputCompiledThinkingValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.NodeOutputCompiledThinkingValue?(NodeOutputCompiledValue @this) => @this.NodeOutputCompiledThinkingValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(global::Vellum.NodeOutputCompiledThinkingValue? value)
         {
@@ -544,12 +544,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static NodeOutputCompiledValue FromNodeOutputCompiledThinkingValue(global::Vellum.NodeOutputCompiledThinkingValue? value) => new NodeOutputCompiledValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public NodeOutputCompiledValue(
             global::Vellum.NodeOutputCompiledStringValue? nodeOutputCompiledStringValue,
@@ -575,7 +575,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             NodeOutputCompiledThinkingValue as object ??
@@ -586,11 +586,11 @@ namespace Vellum
             NodeOutputCompiledChatHistoryValue as object ??
             NodeOutputCompiledJsonValue as object ??
             NodeOutputCompiledNumberValue as object ??
-            NodeOutputCompiledStringValue as object 
+            NodeOutputCompiledStringValue as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             NodeOutputCompiledStringValue?.ToString() ??
@@ -601,11 +601,11 @@ namespace Vellum
             NodeOutputCompiledErrorValue?.ToString() ??
             NodeOutputCompiledArrayValue?.ToString() ??
             NodeOutputCompiledFunctionCallValue?.ToString() ??
-            NodeOutputCompiledThinkingValue?.ToString() 
+            NodeOutputCompiledThinkingValue?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -613,7 +613,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.NodeOutputCompiledStringValue, TResult>? nodeOutputCompiledStringValue = null,
@@ -673,7 +673,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.NodeOutputCompiledStringValue>? nodeOutputCompiledStringValue = null,
@@ -739,7 +739,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.NodeOutputCompiledStringValue>? nodeOutputCompiledStringValue = null,
@@ -797,7 +797,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -832,7 +832,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(NodeOutputCompiledValue other)
         {
@@ -845,12 +845,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeOutputCompiledErrorValue?>.Default.Equals(NodeOutputCompiledErrorValue, other.NodeOutputCompiledErrorValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeOutputCompiledArrayValue?>.Default.Equals(NodeOutputCompiledArrayValue, other.NodeOutputCompiledArrayValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeOutputCompiledFunctionCallValue?>.Default.Equals(NodeOutputCompiledFunctionCallValue, other.NodeOutputCompiledFunctionCallValue) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeOutputCompiledThinkingValue?>.Default.Equals(NodeOutputCompiledThinkingValue, other.NodeOutputCompiledThinkingValue) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.NodeOutputCompiledThinkingValue?>.Default.Equals(NodeOutputCompiledThinkingValue, other.NodeOutputCompiledThinkingValue)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(NodeOutputCompiledValue obj1, NodeOutputCompiledValue obj2)
         {
@@ -858,7 +858,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(NodeOutputCompiledValue obj1, NodeOutputCompiledValue obj2)
         {
@@ -866,7 +866,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

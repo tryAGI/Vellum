@@ -116,435 +116,435 @@ namespace Vellum
     public enum IntegrationName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Acculynx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveCampaign,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Affinity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Agencyzoom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ahrefs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Airtable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apollo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asana,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Atlassian,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bitbucket,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Box,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brevo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrowserbaseTool,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Calendly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canva,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canvas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clickup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Coda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Coinbase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Confluence,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerIo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Discord,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Docusign,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dropbox,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Elevenlabs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eventbrite,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Facebook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Figma,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Firecrawl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fireflies,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gamma,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Github,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gitlab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gong,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Googlemeet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleAds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleAnalytics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleBigquery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleCalendar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleClassroom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleDocs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleDrive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleMaps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GooglePhotos,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleSearchConsole,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleSheets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleSlides,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleTasks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Heygen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Heyreach,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hubspot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Instagram,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Intercom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jira,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Junglescout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Klaviyo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linkedin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linkup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Listennotes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lmnt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mailchimp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mem0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrosoftTeams,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Miro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Monday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Neon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Outlook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pagerduty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parsera,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Peopledatalabs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Perplexity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Posthog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Productboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Quickbooks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Reddit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Salesforce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Segment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Semanticscholar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Semrush,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sendgrid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Serpapi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SharePoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shopify,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shortcut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slackbot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spotify,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stripe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Supabase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tavily,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Telegram,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tiktok,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Todoist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Trello,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Twitter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webflow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Whatsapp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yousearch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Youtube,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zendesk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zenrows,
     }

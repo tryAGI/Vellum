@@ -11,15 +11,15 @@ namespace Vellum
     public enum ReleaseReviewState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Approved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChangesRequested,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Commented,
     }

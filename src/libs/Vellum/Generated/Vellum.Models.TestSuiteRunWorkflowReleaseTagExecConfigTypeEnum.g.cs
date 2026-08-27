@@ -9,7 +9,7 @@ namespace Vellum
     public enum TestSuiteRunWorkflowReleaseTagExecConfigTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowReleaseTag,
     }

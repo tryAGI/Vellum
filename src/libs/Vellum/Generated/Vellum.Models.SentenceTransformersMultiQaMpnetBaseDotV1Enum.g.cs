@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SentenceTransformersMultiQaMpnetBaseDotV1Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SentenceTransformersMultiQaMpnetBaseDotV1,
     }

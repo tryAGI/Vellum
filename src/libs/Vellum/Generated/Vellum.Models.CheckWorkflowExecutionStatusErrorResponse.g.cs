@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class CheckWorkflowExecutionStatusErrorResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("detail")]
         [global::System.Text.Json.Serialization.JsonRequired]

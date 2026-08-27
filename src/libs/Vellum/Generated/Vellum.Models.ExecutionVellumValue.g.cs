@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ExecutionVellumValue : global::System.IEquatable<ExecutionVellumValue>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionStringVellumValue))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsExecutionStringVellumValue => ExecutionStringVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionStringVellumValue(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionStringVellumValue PickExecutionStringVellumValue() => IsExecutionStringVellumValue
             ? ExecutionStringVellumValue!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionNumberVellumValue))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsExecutionNumberVellumValue => ExecutionNumberVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionNumberVellumValue(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionNumberVellumValue PickExecutionNumberVellumValue() => IsExecutionNumberVellumValue
             ? ExecutionNumberVellumValue!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionJsonVellumValue))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsExecutionJsonVellumValue => ExecutionJsonVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionJsonVellumValue(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionJsonVellumValue PickExecutionJsonVellumValue() => IsExecutionJsonVellumValue
             ? ExecutionJsonVellumValue!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionChatHistoryVellumValue))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsExecutionChatHistoryVellumValue => ExecutionChatHistoryVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionChatHistoryVellumValue(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionChatHistoryVellumValue PickExecutionChatHistoryVellumValue() => IsExecutionChatHistoryVellumValue
             ? ExecutionChatHistoryVellumValue!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionSearchResultsVellumValue))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsExecutionSearchResultsVellumValue => ExecutionSearchResultsVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionSearchResultsVellumValue(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionSearchResultsVellumValue PickExecutionSearchResultsVellumValue() => IsExecutionSearchResultsVellumValue
             ? ExecutionSearchResultsVellumValue!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionErrorVellumValue))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsExecutionErrorVellumValue => ExecutionErrorVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionErrorVellumValue(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionErrorVellumValue PickExecutionErrorVellumValue() => IsExecutionErrorVellumValue
             ? ExecutionErrorVellumValue!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionArrayVellumValue))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsExecutionArrayVellumValue => ExecutionArrayVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionArrayVellumValue(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionArrayVellumValue PickExecutionArrayVellumValue() => IsExecutionArrayVellumValue
             ? ExecutionArrayVellumValue!
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionFunctionCallVellumValue))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsExecutionFunctionCallVellumValue => ExecutionFunctionCallVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionFunctionCallVellumValue(
 #if NET6_0_OR_GREATER
@@ -299,7 +299,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionFunctionCallVellumValue PickExecutionFunctionCallVellumValue() => IsExecutionFunctionCallVellumValue
             ? ExecutionFunctionCallVellumValue!
@@ -315,7 +315,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionThinkingVellumValue))]
@@ -323,7 +323,7 @@ namespace Vellum
         public bool IsExecutionThinkingVellumValue => ExecutionThinkingVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionThinkingVellumValue(
 #if NET6_0_OR_GREATER
@@ -336,7 +336,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionThinkingVellumValue PickExecutionThinkingVellumValue() => IsExecutionThinkingVellumValue
             ? ExecutionThinkingVellumValue!
@@ -352,7 +352,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionAudioVellumValue))]
@@ -360,7 +360,7 @@ namespace Vellum
         public bool IsExecutionAudioVellumValue => ExecutionAudioVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionAudioVellumValue(
 #if NET6_0_OR_GREATER
@@ -373,7 +373,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionAudioVellumValue PickExecutionAudioVellumValue() => IsExecutionAudioVellumValue
             ? ExecutionAudioVellumValue!
@@ -389,7 +389,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionVideoVellumValue))]
@@ -397,7 +397,7 @@ namespace Vellum
         public bool IsExecutionVideoVellumValue => ExecutionVideoVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionVideoVellumValue(
 #if NET6_0_OR_GREATER
@@ -410,7 +410,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionVideoVellumValue PickExecutionVideoVellumValue() => IsExecutionVideoVellumValue
             ? ExecutionVideoVellumValue!
@@ -426,7 +426,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionImageVellumValue))]
@@ -434,7 +434,7 @@ namespace Vellum
         public bool IsExecutionImageVellumValue => ExecutionImageVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionImageVellumValue(
 #if NET6_0_OR_GREATER
@@ -447,7 +447,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionImageVellumValue PickExecutionImageVellumValue() => IsExecutionImageVellumValue
             ? ExecutionImageVellumValue!
@@ -463,7 +463,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExecutionDocumentVellumValue))]
@@ -471,7 +471,7 @@ namespace Vellum
         public bool IsExecutionDocumentVellumValue => ExecutionDocumentVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExecutionDocumentVellumValue(
 #if NET6_0_OR_GREATER
@@ -484,23 +484,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ExecutionDocumentVellumValue PickExecutionDocumentVellumValue() => IsExecutionDocumentVellumValue
             ? ExecutionDocumentVellumValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExecutionDocumentVellumValue' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionStringVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionStringVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionStringVellumValue?(ExecutionVellumValue @this) => @this.ExecutionStringVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionStringVellumValue? value)
         {
@@ -508,22 +508,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionStringVellumValue(global::Vellum.ExecutionStringVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionNumberVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionNumberVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionNumberVellumValue?(ExecutionVellumValue @this) => @this.ExecutionNumberVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionNumberVellumValue? value)
         {
@@ -531,22 +531,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionNumberVellumValue(global::Vellum.ExecutionNumberVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionJsonVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionJsonVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionJsonVellumValue?(ExecutionVellumValue @this) => @this.ExecutionJsonVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionJsonVellumValue? value)
         {
@@ -554,22 +554,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionJsonVellumValue(global::Vellum.ExecutionJsonVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionChatHistoryVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionChatHistoryVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionChatHistoryVellumValue?(ExecutionVellumValue @this) => @this.ExecutionChatHistoryVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionChatHistoryVellumValue? value)
         {
@@ -577,22 +577,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionChatHistoryVellumValue(global::Vellum.ExecutionChatHistoryVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionSearchResultsVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionSearchResultsVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionSearchResultsVellumValue?(ExecutionVellumValue @this) => @this.ExecutionSearchResultsVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionSearchResultsVellumValue? value)
         {
@@ -600,22 +600,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionSearchResultsVellumValue(global::Vellum.ExecutionSearchResultsVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionErrorVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionErrorVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionErrorVellumValue?(ExecutionVellumValue @this) => @this.ExecutionErrorVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionErrorVellumValue? value)
         {
@@ -623,22 +623,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionErrorVellumValue(global::Vellum.ExecutionErrorVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionArrayVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionArrayVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionArrayVellumValue?(ExecutionVellumValue @this) => @this.ExecutionArrayVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionArrayVellumValue? value)
         {
@@ -646,22 +646,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionArrayVellumValue(global::Vellum.ExecutionArrayVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionFunctionCallVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionFunctionCallVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionFunctionCallVellumValue?(ExecutionVellumValue @this) => @this.ExecutionFunctionCallVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionFunctionCallVellumValue? value)
         {
@@ -669,22 +669,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionFunctionCallVellumValue(global::Vellum.ExecutionFunctionCallVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionThinkingVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionThinkingVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionThinkingVellumValue?(ExecutionVellumValue @this) => @this.ExecutionThinkingVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionThinkingVellumValue? value)
         {
@@ -692,22 +692,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionThinkingVellumValue(global::Vellum.ExecutionThinkingVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionAudioVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionAudioVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionAudioVellumValue?(ExecutionVellumValue @this) => @this.ExecutionAudioVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionAudioVellumValue? value)
         {
@@ -715,22 +715,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionAudioVellumValue(global::Vellum.ExecutionAudioVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionVideoVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionVideoVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionVideoVellumValue?(ExecutionVellumValue @this) => @this.ExecutionVideoVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionVideoVellumValue? value)
         {
@@ -738,22 +738,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionVideoVellumValue(global::Vellum.ExecutionVideoVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionImageVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionImageVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionImageVellumValue?(ExecutionVellumValue @this) => @this.ExecutionImageVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionImageVellumValue? value)
         {
@@ -761,22 +761,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionImageVellumValue(global::Vellum.ExecutionImageVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ExecutionVellumValue(global::Vellum.ExecutionDocumentVellumValue value) => new ExecutionVellumValue((global::Vellum.ExecutionDocumentVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ExecutionDocumentVellumValue?(ExecutionVellumValue @this) => @this.ExecutionDocumentVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(global::Vellum.ExecutionDocumentVellumValue? value)
         {
@@ -784,12 +784,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ExecutionVellumValue FromExecutionDocumentVellumValue(global::Vellum.ExecutionDocumentVellumValue? value) => new ExecutionVellumValue(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExecutionVellumValue(
             global::Vellum.ExecutionStringVellumValue? executionStringVellumValue,
@@ -823,7 +823,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ExecutionDocumentVellumValue as object ??
@@ -838,11 +838,11 @@ namespace Vellum
             ExecutionChatHistoryVellumValue as object ??
             ExecutionJsonVellumValue as object ??
             ExecutionNumberVellumValue as object ??
-            ExecutionStringVellumValue as object 
+            ExecutionStringVellumValue as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ExecutionStringVellumValue?.ToString() ??
@@ -857,11 +857,11 @@ namespace Vellum
             ExecutionAudioVellumValue?.ToString() ??
             ExecutionVideoVellumValue?.ToString() ??
             ExecutionImageVellumValue?.ToString() ??
-            ExecutionDocumentVellumValue?.ToString() 
+            ExecutionDocumentVellumValue?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -869,7 +869,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.ExecutionStringVellumValue, TResult>? executionStringVellumValue = null,
@@ -949,7 +949,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.ExecutionStringVellumValue>? executionStringVellumValue = null,
@@ -1039,7 +1039,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.ExecutionStringVellumValue>? executionStringVellumValue = null,
@@ -1117,7 +1117,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1160,7 +1160,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ExecutionVellumValue other)
         {
@@ -1177,12 +1177,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ExecutionAudioVellumValue?>.Default.Equals(ExecutionAudioVellumValue, other.ExecutionAudioVellumValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ExecutionVideoVellumValue?>.Default.Equals(ExecutionVideoVellumValue, other.ExecutionVideoVellumValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ExecutionImageVellumValue?>.Default.Equals(ExecutionImageVellumValue, other.ExecutionImageVellumValue) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.ExecutionDocumentVellumValue?>.Default.Equals(ExecutionDocumentVellumValue, other.ExecutionDocumentVellumValue) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.ExecutionDocumentVellumValue?>.Default.Equals(ExecutionDocumentVellumValue, other.ExecutionDocumentVellumValue)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ExecutionVellumValue obj1, ExecutionVellumValue obj2)
         {
@@ -1190,7 +1190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ExecutionVellumValue obj1, ExecutionVellumValue obj2)
         {
@@ -1198,7 +1198,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

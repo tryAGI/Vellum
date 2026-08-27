@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct SubmitWorkflowExecutionActualRequest : global::System.IEquatable<SubmitWorkflowExecutionActualRequest>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualStringRequest? WorkflowExecutionActualStringRequest { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionActualStringRequest))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowExecutionActualStringRequest => WorkflowExecutionActualStringRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionActualStringRequest(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionActualStringRequest PickWorkflowExecutionActualStringRequest() => IsWorkflowExecutionActualStringRequest
             ? WorkflowExecutionActualStringRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualStringRequest' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualJsonRequest? WorkflowExecutionActualJsonRequest { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionActualJsonRequest))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowExecutionActualJsonRequest => WorkflowExecutionActualJsonRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionActualJsonRequest(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionActualJsonRequest PickWorkflowExecutionActualJsonRequest() => IsWorkflowExecutionActualJsonRequest
             ? WorkflowExecutionActualJsonRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualJsonRequest' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowExecutionActualChatHistoryRequest? WorkflowExecutionActualChatHistoryRequest { get; init; }
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowExecutionActualChatHistoryRequest))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsWorkflowExecutionActualChatHistoryRequest => WorkflowExecutionActualChatHistoryRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowExecutionActualChatHistoryRequest(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowExecutionActualChatHistoryRequest PickWorkflowExecutionActualChatHistoryRequest() => IsWorkflowExecutionActualChatHistoryRequest
             ? WorkflowExecutionActualChatHistoryRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualChatHistoryRequest' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualStringRequest value) => new SubmitWorkflowExecutionActualRequest((global::Vellum.WorkflowExecutionActualStringRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionActualStringRequest?(SubmitWorkflowExecutionActualRequest @this) => @this.WorkflowExecutionActualStringRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualStringRequest? value)
         {
@@ -138,22 +138,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SubmitWorkflowExecutionActualRequest FromWorkflowExecutionActualStringRequest(global::Vellum.WorkflowExecutionActualStringRequest? value) => new SubmitWorkflowExecutionActualRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualJsonRequest value) => new SubmitWorkflowExecutionActualRequest((global::Vellum.WorkflowExecutionActualJsonRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionActualJsonRequest?(SubmitWorkflowExecutionActualRequest @this) => @this.WorkflowExecutionActualJsonRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualJsonRequest? value)
         {
@@ -161,22 +161,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SubmitWorkflowExecutionActualRequest FromWorkflowExecutionActualJsonRequest(global::Vellum.WorkflowExecutionActualJsonRequest? value) => new SubmitWorkflowExecutionActualRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualChatHistoryRequest value) => new SubmitWorkflowExecutionActualRequest((global::Vellum.WorkflowExecutionActualChatHistoryRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowExecutionActualChatHistoryRequest?(SubmitWorkflowExecutionActualRequest @this) => @this.WorkflowExecutionActualChatHistoryRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SubmitWorkflowExecutionActualRequest(global::Vellum.WorkflowExecutionActualChatHistoryRequest? value)
         {
@@ -184,12 +184,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SubmitWorkflowExecutionActualRequest FromWorkflowExecutionActualChatHistoryRequest(global::Vellum.WorkflowExecutionActualChatHistoryRequest? value) => new SubmitWorkflowExecutionActualRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SubmitWorkflowExecutionActualRequest(
             global::Vellum.WorkflowExecutionActualStringRequest? workflowExecutionActualStringRequest,
@@ -203,25 +203,25 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowExecutionActualChatHistoryRequest as object ??
             WorkflowExecutionActualJsonRequest as object ??
-            WorkflowExecutionActualStringRequest as object 
+            WorkflowExecutionActualStringRequest as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowExecutionActualStringRequest?.ToString() ??
             WorkflowExecutionActualJsonRequest?.ToString() ??
-            WorkflowExecutionActualChatHistoryRequest?.ToString() 
+            WorkflowExecutionActualChatHistoryRequest?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowExecutionActualStringRequest, TResult>? workflowExecutionActualStringRequest = null,
@@ -259,7 +259,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowExecutionActualStringRequest>? workflowExecutionActualStringRequest = null,
@@ -289,7 +289,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowExecutionActualStringRequest>? workflowExecutionActualStringRequest = null,
@@ -317,7 +317,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SubmitWorkflowExecutionActualRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionActualStringRequest?>.Default.Equals(WorkflowExecutionActualStringRequest, other.WorkflowExecutionActualStringRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionActualJsonRequest?>.Default.Equals(WorkflowExecutionActualJsonRequest, other.WorkflowExecutionActualJsonRequest) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionActualChatHistoryRequest?>.Default.Equals(WorkflowExecutionActualChatHistoryRequest, other.WorkflowExecutionActualChatHistoryRequest) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowExecutionActualChatHistoryRequest?>.Default.Equals(WorkflowExecutionActualChatHistoryRequest, other.WorkflowExecutionActualChatHistoryRequest)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SubmitWorkflowExecutionActualRequest obj1, SubmitWorkflowExecutionActualRequest obj2)
         {
@@ -360,7 +360,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SubmitWorkflowExecutionActualRequest obj1, SubmitWorkflowExecutionActualRequest obj2)
         {
@@ -368,7 +368,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

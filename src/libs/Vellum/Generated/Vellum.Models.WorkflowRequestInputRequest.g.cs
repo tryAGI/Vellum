@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct WorkflowRequestInputRequest : global::System.IEquatable<WorkflowRequestInputRequest>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestStringInputRequest))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowRequestStringInputRequest => WorkflowRequestStringInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestStringInputRequest(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestStringInputRequest PickWorkflowRequestStringInputRequest() => IsWorkflowRequestStringInputRequest
             ? WorkflowRequestStringInputRequest!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestJSONInputRequest))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowRequestJSONInputRequest => WorkflowRequestJSONInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestJSONInputRequest(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestJSONInputRequest PickWorkflowRequestJSONInputRequest() => IsWorkflowRequestJSONInputRequest
             ? WorkflowRequestJSONInputRequest!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestChatHistoryInputRequest))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsWorkflowRequestChatHistoryInputRequest => WorkflowRequestChatHistoryInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestChatHistoryInputRequest(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestChatHistoryInputRequest PickWorkflowRequestChatHistoryInputRequest() => IsWorkflowRequestChatHistoryInputRequest
             ? WorkflowRequestChatHistoryInputRequest!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestNumberInputRequest))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsWorkflowRequestNumberInputRequest => WorkflowRequestNumberInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestNumberInputRequest(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestNumberInputRequest PickWorkflowRequestNumberInputRequest() => IsWorkflowRequestNumberInputRequest
             ? WorkflowRequestNumberInputRequest!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestAudioInputRequest))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsWorkflowRequestAudioInputRequest => WorkflowRequestAudioInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestAudioInputRequest(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestAudioInputRequest PickWorkflowRequestAudioInputRequest() => IsWorkflowRequestAudioInputRequest
             ? WorkflowRequestAudioInputRequest!
@@ -204,7 +204,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestVideoInputRequest))]
@@ -212,7 +212,7 @@ namespace Vellum
         public bool IsWorkflowRequestVideoInputRequest => WorkflowRequestVideoInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestVideoInputRequest(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestVideoInputRequest PickWorkflowRequestVideoInputRequest() => IsWorkflowRequestVideoInputRequest
             ? WorkflowRequestVideoInputRequest!
@@ -241,7 +241,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestImageInputRequest))]
@@ -249,7 +249,7 @@ namespace Vellum
         public bool IsWorkflowRequestImageInputRequest => WorkflowRequestImageInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestImageInputRequest(
 #if NET6_0_OR_GREATER
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestImageInputRequest PickWorkflowRequestImageInputRequest() => IsWorkflowRequestImageInputRequest
             ? WorkflowRequestImageInputRequest!
@@ -278,7 +278,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowRequestDocumentInputRequest))]
@@ -286,7 +286,7 @@ namespace Vellum
         public bool IsWorkflowRequestDocumentInputRequest => WorkflowRequestDocumentInputRequest != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowRequestDocumentInputRequest(
 #if NET6_0_OR_GREATER
@@ -299,23 +299,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowRequestDocumentInputRequest PickWorkflowRequestDocumentInputRequest() => IsWorkflowRequestDocumentInputRequest
             ? WorkflowRequestDocumentInputRequest!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestDocumentInputRequest' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestStringInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestStringInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestStringInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestStringInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestStringInputRequest? value)
         {
@@ -323,22 +323,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestStringInputRequest(global::Vellum.WorkflowRequestStringInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestJSONInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestJSONInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestJSONInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestJSONInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestJSONInputRequest? value)
         {
@@ -346,22 +346,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestJSONInputRequest(global::Vellum.WorkflowRequestJSONInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestChatHistoryInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestChatHistoryInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestChatHistoryInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestChatHistoryInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestChatHistoryInputRequest? value)
         {
@@ -369,22 +369,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestChatHistoryInputRequest(global::Vellum.WorkflowRequestChatHistoryInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestNumberInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestNumberInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestNumberInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestNumberInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestNumberInputRequest? value)
         {
@@ -392,22 +392,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestNumberInputRequest(global::Vellum.WorkflowRequestNumberInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestAudioInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestAudioInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestAudioInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestAudioInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestAudioInputRequest? value)
         {
@@ -415,22 +415,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestAudioInputRequest(global::Vellum.WorkflowRequestAudioInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestVideoInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestVideoInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestVideoInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestVideoInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestVideoInputRequest? value)
         {
@@ -438,22 +438,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestVideoInputRequest(global::Vellum.WorkflowRequestVideoInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestImageInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestImageInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestImageInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestImageInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestImageInputRequest? value)
         {
@@ -461,22 +461,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestImageInputRequest(global::Vellum.WorkflowRequestImageInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowRequestInputRequest(global::Vellum.WorkflowRequestDocumentInputRequest value) => new WorkflowRequestInputRequest((global::Vellum.WorkflowRequestDocumentInputRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowRequestDocumentInputRequest?(WorkflowRequestInputRequest @this) => @this.WorkflowRequestDocumentInputRequest;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(global::Vellum.WorkflowRequestDocumentInputRequest? value)
         {
@@ -484,12 +484,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowRequestInputRequest FromWorkflowRequestDocumentInputRequest(global::Vellum.WorkflowRequestDocumentInputRequest? value) => new WorkflowRequestInputRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowRequestInputRequest(
             global::Vellum.WorkflowRequestStringInputRequest? workflowRequestStringInputRequest,
@@ -513,7 +513,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowRequestDocumentInputRequest as object ??
@@ -523,11 +523,11 @@ namespace Vellum
             WorkflowRequestNumberInputRequest as object ??
             WorkflowRequestChatHistoryInputRequest as object ??
             WorkflowRequestJSONInputRequest as object ??
-            WorkflowRequestStringInputRequest as object 
+            WorkflowRequestStringInputRequest as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowRequestStringInputRequest?.ToString() ??
@@ -537,11 +537,11 @@ namespace Vellum
             WorkflowRequestAudioInputRequest?.ToString() ??
             WorkflowRequestVideoInputRequest?.ToString() ??
             WorkflowRequestImageInputRequest?.ToString() ??
-            WorkflowRequestDocumentInputRequest?.ToString() 
+            WorkflowRequestDocumentInputRequest?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -549,7 +549,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowRequestStringInputRequest, TResult>? workflowRequestStringInputRequest = null,
@@ -604,7 +604,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowRequestStringInputRequest>? workflowRequestStringInputRequest = null,
@@ -664,7 +664,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowRequestStringInputRequest>? workflowRequestStringInputRequest = null,
@@ -717,7 +717,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -750,7 +750,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkflowRequestInputRequest other)
         {
@@ -762,12 +762,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowRequestAudioInputRequest?>.Default.Equals(WorkflowRequestAudioInputRequest, other.WorkflowRequestAudioInputRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowRequestVideoInputRequest?>.Default.Equals(WorkflowRequestVideoInputRequest, other.WorkflowRequestVideoInputRequest) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowRequestImageInputRequest?>.Default.Equals(WorkflowRequestImageInputRequest, other.WorkflowRequestImageInputRequest) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowRequestDocumentInputRequest?>.Default.Equals(WorkflowRequestDocumentInputRequest, other.WorkflowRequestDocumentInputRequest) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowRequestDocumentInputRequest?>.Default.Equals(WorkflowRequestDocumentInputRequest, other.WorkflowRequestDocumentInputRequest)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkflowRequestInputRequest obj1, WorkflowRequestInputRequest obj2)
         {
@@ -775,7 +775,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkflowRequestInputRequest obj1, WorkflowRequestInputRequest obj2)
         {
@@ -783,7 +783,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

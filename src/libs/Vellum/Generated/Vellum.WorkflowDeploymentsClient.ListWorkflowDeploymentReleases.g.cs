@@ -163,7 +163,7 @@ namespace Vellum
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Vellum.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

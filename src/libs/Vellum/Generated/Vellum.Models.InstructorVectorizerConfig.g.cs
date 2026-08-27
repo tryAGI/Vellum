@@ -9,21 +9,21 @@ namespace Vellum
     public sealed partial class InstructorVectorizerConfig
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("instruction_domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InstructionDomain { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("instruction_query_text_type")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string InstructionQueryTextType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("instruction_document_text_type")]
         [global::System.Text.Json.Serialization.JsonRequired]

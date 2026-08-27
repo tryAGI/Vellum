@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct DocumentIndexChunking : global::System.IEquatable<DocumentIndexChunking>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReductoChunking))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsReductoChunking => ReductoChunking != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickReductoChunking(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ReductoChunking PickReductoChunking() => IsReductoChunking
             ? ReductoChunking!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SentenceChunking))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsSentenceChunking => SentenceChunking != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSentenceChunking(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.SentenceChunking PickSentenceChunking() => IsSentenceChunking
             ? SentenceChunking!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenOverlappingWindowChunking))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsTokenOverlappingWindowChunking => TokenOverlappingWindowChunking != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenOverlappingWindowChunking(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.TokenOverlappingWindowChunking PickTokenOverlappingWindowChunking() => IsTokenOverlappingWindowChunking
             ? TokenOverlappingWindowChunking!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenOverlappingWindowChunking' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.DelimiterChunking? DelimiterChunking { get; init; }
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DelimiterChunking))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsDelimiterChunking => DelimiterChunking != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDelimiterChunking(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.DelimiterChunking PickDelimiterChunking() => IsDelimiterChunking
             ? DelimiterChunking!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DelimiterChunking' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DocumentIndexChunking(global::Vellum.ReductoChunking value) => new DocumentIndexChunking((global::Vellum.ReductoChunking?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ReductoChunking?(DocumentIndexChunking @this) => @this.ReductoChunking;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexChunking(global::Vellum.ReductoChunking? value)
         {
@@ -175,22 +175,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DocumentIndexChunking FromReductoChunking(global::Vellum.ReductoChunking? value) => new DocumentIndexChunking(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DocumentIndexChunking(global::Vellum.SentenceChunking value) => new DocumentIndexChunking((global::Vellum.SentenceChunking?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.SentenceChunking?(DocumentIndexChunking @this) => @this.SentenceChunking;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexChunking(global::Vellum.SentenceChunking? value)
         {
@@ -198,22 +198,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DocumentIndexChunking FromSentenceChunking(global::Vellum.SentenceChunking? value) => new DocumentIndexChunking(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DocumentIndexChunking(global::Vellum.TokenOverlappingWindowChunking value) => new DocumentIndexChunking((global::Vellum.TokenOverlappingWindowChunking?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.TokenOverlappingWindowChunking?(DocumentIndexChunking @this) => @this.TokenOverlappingWindowChunking;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexChunking(global::Vellum.TokenOverlappingWindowChunking? value)
         {
@@ -221,22 +221,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DocumentIndexChunking FromTokenOverlappingWindowChunking(global::Vellum.TokenOverlappingWindowChunking? value) => new DocumentIndexChunking(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DocumentIndexChunking(global::Vellum.DelimiterChunking value) => new DocumentIndexChunking((global::Vellum.DelimiterChunking?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.DelimiterChunking?(DocumentIndexChunking @this) => @this.DelimiterChunking;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexChunking(global::Vellum.DelimiterChunking? value)
         {
@@ -244,12 +244,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DocumentIndexChunking FromDelimiterChunking(global::Vellum.DelimiterChunking? value) => new DocumentIndexChunking(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentIndexChunking(
             global::Vellum.ReductoChunking? reductoChunking,
@@ -265,27 +265,27 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DelimiterChunking as object ??
             TokenOverlappingWindowChunking as object ??
             SentenceChunking as object ??
-            ReductoChunking as object 
+            ReductoChunking as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ReductoChunking?.ToString() ??
             SentenceChunking?.ToString() ??
             TokenOverlappingWindowChunking?.ToString() ??
-            DelimiterChunking?.ToString() 
+            DelimiterChunking?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -293,7 +293,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.ReductoChunking, TResult>? reductoChunking = null,
@@ -328,7 +328,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.ReductoChunking>? reductoChunking = null,
@@ -364,7 +364,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.ReductoChunking>? reductoChunking = null,
@@ -397,7 +397,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -422,7 +422,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(DocumentIndexChunking other)
         {
@@ -430,12 +430,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ReductoChunking?>.Default.Equals(ReductoChunking, other.ReductoChunking) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.SentenceChunking?>.Default.Equals(SentenceChunking, other.SentenceChunking) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.TokenOverlappingWindowChunking?>.Default.Equals(TokenOverlappingWindowChunking, other.TokenOverlappingWindowChunking) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.DelimiterChunking?>.Default.Equals(DelimiterChunking, other.DelimiterChunking) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.DelimiterChunking?>.Default.Equals(DelimiterChunking, other.DelimiterChunking)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(DocumentIndexChunking obj1, DocumentIndexChunking obj2)
         {
@@ -443,7 +443,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(DocumentIndexChunking obj1, DocumentIndexChunking obj2)
         {
@@ -451,7 +451,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

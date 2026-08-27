@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class PdfSearchResultMetaSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.PdfEnumJsonConverter))]

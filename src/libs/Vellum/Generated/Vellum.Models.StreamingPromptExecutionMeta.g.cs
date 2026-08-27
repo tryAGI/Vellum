@@ -9,7 +9,7 @@ namespace Vellum
     public sealed partial class StreamingPromptExecutionMeta
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latency")]
         public int? Latency { get; set; }

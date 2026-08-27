@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct DeploymentProviderPayloadResponsePayload : global::System.IEquatable<DeploymentProviderPayloadResponsePayload>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? DeploymentProviderPayloadResponsePayloadVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeploymentProviderPayloadResponsePayloadVariant1))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsDeploymentProviderPayloadResponsePayloadVariant1 => DeploymentProviderPayloadResponsePayloadVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeploymentProviderPayloadResponsePayloadVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickDeploymentProviderPayloadResponsePayloadVariant1() => IsDeploymentProviderPayloadResponsePayloadVariant1
             ? DeploymentProviderPayloadResponsePayloadVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeploymentProviderPayloadResponsePayloadVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? DeploymentProviderPayloadResponsePayloadVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DeploymentProviderPayloadResponsePayloadVariant2))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsDeploymentProviderPayloadResponsePayloadVariant2 => DeploymentProviderPayloadResponsePayloadVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeploymentProviderPayloadResponsePayloadVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickDeploymentProviderPayloadResponsePayloadVariant2() => IsDeploymentProviderPayloadResponsePayloadVariant2
             ? DeploymentProviderPayloadResponsePayloadVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeploymentProviderPayloadResponsePayloadVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DeploymentProviderPayloadResponsePayload(string value) => new DeploymentProviderPayloadResponsePayload((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(DeploymentProviderPayloadResponsePayload @this) => @this.DeploymentProviderPayloadResponsePayloadVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentProviderPayloadResponsePayload(string? value)
         {
@@ -101,12 +101,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DeploymentProviderPayloadResponsePayload FromDeploymentProviderPayloadResponsePayloadVariant2(string? value) => new DeploymentProviderPayloadResponsePayload(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentProviderPayloadResponsePayload(
             object? deploymentProviderPayloadResponsePayloadVariant1,
@@ -118,23 +118,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DeploymentProviderPayloadResponsePayloadVariant2 as object ??
-            DeploymentProviderPayloadResponsePayloadVariant1 as object 
+            DeploymentProviderPayloadResponsePayloadVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DeploymentProviderPayloadResponsePayloadVariant1?.ToString() ??
-            DeploymentProviderPayloadResponsePayloadVariant2?.ToString() 
+            DeploymentProviderPayloadResponsePayloadVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<object, TResult>? deploymentProviderPayloadResponsePayloadVariant1 = null,
@@ -167,7 +167,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<object>? deploymentProviderPayloadResponsePayloadVariant1 = null,
@@ -191,7 +191,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<object>? deploymentProviderPayloadResponsePayloadVariant1 = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(DeploymentProviderPayloadResponsePayload other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(DeploymentProviderPayloadResponsePayloadVariant1, other.DeploymentProviderPayloadResponsePayloadVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DeploymentProviderPayloadResponsePayloadVariant2, other.DeploymentProviderPayloadResponsePayloadVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(DeploymentProviderPayloadResponsePayloadVariant2, other.DeploymentProviderPayloadResponsePayloadVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(DeploymentProviderPayloadResponsePayload obj1, DeploymentProviderPayloadResponsePayload obj2)
         {
@@ -254,7 +254,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(DeploymentProviderPayloadResponsePayload obj1, DeploymentProviderPayloadResponsePayload obj2)
         {
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -13,23 +13,23 @@ namespace Vellum
     public enum IndexingStateEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwaitingProcessing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Indexed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Indexing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Queued,
     }

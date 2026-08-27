@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct WorkflowDependency : global::System.IEquatable<WorkflowDependency>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowIntegrationDependency? WorkflowIntegrationDependency { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowIntegrationDependency))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowIntegrationDependency => WorkflowIntegrationDependency != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowIntegrationDependency(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowIntegrationDependency PickWorkflowIntegrationDependency() => IsWorkflowIntegrationDependency
             ? WorkflowIntegrationDependency!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowIntegrationDependency' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowModelProviderDependency? WorkflowModelProviderDependency { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowModelProviderDependency))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowModelProviderDependency => WorkflowModelProviderDependency != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowModelProviderDependency(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowModelProviderDependency PickWorkflowModelProviderDependency() => IsWorkflowModelProviderDependency
             ? WorkflowModelProviderDependency!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowModelProviderDependency' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowDependency(global::Vellum.WorkflowIntegrationDependency value) => new WorkflowDependency((global::Vellum.WorkflowIntegrationDependency?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowIntegrationDependency?(WorkflowDependency @this) => @this.WorkflowIntegrationDependency;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowDependency(global::Vellum.WorkflowIntegrationDependency? value)
         {
@@ -101,22 +101,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowDependency FromWorkflowIntegrationDependency(global::Vellum.WorkflowIntegrationDependency? value) => new WorkflowDependency(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowDependency(global::Vellum.WorkflowModelProviderDependency value) => new WorkflowDependency((global::Vellum.WorkflowModelProviderDependency?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowModelProviderDependency?(WorkflowDependency @this) => @this.WorkflowModelProviderDependency;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowDependency(global::Vellum.WorkflowModelProviderDependency? value)
         {
@@ -124,12 +124,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowDependency FromWorkflowModelProviderDependency(global::Vellum.WorkflowModelProviderDependency? value) => new WorkflowDependency(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowDependency(
             global::Vellum.WorkflowIntegrationDependency? workflowIntegrationDependency,
@@ -141,23 +141,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowModelProviderDependency as object ??
-            WorkflowIntegrationDependency as object 
+            WorkflowIntegrationDependency as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowIntegrationDependency?.ToString() ??
-            WorkflowModelProviderDependency?.ToString() 
+            WorkflowModelProviderDependency?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.WorkflowIntegrationDependency, TResult>? workflowIntegrationDependency = null,
@@ -190,7 +190,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.WorkflowIntegrationDependency>? workflowIntegrationDependency = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.WorkflowIntegrationDependency>? workflowIntegrationDependency = null,
@@ -237,7 +237,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkflowDependency other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowIntegrationDependency?>.Default.Equals(WorkflowIntegrationDependency, other.WorkflowIntegrationDependency) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowModelProviderDependency?>.Default.Equals(WorkflowModelProviderDependency, other.WorkflowModelProviderDependency) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowModelProviderDependency?>.Default.Equals(WorkflowModelProviderDependency, other.WorkflowModelProviderDependency)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkflowDependency obj1, WorkflowDependency obj2)
         {
@@ -277,7 +277,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkflowDependency obj1, WorkflowDependency obj2)
         {
@@ -285,7 +285,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

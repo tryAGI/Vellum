@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct CreateWorkflowEventRequest : global::System.IEquatable<CreateWorkflowEventRequest>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>? CreateWorkflowEventRequest0 { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CreateWorkflowEventRequest0))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsCreateWorkflowEventRequest0 => CreateWorkflowEventRequest0 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCreateWorkflowEventRequest0(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent> PickCreateWorkflowEventRequest0() => IsCreateWorkflowEventRequest0
             ? CreateWorkflowEventRequest0!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateWorkflowEventRequest0' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vellum.WorkflowEvent? WorkflowEvent { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEvent))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowEvent => WorkflowEvent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowEvent(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.WorkflowEvent PickWorkflowEvent() => IsWorkflowEvent
             ? WorkflowEvent!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEvent' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator CreateWorkflowEventRequest(global::Vellum.WorkflowEvent value) => new CreateWorkflowEventRequest((global::Vellum.WorkflowEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.WorkflowEvent?(CreateWorkflowEventRequest @this) => @this.WorkflowEvent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateWorkflowEventRequest(global::Vellum.WorkflowEvent? value)
         {
@@ -101,12 +101,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static CreateWorkflowEventRequest FromWorkflowEvent(global::Vellum.WorkflowEvent? value) => new CreateWorkflowEventRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreateWorkflowEventRequest(
             global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>? createWorkflowEventRequest0,
@@ -118,23 +118,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowEvent as object ??
-            CreateWorkflowEventRequest0 as object 
+            CreateWorkflowEventRequest0 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             CreateWorkflowEventRequest0?.ToString() ??
-            WorkflowEvent?.ToString() 
+            WorkflowEvent?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>, TResult>? createWorkflowEventRequest0 = null,
@@ -167,7 +167,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>>? createWorkflowEventRequest0 = null,
@@ -191,7 +191,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>>? createWorkflowEventRequest0 = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(CreateWorkflowEventRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>?>.Default.Equals(CreateWorkflowEventRequest0, other.CreateWorkflowEventRequest0) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowEvent?>.Default.Equals(WorkflowEvent, other.WorkflowEvent) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.WorkflowEvent?>.Default.Equals(WorkflowEvent, other.WorkflowEvent)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(CreateWorkflowEventRequest obj1, CreateWorkflowEventRequest obj2)
         {
@@ -254,7 +254,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(CreateWorkflowEventRequest obj1, CreateWorkflowEventRequest obj2)
         {
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

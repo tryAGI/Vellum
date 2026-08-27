@@ -44,7 +44,7 @@ namespace Vellum
         /// <summary>
         /// Submit Workflow Execution Actuals<br/>
         ///     Used to submit feedback regarding the quality of previous workflow execution and its outputs.<br/>
-        ///     **Note:** Uses a base url of `https://predict.vellum.ai`.    
+        ///     **Note:** Uses a base url of `https://predict.vellum.ai`.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -68,7 +68,7 @@ namespace Vellum
         /// <summary>
         /// Submit Workflow Execution Actuals<br/>
         ///     Used to submit feedback regarding the quality of previous workflow execution and its outputs.<br/>
-        ///     **Note:** Uses a base url of `https://predict.vellum.ai`.    
+        ///     **Note:** Uses a base url of `https://predict.vellum.ai`.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -141,7 +141,7 @@ namespace Vellum
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
@@ -438,7 +438,7 @@ namespace Vellum
         /// <summary>
         /// Submit Workflow Execution Actuals<br/>
         ///     Used to submit feedback regarding the quality of previous workflow execution and its outputs.<br/>
-        ///     **Note:** Uses a base url of `https://predict.vellum.ai`.    
+        ///     **Note:** Uses a base url of `https://predict.vellum.ai`.
         /// </summary>
         /// <param name="actuals">
         /// Feedback regarding the quality of an output on a previously executed workflow.

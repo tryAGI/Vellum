@@ -5,7 +5,7 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PromptOutput : global::System.IEquatable<PromptOutput>
     {
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StringVellumValue))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsStringVellumValue => StringVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStringVellumValue(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.StringVellumValue PickStringVellumValue() => IsStringVellumValue
             ? StringVellumValue!
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVellumValue))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsJsonVellumValue => JsonVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVellumValue(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.JsonVellumValue PickJsonVellumValue() => IsJsonVellumValue
             ? JsonVellumValue!
@@ -93,7 +93,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ErrorVellumValue))]
@@ -101,7 +101,7 @@ namespace Vellum
         public bool IsErrorVellumValue => ErrorVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickErrorVellumValue(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ErrorVellumValue PickErrorVellumValue() => IsErrorVellumValue
             ? ErrorVellumValue!
@@ -130,7 +130,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionCallVellumValue))]
@@ -138,7 +138,7 @@ namespace Vellum
         public bool IsFunctionCallVellumValue => FunctionCallVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunctionCallVellumValue(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.FunctionCallVellumValue PickFunctionCallVellumValue() => IsFunctionCallVellumValue
             ? FunctionCallVellumValue!
@@ -167,7 +167,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ThinkingVellumValue))]
@@ -175,7 +175,7 @@ namespace Vellum
         public bool IsThinkingVellumValue => ThinkingVellumValue != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickThinkingVellumValue(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Vellum.ThinkingVellumValue PickThinkingVellumValue() => IsThinkingVellumValue
             ? ThinkingVellumValue!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkingVellumValue' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptOutput(global::Vellum.StringVellumValue value) => new PromptOutput((global::Vellum.StringVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.StringVellumValue?(PromptOutput @this) => @this.StringVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOutput(global::Vellum.StringVellumValue? value)
         {
@@ -212,22 +212,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptOutput FromStringVellumValue(global::Vellum.StringVellumValue? value) => new PromptOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptOutput(global::Vellum.JsonVellumValue value) => new PromptOutput((global::Vellum.JsonVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.JsonVellumValue?(PromptOutput @this) => @this.JsonVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOutput(global::Vellum.JsonVellumValue? value)
         {
@@ -235,22 +235,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptOutput FromJsonVellumValue(global::Vellum.JsonVellumValue? value) => new PromptOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptOutput(global::Vellum.ErrorVellumValue value) => new PromptOutput((global::Vellum.ErrorVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ErrorVellumValue?(PromptOutput @this) => @this.ErrorVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOutput(global::Vellum.ErrorVellumValue? value)
         {
@@ -258,22 +258,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptOutput FromErrorVellumValue(global::Vellum.ErrorVellumValue? value) => new PromptOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptOutput(global::Vellum.FunctionCallVellumValue value) => new PromptOutput((global::Vellum.FunctionCallVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.FunctionCallVellumValue?(PromptOutput @this) => @this.FunctionCallVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOutput(global::Vellum.FunctionCallVellumValue? value)
         {
@@ -281,22 +281,22 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptOutput FromFunctionCallVellumValue(global::Vellum.FunctionCallVellumValue? value) => new PromptOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptOutput(global::Vellum.ThinkingVellumValue value) => new PromptOutput((global::Vellum.ThinkingVellumValue?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Vellum.ThinkingVellumValue?(PromptOutput @this) => @this.ThinkingVellumValue;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOutput(global::Vellum.ThinkingVellumValue? value)
         {
@@ -304,12 +304,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptOutput FromThinkingVellumValue(global::Vellum.ThinkingVellumValue? value) => new PromptOutput(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptOutput(
             global::Vellum.StringVellumValue? stringVellumValue,
@@ -327,29 +327,29 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ThinkingVellumValue as object ??
             FunctionCallVellumValue as object ??
             ErrorVellumValue as object ??
             JsonVellumValue as object ??
-            StringVellumValue as object 
+            StringVellumValue as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             StringVellumValue?.ToString() ??
             JsonVellumValue?.ToString() ??
             ErrorVellumValue?.ToString() ??
             FunctionCallVellumValue?.ToString() ??
-            ThinkingVellumValue?.ToString() 
+            ThinkingVellumValue?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Vellum.StringVellumValue, TResult>? stringVellumValue = null,
@@ -397,7 +397,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Vellum.StringVellumValue>? stringVellumValue = null,
@@ -439,7 +439,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Vellum.StringVellumValue>? stringVellumValue = null,
@@ -477,7 +477,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PromptOutput other)
         {
@@ -513,12 +513,12 @@ namespace Vellum
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.JsonVellumValue?>.Default.Equals(JsonVellumValue, other.JsonVellumValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.ErrorVellumValue?>.Default.Equals(ErrorVellumValue, other.ErrorVellumValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Vellum.FunctionCallVellumValue?>.Default.Equals(FunctionCallVellumValue, other.FunctionCallVellumValue) &&
-                global::System.Collections.Generic.EqualityComparer<global::Vellum.ThinkingVellumValue?>.Default.Equals(ThinkingVellumValue, other.ThinkingVellumValue) 
+                global::System.Collections.Generic.EqualityComparer<global::Vellum.ThinkingVellumValue?>.Default.Equals(ThinkingVellumValue, other.ThinkingVellumValue)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PromptOutput obj1, PromptOutput obj2)
         {
@@ -526,7 +526,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PromptOutput obj1, PromptOutput obj2)
         {
@@ -534,7 +534,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

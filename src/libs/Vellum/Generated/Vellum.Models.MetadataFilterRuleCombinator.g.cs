@@ -10,11 +10,11 @@ namespace Vellum
     public enum MetadataFilterRuleCombinator
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         And,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Or,
     }

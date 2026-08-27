@@ -4,12 +4,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BaaiBgeSmallEnV15Enum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaaiBgeSmallEnV15,
     }

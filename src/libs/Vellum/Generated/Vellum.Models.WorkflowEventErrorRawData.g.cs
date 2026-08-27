@@ -5,12 +5,12 @@
 namespace Vellum
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct WorkflowEventErrorRawData : global::System.IEquatable<WorkflowEventErrorRawData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? WorkflowEventErrorRawDataVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEventErrorRawDataVariant1))]
@@ -27,7 +27,7 @@ namespace Vellum
         public bool IsWorkflowEventErrorRawDataVariant1 => WorkflowEventErrorRawDataVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowEventErrorRawDataVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickWorkflowEventErrorRawDataVariant1() => IsWorkflowEventErrorRawDataVariant1
             ? WorkflowEventErrorRawDataVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? WorkflowEventErrorRawDataVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Vellum
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WorkflowEventErrorRawDataVariant2))]
@@ -64,7 +64,7 @@ namespace Vellum
         public bool IsWorkflowEventErrorRawDataVariant2 => WorkflowEventErrorRawDataVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWorkflowEventErrorRawDataVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickWorkflowEventErrorRawDataVariant2() => IsWorkflowEventErrorRawDataVariant2
             ? WorkflowEventErrorRawDataVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator WorkflowEventErrorRawData(string value) => new WorkflowEventErrorRawData((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(WorkflowEventErrorRawData @this) => @this.WorkflowEventErrorRawDataVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEventErrorRawData(string? value)
         {
@@ -101,12 +101,12 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static WorkflowEventErrorRawData FromWorkflowEventErrorRawDataVariant2(string? value) => new WorkflowEventErrorRawData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WorkflowEventErrorRawData(
             object? workflowEventErrorRawDataVariant1,
@@ -118,23 +118,23 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             WorkflowEventErrorRawDataVariant2 as object ??
-            WorkflowEventErrorRawDataVariant1 as object 
+            WorkflowEventErrorRawDataVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             WorkflowEventErrorRawDataVariant1?.ToString() ??
-            WorkflowEventErrorRawDataVariant2?.ToString() 
+            WorkflowEventErrorRawDataVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<object, TResult>? workflowEventErrorRawDataVariant1 = null,
@@ -167,7 +167,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<object>? workflowEventErrorRawDataVariant1 = null,
@@ -191,7 +191,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<object>? workflowEventErrorRawDataVariant1 = null,
@@ -214,7 +214,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(WorkflowEventErrorRawData other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(WorkflowEventErrorRawDataVariant1, other.WorkflowEventErrorRawDataVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(WorkflowEventErrorRawDataVariant2, other.WorkflowEventErrorRawDataVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(WorkflowEventErrorRawDataVariant2, other.WorkflowEventErrorRawDataVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(WorkflowEventErrorRawData obj1, WorkflowEventErrorRawData obj2)
         {
@@ -254,7 +254,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(WorkflowEventErrorRawData obj1, WorkflowEventErrorRawData obj2)
         {
@@ -262,7 +262,7 @@ namespace Vellum
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {
