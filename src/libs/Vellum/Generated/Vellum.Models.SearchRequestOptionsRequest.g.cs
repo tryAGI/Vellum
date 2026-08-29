@@ -19,22 +19,19 @@ namespace Vellum
         /// The weights to use for the search. Must add up to 1.0.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("weights")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchWeightsRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.SearchWeightsRequest, object>? Weights { get; set; }
+        public global::Vellum.SearchWeightsRequest? Weights { get; set; }
 
         /// <summary>
         /// The configuration for merging results.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result_merging")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMergingRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.SearchResultMergingRequest, object>? ResultMerging { get; set; }
+        public global::Vellum.SearchResultMergingRequest? ResultMerging { get; set; }
 
         /// <summary>
         /// The filters to apply to the search.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filters")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchFiltersRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.SearchFiltersRequest, object>? Filters { get; set; }
+        public global::Vellum.SearchFiltersRequest? Filters { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -63,9 +60,9 @@ namespace Vellum
 #endif
         public SearchRequestOptionsRequest(
             int? limit,
-            global::Vellum.OneOf<global::Vellum.SearchWeightsRequest, object>? weights,
-            global::Vellum.OneOf<global::Vellum.SearchResultMergingRequest, object>? resultMerging,
-            global::Vellum.OneOf<global::Vellum.SearchFiltersRequest, object>? filters)
+            global::Vellum.SearchWeightsRequest? weights,
+            global::Vellum.SearchResultMergingRequest? resultMerging,
+            global::Vellum.SearchFiltersRequest? filters)
         {
             this.Limit = limit;
             this.Weights = weights;

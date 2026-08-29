@@ -33,8 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usage_result")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>? UsageResult { get; set; }
+        public global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody? UsageResult { get; set; }
 
         /// <summary>
         ///
@@ -90,7 +89,7 @@ namespace Vellum
             global::System.DateTime startTs,
             global::System.DateTime endTs,
             global::Vellum.NodeExecutionEnum name,
-            global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>? usageResult,
+            global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody? usageResult,
             global::System.Guid? parentSpanId)
         {
             this.Name = name;

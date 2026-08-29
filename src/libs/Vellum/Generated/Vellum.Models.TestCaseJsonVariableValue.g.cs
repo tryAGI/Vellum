@@ -33,8 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,16 +46,16 @@ namespace Vellum
         /// </summary>
         /// <param name="variableId"></param>
         /// <param name="name"></param>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TestCaseJsonVariableValue(
             string variableId,
             string name,
-            object value,
-            global::Vellum.JsonEnum type)
+            global::Vellum.JsonEnum type,
+            object? value)
         {
             this.VariableId = variableId ?? throw new global::System.ArgumentNullException(nameof(variableId));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

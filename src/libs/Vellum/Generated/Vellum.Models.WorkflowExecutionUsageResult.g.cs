@@ -24,8 +24,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationError, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationError, object>? Error { get; set; }
+        public global::Vellum.WorkflowExecutionUsageCalculationError? Error { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,7 +44,7 @@ namespace Vellum
         public WorkflowExecutionUsageResult(
             global::System.Collections.Generic.IList<global::Vellum.MLModelUsageWrapper>? usage,
             global::System.Collections.Generic.IList<global::Vellum.Price>? cost,
-            global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationError, object>? error)
+            global::Vellum.WorkflowExecutionUsageCalculationError? error)
         {
             this.Usage = usage;
             this.Cost = cost;

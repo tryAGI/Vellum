@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumVideoRequest, object> Value { get; set; }
+        public global::Vellum.VellumVideoRequest? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,14 +30,14 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="VideoVellumValueRequest" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VideoVellumValueRequest(
-            global::Vellum.OneOf<global::Vellum.VellumVideoRequest, object> value,
-            global::Vellum.VideoEnum type)
+            global::Vellum.VideoEnum type,
+            global::Vellum.VellumVideoRequest? value)
         {
             this.Type = type;
             this.Value = value;

@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumErrorRequest, object> Value { get; set; }
+        public global::Vellum.VellumErrorRequest? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,14 +30,14 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="ErrorVellumValueRequest" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ErrorVellumValueRequest(
-            global::Vellum.OneOf<global::Vellum.VellumErrorRequest, object> value,
-            global::Vellum.ErrorEnum type)
+            global::Vellum.ErrorEnum type,
+            global::Vellum.VellumErrorRequest? value)
         {
             this.Type = type;
             this.Value = value;

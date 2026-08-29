@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumError, object> Value { get; set; }
+        public global::Vellum.VellumError? Value { get; set; }
 
         /// <summary>
         ///
@@ -49,9 +47,9 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="NodeOutputCompiledErrorValue" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="nodeOutputId"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
         /// <param name="state">
         /// * `INITIATED` - INITIATED<br/>
         /// * `STREAMING` - STREAMING<br/>
@@ -62,9 +60,9 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NodeOutputCompiledErrorValue(
-            global::Vellum.OneOf<global::Vellum.VellumError, object> value,
             string nodeOutputId,
             global::Vellum.ErrorEnum type,
+            global::Vellum.VellumError? value,
             global::Vellum.WorkflowNodeResultEventState? state)
         {
             this.Type = type;

@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("raw_data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventErrorRawData?, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowEventErrorRawData?, object>? RawData { get; set; }
+        public global::Vellum.WorkflowEventErrorRawData? RawData { get; set; }
 
         /// <summary>
         /// * `WORKFLOW_INITIALIZATION` - WORKFLOW_INITIALIZATION<br/>
@@ -85,7 +84,7 @@ namespace Vellum
         public WorkflowEventError(
             string message,
             global::Vellum.WorkflowExecutionEventErrorCode code,
-            global::Vellum.OneOf<global::Vellum.WorkflowEventErrorRawData?, object>? rawData,
+            global::Vellum.WorkflowEventErrorRawData? rawData,
             string? stacktrace)
         {
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));

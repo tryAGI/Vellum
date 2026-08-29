@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.StringVellumValue, object> Value { get; set; }
+        public global::Vellum.StringVellumValue? Value { get; set; }
 
         /// <summary>
         ///
@@ -49,9 +47,9 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="NodeOutputCompiledThinkingValue" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="nodeOutputId"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
         /// <param name="state">
         /// * `INITIATED` - INITIATED<br/>
         /// * `STREAMING` - STREAMING<br/>
@@ -62,9 +60,9 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NodeOutputCompiledThinkingValue(
-            global::Vellum.OneOf<global::Vellum.StringVellumValue, object> value,
             string nodeOutputId,
             global::Vellum.ThinkingEnum type,
+            global::Vellum.StringVellumValue? value,
             global::Vellum.WorkflowNodeResultEventState? state)
         {
             this.Type = type;

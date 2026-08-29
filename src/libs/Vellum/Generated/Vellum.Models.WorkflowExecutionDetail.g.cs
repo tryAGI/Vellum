@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parent_context")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.ParentContext?, object> ParentContext { get; set; }
+        public global::Vellum.ParentContext? ParentContext { get; set; }
 
         /// <summary>
         ///
@@ -54,9 +52,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowError?, object> Error { get; set; }
+        public global::Vellum.WorkflowError? Error { get; set; }
 
         /// <summary>
         ///
@@ -87,13 +83,13 @@ namespace Vellum
         /// Initializes a new instance of the <see cref="WorkflowExecutionDetail" /> class.
         /// </summary>
         /// <param name="spanId"></param>
-        /// <param name="parentContext"></param>
         /// <param name="start"></param>
         /// <param name="inputs"></param>
         /// <param name="outputs"></param>
-        /// <param name="error"></param>
         /// <param name="spans"></param>
+        /// <param name="parentContext"></param>
         /// <param name="end"></param>
+        /// <param name="error"></param>
         /// <param name="usageResults"></param>
         /// <param name="state"></param>
 #if NET7_0_OR_GREATER
@@ -101,13 +97,13 @@ namespace Vellum
 #endif
         public WorkflowExecutionDetail(
             global::System.Guid spanId,
-            global::Vellum.OneOf<global::Vellum.ParentContext?, object> parentContext,
             global::System.DateTime start,
             global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue> inputs,
             global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue> outputs,
-            global::Vellum.OneOf<global::Vellum.WorkflowError?, object> error,
             global::System.Collections.Generic.IList<global::Vellum.VellumSpan> spans,
+            global::Vellum.ParentContext? parentContext,
             global::System.DateTime? end,
+            global::Vellum.WorkflowError? error,
             global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionUsageResult>? usageResults,
             object? state)
         {

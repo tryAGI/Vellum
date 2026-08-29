@@ -12,8 +12,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("execution_meta")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptNodeExecutionMeta, object>))]
-        public global::Vellum.OneOf<global::Vellum.PromptNodeExecutionMeta, object>? ExecutionMeta { get; set; }
+        public global::Vellum.PromptNodeExecutionMeta? ExecutionMeta { get; set; }
 
         /// <summary>
         ///
@@ -66,7 +65,7 @@ namespace Vellum
 #endif
         public PromptNodeResultData(
             string outputId,
-            global::Vellum.OneOf<global::Vellum.PromptNodeExecutionMeta, object>? executionMeta,
+            global::Vellum.PromptNodeExecutionMeta? executionMeta,
             string? arrayOutputId,
             string? executionId,
             string? text,

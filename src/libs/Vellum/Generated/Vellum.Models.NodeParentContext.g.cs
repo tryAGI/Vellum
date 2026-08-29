@@ -12,8 +12,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parent")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>))]
-        public global::Vellum.OneOf<global::Vellum.ParentContext?, object>? Parent { get; set; }
+        public global::Vellum.ParentContext? Parent { get; set; }
 
         /// <summary>
         ///
@@ -62,7 +61,7 @@ namespace Vellum
         public NodeParentContext(
             global::Vellum.VellumCodeResourceDefinition nodeDefinition,
             global::System.Guid spanId,
-            global::Vellum.OneOf<global::Vellum.ParentContext?, object>? parent,
+            global::Vellum.ParentContext? parent,
             global::System.Collections.Generic.IList<global::Vellum.SpanLink>? links,
             global::Vellum.WorkflowNodeEnum type)
         {

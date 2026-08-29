@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         ///
@@ -48,9 +47,9 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="NodeOutputCompiledJsonValue" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="nodeOutputId"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
         /// <param name="state">
         /// * `INITIATED` - INITIATED<br/>
         /// * `STREAMING` - STREAMING<br/>
@@ -61,9 +60,9 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NodeOutputCompiledJsonValue(
-            object value,
             string nodeOutputId,
             global::Vellum.JsonEnum type,
+            object? value,
             global::Vellum.WorkflowNodeResultEventState? state)
         {
             this.Type = type;

@@ -43,8 +43,7 @@ namespace Vellum
         /// Deprecated. The value returned will always be 'PRODUCTION'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>))]
-        public global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>? Environment { get; set; }
+        public global::Vellum.EnvironmentEnum? Environment { get; set; }
 
         /// <summary>
         ///
@@ -91,8 +90,7 @@ namespace Vellum
         /// Information used to display this Workflow Deployment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("display_data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentDisplayData, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowDeploymentDisplayData, object>? DisplayData { get; set; }
+        public global::Vellum.WorkflowDeploymentDisplayData? DisplayData { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -149,9 +147,9 @@ namespace Vellum
             global::System.Collections.Generic.IList<global::Vellum.VellumVariable> inputVariables,
             global::System.Collections.Generic.IList<global::Vellum.VellumVariable> outputVariables,
             global::Vellum.EntityStatus? status,
-            global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>? environment,
+            global::Vellum.EnvironmentEnum? environment,
             string? description,
-            global::Vellum.OneOf<global::Vellum.WorkflowDeploymentDisplayData, object>? displayData)
+            global::Vellum.WorkflowDeploymentDisplayData? displayData)
         {
             this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

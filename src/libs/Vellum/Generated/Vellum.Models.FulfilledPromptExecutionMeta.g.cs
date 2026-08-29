@@ -18,22 +18,19 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("finish_reason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>))]
-        public global::Vellum.OneOf<global::Vellum.FinishReasonEnum?, object>? FinishReason { get; set; }
+        public global::Vellum.FinishReasonEnum? FinishReason { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usage")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>))]
-        public global::Vellum.OneOf<global::Vellum.MLModelUsage, object>? Usage { get; set; }
+        public global::Vellum.MLModelUsage? Usage { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cost")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>))]
-        public global::Vellum.OneOf<global::Vellum.Price, object>? Cost { get; set; }
+        public global::Vellum.Price? Cost { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,9 +50,9 @@ namespace Vellum
 #endif
         public FulfilledPromptExecutionMeta(
             int? latency,
-            global::Vellum.OneOf<global::Vellum.FinishReasonEnum?, object>? finishReason,
-            global::Vellum.OneOf<global::Vellum.MLModelUsage, object>? usage,
-            global::Vellum.OneOf<global::Vellum.Price, object>? cost)
+            global::Vellum.FinishReasonEnum? finishReason,
+            global::Vellum.MLModelUsage? usage,
+            global::Vellum.Price? cost)
         {
             this.Latency = latency;
             this.FinishReason = finishReason;

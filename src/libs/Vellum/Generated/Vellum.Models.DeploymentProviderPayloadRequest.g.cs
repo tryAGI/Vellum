@@ -37,8 +37,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expand_meta")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>? ExpandMeta { get; set; }
+        public global::Vellum.CompilePromptDeploymentExpandMetaRequest? ExpandMeta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -70,7 +69,7 @@ namespace Vellum
             global::System.Guid? deploymentId,
             string? deploymentName,
             string? releaseTag,
-            global::Vellum.OneOf<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>? expandMeta)
+            global::Vellum.CompilePromptDeploymentExpandMetaRequest? expandMeta)
         {
             this.DeploymentId = deploymentId;
             this.DeploymentName = deploymentName;

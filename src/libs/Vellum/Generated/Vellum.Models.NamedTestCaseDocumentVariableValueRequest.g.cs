@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumDocumentRequest, object> Value { get; set; }
+        public global::Vellum.VellumDocumentRequest? Value { get; set; }
 
         /// <summary>
         ///
@@ -39,16 +37,16 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="NamedTestCaseDocumentVariableValueRequest" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="name"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NamedTestCaseDocumentVariableValueRequest(
-            global::Vellum.OneOf<global::Vellum.VellumDocumentRequest, object> value,
             string name,
-            global::Vellum.DocumentEnum type)
+            global::Vellum.DocumentEnum type,
+            global::Vellum.VellumDocumentRequest? value)
         {
             this.Type = type;
             this.Value = value;

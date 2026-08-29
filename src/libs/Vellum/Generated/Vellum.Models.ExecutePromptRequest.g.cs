@@ -43,15 +43,13 @@ namespace Vellum
         /// An optionally specified configuration used to opt in to including additional metadata about this prompt execution in the API response. Corresponding values will be returned under the `meta` key of the API response.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expand_meta")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.PromptDeploymentExpandMetaRequest, object>? ExpandMeta { get; set; }
+        public global::Vellum.PromptDeploymentExpandMetaRequest? ExpandMeta { get; set; }
 
         /// <summary>
         /// Overrides for the raw API request sent to the model host. Combined with `expand_raw`, it can be used to access new features from models.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("raw_overrides")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.RawPromptExecutionOverridesRequest, object>? RawOverrides { get; set; }
+        public global::Vellum.RawPromptExecutionOverridesRequest? RawOverrides { get; set; }
 
         /// <summary>
         /// A list of keys whose values you'd like to directly return from the JSON response of the model provider. Useful if you need lower-level info returned by model providers that Vellum would otherwise omit. Corresponding key/value pairs will be returned under the `raw` key of the API response.
@@ -110,8 +108,8 @@ namespace Vellum
             string? promptDeploymentName,
             string? releaseTag,
             string? externalId,
-            global::Vellum.OneOf<global::Vellum.PromptDeploymentExpandMetaRequest, object>? expandMeta,
-            global::Vellum.OneOf<global::Vellum.RawPromptExecutionOverridesRequest, object>? rawOverrides,
+            global::Vellum.PromptDeploymentExpandMetaRequest? expandMeta,
+            global::Vellum.RawPromptExecutionOverridesRequest? rawOverrides,
             global::System.Collections.Generic.IList<string>? expandRaw,
             object? metadata)
         {

@@ -12,15 +12,13 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usage")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>))]
-        public global::Vellum.OneOf<global::Vellum.MLModelUsage, object>? Usage { get; set; }
+        public global::Vellum.MLModelUsage? Usage { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cost")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>))]
-        public global::Vellum.OneOf<global::Vellum.Price, object>? Cost { get; set; }
+        public global::Vellum.Price? Cost { get; set; }
 
         /// <summary>
         ///
@@ -44,8 +42,8 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PromptNodeExecutionMeta(
-            global::Vellum.OneOf<global::Vellum.MLModelUsage, object>? usage,
-            global::Vellum.OneOf<global::Vellum.Price, object>? cost,
+            global::Vellum.MLModelUsage? usage,
+            global::Vellum.Price? cost,
             string? modelName)
         {
             this.Usage = usage;

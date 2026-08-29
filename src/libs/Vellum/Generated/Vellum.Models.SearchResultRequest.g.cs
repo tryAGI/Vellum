@@ -40,8 +40,7 @@ namespace Vellum
         /// Additional information about the search result.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.SearchResultMetaRequest, object>? Meta { get; set; }
+        public global::Vellum.SearchResultMetaRequest? Meta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -73,7 +72,7 @@ namespace Vellum
             double score,
             global::System.Collections.Generic.IList<string> keywords,
             global::Vellum.SearchResultDocumentRequest document,
-            global::Vellum.OneOf<global::Vellum.SearchResultMetaRequest, object>? meta)
+            global::Vellum.SearchResultMetaRequest? meta)
         {
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Score = score;

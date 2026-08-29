@@ -54,8 +54,7 @@ namespace Vellum
         /// * `INVALID_CREDENTIALS` - Invalid Credentials
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("processing_failure_reason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ProcessingFailureReasonEnum?, object>))]
-        public global::Vellum.OneOf<global::Vellum.ProcessingFailureReasonEnum?, object>? ProcessingFailureReason { get; set; }
+        public global::Vellum.ProcessingFailureReasonEnum? ProcessingFailureReason { get; set; }
 
         /// <summary>
         /// The document's current status.<br/>
@@ -139,7 +138,7 @@ namespace Vellum
             global::Vellum.DocumentProcessingState processingState,
             global::System.Collections.Generic.IList<global::Vellum.SlimDocumentDocumentToDocumentIndex> documentToDocumentIndexes,
             string? externalId,
-            global::Vellum.OneOf<global::Vellum.ProcessingFailureReasonEnum?, object>? processingFailureReason,
+            global::Vellum.ProcessingFailureReasonEnum? processingFailureReason,
             global::Vellum.DocumentStatus? status,
             global::System.Collections.Generic.IList<string>? keywords,
             object? metadata)

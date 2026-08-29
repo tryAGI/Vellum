@@ -26,9 +26,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.FunctionCall, object> Value { get; set; }
+        public global::Vellum.FunctionCall? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,15 +38,15 @@ namespace Vellum
         /// Initializes a new instance of the <see cref="TemplatingNodeFunctionCallResult" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TemplatingNodeFunctionCallResult(
             string id,
-            global::Vellum.OneOf<global::Vellum.FunctionCall, object> value,
-            global::Vellum.FunctionCallEnum type)
+            global::Vellum.FunctionCallEnum type,
+            global::Vellum.FunctionCall? value)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Type = type;

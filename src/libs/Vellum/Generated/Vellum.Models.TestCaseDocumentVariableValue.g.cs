@@ -33,9 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumDocument, object> Value { get; set; }
+        public global::Vellum.VellumDocument? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,16 +46,16 @@ namespace Vellum
         /// </summary>
         /// <param name="variableId"></param>
         /// <param name="name"></param>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TestCaseDocumentVariableValue(
             string variableId,
             string name,
-            global::Vellum.OneOf<global::Vellum.VellumDocument, object> value,
-            global::Vellum.DocumentEnum type)
+            global::Vellum.DocumentEnum type,
+            global::Vellum.VellumDocument? value)
         {
             this.VariableId = variableId ?? throw new global::System.ArgumentNullException(nameof(variableId));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

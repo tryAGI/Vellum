@@ -20,9 +20,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptMeta, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.CompilePromptMeta, object> Meta { get; set; }
+        public global::Vellum.CompilePromptMeta? Meta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,7 +38,7 @@ namespace Vellum
 #endif
         public DeploymentProviderPayloadResponse(
             global::Vellum.DeploymentProviderPayloadResponsePayload payload,
-            global::Vellum.OneOf<global::Vellum.CompilePromptMeta, object> meta)
+            global::Vellum.CompilePromptMeta? meta)
         {
             this.Payload = payload;
             this.Meta = meta;

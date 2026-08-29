@@ -33,9 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_by")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.ReleaseCreatedBy, object> CreatedBy { get; set; }
+        public global::Vellum.ReleaseCreatedBy? CreatedBy { get; set; }
 
         /// <summary>
         /// The workflow version associated with a workflow deployment release.
@@ -83,13 +81,13 @@ namespace Vellum
         /// <param name="id"></param>
         /// <param name="created"></param>
         /// <param name="environment"></param>
-        /// <param name="createdBy"></param>
         /// <param name="workflowVersion">
         /// The workflow version associated with a workflow deployment release.
         /// </param>
         /// <param name="deployment"></param>
         /// <param name="releaseTags"></param>
         /// <param name="reviews"></param>
+        /// <param name="createdBy"></param>
         /// <param name="description"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -98,11 +96,11 @@ namespace Vellum
             global::System.Guid id,
             global::System.DateTime created,
             global::Vellum.ReleaseEnvironment environment,
-            global::Vellum.OneOf<global::Vellum.ReleaseCreatedBy, object> createdBy,
             global::Vellum.WorkflowDeploymentReleaseWorkflowVersion workflowVersion,
             global::Vellum.WorkflowDeploymentReleaseWorkflowDeployment deployment,
             global::System.Collections.Generic.IList<global::Vellum.ReleaseReleaseTag> releaseTags,
             global::System.Collections.Generic.IList<global::Vellum.SlimReleaseReview> reviews,
+            global::Vellum.ReleaseCreatedBy? createdBy,
             string? description)
         {
             this.Id = id;

@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumAudioRequest, object> Value { get; set; }
+        public global::Vellum.VellumAudioRequest? Value { get; set; }
 
         /// <summary>
         ///
@@ -39,16 +37,16 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="NamedTestCaseAudioVariableValueRequest" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="name"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NamedTestCaseAudioVariableValueRequest(
-            global::Vellum.OneOf<global::Vellum.VellumAudioRequest, object> value,
             string name,
-            global::Vellum.AudioEnum type)
+            global::Vellum.AudioEnum type,
+            global::Vellum.VellumAudioRequest? value)
         {
             this.Type = type;
             this.Value = value;

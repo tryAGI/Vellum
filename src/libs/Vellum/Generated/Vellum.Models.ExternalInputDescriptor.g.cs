@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inputs_class")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CodeResourceDefinition, object>))]
-        public global::Vellum.OneOf<global::Vellum.CodeResourceDefinition, object>? InputsClass { get; set; }
+        public global::Vellum.CodeResourceDefinition? InputsClass { get; set; }
 
         /// <summary>
         ///
@@ -54,7 +53,7 @@ namespace Vellum
         public ExternalInputDescriptor(
             global::System.Collections.Generic.IList<global::Vellum.CodeResourceDefinition> types,
             string name,
-            global::Vellum.OneOf<global::Vellum.CodeResourceDefinition, object>? inputsClass,
+            global::Vellum.CodeResourceDefinition? inputsClass,
             object? instance)
         {
             this.Types = types ?? throw new global::System.ArgumentNullException(nameof(types));

@@ -46,8 +46,7 @@ namespace Vellum
         /// Configuration that defines how the Test Suite should be run
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("exec_config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.TestSuiteRunExecConfig?, object>))]
-        public global::Vellum.OneOf<global::Vellum.TestSuiteRunExecConfig?, object>? ExecConfig { get; set; }
+        public global::Vellum.TestSuiteRunExecConfig? ExecConfig { get; set; }
 
         /// <summary>
         ///
@@ -87,7 +86,7 @@ namespace Vellum
             global::System.DateTime created,
             global::Vellum.TestSuiteRunTestSuite testSuite,
             global::Vellum.TestSuiteRunState state,
-            global::Vellum.OneOf<global::Vellum.TestSuiteRunExecConfig?, object>? execConfig,
+            global::Vellum.TestSuiteRunExecConfig? execConfig,
             global::Vellum.TestSuiteRunProgress? progress)
         {
             this.Id = id;

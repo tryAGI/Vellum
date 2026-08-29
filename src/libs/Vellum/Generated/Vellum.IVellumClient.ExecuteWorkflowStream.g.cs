@@ -53,7 +53,7 @@ namespace Vellum
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Collections.Generic.IAsyncEnumerable<global::Vellum.WorkflowStreamEvent> ExecuteWorkflowStreamAsync(
             global::System.Collections.Generic.IList<global::Vellum.WorkflowRequestInputRequest> inputs,
-            global::Vellum.OneOf<global::Vellum.WorkflowExpandMetaRequest, object>? expandMeta = default,
+            global::Vellum.WorkflowExpandMetaRequest? expandMeta = default,
             global::System.Guid? workflowDeploymentId = default,
             string? workflowDeploymentName = default,
             string? releaseTag = default,

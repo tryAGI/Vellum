@@ -18,8 +18,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("finish_reason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>))]
-        public global::Vellum.OneOf<global::Vellum.FinishReasonEnum?, object>? FinishReason { get; set; }
+        public global::Vellum.FinishReasonEnum? FinishReason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +36,7 @@ namespace Vellum
 #endif
         public RejectedPromptExecutionMeta(
             int? latency,
-            global::Vellum.OneOf<global::Vellum.FinishReasonEnum?, object>? finishReason)
+            global::Vellum.FinishReasonEnum? finishReason)
         {
             this.Latency = latency;
             this.FinishReason = finishReason;

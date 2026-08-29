@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         ///
@@ -38,16 +37,16 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="NamedScenarioInputJsonVariableValueRequest" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="name"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NamedScenarioInputJsonVariableValueRequest(
-            object value,
             string name,
-            global::Vellum.JsonEnum type)
+            global::Vellum.JsonEnum type,
+            object? value)
         {
             this.Type = type;
             this.Value = value;

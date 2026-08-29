@@ -12,8 +12,7 @@ namespace Vellum
         /// The icon associated with this Workflow Sandbox.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowDisplayIcon, object>? Icon { get; set; }
+        public global::Vellum.WorkflowDisplayIcon? Icon { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,7 +30,7 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public WorkflowSandboxDisplayData(
-            global::Vellum.OneOf<global::Vellum.WorkflowDisplayIcon, object>? icon)
+            global::Vellum.WorkflowDisplayIcon? icon)
         {
             this.Icon = icon;
         }
