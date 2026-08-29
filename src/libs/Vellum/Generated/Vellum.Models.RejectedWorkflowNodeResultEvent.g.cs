@@ -46,9 +46,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object> Data { get; set; }
+        public global::Vellum.WorkflowNodeResultData? Data { get; set; }
 
         /// <summary>
         ///
@@ -75,10 +73,10 @@ namespace Vellum
         /// <param name="id"></param>
         /// <param name="nodeId"></param>
         /// <param name="nodeResultId"></param>
-        /// <param name="data"></param>
         /// <param name="error"></param>
         /// <param name="state"></param>
         /// <param name="ts"></param>
+        /// <param name="data"></param>
         /// <param name="sourceExecutionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -87,10 +85,10 @@ namespace Vellum
             string id,
             string nodeId,
             string nodeResultId,
-            global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object> data,
             global::Vellum.WorkflowEventError error,
             global::Vellum.RejectedEnum state,
             global::System.DateTime? ts,
+            global::Vellum.WorkflowNodeResultData? data,
             string? sourceExecutionId)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

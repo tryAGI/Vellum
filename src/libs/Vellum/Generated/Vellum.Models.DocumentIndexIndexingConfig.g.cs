@@ -20,8 +20,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chunking")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunking?, object>))]
-        public global::Vellum.OneOf<global::Vellum.DocumentIndexChunking?, object>? Chunking { get; set; }
+        public global::Vellum.DocumentIndexChunking? Chunking { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,7 +38,7 @@ namespace Vellum
 #endif
         public DocumentIndexIndexingConfig(
             global::Vellum.IndexingConfigVectorizer vectorizer,
-            global::Vellum.OneOf<global::Vellum.DocumentIndexChunking?, object>? chunking)
+            global::Vellum.DocumentIndexChunking? chunking)
         {
             this.Vectorizer = vectorizer;
             this.Chunking = chunking;

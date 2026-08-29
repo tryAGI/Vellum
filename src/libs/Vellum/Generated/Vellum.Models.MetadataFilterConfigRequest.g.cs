@@ -12,8 +12,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("combinator")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>))]
-        public global::Vellum.OneOf<global::Vellum.MetadataFilterRuleCombinator?, object>? Combinator { get; set; }
+        public global::Vellum.MetadataFilterRuleCombinator? Combinator { get; set; }
 
         /// <summary>
         ///
@@ -37,8 +36,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operator")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>))]
-        public global::Vellum.OneOf<global::Vellum.LogicalOperator?, object>? Operator { get; set; }
+        public global::Vellum.LogicalOperator? Operator { get; set; }
 
         /// <summary>
         ///
@@ -65,11 +63,11 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public MetadataFilterConfigRequest(
-            global::Vellum.OneOf<global::Vellum.MetadataFilterRuleCombinator?, object>? combinator,
+            global::Vellum.MetadataFilterRuleCombinator? combinator,
             bool? negated,
             global::System.Collections.Generic.IList<global::Vellum.MetadataFilterRuleRequest>? rules,
             string? field,
-            global::Vellum.OneOf<global::Vellum.LogicalOperator?, object>? @operator,
+            global::Vellum.LogicalOperator? @operator,
             string? value)
         {
             this.Combinator = combinator;

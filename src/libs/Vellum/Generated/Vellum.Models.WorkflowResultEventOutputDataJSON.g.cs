@@ -55,8 +55,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -74,24 +73,24 @@ namespace Vellum
         /// * `FULFILLED` - FULFILLED<br/>
         /// * `REJECTED` - REJECTED
         /// </param>
-        /// <param name="value"></param>
         /// <param name="id"></param>
         /// <param name="nodeId"></param>
         /// <param name="delta">
         /// The newly output string value. Only relevant for string outputs with a state of STREAMING.
         /// </param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public WorkflowResultEventOutputDataJSON(
             string name,
             global::Vellum.WorkflowNodeResultEventState state,
-            object value,
             global::System.Guid? id,
             string? nodeId,
             string? delta,
-            global::Vellum.JsonEnum type)
+            global::Vellum.JsonEnum type,
+            object? value)
         {
             this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

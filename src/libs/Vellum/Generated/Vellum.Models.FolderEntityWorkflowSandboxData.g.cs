@@ -62,9 +62,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("display_data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowSandboxDisplayData, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowSandboxDisplayData, object> DisplayData { get; set; }
+        public global::Vellum.WorkflowSandboxDisplayData? DisplayData { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -84,9 +82,9 @@ namespace Vellum
         /// * `ARCHIVED` - Archived<br/>
         /// * `PENDING_DELETION` - Pending Deletion
         /// </param>
-        /// <param name="displayData"></param>
         /// <param name="description"></param>
         /// <param name="lastDeployedOn"></param>
+        /// <param name="displayData"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -96,9 +94,9 @@ namespace Vellum
             global::System.DateTime created,
             global::System.DateTime modified,
             global::Vellum.EntityStatus status,
-            global::Vellum.OneOf<global::Vellum.WorkflowSandboxDisplayData, object> displayData,
             string? description,
-            global::System.DateTime? lastDeployedOn)
+            global::System.DateTime? lastDeployedOn,
+            global::Vellum.WorkflowSandboxDisplayData? displayData)
         {
             this.Id = id;
             this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));

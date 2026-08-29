@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("iteration_state")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.IterationStateEnum?, object>))]
-        public global::Vellum.OneOf<global::Vellum.IterationStateEnum?, object>? IterationState { get; set; }
+        public global::Vellum.IterationStateEnum? IterationState { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,7 +37,7 @@ namespace Vellum
 #endif
         public MapNodeResultData(
             global::System.Collections.Generic.IList<global::System.Guid> executionIds,
-            global::Vellum.OneOf<global::Vellum.IterationStateEnum?, object>? iterationState)
+            global::Vellum.IterationStateEnum? iterationState)
         {
             this.ExecutionIds = executionIds ?? throw new global::System.ArgumentNullException(nameof(executionIds));
             this.IterationState = iterationState;

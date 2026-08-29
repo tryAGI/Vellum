@@ -29,8 +29,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContentRequest?, object>))]
-        public global::Vellum.OneOf<global::Vellum.ChatMessageContentRequest?, object>? Content { get; set; }
+        public global::Vellum.ChatMessageContentRequest? Content { get; set; }
 
         /// <summary>
         /// An optional identifier representing who or what generated this message.
@@ -71,7 +70,7 @@ namespace Vellum
         public ChatMessageRequest(
             global::Vellum.ChatMessageRole role,
             string? text,
-            global::Vellum.OneOf<global::Vellum.ChatMessageContentRequest?, object>? content,
+            global::Vellum.ChatMessageContentRequest? content,
             string? source,
             object? metadata)
         {

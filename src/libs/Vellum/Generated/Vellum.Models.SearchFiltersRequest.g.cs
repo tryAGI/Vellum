@@ -18,8 +18,7 @@ namespace Vellum
         /// The metadata filters to apply to the search
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFiltersRequest?, object>))]
-        public global::Vellum.OneOf<global::Vellum.MetadataFiltersRequest?, object>? Metadata { get; set; }
+        public global::Vellum.MetadataFiltersRequest? Metadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,7 +40,7 @@ namespace Vellum
 #endif
         public SearchFiltersRequest(
             global::System.Collections.Generic.IList<string>? externalIds,
-            global::Vellum.OneOf<global::Vellum.MetadataFiltersRequest?, object>? metadata)
+            global::Vellum.MetadataFiltersRequest? metadata)
         {
             this.ExternalIds = externalIds;
             this.Metadata = metadata;

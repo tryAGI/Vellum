@@ -30,8 +30,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CheckWorkflowExecutionStatusError, object>))]
-        public global::Vellum.OneOf<global::Vellum.CheckWorkflowExecutionStatusError, object>? Error { get; set; }
+        public global::Vellum.CheckWorkflowExecutionStatusError? Error { get; set; }
 
         /// <summary>
         ///
@@ -73,7 +72,7 @@ namespace Vellum
             global::Vellum.WorkflowResultEventState status,
             string executionId,
             object? outputs,
-            global::Vellum.OneOf<global::Vellum.CheckWorkflowExecutionStatusError, object>? error,
+            global::Vellum.CheckWorkflowExecutionStatusError? error,
             string? executionDetailUrl)
         {
             this.Status = status;

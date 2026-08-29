@@ -16,6 +16,7 @@ namespace Vellum
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StringEnum), TypeInfoPropertyName = "StringEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StringInputRequest))]
@@ -47,7 +48,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ArrayChatMessageContentItemRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatMessageContentRequest), TypeInfoPropertyName = "ChatMessageContentRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatMessageRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ChatMessageContentRequest?, object>), TypeInfoPropertyName = "OneOfChatMessageContentRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatHistoryInputRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ChatMessageRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.AudioInputRequest))]
@@ -61,8 +61,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecutePromptRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.PromptDeploymentInputRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.PromptDeploymentExpandMetaRequest, object>), TypeInfoPropertyName = "OneOfPromptDeploymentExpandMetaRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.RawPromptExecutionOverridesRequest, object>), TypeInfoPropertyName = "OneOfRawPromptExecutionOverridesRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FinishReasonEnum), TypeInfoPropertyName = "FinishReasonEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MLModelUsage))]
@@ -71,9 +69,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.Price))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptExecutionMeta))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.FinishReasonEnum?, object>), TypeInfoPropertyName = "OneOfFinishReasonEnumObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.MLModelUsage, object>), TypeInfoPropertyName = "OneOfMLModelUsageObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.Price, object>), TypeInfoPropertyName = "OneOfPriceObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FulfilledEnum), TypeInfoPropertyName = "FulfilledEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StringVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.JsonVellumValue))]
@@ -81,13 +76,10 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumErrorCodeEnum), TypeInfoPropertyName = "VellumErrorCodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ErrorVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumError, object>), TypeInfoPropertyName = "OneOfVellumErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FunctionCall))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FunctionCallVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.FunctionCall, object>), TypeInfoPropertyName = "OneOfFunctionCallObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingEnum), TypeInfoPropertyName = "ThinkingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.StringVellumValue, object>), TypeInfoPropertyName = "OneOfStringVellumValueObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptOutput), TypeInfoPropertyName = "PromptOutput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FulfilledExecutePromptResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.PromptOutput>))]
@@ -115,11 +107,9 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SubmitCompletionActualsErrorResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CompilePromptDeploymentExpandMetaRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploymentProviderPayloadRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>), TypeInfoPropertyName = "OneOfCompilePromptDeploymentExpandMetaRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploymentProviderPayloadResponsePayload), TypeInfoPropertyName = "DeploymentProviderPayloadResponsePayload2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CompilePromptMeta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploymentProviderPayloadResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CompilePromptMeta, object>), TypeInfoPropertyName = "OneOfCompilePromptMetaObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploySandboxPromptRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EntityStatus), TypeInfoPropertyName = "EntityStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EnvironmentEnum), TypeInfoPropertyName = "EnvironmentEnum2")]
@@ -128,16 +118,12 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NumberVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumAudio))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.AudioVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumAudio, object>), TypeInfoPropertyName = "OneOfVellumAudioObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVideo))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VideoVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumVideo, object>), TypeInfoPropertyName = "OneOfVellumVideoObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumImage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ImageVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumImage, object>), TypeInfoPropertyName = "OneOfVellumImageObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumDocument))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentVellumValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumDocument, object>), TypeInfoPropertyName = "OneOfVellumDocumentObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ArrayVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumValue>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValue), TypeInfoPropertyName = "VellumValue2")]
@@ -153,7 +139,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ArrayChatMessageContentItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatMessageContent), TypeInfoPropertyName = "ChatMessageContent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ChatMessageContent?, object>), TypeInfoPropertyName = "OneOfChatMessageContentObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatHistoryVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ChatMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultsEnum), TypeInfoPropertyName = "SearchResultsEnum2")]
@@ -162,17 +147,12 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PdfSearchResultMetaSource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMetaSource), TypeInfoPropertyName = "SearchResultMetaSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMeta))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMetaSource?, object>), TypeInfoPropertyName = "OneOfSearchResultMetaSourceObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMeta, object>), TypeInfoPropertyName = "OneOfSearchResultMetaObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultsVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SearchResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariableExtensions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariable))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumValue?, object>), TypeInfoPropertyName = "OneOfVellumValueObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumVariableExtensions, object>), TypeInfoPropertyName = "OneOfVellumVariableExtensionsObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploymentRead))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>), TypeInfoPropertyName = "OneOfEnvironmentEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumVariable>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NamedScenarioInputStringVariableValueRequest))]
@@ -213,7 +193,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseReviewState), TypeInfoPropertyName = "ReleaseReviewState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SlimReleaseReview))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptDeploymentRelease))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ReleaseCreatedBy, object>), TypeInfoPropertyName = "OneOfReleaseCreatedByObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ReleaseReleaseTag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SlimReleaseReview>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploymentReleaseTagDeploymentHistoryItem))]
@@ -236,7 +215,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExpandMetaRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecuteWorkflowRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowRequestInputRequest>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExpandMetaRequest, object>), TypeInfoPropertyName = "OneOfWorkflowExpandMetaRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowOutputString))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowOutputNumber))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowOutputJSON))]
@@ -255,7 +233,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEventErrorRawData), TypeInfoPropertyName = "WorkflowEventErrorRawData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionEventErrorCode), TypeInfoPropertyName = "WorkflowExecutionEventErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEventError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowEventErrorRawData?, object>), TypeInfoPropertyName = "OneOfWorkflowEventErrorRawDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecuteWorkflowWorkflowResultEvent), TypeInfoPropertyName = "ExecuteWorkflowWorkflowResultEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecuteWorkflowResponse))]
@@ -293,15 +270,12 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecutionDocumentVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecutionVellumValue), TypeInfoPropertyName = "ExecutionVellumValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowResultEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowResultEventOutputData?, object>), TypeInfoPropertyName = "OneOfWorkflowResultEventOutputDataObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowEventError, object>), TypeInfoPropertyName = "OneOfWorkflowEventErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionWorkflowResultEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeEnum), TypeInfoPropertyName = "NodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptEnum), TypeInfoPropertyName = "PromptEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptNodeExecutionMeta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptNodeResultData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.PromptNodeExecutionMeta, object>), TypeInfoPropertyName = "OneOfPromptNodeExecutionMetaObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptNodeResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchEnum), TypeInfoPropertyName = "SearchEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchNodeResultData))]
@@ -359,7 +333,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MapEnum), TypeInfoPropertyName = "MapEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.IterationStateEnum), TypeInfoPropertyName = "IterationStateEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MapNodeResultData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.IterationStateEnum?, object>), TypeInfoPropertyName = "OneOfIterationStateEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MapNodeResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowNodeResultData), TypeInfoPropertyName = "WorkflowNodeResultData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeInputCompiledStringValue))]
@@ -379,7 +352,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeInputCompiledDocumentValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeInputVariableCompiledValue), TypeInfoPropertyName = "NodeInputVariableCompiledValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.InitiatedWorkflowNodeResultEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object>), TypeInfoPropertyName = "OneOfWorkflowNodeResultDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.NodeInputVariableCompiledValue>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeOutputCompiledStringValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeOutputCompiledNumberValue))]
@@ -392,7 +364,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeOutputCompiledThinkingValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeOutputCompiledValue), TypeInfoPropertyName = "NodeOutputCompiledValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StreamingWorkflowNodeResultEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.NodeOutputCompiledValue?, object>), TypeInfoPropertyName = "OneOfNodeOutputCompiledValueObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FulfilledWorkflowNodeResultEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.NodeOutputCompiledValue>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.RejectedWorkflowNodeResultEvent))]
@@ -400,9 +371,7 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionNodeResultEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowStreamEvent), TypeInfoPropertyName = "WorkflowStreamEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CheckWorkflowExecutionStatusError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionEventErrorCode?, object>), TypeInfoPropertyName = "OneOfWorkflowExecutionEventErrorCodeObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CheckWorkflowExecutionStatusResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CheckWorkflowExecutionStatusError, object>), TypeInfoPropertyName = "OneOfCheckWorkflowExecutionStatusErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CheckWorkflowExecutionStatusErrorResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionActualStringRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionActualJsonRequest))]
@@ -414,16 +383,13 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploySandboxWorkflowRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDisplayIcon))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentDisplayData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowDisplayIcon, object>), TypeInfoPropertyName = "OneOfWorkflowDisplayIconObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentRead))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowDeploymentDisplayData, object>), TypeInfoPropertyName = "OneOfWorkflowDeploymentDisplayDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecuteWorkflowDeploymentStreamRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SpanLinkTypeEnum), TypeInfoPropertyName = "SpanLinkTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SpanLink))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ParentContext), TypeInfoPropertyName = "ParentContext2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumCodeResourceDefinition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowParentContext))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ParentContext?, object>), TypeInfoPropertyName = "OneOfParentContextObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SpanLink>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowNodeEnum), TypeInfoPropertyName = "WorkflowNodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeParentContext))]
@@ -436,7 +402,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ApiRequestEnum), TypeInfoPropertyName = "ApiRequestEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ApiActorTypeEnum), TypeInfoPropertyName = "ApiActorTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.APIRequestParentContext))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ApiActorTypeEnum?, object>), TypeInfoPropertyName = "OneOfApiActorTypeEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExternalEnum), TypeInfoPropertyName = "ExternalEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExternalParentContext))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ScheduledEnum), TypeInfoPropertyName = "ScheduledEnum2")]
@@ -460,7 +425,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSdkErrorRawData), TypeInfoPropertyName = "VellumSdkErrorRawData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSdkErrorCodeEnum), TypeInfoPropertyName = "VellumSdkErrorCodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSdkError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumSdkErrorRawData?, object>), TypeInfoPropertyName = "OneOfVellumSdkErrorRawDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionRejectedBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionRejectedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionPausedEnum), TypeInfoPropertyName = "NodeExecutionPausedEnum2")]
@@ -475,7 +439,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionLogEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionInitiatedEnum), TypeInfoPropertyName = "WorkflowExecutionInitiatedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionInitiatedBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumCodeResourceDefinition, object>), TypeInfoPropertyName = "OneOfVellumCodeResourceDefinitionObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionInitiatedEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionStreamingEnum), TypeInfoPropertyName = "WorkflowExecutionStreamingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionStreamingBody))]
@@ -490,7 +453,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CodeResourceDefinition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExternalInputDescriptor))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.CodeResourceDefinition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CodeResourceDefinition, object>), TypeInfoPropertyName = "OneOfCodeResourceDefinitionObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionPausedBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.ExternalInputDescriptor>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionPausedEvent))]
@@ -514,18 +476,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentReleaseWorkflowVersion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowDependency>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentReleaseWorkflowDeployment))]
-    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentRelease))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PaginatedWorkflowDeploymentReleaseList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowDeploymentRelease>))]
@@ -544,14 +494,10 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionUsageResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.MLModelUsageWrapper>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.Price>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationError, object>), TypeInfoPropertyName = "OneOfWorkflowExecutionUsageCalculationErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionActual))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SlimWorkflowExecutionRead))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowError?, object>), TypeInfoPropertyName = "OneOfWorkflowErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionUsageResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowDeploymentParentContext, object>), TypeInfoPropertyName = "OneOfWorkflowDeploymentParentContextObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionActual, object>), TypeInfoPropertyName = "OneOfWorkflowExecutionActualObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentEventExecutionsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SlimWorkflowExecutionRead>))]
@@ -561,7 +507,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionSpan))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumWorkflowExecutionEvent>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>), TypeInfoPropertyName = "OneOfWorkflowExecutionUsageCalculationFulfilledBodyObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionEnum), TypeInfoPropertyName = "NodeExecutionEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumNodeExecutionEvent), TypeInfoPropertyName = "VellumNodeExecutionEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionSpanAttributes))]
@@ -569,6 +514,18 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumNodeExecutionEvent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSpan), TypeInfoPropertyName = "VellumSpan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEventExecutionRead))]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumSpan>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ErrorDetailResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.UpdateActiveWorkspaceResponse))]
@@ -581,28 +538,20 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetadataFilterRuleCombinator), TypeInfoPropertyName = "MetadataFilterRuleCombinator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.LogicalOperator), TypeInfoPropertyName = "LogicalOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetadataFilterRuleRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.MetadataFilterRuleCombinator?, object>), TypeInfoPropertyName = "OneOfMetadataFilterRuleCombinatorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.MetadataFilterRuleRequest>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.LogicalOperator?, object>), TypeInfoPropertyName = "OneOfLogicalOperatorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetadataFilterConfigRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.LogicalConditionEnum), TypeInfoPropertyName = "LogicalConditionEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StringVellumValueRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NumberVellumValueRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.JsonVellumValueRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.AudioVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumAudioRequest, object>), TypeInfoPropertyName = "OneOfVellumAudioRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VideoVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumVideoRequest, object>), TypeInfoPropertyName = "OneOfVellumVideoRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ImageVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumImageRequest, object>), TypeInfoPropertyName = "OneOfVellumImageRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumDocumentRequest, object>), TypeInfoPropertyName = "OneOfVellumDocumentRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FunctionCallRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FunctionCallVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.FunctionCallRequest, object>), TypeInfoPropertyName = "OneOfFunctionCallRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumErrorRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ErrorVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumErrorRequest, object>), TypeInfoPropertyName = "OneOfVellumErrorRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ArrayVellumValueRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumValueRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValueRequest), TypeInfoPropertyName = "VellumValueRequest2")]
@@ -611,13 +560,10 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PdfSearchResultMetaSourceRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMetaSourceRequest), TypeInfoPropertyName = "SearchResultMetaSourceRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMetaRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMetaSourceRequest?, object>), TypeInfoPropertyName = "OneOfSearchResultMetaSourceRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMetaRequest, object>), TypeInfoPropertyName = "OneOfSearchResultMetaRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultsVellumValueRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SearchResultRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingVellumValueRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.StringVellumValueRequest, object>), TypeInfoPropertyName = "OneOfStringVellumValueRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValueLogicalConditionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.LogicalConditionGroupEnum), TypeInfoPropertyName = "LogicalConditionGroupEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ConditionCombinator), TypeInfoPropertyName = "ConditionCombinator2")]
@@ -626,13 +572,8 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValueLogicalExpressionRequest), TypeInfoPropertyName = "VellumValueLogicalExpressionRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetadataFiltersRequest), TypeInfoPropertyName = "MetadataFiltersRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchFiltersRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.MetadataFiltersRequest?, object>), TypeInfoPropertyName = "OneOfMetadataFiltersRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchRequestOptionsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchWeightsRequest, object>), TypeInfoPropertyName = "OneOfSearchWeightsRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMergingRequest, object>), TypeInfoPropertyName = "OneOfSearchResultMergingRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchFiltersRequest, object>), TypeInfoPropertyName = "OneOfSearchFiltersRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchRequestBodyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchRequestOptionsRequest, object>), TypeInfoPropertyName = "OneOfSearchRequestOptionsRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchErrorResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexesAddDocumentResponse204))]
@@ -678,7 +619,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DelimiterChunkingRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexChunkingRequest), TypeInfoPropertyName = "DocumentIndexChunkingRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexIndexingConfigRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.DocumentIndexChunkingRequest?, object>), TypeInfoPropertyName = "OneOfDocumentIndexChunkingRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OpenAIVectorizerConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OpenAIVectorizerTextEmbedding3Small))]
@@ -706,7 +646,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DelimiterChunking))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexChunking), TypeInfoPropertyName = "DocumentIndexChunking2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexIndexingConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.DocumentIndexChunking?, object>), TypeInfoPropertyName = "OneOfDocumentIndexChunkingObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexRead))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.V1DocumentIndexesGetParametersStatus), TypeInfoPropertyName = "V1DocumentIndexesGetParametersStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PaginatedDocumentIndexReadList))]
@@ -726,7 +665,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ProcessingFailureReasonEnum), TypeInfoPropertyName = "ProcessingFailureReasonEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SlimDocumentDocumentToDocumentIndex))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SlimDocument))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ProcessingFailureReasonEnum?, object>), TypeInfoPropertyName = "OneOfProcessingFailureReasonEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SlimDocumentDocumentToDocumentIndex>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PaginatedSlimDocumentList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.SlimDocument>))]
@@ -844,7 +782,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunExecConfig), TypeInfoPropertyName = "TestSuiteRunExecConfig2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunProgress))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunRead))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.TestSuiteRunExecConfig?, object>), TypeInfoPropertyName = "OneOfTestSuiteRunExecConfigObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunExecutionStringOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunExecutionNumberOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunExecutionJsonOutput))]
@@ -884,7 +821,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FolderEntityPromptSandbox))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowSandboxDisplayData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FolderEntityWorkflowSandboxData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowSandboxDisplayData, object>), TypeInfoPropertyName = "OneOfWorkflowSandboxDisplayDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FolderEntityWorkflowSandbox))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexEnum), TypeInfoPropertyName = "DocumentIndexEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FolderEntityDocumentIndexData))]
@@ -918,26 +854,17 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentEnum?), TypeInfoPropertyName = "NullableDocumentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ArrayChatMessageContentItemRequest?), TypeInfoPropertyName = "NullableArrayChatMessageContentItemRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatMessageContentRequest?), TypeInfoPropertyName = "NullableChatMessageContentRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ChatMessageContentRequest?, object>?), TypeInfoPropertyName = "NullableOneOfChatMessageContentRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptDeploymentInputRequest?), TypeInfoPropertyName = "NullablePromptDeploymentInputRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.PromptDeploymentExpandMetaRequest, object>?), TypeInfoPropertyName = "NullableOneOfPromptDeploymentExpandMetaRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.RawPromptExecutionOverridesRequest, object>?), TypeInfoPropertyName = "NullableOneOfRawPromptExecutionOverridesRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FinishReasonEnum?), TypeInfoPropertyName = "NullableFinishReasonEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.UnitEnum?), TypeInfoPropertyName = "NullableUnitEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.FinishReasonEnum?, object>?), TypeInfoPropertyName = "NullableOneOfFinishReasonEnumObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.MLModelUsage, object>?), TypeInfoPropertyName = "NullableOneOfMLModelUsageObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.Price, object>?), TypeInfoPropertyName = "NullableOneOfPriceObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FulfilledEnum?), TypeInfoPropertyName = "NullableFulfilledEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ErrorEnum?), TypeInfoPropertyName = "NullableErrorEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumErrorCodeEnum?), TypeInfoPropertyName = "NullableVellumErrorCodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumError, object>?), TypeInfoPropertyName = "NullableOneOfVellumErrorObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.FunctionCall, object>?), TypeInfoPropertyName = "NullableOneOfFunctionCallObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingEnum?), TypeInfoPropertyName = "NullableThinkingEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.StringVellumValue, object>?), TypeInfoPropertyName = "NullableOneOfStringVellumValueObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptOutput?), TypeInfoPropertyName = "NullablePromptOutput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.RejectedEnum?), TypeInfoPropertyName = "NullableRejectedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecutePromptResponse?), TypeInfoPropertyName = "NullableExecutePromptResponse2")]
@@ -945,29 +872,17 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StreamingEnum?), TypeInfoPropertyName = "NullableStreamingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecutePromptEvent?), TypeInfoPropertyName = "NullableExecutePromptEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>?), TypeInfoPropertyName = "NullableOneOfCompilePromptDeploymentExpandMetaRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DeploymentProviderPayloadResponsePayload?), TypeInfoPropertyName = "NullableDeploymentProviderPayloadResponsePayload2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CompilePromptMeta, object>?), TypeInfoPropertyName = "NullableOneOfCompilePromptMetaObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EntityStatus?), TypeInfoPropertyName = "NullableEntityStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EnvironmentEnum?), TypeInfoPropertyName = "NullableEnvironmentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariableType?), TypeInfoPropertyName = "NullableVellumVariableType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NumberEnum?), TypeInfoPropertyName = "NullableNumberEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumAudio, object>?), TypeInfoPropertyName = "NullableOneOfVellumAudioObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumVideo, object>?), TypeInfoPropertyName = "NullableOneOfVellumVideoObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumImage, object>?), TypeInfoPropertyName = "NullableOneOfVellumImageObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumDocument, object>?), TypeInfoPropertyName = "NullableOneOfVellumDocumentObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValue?), TypeInfoPropertyName = "NullableVellumValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ArrayChatMessageContentItem?), TypeInfoPropertyName = "NullableArrayChatMessageContentItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ChatMessageContent?), TypeInfoPropertyName = "NullableChatMessageContent2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ChatMessageContent?, object>?), TypeInfoPropertyName = "NullableOneOfChatMessageContentObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultsEnum?), TypeInfoPropertyName = "NullableSearchResultsEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PdfEnum?), TypeInfoPropertyName = "NullablePdfEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMetaSource?), TypeInfoPropertyName = "NullableSearchResultMetaSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMetaSource?, object>?), TypeInfoPropertyName = "NullableOneOfSearchResultMetaSourceObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMeta, object>?), TypeInfoPropertyName = "NullableOneOfSearchResultMetaObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumValue?, object>?), TypeInfoPropertyName = "NullableOneOfVellumValueObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumVariableExtensions, object>?), TypeInfoPropertyName = "NullableOneOfVellumVariableExtensionsObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>?), TypeInfoPropertyName = "NullableOneOfEnvironmentEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NamedScenarioInputRequest?), TypeInfoPropertyName = "NullableNamedScenarioInputRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ScenarioInput?), TypeInfoPropertyName = "NullableScenarioInput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.V1DeploymentsGetParametersStatus?), TypeInfoPropertyName = "NullableV1DeploymentsGetParametersStatus2")]
@@ -975,14 +890,11 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptVersionBuildConfig?), TypeInfoPropertyName = "NullablePromptVersionBuildConfig2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseTagSource?), TypeInfoPropertyName = "NullableReleaseTagSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseReviewState?), TypeInfoPropertyName = "NullableReleaseReviewState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ReleaseCreatedBy, object>?), TypeInfoPropertyName = "NullableOneOfReleaseCreatedByObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.V1DeploymentsIdReleaseTagsGetParametersSource?), TypeInfoPropertyName = "NullableV1DeploymentsIdReleaseTagsGetParametersSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowRequestInputRequest?), TypeInfoPropertyName = "NullableWorkflowRequestInputRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExpandMetaRequest, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowExpandMetaRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowOutput?), TypeInfoPropertyName = "NullableWorkflowOutput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEventErrorRawData?), TypeInfoPropertyName = "NullableWorkflowEventErrorRawData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionEventErrorCode?), TypeInfoPropertyName = "NullableWorkflowExecutionEventErrorCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowEventErrorRawData?, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowEventErrorRawDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecuteWorkflowWorkflowResultEvent?), TypeInfoPropertyName = "NullableExecuteWorkflowWorkflowResultEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionEventType?), TypeInfoPropertyName = "NullableWorkflowExecutionEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEnum?), TypeInfoPropertyName = "NullableWorkflowEnum2")]
@@ -990,11 +902,8 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowNodeResultEventState?), TypeInfoPropertyName = "NullableWorkflowNodeResultEventState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowResultEventOutputData?), TypeInfoPropertyName = "NullableWorkflowResultEventOutputData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExecutionVellumValue?), TypeInfoPropertyName = "NullableExecutionVellumValue2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowResultEventOutputData?, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowResultEventOutputDataObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowEventError, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowEventErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeEnum?), TypeInfoPropertyName = "NullableNodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptEnum?), TypeInfoPropertyName = "NullablePromptEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.PromptNodeExecutionMeta, object>?), TypeInfoPropertyName = "NullableOneOfPromptNodeExecutionMetaObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchEnum?), TypeInfoPropertyName = "NullableSearchEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TemplatingEnum?), TypeInfoPropertyName = "NullableTemplatingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TemplatingNodeResultOutput?), TypeInfoPropertyName = "NullableTemplatingNodeResultOutput2")]
@@ -1009,42 +918,21 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetricEnum?), TypeInfoPropertyName = "NullableMetricEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MapEnum?), TypeInfoPropertyName = "NullableMapEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.IterationStateEnum?), TypeInfoPropertyName = "NullableIterationStateEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.IterationStateEnum?, object>?), TypeInfoPropertyName = "NullableOneOfIterationStateEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowNodeResultData?), TypeInfoPropertyName = "NullableWorkflowNodeResultData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SecretEnum?), TypeInfoPropertyName = "NullableSecretEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeInputVariableCompiledValue?), TypeInfoPropertyName = "NullableNodeInputVariableCompiledValue2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowNodeResultDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeOutputCompiledValue?), TypeInfoPropertyName = "NullableNodeOutputCompiledValue2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.NodeOutputCompiledValue?, object>?), TypeInfoPropertyName = "NullableOneOfNodeOutputCompiledValueObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowNodeResultEvent?), TypeInfoPropertyName = "NullableWorkflowNodeResultEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowStreamEvent?), TypeInfoPropertyName = "NullableWorkflowStreamEvent2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionEventErrorCode?, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowExecutionEventErrorCodeObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CheckWorkflowExecutionStatusError, object>?), TypeInfoPropertyName = "NullableOneOfCheckWorkflowExecutionStatusErrorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SubmitWorkflowExecutionActualRequest?), TypeInfoPropertyName = "NullableSubmitWorkflowExecutionActualRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowDisplayIcon, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowDisplayIconObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowDeploymentDisplayData, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowDeploymentDisplayDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SpanLinkTypeEnum?), TypeInfoPropertyName = "NullableSpanLinkTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ParentContext?), TypeInfoPropertyName = "NullableParentContext2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ParentContext?, object>?), TypeInfoPropertyName = "NullableOneOfParentContextObject2")]
-    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowNodeEnum?), TypeInfoPropertyName = "NullableWorkflowNodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowReleaseTagEnum?), TypeInfoPropertyName = "NullableWorkflowReleaseTagEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowSandboxEnum?), TypeInfoPropertyName = "NullableWorkflowSandboxEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptReleaseTagEnum?), TypeInfoPropertyName = "NullablePromptReleaseTagEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ApiRequestEnum?), TypeInfoPropertyName = "NullableApiRequestEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ApiActorTypeEnum?), TypeInfoPropertyName = "NullableApiActorTypeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ApiActorTypeEnum?, object>?), TypeInfoPropertyName = "NullableOneOfApiActorTypeEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ExternalEnum?), TypeInfoPropertyName = "NullableExternalEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ScheduledEnum?), TypeInfoPropertyName = "NullableScheduledEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.IntegrationEnum?), TypeInfoPropertyName = "NullableIntegrationEnum2")]
@@ -1055,18 +943,15 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionRejectedEnum?), TypeInfoPropertyName = "NullableNodeExecutionRejectedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSdkErrorRawData?), TypeInfoPropertyName = "NullableVellumSdkErrorRawData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSdkErrorCodeEnum?), TypeInfoPropertyName = "NullableVellumSdkErrorCodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumSdkErrorRawData?, object>?), TypeInfoPropertyName = "NullableOneOfVellumSdkErrorRawDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionPausedEnum?), TypeInfoPropertyName = "NullableNodeExecutionPausedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionResumedEnum?), TypeInfoPropertyName = "NullableNodeExecutionResumedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionLogEnum?), TypeInfoPropertyName = "NullableNodeExecutionLogEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SeverityEnum?), TypeInfoPropertyName = "NullableSeverityEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionInitiatedEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionInitiatedEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumCodeResourceDefinition, object>?), TypeInfoPropertyName = "NullableOneOfVellumCodeResourceDefinitionObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionStreamingEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionStreamingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionRejectedEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionRejectedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionFulfilledEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionFulfilledEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionPausedEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionPausedEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.CodeResourceDefinition, object>?), TypeInfoPropertyName = "NullableOneOfCodeResourceDefinitionObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionResumedEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionResumedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionSnapshottedEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionSnapshottedEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEvent?), TypeInfoPropertyName = "NullableWorkflowEvent2")]
@@ -1078,42 +963,21 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.V1WorkflowDeploymentsIdReleaseTagsGetParametersSource?), TypeInfoPropertyName = "NullableV1WorkflowDeploymentsIdReleaseTagsGetParametersSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowError?), TypeInfoPropertyName = "NullableWorkflowError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionUsageCalculationErrorCodeEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionUsageCalculationErrorCodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationError, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowExecutionUsageCalculationErrorObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowError?, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowErrorObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowDeploymentParentContext, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowDeploymentParentContextObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionActual, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowExecutionActualObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowExecutionEnum?), TypeInfoPropertyName = "NullableWorkflowExecutionEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumWorkflowExecutionEvent?), TypeInfoPropertyName = "NullableVellumWorkflowExecutionEvent2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowExecutionUsageCalculationFulfilledBodyObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NodeExecutionEnum?), TypeInfoPropertyName = "NullableNodeExecutionEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumNodeExecutionEvent?), TypeInfoPropertyName = "NullableVellumNodeExecutionEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumSpan?), TypeInfoPropertyName = "NullableVellumSpan2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CreateWorkflowEventRequest?), TypeInfoPropertyName = "NullableCreateWorkflowEventRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetadataFilterRuleCombinator?), TypeInfoPropertyName = "NullableMetadataFilterRuleCombinator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.LogicalOperator?), TypeInfoPropertyName = "NullableLogicalOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.MetadataFilterRuleCombinator?, object>?), TypeInfoPropertyName = "NullableOneOfMetadataFilterRuleCombinatorObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.LogicalOperator?, object>?), TypeInfoPropertyName = "NullableOneOfLogicalOperatorObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.LogicalConditionEnum?), TypeInfoPropertyName = "NullableLogicalConditionEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumAudioRequest, object>?), TypeInfoPropertyName = "NullableOneOfVellumAudioRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumVideoRequest, object>?), TypeInfoPropertyName = "NullableOneOfVellumVideoRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumImageRequest, object>?), TypeInfoPropertyName = "NullableOneOfVellumImageRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumDocumentRequest, object>?), TypeInfoPropertyName = "NullableOneOfVellumDocumentRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.FunctionCallRequest, object>?), TypeInfoPropertyName = "NullableOneOfFunctionCallRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.VellumErrorRequest, object>?), TypeInfoPropertyName = "NullableOneOfVellumErrorRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValueRequest?), TypeInfoPropertyName = "NullableVellumValueRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMetaSourceRequest?), TypeInfoPropertyName = "NullableSearchResultMetaSourceRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMetaSourceRequest?, object>?), TypeInfoPropertyName = "NullableOneOfSearchResultMetaSourceRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMetaRequest, object>?), TypeInfoPropertyName = "NullableOneOfSearchResultMetaRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.StringVellumValueRequest, object>?), TypeInfoPropertyName = "NullableOneOfStringVellumValueRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.LogicalConditionGroupEnum?), TypeInfoPropertyName = "NullableLogicalConditionGroupEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ConditionCombinator?), TypeInfoPropertyName = "NullableConditionCombinator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValueLogicalExpressionRequest?), TypeInfoPropertyName = "NullableVellumValueLogicalExpressionRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MetadataFiltersRequest?), TypeInfoPropertyName = "NullableMetadataFiltersRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.MetadataFiltersRequest?, object>?), TypeInfoPropertyName = "NullableOneOfMetadataFiltersRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchWeightsRequest, object>?), TypeInfoPropertyName = "NullableOneOfSearchWeightsRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchResultMergingRequest, object>?), TypeInfoPropertyName = "NullableOneOfSearchResultMergingRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchFiltersRequest, object>?), TypeInfoPropertyName = "NullableOneOfSearchFiltersRequestObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.SearchRequestOptionsRequest, object>?), TypeInfoPropertyName = "NullableOneOfSearchRequestOptionsRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TextEmbedding3SmallEnum?), TypeInfoPropertyName = "NullableTextEmbedding3SmallEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TextEmbedding3LargeEnum?), TypeInfoPropertyName = "NullableTextEmbedding3LargeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TextEmbeddingAda002Enum?), TypeInfoPropertyName = "NullableTextEmbeddingAda002Enum2")]
@@ -1132,16 +996,13 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TokenOverlappingWindowChunkerEnum?), TypeInfoPropertyName = "NullableTokenOverlappingWindowChunkerEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DelimiterChunkerEnum?), TypeInfoPropertyName = "NullableDelimiterChunkerEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexChunkingRequest?), TypeInfoPropertyName = "NullableDocumentIndexChunkingRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.DocumentIndexChunkingRequest?, object>?), TypeInfoPropertyName = "NullableOneOfDocumentIndexChunkingRequestObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.IndexingConfigVectorizer?), TypeInfoPropertyName = "NullableIndexingConfigVectorizer2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexChunking?), TypeInfoPropertyName = "NullableDocumentIndexChunking2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.DocumentIndexChunking?, object>?), TypeInfoPropertyName = "NullableOneOfDocumentIndexChunkingObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.V1DocumentIndexesGetParametersStatus?), TypeInfoPropertyName = "NullableV1DocumentIndexesGetParametersStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentProcessingState?), TypeInfoPropertyName = "NullableDocumentProcessingState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentStatus?), TypeInfoPropertyName = "NullableDocumentStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.IndexingStateEnum?), TypeInfoPropertyName = "NullableIndexingStateEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ProcessingFailureReasonEnum?), TypeInfoPropertyName = "NullableProcessingFailureReasonEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.ProcessingFailureReasonEnum?, object>?), TypeInfoPropertyName = "NullableOneOfProcessingFailureReasonEnumObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestCaseVariableValue?), TypeInfoPropertyName = "NullableTestCaseVariableValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NamedTestCaseVariableValueRequest?), TypeInfoPropertyName = "NullableNamedTestCaseVariableValueRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.CreateEnum?), TypeInfoPropertyName = "NullableCreateEnum2")]
@@ -1164,8 +1025,19 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunState?), TypeInfoPropertyName = "NullableTestSuiteRunState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NamedTestCaseVariableValue?), TypeInfoPropertyName = "NullableNamedTestCaseVariableValue2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunExecConfig?), TypeInfoPropertyName = "NullableTestSuiteRunExecConfig2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.TestSuiteRunExecConfig?, object>?), TypeInfoPropertyName = "NullableOneOfTestSuiteRunExecConfigObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunExecutionOutput?), TypeInfoPropertyName = "NullableTestSuiteRunExecutionOutput2")]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+        })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunMetricStringOutputTypeEnum?), TypeInfoPropertyName = "NullableTestSuiteRunMetricStringOutputTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunMetricNumberOutputTypeEnum?), TypeInfoPropertyName = "NullableTestSuiteRunMetricNumberOutputTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteRunMetricJSONOutputTypeEnum?), TypeInfoPropertyName = "NullableTestSuiteRunMetricJSONOutputTypeEnum2")]
@@ -1175,7 +1047,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.V1FolderEntitiesGetParametersEntityStatus?), TypeInfoPropertyName = "NullableV1FolderEntitiesGetParametersEntityStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.FolderEnum?), TypeInfoPropertyName = "NullableFolderEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PromptSandboxEnum?), TypeInfoPropertyName = "NullablePromptSandboxEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.OneOf<global::Vellum.WorkflowSandboxDisplayData, object>?), TypeInfoPropertyName = "NullableOneOfWorkflowSandboxDisplayDataObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DocumentIndexEnum?), TypeInfoPropertyName = "NullableDocumentIndexEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TestSuiteEnum?), TypeInfoPropertyName = "NullableTestSuiteEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.DatasetEnum?), TypeInfoPropertyName = "NullableDatasetEnum2")]
@@ -1338,173 +1209,6 @@ namespace Vellum
             options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunExecutionOutputJsonConverter());
             options.Converters.Add(new global::Vellum.JsonConverters.TestSuiteRunMetricOutputJsonConverter());
             options.Converters.Add(new global::Vellum.JsonConverters.FolderEntityJsonConverter());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContentRequest?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptDeploymentExpandMetaRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.RawPromptExecutionOverridesRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FinishReasonEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CompilePromptMeta, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ChatMessageContent?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSource?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMeta, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumValue?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVariableExtensions, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventErrorRawData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowResultEventOutputData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MLModelUsage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.Price, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.PromptNodeExecutionMeta, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.IterationStateEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValue, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.NodeOutputCompiledValue?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionEventErrorCode?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CheckWorkflowExecutionStatusError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentDisplayData, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ApiActorTypeEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumSdkErrorRawData?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.CodeResourceDefinition, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ReleaseCreatedBy, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFilterRuleCombinator?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.LogicalOperator?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImageRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCallRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSourceRequest?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.StringVellumValueRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.MetadataFiltersRequest?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchWeightsRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMergingRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchFiltersRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchRequestOptionsRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunkingRequest?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.DocumentIndexChunking?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ProcessingFailureReasonEnum?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumErrorRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCallRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudioRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideoRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImageRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocumentRequest, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumAudio, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumDocument, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.TestSuiteRunExecConfig?, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.FunctionCall, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDisplayIcon, object>());
-            options.Converters.Add(new global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowSandboxDisplayData, object>());
             options.Converters.Add(new global::Vellum.JsonConverters.UnixTimestampJsonConverter());
 
             options.Converters.Add(new LazyEnumJsonConverterFactory());

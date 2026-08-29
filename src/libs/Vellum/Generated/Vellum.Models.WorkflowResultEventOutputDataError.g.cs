@@ -55,9 +55,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumError, object> Value { get; set; }
+        public global::Vellum.VellumError? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -75,24 +73,24 @@ namespace Vellum
         /// * `FULFILLED` - FULFILLED<br/>
         /// * `REJECTED` - REJECTED
         /// </param>
-        /// <param name="value"></param>
         /// <param name="id"></param>
         /// <param name="nodeId"></param>
         /// <param name="delta">
         /// The newly output string value. Only relevant for string outputs with a state of STREAMING.
         /// </param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public WorkflowResultEventOutputDataError(
             string name,
             global::Vellum.WorkflowNodeResultEventState state,
-            global::Vellum.OneOf<global::Vellum.VellumError, object> value,
             global::System.Guid? id,
             string? nodeId,
             string? delta,
-            global::Vellum.ErrorEnum type)
+            global::Vellum.ErrorEnum type,
+            global::Vellum.VellumError? value)
         {
             this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

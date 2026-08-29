@@ -12,8 +12,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parent")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.ParentContext?, object>))]
-        public global::Vellum.OneOf<global::Vellum.ParentContext?, object>? Parent { get; set; }
+        public global::Vellum.ParentContext? Parent { get; set; }
 
         /// <summary>
         ///
@@ -121,7 +120,7 @@ namespace Vellum
             global::System.Guid releaseTagId,
             string releaseTagName,
             global::System.Guid workflowVersionId,
-            global::Vellum.OneOf<global::Vellum.ParentContext?, object>? parent,
+            global::Vellum.ParentContext? parent,
             global::System.Collections.Generic.IList<global::Vellum.SpanLink>? links,
             global::Vellum.WorkflowReleaseTagEnum type,
             string? externalId,

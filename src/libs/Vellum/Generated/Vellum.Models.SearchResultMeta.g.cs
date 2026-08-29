@@ -12,8 +12,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchResultMetaSource?, object>))]
-        public global::Vellum.OneOf<global::Vellum.SearchResultMetaSource?, object>? Source { get; set; }
+        public global::Vellum.SearchResultMetaSource? Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +28,7 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SearchResultMeta(
-            global::Vellum.OneOf<global::Vellum.SearchResultMetaSource?, object>? source)
+            global::Vellum.SearchResultMetaSource? source)
         {
             this.Source = source;
         }

@@ -19,9 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumImage, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumImage, object> Value { get; set; }
+        public global::Vellum.VellumImage? Value { get; set; }
 
         /// <summary>
         ///
@@ -39,16 +37,16 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="ScenarioInputImageVariableValue" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="inputVariableId"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ScenarioInputImageVariableValue(
-            global::Vellum.OneOf<global::Vellum.VellumImage, object> value,
             string inputVariableId,
-            global::Vellum.ImageEnum type)
+            global::Vellum.ImageEnum type,
+            global::Vellum.VellumImage? value)
         {
             this.Type = type;
             this.Value = value;

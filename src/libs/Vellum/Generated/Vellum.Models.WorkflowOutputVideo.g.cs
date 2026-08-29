@@ -33,9 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVideo, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumVideo, object> Value { get; set; }
+        public global::Vellum.VellumVideo? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,16 +48,16 @@ namespace Vellum
         /// <param name="name">
         /// The output's name, as defined in the workflow
         /// </param>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public WorkflowOutputVideo(
             string id,
             string name,
-            global::Vellum.OneOf<global::Vellum.VellumVideo, object> value,
-            global::Vellum.VideoEnum type)
+            global::Vellum.VideoEnum type,
+            global::Vellum.VellumVideo? value)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

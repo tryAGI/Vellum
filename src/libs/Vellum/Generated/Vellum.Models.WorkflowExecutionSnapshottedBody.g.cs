@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edited_by")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>))]
-        public global::Vellum.OneOf<global::Vellum.VellumCodeResourceDefinition, object>? EditedBy { get; set; }
+        public global::Vellum.VellumCodeResourceDefinition? EditedBy { get; set; }
 
         /// <summary>
         ///
@@ -47,7 +46,7 @@ namespace Vellum
         public WorkflowExecutionSnapshottedBody(
             global::Vellum.VellumCodeResourceDefinition workflowDefinition,
             object state,
-            global::Vellum.OneOf<global::Vellum.VellumCodeResourceDefinition, object>? editedBy)
+            global::Vellum.VellumCodeResourceDefinition? editedBy)
         {
             this.WorkflowDefinition = workflowDefinition ?? throw new global::System.ArgumentNullException(nameof(workflowDefinition));
             this.EditedBy = editedBy;

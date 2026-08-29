@@ -19,8 +19,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("raw_data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumSdkErrorRawData?, object>))]
-        public global::Vellum.OneOf<global::Vellum.VellumSdkErrorRawData?, object>? RawData { get; set; }
+        public global::Vellum.VellumSdkErrorRawData? RawData { get; set; }
 
         /// <summary>
         /// * `INVALID_WORKFLOW` - INVALID_WORKFLOW<br/>
@@ -82,7 +81,7 @@ namespace Vellum
         public VellumSdkError(
             string message,
             global::Vellum.VellumSdkErrorCodeEnum code,
-            global::Vellum.OneOf<global::Vellum.VellumSdkErrorRawData?, object>? rawData)
+            global::Vellum.VellumSdkErrorRawData? rawData)
         {
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.RawData = rawData;

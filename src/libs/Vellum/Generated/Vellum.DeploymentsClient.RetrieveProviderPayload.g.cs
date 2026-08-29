@@ -627,7 +627,7 @@ namespace Vellum
             global::System.Guid? deploymentId = default,
             string? deploymentName = default,
             string? releaseTag = default,
-            global::Vellum.OneOf<global::Vellum.CompilePromptDeploymentExpandMetaRequest, object>? expandMeta = default,
+            global::Vellum.CompilePromptDeploymentExpandMetaRequest? expandMeta = default,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

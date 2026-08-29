@@ -31,8 +31,7 @@ namespace Vellum
         /// Configuration options for the search.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.SearchRequestOptionsRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.SearchRequestOptionsRequest, object>? Options { get; set; }
+        public global::Vellum.SearchRequestOptionsRequest? Options { get; set; }
 
         /// <summary>
         /// Either the index name or index ID to search against. Must provide either this, index_id or index_name.
@@ -71,7 +70,7 @@ namespace Vellum
             string query,
             global::System.Guid? indexId,
             string? indexName,
-            global::Vellum.OneOf<global::Vellum.SearchRequestOptionsRequest, object>? options,
+            global::Vellum.SearchRequestOptionsRequest? options,
             string? documentIndex)
         {
             this.IndexId = indexId;

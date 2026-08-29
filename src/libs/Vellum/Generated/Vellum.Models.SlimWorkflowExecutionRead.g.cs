@@ -46,9 +46,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowError?, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowError?, object> Error { get; set; }
+        public global::Vellum.WorkflowError? Error { get; set; }
 
         /// <summary>
         ///
@@ -60,17 +58,13 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parent_context")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowDeploymentParentContext, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowDeploymentParentContext, object> ParentContext { get; set; }
+        public global::Vellum.WorkflowDeploymentParentContext? ParentContext { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latest_actual")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionActual, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowExecutionActual, object> LatestActual { get; set; }
+        public global::Vellum.WorkflowExecutionActual? LatestActual { get; set; }
 
         /// <summary>
         ///
@@ -92,12 +86,12 @@ namespace Vellum
         /// <param name="start"></param>
         /// <param name="inputs"></param>
         /// <param name="outputs"></param>
-        /// <param name="error"></param>
-        /// <param name="parentContext"></param>
-        /// <param name="latestActual"></param>
         /// <param name="metricResults"></param>
         /// <param name="end"></param>
+        /// <param name="error"></param>
         /// <param name="usageResults"></param>
+        /// <param name="parentContext"></param>
+        /// <param name="latestActual"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -106,12 +100,12 @@ namespace Vellum
             global::System.DateTime start,
             global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue> inputs,
             global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue> outputs,
-            global::Vellum.OneOf<global::Vellum.WorkflowError?, object> error,
-            global::Vellum.OneOf<global::Vellum.WorkflowDeploymentParentContext, object> parentContext,
-            global::Vellum.OneOf<global::Vellum.WorkflowExecutionActual, object> latestActual,
             global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult> metricResults,
             global::System.DateTime? end,
-            global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionUsageResult>? usageResults)
+            global::Vellum.WorkflowError? error,
+            global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionUsageResult>? usageResults,
+            global::Vellum.WorkflowDeploymentParentContext? parentContext,
+            global::Vellum.WorkflowExecutionActual? latestActual)
         {
             this.SpanId = spanId;
             this.Start = start;

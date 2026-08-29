@@ -33,8 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,16 +46,16 @@ namespace Vellum
         /// </summary>
         /// <param name="nodeInputId"></param>
         /// <param name="key"></param>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NodeInputCompiledJsonValue(
             string nodeInputId,
             string key,
-            object value,
-            global::Vellum.JsonEnum type)
+            global::Vellum.JsonEnum type,
+            object? value)
         {
             this.NodeInputId = nodeInputId ?? throw new global::System.ArgumentNullException(nameof(nodeInputId));
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));

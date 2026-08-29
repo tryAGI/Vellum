@@ -26,8 +26,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         ///
@@ -46,17 +45,17 @@ namespace Vellum
         /// Initializes a new instance of the <see cref="TestSuiteRunExecutionJsonOutput" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="value"></param>
         /// <param name="outputVariableId"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TestSuiteRunExecutionJsonOutput(
             string name,
-            object value,
             global::System.Guid outputVariableId,
-            global::Vellum.JsonEnum type)
+            global::Vellum.JsonEnum type,
+            object? value)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;

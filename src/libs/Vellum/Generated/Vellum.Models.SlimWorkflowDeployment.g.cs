@@ -43,8 +43,7 @@ namespace Vellum
         /// Deprecated. The value returned will always be 'PRODUCTION'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.EnvironmentEnum?, object>))]
-        public global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>? Environment { get; set; }
+        public global::Vellum.EnvironmentEnum? Environment { get; set; }
 
         /// <summary>
         ///
@@ -128,7 +127,7 @@ namespace Vellum
             global::System.Collections.Generic.IList<global::Vellum.VellumVariable> inputVariables,
             global::System.Collections.Generic.IList<global::Vellum.VellumVariable> outputVariables,
             global::Vellum.EntityStatus? status,
-            global::Vellum.OneOf<global::Vellum.EnvironmentEnum?, object>? environment,
+            global::Vellum.EnvironmentEnum? environment,
             string? description)
         {
             this.Id = id;

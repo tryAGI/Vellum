@@ -12,8 +12,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         /// * `JSON` - JSON
@@ -38,8 +37,8 @@ namespace Vellum
         /// <summary>
         /// Initializes a new instance of the <see cref="TestSuiteRunMetricJSONOutput" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="name"></param>
+        /// <param name="value"></param>
         /// <param name="type">
         /// * `JSON` - JSON
         /// </param>
@@ -47,8 +46,8 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TestSuiteRunMetricJSONOutput(
-            object value,
             string name,
+            object? value,
             global::Vellum.TestSuiteRunMetricJSONOutputTypeEnum? type)
         {
             this.Value = value;

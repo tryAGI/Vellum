@@ -46,9 +46,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowNodeResultData?, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object> Data { get; set; }
+        public global::Vellum.WorkflowNodeResultData? Data { get; set; }
 
         /// <summary>
         ///
@@ -60,8 +58,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.NodeOutputCompiledValue?, object>))]
-        public global::Vellum.OneOf<global::Vellum.NodeOutputCompiledValue?, object>? Output { get; set; }
+        public global::Vellum.NodeOutputCompiledValue? Output { get; set; }
 
         /// <summary>
         ///
@@ -81,9 +78,9 @@ namespace Vellum
         /// <param name="id"></param>
         /// <param name="nodeId"></param>
         /// <param name="nodeResultId"></param>
-        /// <param name="data"></param>
         /// <param name="state"></param>
         /// <param name="ts"></param>
+        /// <param name="data"></param>
         /// <param name="sourceExecutionId"></param>
         /// <param name="output"></param>
         /// <param name="outputIndex"></param>
@@ -94,11 +91,11 @@ namespace Vellum
             string id,
             string nodeId,
             string nodeResultId,
-            global::Vellum.OneOf<global::Vellum.WorkflowNodeResultData?, object> data,
             global::Vellum.StreamingEnum state,
             global::System.DateTime? ts,
+            global::Vellum.WorkflowNodeResultData? data,
             string? sourceExecutionId,
-            global::Vellum.OneOf<global::Vellum.NodeOutputCompiledValue?, object>? output,
+            global::Vellum.NodeOutputCompiledValue? output,
             int? outputIndex)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

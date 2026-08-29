@@ -56,7 +56,7 @@ namespace Vellum
             string query,
             global::System.Guid? indexId = default,
             string? indexName = default,
-            global::Vellum.OneOf<global::Vellum.SearchRequestOptionsRequest, object>? options = default,
+            global::Vellum.SearchRequestOptionsRequest? options = default,
             string? documentIndex = default,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

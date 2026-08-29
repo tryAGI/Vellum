@@ -38,16 +38,13 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowResultEventOutputData?, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.WorkflowResultEventOutputData?, object> Output { get; set; }
+        public global::Vellum.WorkflowResultEventOutputData? Output { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowEventError, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowEventError, object>? Error { get; set; }
+        public global::Vellum.WorkflowEventError? Error { get; set; }
 
         /// <summary>
         ///
@@ -90,8 +87,8 @@ namespace Vellum
             string id,
             global::Vellum.WorkflowResultEventState state,
             global::System.DateTime ts,
-            global::Vellum.OneOf<global::Vellum.WorkflowResultEventOutputData?, object> output,
-            global::Vellum.OneOf<global::Vellum.WorkflowEventError, object>? error,
+            global::Vellum.WorkflowResultEventOutputData? output,
+            global::Vellum.WorkflowEventError? error,
             global::System.Collections.Generic.IList<global::Vellum.WorkflowOutput>? outputs,
             global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue>? inputs)
         {

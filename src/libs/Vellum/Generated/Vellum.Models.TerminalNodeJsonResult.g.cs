@@ -32,8 +32,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Value { get; set; }
+        public object? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,17 +46,17 @@ namespace Vellum
         /// <param name="name">
         /// The unique name given to the terminal node that produced this output.
         /// </param>
-        /// <param name="value"></param>
         /// <param name="id"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TerminalNodeJsonResult(
             string name,
-            object value,
             global::System.Guid? id,
-            global::Vellum.JsonEnum type)
+            global::Vellum.JsonEnum type,
+            object? value)
         {
             this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

@@ -33,9 +33,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumError, object>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vellum.OneOf<global::Vellum.VellumError, object> Value { get; set; }
+        public global::Vellum.VellumError? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,16 +46,16 @@ namespace Vellum
         /// </summary>
         /// <param name="nodeInputId"></param>
         /// <param name="key"></param>
-        /// <param name="value"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NodeInputCompiledErrorValue(
             string nodeInputId,
             string key,
-            global::Vellum.OneOf<global::Vellum.VellumError, object> value,
-            global::Vellum.ErrorEnum type)
+            global::Vellum.ErrorEnum type,
+            global::Vellum.VellumError? value)
         {
             this.NodeInputId = nodeInputId ?? throw new global::System.ArgumentNullException(nameof(nodeInputId));
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));

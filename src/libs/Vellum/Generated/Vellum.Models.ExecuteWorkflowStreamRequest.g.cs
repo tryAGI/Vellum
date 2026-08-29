@@ -19,8 +19,7 @@ namespace Vellum
         /// An optionally specified configuration used to opt in to including additional metadata about this workflow execution in the API response. Corresponding values will be returned under the `execution_meta` key within NODE events in the response stream.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expand_meta")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExpandMetaRequest, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowExpandMetaRequest, object>? ExpandMeta { get; set; }
+        public global::Vellum.WorkflowExpandMetaRequest? ExpandMeta { get; set; }
 
         /// <summary>
         /// The ID of the Workflow Deployment. Must provide either this or workflow_deployment_name.
@@ -105,7 +104,7 @@ namespace Vellum
 #endif
         public ExecuteWorkflowStreamRequest(
             global::System.Collections.Generic.IList<global::Vellum.WorkflowRequestInputRequest> inputs,
-            global::Vellum.OneOf<global::Vellum.WorkflowExpandMetaRequest, object>? expandMeta,
+            global::Vellum.WorkflowExpandMetaRequest? expandMeta,
             global::System.Guid? workflowDeploymentId,
             string? workflowDeploymentName,
             string? releaseTag,

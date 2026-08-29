@@ -26,8 +26,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trigger")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumCodeResourceDefinition, object>))]
-        public global::Vellum.OneOf<global::Vellum.VellumCodeResourceDefinition, object>? Trigger { get; set; }
+        public global::Vellum.VellumCodeResourceDefinition? Trigger { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +46,7 @@ namespace Vellum
         public WorkflowExecutionInitiatedBody(
             global::Vellum.VellumCodeResourceDefinition workflowDefinition,
             object inputs,
-            global::Vellum.OneOf<global::Vellum.VellumCodeResourceDefinition, object>? trigger)
+            global::Vellum.VellumCodeResourceDefinition? trigger)
         {
             this.WorkflowDefinition = workflowDefinition ?? throw new global::System.ArgumentNullException(nameof(workflowDefinition));
             this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));

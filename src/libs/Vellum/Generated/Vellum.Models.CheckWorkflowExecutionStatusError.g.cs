@@ -18,8 +18,7 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.WorkflowExecutionEventErrorCode?, object>))]
-        public global::Vellum.OneOf<global::Vellum.WorkflowExecutionEventErrorCode?, object>? Code { get; set; }
+        public global::Vellum.WorkflowExecutionEventErrorCode? Code { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +36,7 @@ namespace Vellum
 #endif
         public CheckWorkflowExecutionStatusError(
             string? message,
-            global::Vellum.OneOf<global::Vellum.WorkflowExecutionEventErrorCode?, object>? code)
+            global::Vellum.WorkflowExecutionEventErrorCode? code)
         {
             this.Message = message;
             this.Code = code;

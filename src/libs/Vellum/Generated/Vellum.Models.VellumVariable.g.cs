@@ -54,15 +54,13 @@ namespace Vellum
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumValue?, object>))]
-        public global::Vellum.OneOf<global::Vellum.VellumValue?, object>? Default { get; set; }
+        public global::Vellum.VellumValue? Default { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extensions")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vellum.JsonConverters.OneOfJsonConverter<global::Vellum.VellumVariableExtensions, object>))]
-        public global::Vellum.OneOf<global::Vellum.VellumVariableExtensions, object>? Extensions { get; set; }
+        public global::Vellum.VellumVariableExtensions? Extensions { get; set; }
 
         /// <summary>
         ///
@@ -110,8 +108,8 @@ namespace Vellum
             string key,
             global::Vellum.VellumVariableType type,
             bool? required,
-            global::Vellum.OneOf<global::Vellum.VellumValue?, object>? @default,
-            global::Vellum.OneOf<global::Vellum.VellumVariableExtensions, object>? extensions,
+            global::Vellum.VellumValue? @default,
+            global::Vellum.VellumVariableExtensions? extensions,
             object? schema)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
