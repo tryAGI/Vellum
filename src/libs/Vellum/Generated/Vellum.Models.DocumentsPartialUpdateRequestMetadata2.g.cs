@@ -4,9 +4,9 @@
 namespace Vellum
 {
     /// <summary>
-    ///
+    /// Any type
     /// </summary>
-    public sealed partial class ExecuteStreamResponse
+    public sealed partial class DocumentsPartialUpdateRequestMetadata2
     {
 
         /// <summary>

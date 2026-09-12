@@ -16,7 +16,7 @@ namespace Vellum
         global::System.Threading.Tasks.Task<global::Vellum.DocumentRead> PartialUpdateAsync(
             string id,
 
-            global::Vellum.PartialUpdateRequest request,
+            global::Vellum.DocumentsPartialUpdateRequest request,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -31,7 +31,7 @@ namespace Vellum
         global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.DocumentRead>> PartialUpdateAsResponseAsync(
             string id,
 
-            global::Vellum.PartialUpdateRequest request,
+            global::Vellum.DocumentsPartialUpdateRequest request,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>

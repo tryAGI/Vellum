@@ -4,9 +4,9 @@
 namespace Vellum
 {
     /// <summary>
-    /// A JSON object containing any metadata associated with the document that you'd like to filter upon later.
+    /// Any type
     /// </summary>
-    public sealed partial class PartialUpdateRequestMetadata
+    public sealed partial class WorkflowDeploymentsExecuteStreamResponse4
     {
 
         /// <summary>

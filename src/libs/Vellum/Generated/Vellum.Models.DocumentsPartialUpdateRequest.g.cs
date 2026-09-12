@@ -6,7 +6,7 @@ namespace Vellum
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class PartialUpdateRequest
+    public sealed partial class DocumentsPartialUpdateRequest
     {
         /// <summary>
         /// A human-readable label for the document. Defaults to the originally uploaded file's file name.
@@ -41,7 +41,7 @@ namespace Vellum
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PartialUpdateRequest" /> class.
+        /// Initializes a new instance of the <see cref="DocumentsPartialUpdateRequest" /> class.
         /// </summary>
         /// <param name="label">
         /// A human-readable label for the document. Defaults to the originally uploaded file's file name.
@@ -59,7 +59,7 @@ namespace Vellum
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public PartialUpdateRequest(
+        public DocumentsPartialUpdateRequest(
             string? label,
             global::Vellum.DocumentStatus? status,
             global::System.Collections.Generic.IList<string>? keywords,
@@ -72,9 +72,9 @@ namespace Vellum
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PartialUpdateRequest" /> class.
+        /// Initializes a new instance of the <see cref="DocumentsPartialUpdateRequest" /> class.
         /// </summary>
-        public PartialUpdateRequest()
+        public DocumentsPartialUpdateRequest()
         {
         }
 

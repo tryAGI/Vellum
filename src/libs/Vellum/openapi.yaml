@@ -204,7 +204,7 @@
     },
     "/v1/deployments/provider-payload": {
       "post": {
-        "operationId": "retrieve-provider-payload",
+        "operationId": "deployments_retrieve_provider_payload",
         "summary": "Retrieve Provider Payload",
         "description": "Given a set of input variable values, compile the exact payload that Vellum would send to the configured model provider\nfor execution if the execute-prompt endpoint had been invoked. Note that this endpoint does not actually execute the\nprompt or make an API call to the model provider.\n\nThis endpoint is useful if you don't want to proxy LLM provider requests through Vellum and prefer to send them directly\nto the provider yourself. Note that no guarantees are made on the format of this API's response schema, other than\nthat it will be a valid payload for the configured model provider. It's not recommended that you try to parse or\nderive meaning from the response body and instead, should simply pass it directly to the model provider as is.\n\nWe encourage you to seek advise from Vellum Support before integrating with this API for production use.\n",
         "tags": [
@@ -276,7 +276,7 @@
     },
     "/v1/sandboxes/{id}/prompts/{prompt_variant_id}/deploy": {
       "post": {
-        "operationId": "deploy-prompt",
+        "operationId": "sandboxes_deploy_prompt",
         "summary": "Deploy Prompt",
         "tags": [
           "sandboxes"
@@ -327,7 +327,7 @@
     },
     "/v1/sandboxes/{id}/scenarios": {
       "post": {
-        "operationId": "upsert-sandbox-scenario",
+        "operationId": "sandboxes_upsert_sandbox_scenario",
         "summary": "Upsert Sandbox Scenario",
         "description": "Upserts a new scenario for a sandbox, keying off of the optionally provided scenario id.\n\nIf an id is provided and has a match, the scenario will be updated. If no id is provided or no match\nis found, a new scenario will be appended to the end.\n\nNote that a full replacement of the scenario is performed, so any fields not provided will be removed\nor overwritten with default values.",
         "tags": [
@@ -370,7 +370,7 @@
     },
     "/v1/sandboxes/{id}/scenarios/{scenario_id}": {
       "delete": {
-        "operationId": "delete-sandbox-scenario",
+        "operationId": "sandboxes_delete_sandbox_scenario",
         "summary": "Delete Sandbox Scenario",
         "description": "Deletes an existing scenario from a sandbox, keying off of the provided scenario id.",
         "tags": [
@@ -413,7 +413,7 @@
     },
     "/v1/deployments": {
       "get": {
-        "operationId": "list",
+        "operationId": "deployments_list",
         "summary": "List",
         "description": "Used to list all Prompt Deployments.",
         "tags": [
@@ -473,7 +473,7 @@
     },
     "/v1/deployments/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "deployments_retrieve",
         "summary": "Retrieve",
         "description": "Used to retrieve a Prompt Deployment given its ID or name.",
         "tags": [
@@ -506,7 +506,7 @@
     },
     "/v1/deployments/{id}/releases/{release_id_or_release_tag}": {
       "get": {
-        "operationId": "retrieve-prompt-deployment-release",
+        "operationId": "deployments_retrieve_prompt_deployment_release",
         "summary": "Retrieve Prompt Deployment Release",
         "description": "Retrieve a specific Prompt Deployment Release by either its UUID or the name of a Release Tag that points to it.",
         "tags": [
@@ -548,7 +548,7 @@
     },
     "/v1/deployments/{id}/release-tags/{name}": {
       "get": {
-        "operationId": "retrieve-deployment-release-tag",
+        "operationId": "deployments_retrieve_deployment_release_tag",
         "summary": "Retrieve Deployment Release Tag",
         "description": "Retrieve a Deployment Release Tag by tag name, associated with a specified Deployment.",
         "tags": [
@@ -588,7 +588,7 @@
         }
       },
       "patch": {
-        "operationId": "update-deployment-release-tag",
+        "operationId": "deployments_update_deployment_release_tag",
         "summary": "Update Deployment Release Tag",
         "description": "Updates an existing Release Tag associated with the specified Prompt Deployment.",
         "tags": [
@@ -639,7 +639,7 @@
     },
     "/v1/deployments/{id}/release-tags": {
       "get": {
-        "operationId": "list-deployment-release-tags",
+        "operationId": "deployments_list_deployment_release_tags",
         "summary": "List Deployment Release Tags",
         "description": "List Release Tags associated with the specified Prompt Deployment",
         "tags": [
@@ -707,7 +707,7 @@
     },
     "/v1/deployments/{id}/history/{history_id_or_release_tag}": {
       "get": {
-        "operationId": "deployment-history-item-retrieve",
+        "operationId": "deployments_deployment_history_item_retrieve",
         "summary": "Deployment History Item Retrieve",
         "description": "DEPRECATED: This endpoint is deprecated and will be removed in a future release. Please use the\n`retrieve_prompt_deployment_release` xendpoint instead.",
         "tags": [
@@ -943,7 +943,7 @@
     },
     "/v1/workflows/executions/{execution_id}/status": {
       "get": {
-        "operationId": "workflow-execution-status",
+        "operationId": "workflows_workflow_execution_status",
         "summary": "Workflow Execution Status",
         "description": "Checks if a workflow execution is currently executing (not fulfilled, not rejected, and has no end time).\nUses the ClickHouse Prime summary materialized view.",
         "tags": [
@@ -1035,7 +1035,7 @@
     },
     "/v1/workflow-sandboxes/{id}/deploy": {
       "post": {
-        "operationId": "deploy-workflow",
+        "operationId": "workflowSandboxes_deploy_workflow",
         "summary": "Deploy Workflow",
         "tags": [
           "workflow-sandboxes"
@@ -1077,7 +1077,7 @@
     },
     "/v1/workflow-deployments/{id}/execute-stream": {
       "post": {
-        "operationId": "execute-stream",
+        "operationId": "workflowDeployments_executeStream",
         "summary": "Execute Stream",
         "description": "Executes a deployed Workflow and streams back its results.",
         "tags": [
@@ -1158,7 +1158,7 @@
     },
     "/v1/workflow-deployments": {
       "get": {
-        "operationId": "list",
+        "operationId": "workflowDeployments_list",
         "summary": "List",
         "description": "Used to list all Workflow Deployments.",
         "tags": [
@@ -1245,7 +1245,7 @@
     },
     "/v1/workflow-deployments/{id}/releases": {
       "get": {
-        "operationId": "list-workflow-deployment-releases",
+        "operationId": "workflowDeployments_list_workflow_deployment_releases",
         "summary": "List Workflow Deployment Releases",
         "description": "List the Releases of the specified Workflow Deployment for the current Environment.",
         "tags": [
@@ -1305,7 +1305,7 @@
     },
     "/v1/workflow-deployments/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "workflowDeployments_retrieve",
         "summary": "Retrieve",
         "description": "Used to retrieve a workflow deployment given its ID or name.",
         "tags": [
@@ -1338,7 +1338,7 @@
     },
     "/v1/workflow-deployments/{id}/releases/{release_id_or_release_tag}": {
       "get": {
-        "operationId": "retrieve-workflow-deployment-release",
+        "operationId": "workflowDeployments_retrieve_workflow_deployment_release",
         "summary": "Retrieve Workflow Deployment Release",
         "description": "Retrieve a specific Workflow Deployment Release by either its UUID or the name of a Release Tag that points to it.",
         "tags": [
@@ -1380,7 +1380,7 @@
     },
     "/v1/workflow-deployments/{id}/release-tags/{name}": {
       "get": {
-        "operationId": "retrieve-workflow-release-tag",
+        "operationId": "workflowDeployments_retrieve_workflow_release_tag",
         "summary": "Retrieve Workflow Release Tag",
         "description": "Retrieve a Workflow Release Tag by tag name, associated with a specified Workflow Deployment.",
         "tags": [
@@ -1420,7 +1420,7 @@
         }
       },
       "patch": {
-        "operationId": "update-workflow-release-tag",
+        "operationId": "workflowDeployments_update_workflow_release_tag",
         "summary": "Update Workflow Release Tag",
         "description": "Updates an existing Release Tag associated with the specified Workflow Deployment.",
         "tags": [
@@ -1471,7 +1471,7 @@
     },
     "/v1/workflow-deployments/{id}/release-tags": {
       "get": {
-        "operationId": "list-workflow-release-tags",
+        "operationId": "workflowDeployments_list_workflow_release_tags",
         "summary": "List Workflow Release Tags",
         "description": "List Release Tags associated with the specified Workflow Deployment",
         "tags": [
@@ -1539,7 +1539,7 @@
     },
     "/v1/workflow-deployments/{id}/history/{history_id_or_release_tag}": {
       "get": {
-        "operationId": "workflow-deployment-history-item-retrieve",
+        "operationId": "workflowDeployments_workflow_deployment_history_item_retrieve",
         "summary": "Workflow Deployment History Item Retrieve",
         "description": "DEPRECATED: This endpoint is deprecated and will be removed in a future release. Please use the\n`retrieve_workflow_deployment_release` endpoint instead.",
         "tags": [
@@ -1583,7 +1583,7 @@
     },
     "/v1/workflow-deployments/{id}/execution-events": {
       "get": {
-        "operationId": "list-workflow-deployment-event-executions",
+        "operationId": "workflowDeployments_list_workflow_deployment_event__executions",
         "summary": "List Workflow Deployment Event Executions",
         "tags": [
           "workflow-deployments"
@@ -1648,7 +1648,7 @@
     },
     "/v1/workflow-deployments/{id}/execution-events/{execution_id}": {
       "get": {
-        "operationId": "workflow-deployment-event-execution",
+        "operationId": "workflowDeployments_workflow_deployment_event__execution",
         "summary": "Workflow Deployment Event Execution",
         "tags": [
           "workflow-deployments"
@@ -1718,7 +1718,7 @@
     },
     "/v1/workflow-executions/{execution_id}/detail": {
       "get": {
-        "operationId": "retrieve-workflow-execution-detail",
+        "operationId": "workflowExecutions_retrieve_workflow_execution_detail",
         "summary": "Retrieve Workflow Execution Detail",
         "tags": [
           "workflow-executions"
@@ -1789,7 +1789,7 @@
     },
     "/monitoring/v1/events": {
       "post": {
-        "operationId": "create",
+        "operationId": "events_create",
         "summary": "Create",
         "description": "Accept an event or list of events and publish them to ClickHouse for analytics processing.",
         "tags": [
@@ -1920,7 +1920,7 @@
     },
     "/v1/document-indexes/{id}/documents/{document_id}": {
       "post": {
-        "operationId": "add-document",
+        "operationId": "documentIndexes_add_document",
         "summary": "Add Document",
         "description": "Adds a previously uploaded Document to the specified Document Index.",
         "tags": [
@@ -1960,7 +1960,7 @@
         }
       },
       "delete": {
-        "operationId": "remove-document",
+        "operationId": "documentIndexes_remove_document",
         "summary": "Remove Document",
         "description": "Removes a Document from a Document Index without deleting the Document itself.",
         "tags": [
@@ -2002,7 +2002,7 @@
     },
     "/v1/document-indexes": {
       "post": {
-        "operationId": "create",
+        "operationId": "documentIndexes_create",
         "summary": "Create",
         "description": "Creates a new document index.",
         "tags": [
@@ -2032,7 +2032,7 @@
         }
       },
       "get": {
-        "operationId": "list",
+        "operationId": "documentIndexes_list",
         "summary": "List",
         "description": "Used to retrieve a list of Document Indexes.",
         "tags": [
@@ -2101,7 +2101,7 @@
     },
     "/v1/document-indexes/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "documentIndexes_retrieve",
         "summary": "Retrieve",
         "description": "Used to retrieve a Document Index given its ID or name.",
         "tags": [
@@ -2141,7 +2141,7 @@
         }
       },
       "patch": {
-        "operationId": "partial-update",
+        "operationId": "documentIndexes_partialUpdate",
         "summary": "Partial Update",
         "description": "Used to partial update a Document Index given its ID or name.",
         "tags": [
@@ -2181,7 +2181,7 @@
         }
       },
       "put": {
-        "operationId": "update",
+        "operationId": "documentIndexes_update",
         "summary": "Update",
         "description": "Used to fully update a Document Index given its ID or name.",
         "tags": [
@@ -2221,7 +2221,7 @@
         }
       },
       "delete": {
-        "operationId": "destroy",
+        "operationId": "documentIndexes_destroy",
         "summary": "Destroy",
         "description": "Used to delete a Document Index given its ID or name.",
         "tags": [
@@ -2254,7 +2254,7 @@
     },
     "/v1/upload-document": {
       "post": {
-        "operationId": "upload",
+        "operationId": "documents_upload",
         "summary": "Upload",
         "description": "Upload a document to be indexed and used for search.\n\n**Note:** Uses a base url of `https://documents.vellum.ai`.\n",
         "tags": [
@@ -2381,7 +2381,7 @@
     },
     "/v1/documents/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "documents_retrieve",
         "summary": "Retrieve",
         "description": "Retrieve a Document, keying off of either its Vellum-generated ID or its external ID.",
         "tags": [
@@ -2412,7 +2412,7 @@
         }
       },
       "patch": {
-        "operationId": "partial-update",
+        "operationId": "documents_partialUpdate",
         "summary": "Partial Update",
         "description": "Update a Document, keying off of either its Vellum-generated ID or its external ID. Particularly useful for updating its metadata.",
         "tags": [
@@ -2482,7 +2482,7 @@
         }
       },
       "delete": {
-        "operationId": "destroy",
+        "operationId": "documents_destroy",
         "summary": "Destroy",
         "description": "Delete a Document, keying off of either its Vellum-generated ID or its external ID.",
         "tags": [
@@ -2515,7 +2515,7 @@
     },
     "/v1/documents": {
       "get": {
-        "operationId": "list",
+        "operationId": "documents_list",
         "summary": "List",
         "description": "Used to list documents. Optionally filter on supported fields.",
         "tags": [
@@ -2585,7 +2585,7 @@
     },
     "/v1/uploaded-files/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "uploadedFiles_retrieve",
         "summary": "Retrieve",
         "description": "Retrieve a previously uploaded file by its ID",
         "tags": [
@@ -2628,7 +2628,7 @@
     },
     "/v1/test-suites/{id}/test-cases": {
       "get": {
-        "operationId": "list-test-suite-test-cases",
+        "operationId": "testSuites_list_test_suite_test_cases",
         "summary": "List Test Suite Test Cases",
         "description": "List the Test Cases associated with a Test Suite",
         "tags": [
@@ -2677,7 +2677,7 @@
         }
       },
       "post": {
-        "operationId": "upsert-test-suite-test-case",
+        "operationId": "testSuites_upsert_test_suite_test_case",
         "summary": "Upsert Test Suite Test Case",
         "description": "Upserts a new test case for a test suite, keying off of the optionally provided test case id.\n\nIf an id is provided and has a match, the test case will be updated. If no id is provided or no match\nis found, a new test case will be appended to the end.\n\nNote that a full replacement of the test case is performed, so any fields not provided will be removed\nor overwritten with default values.",
         "tags": [
@@ -2719,7 +2719,7 @@
     },
     "/v1/test-suites/{id}/test-cases-bulk": {
       "post": {
-        "operationId": "test-suite-test-cases-bulk",
+        "operationId": "testSuites_test_suite_test_cases_bulk",
         "summary": "Test Suite Test Cases Bulk",
         "description": "Created, replace, and delete Test Cases within the specified Test Suite in bulk",
         "tags": [
@@ -2767,7 +2767,7 @@
     },
     "/v1/test-suites/{id}/test-cases/{test_case_id}": {
       "delete": {
-        "operationId": "delete-test-suite-test-case",
+        "operationId": "testSuites_delete_test_suite_test_case",
         "summary": "Delete Test Suite Test Case",
         "description": "Deletes an existing test case for a test suite, keying off of the test case id.\n",
         "tags": [
@@ -2809,7 +2809,7 @@
     },
     "/v1/test-suite-runs": {
       "post": {
-        "operationId": "create",
+        "operationId": "testSuiteRuns_create",
         "summary": "Create",
         "description": "Trigger a Test Suite and create a new Test Suite Run",
         "tags": [
@@ -2841,7 +2841,7 @@
     },
     "/v1/test-suite-runs/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "testSuiteRuns_retrieve",
         "summary": "Retrieve",
         "description": "Retrieve a specific Test Suite Run by ID",
         "tags": [
@@ -2875,7 +2875,7 @@
     },
     "/v1/test-suite-runs/{id}/executions": {
       "get": {
-        "operationId": "list-executions",
+        "operationId": "testSuiteRuns_listExecutions",
         "summary": "List Executions",
         "tags": [
           "test-suite-runs"
@@ -2938,7 +2938,7 @@
     },
     "/v1/folders/{folder_id}/add-entity": {
       "post": {
-        "operationId": "add-entity-to-folder",
+        "operationId": "folderEntities_add_entity_to_folder",
         "summary": "Add Entity To Folder",
         "description": "Add an entity to a specific folder or root directory.\n\nAdding an entity to a folder will remove it from any other folders it might have been a member of.",
         "tags": [
@@ -2980,7 +2980,7 @@
     },
     "/v1/folder-entities": {
       "get": {
-        "operationId": "list",
+        "operationId": "folderEntities_list",
         "summary": "List",
         "description": "List all folder entities within a specified folder.",
         "tags": [
@@ -3049,7 +3049,7 @@
     },
     "/v1/workspace-secrets/{id}": {
       "get": {
-        "operationId": "retrieve",
+        "operationId": "workspaceSecrets_retrieve",
         "summary": "Retrieve",
         "description": "Used to retrieve a Workspace Secret given its ID or name.",
         "tags": [
@@ -3080,7 +3080,7 @@
         }
       },
       "patch": {
-        "operationId": "partial-update",
+        "operationId": "workspaceSecrets_partialUpdate",
         "summary": "Partial Update",
         "description": "Used to update a Workspace Secret given its ID or name.",
         "tags": [

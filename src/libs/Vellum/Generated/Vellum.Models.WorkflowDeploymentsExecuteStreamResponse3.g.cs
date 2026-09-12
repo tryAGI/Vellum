@@ -4,9 +4,9 @@
 namespace Vellum
 {
     /// <summary>
-    /// Any type
+    ///
     /// </summary>
-    public sealed partial class ExecuteStreamResponse4
+    public sealed partial class WorkflowDeploymentsExecuteStreamResponse3
     {
 
         /// <summary>

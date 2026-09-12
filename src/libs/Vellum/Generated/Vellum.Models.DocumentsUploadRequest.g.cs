@@ -6,7 +6,7 @@ namespace Vellum
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class UploadRequest
+    public sealed partial class DocumentsUploadRequest
     {
         /// <summary>
         /// Optionally include the names of all indexes that you'd like this document to be included in
@@ -64,7 +64,7 @@ namespace Vellum
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UploadRequest" /> class.
+        /// Initializes a new instance of the <see cref="DocumentsUploadRequest" /> class.
         /// </summary>
         /// <param name="label">
         /// A human-friendly name for this document. Typically the filename.
@@ -93,7 +93,7 @@ namespace Vellum
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public UploadRequest(
+        public DocumentsUploadRequest(
             string label,
             global::System.Collections.Generic.IList<string>? addToIndexNames,
             string? externalId,
@@ -114,9 +114,9 @@ namespace Vellum
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UploadRequest" /> class.
+        /// Initializes a new instance of the <see cref="DocumentsUploadRequest" /> class.
         /// </summary>
-        public UploadRequest()
+        public DocumentsUploadRequest()
         {
         }
 
