@@ -3265,7 +3265,7 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UploadRequest? Type808 { get; set; }
+        public global::Vellum.DocumentsUploadRequest? Type808 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3273,7 +3273,7 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PartialUpdateRequest? Type810 { get; set; }
+        public global::Vellum.DocumentsPartialUpdateRequest? Type810 { get; set; }
         /// <summary>
         ///
         /// </summary>
