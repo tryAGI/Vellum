@@ -15,7 +15,7 @@ namespace Vellum
         /// <exception cref="global::Vellum.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.UploadDocumentResponse> UploadAsync(
 
-            global::Vellum.DocumentsUploadRequest request,
+            global::Vellum.UploadRequest request,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -29,7 +29,7 @@ namespace Vellum
         /// <exception cref="global::Vellum.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.UploadDocumentResponse>> UploadAsResponseAsync(
 
-            global::Vellum.DocumentsUploadRequest request,
+            global::Vellum.UploadRequest request,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>

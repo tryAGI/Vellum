@@ -27,11 +27,11 @@ namespace Vellum
             };
         partial void PrepareUploadArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::Vellum.DocumentsUploadRequest request);
+            global::Vellum.UploadRequest request);
         partial void PrepareUploadRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Vellum.DocumentsUploadRequest request);
+            global::Vellum.UploadRequest request);
         partial void ProcessUploadResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -52,7 +52,7 @@ namespace Vellum
         /// <exception cref="global::Vellum.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vellum.UploadDocumentResponse> UploadAsync(
 
-            global::Vellum.DocumentsUploadRequest request,
+            global::Vellum.UploadRequest request,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -76,7 +76,7 @@ namespace Vellum
         /// <exception cref="global::Vellum.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vellum.AutoSDKHttpResponse<global::Vellum.UploadDocumentResponse>> UploadAsResponseAsync(
 
-            global::Vellum.DocumentsUploadRequest request,
+            global::Vellum.UploadRequest request,
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -675,7 +675,7 @@ namespace Vellum
             global::Vellum.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vellum.DocumentsUploadRequest
+            var __request = new global::Vellum.UploadRequest
             {
                 AddToIndexNames = addToIndexNames,
                 ExternalId = externalId,

@@ -6,7 +6,7 @@ namespace Vellum
     /// <summary>
     /// Any type
     /// </summary>
-    public sealed partial class WorkflowDeploymentsExecuteStreamResponse2
+    public sealed partial class PartialUpdateRequestMetadata2
     {
 
         /// <summary>

@@ -2,7 +2,7 @@
 
 namespace Vellum
 {
-    public sealed partial class DocumentsUploadRequest
+    public sealed partial class ExecuteStreamResponse5
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -47,20 +47,20 @@ namespace Vellum
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Vellum.DocumentsUploadRequest? FromJson(
+        public static global::Vellum.ExecuteStreamResponse5? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Vellum.DocumentsUploadRequest),
-                jsonSerializerContext) as global::Vellum.DocumentsUploadRequest;
+                typeof(global::Vellum.ExecuteStreamResponse5),
+                jsonSerializerContext) as global::Vellum.ExecuteStreamResponse5;
         }
 
         /// <summary>
         /// Deserializes a JSON string using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::Vellum.DocumentsUploadRequest? FromJson(
+        public static global::Vellum.ExecuteStreamResponse5? FromJson(
             string json)
         {
             return FromJson(
@@ -75,7 +75,7 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Vellum.DocumentsUploadRequest? FromJson(
+        public static global::Vellum.ExecuteStreamResponse5? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -86,7 +86,7 @@ namespace Vellum
                     global::Vellum.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vellum.DocumentsUploadRequest>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vellum.ExecuteStreamResponse5>(
                 json,
                 jsonSerializerOptions);
         }
@@ -94,20 +94,20 @@ namespace Vellum
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Vellum.DocumentsUploadRequest?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Vellum.ExecuteStreamResponse5?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Vellum.DocumentsUploadRequest),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Vellum.DocumentsUploadRequest;
+                typeof(global::Vellum.ExecuteStreamResponse5),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Vellum.ExecuteStreamResponse5;
         }
 
         /// <summary>
         /// Deserializes a JSON stream using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::System.Threading.Tasks.ValueTask<global::Vellum.DocumentsUploadRequest?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vellum.ExecuteStreamResponse5?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream)
         {
             return FromJsonStreamAsync(
@@ -122,7 +122,7 @@ namespace Vellum
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Vellum.DocumentsUploadRequest?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vellum.ExecuteStreamResponse5?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -133,7 +133,7 @@ namespace Vellum
                     global::Vellum.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vellum.DocumentsUploadRequest?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vellum.ExecuteStreamResponse5?>(
                 jsonStream,
                 jsonSerializerOptions);
         }
