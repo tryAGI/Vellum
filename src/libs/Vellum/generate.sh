@@ -35,5 +35,6 @@ autosdk generate openapi.yaml \
   --clientClassName VellumClient \
   --targetFramework net10.0 \
   --output Generated \
+  --strip-redundant-operation-id-tag-prefixes \
   --exclude-deprecated-operations \
   --security-scheme ApiKey:Header:X-API-KEY
