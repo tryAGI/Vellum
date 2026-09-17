@@ -71,7 +71,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/execute-prompt-stream": {
@@ -140,7 +145,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/submit-completion-actuals": {
@@ -199,7 +209,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments/provider-payload": {
@@ -271,7 +286,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/sandboxes/{id}/prompts/{prompt_variant_id}/deploy": {
@@ -322,7 +342,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/sandboxes/{id}/scenarios": {
@@ -365,7 +390,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/sandboxes/{id}/scenarios/{scenario_id}": {
@@ -408,7 +438,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments": {
@@ -468,7 +503,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments/{id}": {
@@ -501,7 +541,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments/{id}/releases/{release_id_or_release_tag}": {
@@ -543,7 +588,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments/{id}/release-tags/{name}": {
@@ -585,7 +635,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "patch": {
         "operationId": "deployments_update_deployment_release_tag",
@@ -634,7 +689,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments/{id}/release-tags": {
@@ -702,7 +762,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/deployments/{id}/history/{history_id_or_release_tag}": {
@@ -746,7 +811,12 @@
             }
           }
         },
-        "deprecated": true
+        "deprecated": true,
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/execute-workflow": {
@@ -811,7 +881,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/execute-workflow-async": {
@@ -876,7 +951,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/execute-workflow-stream": {
@@ -938,7 +1018,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflows/executions/{execution_id}/status": {
@@ -1001,7 +1086,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/submit-workflow-execution-actuals": {
@@ -1030,7 +1120,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-sandboxes/{id}/deploy": {
@@ -1072,7 +1167,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/execute-stream": {
@@ -1153,7 +1253,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments": {
@@ -1240,7 +1345,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/releases": {
@@ -1300,7 +1410,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}": {
@@ -1333,7 +1448,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/releases/{release_id_or_release_tag}": {
@@ -1375,7 +1495,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/release-tags/{name}": {
@@ -1417,7 +1542,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "patch": {
         "operationId": "workflowDeployments_update_workflow_release_tag",
@@ -1466,7 +1596,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/release-tags": {
@@ -1534,7 +1669,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/history/{history_id_or_release_tag}": {
@@ -1578,7 +1718,12 @@
             }
           }
         },
-        "deprecated": true
+        "deprecated": true,
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/execution-events": {
@@ -1643,7 +1788,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-deployments/{id}/execution-events/{execution_id}": {
@@ -1713,7 +1863,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workflow-executions/{execution_id}/detail": {
@@ -1784,7 +1939,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/monitoring/v1/events": {
@@ -1856,7 +2016,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/search": {
@@ -1915,7 +2080,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/document-indexes/{id}/documents/{document_id}": {
@@ -1957,7 +2127,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "delete": {
         "operationId": "documentIndexes_remove_document",
@@ -1997,7 +2172,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/document-indexes": {
@@ -2029,7 +2209,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "get": {
         "operationId": "documentIndexes_list",
@@ -2096,7 +2281,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/document-indexes/{id}": {
@@ -2138,7 +2328,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "patch": {
         "operationId": "documentIndexes_partialUpdate",
@@ -2178,7 +2373,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "put": {
         "operationId": "documentIndexes_update",
@@ -2218,7 +2418,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "delete": {
         "operationId": "documentIndexes_destroy",
@@ -2249,7 +2454,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/upload-document": {
@@ -2376,7 +2586,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/documents/{id}": {
@@ -2409,7 +2624,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "patch": {
         "operationId": "documents_partialUpdate",
@@ -2479,7 +2699,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "delete": {
         "operationId": "documents_destroy",
@@ -2510,7 +2735,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/documents": {
@@ -2580,7 +2810,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/uploaded-files/{id}": {
@@ -2623,7 +2858,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/test-suites/{id}/test-cases": {
@@ -2674,7 +2914,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "post": {
         "operationId": "testSuites_upsert_test_suite_test_case",
@@ -2714,7 +2959,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/test-suites/{id}/test-cases-bulk": {
@@ -2762,7 +3012,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/test-suites/{id}/test-cases/{test_case_id}": {
@@ -2804,7 +3059,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/test-suite-runs": {
@@ -2836,7 +3096,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/test-suite-runs/{id}": {
@@ -2870,7 +3135,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/test-suite-runs/{id}/executions": {
@@ -2933,7 +3203,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/folders/{folder_id}/add-entity": {
@@ -2975,7 +3250,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/folder-entities": {
@@ -3044,7 +3324,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     },
     "/v1/workspace-secrets/{id}": {
@@ -3077,7 +3362,12 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       },
       "patch": {
         "operationId": "workspaceSecrets_partialUpdate",
@@ -3117,10 +3407,59 @@
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
       }
     }
   },
+  "tags": [
+    {
+      "name": "deployments"
+    },
+    {
+      "name": "sandboxes"
+    },
+    {
+      "name": "workflows"
+    },
+    {
+      "name": "workflow-sandboxes"
+    },
+    {
+      "name": "workflow-deployments"
+    },
+    {
+      "name": "workflow-executions"
+    },
+    {
+      "name": "events"
+    },
+    {
+      "name": "document-indexes"
+    },
+    {
+      "name": "documents"
+    },
+    {
+      "name": "uploaded-files"
+    },
+    {
+      "name": "test-suites"
+    },
+    {
+      "name": "test-suite-runs"
+    },
+    {
+      "name": "folder-entities"
+    },
+    {
+      "name": "workspace-secrets"
+    }
+  ],
   "servers": [
     {
       "url": "https://api.vellum.ai"
