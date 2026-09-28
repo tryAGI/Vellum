@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptNodeResult PickPromptNodeResult() => IsPromptNodeResult
-            ? PromptNodeResult!
+        public global::Vellum.PromptNodeResult PickPromptNodeResult() => PromptNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchNodeResult PickSearchNodeResult() => IsSearchNodeResult
-            ? SearchNodeResult!
+        public global::Vellum.SearchNodeResult PickSearchNodeResult() => SearchNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SearchNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeResult PickTemplatingNodeResult() => IsTemplatingNodeResult
-            ? TemplatingNodeResult!
+        public global::Vellum.TemplatingNodeResult PickTemplatingNodeResult() => TemplatingNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeResult PickCodeExecutionNodeResult() => IsCodeExecutionNodeResult
-            ? CodeExecutionNodeResult!
+        public global::Vellum.CodeExecutionNodeResult PickCodeExecutionNodeResult() => CodeExecutionNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ConditionalNodeResult PickConditionalNodeResult() => IsConditionalNodeResult
-            ? ConditionalNodeResult!
+        public global::Vellum.ConditionalNodeResult PickConditionalNodeResult() => ConditionalNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ConditionalNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiNodeResult PickApiNodeResult() => IsApiNodeResult
-            ? ApiNodeResult!
+        public global::Vellum.ApiNodeResult PickApiNodeResult() => ApiNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApiNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeResult PickTerminalNodeResult() => IsTerminalNodeResult
-            ? TerminalNodeResult!
+        public global::Vellum.TerminalNodeResult PickTerminalNodeResult() => TerminalNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MergeNodeResult PickMergeNodeResult() => IsMergeNodeResult
-            ? MergeNodeResult!
+        public global::Vellum.MergeNodeResult PickMergeNodeResult() => MergeNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MergeNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubworkflowNodeResult PickSubworkflowNodeResult() => IsSubworkflowNodeResult
-            ? SubworkflowNodeResult!
+        public global::Vellum.SubworkflowNodeResult PickSubworkflowNodeResult() => SubworkflowNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubworkflowNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetricNodeResult PickMetricNodeResult() => IsMetricNodeResult
-            ? MetricNodeResult!
+        public global::Vellum.MetricNodeResult PickMetricNodeResult() => MetricNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MetricNodeResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MapNodeResult PickMapNodeResult() => IsMapNodeResult
-            ? MapNodeResult!
+        public global::Vellum.MapNodeResult PickMapNodeResult() => MapNodeResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MapNodeResult' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -762,49 +762,49 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPromptNodeResult && promptNodeResult != null)
+            if (PromptNodeResult is { } __value0 && promptNodeResult != null)
             {
-                return promptNodeResult(PromptNodeResult!);
+                return promptNodeResult(__value0);
             }
-            else if (IsSearchNodeResult && searchNodeResult != null)
+            else if (SearchNodeResult is { } __value1 && searchNodeResult != null)
             {
-                return searchNodeResult(SearchNodeResult!);
+                return searchNodeResult(__value1);
             }
-            else if (IsTemplatingNodeResult && templatingNodeResult != null)
+            else if (TemplatingNodeResult is { } __value2 && templatingNodeResult != null)
             {
-                return templatingNodeResult(TemplatingNodeResult!);
+                return templatingNodeResult(__value2);
             }
-            else if (IsCodeExecutionNodeResult && codeExecutionNodeResult != null)
+            else if (CodeExecutionNodeResult is { } __value3 && codeExecutionNodeResult != null)
             {
-                return codeExecutionNodeResult(CodeExecutionNodeResult!);
+                return codeExecutionNodeResult(__value3);
             }
-            else if (IsConditionalNodeResult && conditionalNodeResult != null)
+            else if (ConditionalNodeResult is { } __value4 && conditionalNodeResult != null)
             {
-                return conditionalNodeResult(ConditionalNodeResult!);
+                return conditionalNodeResult(__value4);
             }
-            else if (IsApiNodeResult && apiNodeResult != null)
+            else if (ApiNodeResult is { } __value5 && apiNodeResult != null)
             {
-                return apiNodeResult(ApiNodeResult!);
+                return apiNodeResult(__value5);
             }
-            else if (IsTerminalNodeResult && terminalNodeResult != null)
+            else if (TerminalNodeResult is { } __value6 && terminalNodeResult != null)
             {
-                return terminalNodeResult(TerminalNodeResult!);
+                return terminalNodeResult(__value6);
             }
-            else if (IsMergeNodeResult && mergeNodeResult != null)
+            else if (MergeNodeResult is { } __value7 && mergeNodeResult != null)
             {
-                return mergeNodeResult(MergeNodeResult!);
+                return mergeNodeResult(__value7);
             }
-            else if (IsSubworkflowNodeResult && subworkflowNodeResult != null)
+            else if (SubworkflowNodeResult is { } __value8 && subworkflowNodeResult != null)
             {
-                return subworkflowNodeResult(SubworkflowNodeResult!);
+                return subworkflowNodeResult(__value8);
             }
-            else if (IsMetricNodeResult && metricNodeResult != null)
+            else if (MetricNodeResult is { } __value9 && metricNodeResult != null)
             {
-                return metricNodeResult(MetricNodeResult!);
+                return metricNodeResult(__value9);
             }
-            else if (IsMapNodeResult && mapNodeResult != null)
+            else if (MapNodeResult is { } __value10 && mapNodeResult != null)
             {
-                return mapNodeResult(MapNodeResult!);
+                return mapNodeResult(__value10);
             }
 
             return default(TResult);
@@ -842,49 +842,49 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPromptNodeResult)
+            if (PromptNodeResult is { } __value0)
             {
-                promptNodeResult?.Invoke(PromptNodeResult!);
+                promptNodeResult?.Invoke(__value0);
             }
-            else if (IsSearchNodeResult)
+            else if (SearchNodeResult is { } __value1)
             {
-                searchNodeResult?.Invoke(SearchNodeResult!);
+                searchNodeResult?.Invoke(__value1);
             }
-            else if (IsTemplatingNodeResult)
+            else if (TemplatingNodeResult is { } __value2)
             {
-                templatingNodeResult?.Invoke(TemplatingNodeResult!);
+                templatingNodeResult?.Invoke(__value2);
             }
-            else if (IsCodeExecutionNodeResult)
+            else if (CodeExecutionNodeResult is { } __value3)
             {
-                codeExecutionNodeResult?.Invoke(CodeExecutionNodeResult!);
+                codeExecutionNodeResult?.Invoke(__value3);
             }
-            else if (IsConditionalNodeResult)
+            else if (ConditionalNodeResult is { } __value4)
             {
-                conditionalNodeResult?.Invoke(ConditionalNodeResult!);
+                conditionalNodeResult?.Invoke(__value4);
             }
-            else if (IsApiNodeResult)
+            else if (ApiNodeResult is { } __value5)
             {
-                apiNodeResult?.Invoke(ApiNodeResult!);
+                apiNodeResult?.Invoke(__value5);
             }
-            else if (IsTerminalNodeResult)
+            else if (TerminalNodeResult is { } __value6)
             {
-                terminalNodeResult?.Invoke(TerminalNodeResult!);
+                terminalNodeResult?.Invoke(__value6);
             }
-            else if (IsMergeNodeResult)
+            else if (MergeNodeResult is { } __value7)
             {
-                mergeNodeResult?.Invoke(MergeNodeResult!);
+                mergeNodeResult?.Invoke(__value7);
             }
-            else if (IsSubworkflowNodeResult)
+            else if (SubworkflowNodeResult is { } __value8)
             {
-                subworkflowNodeResult?.Invoke(SubworkflowNodeResult!);
+                subworkflowNodeResult?.Invoke(__value8);
             }
-            else if (IsMetricNodeResult)
+            else if (MetricNodeResult is { } __value9)
             {
-                metricNodeResult?.Invoke(MetricNodeResult!);
+                metricNodeResult?.Invoke(__value9);
             }
-            else if (IsMapNodeResult)
+            else if (MapNodeResult is { } __value10)
             {
-                mapNodeResult?.Invoke(MapNodeResult!);
+                mapNodeResult?.Invoke(__value10);
             }
         }
 
@@ -910,49 +910,49 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPromptNodeResult)
+            if (PromptNodeResult is { } __value0)
             {
-                promptNodeResult?.Invoke(PromptNodeResult!);
+                promptNodeResult?.Invoke(__value0);
             }
-            else if (IsSearchNodeResult)
+            else if (SearchNodeResult is { } __value1)
             {
-                searchNodeResult?.Invoke(SearchNodeResult!);
+                searchNodeResult?.Invoke(__value1);
             }
-            else if (IsTemplatingNodeResult)
+            else if (TemplatingNodeResult is { } __value2)
             {
-                templatingNodeResult?.Invoke(TemplatingNodeResult!);
+                templatingNodeResult?.Invoke(__value2);
             }
-            else if (IsCodeExecutionNodeResult)
+            else if (CodeExecutionNodeResult is { } __value3)
             {
-                codeExecutionNodeResult?.Invoke(CodeExecutionNodeResult!);
+                codeExecutionNodeResult?.Invoke(__value3);
             }
-            else if (IsConditionalNodeResult)
+            else if (ConditionalNodeResult is { } __value4)
             {
-                conditionalNodeResult?.Invoke(ConditionalNodeResult!);
+                conditionalNodeResult?.Invoke(__value4);
             }
-            else if (IsApiNodeResult)
+            else if (ApiNodeResult is { } __value5)
             {
-                apiNodeResult?.Invoke(ApiNodeResult!);
+                apiNodeResult?.Invoke(__value5);
             }
-            else if (IsTerminalNodeResult)
+            else if (TerminalNodeResult is { } __value6)
             {
-                terminalNodeResult?.Invoke(TerminalNodeResult!);
+                terminalNodeResult?.Invoke(__value6);
             }
-            else if (IsMergeNodeResult)
+            else if (MergeNodeResult is { } __value7)
             {
-                mergeNodeResult?.Invoke(MergeNodeResult!);
+                mergeNodeResult?.Invoke(__value7);
             }
-            else if (IsSubworkflowNodeResult)
+            else if (SubworkflowNodeResult is { } __value8)
             {
-                subworkflowNodeResult?.Invoke(SubworkflowNodeResult!);
+                subworkflowNodeResult?.Invoke(__value8);
             }
-            else if (IsMetricNodeResult)
+            else if (MetricNodeResult is { } __value9)
             {
-                metricNodeResult?.Invoke(MetricNodeResult!);
+                metricNodeResult?.Invoke(__value9);
             }
-            else if (IsMapNodeResult)
+            else if (MapNodeResult is { } __value10)
             {
-                mapNodeResult?.Invoke(MapNodeResult!);
+                mapNodeResult?.Invoke(__value10);
             }
         }
 

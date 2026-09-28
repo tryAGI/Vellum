@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSpan PickWorkflowExecutionSpan() => IsWorkflowExecutionSpan
-            ? WorkflowExecutionSpan!
+        public global::Vellum.WorkflowExecutionSpan PickWorkflowExecutionSpan() => WorkflowExecutionSpan is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionSpan' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionSpan PickNodeExecutionSpan() => IsNodeExecutionSpan
-            ? NodeExecutionSpan!
+        public global::Vellum.NodeExecutionSpan PickNodeExecutionSpan() => NodeExecutionSpan is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionSpan' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowExecutionSpan && workflowExecutionSpan != null)
+            if (WorkflowExecutionSpan is { } __value0 && workflowExecutionSpan != null)
             {
-                return workflowExecutionSpan(WorkflowExecutionSpan!);
+                return workflowExecutionSpan(__value0);
             }
-            else if (IsNodeExecutionSpan && nodeExecutionSpan != null)
+            else if (NodeExecutionSpan is { } __value1 && nodeExecutionSpan != null)
             {
-                return nodeExecutionSpan(NodeExecutionSpan!);
+                return nodeExecutionSpan(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowExecutionSpan)
+            if (WorkflowExecutionSpan is { } __value0)
             {
-                workflowExecutionSpan?.Invoke(WorkflowExecutionSpan!);
+                workflowExecutionSpan?.Invoke(__value0);
             }
-            else if (IsNodeExecutionSpan)
+            else if (NodeExecutionSpan is { } __value1)
             {
-                nodeExecutionSpan?.Invoke(NodeExecutionSpan!);
+                nodeExecutionSpan?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowExecutionSpan)
+            if (WorkflowExecutionSpan is { } __value0)
             {
-                workflowExecutionSpan?.Invoke(WorkflowExecutionSpan!);
+                workflowExecutionSpan?.Invoke(__value0);
             }
-            else if (IsNodeExecutionSpan)
+            else if (NodeExecutionSpan is { } __value1)
             {
-                nodeExecutionSpan?.Invoke(NodeExecutionSpan!);
+                nodeExecutionSpan?.Invoke(__value1);
             }
         }
 

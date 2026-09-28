@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptVersionBuildConfigSandbox PickPromptVersionBuildConfigSandbox() => IsPromptVersionBuildConfigSandbox
-            ? PromptVersionBuildConfigSandbox!
+        public global::Vellum.PromptVersionBuildConfigSandbox PickPromptVersionBuildConfigSandbox() => PromptVersionBuildConfigSandbox is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptVersionBuildConfigSandbox' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -102,9 +102,9 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPromptVersionBuildConfigSandbox && promptVersionBuildConfigSandbox != null)
+            if (PromptVersionBuildConfigSandbox is { } __value0 && promptVersionBuildConfigSandbox != null)
             {
-                return promptVersionBuildConfigSandbox(PromptVersionBuildConfigSandbox!);
+                return promptVersionBuildConfigSandbox(__value0);
             }
 
             return default(TResult);
@@ -122,9 +122,9 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPromptVersionBuildConfigSandbox)
+            if (PromptVersionBuildConfigSandbox is { } __value0)
             {
-                promptVersionBuildConfigSandbox?.Invoke(PromptVersionBuildConfigSandbox!);
+                promptVersionBuildConfigSandbox?.Invoke(__value0);
             }
         }
 
@@ -140,9 +140,9 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPromptVersionBuildConfigSandbox)
+            if (PromptVersionBuildConfigSandbox is { } __value0)
             {
-                promptVersionBuildConfigSandbox?.Invoke(PromptVersionBuildConfigSandbox!);
+                promptVersionBuildConfigSandbox?.Invoke(__value0);
             }
         }
 

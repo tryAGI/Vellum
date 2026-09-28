@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputString PickWorkflowOutputString() => IsWorkflowOutputString
-            ? WorkflowOutputString!
+        public global::Vellum.WorkflowOutputString PickWorkflowOutputString() => WorkflowOutputString is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputString' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputNumber PickWorkflowOutputNumber() => IsWorkflowOutputNumber
-            ? WorkflowOutputNumber!
+        public global::Vellum.WorkflowOutputNumber PickWorkflowOutputNumber() => WorkflowOutputNumber is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputNumber' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputJSON PickWorkflowOutputJSON() => IsWorkflowOutputJSON
-            ? WorkflowOutputJSON!
+        public global::Vellum.WorkflowOutputJSON PickWorkflowOutputJSON() => WorkflowOutputJSON is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputJSON' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputChatHistory PickWorkflowOutputChatHistory() => IsWorkflowOutputChatHistory
-            ? WorkflowOutputChatHistory!
+        public global::Vellum.WorkflowOutputChatHistory PickWorkflowOutputChatHistory() => WorkflowOutputChatHistory is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputChatHistory' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputSearchResults PickWorkflowOutputSearchResults() => IsWorkflowOutputSearchResults
-            ? WorkflowOutputSearchResults!
+        public global::Vellum.WorkflowOutputSearchResults PickWorkflowOutputSearchResults() => WorkflowOutputSearchResults is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputSearchResults' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputArray PickWorkflowOutputArray() => IsWorkflowOutputArray
-            ? WorkflowOutputArray!
+        public global::Vellum.WorkflowOutputArray PickWorkflowOutputArray() => WorkflowOutputArray is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputArray' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputError PickWorkflowOutputError() => IsWorkflowOutputError
-            ? WorkflowOutputError!
+        public global::Vellum.WorkflowOutputError PickWorkflowOutputError() => WorkflowOutputError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputError' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputFunctionCall PickWorkflowOutputFunctionCall() => IsWorkflowOutputFunctionCall
-            ? WorkflowOutputFunctionCall!
+        public global::Vellum.WorkflowOutputFunctionCall PickWorkflowOutputFunctionCall() => WorkflowOutputFunctionCall is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputFunctionCall' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputImage PickWorkflowOutputImage() => IsWorkflowOutputImage
-            ? WorkflowOutputImage!
+        public global::Vellum.WorkflowOutputImage PickWorkflowOutputImage() => WorkflowOutputImage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputImage' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputAudio PickWorkflowOutputAudio() => IsWorkflowOutputAudio
-            ? WorkflowOutputAudio!
+        public global::Vellum.WorkflowOutputAudio PickWorkflowOutputAudio() => WorkflowOutputAudio is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputAudio' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputVideo PickWorkflowOutputVideo() => IsWorkflowOutputVideo
-            ? WorkflowOutputVideo!
+        public global::Vellum.WorkflowOutputVideo PickWorkflowOutputVideo() => WorkflowOutputVideo is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputVideo' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputDocument PickWorkflowOutputDocument() => IsWorkflowOutputDocument
-            ? WorkflowOutputDocument!
+        public global::Vellum.WorkflowOutputDocument PickWorkflowOutputDocument() => WorkflowOutputDocument is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowOutputDocument' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -827,53 +827,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowOutputString && workflowOutputString != null)
+            if (WorkflowOutputString is { } __value0 && workflowOutputString != null)
             {
-                return workflowOutputString(WorkflowOutputString!);
+                return workflowOutputString(__value0);
             }
-            else if (IsWorkflowOutputNumber && workflowOutputNumber != null)
+            else if (WorkflowOutputNumber is { } __value1 && workflowOutputNumber != null)
             {
-                return workflowOutputNumber(WorkflowOutputNumber!);
+                return workflowOutputNumber(__value1);
             }
-            else if (IsWorkflowOutputJSON && workflowOutputJSON != null)
+            else if (WorkflowOutputJSON is { } __value2 && workflowOutputJSON != null)
             {
-                return workflowOutputJSON(WorkflowOutputJSON!);
+                return workflowOutputJSON(__value2);
             }
-            else if (IsWorkflowOutputChatHistory && workflowOutputChatHistory != null)
+            else if (WorkflowOutputChatHistory is { } __value3 && workflowOutputChatHistory != null)
             {
-                return workflowOutputChatHistory(WorkflowOutputChatHistory!);
+                return workflowOutputChatHistory(__value3);
             }
-            else if (IsWorkflowOutputSearchResults && workflowOutputSearchResults != null)
+            else if (WorkflowOutputSearchResults is { } __value4 && workflowOutputSearchResults != null)
             {
-                return workflowOutputSearchResults(WorkflowOutputSearchResults!);
+                return workflowOutputSearchResults(__value4);
             }
-            else if (IsWorkflowOutputArray && workflowOutputArray != null)
+            else if (WorkflowOutputArray is { } __value5 && workflowOutputArray != null)
             {
-                return workflowOutputArray(WorkflowOutputArray!);
+                return workflowOutputArray(__value5);
             }
-            else if (IsWorkflowOutputError && workflowOutputError != null)
+            else if (WorkflowOutputError is { } __value6 && workflowOutputError != null)
             {
-                return workflowOutputError(WorkflowOutputError!);
+                return workflowOutputError(__value6);
             }
-            else if (IsWorkflowOutputFunctionCall && workflowOutputFunctionCall != null)
+            else if (WorkflowOutputFunctionCall is { } __value7 && workflowOutputFunctionCall != null)
             {
-                return workflowOutputFunctionCall(WorkflowOutputFunctionCall!);
+                return workflowOutputFunctionCall(__value7);
             }
-            else if (IsWorkflowOutputImage && workflowOutputImage != null)
+            else if (WorkflowOutputImage is { } __value8 && workflowOutputImage != null)
             {
-                return workflowOutputImage(WorkflowOutputImage!);
+                return workflowOutputImage(__value8);
             }
-            else if (IsWorkflowOutputAudio && workflowOutputAudio != null)
+            else if (WorkflowOutputAudio is { } __value9 && workflowOutputAudio != null)
             {
-                return workflowOutputAudio(WorkflowOutputAudio!);
+                return workflowOutputAudio(__value9);
             }
-            else if (IsWorkflowOutputVideo && workflowOutputVideo != null)
+            else if (WorkflowOutputVideo is { } __value10 && workflowOutputVideo != null)
             {
-                return workflowOutputVideo(WorkflowOutputVideo!);
+                return workflowOutputVideo(__value10);
             }
-            else if (IsWorkflowOutputDocument && workflowOutputDocument != null)
+            else if (WorkflowOutputDocument is { } __value11 && workflowOutputDocument != null)
             {
-                return workflowOutputDocument(WorkflowOutputDocument!);
+                return workflowOutputDocument(__value11);
             }
 
             return default(TResult);
@@ -913,53 +913,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowOutputString)
+            if (WorkflowOutputString is { } __value0)
             {
-                workflowOutputString?.Invoke(WorkflowOutputString!);
+                workflowOutputString?.Invoke(__value0);
             }
-            else if (IsWorkflowOutputNumber)
+            else if (WorkflowOutputNumber is { } __value1)
             {
-                workflowOutputNumber?.Invoke(WorkflowOutputNumber!);
+                workflowOutputNumber?.Invoke(__value1);
             }
-            else if (IsWorkflowOutputJSON)
+            else if (WorkflowOutputJSON is { } __value2)
             {
-                workflowOutputJSON?.Invoke(WorkflowOutputJSON!);
+                workflowOutputJSON?.Invoke(__value2);
             }
-            else if (IsWorkflowOutputChatHistory)
+            else if (WorkflowOutputChatHistory is { } __value3)
             {
-                workflowOutputChatHistory?.Invoke(WorkflowOutputChatHistory!);
+                workflowOutputChatHistory?.Invoke(__value3);
             }
-            else if (IsWorkflowOutputSearchResults)
+            else if (WorkflowOutputSearchResults is { } __value4)
             {
-                workflowOutputSearchResults?.Invoke(WorkflowOutputSearchResults!);
+                workflowOutputSearchResults?.Invoke(__value4);
             }
-            else if (IsWorkflowOutputArray)
+            else if (WorkflowOutputArray is { } __value5)
             {
-                workflowOutputArray?.Invoke(WorkflowOutputArray!);
+                workflowOutputArray?.Invoke(__value5);
             }
-            else if (IsWorkflowOutputError)
+            else if (WorkflowOutputError is { } __value6)
             {
-                workflowOutputError?.Invoke(WorkflowOutputError!);
+                workflowOutputError?.Invoke(__value6);
             }
-            else if (IsWorkflowOutputFunctionCall)
+            else if (WorkflowOutputFunctionCall is { } __value7)
             {
-                workflowOutputFunctionCall?.Invoke(WorkflowOutputFunctionCall!);
+                workflowOutputFunctionCall?.Invoke(__value7);
             }
-            else if (IsWorkflowOutputImage)
+            else if (WorkflowOutputImage is { } __value8)
             {
-                workflowOutputImage?.Invoke(WorkflowOutputImage!);
+                workflowOutputImage?.Invoke(__value8);
             }
-            else if (IsWorkflowOutputAudio)
+            else if (WorkflowOutputAudio is { } __value9)
             {
-                workflowOutputAudio?.Invoke(WorkflowOutputAudio!);
+                workflowOutputAudio?.Invoke(__value9);
             }
-            else if (IsWorkflowOutputVideo)
+            else if (WorkflowOutputVideo is { } __value10)
             {
-                workflowOutputVideo?.Invoke(WorkflowOutputVideo!);
+                workflowOutputVideo?.Invoke(__value10);
             }
-            else if (IsWorkflowOutputDocument)
+            else if (WorkflowOutputDocument is { } __value11)
             {
-                workflowOutputDocument?.Invoke(WorkflowOutputDocument!);
+                workflowOutputDocument?.Invoke(__value11);
             }
         }
 
@@ -986,53 +986,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowOutputString)
+            if (WorkflowOutputString is { } __value0)
             {
-                workflowOutputString?.Invoke(WorkflowOutputString!);
+                workflowOutputString?.Invoke(__value0);
             }
-            else if (IsWorkflowOutputNumber)
+            else if (WorkflowOutputNumber is { } __value1)
             {
-                workflowOutputNumber?.Invoke(WorkflowOutputNumber!);
+                workflowOutputNumber?.Invoke(__value1);
             }
-            else if (IsWorkflowOutputJSON)
+            else if (WorkflowOutputJSON is { } __value2)
             {
-                workflowOutputJSON?.Invoke(WorkflowOutputJSON!);
+                workflowOutputJSON?.Invoke(__value2);
             }
-            else if (IsWorkflowOutputChatHistory)
+            else if (WorkflowOutputChatHistory is { } __value3)
             {
-                workflowOutputChatHistory?.Invoke(WorkflowOutputChatHistory!);
+                workflowOutputChatHistory?.Invoke(__value3);
             }
-            else if (IsWorkflowOutputSearchResults)
+            else if (WorkflowOutputSearchResults is { } __value4)
             {
-                workflowOutputSearchResults?.Invoke(WorkflowOutputSearchResults!);
+                workflowOutputSearchResults?.Invoke(__value4);
             }
-            else if (IsWorkflowOutputArray)
+            else if (WorkflowOutputArray is { } __value5)
             {
-                workflowOutputArray?.Invoke(WorkflowOutputArray!);
+                workflowOutputArray?.Invoke(__value5);
             }
-            else if (IsWorkflowOutputError)
+            else if (WorkflowOutputError is { } __value6)
             {
-                workflowOutputError?.Invoke(WorkflowOutputError!);
+                workflowOutputError?.Invoke(__value6);
             }
-            else if (IsWorkflowOutputFunctionCall)
+            else if (WorkflowOutputFunctionCall is { } __value7)
             {
-                workflowOutputFunctionCall?.Invoke(WorkflowOutputFunctionCall!);
+                workflowOutputFunctionCall?.Invoke(__value7);
             }
-            else if (IsWorkflowOutputImage)
+            else if (WorkflowOutputImage is { } __value8)
             {
-                workflowOutputImage?.Invoke(WorkflowOutputImage!);
+                workflowOutputImage?.Invoke(__value8);
             }
-            else if (IsWorkflowOutputAudio)
+            else if (WorkflowOutputAudio is { } __value9)
             {
-                workflowOutputAudio?.Invoke(WorkflowOutputAudio!);
+                workflowOutputAudio?.Invoke(__value9);
             }
-            else if (IsWorkflowOutputVideo)
+            else if (WorkflowOutputVideo is { } __value10)
             {
-                workflowOutputVideo?.Invoke(WorkflowOutputVideo!);
+                workflowOutputVideo?.Invoke(__value10);
             }
-            else if (IsWorkflowOutputDocument)
+            else if (WorkflowOutputDocument is { } __value11)
             {
-                workflowOutputDocument?.Invoke(WorkflowOutputDocument!);
+                workflowOutputDocument?.Invoke(__value11);
             }
         }
 

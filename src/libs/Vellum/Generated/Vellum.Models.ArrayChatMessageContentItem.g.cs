@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringChatMessageContent PickStringChatMessageContent() => IsStringChatMessageContent
-            ? StringChatMessageContent!
+        public global::Vellum.StringChatMessageContent PickStringChatMessageContent() => StringChatMessageContent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StringChatMessageContent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallChatMessageContent PickFunctionCallChatMessageContent() => IsFunctionCallChatMessageContent
-            ? FunctionCallChatMessageContent!
+        public global::Vellum.FunctionCallChatMessageContent PickFunctionCallChatMessageContent() => FunctionCallChatMessageContent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallChatMessageContent' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioChatMessageContent PickAudioChatMessageContent() => IsAudioChatMessageContent
-            ? AudioChatMessageContent!
+        public global::Vellum.AudioChatMessageContent PickAudioChatMessageContent() => AudioChatMessageContent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AudioChatMessageContent' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoChatMessageContent PickVideoChatMessageContent() => IsVideoChatMessageContent
-            ? VideoChatMessageContent!
+        public global::Vellum.VideoChatMessageContent PickVideoChatMessageContent() => VideoChatMessageContent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoChatMessageContent' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageChatMessageContent PickImageChatMessageContent() => IsImageChatMessageContent
-            ? ImageChatMessageContent!
+        public global::Vellum.ImageChatMessageContent PickImageChatMessageContent() => ImageChatMessageContent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ImageChatMessageContent' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentChatMessageContent PickDocumentChatMessageContent() => IsDocumentChatMessageContent
-            ? DocumentChatMessageContent!
+        public global::Vellum.DocumentChatMessageContent PickDocumentChatMessageContent() => DocumentChatMessageContent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentChatMessageContent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -437,29 +437,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringChatMessageContent && stringChatMessageContent != null)
+            if (StringChatMessageContent is { } __value0 && stringChatMessageContent != null)
             {
-                return stringChatMessageContent(StringChatMessageContent!);
+                return stringChatMessageContent(__value0);
             }
-            else if (IsFunctionCallChatMessageContent && functionCallChatMessageContent != null)
+            else if (FunctionCallChatMessageContent is { } __value1 && functionCallChatMessageContent != null)
             {
-                return functionCallChatMessageContent(FunctionCallChatMessageContent!);
+                return functionCallChatMessageContent(__value1);
             }
-            else if (IsAudioChatMessageContent && audioChatMessageContent != null)
+            else if (AudioChatMessageContent is { } __value2 && audioChatMessageContent != null)
             {
-                return audioChatMessageContent(AudioChatMessageContent!);
+                return audioChatMessageContent(__value2);
             }
-            else if (IsVideoChatMessageContent && videoChatMessageContent != null)
+            else if (VideoChatMessageContent is { } __value3 && videoChatMessageContent != null)
             {
-                return videoChatMessageContent(VideoChatMessageContent!);
+                return videoChatMessageContent(__value3);
             }
-            else if (IsImageChatMessageContent && imageChatMessageContent != null)
+            else if (ImageChatMessageContent is { } __value4 && imageChatMessageContent != null)
             {
-                return imageChatMessageContent(ImageChatMessageContent!);
+                return imageChatMessageContent(__value4);
             }
-            else if (IsDocumentChatMessageContent && documentChatMessageContent != null)
+            else if (DocumentChatMessageContent is { } __value5 && documentChatMessageContent != null)
             {
-                return documentChatMessageContent(DocumentChatMessageContent!);
+                return documentChatMessageContent(__value5);
             }
 
             return default(TResult);
@@ -487,29 +487,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringChatMessageContent)
+            if (StringChatMessageContent is { } __value0)
             {
-                stringChatMessageContent?.Invoke(StringChatMessageContent!);
+                stringChatMessageContent?.Invoke(__value0);
             }
-            else if (IsFunctionCallChatMessageContent)
+            else if (FunctionCallChatMessageContent is { } __value1)
             {
-                functionCallChatMessageContent?.Invoke(FunctionCallChatMessageContent!);
+                functionCallChatMessageContent?.Invoke(__value1);
             }
-            else if (IsAudioChatMessageContent)
+            else if (AudioChatMessageContent is { } __value2)
             {
-                audioChatMessageContent?.Invoke(AudioChatMessageContent!);
+                audioChatMessageContent?.Invoke(__value2);
             }
-            else if (IsVideoChatMessageContent)
+            else if (VideoChatMessageContent is { } __value3)
             {
-                videoChatMessageContent?.Invoke(VideoChatMessageContent!);
+                videoChatMessageContent?.Invoke(__value3);
             }
-            else if (IsImageChatMessageContent)
+            else if (ImageChatMessageContent is { } __value4)
             {
-                imageChatMessageContent?.Invoke(ImageChatMessageContent!);
+                imageChatMessageContent?.Invoke(__value4);
             }
-            else if (IsDocumentChatMessageContent)
+            else if (DocumentChatMessageContent is { } __value5)
             {
-                documentChatMessageContent?.Invoke(DocumentChatMessageContent!);
+                documentChatMessageContent?.Invoke(__value5);
             }
         }
 
@@ -530,29 +530,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringChatMessageContent)
+            if (StringChatMessageContent is { } __value0)
             {
-                stringChatMessageContent?.Invoke(StringChatMessageContent!);
+                stringChatMessageContent?.Invoke(__value0);
             }
-            else if (IsFunctionCallChatMessageContent)
+            else if (FunctionCallChatMessageContent is { } __value1)
             {
-                functionCallChatMessageContent?.Invoke(FunctionCallChatMessageContent!);
+                functionCallChatMessageContent?.Invoke(__value1);
             }
-            else if (IsAudioChatMessageContent)
+            else if (AudioChatMessageContent is { } __value2)
             {
-                audioChatMessageContent?.Invoke(AudioChatMessageContent!);
+                audioChatMessageContent?.Invoke(__value2);
             }
-            else if (IsVideoChatMessageContent)
+            else if (VideoChatMessageContent is { } __value3)
             {
-                videoChatMessageContent?.Invoke(VideoChatMessageContent!);
+                videoChatMessageContent?.Invoke(__value3);
             }
-            else if (IsImageChatMessageContent)
+            else if (ImageChatMessageContent is { } __value4)
             {
-                imageChatMessageContent?.Invoke(ImageChatMessageContent!);
+                imageChatMessageContent?.Invoke(__value4);
             }
-            else if (IsDocumentChatMessageContent)
+            else if (DocumentChatMessageContent is { } __value5)
             {
-                documentChatMessageContent?.Invoke(DocumentChatMessageContent!);
+                documentChatMessageContent?.Invoke(__value5);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest PickOpenAIVectorizerTextEmbedding3SmallRequest() => IsOpenAIVectorizerTextEmbedding3SmallRequest
-            ? OpenAIVectorizerTextEmbedding3SmallRequest!
+        public global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest PickOpenAIVectorizerTextEmbedding3SmallRequest() => OpenAIVectorizerTextEmbedding3SmallRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIVectorizerTextEmbedding3SmallRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest PickOpenAIVectorizerTextEmbedding3LargeRequest() => IsOpenAIVectorizerTextEmbedding3LargeRequest
-            ? OpenAIVectorizerTextEmbedding3LargeRequest!
+        public global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest PickOpenAIVectorizerTextEmbedding3LargeRequest() => OpenAIVectorizerTextEmbedding3LargeRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIVectorizerTextEmbedding3LargeRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request PickOpenAIVectorizerTextEmbeddingAda002Request() => IsOpenAIVectorizerTextEmbeddingAda002Request
-            ? OpenAIVectorizerTextEmbeddingAda002Request!
+        public global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request PickOpenAIVectorizerTextEmbeddingAda002Request() => OpenAIVectorizerTextEmbeddingAda002Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIVectorizerTextEmbeddingAda002Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest PickBasicVectorizerIntfloatMultilingualE5LargeRequest() => IsBasicVectorizerIntfloatMultilingualE5LargeRequest
-            ? BasicVectorizerIntfloatMultilingualE5LargeRequest!
+        public global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest PickBasicVectorizerIntfloatMultilingualE5LargeRequest() => BasicVectorizerIntfloatMultilingualE5LargeRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BasicVectorizerIntfloatMultilingualE5LargeRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request PickBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request() => IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request
-            ? BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request!
+        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request PickBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request() => BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request PickBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request() => IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request
-            ? BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request!
+        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request PickBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request() => BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.HkunlpInstructorXlVectorizerRequest PickHkunlpInstructorXlVectorizerRequest() => IsHkunlpInstructorXlVectorizerRequest
-            ? HkunlpInstructorXlVectorizerRequest!
+        public global::Vellum.HkunlpInstructorXlVectorizerRequest PickHkunlpInstructorXlVectorizerRequest() => HkunlpInstructorXlVectorizerRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'HkunlpInstructorXlVectorizerRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request PickGoogleVertexAIVectorizerTextEmbedding004Request() => IsGoogleVertexAIVectorizerTextEmbedding004Request
-            ? GoogleVertexAIVectorizerTextEmbedding004Request!
+        public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request PickGoogleVertexAIVectorizerTextEmbedding004Request() => GoogleVertexAIVectorizerTextEmbedding004Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertexAIVectorizerTextEmbedding004Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request PickGoogleVertexAIVectorizerTextMultilingualEmbedding002Request() => IsGoogleVertexAIVectorizerTextMultilingualEmbedding002Request
-            ? GoogleVertexAIVectorizerTextMultilingualEmbedding002Request!
+        public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request PickGoogleVertexAIVectorizerTextMultilingualEmbedding002Request() => GoogleVertexAIVectorizerTextMultilingualEmbedding002Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertexAIVectorizerTextMultilingualEmbedding002Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request PickGoogleVertexAIVectorizerGeminiEmbedding001Request() => IsGoogleVertexAIVectorizerGeminiEmbedding001Request
-            ? GoogleVertexAIVectorizerGeminiEmbedding001Request!
+        public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request PickGoogleVertexAIVectorizerGeminiEmbedding001Request() => GoogleVertexAIVectorizerGeminiEmbedding001Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertexAIVectorizerGeminiEmbedding001Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request PickFastEmbedVectorizerBAAIBgeSmallEnV15Request() => IsFastEmbedVectorizerBAAIBgeSmallEnV15Request
-            ? FastEmbedVectorizerBAAIBgeSmallEnV15Request!
+        public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request PickFastEmbedVectorizerBAAIBgeSmallEnV15Request() => FastEmbedVectorizerBAAIBgeSmallEnV15Request is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FastEmbedVectorizerBAAIBgeSmallEnV15Request' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PrivateVectorizerRequest PickPrivateVectorizerRequest() => IsPrivateVectorizerRequest
-            ? PrivateVectorizerRequest!
+        public global::Vellum.PrivateVectorizerRequest PickPrivateVectorizerRequest() => PrivateVectorizerRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PrivateVectorizerRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -827,53 +827,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsOpenAIVectorizerTextEmbedding3SmallRequest && openAIVectorizerTextEmbedding3SmallRequest != null)
+            if (OpenAIVectorizerTextEmbedding3SmallRequest is { } __value0 && openAIVectorizerTextEmbedding3SmallRequest != null)
             {
-                return openAIVectorizerTextEmbedding3SmallRequest(OpenAIVectorizerTextEmbedding3SmallRequest!);
+                return openAIVectorizerTextEmbedding3SmallRequest(__value0);
             }
-            else if (IsOpenAIVectorizerTextEmbedding3LargeRequest && openAIVectorizerTextEmbedding3LargeRequest != null)
+            else if (OpenAIVectorizerTextEmbedding3LargeRequest is { } __value1 && openAIVectorizerTextEmbedding3LargeRequest != null)
             {
-                return openAIVectorizerTextEmbedding3LargeRequest(OpenAIVectorizerTextEmbedding3LargeRequest!);
+                return openAIVectorizerTextEmbedding3LargeRequest(__value1);
             }
-            else if (IsOpenAIVectorizerTextEmbeddingAda002Request && openAIVectorizerTextEmbeddingAda002Request != null)
+            else if (OpenAIVectorizerTextEmbeddingAda002Request is { } __value2 && openAIVectorizerTextEmbeddingAda002Request != null)
             {
-                return openAIVectorizerTextEmbeddingAda002Request(OpenAIVectorizerTextEmbeddingAda002Request!);
+                return openAIVectorizerTextEmbeddingAda002Request(__value2);
             }
-            else if (IsBasicVectorizerIntfloatMultilingualE5LargeRequest && basicVectorizerIntfloatMultilingualE5LargeRequest != null)
+            else if (BasicVectorizerIntfloatMultilingualE5LargeRequest is { } __value3 && basicVectorizerIntfloatMultilingualE5LargeRequest != null)
             {
-                return basicVectorizerIntfloatMultilingualE5LargeRequest(BasicVectorizerIntfloatMultilingualE5LargeRequest!);
+                return basicVectorizerIntfloatMultilingualE5LargeRequest(__value3);
             }
-            else if (IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request != null)
+            else if (BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request is { } __value4 && basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request != null)
             {
-                return basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request(BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request!);
+                return basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request(__value4);
             }
-            else if (IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request != null)
+            else if (BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request is { } __value5 && basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request != null)
             {
-                return basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request(BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request!);
+                return basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request(__value5);
             }
-            else if (IsHkunlpInstructorXlVectorizerRequest && hkunlpInstructorXlVectorizerRequest != null)
+            else if (HkunlpInstructorXlVectorizerRequest is { } __value6 && hkunlpInstructorXlVectorizerRequest != null)
             {
-                return hkunlpInstructorXlVectorizerRequest(HkunlpInstructorXlVectorizerRequest!);
+                return hkunlpInstructorXlVectorizerRequest(__value6);
             }
-            else if (IsGoogleVertexAIVectorizerTextEmbedding004Request && googleVertexAIVectorizerTextEmbedding004Request != null)
+            else if (GoogleVertexAIVectorizerTextEmbedding004Request is { } __value7 && googleVertexAIVectorizerTextEmbedding004Request != null)
             {
-                return googleVertexAIVectorizerTextEmbedding004Request(GoogleVertexAIVectorizerTextEmbedding004Request!);
+                return googleVertexAIVectorizerTextEmbedding004Request(__value7);
             }
-            else if (IsGoogleVertexAIVectorizerTextMultilingualEmbedding002Request && googleVertexAIVectorizerTextMultilingualEmbedding002Request != null)
+            else if (GoogleVertexAIVectorizerTextMultilingualEmbedding002Request is { } __value8 && googleVertexAIVectorizerTextMultilingualEmbedding002Request != null)
             {
-                return googleVertexAIVectorizerTextMultilingualEmbedding002Request(GoogleVertexAIVectorizerTextMultilingualEmbedding002Request!);
+                return googleVertexAIVectorizerTextMultilingualEmbedding002Request(__value8);
             }
-            else if (IsGoogleVertexAIVectorizerGeminiEmbedding001Request && googleVertexAIVectorizerGeminiEmbedding001Request != null)
+            else if (GoogleVertexAIVectorizerGeminiEmbedding001Request is { } __value9 && googleVertexAIVectorizerGeminiEmbedding001Request != null)
             {
-                return googleVertexAIVectorizerGeminiEmbedding001Request(GoogleVertexAIVectorizerGeminiEmbedding001Request!);
+                return googleVertexAIVectorizerGeminiEmbedding001Request(__value9);
             }
-            else if (IsFastEmbedVectorizerBAAIBgeSmallEnV15Request && fastEmbedVectorizerBAAIBgeSmallEnV15Request != null)
+            else if (FastEmbedVectorizerBAAIBgeSmallEnV15Request is { } __value10 && fastEmbedVectorizerBAAIBgeSmallEnV15Request != null)
             {
-                return fastEmbedVectorizerBAAIBgeSmallEnV15Request(FastEmbedVectorizerBAAIBgeSmallEnV15Request!);
+                return fastEmbedVectorizerBAAIBgeSmallEnV15Request(__value10);
             }
-            else if (IsPrivateVectorizerRequest && privateVectorizerRequest != null)
+            else if (PrivateVectorizerRequest is { } __value11 && privateVectorizerRequest != null)
             {
-                return privateVectorizerRequest(PrivateVectorizerRequest!);
+                return privateVectorizerRequest(__value11);
             }
 
             return default(TResult);
@@ -913,53 +913,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsOpenAIVectorizerTextEmbedding3SmallRequest)
+            if (OpenAIVectorizerTextEmbedding3SmallRequest is { } __value0)
             {
-                openAIVectorizerTextEmbedding3SmallRequest?.Invoke(OpenAIVectorizerTextEmbedding3SmallRequest!);
+                openAIVectorizerTextEmbedding3SmallRequest?.Invoke(__value0);
             }
-            else if (IsOpenAIVectorizerTextEmbedding3LargeRequest)
+            else if (OpenAIVectorizerTextEmbedding3LargeRequest is { } __value1)
             {
-                openAIVectorizerTextEmbedding3LargeRequest?.Invoke(OpenAIVectorizerTextEmbedding3LargeRequest!);
+                openAIVectorizerTextEmbedding3LargeRequest?.Invoke(__value1);
             }
-            else if (IsOpenAIVectorizerTextEmbeddingAda002Request)
+            else if (OpenAIVectorizerTextEmbeddingAda002Request is { } __value2)
             {
-                openAIVectorizerTextEmbeddingAda002Request?.Invoke(OpenAIVectorizerTextEmbeddingAda002Request!);
+                openAIVectorizerTextEmbeddingAda002Request?.Invoke(__value2);
             }
-            else if (IsBasicVectorizerIntfloatMultilingualE5LargeRequest)
+            else if (BasicVectorizerIntfloatMultilingualE5LargeRequest is { } __value3)
             {
-                basicVectorizerIntfloatMultilingualE5LargeRequest?.Invoke(BasicVectorizerIntfloatMultilingualE5LargeRequest!);
+                basicVectorizerIntfloatMultilingualE5LargeRequest?.Invoke(__value3);
             }
-            else if (IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request)
+            else if (BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request is { } __value4)
             {
-                basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request?.Invoke(BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request!);
+                basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request?.Invoke(__value4);
             }
-            else if (IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request)
+            else if (BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request is { } __value5)
             {
-                basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request?.Invoke(BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request!);
+                basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request?.Invoke(__value5);
             }
-            else if (IsHkunlpInstructorXlVectorizerRequest)
+            else if (HkunlpInstructorXlVectorizerRequest is { } __value6)
             {
-                hkunlpInstructorXlVectorizerRequest?.Invoke(HkunlpInstructorXlVectorizerRequest!);
+                hkunlpInstructorXlVectorizerRequest?.Invoke(__value6);
             }
-            else if (IsGoogleVertexAIVectorizerTextEmbedding004Request)
+            else if (GoogleVertexAIVectorizerTextEmbedding004Request is { } __value7)
             {
-                googleVertexAIVectorizerTextEmbedding004Request?.Invoke(GoogleVertexAIVectorizerTextEmbedding004Request!);
+                googleVertexAIVectorizerTextEmbedding004Request?.Invoke(__value7);
             }
-            else if (IsGoogleVertexAIVectorizerTextMultilingualEmbedding002Request)
+            else if (GoogleVertexAIVectorizerTextMultilingualEmbedding002Request is { } __value8)
             {
-                googleVertexAIVectorizerTextMultilingualEmbedding002Request?.Invoke(GoogleVertexAIVectorizerTextMultilingualEmbedding002Request!);
+                googleVertexAIVectorizerTextMultilingualEmbedding002Request?.Invoke(__value8);
             }
-            else if (IsGoogleVertexAIVectorizerGeminiEmbedding001Request)
+            else if (GoogleVertexAIVectorizerGeminiEmbedding001Request is { } __value9)
             {
-                googleVertexAIVectorizerGeminiEmbedding001Request?.Invoke(GoogleVertexAIVectorizerGeminiEmbedding001Request!);
+                googleVertexAIVectorizerGeminiEmbedding001Request?.Invoke(__value9);
             }
-            else if (IsFastEmbedVectorizerBAAIBgeSmallEnV15Request)
+            else if (FastEmbedVectorizerBAAIBgeSmallEnV15Request is { } __value10)
             {
-                fastEmbedVectorizerBAAIBgeSmallEnV15Request?.Invoke(FastEmbedVectorizerBAAIBgeSmallEnV15Request!);
+                fastEmbedVectorizerBAAIBgeSmallEnV15Request?.Invoke(__value10);
             }
-            else if (IsPrivateVectorizerRequest)
+            else if (PrivateVectorizerRequest is { } __value11)
             {
-                privateVectorizerRequest?.Invoke(PrivateVectorizerRequest!);
+                privateVectorizerRequest?.Invoke(__value11);
             }
         }
 
@@ -986,53 +986,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsOpenAIVectorizerTextEmbedding3SmallRequest)
+            if (OpenAIVectorizerTextEmbedding3SmallRequest is { } __value0)
             {
-                openAIVectorizerTextEmbedding3SmallRequest?.Invoke(OpenAIVectorizerTextEmbedding3SmallRequest!);
+                openAIVectorizerTextEmbedding3SmallRequest?.Invoke(__value0);
             }
-            else if (IsOpenAIVectorizerTextEmbedding3LargeRequest)
+            else if (OpenAIVectorizerTextEmbedding3LargeRequest is { } __value1)
             {
-                openAIVectorizerTextEmbedding3LargeRequest?.Invoke(OpenAIVectorizerTextEmbedding3LargeRequest!);
+                openAIVectorizerTextEmbedding3LargeRequest?.Invoke(__value1);
             }
-            else if (IsOpenAIVectorizerTextEmbeddingAda002Request)
+            else if (OpenAIVectorizerTextEmbeddingAda002Request is { } __value2)
             {
-                openAIVectorizerTextEmbeddingAda002Request?.Invoke(OpenAIVectorizerTextEmbeddingAda002Request!);
+                openAIVectorizerTextEmbeddingAda002Request?.Invoke(__value2);
             }
-            else if (IsBasicVectorizerIntfloatMultilingualE5LargeRequest)
+            else if (BasicVectorizerIntfloatMultilingualE5LargeRequest is { } __value3)
             {
-                basicVectorizerIntfloatMultilingualE5LargeRequest?.Invoke(BasicVectorizerIntfloatMultilingualE5LargeRequest!);
+                basicVectorizerIntfloatMultilingualE5LargeRequest?.Invoke(__value3);
             }
-            else if (IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request)
+            else if (BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request is { } __value4)
             {
-                basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request?.Invoke(BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request!);
+                basicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request?.Invoke(__value4);
             }
-            else if (IsBasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request)
+            else if (BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request is { } __value5)
             {
-                basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request?.Invoke(BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request!);
+                basicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request?.Invoke(__value5);
             }
-            else if (IsHkunlpInstructorXlVectorizerRequest)
+            else if (HkunlpInstructorXlVectorizerRequest is { } __value6)
             {
-                hkunlpInstructorXlVectorizerRequest?.Invoke(HkunlpInstructorXlVectorizerRequest!);
+                hkunlpInstructorXlVectorizerRequest?.Invoke(__value6);
             }
-            else if (IsGoogleVertexAIVectorizerTextEmbedding004Request)
+            else if (GoogleVertexAIVectorizerTextEmbedding004Request is { } __value7)
             {
-                googleVertexAIVectorizerTextEmbedding004Request?.Invoke(GoogleVertexAIVectorizerTextEmbedding004Request!);
+                googleVertexAIVectorizerTextEmbedding004Request?.Invoke(__value7);
             }
-            else if (IsGoogleVertexAIVectorizerTextMultilingualEmbedding002Request)
+            else if (GoogleVertexAIVectorizerTextMultilingualEmbedding002Request is { } __value8)
             {
-                googleVertexAIVectorizerTextMultilingualEmbedding002Request?.Invoke(GoogleVertexAIVectorizerTextMultilingualEmbedding002Request!);
+                googleVertexAIVectorizerTextMultilingualEmbedding002Request?.Invoke(__value8);
             }
-            else if (IsGoogleVertexAIVectorizerGeminiEmbedding001Request)
+            else if (GoogleVertexAIVectorizerGeminiEmbedding001Request is { } __value9)
             {
-                googleVertexAIVectorizerGeminiEmbedding001Request?.Invoke(GoogleVertexAIVectorizerGeminiEmbedding001Request!);
+                googleVertexAIVectorizerGeminiEmbedding001Request?.Invoke(__value9);
             }
-            else if (IsFastEmbedVectorizerBAAIBgeSmallEnV15Request)
+            else if (FastEmbedVectorizerBAAIBgeSmallEnV15Request is { } __value10)
             {
-                fastEmbedVectorizerBAAIBgeSmallEnV15Request?.Invoke(FastEmbedVectorizerBAAIBgeSmallEnV15Request!);
+                fastEmbedVectorizerBAAIBgeSmallEnV15Request?.Invoke(__value10);
             }
-            else if (IsPrivateVectorizerRequest)
+            else if (PrivateVectorizerRequest is { } __value11)
             {
-                privateVectorizerRequest?.Invoke(PrivateVectorizerRequest!);
+                privateVectorizerRequest?.Invoke(__value11);
             }
         }
 

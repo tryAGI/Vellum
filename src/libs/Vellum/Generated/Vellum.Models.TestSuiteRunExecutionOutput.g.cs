@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionStringOutput PickTestSuiteRunExecutionStringOutput() => IsTestSuiteRunExecutionStringOutput
-            ? TestSuiteRunExecutionStringOutput!
+        public global::Vellum.TestSuiteRunExecutionStringOutput PickTestSuiteRunExecutionStringOutput() => TestSuiteRunExecutionStringOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionStringOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionNumberOutput PickTestSuiteRunExecutionNumberOutput() => IsTestSuiteRunExecutionNumberOutput
-            ? TestSuiteRunExecutionNumberOutput!
+        public global::Vellum.TestSuiteRunExecutionNumberOutput PickTestSuiteRunExecutionNumberOutput() => TestSuiteRunExecutionNumberOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionNumberOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionJsonOutput PickTestSuiteRunExecutionJsonOutput() => IsTestSuiteRunExecutionJsonOutput
-            ? TestSuiteRunExecutionJsonOutput!
+        public global::Vellum.TestSuiteRunExecutionJsonOutput PickTestSuiteRunExecutionJsonOutput() => TestSuiteRunExecutionJsonOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionJsonOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionChatHistoryOutput PickTestSuiteRunExecutionChatHistoryOutput() => IsTestSuiteRunExecutionChatHistoryOutput
-            ? TestSuiteRunExecutionChatHistoryOutput!
+        public global::Vellum.TestSuiteRunExecutionChatHistoryOutput PickTestSuiteRunExecutionChatHistoryOutput() => TestSuiteRunExecutionChatHistoryOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionChatHistoryOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionSearchResultsOutput PickTestSuiteRunExecutionSearchResultsOutput() => IsTestSuiteRunExecutionSearchResultsOutput
-            ? TestSuiteRunExecutionSearchResultsOutput!
+        public global::Vellum.TestSuiteRunExecutionSearchResultsOutput PickTestSuiteRunExecutionSearchResultsOutput() => TestSuiteRunExecutionSearchResultsOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionSearchResultsOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionErrorOutput PickTestSuiteRunExecutionErrorOutput() => IsTestSuiteRunExecutionErrorOutput
-            ? TestSuiteRunExecutionErrorOutput!
+        public global::Vellum.TestSuiteRunExecutionErrorOutput PickTestSuiteRunExecutionErrorOutput() => TestSuiteRunExecutionErrorOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionErrorOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionFunctionCallOutput PickTestSuiteRunExecutionFunctionCallOutput() => IsTestSuiteRunExecutionFunctionCallOutput
-            ? TestSuiteRunExecutionFunctionCallOutput!
+        public global::Vellum.TestSuiteRunExecutionFunctionCallOutput PickTestSuiteRunExecutionFunctionCallOutput() => TestSuiteRunExecutionFunctionCallOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionFunctionCallOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionArrayOutput PickTestSuiteRunExecutionArrayOutput() => IsTestSuiteRunExecutionArrayOutput
-            ? TestSuiteRunExecutionArrayOutput!
+        public global::Vellum.TestSuiteRunExecutionArrayOutput PickTestSuiteRunExecutionArrayOutput() => TestSuiteRunExecutionArrayOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExecutionArrayOutput' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunExecutionStringOutput && testSuiteRunExecutionStringOutput != null)
+            if (TestSuiteRunExecutionStringOutput is { } __value0 && testSuiteRunExecutionStringOutput != null)
             {
-                return testSuiteRunExecutionStringOutput(TestSuiteRunExecutionStringOutput!);
+                return testSuiteRunExecutionStringOutput(__value0);
             }
-            else if (IsTestSuiteRunExecutionNumberOutput && testSuiteRunExecutionNumberOutput != null)
+            else if (TestSuiteRunExecutionNumberOutput is { } __value1 && testSuiteRunExecutionNumberOutput != null)
             {
-                return testSuiteRunExecutionNumberOutput(TestSuiteRunExecutionNumberOutput!);
+                return testSuiteRunExecutionNumberOutput(__value1);
             }
-            else if (IsTestSuiteRunExecutionJsonOutput && testSuiteRunExecutionJsonOutput != null)
+            else if (TestSuiteRunExecutionJsonOutput is { } __value2 && testSuiteRunExecutionJsonOutput != null)
             {
-                return testSuiteRunExecutionJsonOutput(TestSuiteRunExecutionJsonOutput!);
+                return testSuiteRunExecutionJsonOutput(__value2);
             }
-            else if (IsTestSuiteRunExecutionChatHistoryOutput && testSuiteRunExecutionChatHistoryOutput != null)
+            else if (TestSuiteRunExecutionChatHistoryOutput is { } __value3 && testSuiteRunExecutionChatHistoryOutput != null)
             {
-                return testSuiteRunExecutionChatHistoryOutput(TestSuiteRunExecutionChatHistoryOutput!);
+                return testSuiteRunExecutionChatHistoryOutput(__value3);
             }
-            else if (IsTestSuiteRunExecutionSearchResultsOutput && testSuiteRunExecutionSearchResultsOutput != null)
+            else if (TestSuiteRunExecutionSearchResultsOutput is { } __value4 && testSuiteRunExecutionSearchResultsOutput != null)
             {
-                return testSuiteRunExecutionSearchResultsOutput(TestSuiteRunExecutionSearchResultsOutput!);
+                return testSuiteRunExecutionSearchResultsOutput(__value4);
             }
-            else if (IsTestSuiteRunExecutionErrorOutput && testSuiteRunExecutionErrorOutput != null)
+            else if (TestSuiteRunExecutionErrorOutput is { } __value5 && testSuiteRunExecutionErrorOutput != null)
             {
-                return testSuiteRunExecutionErrorOutput(TestSuiteRunExecutionErrorOutput!);
+                return testSuiteRunExecutionErrorOutput(__value5);
             }
-            else if (IsTestSuiteRunExecutionFunctionCallOutput && testSuiteRunExecutionFunctionCallOutput != null)
+            else if (TestSuiteRunExecutionFunctionCallOutput is { } __value6 && testSuiteRunExecutionFunctionCallOutput != null)
             {
-                return testSuiteRunExecutionFunctionCallOutput(TestSuiteRunExecutionFunctionCallOutput!);
+                return testSuiteRunExecutionFunctionCallOutput(__value6);
             }
-            else if (IsTestSuiteRunExecutionArrayOutput && testSuiteRunExecutionArrayOutput != null)
+            else if (TestSuiteRunExecutionArrayOutput is { } __value7 && testSuiteRunExecutionArrayOutput != null)
             {
-                return testSuiteRunExecutionArrayOutput(TestSuiteRunExecutionArrayOutput!);
+                return testSuiteRunExecutionArrayOutput(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunExecutionStringOutput)
+            if (TestSuiteRunExecutionStringOutput is { } __value0)
             {
-                testSuiteRunExecutionStringOutput?.Invoke(TestSuiteRunExecutionStringOutput!);
+                testSuiteRunExecutionStringOutput?.Invoke(__value0);
             }
-            else if (IsTestSuiteRunExecutionNumberOutput)
+            else if (TestSuiteRunExecutionNumberOutput is { } __value1)
             {
-                testSuiteRunExecutionNumberOutput?.Invoke(TestSuiteRunExecutionNumberOutput!);
+                testSuiteRunExecutionNumberOutput?.Invoke(__value1);
             }
-            else if (IsTestSuiteRunExecutionJsonOutput)
+            else if (TestSuiteRunExecutionJsonOutput is { } __value2)
             {
-                testSuiteRunExecutionJsonOutput?.Invoke(TestSuiteRunExecutionJsonOutput!);
+                testSuiteRunExecutionJsonOutput?.Invoke(__value2);
             }
-            else if (IsTestSuiteRunExecutionChatHistoryOutput)
+            else if (TestSuiteRunExecutionChatHistoryOutput is { } __value3)
             {
-                testSuiteRunExecutionChatHistoryOutput?.Invoke(TestSuiteRunExecutionChatHistoryOutput!);
+                testSuiteRunExecutionChatHistoryOutput?.Invoke(__value3);
             }
-            else if (IsTestSuiteRunExecutionSearchResultsOutput)
+            else if (TestSuiteRunExecutionSearchResultsOutput is { } __value4)
             {
-                testSuiteRunExecutionSearchResultsOutput?.Invoke(TestSuiteRunExecutionSearchResultsOutput!);
+                testSuiteRunExecutionSearchResultsOutput?.Invoke(__value4);
             }
-            else if (IsTestSuiteRunExecutionErrorOutput)
+            else if (TestSuiteRunExecutionErrorOutput is { } __value5)
             {
-                testSuiteRunExecutionErrorOutput?.Invoke(TestSuiteRunExecutionErrorOutput!);
+                testSuiteRunExecutionErrorOutput?.Invoke(__value5);
             }
-            else if (IsTestSuiteRunExecutionFunctionCallOutput)
+            else if (TestSuiteRunExecutionFunctionCallOutput is { } __value6)
             {
-                testSuiteRunExecutionFunctionCallOutput?.Invoke(TestSuiteRunExecutionFunctionCallOutput!);
+                testSuiteRunExecutionFunctionCallOutput?.Invoke(__value6);
             }
-            else if (IsTestSuiteRunExecutionArrayOutput)
+            else if (TestSuiteRunExecutionArrayOutput is { } __value7)
             {
-                testSuiteRunExecutionArrayOutput?.Invoke(TestSuiteRunExecutionArrayOutput!);
+                testSuiteRunExecutionArrayOutput?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunExecutionStringOutput)
+            if (TestSuiteRunExecutionStringOutput is { } __value0)
             {
-                testSuiteRunExecutionStringOutput?.Invoke(TestSuiteRunExecutionStringOutput!);
+                testSuiteRunExecutionStringOutput?.Invoke(__value0);
             }
-            else if (IsTestSuiteRunExecutionNumberOutput)
+            else if (TestSuiteRunExecutionNumberOutput is { } __value1)
             {
-                testSuiteRunExecutionNumberOutput?.Invoke(TestSuiteRunExecutionNumberOutput!);
+                testSuiteRunExecutionNumberOutput?.Invoke(__value1);
             }
-            else if (IsTestSuiteRunExecutionJsonOutput)
+            else if (TestSuiteRunExecutionJsonOutput is { } __value2)
             {
-                testSuiteRunExecutionJsonOutput?.Invoke(TestSuiteRunExecutionJsonOutput!);
+                testSuiteRunExecutionJsonOutput?.Invoke(__value2);
             }
-            else if (IsTestSuiteRunExecutionChatHistoryOutput)
+            else if (TestSuiteRunExecutionChatHistoryOutput is { } __value3)
             {
-                testSuiteRunExecutionChatHistoryOutput?.Invoke(TestSuiteRunExecutionChatHistoryOutput!);
+                testSuiteRunExecutionChatHistoryOutput?.Invoke(__value3);
             }
-            else if (IsTestSuiteRunExecutionSearchResultsOutput)
+            else if (TestSuiteRunExecutionSearchResultsOutput is { } __value4)
             {
-                testSuiteRunExecutionSearchResultsOutput?.Invoke(TestSuiteRunExecutionSearchResultsOutput!);
+                testSuiteRunExecutionSearchResultsOutput?.Invoke(__value4);
             }
-            else if (IsTestSuiteRunExecutionErrorOutput)
+            else if (TestSuiteRunExecutionErrorOutput is { } __value5)
             {
-                testSuiteRunExecutionErrorOutput?.Invoke(TestSuiteRunExecutionErrorOutput!);
+                testSuiteRunExecutionErrorOutput?.Invoke(__value5);
             }
-            else if (IsTestSuiteRunExecutionFunctionCallOutput)
+            else if (TestSuiteRunExecutionFunctionCallOutput is { } __value6)
             {
-                testSuiteRunExecutionFunctionCallOutput?.Invoke(TestSuiteRunExecutionFunctionCallOutput!);
+                testSuiteRunExecutionFunctionCallOutput?.Invoke(__value6);
             }
-            else if (IsTestSuiteRunExecutionArrayOutput)
+            else if (TestSuiteRunExecutionArrayOutput is { } __value7)
             {
-                testSuiteRunExecutionArrayOutput?.Invoke(TestSuiteRunExecutionArrayOutput!);
+                testSuiteRunExecutionArrayOutput?.Invoke(__value7);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestStringInputRequest PickWorkflowRequestStringInputRequest() => IsWorkflowRequestStringInputRequest
-            ? WorkflowRequestStringInputRequest!
+        public global::Vellum.WorkflowRequestStringInputRequest PickWorkflowRequestStringInputRequest() => WorkflowRequestStringInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestStringInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestJSONInputRequest PickWorkflowRequestJSONInputRequest() => IsWorkflowRequestJSONInputRequest
-            ? WorkflowRequestJSONInputRequest!
+        public global::Vellum.WorkflowRequestJSONInputRequest PickWorkflowRequestJSONInputRequest() => WorkflowRequestJSONInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestJSONInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestChatHistoryInputRequest PickWorkflowRequestChatHistoryInputRequest() => IsWorkflowRequestChatHistoryInputRequest
-            ? WorkflowRequestChatHistoryInputRequest!
+        public global::Vellum.WorkflowRequestChatHistoryInputRequest PickWorkflowRequestChatHistoryInputRequest() => WorkflowRequestChatHistoryInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestChatHistoryInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestNumberInputRequest PickWorkflowRequestNumberInputRequest() => IsWorkflowRequestNumberInputRequest
-            ? WorkflowRequestNumberInputRequest!
+        public global::Vellum.WorkflowRequestNumberInputRequest PickWorkflowRequestNumberInputRequest() => WorkflowRequestNumberInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestNumberInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestAudioInputRequest PickWorkflowRequestAudioInputRequest() => IsWorkflowRequestAudioInputRequest
-            ? WorkflowRequestAudioInputRequest!
+        public global::Vellum.WorkflowRequestAudioInputRequest PickWorkflowRequestAudioInputRequest() => WorkflowRequestAudioInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestAudioInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestVideoInputRequest PickWorkflowRequestVideoInputRequest() => IsWorkflowRequestVideoInputRequest
-            ? WorkflowRequestVideoInputRequest!
+        public global::Vellum.WorkflowRequestVideoInputRequest PickWorkflowRequestVideoInputRequest() => WorkflowRequestVideoInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestVideoInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestImageInputRequest PickWorkflowRequestImageInputRequest() => IsWorkflowRequestImageInputRequest
-            ? WorkflowRequestImageInputRequest!
+        public global::Vellum.WorkflowRequestImageInputRequest PickWorkflowRequestImageInputRequest() => WorkflowRequestImageInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestImageInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestDocumentInputRequest PickWorkflowRequestDocumentInputRequest() => IsWorkflowRequestDocumentInputRequest
-            ? WorkflowRequestDocumentInputRequest!
+        public global::Vellum.WorkflowRequestDocumentInputRequest PickWorkflowRequestDocumentInputRequest() => WorkflowRequestDocumentInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowRequestDocumentInputRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowRequestStringInputRequest && workflowRequestStringInputRequest != null)
+            if (WorkflowRequestStringInputRequest is { } __value0 && workflowRequestStringInputRequest != null)
             {
-                return workflowRequestStringInputRequest(WorkflowRequestStringInputRequest!);
+                return workflowRequestStringInputRequest(__value0);
             }
-            else if (IsWorkflowRequestJSONInputRequest && workflowRequestJSONInputRequest != null)
+            else if (WorkflowRequestJSONInputRequest is { } __value1 && workflowRequestJSONInputRequest != null)
             {
-                return workflowRequestJSONInputRequest(WorkflowRequestJSONInputRequest!);
+                return workflowRequestJSONInputRequest(__value1);
             }
-            else if (IsWorkflowRequestChatHistoryInputRequest && workflowRequestChatHistoryInputRequest != null)
+            else if (WorkflowRequestChatHistoryInputRequest is { } __value2 && workflowRequestChatHistoryInputRequest != null)
             {
-                return workflowRequestChatHistoryInputRequest(WorkflowRequestChatHistoryInputRequest!);
+                return workflowRequestChatHistoryInputRequest(__value2);
             }
-            else if (IsWorkflowRequestNumberInputRequest && workflowRequestNumberInputRequest != null)
+            else if (WorkflowRequestNumberInputRequest is { } __value3 && workflowRequestNumberInputRequest != null)
             {
-                return workflowRequestNumberInputRequest(WorkflowRequestNumberInputRequest!);
+                return workflowRequestNumberInputRequest(__value3);
             }
-            else if (IsWorkflowRequestAudioInputRequest && workflowRequestAudioInputRequest != null)
+            else if (WorkflowRequestAudioInputRequest is { } __value4 && workflowRequestAudioInputRequest != null)
             {
-                return workflowRequestAudioInputRequest(WorkflowRequestAudioInputRequest!);
+                return workflowRequestAudioInputRequest(__value4);
             }
-            else if (IsWorkflowRequestVideoInputRequest && workflowRequestVideoInputRequest != null)
+            else if (WorkflowRequestVideoInputRequest is { } __value5 && workflowRequestVideoInputRequest != null)
             {
-                return workflowRequestVideoInputRequest(WorkflowRequestVideoInputRequest!);
+                return workflowRequestVideoInputRequest(__value5);
             }
-            else if (IsWorkflowRequestImageInputRequest && workflowRequestImageInputRequest != null)
+            else if (WorkflowRequestImageInputRequest is { } __value6 && workflowRequestImageInputRequest != null)
             {
-                return workflowRequestImageInputRequest(WorkflowRequestImageInputRequest!);
+                return workflowRequestImageInputRequest(__value6);
             }
-            else if (IsWorkflowRequestDocumentInputRequest && workflowRequestDocumentInputRequest != null)
+            else if (WorkflowRequestDocumentInputRequest is { } __value7 && workflowRequestDocumentInputRequest != null)
             {
-                return workflowRequestDocumentInputRequest(WorkflowRequestDocumentInputRequest!);
+                return workflowRequestDocumentInputRequest(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowRequestStringInputRequest)
+            if (WorkflowRequestStringInputRequest is { } __value0)
             {
-                workflowRequestStringInputRequest?.Invoke(WorkflowRequestStringInputRequest!);
+                workflowRequestStringInputRequest?.Invoke(__value0);
             }
-            else if (IsWorkflowRequestJSONInputRequest)
+            else if (WorkflowRequestJSONInputRequest is { } __value1)
             {
-                workflowRequestJSONInputRequest?.Invoke(WorkflowRequestJSONInputRequest!);
+                workflowRequestJSONInputRequest?.Invoke(__value1);
             }
-            else if (IsWorkflowRequestChatHistoryInputRequest)
+            else if (WorkflowRequestChatHistoryInputRequest is { } __value2)
             {
-                workflowRequestChatHistoryInputRequest?.Invoke(WorkflowRequestChatHistoryInputRequest!);
+                workflowRequestChatHistoryInputRequest?.Invoke(__value2);
             }
-            else if (IsWorkflowRequestNumberInputRequest)
+            else if (WorkflowRequestNumberInputRequest is { } __value3)
             {
-                workflowRequestNumberInputRequest?.Invoke(WorkflowRequestNumberInputRequest!);
+                workflowRequestNumberInputRequest?.Invoke(__value3);
             }
-            else if (IsWorkflowRequestAudioInputRequest)
+            else if (WorkflowRequestAudioInputRequest is { } __value4)
             {
-                workflowRequestAudioInputRequest?.Invoke(WorkflowRequestAudioInputRequest!);
+                workflowRequestAudioInputRequest?.Invoke(__value4);
             }
-            else if (IsWorkflowRequestVideoInputRequest)
+            else if (WorkflowRequestVideoInputRequest is { } __value5)
             {
-                workflowRequestVideoInputRequest?.Invoke(WorkflowRequestVideoInputRequest!);
+                workflowRequestVideoInputRequest?.Invoke(__value5);
             }
-            else if (IsWorkflowRequestImageInputRequest)
+            else if (WorkflowRequestImageInputRequest is { } __value6)
             {
-                workflowRequestImageInputRequest?.Invoke(WorkflowRequestImageInputRequest!);
+                workflowRequestImageInputRequest?.Invoke(__value6);
             }
-            else if (IsWorkflowRequestDocumentInputRequest)
+            else if (WorkflowRequestDocumentInputRequest is { } __value7)
             {
-                workflowRequestDocumentInputRequest?.Invoke(WorkflowRequestDocumentInputRequest!);
+                workflowRequestDocumentInputRequest?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowRequestStringInputRequest)
+            if (WorkflowRequestStringInputRequest is { } __value0)
             {
-                workflowRequestStringInputRequest?.Invoke(WorkflowRequestStringInputRequest!);
+                workflowRequestStringInputRequest?.Invoke(__value0);
             }
-            else if (IsWorkflowRequestJSONInputRequest)
+            else if (WorkflowRequestJSONInputRequest is { } __value1)
             {
-                workflowRequestJSONInputRequest?.Invoke(WorkflowRequestJSONInputRequest!);
+                workflowRequestJSONInputRequest?.Invoke(__value1);
             }
-            else if (IsWorkflowRequestChatHistoryInputRequest)
+            else if (WorkflowRequestChatHistoryInputRequest is { } __value2)
             {
-                workflowRequestChatHistoryInputRequest?.Invoke(WorkflowRequestChatHistoryInputRequest!);
+                workflowRequestChatHistoryInputRequest?.Invoke(__value2);
             }
-            else if (IsWorkflowRequestNumberInputRequest)
+            else if (WorkflowRequestNumberInputRequest is { } __value3)
             {
-                workflowRequestNumberInputRequest?.Invoke(WorkflowRequestNumberInputRequest!);
+                workflowRequestNumberInputRequest?.Invoke(__value3);
             }
-            else if (IsWorkflowRequestAudioInputRequest)
+            else if (WorkflowRequestAudioInputRequest is { } __value4)
             {
-                workflowRequestAudioInputRequest?.Invoke(WorkflowRequestAudioInputRequest!);
+                workflowRequestAudioInputRequest?.Invoke(__value4);
             }
-            else if (IsWorkflowRequestVideoInputRequest)
+            else if (WorkflowRequestVideoInputRequest is { } __value5)
             {
-                workflowRequestVideoInputRequest?.Invoke(WorkflowRequestVideoInputRequest!);
+                workflowRequestVideoInputRequest?.Invoke(__value5);
             }
-            else if (IsWorkflowRequestImageInputRequest)
+            else if (WorkflowRequestImageInputRequest is { } __value6)
             {
-                workflowRequestImageInputRequest?.Invoke(WorkflowRequestImageInputRequest!);
+                workflowRequestImageInputRequest?.Invoke(__value6);
             }
-            else if (IsWorkflowRequestDocumentInputRequest)
+            else if (WorkflowRequestDocumentInputRequest is { } __value7)
             {
-                workflowRequestDocumentInputRequest?.Invoke(WorkflowRequestDocumentInputRequest!);
+                workflowRequestDocumentInputRequest?.Invoke(__value7);
             }
         }
 

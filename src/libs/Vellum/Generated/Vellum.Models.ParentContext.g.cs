@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowParentContext PickWorkflowParentContext() => IsWorkflowParentContext
-            ? WorkflowParentContext!
+        public global::Vellum.WorkflowParentContext PickWorkflowParentContext() => WorkflowParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeParentContext PickNodeParentContext() => IsNodeParentContext
-            ? NodeParentContext!
+        public global::Vellum.NodeParentContext PickNodeParentContext() => NodeParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentParentContext PickWorkflowDeploymentParentContext() => IsWorkflowDeploymentParentContext
-            ? WorkflowDeploymentParentContext!
+        public global::Vellum.WorkflowDeploymentParentContext PickWorkflowDeploymentParentContext() => WorkflowDeploymentParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowDeploymentParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowSandboxParentContext PickWorkflowSandboxParentContext() => IsWorkflowSandboxParentContext
-            ? WorkflowSandboxParentContext!
+        public global::Vellum.WorkflowSandboxParentContext PickWorkflowSandboxParentContext() => WorkflowSandboxParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowSandboxParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptDeploymentParentContext PickPromptDeploymentParentContext() => IsPromptDeploymentParentContext
-            ? PromptDeploymentParentContext!
+        public global::Vellum.PromptDeploymentParentContext PickPromptDeploymentParentContext() => PromptDeploymentParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptDeploymentParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.APIRequestParentContext PickAPIRequestParentContext() => IsAPIRequestParentContext
-            ? APIRequestParentContext!
+        public global::Vellum.APIRequestParentContext PickAPIRequestParentContext() => APIRequestParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'APIRequestParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExternalParentContext PickExternalParentContext() => IsExternalParentContext
-            ? ExternalParentContext!
+        public global::Vellum.ExternalParentContext PickExternalParentContext() => ExternalParentContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExternalParentContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScheduledTriggerContext PickScheduledTriggerContext() => IsScheduledTriggerContext
-            ? ScheduledTriggerContext!
+        public global::Vellum.ScheduledTriggerContext PickScheduledTriggerContext() => ScheduledTriggerContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScheduledTriggerContext' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IntegrationTriggerContext PickIntegrationTriggerContext() => IsIntegrationTriggerContext
-            ? IntegrationTriggerContext!
+        public global::Vellum.IntegrationTriggerContext PickIntegrationTriggerContext() => IntegrationTriggerContext is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'IntegrationTriggerContext' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -632,41 +632,41 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowParentContext && workflowParentContext != null)
+            if (WorkflowParentContext is { } __value0 && workflowParentContext != null)
             {
-                return workflowParentContext(WorkflowParentContext!);
+                return workflowParentContext(__value0);
             }
-            else if (IsNodeParentContext && nodeParentContext != null)
+            else if (NodeParentContext is { } __value1 && nodeParentContext != null)
             {
-                return nodeParentContext(NodeParentContext!);
+                return nodeParentContext(__value1);
             }
-            else if (IsWorkflowDeploymentParentContext && workflowDeploymentParentContext != null)
+            else if (WorkflowDeploymentParentContext is { } __value2 && workflowDeploymentParentContext != null)
             {
-                return workflowDeploymentParentContext(WorkflowDeploymentParentContext!);
+                return workflowDeploymentParentContext(__value2);
             }
-            else if (IsWorkflowSandboxParentContext && workflowSandboxParentContext != null)
+            else if (WorkflowSandboxParentContext is { } __value3 && workflowSandboxParentContext != null)
             {
-                return workflowSandboxParentContext(WorkflowSandboxParentContext!);
+                return workflowSandboxParentContext(__value3);
             }
-            else if (IsPromptDeploymentParentContext && promptDeploymentParentContext != null)
+            else if (PromptDeploymentParentContext is { } __value4 && promptDeploymentParentContext != null)
             {
-                return promptDeploymentParentContext(PromptDeploymentParentContext!);
+                return promptDeploymentParentContext(__value4);
             }
-            else if (IsAPIRequestParentContext && aPIRequestParentContext != null)
+            else if (APIRequestParentContext is { } __value5 && aPIRequestParentContext != null)
             {
-                return aPIRequestParentContext(APIRequestParentContext!);
+                return aPIRequestParentContext(__value5);
             }
-            else if (IsExternalParentContext && externalParentContext != null)
+            else if (ExternalParentContext is { } __value6 && externalParentContext != null)
             {
-                return externalParentContext(ExternalParentContext!);
+                return externalParentContext(__value6);
             }
-            else if (IsScheduledTriggerContext && scheduledTriggerContext != null)
+            else if (ScheduledTriggerContext is { } __value7 && scheduledTriggerContext != null)
             {
-                return scheduledTriggerContext(ScheduledTriggerContext!);
+                return scheduledTriggerContext(__value7);
             }
-            else if (IsIntegrationTriggerContext && integrationTriggerContext != null)
+            else if (IntegrationTriggerContext is { } __value8 && integrationTriggerContext != null)
             {
-                return integrationTriggerContext(IntegrationTriggerContext!);
+                return integrationTriggerContext(__value8);
             }
 
             return default(TResult);
@@ -700,41 +700,41 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowParentContext)
+            if (WorkflowParentContext is { } __value0)
             {
-                workflowParentContext?.Invoke(WorkflowParentContext!);
+                workflowParentContext?.Invoke(__value0);
             }
-            else if (IsNodeParentContext)
+            else if (NodeParentContext is { } __value1)
             {
-                nodeParentContext?.Invoke(NodeParentContext!);
+                nodeParentContext?.Invoke(__value1);
             }
-            else if (IsWorkflowDeploymentParentContext)
+            else if (WorkflowDeploymentParentContext is { } __value2)
             {
-                workflowDeploymentParentContext?.Invoke(WorkflowDeploymentParentContext!);
+                workflowDeploymentParentContext?.Invoke(__value2);
             }
-            else if (IsWorkflowSandboxParentContext)
+            else if (WorkflowSandboxParentContext is { } __value3)
             {
-                workflowSandboxParentContext?.Invoke(WorkflowSandboxParentContext!);
+                workflowSandboxParentContext?.Invoke(__value3);
             }
-            else if (IsPromptDeploymentParentContext)
+            else if (PromptDeploymentParentContext is { } __value4)
             {
-                promptDeploymentParentContext?.Invoke(PromptDeploymentParentContext!);
+                promptDeploymentParentContext?.Invoke(__value4);
             }
-            else if (IsAPIRequestParentContext)
+            else if (APIRequestParentContext is { } __value5)
             {
-                aPIRequestParentContext?.Invoke(APIRequestParentContext!);
+                aPIRequestParentContext?.Invoke(__value5);
             }
-            else if (IsExternalParentContext)
+            else if (ExternalParentContext is { } __value6)
             {
-                externalParentContext?.Invoke(ExternalParentContext!);
+                externalParentContext?.Invoke(__value6);
             }
-            else if (IsScheduledTriggerContext)
+            else if (ScheduledTriggerContext is { } __value7)
             {
-                scheduledTriggerContext?.Invoke(ScheduledTriggerContext!);
+                scheduledTriggerContext?.Invoke(__value7);
             }
-            else if (IsIntegrationTriggerContext)
+            else if (IntegrationTriggerContext is { } __value8)
             {
-                integrationTriggerContext?.Invoke(IntegrationTriggerContext!);
+                integrationTriggerContext?.Invoke(__value8);
             }
         }
 
@@ -758,41 +758,41 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowParentContext)
+            if (WorkflowParentContext is { } __value0)
             {
-                workflowParentContext?.Invoke(WorkflowParentContext!);
+                workflowParentContext?.Invoke(__value0);
             }
-            else if (IsNodeParentContext)
+            else if (NodeParentContext is { } __value1)
             {
-                nodeParentContext?.Invoke(NodeParentContext!);
+                nodeParentContext?.Invoke(__value1);
             }
-            else if (IsWorkflowDeploymentParentContext)
+            else if (WorkflowDeploymentParentContext is { } __value2)
             {
-                workflowDeploymentParentContext?.Invoke(WorkflowDeploymentParentContext!);
+                workflowDeploymentParentContext?.Invoke(__value2);
             }
-            else if (IsWorkflowSandboxParentContext)
+            else if (WorkflowSandboxParentContext is { } __value3)
             {
-                workflowSandboxParentContext?.Invoke(WorkflowSandboxParentContext!);
+                workflowSandboxParentContext?.Invoke(__value3);
             }
-            else if (IsPromptDeploymentParentContext)
+            else if (PromptDeploymentParentContext is { } __value4)
             {
-                promptDeploymentParentContext?.Invoke(PromptDeploymentParentContext!);
+                promptDeploymentParentContext?.Invoke(__value4);
             }
-            else if (IsAPIRequestParentContext)
+            else if (APIRequestParentContext is { } __value5)
             {
-                aPIRequestParentContext?.Invoke(APIRequestParentContext!);
+                aPIRequestParentContext?.Invoke(__value5);
             }
-            else if (IsExternalParentContext)
+            else if (ExternalParentContext is { } __value6)
             {
-                externalParentContext?.Invoke(ExternalParentContext!);
+                externalParentContext?.Invoke(__value6);
             }
-            else if (IsScheduledTriggerContext)
+            else if (ScheduledTriggerContext is { } __value7)
             {
-                scheduledTriggerContext?.Invoke(ScheduledTriggerContext!);
+                scheduledTriggerContext?.Invoke(__value7);
             }
-            else if (IsIntegrationTriggerContext)
+            else if (IntegrationTriggerContext is { } __value8)
             {
-                integrationTriggerContext?.Invoke(IntegrationTriggerContext!);
+                integrationTriggerContext?.Invoke(__value8);
             }
         }
 

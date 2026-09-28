@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeStringResult PickCodeExecutionNodeStringResult() => IsCodeExecutionNodeStringResult
-            ? CodeExecutionNodeStringResult!
+        public global::Vellum.CodeExecutionNodeStringResult PickCodeExecutionNodeStringResult() => CodeExecutionNodeStringResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeStringResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeNumberResult PickCodeExecutionNodeNumberResult() => IsCodeExecutionNodeNumberResult
-            ? CodeExecutionNodeNumberResult!
+        public global::Vellum.CodeExecutionNodeNumberResult PickCodeExecutionNodeNumberResult() => CodeExecutionNodeNumberResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeJsonResult PickCodeExecutionNodeJsonResult() => IsCodeExecutionNodeJsonResult
-            ? CodeExecutionNodeJsonResult!
+        public global::Vellum.CodeExecutionNodeJsonResult PickCodeExecutionNodeJsonResult() => CodeExecutionNodeJsonResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeJsonResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeChatHistoryResult PickCodeExecutionNodeChatHistoryResult() => IsCodeExecutionNodeChatHistoryResult
-            ? CodeExecutionNodeChatHistoryResult!
+        public global::Vellum.CodeExecutionNodeChatHistoryResult PickCodeExecutionNodeChatHistoryResult() => CodeExecutionNodeChatHistoryResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeSearchResultsResult PickCodeExecutionNodeSearchResultsResult() => IsCodeExecutionNodeSearchResultsResult
-            ? CodeExecutionNodeSearchResultsResult!
+        public global::Vellum.CodeExecutionNodeSearchResultsResult PickCodeExecutionNodeSearchResultsResult() => CodeExecutionNodeSearchResultsResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeSearchResultsResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeErrorResult PickCodeExecutionNodeErrorResult() => IsCodeExecutionNodeErrorResult
-            ? CodeExecutionNodeErrorResult!
+        public global::Vellum.CodeExecutionNodeErrorResult PickCodeExecutionNodeErrorResult() => CodeExecutionNodeErrorResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeArrayResult PickCodeExecutionNodeArrayResult() => IsCodeExecutionNodeArrayResult
-            ? CodeExecutionNodeArrayResult!
+        public global::Vellum.CodeExecutionNodeArrayResult PickCodeExecutionNodeArrayResult() => CodeExecutionNodeArrayResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeArrayResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeFunctionCallResult PickCodeExecutionNodeFunctionCallResult() => IsCodeExecutionNodeFunctionCallResult
-            ? CodeExecutionNodeFunctionCallResult!
+        public global::Vellum.CodeExecutionNodeFunctionCallResult PickCodeExecutionNodeFunctionCallResult() => CodeExecutionNodeFunctionCallResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CodeExecutionNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsCodeExecutionNodeStringResult && codeExecutionNodeStringResult != null)
+            if (CodeExecutionNodeStringResult is { } __value0 && codeExecutionNodeStringResult != null)
             {
-                return codeExecutionNodeStringResult(CodeExecutionNodeStringResult!);
+                return codeExecutionNodeStringResult(__value0);
             }
-            else if (IsCodeExecutionNodeNumberResult && codeExecutionNodeNumberResult != null)
+            else if (CodeExecutionNodeNumberResult is { } __value1 && codeExecutionNodeNumberResult != null)
             {
-                return codeExecutionNodeNumberResult(CodeExecutionNodeNumberResult!);
+                return codeExecutionNodeNumberResult(__value1);
             }
-            else if (IsCodeExecutionNodeJsonResult && codeExecutionNodeJsonResult != null)
+            else if (CodeExecutionNodeJsonResult is { } __value2 && codeExecutionNodeJsonResult != null)
             {
-                return codeExecutionNodeJsonResult(CodeExecutionNodeJsonResult!);
+                return codeExecutionNodeJsonResult(__value2);
             }
-            else if (IsCodeExecutionNodeChatHistoryResult && codeExecutionNodeChatHistoryResult != null)
+            else if (CodeExecutionNodeChatHistoryResult is { } __value3 && codeExecutionNodeChatHistoryResult != null)
             {
-                return codeExecutionNodeChatHistoryResult(CodeExecutionNodeChatHistoryResult!);
+                return codeExecutionNodeChatHistoryResult(__value3);
             }
-            else if (IsCodeExecutionNodeSearchResultsResult && codeExecutionNodeSearchResultsResult != null)
+            else if (CodeExecutionNodeSearchResultsResult is { } __value4 && codeExecutionNodeSearchResultsResult != null)
             {
-                return codeExecutionNodeSearchResultsResult(CodeExecutionNodeSearchResultsResult!);
+                return codeExecutionNodeSearchResultsResult(__value4);
             }
-            else if (IsCodeExecutionNodeErrorResult && codeExecutionNodeErrorResult != null)
+            else if (CodeExecutionNodeErrorResult is { } __value5 && codeExecutionNodeErrorResult != null)
             {
-                return codeExecutionNodeErrorResult(CodeExecutionNodeErrorResult!);
+                return codeExecutionNodeErrorResult(__value5);
             }
-            else if (IsCodeExecutionNodeArrayResult && codeExecutionNodeArrayResult != null)
+            else if (CodeExecutionNodeArrayResult is { } __value6 && codeExecutionNodeArrayResult != null)
             {
-                return codeExecutionNodeArrayResult(CodeExecutionNodeArrayResult!);
+                return codeExecutionNodeArrayResult(__value6);
             }
-            else if (IsCodeExecutionNodeFunctionCallResult && codeExecutionNodeFunctionCallResult != null)
+            else if (CodeExecutionNodeFunctionCallResult is { } __value7 && codeExecutionNodeFunctionCallResult != null)
             {
-                return codeExecutionNodeFunctionCallResult(CodeExecutionNodeFunctionCallResult!);
+                return codeExecutionNodeFunctionCallResult(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsCodeExecutionNodeStringResult)
+            if (CodeExecutionNodeStringResult is { } __value0)
             {
-                codeExecutionNodeStringResult?.Invoke(CodeExecutionNodeStringResult!);
+                codeExecutionNodeStringResult?.Invoke(__value0);
             }
-            else if (IsCodeExecutionNodeNumberResult)
+            else if (CodeExecutionNodeNumberResult is { } __value1)
             {
-                codeExecutionNodeNumberResult?.Invoke(CodeExecutionNodeNumberResult!);
+                codeExecutionNodeNumberResult?.Invoke(__value1);
             }
-            else if (IsCodeExecutionNodeJsonResult)
+            else if (CodeExecutionNodeJsonResult is { } __value2)
             {
-                codeExecutionNodeJsonResult?.Invoke(CodeExecutionNodeJsonResult!);
+                codeExecutionNodeJsonResult?.Invoke(__value2);
             }
-            else if (IsCodeExecutionNodeChatHistoryResult)
+            else if (CodeExecutionNodeChatHistoryResult is { } __value3)
             {
-                codeExecutionNodeChatHistoryResult?.Invoke(CodeExecutionNodeChatHistoryResult!);
+                codeExecutionNodeChatHistoryResult?.Invoke(__value3);
             }
-            else if (IsCodeExecutionNodeSearchResultsResult)
+            else if (CodeExecutionNodeSearchResultsResult is { } __value4)
             {
-                codeExecutionNodeSearchResultsResult?.Invoke(CodeExecutionNodeSearchResultsResult!);
+                codeExecutionNodeSearchResultsResult?.Invoke(__value4);
             }
-            else if (IsCodeExecutionNodeErrorResult)
+            else if (CodeExecutionNodeErrorResult is { } __value5)
             {
-                codeExecutionNodeErrorResult?.Invoke(CodeExecutionNodeErrorResult!);
+                codeExecutionNodeErrorResult?.Invoke(__value5);
             }
-            else if (IsCodeExecutionNodeArrayResult)
+            else if (CodeExecutionNodeArrayResult is { } __value6)
             {
-                codeExecutionNodeArrayResult?.Invoke(CodeExecutionNodeArrayResult!);
+                codeExecutionNodeArrayResult?.Invoke(__value6);
             }
-            else if (IsCodeExecutionNodeFunctionCallResult)
+            else if (CodeExecutionNodeFunctionCallResult is { } __value7)
             {
-                codeExecutionNodeFunctionCallResult?.Invoke(CodeExecutionNodeFunctionCallResult!);
+                codeExecutionNodeFunctionCallResult?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsCodeExecutionNodeStringResult)
+            if (CodeExecutionNodeStringResult is { } __value0)
             {
-                codeExecutionNodeStringResult?.Invoke(CodeExecutionNodeStringResult!);
+                codeExecutionNodeStringResult?.Invoke(__value0);
             }
-            else if (IsCodeExecutionNodeNumberResult)
+            else if (CodeExecutionNodeNumberResult is { } __value1)
             {
-                codeExecutionNodeNumberResult?.Invoke(CodeExecutionNodeNumberResult!);
+                codeExecutionNodeNumberResult?.Invoke(__value1);
             }
-            else if (IsCodeExecutionNodeJsonResult)
+            else if (CodeExecutionNodeJsonResult is { } __value2)
             {
-                codeExecutionNodeJsonResult?.Invoke(CodeExecutionNodeJsonResult!);
+                codeExecutionNodeJsonResult?.Invoke(__value2);
             }
-            else if (IsCodeExecutionNodeChatHistoryResult)
+            else if (CodeExecutionNodeChatHistoryResult is { } __value3)
             {
-                codeExecutionNodeChatHistoryResult?.Invoke(CodeExecutionNodeChatHistoryResult!);
+                codeExecutionNodeChatHistoryResult?.Invoke(__value3);
             }
-            else if (IsCodeExecutionNodeSearchResultsResult)
+            else if (CodeExecutionNodeSearchResultsResult is { } __value4)
             {
-                codeExecutionNodeSearchResultsResult?.Invoke(CodeExecutionNodeSearchResultsResult!);
+                codeExecutionNodeSearchResultsResult?.Invoke(__value4);
             }
-            else if (IsCodeExecutionNodeErrorResult)
+            else if (CodeExecutionNodeErrorResult is { } __value5)
             {
-                codeExecutionNodeErrorResult?.Invoke(CodeExecutionNodeErrorResult!);
+                codeExecutionNodeErrorResult?.Invoke(__value5);
             }
-            else if (IsCodeExecutionNodeArrayResult)
+            else if (CodeExecutionNodeArrayResult is { } __value6)
             {
-                codeExecutionNodeArrayResult?.Invoke(CodeExecutionNodeArrayResult!);
+                codeExecutionNodeArrayResult?.Invoke(__value6);
             }
-            else if (IsCodeExecutionNodeFunctionCallResult)
+            else if (CodeExecutionNodeFunctionCallResult is { } __value7)
             {
-                codeExecutionNodeFunctionCallResult?.Invoke(CodeExecutionNodeFunctionCallResult!);
+                codeExecutionNodeFunctionCallResult?.Invoke(__value7);
             }
         }
 

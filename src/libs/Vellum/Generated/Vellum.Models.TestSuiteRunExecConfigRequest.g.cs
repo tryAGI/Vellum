@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest PickTestSuiteRunDeploymentReleaseTagExecConfigRequest() => IsTestSuiteRunDeploymentReleaseTagExecConfigRequest
-            ? TestSuiteRunDeploymentReleaseTagExecConfigRequest!
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest PickTestSuiteRunDeploymentReleaseTagExecConfigRequest() => TestSuiteRunDeploymentReleaseTagExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunDeploymentReleaseTagExecConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest PickTestSuiteRunPromptSandboxExecConfigRequest() => IsTestSuiteRunPromptSandboxExecConfigRequest
-            ? TestSuiteRunPromptSandboxExecConfigRequest!
+        public global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest PickTestSuiteRunPromptSandboxExecConfigRequest() => TestSuiteRunPromptSandboxExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunPromptSandboxExecConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest PickTestSuiteRunPromptSandboxHistoryItemExecConfigRequest() => IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest
-            ? TestSuiteRunPromptSandboxHistoryItemExecConfigRequest!
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest PickTestSuiteRunPromptSandboxHistoryItemExecConfigRequest() => TestSuiteRunPromptSandboxHistoryItemExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunPromptSandboxHistoryItemExecConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest PickTestSuiteRunWorkflowReleaseTagExecConfigRequest() => IsTestSuiteRunWorkflowReleaseTagExecConfigRequest
-            ? TestSuiteRunWorkflowReleaseTagExecConfigRequest!
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest PickTestSuiteRunWorkflowReleaseTagExecConfigRequest() => TestSuiteRunWorkflowReleaseTagExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunWorkflowReleaseTagExecConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest PickTestSuiteRunWorkflowSandboxExecConfigRequest() => IsTestSuiteRunWorkflowSandboxExecConfigRequest
-            ? TestSuiteRunWorkflowSandboxExecConfigRequest!
+        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest PickTestSuiteRunWorkflowSandboxExecConfigRequest() => TestSuiteRunWorkflowSandboxExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunWorkflowSandboxExecConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest PickTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest() => IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest
-            ? TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest!
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest PickTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest() => TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExternalExecConfigRequest PickTestSuiteRunExternalExecConfigRequest() => IsTestSuiteRunExternalExecConfigRequest
-            ? TestSuiteRunExternalExecConfigRequest!
+        public global::Vellum.TestSuiteRunExternalExecConfigRequest PickTestSuiteRunExternalExecConfigRequest() => TestSuiteRunExternalExecConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunExternalExecConfigRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -502,33 +502,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunDeploymentReleaseTagExecConfigRequest && testSuiteRunDeploymentReleaseTagExecConfigRequest != null)
+            if (TestSuiteRunDeploymentReleaseTagExecConfigRequest is { } __value0 && testSuiteRunDeploymentReleaseTagExecConfigRequest != null)
             {
-                return testSuiteRunDeploymentReleaseTagExecConfigRequest(TestSuiteRunDeploymentReleaseTagExecConfigRequest!);
+                return testSuiteRunDeploymentReleaseTagExecConfigRequest(__value0);
             }
-            else if (IsTestSuiteRunPromptSandboxExecConfigRequest && testSuiteRunPromptSandboxExecConfigRequest != null)
+            else if (TestSuiteRunPromptSandboxExecConfigRequest is { } __value1 && testSuiteRunPromptSandboxExecConfigRequest != null)
             {
-                return testSuiteRunPromptSandboxExecConfigRequest(TestSuiteRunPromptSandboxExecConfigRequest!);
+                return testSuiteRunPromptSandboxExecConfigRequest(__value1);
             }
-            else if (IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest && testSuiteRunPromptSandboxHistoryItemExecConfigRequest != null)
+            else if (TestSuiteRunPromptSandboxHistoryItemExecConfigRequest is { } __value2 && testSuiteRunPromptSandboxHistoryItemExecConfigRequest != null)
             {
-                return testSuiteRunPromptSandboxHistoryItemExecConfigRequest(TestSuiteRunPromptSandboxHistoryItemExecConfigRequest!);
+                return testSuiteRunPromptSandboxHistoryItemExecConfigRequest(__value2);
             }
-            else if (IsTestSuiteRunWorkflowReleaseTagExecConfigRequest && testSuiteRunWorkflowReleaseTagExecConfigRequest != null)
+            else if (TestSuiteRunWorkflowReleaseTagExecConfigRequest is { } __value3 && testSuiteRunWorkflowReleaseTagExecConfigRequest != null)
             {
-                return testSuiteRunWorkflowReleaseTagExecConfigRequest(TestSuiteRunWorkflowReleaseTagExecConfigRequest!);
+                return testSuiteRunWorkflowReleaseTagExecConfigRequest(__value3);
             }
-            else if (IsTestSuiteRunWorkflowSandboxExecConfigRequest && testSuiteRunWorkflowSandboxExecConfigRequest != null)
+            else if (TestSuiteRunWorkflowSandboxExecConfigRequest is { } __value4 && testSuiteRunWorkflowSandboxExecConfigRequest != null)
             {
-                return testSuiteRunWorkflowSandboxExecConfigRequest(TestSuiteRunWorkflowSandboxExecConfigRequest!);
+                return testSuiteRunWorkflowSandboxExecConfigRequest(__value4);
             }
-            else if (IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest != null)
+            else if (TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest is { } __value5 && testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest != null)
             {
-                return testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest(TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest!);
+                return testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest(__value5);
             }
-            else if (IsTestSuiteRunExternalExecConfigRequest && testSuiteRunExternalExecConfigRequest != null)
+            else if (TestSuiteRunExternalExecConfigRequest is { } __value6 && testSuiteRunExternalExecConfigRequest != null)
             {
-                return testSuiteRunExternalExecConfigRequest(TestSuiteRunExternalExecConfigRequest!);
+                return testSuiteRunExternalExecConfigRequest(__value6);
             }
 
             return default(TResult);
@@ -558,33 +558,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunDeploymentReleaseTagExecConfigRequest)
+            if (TestSuiteRunDeploymentReleaseTagExecConfigRequest is { } __value0)
             {
-                testSuiteRunDeploymentReleaseTagExecConfigRequest?.Invoke(TestSuiteRunDeploymentReleaseTagExecConfigRequest!);
+                testSuiteRunDeploymentReleaseTagExecConfigRequest?.Invoke(__value0);
             }
-            else if (IsTestSuiteRunPromptSandboxExecConfigRequest)
+            else if (TestSuiteRunPromptSandboxExecConfigRequest is { } __value1)
             {
-                testSuiteRunPromptSandboxExecConfigRequest?.Invoke(TestSuiteRunPromptSandboxExecConfigRequest!);
+                testSuiteRunPromptSandboxExecConfigRequest?.Invoke(__value1);
             }
-            else if (IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest)
+            else if (TestSuiteRunPromptSandboxHistoryItemExecConfigRequest is { } __value2)
             {
-                testSuiteRunPromptSandboxHistoryItemExecConfigRequest?.Invoke(TestSuiteRunPromptSandboxHistoryItemExecConfigRequest!);
+                testSuiteRunPromptSandboxHistoryItemExecConfigRequest?.Invoke(__value2);
             }
-            else if (IsTestSuiteRunWorkflowReleaseTagExecConfigRequest)
+            else if (TestSuiteRunWorkflowReleaseTagExecConfigRequest is { } __value3)
             {
-                testSuiteRunWorkflowReleaseTagExecConfigRequest?.Invoke(TestSuiteRunWorkflowReleaseTagExecConfigRequest!);
+                testSuiteRunWorkflowReleaseTagExecConfigRequest?.Invoke(__value3);
             }
-            else if (IsTestSuiteRunWorkflowSandboxExecConfigRequest)
+            else if (TestSuiteRunWorkflowSandboxExecConfigRequest is { } __value4)
             {
-                testSuiteRunWorkflowSandboxExecConfigRequest?.Invoke(TestSuiteRunWorkflowSandboxExecConfigRequest!);
+                testSuiteRunWorkflowSandboxExecConfigRequest?.Invoke(__value4);
             }
-            else if (IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest)
+            else if (TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest is { } __value5)
             {
-                testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?.Invoke(TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest!);
+                testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?.Invoke(__value5);
             }
-            else if (IsTestSuiteRunExternalExecConfigRequest)
+            else if (TestSuiteRunExternalExecConfigRequest is { } __value6)
             {
-                testSuiteRunExternalExecConfigRequest?.Invoke(TestSuiteRunExternalExecConfigRequest!);
+                testSuiteRunExternalExecConfigRequest?.Invoke(__value6);
             }
         }
 
@@ -606,33 +606,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunDeploymentReleaseTagExecConfigRequest)
+            if (TestSuiteRunDeploymentReleaseTagExecConfigRequest is { } __value0)
             {
-                testSuiteRunDeploymentReleaseTagExecConfigRequest?.Invoke(TestSuiteRunDeploymentReleaseTagExecConfigRequest!);
+                testSuiteRunDeploymentReleaseTagExecConfigRequest?.Invoke(__value0);
             }
-            else if (IsTestSuiteRunPromptSandboxExecConfigRequest)
+            else if (TestSuiteRunPromptSandboxExecConfigRequest is { } __value1)
             {
-                testSuiteRunPromptSandboxExecConfigRequest?.Invoke(TestSuiteRunPromptSandboxExecConfigRequest!);
+                testSuiteRunPromptSandboxExecConfigRequest?.Invoke(__value1);
             }
-            else if (IsTestSuiteRunPromptSandboxHistoryItemExecConfigRequest)
+            else if (TestSuiteRunPromptSandboxHistoryItemExecConfigRequest is { } __value2)
             {
-                testSuiteRunPromptSandboxHistoryItemExecConfigRequest?.Invoke(TestSuiteRunPromptSandboxHistoryItemExecConfigRequest!);
+                testSuiteRunPromptSandboxHistoryItemExecConfigRequest?.Invoke(__value2);
             }
-            else if (IsTestSuiteRunWorkflowReleaseTagExecConfigRequest)
+            else if (TestSuiteRunWorkflowReleaseTagExecConfigRequest is { } __value3)
             {
-                testSuiteRunWorkflowReleaseTagExecConfigRequest?.Invoke(TestSuiteRunWorkflowReleaseTagExecConfigRequest!);
+                testSuiteRunWorkflowReleaseTagExecConfigRequest?.Invoke(__value3);
             }
-            else if (IsTestSuiteRunWorkflowSandboxExecConfigRequest)
+            else if (TestSuiteRunWorkflowSandboxExecConfigRequest is { } __value4)
             {
-                testSuiteRunWorkflowSandboxExecConfigRequest?.Invoke(TestSuiteRunWorkflowSandboxExecConfigRequest!);
+                testSuiteRunWorkflowSandboxExecConfigRequest?.Invoke(__value4);
             }
-            else if (IsTestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest)
+            else if (TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest is { } __value5)
             {
-                testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?.Invoke(TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest!);
+                testSuiteRunWorkflowSandboxHistoryItemExecConfigRequest?.Invoke(__value5);
             }
-            else if (IsTestSuiteRunExternalExecConfigRequest)
+            else if (TestSuiteRunExternalExecConfigRequest is { } __value6)
             {
-                testSuiteRunExternalExecConfigRequest?.Invoke(TestSuiteRunExternalExecConfigRequest!);
+                testSuiteRunExternalExecConfigRequest?.Invoke(__value6);
             }
         }
 

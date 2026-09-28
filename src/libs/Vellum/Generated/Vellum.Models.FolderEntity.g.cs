@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityFolder PickFolderEntityFolder() => IsFolderEntityFolder
-            ? FolderEntityFolder!
+        public global::Vellum.FolderEntityFolder PickFolderEntityFolder() => FolderEntityFolder is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityFolder' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityPromptSandbox PickFolderEntityPromptSandbox() => IsFolderEntityPromptSandbox
-            ? FolderEntityPromptSandbox!
+        public global::Vellum.FolderEntityPromptSandbox PickFolderEntityPromptSandbox() => FolderEntityPromptSandbox is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityPromptSandbox' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityWorkflowSandbox PickFolderEntityWorkflowSandbox() => IsFolderEntityWorkflowSandbox
-            ? FolderEntityWorkflowSandbox!
+        public global::Vellum.FolderEntityWorkflowSandbox PickFolderEntityWorkflowSandbox() => FolderEntityWorkflowSandbox is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityWorkflowSandbox' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityDocumentIndex PickFolderEntityDocumentIndex() => IsFolderEntityDocumentIndex
-            ? FolderEntityDocumentIndex!
+        public global::Vellum.FolderEntityDocumentIndex PickFolderEntityDocumentIndex() => FolderEntityDocumentIndex is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityDocumentIndex' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityTestSuite PickFolderEntityTestSuite() => IsFolderEntityTestSuite
-            ? FolderEntityTestSuite!
+        public global::Vellum.FolderEntityTestSuite PickFolderEntityTestSuite() => FolderEntityTestSuite is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityTestSuite' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityDataset PickFolderEntityDataset() => IsFolderEntityDataset
-            ? FolderEntityDataset!
+        public global::Vellum.FolderEntityDataset PickFolderEntityDataset() => FolderEntityDataset is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FolderEntityDataset' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -437,29 +437,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFolderEntityFolder && folderEntityFolder != null)
+            if (FolderEntityFolder is { } __value0 && folderEntityFolder != null)
             {
-                return folderEntityFolder(FolderEntityFolder!);
+                return folderEntityFolder(__value0);
             }
-            else if (IsFolderEntityPromptSandbox && folderEntityPromptSandbox != null)
+            else if (FolderEntityPromptSandbox is { } __value1 && folderEntityPromptSandbox != null)
             {
-                return folderEntityPromptSandbox(FolderEntityPromptSandbox!);
+                return folderEntityPromptSandbox(__value1);
             }
-            else if (IsFolderEntityWorkflowSandbox && folderEntityWorkflowSandbox != null)
+            else if (FolderEntityWorkflowSandbox is { } __value2 && folderEntityWorkflowSandbox != null)
             {
-                return folderEntityWorkflowSandbox(FolderEntityWorkflowSandbox!);
+                return folderEntityWorkflowSandbox(__value2);
             }
-            else if (IsFolderEntityDocumentIndex && folderEntityDocumentIndex != null)
+            else if (FolderEntityDocumentIndex is { } __value3 && folderEntityDocumentIndex != null)
             {
-                return folderEntityDocumentIndex(FolderEntityDocumentIndex!);
+                return folderEntityDocumentIndex(__value3);
             }
-            else if (IsFolderEntityTestSuite && folderEntityTestSuite != null)
+            else if (FolderEntityTestSuite is { } __value4 && folderEntityTestSuite != null)
             {
-                return folderEntityTestSuite(FolderEntityTestSuite!);
+                return folderEntityTestSuite(__value4);
             }
-            else if (IsFolderEntityDataset && folderEntityDataset != null)
+            else if (FolderEntityDataset is { } __value5 && folderEntityDataset != null)
             {
-                return folderEntityDataset(FolderEntityDataset!);
+                return folderEntityDataset(__value5);
             }
 
             return default(TResult);
@@ -487,29 +487,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFolderEntityFolder)
+            if (FolderEntityFolder is { } __value0)
             {
-                folderEntityFolder?.Invoke(FolderEntityFolder!);
+                folderEntityFolder?.Invoke(__value0);
             }
-            else if (IsFolderEntityPromptSandbox)
+            else if (FolderEntityPromptSandbox is { } __value1)
             {
-                folderEntityPromptSandbox?.Invoke(FolderEntityPromptSandbox!);
+                folderEntityPromptSandbox?.Invoke(__value1);
             }
-            else if (IsFolderEntityWorkflowSandbox)
+            else if (FolderEntityWorkflowSandbox is { } __value2)
             {
-                folderEntityWorkflowSandbox?.Invoke(FolderEntityWorkflowSandbox!);
+                folderEntityWorkflowSandbox?.Invoke(__value2);
             }
-            else if (IsFolderEntityDocumentIndex)
+            else if (FolderEntityDocumentIndex is { } __value3)
             {
-                folderEntityDocumentIndex?.Invoke(FolderEntityDocumentIndex!);
+                folderEntityDocumentIndex?.Invoke(__value3);
             }
-            else if (IsFolderEntityTestSuite)
+            else if (FolderEntityTestSuite is { } __value4)
             {
-                folderEntityTestSuite?.Invoke(FolderEntityTestSuite!);
+                folderEntityTestSuite?.Invoke(__value4);
             }
-            else if (IsFolderEntityDataset)
+            else if (FolderEntityDataset is { } __value5)
             {
-                folderEntityDataset?.Invoke(FolderEntityDataset!);
+                folderEntityDataset?.Invoke(__value5);
             }
         }
 
@@ -530,29 +530,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFolderEntityFolder)
+            if (FolderEntityFolder is { } __value0)
             {
-                folderEntityFolder?.Invoke(FolderEntityFolder!);
+                folderEntityFolder?.Invoke(__value0);
             }
-            else if (IsFolderEntityPromptSandbox)
+            else if (FolderEntityPromptSandbox is { } __value1)
             {
-                folderEntityPromptSandbox?.Invoke(FolderEntityPromptSandbox!);
+                folderEntityPromptSandbox?.Invoke(__value1);
             }
-            else if (IsFolderEntityWorkflowSandbox)
+            else if (FolderEntityWorkflowSandbox is { } __value2)
             {
-                folderEntityWorkflowSandbox?.Invoke(FolderEntityWorkflowSandbox!);
+                folderEntityWorkflowSandbox?.Invoke(__value2);
             }
-            else if (IsFolderEntityDocumentIndex)
+            else if (FolderEntityDocumentIndex is { } __value3)
             {
-                folderEntityDocumentIndex?.Invoke(FolderEntityDocumentIndex!);
+                folderEntityDocumentIndex?.Invoke(__value3);
             }
-            else if (IsFolderEntityTestSuite)
+            else if (FolderEntityTestSuite is { } __value4)
             {
-                folderEntityTestSuite?.Invoke(FolderEntityTestSuite!);
+                folderEntityTestSuite?.Invoke(__value4);
             }
-            else if (IsFolderEntityDataset)
+            else if (FolderEntityDataset is { } __value5)
             {
-                folderEntityDataset?.Invoke(FolderEntityDataset!);
+                folderEntityDataset?.Invoke(__value5);
             }
         }
 

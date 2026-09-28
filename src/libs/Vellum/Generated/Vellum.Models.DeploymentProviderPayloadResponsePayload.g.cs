@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public object PickDeploymentProviderPayloadResponsePayloadVariant1() => IsDeploymentProviderPayloadResponsePayloadVariant1
-            ? DeploymentProviderPayloadResponsePayloadVariant1!
+        public object PickDeploymentProviderPayloadResponsePayloadVariant1() => DeploymentProviderPayloadResponsePayloadVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeploymentProviderPayloadResponsePayloadVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public string PickDeploymentProviderPayloadResponsePayloadVariant2() => IsDeploymentProviderPayloadResponsePayloadVariant2
-            ? DeploymentProviderPayloadResponsePayloadVariant2!
+        public string PickDeploymentProviderPayloadResponsePayloadVariant2() => DeploymentProviderPayloadResponsePayloadVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DeploymentProviderPayloadResponsePayloadVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsDeploymentProviderPayloadResponsePayloadVariant1 && deploymentProviderPayloadResponsePayloadVariant1 != null)
+            if (DeploymentProviderPayloadResponsePayloadVariant1 is { } __value0 && deploymentProviderPayloadResponsePayloadVariant1 != null)
             {
-                return deploymentProviderPayloadResponsePayloadVariant1(DeploymentProviderPayloadResponsePayloadVariant1!);
+                return deploymentProviderPayloadResponsePayloadVariant1(__value0);
             }
-            else if (IsDeploymentProviderPayloadResponsePayloadVariant2 && deploymentProviderPayloadResponsePayloadVariant2 != null)
+            else if (DeploymentProviderPayloadResponsePayloadVariant2 is { } __value1 && deploymentProviderPayloadResponsePayloadVariant2 != null)
             {
-                return deploymentProviderPayloadResponsePayloadVariant2(DeploymentProviderPayloadResponsePayloadVariant2!);
+                return deploymentProviderPayloadResponsePayloadVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsDeploymentProviderPayloadResponsePayloadVariant1)
+            if (DeploymentProviderPayloadResponsePayloadVariant1 is { } __value0)
             {
-                deploymentProviderPayloadResponsePayloadVariant1?.Invoke(DeploymentProviderPayloadResponsePayloadVariant1!);
+                deploymentProviderPayloadResponsePayloadVariant1?.Invoke(__value0);
             }
-            else if (IsDeploymentProviderPayloadResponsePayloadVariant2)
+            else if (DeploymentProviderPayloadResponsePayloadVariant2 is { } __value1)
             {
-                deploymentProviderPayloadResponsePayloadVariant2?.Invoke(DeploymentProviderPayloadResponsePayloadVariant2!);
+                deploymentProviderPayloadResponsePayloadVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsDeploymentProviderPayloadResponsePayloadVariant1)
+            if (DeploymentProviderPayloadResponsePayloadVariant1 is { } __value0)
             {
-                deploymentProviderPayloadResponsePayloadVariant1?.Invoke(DeploymentProviderPayloadResponsePayloadVariant1!);
+                deploymentProviderPayloadResponsePayloadVariant1?.Invoke(__value0);
             }
-            else if (IsDeploymentProviderPayloadResponsePayloadVariant2)
+            else if (DeploymentProviderPayloadResponsePayloadVariant2 is { } __value1)
             {
-                deploymentProviderPayloadResponsePayloadVariant2?.Invoke(DeploymentProviderPayloadResponsePayloadVariant2!);
+                deploymentProviderPayloadResponsePayloadVariant2?.Invoke(__value1);
             }
         }
 

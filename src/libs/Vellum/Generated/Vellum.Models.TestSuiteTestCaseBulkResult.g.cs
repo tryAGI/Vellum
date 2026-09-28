@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseCreatedBulkResult PickTestSuiteTestCaseCreatedBulkResult() => IsTestSuiteTestCaseCreatedBulkResult
-            ? TestSuiteTestCaseCreatedBulkResult!
+        public global::Vellum.TestSuiteTestCaseCreatedBulkResult PickTestSuiteTestCaseCreatedBulkResult() => TestSuiteTestCaseCreatedBulkResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseCreatedBulkResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseReplacedBulkResult PickTestSuiteTestCaseReplacedBulkResult() => IsTestSuiteTestCaseReplacedBulkResult
-            ? TestSuiteTestCaseReplacedBulkResult!
+        public global::Vellum.TestSuiteTestCaseReplacedBulkResult PickTestSuiteTestCaseReplacedBulkResult() => TestSuiteTestCaseReplacedBulkResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseReplacedBulkResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseDeletedBulkResult PickTestSuiteTestCaseDeletedBulkResult() => IsTestSuiteTestCaseDeletedBulkResult
-            ? TestSuiteTestCaseDeletedBulkResult!
+        public global::Vellum.TestSuiteTestCaseDeletedBulkResult PickTestSuiteTestCaseDeletedBulkResult() => TestSuiteTestCaseDeletedBulkResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseDeletedBulkResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseRejectedBulkResult PickTestSuiteTestCaseRejectedBulkResult() => IsTestSuiteTestCaseRejectedBulkResult
-            ? TestSuiteTestCaseRejectedBulkResult!
+        public global::Vellum.TestSuiteTestCaseRejectedBulkResult PickTestSuiteTestCaseRejectedBulkResult() => TestSuiteTestCaseRejectedBulkResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseRejectedBulkResult' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteTestCaseCreatedBulkResult && testSuiteTestCaseCreatedBulkResult != null)
+            if (TestSuiteTestCaseCreatedBulkResult is { } __value0 && testSuiteTestCaseCreatedBulkResult != null)
             {
-                return testSuiteTestCaseCreatedBulkResult(TestSuiteTestCaseCreatedBulkResult!);
+                return testSuiteTestCaseCreatedBulkResult(__value0);
             }
-            else if (IsTestSuiteTestCaseReplacedBulkResult && testSuiteTestCaseReplacedBulkResult != null)
+            else if (TestSuiteTestCaseReplacedBulkResult is { } __value1 && testSuiteTestCaseReplacedBulkResult != null)
             {
-                return testSuiteTestCaseReplacedBulkResult(TestSuiteTestCaseReplacedBulkResult!);
+                return testSuiteTestCaseReplacedBulkResult(__value1);
             }
-            else if (IsTestSuiteTestCaseDeletedBulkResult && testSuiteTestCaseDeletedBulkResult != null)
+            else if (TestSuiteTestCaseDeletedBulkResult is { } __value2 && testSuiteTestCaseDeletedBulkResult != null)
             {
-                return testSuiteTestCaseDeletedBulkResult(TestSuiteTestCaseDeletedBulkResult!);
+                return testSuiteTestCaseDeletedBulkResult(__value2);
             }
-            else if (IsTestSuiteTestCaseRejectedBulkResult && testSuiteTestCaseRejectedBulkResult != null)
+            else if (TestSuiteTestCaseRejectedBulkResult is { } __value3 && testSuiteTestCaseRejectedBulkResult != null)
             {
-                return testSuiteTestCaseRejectedBulkResult(TestSuiteTestCaseRejectedBulkResult!);
+                return testSuiteTestCaseRejectedBulkResult(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteTestCaseCreatedBulkResult)
+            if (TestSuiteTestCaseCreatedBulkResult is { } __value0)
             {
-                testSuiteTestCaseCreatedBulkResult?.Invoke(TestSuiteTestCaseCreatedBulkResult!);
+                testSuiteTestCaseCreatedBulkResult?.Invoke(__value0);
             }
-            else if (IsTestSuiteTestCaseReplacedBulkResult)
+            else if (TestSuiteTestCaseReplacedBulkResult is { } __value1)
             {
-                testSuiteTestCaseReplacedBulkResult?.Invoke(TestSuiteTestCaseReplacedBulkResult!);
+                testSuiteTestCaseReplacedBulkResult?.Invoke(__value1);
             }
-            else if (IsTestSuiteTestCaseDeletedBulkResult)
+            else if (TestSuiteTestCaseDeletedBulkResult is { } __value2)
             {
-                testSuiteTestCaseDeletedBulkResult?.Invoke(TestSuiteTestCaseDeletedBulkResult!);
+                testSuiteTestCaseDeletedBulkResult?.Invoke(__value2);
             }
-            else if (IsTestSuiteTestCaseRejectedBulkResult)
+            else if (TestSuiteTestCaseRejectedBulkResult is { } __value3)
             {
-                testSuiteTestCaseRejectedBulkResult?.Invoke(TestSuiteTestCaseRejectedBulkResult!);
+                testSuiteTestCaseRejectedBulkResult?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteTestCaseCreatedBulkResult)
+            if (TestSuiteTestCaseCreatedBulkResult is { } __value0)
             {
-                testSuiteTestCaseCreatedBulkResult?.Invoke(TestSuiteTestCaseCreatedBulkResult!);
+                testSuiteTestCaseCreatedBulkResult?.Invoke(__value0);
             }
-            else if (IsTestSuiteTestCaseReplacedBulkResult)
+            else if (TestSuiteTestCaseReplacedBulkResult is { } __value1)
             {
-                testSuiteTestCaseReplacedBulkResult?.Invoke(TestSuiteTestCaseReplacedBulkResult!);
+                testSuiteTestCaseReplacedBulkResult?.Invoke(__value1);
             }
-            else if (IsTestSuiteTestCaseDeletedBulkResult)
+            else if (TestSuiteTestCaseDeletedBulkResult is { } __value2)
             {
-                testSuiteTestCaseDeletedBulkResult?.Invoke(TestSuiteTestCaseDeletedBulkResult!);
+                testSuiteTestCaseDeletedBulkResult?.Invoke(__value2);
             }
-            else if (IsTestSuiteTestCaseRejectedBulkResult)
+            else if (TestSuiteTestCaseRejectedBulkResult is { } __value3)
             {
-                testSuiteTestCaseRejectedBulkResult?.Invoke(TestSuiteTestCaseRejectedBulkResult!);
+                testSuiteTestCaseRejectedBulkResult?.Invoke(__value3);
             }
         }
 

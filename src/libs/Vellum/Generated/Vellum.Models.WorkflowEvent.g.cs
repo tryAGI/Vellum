@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionInitiatedEvent PickNodeExecutionInitiatedEvent() => IsNodeExecutionInitiatedEvent
-            ? NodeExecutionInitiatedEvent!
+        public global::Vellum.NodeExecutionInitiatedEvent PickNodeExecutionInitiatedEvent() => NodeExecutionInitiatedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionInitiatedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionStreamingEvent PickNodeExecutionStreamingEvent() => IsNodeExecutionStreamingEvent
-            ? NodeExecutionStreamingEvent!
+        public global::Vellum.NodeExecutionStreamingEvent PickNodeExecutionStreamingEvent() => NodeExecutionStreamingEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionStreamingEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionFulfilledEvent PickNodeExecutionFulfilledEvent() => IsNodeExecutionFulfilledEvent
-            ? NodeExecutionFulfilledEvent!
+        public global::Vellum.NodeExecutionFulfilledEvent PickNodeExecutionFulfilledEvent() => NodeExecutionFulfilledEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionFulfilledEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionRejectedEvent PickNodeExecutionRejectedEvent() => IsNodeExecutionRejectedEvent
-            ? NodeExecutionRejectedEvent!
+        public global::Vellum.NodeExecutionRejectedEvent PickNodeExecutionRejectedEvent() => NodeExecutionRejectedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionRejectedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionPausedEvent PickNodeExecutionPausedEvent() => IsNodeExecutionPausedEvent
-            ? NodeExecutionPausedEvent!
+        public global::Vellum.NodeExecutionPausedEvent PickNodeExecutionPausedEvent() => NodeExecutionPausedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionPausedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionResumedEvent PickNodeExecutionResumedEvent() => IsNodeExecutionResumedEvent
-            ? NodeExecutionResumedEvent!
+        public global::Vellum.NodeExecutionResumedEvent PickNodeExecutionResumedEvent() => NodeExecutionResumedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionResumedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionLogEvent PickNodeExecutionLogEvent() => IsNodeExecutionLogEvent
-            ? NodeExecutionLogEvent!
+        public global::Vellum.NodeExecutionLogEvent PickNodeExecutionLogEvent() => NodeExecutionLogEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionLogEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionInitiatedEvent PickWorkflowExecutionInitiatedEvent() => IsWorkflowExecutionInitiatedEvent
-            ? WorkflowExecutionInitiatedEvent!
+        public global::Vellum.WorkflowExecutionInitiatedEvent PickWorkflowExecutionInitiatedEvent() => WorkflowExecutionInitiatedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionInitiatedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionStreamingEvent PickWorkflowExecutionStreamingEvent() => IsWorkflowExecutionStreamingEvent
-            ? WorkflowExecutionStreamingEvent!
+        public global::Vellum.WorkflowExecutionStreamingEvent PickWorkflowExecutionStreamingEvent() => WorkflowExecutionStreamingEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionStreamingEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionRejectedEvent PickWorkflowExecutionRejectedEvent() => IsWorkflowExecutionRejectedEvent
-            ? WorkflowExecutionRejectedEvent!
+        public global::Vellum.WorkflowExecutionRejectedEvent PickWorkflowExecutionRejectedEvent() => WorkflowExecutionRejectedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionRejectedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionFulfilledEvent PickWorkflowExecutionFulfilledEvent() => IsWorkflowExecutionFulfilledEvent
-            ? WorkflowExecutionFulfilledEvent!
+        public global::Vellum.WorkflowExecutionFulfilledEvent PickWorkflowExecutionFulfilledEvent() => WorkflowExecutionFulfilledEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionFulfilledEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionPausedEvent PickWorkflowExecutionPausedEvent() => IsWorkflowExecutionPausedEvent
-            ? WorkflowExecutionPausedEvent!
+        public global::Vellum.WorkflowExecutionPausedEvent PickWorkflowExecutionPausedEvent() => WorkflowExecutionPausedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionPausedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionResumedEvent PickWorkflowExecutionResumedEvent() => IsWorkflowExecutionResumedEvent
-            ? WorkflowExecutionResumedEvent!
+        public global::Vellum.WorkflowExecutionResumedEvent PickWorkflowExecutionResumedEvent() => WorkflowExecutionResumedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionResumedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -523,8 +523,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSnapshottedEvent PickWorkflowExecutionSnapshottedEvent() => IsWorkflowExecutionSnapshottedEvent
-            ? WorkflowExecutionSnapshottedEvent!
+        public global::Vellum.WorkflowExecutionSnapshottedEvent PickWorkflowExecutionSnapshottedEvent() => WorkflowExecutionSnapshottedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionSnapshottedEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -957,61 +957,61 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeExecutionInitiatedEvent && nodeExecutionInitiatedEvent != null)
+            if (NodeExecutionInitiatedEvent is { } __value0 && nodeExecutionInitiatedEvent != null)
             {
-                return nodeExecutionInitiatedEvent(NodeExecutionInitiatedEvent!);
+                return nodeExecutionInitiatedEvent(__value0);
             }
-            else if (IsNodeExecutionStreamingEvent && nodeExecutionStreamingEvent != null)
+            else if (NodeExecutionStreamingEvent is { } __value1 && nodeExecutionStreamingEvent != null)
             {
-                return nodeExecutionStreamingEvent(NodeExecutionStreamingEvent!);
+                return nodeExecutionStreamingEvent(__value1);
             }
-            else if (IsNodeExecutionFulfilledEvent && nodeExecutionFulfilledEvent != null)
+            else if (NodeExecutionFulfilledEvent is { } __value2 && nodeExecutionFulfilledEvent != null)
             {
-                return nodeExecutionFulfilledEvent(NodeExecutionFulfilledEvent!);
+                return nodeExecutionFulfilledEvent(__value2);
             }
-            else if (IsNodeExecutionRejectedEvent && nodeExecutionRejectedEvent != null)
+            else if (NodeExecutionRejectedEvent is { } __value3 && nodeExecutionRejectedEvent != null)
             {
-                return nodeExecutionRejectedEvent(NodeExecutionRejectedEvent!);
+                return nodeExecutionRejectedEvent(__value3);
             }
-            else if (IsNodeExecutionPausedEvent && nodeExecutionPausedEvent != null)
+            else if (NodeExecutionPausedEvent is { } __value4 && nodeExecutionPausedEvent != null)
             {
-                return nodeExecutionPausedEvent(NodeExecutionPausedEvent!);
+                return nodeExecutionPausedEvent(__value4);
             }
-            else if (IsNodeExecutionResumedEvent && nodeExecutionResumedEvent != null)
+            else if (NodeExecutionResumedEvent is { } __value5 && nodeExecutionResumedEvent != null)
             {
-                return nodeExecutionResumedEvent(NodeExecutionResumedEvent!);
+                return nodeExecutionResumedEvent(__value5);
             }
-            else if (IsNodeExecutionLogEvent && nodeExecutionLogEvent != null)
+            else if (NodeExecutionLogEvent is { } __value6 && nodeExecutionLogEvent != null)
             {
-                return nodeExecutionLogEvent(NodeExecutionLogEvent!);
+                return nodeExecutionLogEvent(__value6);
             }
-            else if (IsWorkflowExecutionInitiatedEvent && workflowExecutionInitiatedEvent != null)
+            else if (WorkflowExecutionInitiatedEvent is { } __value7 && workflowExecutionInitiatedEvent != null)
             {
-                return workflowExecutionInitiatedEvent(WorkflowExecutionInitiatedEvent!);
+                return workflowExecutionInitiatedEvent(__value7);
             }
-            else if (IsWorkflowExecutionStreamingEvent && workflowExecutionStreamingEvent != null)
+            else if (WorkflowExecutionStreamingEvent is { } __value8 && workflowExecutionStreamingEvent != null)
             {
-                return workflowExecutionStreamingEvent(WorkflowExecutionStreamingEvent!);
+                return workflowExecutionStreamingEvent(__value8);
             }
-            else if (IsWorkflowExecutionRejectedEvent && workflowExecutionRejectedEvent != null)
+            else if (WorkflowExecutionRejectedEvent is { } __value9 && workflowExecutionRejectedEvent != null)
             {
-                return workflowExecutionRejectedEvent(WorkflowExecutionRejectedEvent!);
+                return workflowExecutionRejectedEvent(__value9);
             }
-            else if (IsWorkflowExecutionFulfilledEvent && workflowExecutionFulfilledEvent != null)
+            else if (WorkflowExecutionFulfilledEvent is { } __value10 && workflowExecutionFulfilledEvent != null)
             {
-                return workflowExecutionFulfilledEvent(WorkflowExecutionFulfilledEvent!);
+                return workflowExecutionFulfilledEvent(__value10);
             }
-            else if (IsWorkflowExecutionPausedEvent && workflowExecutionPausedEvent != null)
+            else if (WorkflowExecutionPausedEvent is { } __value11 && workflowExecutionPausedEvent != null)
             {
-                return workflowExecutionPausedEvent(WorkflowExecutionPausedEvent!);
+                return workflowExecutionPausedEvent(__value11);
             }
-            else if (IsWorkflowExecutionResumedEvent && workflowExecutionResumedEvent != null)
+            else if (WorkflowExecutionResumedEvent is { } __value12 && workflowExecutionResumedEvent != null)
             {
-                return workflowExecutionResumedEvent(WorkflowExecutionResumedEvent!);
+                return workflowExecutionResumedEvent(__value12);
             }
-            else if (IsWorkflowExecutionSnapshottedEvent && workflowExecutionSnapshottedEvent != null)
+            else if (WorkflowExecutionSnapshottedEvent is { } __value13 && workflowExecutionSnapshottedEvent != null)
             {
-                return workflowExecutionSnapshottedEvent(WorkflowExecutionSnapshottedEvent!);
+                return workflowExecutionSnapshottedEvent(__value13);
             }
 
             return default(TResult);
@@ -1055,61 +1055,61 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeExecutionInitiatedEvent)
+            if (NodeExecutionInitiatedEvent is { } __value0)
             {
-                nodeExecutionInitiatedEvent?.Invoke(NodeExecutionInitiatedEvent!);
+                nodeExecutionInitiatedEvent?.Invoke(__value0);
             }
-            else if (IsNodeExecutionStreamingEvent)
+            else if (NodeExecutionStreamingEvent is { } __value1)
             {
-                nodeExecutionStreamingEvent?.Invoke(NodeExecutionStreamingEvent!);
+                nodeExecutionStreamingEvent?.Invoke(__value1);
             }
-            else if (IsNodeExecutionFulfilledEvent)
+            else if (NodeExecutionFulfilledEvent is { } __value2)
             {
-                nodeExecutionFulfilledEvent?.Invoke(NodeExecutionFulfilledEvent!);
+                nodeExecutionFulfilledEvent?.Invoke(__value2);
             }
-            else if (IsNodeExecutionRejectedEvent)
+            else if (NodeExecutionRejectedEvent is { } __value3)
             {
-                nodeExecutionRejectedEvent?.Invoke(NodeExecutionRejectedEvent!);
+                nodeExecutionRejectedEvent?.Invoke(__value3);
             }
-            else if (IsNodeExecutionPausedEvent)
+            else if (NodeExecutionPausedEvent is { } __value4)
             {
-                nodeExecutionPausedEvent?.Invoke(NodeExecutionPausedEvent!);
+                nodeExecutionPausedEvent?.Invoke(__value4);
             }
-            else if (IsNodeExecutionResumedEvent)
+            else if (NodeExecutionResumedEvent is { } __value5)
             {
-                nodeExecutionResumedEvent?.Invoke(NodeExecutionResumedEvent!);
+                nodeExecutionResumedEvent?.Invoke(__value5);
             }
-            else if (IsNodeExecutionLogEvent)
+            else if (NodeExecutionLogEvent is { } __value6)
             {
-                nodeExecutionLogEvent?.Invoke(NodeExecutionLogEvent!);
+                nodeExecutionLogEvent?.Invoke(__value6);
             }
-            else if (IsWorkflowExecutionInitiatedEvent)
+            else if (WorkflowExecutionInitiatedEvent is { } __value7)
             {
-                workflowExecutionInitiatedEvent?.Invoke(WorkflowExecutionInitiatedEvent!);
+                workflowExecutionInitiatedEvent?.Invoke(__value7);
             }
-            else if (IsWorkflowExecutionStreamingEvent)
+            else if (WorkflowExecutionStreamingEvent is { } __value8)
             {
-                workflowExecutionStreamingEvent?.Invoke(WorkflowExecutionStreamingEvent!);
+                workflowExecutionStreamingEvent?.Invoke(__value8);
             }
-            else if (IsWorkflowExecutionRejectedEvent)
+            else if (WorkflowExecutionRejectedEvent is { } __value9)
             {
-                workflowExecutionRejectedEvent?.Invoke(WorkflowExecutionRejectedEvent!);
+                workflowExecutionRejectedEvent?.Invoke(__value9);
             }
-            else if (IsWorkflowExecutionFulfilledEvent)
+            else if (WorkflowExecutionFulfilledEvent is { } __value10)
             {
-                workflowExecutionFulfilledEvent?.Invoke(WorkflowExecutionFulfilledEvent!);
+                workflowExecutionFulfilledEvent?.Invoke(__value10);
             }
-            else if (IsWorkflowExecutionPausedEvent)
+            else if (WorkflowExecutionPausedEvent is { } __value11)
             {
-                workflowExecutionPausedEvent?.Invoke(WorkflowExecutionPausedEvent!);
+                workflowExecutionPausedEvent?.Invoke(__value11);
             }
-            else if (IsWorkflowExecutionResumedEvent)
+            else if (WorkflowExecutionResumedEvent is { } __value12)
             {
-                workflowExecutionResumedEvent?.Invoke(WorkflowExecutionResumedEvent!);
+                workflowExecutionResumedEvent?.Invoke(__value12);
             }
-            else if (IsWorkflowExecutionSnapshottedEvent)
+            else if (WorkflowExecutionSnapshottedEvent is { } __value13)
             {
-                workflowExecutionSnapshottedEvent?.Invoke(WorkflowExecutionSnapshottedEvent!);
+                workflowExecutionSnapshottedEvent?.Invoke(__value13);
             }
         }
 
@@ -1138,61 +1138,61 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeExecutionInitiatedEvent)
+            if (NodeExecutionInitiatedEvent is { } __value0)
             {
-                nodeExecutionInitiatedEvent?.Invoke(NodeExecutionInitiatedEvent!);
+                nodeExecutionInitiatedEvent?.Invoke(__value0);
             }
-            else if (IsNodeExecutionStreamingEvent)
+            else if (NodeExecutionStreamingEvent is { } __value1)
             {
-                nodeExecutionStreamingEvent?.Invoke(NodeExecutionStreamingEvent!);
+                nodeExecutionStreamingEvent?.Invoke(__value1);
             }
-            else if (IsNodeExecutionFulfilledEvent)
+            else if (NodeExecutionFulfilledEvent is { } __value2)
             {
-                nodeExecutionFulfilledEvent?.Invoke(NodeExecutionFulfilledEvent!);
+                nodeExecutionFulfilledEvent?.Invoke(__value2);
             }
-            else if (IsNodeExecutionRejectedEvent)
+            else if (NodeExecutionRejectedEvent is { } __value3)
             {
-                nodeExecutionRejectedEvent?.Invoke(NodeExecutionRejectedEvent!);
+                nodeExecutionRejectedEvent?.Invoke(__value3);
             }
-            else if (IsNodeExecutionPausedEvent)
+            else if (NodeExecutionPausedEvent is { } __value4)
             {
-                nodeExecutionPausedEvent?.Invoke(NodeExecutionPausedEvent!);
+                nodeExecutionPausedEvent?.Invoke(__value4);
             }
-            else if (IsNodeExecutionResumedEvent)
+            else if (NodeExecutionResumedEvent is { } __value5)
             {
-                nodeExecutionResumedEvent?.Invoke(NodeExecutionResumedEvent!);
+                nodeExecutionResumedEvent?.Invoke(__value5);
             }
-            else if (IsNodeExecutionLogEvent)
+            else if (NodeExecutionLogEvent is { } __value6)
             {
-                nodeExecutionLogEvent?.Invoke(NodeExecutionLogEvent!);
+                nodeExecutionLogEvent?.Invoke(__value6);
             }
-            else if (IsWorkflowExecutionInitiatedEvent)
+            else if (WorkflowExecutionInitiatedEvent is { } __value7)
             {
-                workflowExecutionInitiatedEvent?.Invoke(WorkflowExecutionInitiatedEvent!);
+                workflowExecutionInitiatedEvent?.Invoke(__value7);
             }
-            else if (IsWorkflowExecutionStreamingEvent)
+            else if (WorkflowExecutionStreamingEvent is { } __value8)
             {
-                workflowExecutionStreamingEvent?.Invoke(WorkflowExecutionStreamingEvent!);
+                workflowExecutionStreamingEvent?.Invoke(__value8);
             }
-            else if (IsWorkflowExecutionRejectedEvent)
+            else if (WorkflowExecutionRejectedEvent is { } __value9)
             {
-                workflowExecutionRejectedEvent?.Invoke(WorkflowExecutionRejectedEvent!);
+                workflowExecutionRejectedEvent?.Invoke(__value9);
             }
-            else if (IsWorkflowExecutionFulfilledEvent)
+            else if (WorkflowExecutionFulfilledEvent is { } __value10)
             {
-                workflowExecutionFulfilledEvent?.Invoke(WorkflowExecutionFulfilledEvent!);
+                workflowExecutionFulfilledEvent?.Invoke(__value10);
             }
-            else if (IsWorkflowExecutionPausedEvent)
+            else if (WorkflowExecutionPausedEvent is { } __value11)
             {
-                workflowExecutionPausedEvent?.Invoke(WorkflowExecutionPausedEvent!);
+                workflowExecutionPausedEvent?.Invoke(__value11);
             }
-            else if (IsWorkflowExecutionResumedEvent)
+            else if (WorkflowExecutionResumedEvent is { } __value12)
             {
-                workflowExecutionResumedEvent?.Invoke(WorkflowExecutionResumedEvent!);
+                workflowExecutionResumedEvent?.Invoke(__value12);
             }
-            else if (IsWorkflowExecutionSnapshottedEvent)
+            else if (WorkflowExecutionSnapshottedEvent is { } __value13)
             {
-                workflowExecutionSnapshottedEvent?.Invoke(WorkflowExecutionSnapshottedEvent!);
+                workflowExecutionSnapshottedEvent?.Invoke(__value13);
             }
         }
 
