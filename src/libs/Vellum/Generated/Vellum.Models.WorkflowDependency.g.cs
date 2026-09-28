@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowIntegrationDependency PickWorkflowIntegrationDependency() => IsWorkflowIntegrationDependency
-            ? WorkflowIntegrationDependency!
+        public global::Vellum.WorkflowIntegrationDependency PickWorkflowIntegrationDependency() => WorkflowIntegrationDependency is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowIntegrationDependency' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowModelProviderDependency PickWorkflowModelProviderDependency() => IsWorkflowModelProviderDependency
-            ? WorkflowModelProviderDependency!
+        public global::Vellum.WorkflowModelProviderDependency PickWorkflowModelProviderDependency() => WorkflowModelProviderDependency is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowModelProviderDependency' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowIntegrationDependency && workflowIntegrationDependency != null)
+            if (WorkflowIntegrationDependency is { } __value0 && workflowIntegrationDependency != null)
             {
-                return workflowIntegrationDependency(WorkflowIntegrationDependency!);
+                return workflowIntegrationDependency(__value0);
             }
-            else if (IsWorkflowModelProviderDependency && workflowModelProviderDependency != null)
+            else if (WorkflowModelProviderDependency is { } __value1 && workflowModelProviderDependency != null)
             {
-                return workflowModelProviderDependency(WorkflowModelProviderDependency!);
+                return workflowModelProviderDependency(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowIntegrationDependency)
+            if (WorkflowIntegrationDependency is { } __value0)
             {
-                workflowIntegrationDependency?.Invoke(WorkflowIntegrationDependency!);
+                workflowIntegrationDependency?.Invoke(__value0);
             }
-            else if (IsWorkflowModelProviderDependency)
+            else if (WorkflowModelProviderDependency is { } __value1)
             {
-                workflowModelProviderDependency?.Invoke(WorkflowModelProviderDependency!);
+                workflowModelProviderDependency?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowIntegrationDependency)
+            if (WorkflowIntegrationDependency is { } __value0)
             {
-                workflowIntegrationDependency?.Invoke(WorkflowIntegrationDependency!);
+                workflowIntegrationDependency?.Invoke(__value0);
             }
-            else if (IsWorkflowModelProviderDependency)
+            else if (WorkflowModelProviderDependency is { } __value1)
             {
-                workflowModelProviderDependency?.Invoke(WorkflowModelProviderDependency!);
+                workflowModelProviderDependency?.Invoke(__value1);
             }
         }
 

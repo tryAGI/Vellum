@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.InitiatedWorkflowNodeResultEvent PickInitiatedWorkflowNodeResultEvent() => IsInitiatedWorkflowNodeResultEvent
-            ? InitiatedWorkflowNodeResultEvent!
+        public global::Vellum.InitiatedWorkflowNodeResultEvent PickInitiatedWorkflowNodeResultEvent() => InitiatedWorkflowNodeResultEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InitiatedWorkflowNodeResultEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StreamingWorkflowNodeResultEvent PickStreamingWorkflowNodeResultEvent() => IsStreamingWorkflowNodeResultEvent
-            ? StreamingWorkflowNodeResultEvent!
+        public global::Vellum.StreamingWorkflowNodeResultEvent PickStreamingWorkflowNodeResultEvent() => StreamingWorkflowNodeResultEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamingWorkflowNodeResultEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FulfilledWorkflowNodeResultEvent PickFulfilledWorkflowNodeResultEvent() => IsFulfilledWorkflowNodeResultEvent
-            ? FulfilledWorkflowNodeResultEvent!
+        public global::Vellum.FulfilledWorkflowNodeResultEvent PickFulfilledWorkflowNodeResultEvent() => FulfilledWorkflowNodeResultEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledWorkflowNodeResultEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.RejectedWorkflowNodeResultEvent PickRejectedWorkflowNodeResultEvent() => IsRejectedWorkflowNodeResultEvent
-            ? RejectedWorkflowNodeResultEvent!
+        public global::Vellum.RejectedWorkflowNodeResultEvent PickRejectedWorkflowNodeResultEvent() => RejectedWorkflowNodeResultEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedWorkflowNodeResultEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsInitiatedWorkflowNodeResultEvent && initiatedWorkflowNodeResultEvent != null)
+            if (InitiatedWorkflowNodeResultEvent is { } __value0 && initiatedWorkflowNodeResultEvent != null)
             {
-                return initiatedWorkflowNodeResultEvent(InitiatedWorkflowNodeResultEvent!);
+                return initiatedWorkflowNodeResultEvent(__value0);
             }
-            else if (IsStreamingWorkflowNodeResultEvent && streamingWorkflowNodeResultEvent != null)
+            else if (StreamingWorkflowNodeResultEvent is { } __value1 && streamingWorkflowNodeResultEvent != null)
             {
-                return streamingWorkflowNodeResultEvent(StreamingWorkflowNodeResultEvent!);
+                return streamingWorkflowNodeResultEvent(__value1);
             }
-            else if (IsFulfilledWorkflowNodeResultEvent && fulfilledWorkflowNodeResultEvent != null)
+            else if (FulfilledWorkflowNodeResultEvent is { } __value2 && fulfilledWorkflowNodeResultEvent != null)
             {
-                return fulfilledWorkflowNodeResultEvent(FulfilledWorkflowNodeResultEvent!);
+                return fulfilledWorkflowNodeResultEvent(__value2);
             }
-            else if (IsRejectedWorkflowNodeResultEvent && rejectedWorkflowNodeResultEvent != null)
+            else if (RejectedWorkflowNodeResultEvent is { } __value3 && rejectedWorkflowNodeResultEvent != null)
             {
-                return rejectedWorkflowNodeResultEvent(RejectedWorkflowNodeResultEvent!);
+                return rejectedWorkflowNodeResultEvent(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsInitiatedWorkflowNodeResultEvent)
+            if (InitiatedWorkflowNodeResultEvent is { } __value0)
             {
-                initiatedWorkflowNodeResultEvent?.Invoke(InitiatedWorkflowNodeResultEvent!);
+                initiatedWorkflowNodeResultEvent?.Invoke(__value0);
             }
-            else if (IsStreamingWorkflowNodeResultEvent)
+            else if (StreamingWorkflowNodeResultEvent is { } __value1)
             {
-                streamingWorkflowNodeResultEvent?.Invoke(StreamingWorkflowNodeResultEvent!);
+                streamingWorkflowNodeResultEvent?.Invoke(__value1);
             }
-            else if (IsFulfilledWorkflowNodeResultEvent)
+            else if (FulfilledWorkflowNodeResultEvent is { } __value2)
             {
-                fulfilledWorkflowNodeResultEvent?.Invoke(FulfilledWorkflowNodeResultEvent!);
+                fulfilledWorkflowNodeResultEvent?.Invoke(__value2);
             }
-            else if (IsRejectedWorkflowNodeResultEvent)
+            else if (RejectedWorkflowNodeResultEvent is { } __value3)
             {
-                rejectedWorkflowNodeResultEvent?.Invoke(RejectedWorkflowNodeResultEvent!);
+                rejectedWorkflowNodeResultEvent?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsInitiatedWorkflowNodeResultEvent)
+            if (InitiatedWorkflowNodeResultEvent is { } __value0)
             {
-                initiatedWorkflowNodeResultEvent?.Invoke(InitiatedWorkflowNodeResultEvent!);
+                initiatedWorkflowNodeResultEvent?.Invoke(__value0);
             }
-            else if (IsStreamingWorkflowNodeResultEvent)
+            else if (StreamingWorkflowNodeResultEvent is { } __value1)
             {
-                streamingWorkflowNodeResultEvent?.Invoke(StreamingWorkflowNodeResultEvent!);
+                streamingWorkflowNodeResultEvent?.Invoke(__value1);
             }
-            else if (IsFulfilledWorkflowNodeResultEvent)
+            else if (FulfilledWorkflowNodeResultEvent is { } __value2)
             {
-                fulfilledWorkflowNodeResultEvent?.Invoke(FulfilledWorkflowNodeResultEvent!);
+                fulfilledWorkflowNodeResultEvent?.Invoke(__value2);
             }
-            else if (IsRejectedWorkflowNodeResultEvent)
+            else if (RejectedWorkflowNodeResultEvent is { } __value3)
             {
-                rejectedWorkflowNodeResultEvent?.Invoke(RejectedWorkflowNodeResultEvent!);
+                rejectedWorkflowNodeResultEvent?.Invoke(__value3);
             }
         }
 

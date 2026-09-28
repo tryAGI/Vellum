@@ -222,25 +222,25 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseCreatedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseCreatedBulkResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseCreatedBulkResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseCreatedBulkResult!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTestSuiteTestCaseCreatedBulkResult(), typeInfo);
             }
             else if (value.IsTestSuiteTestCaseReplacedBulkResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseReplacedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseReplacedBulkResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseReplacedBulkResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseReplacedBulkResult!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTestSuiteTestCaseReplacedBulkResult(), typeInfo);
             }
             else if (value.IsTestSuiteTestCaseDeletedBulkResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseDeletedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseDeletedBulkResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseDeletedBulkResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseDeletedBulkResult!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTestSuiteTestCaseDeletedBulkResult(), typeInfo);
             }
             else if (value.IsTestSuiteTestCaseRejectedBulkResult)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.TestSuiteTestCaseRejectedBulkResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.TestSuiteTestCaseRejectedBulkResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.TestSuiteTestCaseRejectedBulkResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TestSuiteTestCaseRejectedBulkResult!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTestSuiteTestCaseRejectedBulkResult(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueLogicalConditionRequest PickVellumValueLogicalConditionRequest() => IsVellumValueLogicalConditionRequest
-            ? VellumValueLogicalConditionRequest!
+        public global::Vellum.VellumValueLogicalConditionRequest PickVellumValueLogicalConditionRequest() => VellumValueLogicalConditionRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumValueLogicalConditionRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueLogicalConditionGroupRequest PickVellumValueLogicalConditionGroupRequest() => IsVellumValueLogicalConditionGroupRequest
-            ? VellumValueLogicalConditionGroupRequest!
+        public global::Vellum.VellumValueLogicalConditionGroupRequest PickVellumValueLogicalConditionGroupRequest() => VellumValueLogicalConditionGroupRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumValueLogicalConditionGroupRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsVellumValueLogicalConditionRequest && vellumValueLogicalConditionRequest != null)
+            if (VellumValueLogicalConditionRequest is { } __value0 && vellumValueLogicalConditionRequest != null)
             {
-                return vellumValueLogicalConditionRequest(VellumValueLogicalConditionRequest!);
+                return vellumValueLogicalConditionRequest(__value0);
             }
-            else if (IsVellumValueLogicalConditionGroupRequest && vellumValueLogicalConditionGroupRequest != null)
+            else if (VellumValueLogicalConditionGroupRequest is { } __value1 && vellumValueLogicalConditionGroupRequest != null)
             {
-                return vellumValueLogicalConditionGroupRequest(VellumValueLogicalConditionGroupRequest!);
+                return vellumValueLogicalConditionGroupRequest(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsVellumValueLogicalConditionRequest)
+            if (VellumValueLogicalConditionRequest is { } __value0)
             {
-                vellumValueLogicalConditionRequest?.Invoke(VellumValueLogicalConditionRequest!);
+                vellumValueLogicalConditionRequest?.Invoke(__value0);
             }
-            else if (IsVellumValueLogicalConditionGroupRequest)
+            else if (VellumValueLogicalConditionGroupRequest is { } __value1)
             {
-                vellumValueLogicalConditionGroupRequest?.Invoke(VellumValueLogicalConditionGroupRequest!);
+                vellumValueLogicalConditionGroupRequest?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsVellumValueLogicalConditionRequest)
+            if (VellumValueLogicalConditionRequest is { } __value0)
             {
-                vellumValueLogicalConditionRequest?.Invoke(VellumValueLogicalConditionRequest!);
+                vellumValueLogicalConditionRequest?.Invoke(__value0);
             }
-            else if (IsVellumValueLogicalConditionGroupRequest)
+            else if (VellumValueLogicalConditionGroupRequest is { } __value1)
             {
-                vellumValueLogicalConditionGroupRequest?.Invoke(VellumValueLogicalConditionGroupRequest!);
+                vellumValueLogicalConditionGroupRequest?.Invoke(__value1);
             }
         }
 

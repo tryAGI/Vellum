@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeStringResult PickTemplatingNodeStringResult() => IsTemplatingNodeStringResult
-            ? TemplatingNodeStringResult!
+        public global::Vellum.TemplatingNodeStringResult PickTemplatingNodeStringResult() => TemplatingNodeStringResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeStringResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeNumberResult PickTemplatingNodeNumberResult() => IsTemplatingNodeNumberResult
-            ? TemplatingNodeNumberResult!
+        public global::Vellum.TemplatingNodeNumberResult PickTemplatingNodeNumberResult() => TemplatingNodeNumberResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeJsonResult PickTemplatingNodeJsonResult() => IsTemplatingNodeJsonResult
-            ? TemplatingNodeJsonResult!
+        public global::Vellum.TemplatingNodeJsonResult PickTemplatingNodeJsonResult() => TemplatingNodeJsonResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeJsonResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeChatHistoryResult PickTemplatingNodeChatHistoryResult() => IsTemplatingNodeChatHistoryResult
-            ? TemplatingNodeChatHistoryResult!
+        public global::Vellum.TemplatingNodeChatHistoryResult PickTemplatingNodeChatHistoryResult() => TemplatingNodeChatHistoryResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeSearchResultsResult PickTemplatingNodeSearchResultsResult() => IsTemplatingNodeSearchResultsResult
-            ? TemplatingNodeSearchResultsResult!
+        public global::Vellum.TemplatingNodeSearchResultsResult PickTemplatingNodeSearchResultsResult() => TemplatingNodeSearchResultsResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeSearchResultsResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeErrorResult PickTemplatingNodeErrorResult() => IsTemplatingNodeErrorResult
-            ? TemplatingNodeErrorResult!
+        public global::Vellum.TemplatingNodeErrorResult PickTemplatingNodeErrorResult() => TemplatingNodeErrorResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeArrayResult PickTemplatingNodeArrayResult() => IsTemplatingNodeArrayResult
-            ? TemplatingNodeArrayResult!
+        public global::Vellum.TemplatingNodeArrayResult PickTemplatingNodeArrayResult() => TemplatingNodeArrayResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeArrayResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeFunctionCallResult PickTemplatingNodeFunctionCallResult() => IsTemplatingNodeFunctionCallResult
-            ? TemplatingNodeFunctionCallResult!
+        public global::Vellum.TemplatingNodeFunctionCallResult PickTemplatingNodeFunctionCallResult() => TemplatingNodeFunctionCallResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TemplatingNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTemplatingNodeStringResult && templatingNodeStringResult != null)
+            if (TemplatingNodeStringResult is { } __value0 && templatingNodeStringResult != null)
             {
-                return templatingNodeStringResult(TemplatingNodeStringResult!);
+                return templatingNodeStringResult(__value0);
             }
-            else if (IsTemplatingNodeNumberResult && templatingNodeNumberResult != null)
+            else if (TemplatingNodeNumberResult is { } __value1 && templatingNodeNumberResult != null)
             {
-                return templatingNodeNumberResult(TemplatingNodeNumberResult!);
+                return templatingNodeNumberResult(__value1);
             }
-            else if (IsTemplatingNodeJsonResult && templatingNodeJsonResult != null)
+            else if (TemplatingNodeJsonResult is { } __value2 && templatingNodeJsonResult != null)
             {
-                return templatingNodeJsonResult(TemplatingNodeJsonResult!);
+                return templatingNodeJsonResult(__value2);
             }
-            else if (IsTemplatingNodeChatHistoryResult && templatingNodeChatHistoryResult != null)
+            else if (TemplatingNodeChatHistoryResult is { } __value3 && templatingNodeChatHistoryResult != null)
             {
-                return templatingNodeChatHistoryResult(TemplatingNodeChatHistoryResult!);
+                return templatingNodeChatHistoryResult(__value3);
             }
-            else if (IsTemplatingNodeSearchResultsResult && templatingNodeSearchResultsResult != null)
+            else if (TemplatingNodeSearchResultsResult is { } __value4 && templatingNodeSearchResultsResult != null)
             {
-                return templatingNodeSearchResultsResult(TemplatingNodeSearchResultsResult!);
+                return templatingNodeSearchResultsResult(__value4);
             }
-            else if (IsTemplatingNodeErrorResult && templatingNodeErrorResult != null)
+            else if (TemplatingNodeErrorResult is { } __value5 && templatingNodeErrorResult != null)
             {
-                return templatingNodeErrorResult(TemplatingNodeErrorResult!);
+                return templatingNodeErrorResult(__value5);
             }
-            else if (IsTemplatingNodeArrayResult && templatingNodeArrayResult != null)
+            else if (TemplatingNodeArrayResult is { } __value6 && templatingNodeArrayResult != null)
             {
-                return templatingNodeArrayResult(TemplatingNodeArrayResult!);
+                return templatingNodeArrayResult(__value6);
             }
-            else if (IsTemplatingNodeFunctionCallResult && templatingNodeFunctionCallResult != null)
+            else if (TemplatingNodeFunctionCallResult is { } __value7 && templatingNodeFunctionCallResult != null)
             {
-                return templatingNodeFunctionCallResult(TemplatingNodeFunctionCallResult!);
+                return templatingNodeFunctionCallResult(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTemplatingNodeStringResult)
+            if (TemplatingNodeStringResult is { } __value0)
             {
-                templatingNodeStringResult?.Invoke(TemplatingNodeStringResult!);
+                templatingNodeStringResult?.Invoke(__value0);
             }
-            else if (IsTemplatingNodeNumberResult)
+            else if (TemplatingNodeNumberResult is { } __value1)
             {
-                templatingNodeNumberResult?.Invoke(TemplatingNodeNumberResult!);
+                templatingNodeNumberResult?.Invoke(__value1);
             }
-            else if (IsTemplatingNodeJsonResult)
+            else if (TemplatingNodeJsonResult is { } __value2)
             {
-                templatingNodeJsonResult?.Invoke(TemplatingNodeJsonResult!);
+                templatingNodeJsonResult?.Invoke(__value2);
             }
-            else if (IsTemplatingNodeChatHistoryResult)
+            else if (TemplatingNodeChatHistoryResult is { } __value3)
             {
-                templatingNodeChatHistoryResult?.Invoke(TemplatingNodeChatHistoryResult!);
+                templatingNodeChatHistoryResult?.Invoke(__value3);
             }
-            else if (IsTemplatingNodeSearchResultsResult)
+            else if (TemplatingNodeSearchResultsResult is { } __value4)
             {
-                templatingNodeSearchResultsResult?.Invoke(TemplatingNodeSearchResultsResult!);
+                templatingNodeSearchResultsResult?.Invoke(__value4);
             }
-            else if (IsTemplatingNodeErrorResult)
+            else if (TemplatingNodeErrorResult is { } __value5)
             {
-                templatingNodeErrorResult?.Invoke(TemplatingNodeErrorResult!);
+                templatingNodeErrorResult?.Invoke(__value5);
             }
-            else if (IsTemplatingNodeArrayResult)
+            else if (TemplatingNodeArrayResult is { } __value6)
             {
-                templatingNodeArrayResult?.Invoke(TemplatingNodeArrayResult!);
+                templatingNodeArrayResult?.Invoke(__value6);
             }
-            else if (IsTemplatingNodeFunctionCallResult)
+            else if (TemplatingNodeFunctionCallResult is { } __value7)
             {
-                templatingNodeFunctionCallResult?.Invoke(TemplatingNodeFunctionCallResult!);
+                templatingNodeFunctionCallResult?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTemplatingNodeStringResult)
+            if (TemplatingNodeStringResult is { } __value0)
             {
-                templatingNodeStringResult?.Invoke(TemplatingNodeStringResult!);
+                templatingNodeStringResult?.Invoke(__value0);
             }
-            else if (IsTemplatingNodeNumberResult)
+            else if (TemplatingNodeNumberResult is { } __value1)
             {
-                templatingNodeNumberResult?.Invoke(TemplatingNodeNumberResult!);
+                templatingNodeNumberResult?.Invoke(__value1);
             }
-            else if (IsTemplatingNodeJsonResult)
+            else if (TemplatingNodeJsonResult is { } __value2)
             {
-                templatingNodeJsonResult?.Invoke(TemplatingNodeJsonResult!);
+                templatingNodeJsonResult?.Invoke(__value2);
             }
-            else if (IsTemplatingNodeChatHistoryResult)
+            else if (TemplatingNodeChatHistoryResult is { } __value3)
             {
-                templatingNodeChatHistoryResult?.Invoke(TemplatingNodeChatHistoryResult!);
+                templatingNodeChatHistoryResult?.Invoke(__value3);
             }
-            else if (IsTemplatingNodeSearchResultsResult)
+            else if (TemplatingNodeSearchResultsResult is { } __value4)
             {
-                templatingNodeSearchResultsResult?.Invoke(TemplatingNodeSearchResultsResult!);
+                templatingNodeSearchResultsResult?.Invoke(__value4);
             }
-            else if (IsTemplatingNodeErrorResult)
+            else if (TemplatingNodeErrorResult is { } __value5)
             {
-                templatingNodeErrorResult?.Invoke(TemplatingNodeErrorResult!);
+                templatingNodeErrorResult?.Invoke(__value5);
             }
-            else if (IsTemplatingNodeArrayResult)
+            else if (TemplatingNodeArrayResult is { } __value6)
             {
-                templatingNodeArrayResult?.Invoke(TemplatingNodeArrayResult!);
+                templatingNodeArrayResult?.Invoke(__value6);
             }
-            else if (IsTemplatingNodeFunctionCallResult)
+            else if (TemplatingNodeFunctionCallResult is { } __value7)
             {
-                templatingNodeFunctionCallResult?.Invoke(TemplatingNodeFunctionCallResult!);
+                templatingNodeFunctionCallResult?.Invoke(__value7);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEventError PickWorkflowEventError() => IsWorkflowEventError
-            ? WorkflowEventError!
+        public global::Vellum.WorkflowEventError PickWorkflowEventError() => WorkflowEventError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventError' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowInitializationError PickWorkflowInitializationError() => IsWorkflowInitializationError
-            ? WorkflowInitializationError!
+        public global::Vellum.WorkflowInitializationError PickWorkflowInitializationError() => WorkflowInitializationError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowInitializationError' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowEventError && workflowEventError != null)
+            if (WorkflowEventError is { } __value0 && workflowEventError != null)
             {
-                return workflowEventError(WorkflowEventError!);
+                return workflowEventError(__value0);
             }
-            else if (IsWorkflowInitializationError && workflowInitializationError != null)
+            else if (WorkflowInitializationError is { } __value1 && workflowInitializationError != null)
             {
-                return workflowInitializationError(WorkflowInitializationError!);
+                return workflowInitializationError(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowEventError)
+            if (WorkflowEventError is { } __value0)
             {
-                workflowEventError?.Invoke(WorkflowEventError!);
+                workflowEventError?.Invoke(__value0);
             }
-            else if (IsWorkflowInitializationError)
+            else if (WorkflowInitializationError is { } __value1)
             {
-                workflowInitializationError?.Invoke(WorkflowInitializationError!);
+                workflowInitializationError?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowEventError)
+            if (WorkflowEventError is { } __value0)
             {
-                workflowEventError?.Invoke(WorkflowEventError!);
+                workflowEventError?.Invoke(__value0);
             }
-            else if (IsWorkflowInitializationError)
+            else if (WorkflowInitializationError is { } __value1)
             {
-                workflowInitializationError?.Invoke(WorkflowInitializationError!);
+                workflowInitializationError?.Invoke(__value1);
             }
         }
 

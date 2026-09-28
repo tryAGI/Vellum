@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetadataFilterConfigRequest PickMetadataFilterConfigRequest() => IsMetadataFilterConfigRequest
-            ? MetadataFilterConfigRequest!
+        public global::Vellum.MetadataFilterConfigRequest PickMetadataFilterConfigRequest() => MetadataFilterConfigRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MetadataFilterConfigRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueLogicalExpressionRequest PickVellumValueLogicalExpressionRequest() => IsVellumValueLogicalExpressionRequest
-            ? VellumValueLogicalExpressionRequest!.Value
+        public global::Vellum.VellumValueLogicalExpressionRequest PickVellumValueLogicalExpressionRequest() => VellumValueLogicalExpressionRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumValueLogicalExpressionRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsMetadataFilterConfigRequest && metadataFilterConfigRequest != null)
+            if (MetadataFilterConfigRequest is { } __value0 && metadataFilterConfigRequest != null)
             {
-                return metadataFilterConfigRequest(MetadataFilterConfigRequest!);
+                return metadataFilterConfigRequest(__value0);
             }
-            else if (IsVellumValueLogicalExpressionRequest && vellumValueLogicalExpressionRequest != null)
+            else if (VellumValueLogicalExpressionRequest is { } __value1 && vellumValueLogicalExpressionRequest != null)
             {
-                return vellumValueLogicalExpressionRequest(VellumValueLogicalExpressionRequest!);
+                return vellumValueLogicalExpressionRequest(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsMetadataFilterConfigRequest)
+            if (MetadataFilterConfigRequest is { } __value0)
             {
-                metadataFilterConfigRequest?.Invoke(MetadataFilterConfigRequest!);
+                metadataFilterConfigRequest?.Invoke(__value0);
             }
-            else if (IsVellumValueLogicalExpressionRequest)
+            else if (VellumValueLogicalExpressionRequest is { } __value1)
             {
-                vellumValueLogicalExpressionRequest?.Invoke(VellumValueLogicalExpressionRequest!);
+                vellumValueLogicalExpressionRequest?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsMetadataFilterConfigRequest)
+            if (MetadataFilterConfigRequest is { } __value0)
             {
-                metadataFilterConfigRequest?.Invoke(MetadataFilterConfigRequest!);
+                metadataFilterConfigRequest?.Invoke(__value0);
             }
-            else if (IsVellumValueLogicalExpressionRequest)
+            else if (VellumValueLogicalExpressionRequest is { } __value1)
             {
-                vellumValueLogicalExpressionRequest?.Invoke(VellumValueLogicalExpressionRequest!);
+                vellumValueLogicalExpressionRequest?.Invoke(__value1);
             }
         }
 

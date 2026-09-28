@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringInputRequest PickStringInputRequest() => IsStringInputRequest
-            ? StringInputRequest!
+        public global::Vellum.StringInputRequest PickStringInputRequest() => StringInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StringInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.JSONInputRequest PickJSONInputRequest() => IsJSONInputRequest
-            ? JSONInputRequest!
+        public global::Vellum.JSONInputRequest PickJSONInputRequest() => JSONInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JSONInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ChatHistoryInputRequest PickChatHistoryInputRequest() => IsChatHistoryInputRequest
-            ? ChatHistoryInputRequest!
+        public global::Vellum.ChatHistoryInputRequest PickChatHistoryInputRequest() => ChatHistoryInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChatHistoryInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioInputRequest PickAudioInputRequest() => IsAudioInputRequest
-            ? AudioInputRequest!
+        public global::Vellum.AudioInputRequest PickAudioInputRequest() => AudioInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AudioInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoInputRequest PickVideoInputRequest() => IsVideoInputRequest
-            ? VideoInputRequest!
+        public global::Vellum.VideoInputRequest PickVideoInputRequest() => VideoInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageInputRequest PickImageInputRequest() => IsImageInputRequest
-            ? ImageInputRequest!
+        public global::Vellum.ImageInputRequest PickImageInputRequest() => ImageInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ImageInputRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentInputRequest PickDocumentInputRequest() => IsDocumentInputRequest
-            ? DocumentInputRequest!
+        public global::Vellum.DocumentInputRequest PickDocumentInputRequest() => DocumentInputRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentInputRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -502,33 +502,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringInputRequest && stringInputRequest != null)
+            if (StringInputRequest is { } __value0 && stringInputRequest != null)
             {
-                return stringInputRequest(StringInputRequest!);
+                return stringInputRequest(__value0);
             }
-            else if (IsJSONInputRequest && jSONInputRequest != null)
+            else if (JSONInputRequest is { } __value1 && jSONInputRequest != null)
             {
-                return jSONInputRequest(JSONInputRequest!);
+                return jSONInputRequest(__value1);
             }
-            else if (IsChatHistoryInputRequest && chatHistoryInputRequest != null)
+            else if (ChatHistoryInputRequest is { } __value2 && chatHistoryInputRequest != null)
             {
-                return chatHistoryInputRequest(ChatHistoryInputRequest!);
+                return chatHistoryInputRequest(__value2);
             }
-            else if (IsAudioInputRequest && audioInputRequest != null)
+            else if (AudioInputRequest is { } __value3 && audioInputRequest != null)
             {
-                return audioInputRequest(AudioInputRequest!);
+                return audioInputRequest(__value3);
             }
-            else if (IsVideoInputRequest && videoInputRequest != null)
+            else if (VideoInputRequest is { } __value4 && videoInputRequest != null)
             {
-                return videoInputRequest(VideoInputRequest!);
+                return videoInputRequest(__value4);
             }
-            else if (IsImageInputRequest && imageInputRequest != null)
+            else if (ImageInputRequest is { } __value5 && imageInputRequest != null)
             {
-                return imageInputRequest(ImageInputRequest!);
+                return imageInputRequest(__value5);
             }
-            else if (IsDocumentInputRequest && documentInputRequest != null)
+            else if (DocumentInputRequest is { } __value6 && documentInputRequest != null)
             {
-                return documentInputRequest(DocumentInputRequest!);
+                return documentInputRequest(__value6);
             }
 
             return default(TResult);
@@ -558,33 +558,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringInputRequest)
+            if (StringInputRequest is { } __value0)
             {
-                stringInputRequest?.Invoke(StringInputRequest!);
+                stringInputRequest?.Invoke(__value0);
             }
-            else if (IsJSONInputRequest)
+            else if (JSONInputRequest is { } __value1)
             {
-                jSONInputRequest?.Invoke(JSONInputRequest!);
+                jSONInputRequest?.Invoke(__value1);
             }
-            else if (IsChatHistoryInputRequest)
+            else if (ChatHistoryInputRequest is { } __value2)
             {
-                chatHistoryInputRequest?.Invoke(ChatHistoryInputRequest!);
+                chatHistoryInputRequest?.Invoke(__value2);
             }
-            else if (IsAudioInputRequest)
+            else if (AudioInputRequest is { } __value3)
             {
-                audioInputRequest?.Invoke(AudioInputRequest!);
+                audioInputRequest?.Invoke(__value3);
             }
-            else if (IsVideoInputRequest)
+            else if (VideoInputRequest is { } __value4)
             {
-                videoInputRequest?.Invoke(VideoInputRequest!);
+                videoInputRequest?.Invoke(__value4);
             }
-            else if (IsImageInputRequest)
+            else if (ImageInputRequest is { } __value5)
             {
-                imageInputRequest?.Invoke(ImageInputRequest!);
+                imageInputRequest?.Invoke(__value5);
             }
-            else if (IsDocumentInputRequest)
+            else if (DocumentInputRequest is { } __value6)
             {
-                documentInputRequest?.Invoke(DocumentInputRequest!);
+                documentInputRequest?.Invoke(__value6);
             }
         }
 
@@ -606,33 +606,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringInputRequest)
+            if (StringInputRequest is { } __value0)
             {
-                stringInputRequest?.Invoke(StringInputRequest!);
+                stringInputRequest?.Invoke(__value0);
             }
-            else if (IsJSONInputRequest)
+            else if (JSONInputRequest is { } __value1)
             {
-                jSONInputRequest?.Invoke(JSONInputRequest!);
+                jSONInputRequest?.Invoke(__value1);
             }
-            else if (IsChatHistoryInputRequest)
+            else if (ChatHistoryInputRequest is { } __value2)
             {
-                chatHistoryInputRequest?.Invoke(ChatHistoryInputRequest!);
+                chatHistoryInputRequest?.Invoke(__value2);
             }
-            else if (IsAudioInputRequest)
+            else if (AudioInputRequest is { } __value3)
             {
-                audioInputRequest?.Invoke(AudioInputRequest!);
+                audioInputRequest?.Invoke(__value3);
             }
-            else if (IsVideoInputRequest)
+            else if (VideoInputRequest is { } __value4)
             {
-                videoInputRequest?.Invoke(VideoInputRequest!);
+                videoInputRequest?.Invoke(__value4);
             }
-            else if (IsImageInputRequest)
+            else if (ImageInputRequest is { } __value5)
             {
-                imageInputRequest?.Invoke(ImageInputRequest!);
+                imageInputRequest?.Invoke(__value5);
             }
-            else if (IsDocumentInputRequest)
+            else if (DocumentInputRequest is { } __value6)
             {
-                documentInputRequest?.Invoke(DocumentInputRequest!);
+                documentInputRequest?.Invoke(__value6);
             }
         }
 

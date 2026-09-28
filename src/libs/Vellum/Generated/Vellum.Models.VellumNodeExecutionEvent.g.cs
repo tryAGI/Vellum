@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionInitiatedEvent PickNodeExecutionInitiatedEvent() => IsNodeExecutionInitiatedEvent
-            ? NodeExecutionInitiatedEvent!
+        public global::Vellum.NodeExecutionInitiatedEvent PickNodeExecutionInitiatedEvent() => NodeExecutionInitiatedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionInitiatedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionStreamingEvent PickNodeExecutionStreamingEvent() => IsNodeExecutionStreamingEvent
-            ? NodeExecutionStreamingEvent!
+        public global::Vellum.NodeExecutionStreamingEvent PickNodeExecutionStreamingEvent() => NodeExecutionStreamingEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionStreamingEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionFulfilledEvent PickNodeExecutionFulfilledEvent() => IsNodeExecutionFulfilledEvent
-            ? NodeExecutionFulfilledEvent!
+        public global::Vellum.NodeExecutionFulfilledEvent PickNodeExecutionFulfilledEvent() => NodeExecutionFulfilledEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionFulfilledEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionRejectedEvent PickNodeExecutionRejectedEvent() => IsNodeExecutionRejectedEvent
-            ? NodeExecutionRejectedEvent!
+        public global::Vellum.NodeExecutionRejectedEvent PickNodeExecutionRejectedEvent() => NodeExecutionRejectedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionRejectedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionPausedEvent PickNodeExecutionPausedEvent() => IsNodeExecutionPausedEvent
-            ? NodeExecutionPausedEvent!
+        public global::Vellum.NodeExecutionPausedEvent PickNodeExecutionPausedEvent() => NodeExecutionPausedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionPausedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionResumedEvent PickNodeExecutionResumedEvent() => IsNodeExecutionResumedEvent
-            ? NodeExecutionResumedEvent!
+        public global::Vellum.NodeExecutionResumedEvent PickNodeExecutionResumedEvent() => NodeExecutionResumedEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionResumedEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionLogEvent PickNodeExecutionLogEvent() => IsNodeExecutionLogEvent
-            ? NodeExecutionLogEvent!
+        public global::Vellum.NodeExecutionLogEvent PickNodeExecutionLogEvent() => NodeExecutionLogEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeExecutionLogEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -502,33 +502,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeExecutionInitiatedEvent && nodeExecutionInitiatedEvent != null)
+            if (NodeExecutionInitiatedEvent is { } __value0 && nodeExecutionInitiatedEvent != null)
             {
-                return nodeExecutionInitiatedEvent(NodeExecutionInitiatedEvent!);
+                return nodeExecutionInitiatedEvent(__value0);
             }
-            else if (IsNodeExecutionStreamingEvent && nodeExecutionStreamingEvent != null)
+            else if (NodeExecutionStreamingEvent is { } __value1 && nodeExecutionStreamingEvent != null)
             {
-                return nodeExecutionStreamingEvent(NodeExecutionStreamingEvent!);
+                return nodeExecutionStreamingEvent(__value1);
             }
-            else if (IsNodeExecutionFulfilledEvent && nodeExecutionFulfilledEvent != null)
+            else if (NodeExecutionFulfilledEvent is { } __value2 && nodeExecutionFulfilledEvent != null)
             {
-                return nodeExecutionFulfilledEvent(NodeExecutionFulfilledEvent!);
+                return nodeExecutionFulfilledEvent(__value2);
             }
-            else if (IsNodeExecutionRejectedEvent && nodeExecutionRejectedEvent != null)
+            else if (NodeExecutionRejectedEvent is { } __value3 && nodeExecutionRejectedEvent != null)
             {
-                return nodeExecutionRejectedEvent(NodeExecutionRejectedEvent!);
+                return nodeExecutionRejectedEvent(__value3);
             }
-            else if (IsNodeExecutionPausedEvent && nodeExecutionPausedEvent != null)
+            else if (NodeExecutionPausedEvent is { } __value4 && nodeExecutionPausedEvent != null)
             {
-                return nodeExecutionPausedEvent(NodeExecutionPausedEvent!);
+                return nodeExecutionPausedEvent(__value4);
             }
-            else if (IsNodeExecutionResumedEvent && nodeExecutionResumedEvent != null)
+            else if (NodeExecutionResumedEvent is { } __value5 && nodeExecutionResumedEvent != null)
             {
-                return nodeExecutionResumedEvent(NodeExecutionResumedEvent!);
+                return nodeExecutionResumedEvent(__value5);
             }
-            else if (IsNodeExecutionLogEvent && nodeExecutionLogEvent != null)
+            else if (NodeExecutionLogEvent is { } __value6 && nodeExecutionLogEvent != null)
             {
-                return nodeExecutionLogEvent(NodeExecutionLogEvent!);
+                return nodeExecutionLogEvent(__value6);
             }
 
             return default(TResult);
@@ -558,33 +558,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeExecutionInitiatedEvent)
+            if (NodeExecutionInitiatedEvent is { } __value0)
             {
-                nodeExecutionInitiatedEvent?.Invoke(NodeExecutionInitiatedEvent!);
+                nodeExecutionInitiatedEvent?.Invoke(__value0);
             }
-            else if (IsNodeExecutionStreamingEvent)
+            else if (NodeExecutionStreamingEvent is { } __value1)
             {
-                nodeExecutionStreamingEvent?.Invoke(NodeExecutionStreamingEvent!);
+                nodeExecutionStreamingEvent?.Invoke(__value1);
             }
-            else if (IsNodeExecutionFulfilledEvent)
+            else if (NodeExecutionFulfilledEvent is { } __value2)
             {
-                nodeExecutionFulfilledEvent?.Invoke(NodeExecutionFulfilledEvent!);
+                nodeExecutionFulfilledEvent?.Invoke(__value2);
             }
-            else if (IsNodeExecutionRejectedEvent)
+            else if (NodeExecutionRejectedEvent is { } __value3)
             {
-                nodeExecutionRejectedEvent?.Invoke(NodeExecutionRejectedEvent!);
+                nodeExecutionRejectedEvent?.Invoke(__value3);
             }
-            else if (IsNodeExecutionPausedEvent)
+            else if (NodeExecutionPausedEvent is { } __value4)
             {
-                nodeExecutionPausedEvent?.Invoke(NodeExecutionPausedEvent!);
+                nodeExecutionPausedEvent?.Invoke(__value4);
             }
-            else if (IsNodeExecutionResumedEvent)
+            else if (NodeExecutionResumedEvent is { } __value5)
             {
-                nodeExecutionResumedEvent?.Invoke(NodeExecutionResumedEvent!);
+                nodeExecutionResumedEvent?.Invoke(__value5);
             }
-            else if (IsNodeExecutionLogEvent)
+            else if (NodeExecutionLogEvent is { } __value6)
             {
-                nodeExecutionLogEvent?.Invoke(NodeExecutionLogEvent!);
+                nodeExecutionLogEvent?.Invoke(__value6);
             }
         }
 
@@ -606,33 +606,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeExecutionInitiatedEvent)
+            if (NodeExecutionInitiatedEvent is { } __value0)
             {
-                nodeExecutionInitiatedEvent?.Invoke(NodeExecutionInitiatedEvent!);
+                nodeExecutionInitiatedEvent?.Invoke(__value0);
             }
-            else if (IsNodeExecutionStreamingEvent)
+            else if (NodeExecutionStreamingEvent is { } __value1)
             {
-                nodeExecutionStreamingEvent?.Invoke(NodeExecutionStreamingEvent!);
+                nodeExecutionStreamingEvent?.Invoke(__value1);
             }
-            else if (IsNodeExecutionFulfilledEvent)
+            else if (NodeExecutionFulfilledEvent is { } __value2)
             {
-                nodeExecutionFulfilledEvent?.Invoke(NodeExecutionFulfilledEvent!);
+                nodeExecutionFulfilledEvent?.Invoke(__value2);
             }
-            else if (IsNodeExecutionRejectedEvent)
+            else if (NodeExecutionRejectedEvent is { } __value3)
             {
-                nodeExecutionRejectedEvent?.Invoke(NodeExecutionRejectedEvent!);
+                nodeExecutionRejectedEvent?.Invoke(__value3);
             }
-            else if (IsNodeExecutionPausedEvent)
+            else if (NodeExecutionPausedEvent is { } __value4)
             {
-                nodeExecutionPausedEvent?.Invoke(NodeExecutionPausedEvent!);
+                nodeExecutionPausedEvent?.Invoke(__value4);
             }
-            else if (IsNodeExecutionResumedEvent)
+            else if (NodeExecutionResumedEvent is { } __value5)
             {
-                nodeExecutionResumedEvent?.Invoke(NodeExecutionResumedEvent!);
+                nodeExecutionResumedEvent?.Invoke(__value5);
             }
-            else if (IsNodeExecutionLogEvent)
+            else if (NodeExecutionLogEvent is { } __value6)
             {
-                nodeExecutionLogEvent?.Invoke(NodeExecutionLogEvent!);
+                nodeExecutionLogEvent?.Invoke(__value6);
             }
         }
 

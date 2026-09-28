@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent PickFulfilledExecuteWorkflowWorkflowResultEvent() => IsFulfilledExecuteWorkflowWorkflowResultEvent
-            ? FulfilledExecuteWorkflowWorkflowResultEvent!
+        public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent PickFulfilledExecuteWorkflowWorkflowResultEvent() => FulfilledExecuteWorkflowWorkflowResultEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent PickRejectedExecuteWorkflowWorkflowResultEvent() => IsRejectedExecuteWorkflowWorkflowResultEvent
-            ? RejectedExecuteWorkflowWorkflowResultEvent!
+        public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent PickRejectedExecuteWorkflowWorkflowResultEvent() => RejectedExecuteWorkflowWorkflowResultEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecuteWorkflowWorkflowResultEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFulfilledExecuteWorkflowWorkflowResultEvent && fulfilledExecuteWorkflowWorkflowResultEvent != null)
+            if (FulfilledExecuteWorkflowWorkflowResultEvent is { } __value0 && fulfilledExecuteWorkflowWorkflowResultEvent != null)
             {
-                return fulfilledExecuteWorkflowWorkflowResultEvent(FulfilledExecuteWorkflowWorkflowResultEvent!);
+                return fulfilledExecuteWorkflowWorkflowResultEvent(__value0);
             }
-            else if (IsRejectedExecuteWorkflowWorkflowResultEvent && rejectedExecuteWorkflowWorkflowResultEvent != null)
+            else if (RejectedExecuteWorkflowWorkflowResultEvent is { } __value1 && rejectedExecuteWorkflowWorkflowResultEvent != null)
             {
-                return rejectedExecuteWorkflowWorkflowResultEvent(RejectedExecuteWorkflowWorkflowResultEvent!);
+                return rejectedExecuteWorkflowWorkflowResultEvent(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFulfilledExecuteWorkflowWorkflowResultEvent)
+            if (FulfilledExecuteWorkflowWorkflowResultEvent is { } __value0)
             {
-                fulfilledExecuteWorkflowWorkflowResultEvent?.Invoke(FulfilledExecuteWorkflowWorkflowResultEvent!);
+                fulfilledExecuteWorkflowWorkflowResultEvent?.Invoke(__value0);
             }
-            else if (IsRejectedExecuteWorkflowWorkflowResultEvent)
+            else if (RejectedExecuteWorkflowWorkflowResultEvent is { } __value1)
             {
-                rejectedExecuteWorkflowWorkflowResultEvent?.Invoke(RejectedExecuteWorkflowWorkflowResultEvent!);
+                rejectedExecuteWorkflowWorkflowResultEvent?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFulfilledExecuteWorkflowWorkflowResultEvent)
+            if (FulfilledExecuteWorkflowWorkflowResultEvent is { } __value0)
             {
-                fulfilledExecuteWorkflowWorkflowResultEvent?.Invoke(FulfilledExecuteWorkflowWorkflowResultEvent!);
+                fulfilledExecuteWorkflowWorkflowResultEvent?.Invoke(__value0);
             }
-            else if (IsRejectedExecuteWorkflowWorkflowResultEvent)
+            else if (RejectedExecuteWorkflowWorkflowResultEvent is { } __value1)
             {
-                rejectedExecuteWorkflowWorkflowResultEvent?.Invoke(RejectedExecuteWorkflowWorkflowResultEvent!);
+                rejectedExecuteWorkflowWorkflowResultEvent?.Invoke(__value1);
             }
         }
 

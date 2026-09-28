@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricStringOutput PickTestSuiteRunMetricStringOutput() => IsTestSuiteRunMetricStringOutput
-            ? TestSuiteRunMetricStringOutput!
+        public global::Vellum.TestSuiteRunMetricStringOutput PickTestSuiteRunMetricStringOutput() => TestSuiteRunMetricStringOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricStringOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricNumberOutput PickTestSuiteRunMetricNumberOutput() => IsTestSuiteRunMetricNumberOutput
-            ? TestSuiteRunMetricNumberOutput!
+        public global::Vellum.TestSuiteRunMetricNumberOutput PickTestSuiteRunMetricNumberOutput() => TestSuiteRunMetricNumberOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricNumberOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricJSONOutput PickTestSuiteRunMetricJSONOutput() => IsTestSuiteRunMetricJSONOutput
-            ? TestSuiteRunMetricJSONOutput!
+        public global::Vellum.TestSuiteRunMetricJSONOutput PickTestSuiteRunMetricJSONOutput() => TestSuiteRunMetricJSONOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricJSONOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricErrorOutput PickTestSuiteRunMetricErrorOutput() => IsTestSuiteRunMetricErrorOutput
-            ? TestSuiteRunMetricErrorOutput!
+        public global::Vellum.TestSuiteRunMetricErrorOutput PickTestSuiteRunMetricErrorOutput() => TestSuiteRunMetricErrorOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricErrorOutput' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricArrayOutput PickTestSuiteRunMetricArrayOutput() => IsTestSuiteRunMetricArrayOutput
-            ? TestSuiteRunMetricArrayOutput!
+        public global::Vellum.TestSuiteRunMetricArrayOutput PickTestSuiteRunMetricArrayOutput() => TestSuiteRunMetricArrayOutput is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteRunMetricArrayOutput' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunMetricStringOutput && testSuiteRunMetricStringOutput != null)
+            if (TestSuiteRunMetricStringOutput is { } __value0 && testSuiteRunMetricStringOutput != null)
             {
-                return testSuiteRunMetricStringOutput(TestSuiteRunMetricStringOutput!);
+                return testSuiteRunMetricStringOutput(__value0);
             }
-            else if (IsTestSuiteRunMetricNumberOutput && testSuiteRunMetricNumberOutput != null)
+            else if (TestSuiteRunMetricNumberOutput is { } __value1 && testSuiteRunMetricNumberOutput != null)
             {
-                return testSuiteRunMetricNumberOutput(TestSuiteRunMetricNumberOutput!);
+                return testSuiteRunMetricNumberOutput(__value1);
             }
-            else if (IsTestSuiteRunMetricJSONOutput && testSuiteRunMetricJSONOutput != null)
+            else if (TestSuiteRunMetricJSONOutput is { } __value2 && testSuiteRunMetricJSONOutput != null)
             {
-                return testSuiteRunMetricJSONOutput(TestSuiteRunMetricJSONOutput!);
+                return testSuiteRunMetricJSONOutput(__value2);
             }
-            else if (IsTestSuiteRunMetricErrorOutput && testSuiteRunMetricErrorOutput != null)
+            else if (TestSuiteRunMetricErrorOutput is { } __value3 && testSuiteRunMetricErrorOutput != null)
             {
-                return testSuiteRunMetricErrorOutput(TestSuiteRunMetricErrorOutput!);
+                return testSuiteRunMetricErrorOutput(__value3);
             }
-            else if (IsTestSuiteRunMetricArrayOutput && testSuiteRunMetricArrayOutput != null)
+            else if (TestSuiteRunMetricArrayOutput is { } __value4 && testSuiteRunMetricArrayOutput != null)
             {
-                return testSuiteRunMetricArrayOutput(TestSuiteRunMetricArrayOutput!);
+                return testSuiteRunMetricArrayOutput(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunMetricStringOutput)
+            if (TestSuiteRunMetricStringOutput is { } __value0)
             {
-                testSuiteRunMetricStringOutput?.Invoke(TestSuiteRunMetricStringOutput!);
+                testSuiteRunMetricStringOutput?.Invoke(__value0);
             }
-            else if (IsTestSuiteRunMetricNumberOutput)
+            else if (TestSuiteRunMetricNumberOutput is { } __value1)
             {
-                testSuiteRunMetricNumberOutput?.Invoke(TestSuiteRunMetricNumberOutput!);
+                testSuiteRunMetricNumberOutput?.Invoke(__value1);
             }
-            else if (IsTestSuiteRunMetricJSONOutput)
+            else if (TestSuiteRunMetricJSONOutput is { } __value2)
             {
-                testSuiteRunMetricJSONOutput?.Invoke(TestSuiteRunMetricJSONOutput!);
+                testSuiteRunMetricJSONOutput?.Invoke(__value2);
             }
-            else if (IsTestSuiteRunMetricErrorOutput)
+            else if (TestSuiteRunMetricErrorOutput is { } __value3)
             {
-                testSuiteRunMetricErrorOutput?.Invoke(TestSuiteRunMetricErrorOutput!);
+                testSuiteRunMetricErrorOutput?.Invoke(__value3);
             }
-            else if (IsTestSuiteRunMetricArrayOutput)
+            else if (TestSuiteRunMetricArrayOutput is { } __value4)
             {
-                testSuiteRunMetricArrayOutput?.Invoke(TestSuiteRunMetricArrayOutput!);
+                testSuiteRunMetricArrayOutput?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteRunMetricStringOutput)
+            if (TestSuiteRunMetricStringOutput is { } __value0)
             {
-                testSuiteRunMetricStringOutput?.Invoke(TestSuiteRunMetricStringOutput!);
+                testSuiteRunMetricStringOutput?.Invoke(__value0);
             }
-            else if (IsTestSuiteRunMetricNumberOutput)
+            else if (TestSuiteRunMetricNumberOutput is { } __value1)
             {
-                testSuiteRunMetricNumberOutput?.Invoke(TestSuiteRunMetricNumberOutput!);
+                testSuiteRunMetricNumberOutput?.Invoke(__value1);
             }
-            else if (IsTestSuiteRunMetricJSONOutput)
+            else if (TestSuiteRunMetricJSONOutput is { } __value2)
             {
-                testSuiteRunMetricJSONOutput?.Invoke(TestSuiteRunMetricJSONOutput!);
+                testSuiteRunMetricJSONOutput?.Invoke(__value2);
             }
-            else if (IsTestSuiteRunMetricErrorOutput)
+            else if (TestSuiteRunMetricErrorOutput is { } __value3)
             {
-                testSuiteRunMetricErrorOutput?.Invoke(TestSuiteRunMetricErrorOutput!);
+                testSuiteRunMetricErrorOutput?.Invoke(__value3);
             }
-            else if (IsTestSuiteRunMetricArrayOutput)
+            else if (TestSuiteRunMetricArrayOutput is { } __value4)
             {
-                testSuiteRunMetricArrayOutput?.Invoke(TestSuiteRunMetricArrayOutput!);
+                testSuiteRunMetricArrayOutput?.Invoke(__value4);
             }
         }
 

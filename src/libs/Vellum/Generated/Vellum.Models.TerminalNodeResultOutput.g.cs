@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeStringResult PickTerminalNodeStringResult() => IsTerminalNodeStringResult
-            ? TerminalNodeStringResult!
+        public global::Vellum.TerminalNodeStringResult PickTerminalNodeStringResult() => TerminalNodeStringResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeStringResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeNumberResult PickTerminalNodeNumberResult() => IsTerminalNodeNumberResult
-            ? TerminalNodeNumberResult!
+        public global::Vellum.TerminalNodeNumberResult PickTerminalNodeNumberResult() => TerminalNodeNumberResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeNumberResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeJsonResult PickTerminalNodeJsonResult() => IsTerminalNodeJsonResult
-            ? TerminalNodeJsonResult!
+        public global::Vellum.TerminalNodeJsonResult PickTerminalNodeJsonResult() => TerminalNodeJsonResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeJsonResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeChatHistoryResult PickTerminalNodeChatHistoryResult() => IsTerminalNodeChatHistoryResult
-            ? TerminalNodeChatHistoryResult!
+        public global::Vellum.TerminalNodeChatHistoryResult PickTerminalNodeChatHistoryResult() => TerminalNodeChatHistoryResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeChatHistoryResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeSearchResultsResult PickTerminalNodeSearchResultsResult() => IsTerminalNodeSearchResultsResult
-            ? TerminalNodeSearchResultsResult!
+        public global::Vellum.TerminalNodeSearchResultsResult PickTerminalNodeSearchResultsResult() => TerminalNodeSearchResultsResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeSearchResultsResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeErrorResult PickTerminalNodeErrorResult() => IsTerminalNodeErrorResult
-            ? TerminalNodeErrorResult!
+        public global::Vellum.TerminalNodeErrorResult PickTerminalNodeErrorResult() => TerminalNodeErrorResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeErrorResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeArrayResult PickTerminalNodeArrayResult() => IsTerminalNodeArrayResult
-            ? TerminalNodeArrayResult!
+        public global::Vellum.TerminalNodeArrayResult PickTerminalNodeArrayResult() => TerminalNodeArrayResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeArrayResult' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeFunctionCallResult PickTerminalNodeFunctionCallResult() => IsTerminalNodeFunctionCallResult
-            ? TerminalNodeFunctionCallResult!
+        public global::Vellum.TerminalNodeFunctionCallResult PickTerminalNodeFunctionCallResult() => TerminalNodeFunctionCallResult is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TerminalNodeFunctionCallResult' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTerminalNodeStringResult && terminalNodeStringResult != null)
+            if (TerminalNodeStringResult is { } __value0 && terminalNodeStringResult != null)
             {
-                return terminalNodeStringResult(TerminalNodeStringResult!);
+                return terminalNodeStringResult(__value0);
             }
-            else if (IsTerminalNodeNumberResult && terminalNodeNumberResult != null)
+            else if (TerminalNodeNumberResult is { } __value1 && terminalNodeNumberResult != null)
             {
-                return terminalNodeNumberResult(TerminalNodeNumberResult!);
+                return terminalNodeNumberResult(__value1);
             }
-            else if (IsTerminalNodeJsonResult && terminalNodeJsonResult != null)
+            else if (TerminalNodeJsonResult is { } __value2 && terminalNodeJsonResult != null)
             {
-                return terminalNodeJsonResult(TerminalNodeJsonResult!);
+                return terminalNodeJsonResult(__value2);
             }
-            else if (IsTerminalNodeChatHistoryResult && terminalNodeChatHistoryResult != null)
+            else if (TerminalNodeChatHistoryResult is { } __value3 && terminalNodeChatHistoryResult != null)
             {
-                return terminalNodeChatHistoryResult(TerminalNodeChatHistoryResult!);
+                return terminalNodeChatHistoryResult(__value3);
             }
-            else if (IsTerminalNodeSearchResultsResult && terminalNodeSearchResultsResult != null)
+            else if (TerminalNodeSearchResultsResult is { } __value4 && terminalNodeSearchResultsResult != null)
             {
-                return terminalNodeSearchResultsResult(TerminalNodeSearchResultsResult!);
+                return terminalNodeSearchResultsResult(__value4);
             }
-            else if (IsTerminalNodeErrorResult && terminalNodeErrorResult != null)
+            else if (TerminalNodeErrorResult is { } __value5 && terminalNodeErrorResult != null)
             {
-                return terminalNodeErrorResult(TerminalNodeErrorResult!);
+                return terminalNodeErrorResult(__value5);
             }
-            else if (IsTerminalNodeArrayResult && terminalNodeArrayResult != null)
+            else if (TerminalNodeArrayResult is { } __value6 && terminalNodeArrayResult != null)
             {
-                return terminalNodeArrayResult(TerminalNodeArrayResult!);
+                return terminalNodeArrayResult(__value6);
             }
-            else if (IsTerminalNodeFunctionCallResult && terminalNodeFunctionCallResult != null)
+            else if (TerminalNodeFunctionCallResult is { } __value7 && terminalNodeFunctionCallResult != null)
             {
-                return terminalNodeFunctionCallResult(TerminalNodeFunctionCallResult!);
+                return terminalNodeFunctionCallResult(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTerminalNodeStringResult)
+            if (TerminalNodeStringResult is { } __value0)
             {
-                terminalNodeStringResult?.Invoke(TerminalNodeStringResult!);
+                terminalNodeStringResult?.Invoke(__value0);
             }
-            else if (IsTerminalNodeNumberResult)
+            else if (TerminalNodeNumberResult is { } __value1)
             {
-                terminalNodeNumberResult?.Invoke(TerminalNodeNumberResult!);
+                terminalNodeNumberResult?.Invoke(__value1);
             }
-            else if (IsTerminalNodeJsonResult)
+            else if (TerminalNodeJsonResult is { } __value2)
             {
-                terminalNodeJsonResult?.Invoke(TerminalNodeJsonResult!);
+                terminalNodeJsonResult?.Invoke(__value2);
             }
-            else if (IsTerminalNodeChatHistoryResult)
+            else if (TerminalNodeChatHistoryResult is { } __value3)
             {
-                terminalNodeChatHistoryResult?.Invoke(TerminalNodeChatHistoryResult!);
+                terminalNodeChatHistoryResult?.Invoke(__value3);
             }
-            else if (IsTerminalNodeSearchResultsResult)
+            else if (TerminalNodeSearchResultsResult is { } __value4)
             {
-                terminalNodeSearchResultsResult?.Invoke(TerminalNodeSearchResultsResult!);
+                terminalNodeSearchResultsResult?.Invoke(__value4);
             }
-            else if (IsTerminalNodeErrorResult)
+            else if (TerminalNodeErrorResult is { } __value5)
             {
-                terminalNodeErrorResult?.Invoke(TerminalNodeErrorResult!);
+                terminalNodeErrorResult?.Invoke(__value5);
             }
-            else if (IsTerminalNodeArrayResult)
+            else if (TerminalNodeArrayResult is { } __value6)
             {
-                terminalNodeArrayResult?.Invoke(TerminalNodeArrayResult!);
+                terminalNodeArrayResult?.Invoke(__value6);
             }
-            else if (IsTerminalNodeFunctionCallResult)
+            else if (TerminalNodeFunctionCallResult is { } __value7)
             {
-                terminalNodeFunctionCallResult?.Invoke(TerminalNodeFunctionCallResult!);
+                terminalNodeFunctionCallResult?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTerminalNodeStringResult)
+            if (TerminalNodeStringResult is { } __value0)
             {
-                terminalNodeStringResult?.Invoke(TerminalNodeStringResult!);
+                terminalNodeStringResult?.Invoke(__value0);
             }
-            else if (IsTerminalNodeNumberResult)
+            else if (TerminalNodeNumberResult is { } __value1)
             {
-                terminalNodeNumberResult?.Invoke(TerminalNodeNumberResult!);
+                terminalNodeNumberResult?.Invoke(__value1);
             }
-            else if (IsTerminalNodeJsonResult)
+            else if (TerminalNodeJsonResult is { } __value2)
             {
-                terminalNodeJsonResult?.Invoke(TerminalNodeJsonResult!);
+                terminalNodeJsonResult?.Invoke(__value2);
             }
-            else if (IsTerminalNodeChatHistoryResult)
+            else if (TerminalNodeChatHistoryResult is { } __value3)
             {
-                terminalNodeChatHistoryResult?.Invoke(TerminalNodeChatHistoryResult!);
+                terminalNodeChatHistoryResult?.Invoke(__value3);
             }
-            else if (IsTerminalNodeSearchResultsResult)
+            else if (TerminalNodeSearchResultsResult is { } __value4)
             {
-                terminalNodeSearchResultsResult?.Invoke(TerminalNodeSearchResultsResult!);
+                terminalNodeSearchResultsResult?.Invoke(__value4);
             }
-            else if (IsTerminalNodeErrorResult)
+            else if (TerminalNodeErrorResult is { } __value5)
             {
-                terminalNodeErrorResult?.Invoke(TerminalNodeErrorResult!);
+                terminalNodeErrorResult?.Invoke(__value5);
             }
-            else if (IsTerminalNodeArrayResult)
+            else if (TerminalNodeArrayResult is { } __value6)
             {
-                terminalNodeArrayResult?.Invoke(TerminalNodeArrayResult!);
+                terminalNodeArrayResult?.Invoke(__value6);
             }
-            else if (IsTerminalNodeFunctionCallResult)
+            else if (TerminalNodeFunctionCallResult is { } __value7)
             {
-                terminalNodeFunctionCallResult?.Invoke(TerminalNodeFunctionCallResult!);
+                terminalNodeFunctionCallResult?.Invoke(__value7);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringVellumValueRequest PickStringVellumValueRequest() => IsStringVellumValueRequest
-            ? StringVellumValueRequest!
+        public global::Vellum.StringVellumValueRequest PickStringVellumValueRequest() => StringVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StringVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NumberVellumValueRequest PickNumberVellumValueRequest() => IsNumberVellumValueRequest
-            ? NumberVellumValueRequest!
+        public global::Vellum.NumberVellumValueRequest PickNumberVellumValueRequest() => NumberVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NumberVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.JsonVellumValueRequest PickJsonVellumValueRequest() => IsJsonVellumValueRequest
-            ? JsonVellumValueRequest!
+        public global::Vellum.JsonVellumValueRequest PickJsonVellumValueRequest() => JsonVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioVellumValueRequest PickAudioVellumValueRequest() => IsAudioVellumValueRequest
-            ? AudioVellumValueRequest!
+        public global::Vellum.AudioVellumValueRequest PickAudioVellumValueRequest() => AudioVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AudioVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoVellumValueRequest PickVideoVellumValueRequest() => IsVideoVellumValueRequest
-            ? VideoVellumValueRequest!
+        public global::Vellum.VideoVellumValueRequest PickVideoVellumValueRequest() => VideoVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageVellumValueRequest PickImageVellumValueRequest() => IsImageVellumValueRequest
-            ? ImageVellumValueRequest!
+        public global::Vellum.ImageVellumValueRequest PickImageVellumValueRequest() => ImageVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ImageVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentVellumValueRequest PickDocumentVellumValueRequest() => IsDocumentVellumValueRequest
-            ? DocumentVellumValueRequest!
+        public global::Vellum.DocumentVellumValueRequest PickDocumentVellumValueRequest() => DocumentVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallVellumValueRequest PickFunctionCallVellumValueRequest() => IsFunctionCallVellumValueRequest
-            ? FunctionCallVellumValueRequest!
+        public global::Vellum.FunctionCallVellumValueRequest PickFunctionCallVellumValueRequest() => FunctionCallVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ErrorVellumValueRequest PickErrorVellumValueRequest() => IsErrorVellumValueRequest
-            ? ErrorVellumValueRequest!
+        public global::Vellum.ErrorVellumValueRequest PickErrorVellumValueRequest() => ErrorVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ArrayVellumValueRequest PickArrayVellumValueRequest() => IsArrayVellumValueRequest
-            ? ArrayVellumValueRequest!
+        public global::Vellum.ArrayVellumValueRequest PickArrayVellumValueRequest() => ArrayVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ArrayVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ChatHistoryVellumValueRequest PickChatHistoryVellumValueRequest() => IsChatHistoryVellumValueRequest
-            ? ChatHistoryVellumValueRequest!
+        public global::Vellum.ChatHistoryVellumValueRequest PickChatHistoryVellumValueRequest() => ChatHistoryVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChatHistoryVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultsVellumValueRequest PickSearchResultsVellumValueRequest() => IsSearchResultsVellumValueRequest
-            ? SearchResultsVellumValueRequest!
+        public global::Vellum.SearchResultsVellumValueRequest PickSearchResultsVellumValueRequest() => SearchResultsVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SearchResultsVellumValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ThinkingVellumValueRequest PickThinkingVellumValueRequest() => IsThinkingVellumValueRequest
-            ? ThinkingVellumValueRequest!
+        public global::Vellum.ThinkingVellumValueRequest PickThinkingVellumValueRequest() => ThinkingVellumValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkingVellumValueRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -892,57 +892,57 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringVellumValueRequest && stringVellumValueRequest != null)
+            if (StringVellumValueRequest is { } __value0 && stringVellumValueRequest != null)
             {
-                return stringVellumValueRequest(StringVellumValueRequest!);
+                return stringVellumValueRequest(__value0);
             }
-            else if (IsNumberVellumValueRequest && numberVellumValueRequest != null)
+            else if (NumberVellumValueRequest is { } __value1 && numberVellumValueRequest != null)
             {
-                return numberVellumValueRequest(NumberVellumValueRequest!);
+                return numberVellumValueRequest(__value1);
             }
-            else if (IsJsonVellumValueRequest && jsonVellumValueRequest != null)
+            else if (JsonVellumValueRequest is { } __value2 && jsonVellumValueRequest != null)
             {
-                return jsonVellumValueRequest(JsonVellumValueRequest!);
+                return jsonVellumValueRequest(__value2);
             }
-            else if (IsAudioVellumValueRequest && audioVellumValueRequest != null)
+            else if (AudioVellumValueRequest is { } __value3 && audioVellumValueRequest != null)
             {
-                return audioVellumValueRequest(AudioVellumValueRequest!);
+                return audioVellumValueRequest(__value3);
             }
-            else if (IsVideoVellumValueRequest && videoVellumValueRequest != null)
+            else if (VideoVellumValueRequest is { } __value4 && videoVellumValueRequest != null)
             {
-                return videoVellumValueRequest(VideoVellumValueRequest!);
+                return videoVellumValueRequest(__value4);
             }
-            else if (IsImageVellumValueRequest && imageVellumValueRequest != null)
+            else if (ImageVellumValueRequest is { } __value5 && imageVellumValueRequest != null)
             {
-                return imageVellumValueRequest(ImageVellumValueRequest!);
+                return imageVellumValueRequest(__value5);
             }
-            else if (IsDocumentVellumValueRequest && documentVellumValueRequest != null)
+            else if (DocumentVellumValueRequest is { } __value6 && documentVellumValueRequest != null)
             {
-                return documentVellumValueRequest(DocumentVellumValueRequest!);
+                return documentVellumValueRequest(__value6);
             }
-            else if (IsFunctionCallVellumValueRequest && functionCallVellumValueRequest != null)
+            else if (FunctionCallVellumValueRequest is { } __value7 && functionCallVellumValueRequest != null)
             {
-                return functionCallVellumValueRequest(FunctionCallVellumValueRequest!);
+                return functionCallVellumValueRequest(__value7);
             }
-            else if (IsErrorVellumValueRequest && errorVellumValueRequest != null)
+            else if (ErrorVellumValueRequest is { } __value8 && errorVellumValueRequest != null)
             {
-                return errorVellumValueRequest(ErrorVellumValueRequest!);
+                return errorVellumValueRequest(__value8);
             }
-            else if (IsArrayVellumValueRequest && arrayVellumValueRequest != null)
+            else if (ArrayVellumValueRequest is { } __value9 && arrayVellumValueRequest != null)
             {
-                return arrayVellumValueRequest(ArrayVellumValueRequest!);
+                return arrayVellumValueRequest(__value9);
             }
-            else if (IsChatHistoryVellumValueRequest && chatHistoryVellumValueRequest != null)
+            else if (ChatHistoryVellumValueRequest is { } __value10 && chatHistoryVellumValueRequest != null)
             {
-                return chatHistoryVellumValueRequest(ChatHistoryVellumValueRequest!);
+                return chatHistoryVellumValueRequest(__value10);
             }
-            else if (IsSearchResultsVellumValueRequest && searchResultsVellumValueRequest != null)
+            else if (SearchResultsVellumValueRequest is { } __value11 && searchResultsVellumValueRequest != null)
             {
-                return searchResultsVellumValueRequest(SearchResultsVellumValueRequest!);
+                return searchResultsVellumValueRequest(__value11);
             }
-            else if (IsThinkingVellumValueRequest && thinkingVellumValueRequest != null)
+            else if (ThinkingVellumValueRequest is { } __value12 && thinkingVellumValueRequest != null)
             {
-                return thinkingVellumValueRequest(ThinkingVellumValueRequest!);
+                return thinkingVellumValueRequest(__value12);
             }
 
             return default(TResult);
@@ -984,57 +984,57 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringVellumValueRequest)
+            if (StringVellumValueRequest is { } __value0)
             {
-                stringVellumValueRequest?.Invoke(StringVellumValueRequest!);
+                stringVellumValueRequest?.Invoke(__value0);
             }
-            else if (IsNumberVellumValueRequest)
+            else if (NumberVellumValueRequest is { } __value1)
             {
-                numberVellumValueRequest?.Invoke(NumberVellumValueRequest!);
+                numberVellumValueRequest?.Invoke(__value1);
             }
-            else if (IsJsonVellumValueRequest)
+            else if (JsonVellumValueRequest is { } __value2)
             {
-                jsonVellumValueRequest?.Invoke(JsonVellumValueRequest!);
+                jsonVellumValueRequest?.Invoke(__value2);
             }
-            else if (IsAudioVellumValueRequest)
+            else if (AudioVellumValueRequest is { } __value3)
             {
-                audioVellumValueRequest?.Invoke(AudioVellumValueRequest!);
+                audioVellumValueRequest?.Invoke(__value3);
             }
-            else if (IsVideoVellumValueRequest)
+            else if (VideoVellumValueRequest is { } __value4)
             {
-                videoVellumValueRequest?.Invoke(VideoVellumValueRequest!);
+                videoVellumValueRequest?.Invoke(__value4);
             }
-            else if (IsImageVellumValueRequest)
+            else if (ImageVellumValueRequest is { } __value5)
             {
-                imageVellumValueRequest?.Invoke(ImageVellumValueRequest!);
+                imageVellumValueRequest?.Invoke(__value5);
             }
-            else if (IsDocumentVellumValueRequest)
+            else if (DocumentVellumValueRequest is { } __value6)
             {
-                documentVellumValueRequest?.Invoke(DocumentVellumValueRequest!);
+                documentVellumValueRequest?.Invoke(__value6);
             }
-            else if (IsFunctionCallVellumValueRequest)
+            else if (FunctionCallVellumValueRequest is { } __value7)
             {
-                functionCallVellumValueRequest?.Invoke(FunctionCallVellumValueRequest!);
+                functionCallVellumValueRequest?.Invoke(__value7);
             }
-            else if (IsErrorVellumValueRequest)
+            else if (ErrorVellumValueRequest is { } __value8)
             {
-                errorVellumValueRequest?.Invoke(ErrorVellumValueRequest!);
+                errorVellumValueRequest?.Invoke(__value8);
             }
-            else if (IsArrayVellumValueRequest)
+            else if (ArrayVellumValueRequest is { } __value9)
             {
-                arrayVellumValueRequest?.Invoke(ArrayVellumValueRequest!);
+                arrayVellumValueRequest?.Invoke(__value9);
             }
-            else if (IsChatHistoryVellumValueRequest)
+            else if (ChatHistoryVellumValueRequest is { } __value10)
             {
-                chatHistoryVellumValueRequest?.Invoke(ChatHistoryVellumValueRequest!);
+                chatHistoryVellumValueRequest?.Invoke(__value10);
             }
-            else if (IsSearchResultsVellumValueRequest)
+            else if (SearchResultsVellumValueRequest is { } __value11)
             {
-                searchResultsVellumValueRequest?.Invoke(SearchResultsVellumValueRequest!);
+                searchResultsVellumValueRequest?.Invoke(__value11);
             }
-            else if (IsThinkingVellumValueRequest)
+            else if (ThinkingVellumValueRequest is { } __value12)
             {
-                thinkingVellumValueRequest?.Invoke(ThinkingVellumValueRequest!);
+                thinkingVellumValueRequest?.Invoke(__value12);
             }
         }
 
@@ -1062,57 +1062,57 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringVellumValueRequest)
+            if (StringVellumValueRequest is { } __value0)
             {
-                stringVellumValueRequest?.Invoke(StringVellumValueRequest!);
+                stringVellumValueRequest?.Invoke(__value0);
             }
-            else if (IsNumberVellumValueRequest)
+            else if (NumberVellumValueRequest is { } __value1)
             {
-                numberVellumValueRequest?.Invoke(NumberVellumValueRequest!);
+                numberVellumValueRequest?.Invoke(__value1);
             }
-            else if (IsJsonVellumValueRequest)
+            else if (JsonVellumValueRequest is { } __value2)
             {
-                jsonVellumValueRequest?.Invoke(JsonVellumValueRequest!);
+                jsonVellumValueRequest?.Invoke(__value2);
             }
-            else if (IsAudioVellumValueRequest)
+            else if (AudioVellumValueRequest is { } __value3)
             {
-                audioVellumValueRequest?.Invoke(AudioVellumValueRequest!);
+                audioVellumValueRequest?.Invoke(__value3);
             }
-            else if (IsVideoVellumValueRequest)
+            else if (VideoVellumValueRequest is { } __value4)
             {
-                videoVellumValueRequest?.Invoke(VideoVellumValueRequest!);
+                videoVellumValueRequest?.Invoke(__value4);
             }
-            else if (IsImageVellumValueRequest)
+            else if (ImageVellumValueRequest is { } __value5)
             {
-                imageVellumValueRequest?.Invoke(ImageVellumValueRequest!);
+                imageVellumValueRequest?.Invoke(__value5);
             }
-            else if (IsDocumentVellumValueRequest)
+            else if (DocumentVellumValueRequest is { } __value6)
             {
-                documentVellumValueRequest?.Invoke(DocumentVellumValueRequest!);
+                documentVellumValueRequest?.Invoke(__value6);
             }
-            else if (IsFunctionCallVellumValueRequest)
+            else if (FunctionCallVellumValueRequest is { } __value7)
             {
-                functionCallVellumValueRequest?.Invoke(FunctionCallVellumValueRequest!);
+                functionCallVellumValueRequest?.Invoke(__value7);
             }
-            else if (IsErrorVellumValueRequest)
+            else if (ErrorVellumValueRequest is { } __value8)
             {
-                errorVellumValueRequest?.Invoke(ErrorVellumValueRequest!);
+                errorVellumValueRequest?.Invoke(__value8);
             }
-            else if (IsArrayVellumValueRequest)
+            else if (ArrayVellumValueRequest is { } __value9)
             {
-                arrayVellumValueRequest?.Invoke(ArrayVellumValueRequest!);
+                arrayVellumValueRequest?.Invoke(__value9);
             }
-            else if (IsChatHistoryVellumValueRequest)
+            else if (ChatHistoryVellumValueRequest is { } __value10)
             {
-                chatHistoryVellumValueRequest?.Invoke(ChatHistoryVellumValueRequest!);
+                chatHistoryVellumValueRequest?.Invoke(__value10);
             }
-            else if (IsSearchResultsVellumValueRequest)
+            else if (SearchResultsVellumValueRequest is { } __value11)
             {
-                searchResultsVellumValueRequest?.Invoke(SearchResultsVellumValueRequest!);
+                searchResultsVellumValueRequest?.Invoke(__value11);
             }
-            else if (IsThinkingVellumValueRequest)
+            else if (ThinkingVellumValueRequest is { } __value12)
             {
-                thinkingVellumValueRequest?.Invoke(ThinkingVellumValueRequest!);
+                thinkingVellumValueRequest?.Invoke(__value12);
             }
         }
 

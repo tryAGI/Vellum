@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputStringVariableValue PickScenarioInputStringVariableValue() => IsScenarioInputStringVariableValue
-            ? ScenarioInputStringVariableValue!
+        public global::Vellum.ScenarioInputStringVariableValue PickScenarioInputStringVariableValue() => ScenarioInputStringVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputStringVariableValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputJsonVariableValue PickScenarioInputJsonVariableValue() => IsScenarioInputJsonVariableValue
-            ? ScenarioInputJsonVariableValue!
+        public global::Vellum.ScenarioInputJsonVariableValue PickScenarioInputJsonVariableValue() => ScenarioInputJsonVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputJsonVariableValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputChatHistoryVariableValue PickScenarioInputChatHistoryVariableValue() => IsScenarioInputChatHistoryVariableValue
-            ? ScenarioInputChatHistoryVariableValue!
+        public global::Vellum.ScenarioInputChatHistoryVariableValue PickScenarioInputChatHistoryVariableValue() => ScenarioInputChatHistoryVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputChatHistoryVariableValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputAudioVariableValue PickScenarioInputAudioVariableValue() => IsScenarioInputAudioVariableValue
-            ? ScenarioInputAudioVariableValue!
+        public global::Vellum.ScenarioInputAudioVariableValue PickScenarioInputAudioVariableValue() => ScenarioInputAudioVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputAudioVariableValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputVideoVariableValue PickScenarioInputVideoVariableValue() => IsScenarioInputVideoVariableValue
-            ? ScenarioInputVideoVariableValue!
+        public global::Vellum.ScenarioInputVideoVariableValue PickScenarioInputVideoVariableValue() => ScenarioInputVideoVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputVideoVariableValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputImageVariableValue PickScenarioInputImageVariableValue() => IsScenarioInputImageVariableValue
-            ? ScenarioInputImageVariableValue!
+        public global::Vellum.ScenarioInputImageVariableValue PickScenarioInputImageVariableValue() => ScenarioInputImageVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputImageVariableValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputDocumentVariableValue PickScenarioInputDocumentVariableValue() => IsScenarioInputDocumentVariableValue
-            ? ScenarioInputDocumentVariableValue!
+        public global::Vellum.ScenarioInputDocumentVariableValue PickScenarioInputDocumentVariableValue() => ScenarioInputDocumentVariableValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScenarioInputDocumentVariableValue' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -502,33 +502,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsScenarioInputStringVariableValue && scenarioInputStringVariableValue != null)
+            if (ScenarioInputStringVariableValue is { } __value0 && scenarioInputStringVariableValue != null)
             {
-                return scenarioInputStringVariableValue(ScenarioInputStringVariableValue!);
+                return scenarioInputStringVariableValue(__value0);
             }
-            else if (IsScenarioInputJsonVariableValue && scenarioInputJsonVariableValue != null)
+            else if (ScenarioInputJsonVariableValue is { } __value1 && scenarioInputJsonVariableValue != null)
             {
-                return scenarioInputJsonVariableValue(ScenarioInputJsonVariableValue!);
+                return scenarioInputJsonVariableValue(__value1);
             }
-            else if (IsScenarioInputChatHistoryVariableValue && scenarioInputChatHistoryVariableValue != null)
+            else if (ScenarioInputChatHistoryVariableValue is { } __value2 && scenarioInputChatHistoryVariableValue != null)
             {
-                return scenarioInputChatHistoryVariableValue(ScenarioInputChatHistoryVariableValue!);
+                return scenarioInputChatHistoryVariableValue(__value2);
             }
-            else if (IsScenarioInputAudioVariableValue && scenarioInputAudioVariableValue != null)
+            else if (ScenarioInputAudioVariableValue is { } __value3 && scenarioInputAudioVariableValue != null)
             {
-                return scenarioInputAudioVariableValue(ScenarioInputAudioVariableValue!);
+                return scenarioInputAudioVariableValue(__value3);
             }
-            else if (IsScenarioInputVideoVariableValue && scenarioInputVideoVariableValue != null)
+            else if (ScenarioInputVideoVariableValue is { } __value4 && scenarioInputVideoVariableValue != null)
             {
-                return scenarioInputVideoVariableValue(ScenarioInputVideoVariableValue!);
+                return scenarioInputVideoVariableValue(__value4);
             }
-            else if (IsScenarioInputImageVariableValue && scenarioInputImageVariableValue != null)
+            else if (ScenarioInputImageVariableValue is { } __value5 && scenarioInputImageVariableValue != null)
             {
-                return scenarioInputImageVariableValue(ScenarioInputImageVariableValue!);
+                return scenarioInputImageVariableValue(__value5);
             }
-            else if (IsScenarioInputDocumentVariableValue && scenarioInputDocumentVariableValue != null)
+            else if (ScenarioInputDocumentVariableValue is { } __value6 && scenarioInputDocumentVariableValue != null)
             {
-                return scenarioInputDocumentVariableValue(ScenarioInputDocumentVariableValue!);
+                return scenarioInputDocumentVariableValue(__value6);
             }
 
             return default(TResult);
@@ -558,33 +558,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsScenarioInputStringVariableValue)
+            if (ScenarioInputStringVariableValue is { } __value0)
             {
-                scenarioInputStringVariableValue?.Invoke(ScenarioInputStringVariableValue!);
+                scenarioInputStringVariableValue?.Invoke(__value0);
             }
-            else if (IsScenarioInputJsonVariableValue)
+            else if (ScenarioInputJsonVariableValue is { } __value1)
             {
-                scenarioInputJsonVariableValue?.Invoke(ScenarioInputJsonVariableValue!);
+                scenarioInputJsonVariableValue?.Invoke(__value1);
             }
-            else if (IsScenarioInputChatHistoryVariableValue)
+            else if (ScenarioInputChatHistoryVariableValue is { } __value2)
             {
-                scenarioInputChatHistoryVariableValue?.Invoke(ScenarioInputChatHistoryVariableValue!);
+                scenarioInputChatHistoryVariableValue?.Invoke(__value2);
             }
-            else if (IsScenarioInputAudioVariableValue)
+            else if (ScenarioInputAudioVariableValue is { } __value3)
             {
-                scenarioInputAudioVariableValue?.Invoke(ScenarioInputAudioVariableValue!);
+                scenarioInputAudioVariableValue?.Invoke(__value3);
             }
-            else if (IsScenarioInputVideoVariableValue)
+            else if (ScenarioInputVideoVariableValue is { } __value4)
             {
-                scenarioInputVideoVariableValue?.Invoke(ScenarioInputVideoVariableValue!);
+                scenarioInputVideoVariableValue?.Invoke(__value4);
             }
-            else if (IsScenarioInputImageVariableValue)
+            else if (ScenarioInputImageVariableValue is { } __value5)
             {
-                scenarioInputImageVariableValue?.Invoke(ScenarioInputImageVariableValue!);
+                scenarioInputImageVariableValue?.Invoke(__value5);
             }
-            else if (IsScenarioInputDocumentVariableValue)
+            else if (ScenarioInputDocumentVariableValue is { } __value6)
             {
-                scenarioInputDocumentVariableValue?.Invoke(ScenarioInputDocumentVariableValue!);
+                scenarioInputDocumentVariableValue?.Invoke(__value6);
             }
         }
 
@@ -606,33 +606,33 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsScenarioInputStringVariableValue)
+            if (ScenarioInputStringVariableValue is { } __value0)
             {
-                scenarioInputStringVariableValue?.Invoke(ScenarioInputStringVariableValue!);
+                scenarioInputStringVariableValue?.Invoke(__value0);
             }
-            else if (IsScenarioInputJsonVariableValue)
+            else if (ScenarioInputJsonVariableValue is { } __value1)
             {
-                scenarioInputJsonVariableValue?.Invoke(ScenarioInputJsonVariableValue!);
+                scenarioInputJsonVariableValue?.Invoke(__value1);
             }
-            else if (IsScenarioInputChatHistoryVariableValue)
+            else if (ScenarioInputChatHistoryVariableValue is { } __value2)
             {
-                scenarioInputChatHistoryVariableValue?.Invoke(ScenarioInputChatHistoryVariableValue!);
+                scenarioInputChatHistoryVariableValue?.Invoke(__value2);
             }
-            else if (IsScenarioInputAudioVariableValue)
+            else if (ScenarioInputAudioVariableValue is { } __value3)
             {
-                scenarioInputAudioVariableValue?.Invoke(ScenarioInputAudioVariableValue!);
+                scenarioInputAudioVariableValue?.Invoke(__value3);
             }
-            else if (IsScenarioInputVideoVariableValue)
+            else if (ScenarioInputVideoVariableValue is { } __value4)
             {
-                scenarioInputVideoVariableValue?.Invoke(ScenarioInputVideoVariableValue!);
+                scenarioInputVideoVariableValue?.Invoke(__value4);
             }
-            else if (IsScenarioInputImageVariableValue)
+            else if (ScenarioInputImageVariableValue is { } __value5)
             {
-                scenarioInputImageVariableValue?.Invoke(ScenarioInputImageVariableValue!);
+                scenarioInputImageVariableValue?.Invoke(__value5);
             }
-            else if (IsScenarioInputDocumentVariableValue)
+            else if (ScenarioInputDocumentVariableValue is { } __value6)
             {
-                scenarioInputDocumentVariableValue?.Invoke(ScenarioInputDocumentVariableValue!);
+                scenarioInputDocumentVariableValue?.Invoke(__value6);
             }
         }
 

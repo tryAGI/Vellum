@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.InitiatedExecutePromptEvent PickInitiatedExecutePromptEvent() => IsInitiatedExecutePromptEvent
-            ? InitiatedExecutePromptEvent!
+        public global::Vellum.InitiatedExecutePromptEvent PickInitiatedExecutePromptEvent() => InitiatedExecutePromptEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InitiatedExecutePromptEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StreamingExecutePromptEvent PickStreamingExecutePromptEvent() => IsStreamingExecutePromptEvent
-            ? StreamingExecutePromptEvent!
+        public global::Vellum.StreamingExecutePromptEvent PickStreamingExecutePromptEvent() => StreamingExecutePromptEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamingExecutePromptEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FulfilledExecutePromptEvent PickFulfilledExecutePromptEvent() => IsFulfilledExecutePromptEvent
-            ? FulfilledExecutePromptEvent!
+        public global::Vellum.FulfilledExecutePromptEvent PickFulfilledExecutePromptEvent() => FulfilledExecutePromptEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecutePromptEvent' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.RejectedExecutePromptEvent PickRejectedExecutePromptEvent() => IsRejectedExecutePromptEvent
-            ? RejectedExecutePromptEvent!
+        public global::Vellum.RejectedExecutePromptEvent PickRejectedExecutePromptEvent() => RejectedExecutePromptEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecutePromptEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsInitiatedExecutePromptEvent && initiatedExecutePromptEvent != null)
+            if (InitiatedExecutePromptEvent is { } __value0 && initiatedExecutePromptEvent != null)
             {
-                return initiatedExecutePromptEvent(InitiatedExecutePromptEvent!);
+                return initiatedExecutePromptEvent(__value0);
             }
-            else if (IsStreamingExecutePromptEvent && streamingExecutePromptEvent != null)
+            else if (StreamingExecutePromptEvent is { } __value1 && streamingExecutePromptEvent != null)
             {
-                return streamingExecutePromptEvent(StreamingExecutePromptEvent!);
+                return streamingExecutePromptEvent(__value1);
             }
-            else if (IsFulfilledExecutePromptEvent && fulfilledExecutePromptEvent != null)
+            else if (FulfilledExecutePromptEvent is { } __value2 && fulfilledExecutePromptEvent != null)
             {
-                return fulfilledExecutePromptEvent(FulfilledExecutePromptEvent!);
+                return fulfilledExecutePromptEvent(__value2);
             }
-            else if (IsRejectedExecutePromptEvent && rejectedExecutePromptEvent != null)
+            else if (RejectedExecutePromptEvent is { } __value3 && rejectedExecutePromptEvent != null)
             {
-                return rejectedExecutePromptEvent(RejectedExecutePromptEvent!);
+                return rejectedExecutePromptEvent(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsInitiatedExecutePromptEvent)
+            if (InitiatedExecutePromptEvent is { } __value0)
             {
-                initiatedExecutePromptEvent?.Invoke(InitiatedExecutePromptEvent!);
+                initiatedExecutePromptEvent?.Invoke(__value0);
             }
-            else if (IsStreamingExecutePromptEvent)
+            else if (StreamingExecutePromptEvent is { } __value1)
             {
-                streamingExecutePromptEvent?.Invoke(StreamingExecutePromptEvent!);
+                streamingExecutePromptEvent?.Invoke(__value1);
             }
-            else if (IsFulfilledExecutePromptEvent)
+            else if (FulfilledExecutePromptEvent is { } __value2)
             {
-                fulfilledExecutePromptEvent?.Invoke(FulfilledExecutePromptEvent!);
+                fulfilledExecutePromptEvent?.Invoke(__value2);
             }
-            else if (IsRejectedExecutePromptEvent)
+            else if (RejectedExecutePromptEvent is { } __value3)
             {
-                rejectedExecutePromptEvent?.Invoke(RejectedExecutePromptEvent!);
+                rejectedExecutePromptEvent?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsInitiatedExecutePromptEvent)
+            if (InitiatedExecutePromptEvent is { } __value0)
             {
-                initiatedExecutePromptEvent?.Invoke(InitiatedExecutePromptEvent!);
+                initiatedExecutePromptEvent?.Invoke(__value0);
             }
-            else if (IsStreamingExecutePromptEvent)
+            else if (StreamingExecutePromptEvent is { } __value1)
             {
-                streamingExecutePromptEvent?.Invoke(StreamingExecutePromptEvent!);
+                streamingExecutePromptEvent?.Invoke(__value1);
             }
-            else if (IsFulfilledExecutePromptEvent)
+            else if (FulfilledExecutePromptEvent is { } __value2)
             {
-                fulfilledExecutePromptEvent?.Invoke(FulfilledExecutePromptEvent!);
+                fulfilledExecutePromptEvent?.Invoke(__value2);
             }
-            else if (IsRejectedExecutePromptEvent)
+            else if (RejectedExecutePromptEvent is { } __value3)
             {
-                rejectedExecutePromptEvent?.Invoke(RejectedExecutePromptEvent!);
+                rejectedExecutePromptEvent?.Invoke(__value3);
             }
         }
 

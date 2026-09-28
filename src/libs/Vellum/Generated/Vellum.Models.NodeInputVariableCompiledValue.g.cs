@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledStringValue PickNodeInputCompiledStringValue() => IsNodeInputCompiledStringValue
-            ? NodeInputCompiledStringValue!
+        public global::Vellum.NodeInputCompiledStringValue PickNodeInputCompiledStringValue() => NodeInputCompiledStringValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledStringValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledNumberValue PickNodeInputCompiledNumberValue() => IsNodeInputCompiledNumberValue
-            ? NodeInputCompiledNumberValue!
+        public global::Vellum.NodeInputCompiledNumberValue PickNodeInputCompiledNumberValue() => NodeInputCompiledNumberValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledNumberValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledJsonValue PickNodeInputCompiledJsonValue() => IsNodeInputCompiledJsonValue
-            ? NodeInputCompiledJsonValue!
+        public global::Vellum.NodeInputCompiledJsonValue PickNodeInputCompiledJsonValue() => NodeInputCompiledJsonValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledJsonValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledChatHistoryValue PickNodeInputCompiledChatHistoryValue() => IsNodeInputCompiledChatHistoryValue
-            ? NodeInputCompiledChatHistoryValue!
+        public global::Vellum.NodeInputCompiledChatHistoryValue PickNodeInputCompiledChatHistoryValue() => NodeInputCompiledChatHistoryValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledChatHistoryValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledSearchResultsValue PickNodeInputCompiledSearchResultsValue() => IsNodeInputCompiledSearchResultsValue
-            ? NodeInputCompiledSearchResultsValue!
+        public global::Vellum.NodeInputCompiledSearchResultsValue PickNodeInputCompiledSearchResultsValue() => NodeInputCompiledSearchResultsValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledSearchResultsValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledErrorValue PickNodeInputCompiledErrorValue() => IsNodeInputCompiledErrorValue
-            ? NodeInputCompiledErrorValue!
+        public global::Vellum.NodeInputCompiledErrorValue PickNodeInputCompiledErrorValue() => NodeInputCompiledErrorValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledErrorValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledArrayValue PickNodeInputCompiledArrayValue() => IsNodeInputCompiledArrayValue
-            ? NodeInputCompiledArrayValue!
+        public global::Vellum.NodeInputCompiledArrayValue PickNodeInputCompiledArrayValue() => NodeInputCompiledArrayValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledArrayValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledFunctionCallValue PickNodeInputCompiledFunctionCallValue() => IsNodeInputCompiledFunctionCallValue
-            ? NodeInputCompiledFunctionCallValue!
+        public global::Vellum.NodeInputCompiledFunctionCallValue PickNodeInputCompiledFunctionCallValue() => NodeInputCompiledFunctionCallValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledFunctionCallValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledSecretValue PickNodeInputCompiledSecretValue() => IsNodeInputCompiledSecretValue
-            ? NodeInputCompiledSecretValue!
+        public global::Vellum.NodeInputCompiledSecretValue PickNodeInputCompiledSecretValue() => NodeInputCompiledSecretValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledSecretValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledAudioValue PickNodeInputCompiledAudioValue() => IsNodeInputCompiledAudioValue
-            ? NodeInputCompiledAudioValue!
+        public global::Vellum.NodeInputCompiledAudioValue PickNodeInputCompiledAudioValue() => NodeInputCompiledAudioValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledAudioValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledVideoValue PickNodeInputCompiledVideoValue() => IsNodeInputCompiledVideoValue
-            ? NodeInputCompiledVideoValue!
+        public global::Vellum.NodeInputCompiledVideoValue PickNodeInputCompiledVideoValue() => NodeInputCompiledVideoValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledVideoValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledImageValue PickNodeInputCompiledImageValue() => IsNodeInputCompiledImageValue
-            ? NodeInputCompiledImageValue!
+        public global::Vellum.NodeInputCompiledImageValue PickNodeInputCompiledImageValue() => NodeInputCompiledImageValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledImageValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -486,8 +486,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledDocumentValue PickNodeInputCompiledDocumentValue() => IsNodeInputCompiledDocumentValue
-            ? NodeInputCompiledDocumentValue!
+        public global::Vellum.NodeInputCompiledDocumentValue PickNodeInputCompiledDocumentValue() => NodeInputCompiledDocumentValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NodeInputCompiledDocumentValue' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -892,57 +892,57 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeInputCompiledStringValue && nodeInputCompiledStringValue != null)
+            if (NodeInputCompiledStringValue is { } __value0 && nodeInputCompiledStringValue != null)
             {
-                return nodeInputCompiledStringValue(NodeInputCompiledStringValue!);
+                return nodeInputCompiledStringValue(__value0);
             }
-            else if (IsNodeInputCompiledNumberValue && nodeInputCompiledNumberValue != null)
+            else if (NodeInputCompiledNumberValue is { } __value1 && nodeInputCompiledNumberValue != null)
             {
-                return nodeInputCompiledNumberValue(NodeInputCompiledNumberValue!);
+                return nodeInputCompiledNumberValue(__value1);
             }
-            else if (IsNodeInputCompiledJsonValue && nodeInputCompiledJsonValue != null)
+            else if (NodeInputCompiledJsonValue is { } __value2 && nodeInputCompiledJsonValue != null)
             {
-                return nodeInputCompiledJsonValue(NodeInputCompiledJsonValue!);
+                return nodeInputCompiledJsonValue(__value2);
             }
-            else if (IsNodeInputCompiledChatHistoryValue && nodeInputCompiledChatHistoryValue != null)
+            else if (NodeInputCompiledChatHistoryValue is { } __value3 && nodeInputCompiledChatHistoryValue != null)
             {
-                return nodeInputCompiledChatHistoryValue(NodeInputCompiledChatHistoryValue!);
+                return nodeInputCompiledChatHistoryValue(__value3);
             }
-            else if (IsNodeInputCompiledSearchResultsValue && nodeInputCompiledSearchResultsValue != null)
+            else if (NodeInputCompiledSearchResultsValue is { } __value4 && nodeInputCompiledSearchResultsValue != null)
             {
-                return nodeInputCompiledSearchResultsValue(NodeInputCompiledSearchResultsValue!);
+                return nodeInputCompiledSearchResultsValue(__value4);
             }
-            else if (IsNodeInputCompiledErrorValue && nodeInputCompiledErrorValue != null)
+            else if (NodeInputCompiledErrorValue is { } __value5 && nodeInputCompiledErrorValue != null)
             {
-                return nodeInputCompiledErrorValue(NodeInputCompiledErrorValue!);
+                return nodeInputCompiledErrorValue(__value5);
             }
-            else if (IsNodeInputCompiledArrayValue && nodeInputCompiledArrayValue != null)
+            else if (NodeInputCompiledArrayValue is { } __value6 && nodeInputCompiledArrayValue != null)
             {
-                return nodeInputCompiledArrayValue(NodeInputCompiledArrayValue!);
+                return nodeInputCompiledArrayValue(__value6);
             }
-            else if (IsNodeInputCompiledFunctionCallValue && nodeInputCompiledFunctionCallValue != null)
+            else if (NodeInputCompiledFunctionCallValue is { } __value7 && nodeInputCompiledFunctionCallValue != null)
             {
-                return nodeInputCompiledFunctionCallValue(NodeInputCompiledFunctionCallValue!);
+                return nodeInputCompiledFunctionCallValue(__value7);
             }
-            else if (IsNodeInputCompiledSecretValue && nodeInputCompiledSecretValue != null)
+            else if (NodeInputCompiledSecretValue is { } __value8 && nodeInputCompiledSecretValue != null)
             {
-                return nodeInputCompiledSecretValue(NodeInputCompiledSecretValue!);
+                return nodeInputCompiledSecretValue(__value8);
             }
-            else if (IsNodeInputCompiledAudioValue && nodeInputCompiledAudioValue != null)
+            else if (NodeInputCompiledAudioValue is { } __value9 && nodeInputCompiledAudioValue != null)
             {
-                return nodeInputCompiledAudioValue(NodeInputCompiledAudioValue!);
+                return nodeInputCompiledAudioValue(__value9);
             }
-            else if (IsNodeInputCompiledVideoValue && nodeInputCompiledVideoValue != null)
+            else if (NodeInputCompiledVideoValue is { } __value10 && nodeInputCompiledVideoValue != null)
             {
-                return nodeInputCompiledVideoValue(NodeInputCompiledVideoValue!);
+                return nodeInputCompiledVideoValue(__value10);
             }
-            else if (IsNodeInputCompiledImageValue && nodeInputCompiledImageValue != null)
+            else if (NodeInputCompiledImageValue is { } __value11 && nodeInputCompiledImageValue != null)
             {
-                return nodeInputCompiledImageValue(NodeInputCompiledImageValue!);
+                return nodeInputCompiledImageValue(__value11);
             }
-            else if (IsNodeInputCompiledDocumentValue && nodeInputCompiledDocumentValue != null)
+            else if (NodeInputCompiledDocumentValue is { } __value12 && nodeInputCompiledDocumentValue != null)
             {
-                return nodeInputCompiledDocumentValue(NodeInputCompiledDocumentValue!);
+                return nodeInputCompiledDocumentValue(__value12);
             }
 
             return default(TResult);
@@ -984,57 +984,57 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeInputCompiledStringValue)
+            if (NodeInputCompiledStringValue is { } __value0)
             {
-                nodeInputCompiledStringValue?.Invoke(NodeInputCompiledStringValue!);
+                nodeInputCompiledStringValue?.Invoke(__value0);
             }
-            else if (IsNodeInputCompiledNumberValue)
+            else if (NodeInputCompiledNumberValue is { } __value1)
             {
-                nodeInputCompiledNumberValue?.Invoke(NodeInputCompiledNumberValue!);
+                nodeInputCompiledNumberValue?.Invoke(__value1);
             }
-            else if (IsNodeInputCompiledJsonValue)
+            else if (NodeInputCompiledJsonValue is { } __value2)
             {
-                nodeInputCompiledJsonValue?.Invoke(NodeInputCompiledJsonValue!);
+                nodeInputCompiledJsonValue?.Invoke(__value2);
             }
-            else if (IsNodeInputCompiledChatHistoryValue)
+            else if (NodeInputCompiledChatHistoryValue is { } __value3)
             {
-                nodeInputCompiledChatHistoryValue?.Invoke(NodeInputCompiledChatHistoryValue!);
+                nodeInputCompiledChatHistoryValue?.Invoke(__value3);
             }
-            else if (IsNodeInputCompiledSearchResultsValue)
+            else if (NodeInputCompiledSearchResultsValue is { } __value4)
             {
-                nodeInputCompiledSearchResultsValue?.Invoke(NodeInputCompiledSearchResultsValue!);
+                nodeInputCompiledSearchResultsValue?.Invoke(__value4);
             }
-            else if (IsNodeInputCompiledErrorValue)
+            else if (NodeInputCompiledErrorValue is { } __value5)
             {
-                nodeInputCompiledErrorValue?.Invoke(NodeInputCompiledErrorValue!);
+                nodeInputCompiledErrorValue?.Invoke(__value5);
             }
-            else if (IsNodeInputCompiledArrayValue)
+            else if (NodeInputCompiledArrayValue is { } __value6)
             {
-                nodeInputCompiledArrayValue?.Invoke(NodeInputCompiledArrayValue!);
+                nodeInputCompiledArrayValue?.Invoke(__value6);
             }
-            else if (IsNodeInputCompiledFunctionCallValue)
+            else if (NodeInputCompiledFunctionCallValue is { } __value7)
             {
-                nodeInputCompiledFunctionCallValue?.Invoke(NodeInputCompiledFunctionCallValue!);
+                nodeInputCompiledFunctionCallValue?.Invoke(__value7);
             }
-            else if (IsNodeInputCompiledSecretValue)
+            else if (NodeInputCompiledSecretValue is { } __value8)
             {
-                nodeInputCompiledSecretValue?.Invoke(NodeInputCompiledSecretValue!);
+                nodeInputCompiledSecretValue?.Invoke(__value8);
             }
-            else if (IsNodeInputCompiledAudioValue)
+            else if (NodeInputCompiledAudioValue is { } __value9)
             {
-                nodeInputCompiledAudioValue?.Invoke(NodeInputCompiledAudioValue!);
+                nodeInputCompiledAudioValue?.Invoke(__value9);
             }
-            else if (IsNodeInputCompiledVideoValue)
+            else if (NodeInputCompiledVideoValue is { } __value10)
             {
-                nodeInputCompiledVideoValue?.Invoke(NodeInputCompiledVideoValue!);
+                nodeInputCompiledVideoValue?.Invoke(__value10);
             }
-            else if (IsNodeInputCompiledImageValue)
+            else if (NodeInputCompiledImageValue is { } __value11)
             {
-                nodeInputCompiledImageValue?.Invoke(NodeInputCompiledImageValue!);
+                nodeInputCompiledImageValue?.Invoke(__value11);
             }
-            else if (IsNodeInputCompiledDocumentValue)
+            else if (NodeInputCompiledDocumentValue is { } __value12)
             {
-                nodeInputCompiledDocumentValue?.Invoke(NodeInputCompiledDocumentValue!);
+                nodeInputCompiledDocumentValue?.Invoke(__value12);
             }
         }
 
@@ -1062,57 +1062,57 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNodeInputCompiledStringValue)
+            if (NodeInputCompiledStringValue is { } __value0)
             {
-                nodeInputCompiledStringValue?.Invoke(NodeInputCompiledStringValue!);
+                nodeInputCompiledStringValue?.Invoke(__value0);
             }
-            else if (IsNodeInputCompiledNumberValue)
+            else if (NodeInputCompiledNumberValue is { } __value1)
             {
-                nodeInputCompiledNumberValue?.Invoke(NodeInputCompiledNumberValue!);
+                nodeInputCompiledNumberValue?.Invoke(__value1);
             }
-            else if (IsNodeInputCompiledJsonValue)
+            else if (NodeInputCompiledJsonValue is { } __value2)
             {
-                nodeInputCompiledJsonValue?.Invoke(NodeInputCompiledJsonValue!);
+                nodeInputCompiledJsonValue?.Invoke(__value2);
             }
-            else if (IsNodeInputCompiledChatHistoryValue)
+            else if (NodeInputCompiledChatHistoryValue is { } __value3)
             {
-                nodeInputCompiledChatHistoryValue?.Invoke(NodeInputCompiledChatHistoryValue!);
+                nodeInputCompiledChatHistoryValue?.Invoke(__value3);
             }
-            else if (IsNodeInputCompiledSearchResultsValue)
+            else if (NodeInputCompiledSearchResultsValue is { } __value4)
             {
-                nodeInputCompiledSearchResultsValue?.Invoke(NodeInputCompiledSearchResultsValue!);
+                nodeInputCompiledSearchResultsValue?.Invoke(__value4);
             }
-            else if (IsNodeInputCompiledErrorValue)
+            else if (NodeInputCompiledErrorValue is { } __value5)
             {
-                nodeInputCompiledErrorValue?.Invoke(NodeInputCompiledErrorValue!);
+                nodeInputCompiledErrorValue?.Invoke(__value5);
             }
-            else if (IsNodeInputCompiledArrayValue)
+            else if (NodeInputCompiledArrayValue is { } __value6)
             {
-                nodeInputCompiledArrayValue?.Invoke(NodeInputCompiledArrayValue!);
+                nodeInputCompiledArrayValue?.Invoke(__value6);
             }
-            else if (IsNodeInputCompiledFunctionCallValue)
+            else if (NodeInputCompiledFunctionCallValue is { } __value7)
             {
-                nodeInputCompiledFunctionCallValue?.Invoke(NodeInputCompiledFunctionCallValue!);
+                nodeInputCompiledFunctionCallValue?.Invoke(__value7);
             }
-            else if (IsNodeInputCompiledSecretValue)
+            else if (NodeInputCompiledSecretValue is { } __value8)
             {
-                nodeInputCompiledSecretValue?.Invoke(NodeInputCompiledSecretValue!);
+                nodeInputCompiledSecretValue?.Invoke(__value8);
             }
-            else if (IsNodeInputCompiledAudioValue)
+            else if (NodeInputCompiledAudioValue is { } __value9)
             {
-                nodeInputCompiledAudioValue?.Invoke(NodeInputCompiledAudioValue!);
+                nodeInputCompiledAudioValue?.Invoke(__value9);
             }
-            else if (IsNodeInputCompiledVideoValue)
+            else if (NodeInputCompiledVideoValue is { } __value10)
             {
-                nodeInputCompiledVideoValue?.Invoke(NodeInputCompiledVideoValue!);
+                nodeInputCompiledVideoValue?.Invoke(__value10);
             }
-            else if (IsNodeInputCompiledImageValue)
+            else if (NodeInputCompiledImageValue is { } __value11)
             {
-                nodeInputCompiledImageValue?.Invoke(NodeInputCompiledImageValue!);
+                nodeInputCompiledImageValue?.Invoke(__value11);
             }
-            else if (IsNodeInputCompiledDocumentValue)
+            else if (NodeInputCompiledDocumentValue is { } __value12)
             {
-                nodeInputCompiledDocumentValue?.Invoke(NodeInputCompiledDocumentValue!);
+                nodeInputCompiledDocumentValue?.Invoke(__value12);
             }
         }
 

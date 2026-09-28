@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public object PickWorkflowEventErrorRawDataVariant1() => IsWorkflowEventErrorRawDataVariant1
-            ? WorkflowEventErrorRawDataVariant1!
+        public object PickWorkflowEventErrorRawDataVariant1() => WorkflowEventErrorRawDataVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public string PickWorkflowEventErrorRawDataVariant2() => IsWorkflowEventErrorRawDataVariant2
-            ? WorkflowEventErrorRawDataVariant2!
+        public string PickWorkflowEventErrorRawDataVariant2() => WorkflowEventErrorRawDataVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEventErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowEventErrorRawDataVariant1 && workflowEventErrorRawDataVariant1 != null)
+            if (WorkflowEventErrorRawDataVariant1 is { } __value0 && workflowEventErrorRawDataVariant1 != null)
             {
-                return workflowEventErrorRawDataVariant1(WorkflowEventErrorRawDataVariant1!);
+                return workflowEventErrorRawDataVariant1(__value0);
             }
-            else if (IsWorkflowEventErrorRawDataVariant2 && workflowEventErrorRawDataVariant2 != null)
+            else if (WorkflowEventErrorRawDataVariant2 is { } __value1 && workflowEventErrorRawDataVariant2 != null)
             {
-                return workflowEventErrorRawDataVariant2(WorkflowEventErrorRawDataVariant2!);
+                return workflowEventErrorRawDataVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowEventErrorRawDataVariant1)
+            if (WorkflowEventErrorRawDataVariant1 is { } __value0)
             {
-                workflowEventErrorRawDataVariant1?.Invoke(WorkflowEventErrorRawDataVariant1!);
+                workflowEventErrorRawDataVariant1?.Invoke(__value0);
             }
-            else if (IsWorkflowEventErrorRawDataVariant2)
+            else if (WorkflowEventErrorRawDataVariant2 is { } __value1)
             {
-                workflowEventErrorRawDataVariant2?.Invoke(WorkflowEventErrorRawDataVariant2!);
+                workflowEventErrorRawDataVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowEventErrorRawDataVariant1)
+            if (WorkflowEventErrorRawDataVariant1 is { } __value0)
             {
-                workflowEventErrorRawDataVariant1?.Invoke(WorkflowEventErrorRawDataVariant1!);
+                workflowEventErrorRawDataVariant1?.Invoke(__value0);
             }
-            else if (IsWorkflowEventErrorRawDataVariant2)
+            else if (WorkflowEventErrorRawDataVariant2 is { } __value1)
             {
-                workflowEventErrorRawDataVariant2?.Invoke(WorkflowEventErrorRawDataVariant2!);
+                workflowEventErrorRawDataVariant2?.Invoke(__value1);
             }
         }
 

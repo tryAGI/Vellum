@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseStringVariableValueRequest PickNamedTestCaseStringVariableValueRequest() => IsNamedTestCaseStringVariableValueRequest
-            ? NamedTestCaseStringVariableValueRequest!
+        public global::Vellum.NamedTestCaseStringVariableValueRequest PickNamedTestCaseStringVariableValueRequest() => NamedTestCaseStringVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseStringVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseNumberVariableValueRequest PickNamedTestCaseNumberVariableValueRequest() => IsNamedTestCaseNumberVariableValueRequest
-            ? NamedTestCaseNumberVariableValueRequest!
+        public global::Vellum.NamedTestCaseNumberVariableValueRequest PickNamedTestCaseNumberVariableValueRequest() => NamedTestCaseNumberVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseNumberVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseJsonVariableValueRequest PickNamedTestCaseJsonVariableValueRequest() => IsNamedTestCaseJsonVariableValueRequest
-            ? NamedTestCaseJsonVariableValueRequest!
+        public global::Vellum.NamedTestCaseJsonVariableValueRequest PickNamedTestCaseJsonVariableValueRequest() => NamedTestCaseJsonVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseJsonVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseChatHistoryVariableValueRequest PickNamedTestCaseChatHistoryVariableValueRequest() => IsNamedTestCaseChatHistoryVariableValueRequest
-            ? NamedTestCaseChatHistoryVariableValueRequest!
+        public global::Vellum.NamedTestCaseChatHistoryVariableValueRequest PickNamedTestCaseChatHistoryVariableValueRequest() => NamedTestCaseChatHistoryVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseChatHistoryVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseSearchResultsVariableValueRequest PickNamedTestCaseSearchResultsVariableValueRequest() => IsNamedTestCaseSearchResultsVariableValueRequest
-            ? NamedTestCaseSearchResultsVariableValueRequest!
+        public global::Vellum.NamedTestCaseSearchResultsVariableValueRequest PickNamedTestCaseSearchResultsVariableValueRequest() => NamedTestCaseSearchResultsVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseSearchResultsVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseErrorVariableValueRequest PickNamedTestCaseErrorVariableValueRequest() => IsNamedTestCaseErrorVariableValueRequest
-            ? NamedTestCaseErrorVariableValueRequest!
+        public global::Vellum.NamedTestCaseErrorVariableValueRequest PickNamedTestCaseErrorVariableValueRequest() => NamedTestCaseErrorVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseErrorVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseFunctionCallVariableValueRequest PickNamedTestCaseFunctionCallVariableValueRequest() => IsNamedTestCaseFunctionCallVariableValueRequest
-            ? NamedTestCaseFunctionCallVariableValueRequest!
+        public global::Vellum.NamedTestCaseFunctionCallVariableValueRequest PickNamedTestCaseFunctionCallVariableValueRequest() => NamedTestCaseFunctionCallVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseFunctionCallVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseArrayVariableValueRequest PickNamedTestCaseArrayVariableValueRequest() => IsNamedTestCaseArrayVariableValueRequest
-            ? NamedTestCaseArrayVariableValueRequest!
+        public global::Vellum.NamedTestCaseArrayVariableValueRequest PickNamedTestCaseArrayVariableValueRequest() => NamedTestCaseArrayVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseArrayVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseAudioVariableValueRequest PickNamedTestCaseAudioVariableValueRequest() => IsNamedTestCaseAudioVariableValueRequest
-            ? NamedTestCaseAudioVariableValueRequest!
+        public global::Vellum.NamedTestCaseAudioVariableValueRequest PickNamedTestCaseAudioVariableValueRequest() => NamedTestCaseAudioVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseAudioVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseVideoVariableValueRequest PickNamedTestCaseVideoVariableValueRequest() => IsNamedTestCaseVideoVariableValueRequest
-            ? NamedTestCaseVideoVariableValueRequest!
+        public global::Vellum.NamedTestCaseVideoVariableValueRequest PickNamedTestCaseVideoVariableValueRequest() => NamedTestCaseVideoVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseVideoVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseImageVariableValueRequest PickNamedTestCaseImageVariableValueRequest() => IsNamedTestCaseImageVariableValueRequest
-            ? NamedTestCaseImageVariableValueRequest!
+        public global::Vellum.NamedTestCaseImageVariableValueRequest PickNamedTestCaseImageVariableValueRequest() => NamedTestCaseImageVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseImageVariableValueRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseDocumentVariableValueRequest PickNamedTestCaseDocumentVariableValueRequest() => IsNamedTestCaseDocumentVariableValueRequest
-            ? NamedTestCaseDocumentVariableValueRequest!
+        public global::Vellum.NamedTestCaseDocumentVariableValueRequest PickNamedTestCaseDocumentVariableValueRequest() => NamedTestCaseDocumentVariableValueRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NamedTestCaseDocumentVariableValueRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -827,53 +827,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNamedTestCaseStringVariableValueRequest && namedTestCaseStringVariableValueRequest != null)
+            if (NamedTestCaseStringVariableValueRequest is { } __value0 && namedTestCaseStringVariableValueRequest != null)
             {
-                return namedTestCaseStringVariableValueRequest(NamedTestCaseStringVariableValueRequest!);
+                return namedTestCaseStringVariableValueRequest(__value0);
             }
-            else if (IsNamedTestCaseNumberVariableValueRequest && namedTestCaseNumberVariableValueRequest != null)
+            else if (NamedTestCaseNumberVariableValueRequest is { } __value1 && namedTestCaseNumberVariableValueRequest != null)
             {
-                return namedTestCaseNumberVariableValueRequest(NamedTestCaseNumberVariableValueRequest!);
+                return namedTestCaseNumberVariableValueRequest(__value1);
             }
-            else if (IsNamedTestCaseJsonVariableValueRequest && namedTestCaseJsonVariableValueRequest != null)
+            else if (NamedTestCaseJsonVariableValueRequest is { } __value2 && namedTestCaseJsonVariableValueRequest != null)
             {
-                return namedTestCaseJsonVariableValueRequest(NamedTestCaseJsonVariableValueRequest!);
+                return namedTestCaseJsonVariableValueRequest(__value2);
             }
-            else if (IsNamedTestCaseChatHistoryVariableValueRequest && namedTestCaseChatHistoryVariableValueRequest != null)
+            else if (NamedTestCaseChatHistoryVariableValueRequest is { } __value3 && namedTestCaseChatHistoryVariableValueRequest != null)
             {
-                return namedTestCaseChatHistoryVariableValueRequest(NamedTestCaseChatHistoryVariableValueRequest!);
+                return namedTestCaseChatHistoryVariableValueRequest(__value3);
             }
-            else if (IsNamedTestCaseSearchResultsVariableValueRequest && namedTestCaseSearchResultsVariableValueRequest != null)
+            else if (NamedTestCaseSearchResultsVariableValueRequest is { } __value4 && namedTestCaseSearchResultsVariableValueRequest != null)
             {
-                return namedTestCaseSearchResultsVariableValueRequest(NamedTestCaseSearchResultsVariableValueRequest!);
+                return namedTestCaseSearchResultsVariableValueRequest(__value4);
             }
-            else if (IsNamedTestCaseErrorVariableValueRequest && namedTestCaseErrorVariableValueRequest != null)
+            else if (NamedTestCaseErrorVariableValueRequest is { } __value5 && namedTestCaseErrorVariableValueRequest != null)
             {
-                return namedTestCaseErrorVariableValueRequest(NamedTestCaseErrorVariableValueRequest!);
+                return namedTestCaseErrorVariableValueRequest(__value5);
             }
-            else if (IsNamedTestCaseFunctionCallVariableValueRequest && namedTestCaseFunctionCallVariableValueRequest != null)
+            else if (NamedTestCaseFunctionCallVariableValueRequest is { } __value6 && namedTestCaseFunctionCallVariableValueRequest != null)
             {
-                return namedTestCaseFunctionCallVariableValueRequest(NamedTestCaseFunctionCallVariableValueRequest!);
+                return namedTestCaseFunctionCallVariableValueRequest(__value6);
             }
-            else if (IsNamedTestCaseArrayVariableValueRequest && namedTestCaseArrayVariableValueRequest != null)
+            else if (NamedTestCaseArrayVariableValueRequest is { } __value7 && namedTestCaseArrayVariableValueRequest != null)
             {
-                return namedTestCaseArrayVariableValueRequest(NamedTestCaseArrayVariableValueRequest!);
+                return namedTestCaseArrayVariableValueRequest(__value7);
             }
-            else if (IsNamedTestCaseAudioVariableValueRequest && namedTestCaseAudioVariableValueRequest != null)
+            else if (NamedTestCaseAudioVariableValueRequest is { } __value8 && namedTestCaseAudioVariableValueRequest != null)
             {
-                return namedTestCaseAudioVariableValueRequest(NamedTestCaseAudioVariableValueRequest!);
+                return namedTestCaseAudioVariableValueRequest(__value8);
             }
-            else if (IsNamedTestCaseVideoVariableValueRequest && namedTestCaseVideoVariableValueRequest != null)
+            else if (NamedTestCaseVideoVariableValueRequest is { } __value9 && namedTestCaseVideoVariableValueRequest != null)
             {
-                return namedTestCaseVideoVariableValueRequest(NamedTestCaseVideoVariableValueRequest!);
+                return namedTestCaseVideoVariableValueRequest(__value9);
             }
-            else if (IsNamedTestCaseImageVariableValueRequest && namedTestCaseImageVariableValueRequest != null)
+            else if (NamedTestCaseImageVariableValueRequest is { } __value10 && namedTestCaseImageVariableValueRequest != null)
             {
-                return namedTestCaseImageVariableValueRequest(NamedTestCaseImageVariableValueRequest!);
+                return namedTestCaseImageVariableValueRequest(__value10);
             }
-            else if (IsNamedTestCaseDocumentVariableValueRequest && namedTestCaseDocumentVariableValueRequest != null)
+            else if (NamedTestCaseDocumentVariableValueRequest is { } __value11 && namedTestCaseDocumentVariableValueRequest != null)
             {
-                return namedTestCaseDocumentVariableValueRequest(NamedTestCaseDocumentVariableValueRequest!);
+                return namedTestCaseDocumentVariableValueRequest(__value11);
             }
 
             return default(TResult);
@@ -913,53 +913,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNamedTestCaseStringVariableValueRequest)
+            if (NamedTestCaseStringVariableValueRequest is { } __value0)
             {
-                namedTestCaseStringVariableValueRequest?.Invoke(NamedTestCaseStringVariableValueRequest!);
+                namedTestCaseStringVariableValueRequest?.Invoke(__value0);
             }
-            else if (IsNamedTestCaseNumberVariableValueRequest)
+            else if (NamedTestCaseNumberVariableValueRequest is { } __value1)
             {
-                namedTestCaseNumberVariableValueRequest?.Invoke(NamedTestCaseNumberVariableValueRequest!);
+                namedTestCaseNumberVariableValueRequest?.Invoke(__value1);
             }
-            else if (IsNamedTestCaseJsonVariableValueRequest)
+            else if (NamedTestCaseJsonVariableValueRequest is { } __value2)
             {
-                namedTestCaseJsonVariableValueRequest?.Invoke(NamedTestCaseJsonVariableValueRequest!);
+                namedTestCaseJsonVariableValueRequest?.Invoke(__value2);
             }
-            else if (IsNamedTestCaseChatHistoryVariableValueRequest)
+            else if (NamedTestCaseChatHistoryVariableValueRequest is { } __value3)
             {
-                namedTestCaseChatHistoryVariableValueRequest?.Invoke(NamedTestCaseChatHistoryVariableValueRequest!);
+                namedTestCaseChatHistoryVariableValueRequest?.Invoke(__value3);
             }
-            else if (IsNamedTestCaseSearchResultsVariableValueRequest)
+            else if (NamedTestCaseSearchResultsVariableValueRequest is { } __value4)
             {
-                namedTestCaseSearchResultsVariableValueRequest?.Invoke(NamedTestCaseSearchResultsVariableValueRequest!);
+                namedTestCaseSearchResultsVariableValueRequest?.Invoke(__value4);
             }
-            else if (IsNamedTestCaseErrorVariableValueRequest)
+            else if (NamedTestCaseErrorVariableValueRequest is { } __value5)
             {
-                namedTestCaseErrorVariableValueRequest?.Invoke(NamedTestCaseErrorVariableValueRequest!);
+                namedTestCaseErrorVariableValueRequest?.Invoke(__value5);
             }
-            else if (IsNamedTestCaseFunctionCallVariableValueRequest)
+            else if (NamedTestCaseFunctionCallVariableValueRequest is { } __value6)
             {
-                namedTestCaseFunctionCallVariableValueRequest?.Invoke(NamedTestCaseFunctionCallVariableValueRequest!);
+                namedTestCaseFunctionCallVariableValueRequest?.Invoke(__value6);
             }
-            else if (IsNamedTestCaseArrayVariableValueRequest)
+            else if (NamedTestCaseArrayVariableValueRequest is { } __value7)
             {
-                namedTestCaseArrayVariableValueRequest?.Invoke(NamedTestCaseArrayVariableValueRequest!);
+                namedTestCaseArrayVariableValueRequest?.Invoke(__value7);
             }
-            else if (IsNamedTestCaseAudioVariableValueRequest)
+            else if (NamedTestCaseAudioVariableValueRequest is { } __value8)
             {
-                namedTestCaseAudioVariableValueRequest?.Invoke(NamedTestCaseAudioVariableValueRequest!);
+                namedTestCaseAudioVariableValueRequest?.Invoke(__value8);
             }
-            else if (IsNamedTestCaseVideoVariableValueRequest)
+            else if (NamedTestCaseVideoVariableValueRequest is { } __value9)
             {
-                namedTestCaseVideoVariableValueRequest?.Invoke(NamedTestCaseVideoVariableValueRequest!);
+                namedTestCaseVideoVariableValueRequest?.Invoke(__value9);
             }
-            else if (IsNamedTestCaseImageVariableValueRequest)
+            else if (NamedTestCaseImageVariableValueRequest is { } __value10)
             {
-                namedTestCaseImageVariableValueRequest?.Invoke(NamedTestCaseImageVariableValueRequest!);
+                namedTestCaseImageVariableValueRequest?.Invoke(__value10);
             }
-            else if (IsNamedTestCaseDocumentVariableValueRequest)
+            else if (NamedTestCaseDocumentVariableValueRequest is { } __value11)
             {
-                namedTestCaseDocumentVariableValueRequest?.Invoke(NamedTestCaseDocumentVariableValueRequest!);
+                namedTestCaseDocumentVariableValueRequest?.Invoke(__value11);
             }
         }
 
@@ -986,53 +986,53 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsNamedTestCaseStringVariableValueRequest)
+            if (NamedTestCaseStringVariableValueRequest is { } __value0)
             {
-                namedTestCaseStringVariableValueRequest?.Invoke(NamedTestCaseStringVariableValueRequest!);
+                namedTestCaseStringVariableValueRequest?.Invoke(__value0);
             }
-            else if (IsNamedTestCaseNumberVariableValueRequest)
+            else if (NamedTestCaseNumberVariableValueRequest is { } __value1)
             {
-                namedTestCaseNumberVariableValueRequest?.Invoke(NamedTestCaseNumberVariableValueRequest!);
+                namedTestCaseNumberVariableValueRequest?.Invoke(__value1);
             }
-            else if (IsNamedTestCaseJsonVariableValueRequest)
+            else if (NamedTestCaseJsonVariableValueRequest is { } __value2)
             {
-                namedTestCaseJsonVariableValueRequest?.Invoke(NamedTestCaseJsonVariableValueRequest!);
+                namedTestCaseJsonVariableValueRequest?.Invoke(__value2);
             }
-            else if (IsNamedTestCaseChatHistoryVariableValueRequest)
+            else if (NamedTestCaseChatHistoryVariableValueRequest is { } __value3)
             {
-                namedTestCaseChatHistoryVariableValueRequest?.Invoke(NamedTestCaseChatHistoryVariableValueRequest!);
+                namedTestCaseChatHistoryVariableValueRequest?.Invoke(__value3);
             }
-            else if (IsNamedTestCaseSearchResultsVariableValueRequest)
+            else if (NamedTestCaseSearchResultsVariableValueRequest is { } __value4)
             {
-                namedTestCaseSearchResultsVariableValueRequest?.Invoke(NamedTestCaseSearchResultsVariableValueRequest!);
+                namedTestCaseSearchResultsVariableValueRequest?.Invoke(__value4);
             }
-            else if (IsNamedTestCaseErrorVariableValueRequest)
+            else if (NamedTestCaseErrorVariableValueRequest is { } __value5)
             {
-                namedTestCaseErrorVariableValueRequest?.Invoke(NamedTestCaseErrorVariableValueRequest!);
+                namedTestCaseErrorVariableValueRequest?.Invoke(__value5);
             }
-            else if (IsNamedTestCaseFunctionCallVariableValueRequest)
+            else if (NamedTestCaseFunctionCallVariableValueRequest is { } __value6)
             {
-                namedTestCaseFunctionCallVariableValueRequest?.Invoke(NamedTestCaseFunctionCallVariableValueRequest!);
+                namedTestCaseFunctionCallVariableValueRequest?.Invoke(__value6);
             }
-            else if (IsNamedTestCaseArrayVariableValueRequest)
+            else if (NamedTestCaseArrayVariableValueRequest is { } __value7)
             {
-                namedTestCaseArrayVariableValueRequest?.Invoke(NamedTestCaseArrayVariableValueRequest!);
+                namedTestCaseArrayVariableValueRequest?.Invoke(__value7);
             }
-            else if (IsNamedTestCaseAudioVariableValueRequest)
+            else if (NamedTestCaseAudioVariableValueRequest is { } __value8)
             {
-                namedTestCaseAudioVariableValueRequest?.Invoke(NamedTestCaseAudioVariableValueRequest!);
+                namedTestCaseAudioVariableValueRequest?.Invoke(__value8);
             }
-            else if (IsNamedTestCaseVideoVariableValueRequest)
+            else if (NamedTestCaseVideoVariableValueRequest is { } __value9)
             {
-                namedTestCaseVideoVariableValueRequest?.Invoke(NamedTestCaseVideoVariableValueRequest!);
+                namedTestCaseVideoVariableValueRequest?.Invoke(__value9);
             }
-            else if (IsNamedTestCaseImageVariableValueRequest)
+            else if (NamedTestCaseImageVariableValueRequest is { } __value10)
             {
-                namedTestCaseImageVariableValueRequest?.Invoke(NamedTestCaseImageVariableValueRequest!);
+                namedTestCaseImageVariableValueRequest?.Invoke(__value10);
             }
-            else if (IsNamedTestCaseDocumentVariableValueRequest)
+            else if (NamedTestCaseDocumentVariableValueRequest is { } __value11)
             {
-                namedTestCaseDocumentVariableValueRequest?.Invoke(NamedTestCaseDocumentVariableValueRequest!);
+                namedTestCaseDocumentVariableValueRequest?.Invoke(__value11);
             }
         }
 

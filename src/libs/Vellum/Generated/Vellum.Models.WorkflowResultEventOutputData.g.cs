@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataString PickWorkflowResultEventOutputDataString() => IsWorkflowResultEventOutputDataString
-            ? WorkflowResultEventOutputDataString!
+        public global::Vellum.WorkflowResultEventOutputDataString PickWorkflowResultEventOutputDataString() => WorkflowResultEventOutputDataString is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataString' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataNumber PickWorkflowResultEventOutputDataNumber() => IsWorkflowResultEventOutputDataNumber
-            ? WorkflowResultEventOutputDataNumber!
+        public global::Vellum.WorkflowResultEventOutputDataNumber PickWorkflowResultEventOutputDataNumber() => WorkflowResultEventOutputDataNumber is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataNumber' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataJSON PickWorkflowResultEventOutputDataJSON() => IsWorkflowResultEventOutputDataJSON
-            ? WorkflowResultEventOutputDataJSON!
+        public global::Vellum.WorkflowResultEventOutputDataJSON PickWorkflowResultEventOutputDataJSON() => WorkflowResultEventOutputDataJSON is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataJSON' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataChatHistory PickWorkflowResultEventOutputDataChatHistory() => IsWorkflowResultEventOutputDataChatHistory
-            ? WorkflowResultEventOutputDataChatHistory!
+        public global::Vellum.WorkflowResultEventOutputDataChatHistory PickWorkflowResultEventOutputDataChatHistory() => WorkflowResultEventOutputDataChatHistory is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataChatHistory' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataSearchResults PickWorkflowResultEventOutputDataSearchResults() => IsWorkflowResultEventOutputDataSearchResults
-            ? WorkflowResultEventOutputDataSearchResults!
+        public global::Vellum.WorkflowResultEventOutputDataSearchResults PickWorkflowResultEventOutputDataSearchResults() => WorkflowResultEventOutputDataSearchResults is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataSearchResults' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataArray PickWorkflowResultEventOutputDataArray() => IsWorkflowResultEventOutputDataArray
-            ? WorkflowResultEventOutputDataArray!
+        public global::Vellum.WorkflowResultEventOutputDataArray PickWorkflowResultEventOutputDataArray() => WorkflowResultEventOutputDataArray is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataArray' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataFunctionCall PickWorkflowResultEventOutputDataFunctionCall() => IsWorkflowResultEventOutputDataFunctionCall
-            ? WorkflowResultEventOutputDataFunctionCall!
+        public global::Vellum.WorkflowResultEventOutputDataFunctionCall PickWorkflowResultEventOutputDataFunctionCall() => WorkflowResultEventOutputDataFunctionCall is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataFunctionCall' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataError PickWorkflowResultEventOutputDataError() => IsWorkflowResultEventOutputDataError
-            ? WorkflowResultEventOutputDataError!
+        public global::Vellum.WorkflowResultEventOutputDataError PickWorkflowResultEventOutputDataError() => WorkflowResultEventOutputDataError is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowResultEventOutputDataError' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowResultEventOutputDataString && workflowResultEventOutputDataString != null)
+            if (WorkflowResultEventOutputDataString is { } __value0 && workflowResultEventOutputDataString != null)
             {
-                return workflowResultEventOutputDataString(WorkflowResultEventOutputDataString!);
+                return workflowResultEventOutputDataString(__value0);
             }
-            else if (IsWorkflowResultEventOutputDataNumber && workflowResultEventOutputDataNumber != null)
+            else if (WorkflowResultEventOutputDataNumber is { } __value1 && workflowResultEventOutputDataNumber != null)
             {
-                return workflowResultEventOutputDataNumber(WorkflowResultEventOutputDataNumber!);
+                return workflowResultEventOutputDataNumber(__value1);
             }
-            else if (IsWorkflowResultEventOutputDataJSON && workflowResultEventOutputDataJSON != null)
+            else if (WorkflowResultEventOutputDataJSON is { } __value2 && workflowResultEventOutputDataJSON != null)
             {
-                return workflowResultEventOutputDataJSON(WorkflowResultEventOutputDataJSON!);
+                return workflowResultEventOutputDataJSON(__value2);
             }
-            else if (IsWorkflowResultEventOutputDataChatHistory && workflowResultEventOutputDataChatHistory != null)
+            else if (WorkflowResultEventOutputDataChatHistory is { } __value3 && workflowResultEventOutputDataChatHistory != null)
             {
-                return workflowResultEventOutputDataChatHistory(WorkflowResultEventOutputDataChatHistory!);
+                return workflowResultEventOutputDataChatHistory(__value3);
             }
-            else if (IsWorkflowResultEventOutputDataSearchResults && workflowResultEventOutputDataSearchResults != null)
+            else if (WorkflowResultEventOutputDataSearchResults is { } __value4 && workflowResultEventOutputDataSearchResults != null)
             {
-                return workflowResultEventOutputDataSearchResults(WorkflowResultEventOutputDataSearchResults!);
+                return workflowResultEventOutputDataSearchResults(__value4);
             }
-            else if (IsWorkflowResultEventOutputDataArray && workflowResultEventOutputDataArray != null)
+            else if (WorkflowResultEventOutputDataArray is { } __value5 && workflowResultEventOutputDataArray != null)
             {
-                return workflowResultEventOutputDataArray(WorkflowResultEventOutputDataArray!);
+                return workflowResultEventOutputDataArray(__value5);
             }
-            else if (IsWorkflowResultEventOutputDataFunctionCall && workflowResultEventOutputDataFunctionCall != null)
+            else if (WorkflowResultEventOutputDataFunctionCall is { } __value6 && workflowResultEventOutputDataFunctionCall != null)
             {
-                return workflowResultEventOutputDataFunctionCall(WorkflowResultEventOutputDataFunctionCall!);
+                return workflowResultEventOutputDataFunctionCall(__value6);
             }
-            else if (IsWorkflowResultEventOutputDataError && workflowResultEventOutputDataError != null)
+            else if (WorkflowResultEventOutputDataError is { } __value7 && workflowResultEventOutputDataError != null)
             {
-                return workflowResultEventOutputDataError(WorkflowResultEventOutputDataError!);
+                return workflowResultEventOutputDataError(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowResultEventOutputDataString)
+            if (WorkflowResultEventOutputDataString is { } __value0)
             {
-                workflowResultEventOutputDataString?.Invoke(WorkflowResultEventOutputDataString!);
+                workflowResultEventOutputDataString?.Invoke(__value0);
             }
-            else if (IsWorkflowResultEventOutputDataNumber)
+            else if (WorkflowResultEventOutputDataNumber is { } __value1)
             {
-                workflowResultEventOutputDataNumber?.Invoke(WorkflowResultEventOutputDataNumber!);
+                workflowResultEventOutputDataNumber?.Invoke(__value1);
             }
-            else if (IsWorkflowResultEventOutputDataJSON)
+            else if (WorkflowResultEventOutputDataJSON is { } __value2)
             {
-                workflowResultEventOutputDataJSON?.Invoke(WorkflowResultEventOutputDataJSON!);
+                workflowResultEventOutputDataJSON?.Invoke(__value2);
             }
-            else if (IsWorkflowResultEventOutputDataChatHistory)
+            else if (WorkflowResultEventOutputDataChatHistory is { } __value3)
             {
-                workflowResultEventOutputDataChatHistory?.Invoke(WorkflowResultEventOutputDataChatHistory!);
+                workflowResultEventOutputDataChatHistory?.Invoke(__value3);
             }
-            else if (IsWorkflowResultEventOutputDataSearchResults)
+            else if (WorkflowResultEventOutputDataSearchResults is { } __value4)
             {
-                workflowResultEventOutputDataSearchResults?.Invoke(WorkflowResultEventOutputDataSearchResults!);
+                workflowResultEventOutputDataSearchResults?.Invoke(__value4);
             }
-            else if (IsWorkflowResultEventOutputDataArray)
+            else if (WorkflowResultEventOutputDataArray is { } __value5)
             {
-                workflowResultEventOutputDataArray?.Invoke(WorkflowResultEventOutputDataArray!);
+                workflowResultEventOutputDataArray?.Invoke(__value5);
             }
-            else if (IsWorkflowResultEventOutputDataFunctionCall)
+            else if (WorkflowResultEventOutputDataFunctionCall is { } __value6)
             {
-                workflowResultEventOutputDataFunctionCall?.Invoke(WorkflowResultEventOutputDataFunctionCall!);
+                workflowResultEventOutputDataFunctionCall?.Invoke(__value6);
             }
-            else if (IsWorkflowResultEventOutputDataError)
+            else if (WorkflowResultEventOutputDataError is { } __value7)
             {
-                workflowResultEventOutputDataError?.Invoke(WorkflowResultEventOutputDataError!);
+                workflowResultEventOutputDataError?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowResultEventOutputDataString)
+            if (WorkflowResultEventOutputDataString is { } __value0)
             {
-                workflowResultEventOutputDataString?.Invoke(WorkflowResultEventOutputDataString!);
+                workflowResultEventOutputDataString?.Invoke(__value0);
             }
-            else if (IsWorkflowResultEventOutputDataNumber)
+            else if (WorkflowResultEventOutputDataNumber is { } __value1)
             {
-                workflowResultEventOutputDataNumber?.Invoke(WorkflowResultEventOutputDataNumber!);
+                workflowResultEventOutputDataNumber?.Invoke(__value1);
             }
-            else if (IsWorkflowResultEventOutputDataJSON)
+            else if (WorkflowResultEventOutputDataJSON is { } __value2)
             {
-                workflowResultEventOutputDataJSON?.Invoke(WorkflowResultEventOutputDataJSON!);
+                workflowResultEventOutputDataJSON?.Invoke(__value2);
             }
-            else if (IsWorkflowResultEventOutputDataChatHistory)
+            else if (WorkflowResultEventOutputDataChatHistory is { } __value3)
             {
-                workflowResultEventOutputDataChatHistory?.Invoke(WorkflowResultEventOutputDataChatHistory!);
+                workflowResultEventOutputDataChatHistory?.Invoke(__value3);
             }
-            else if (IsWorkflowResultEventOutputDataSearchResults)
+            else if (WorkflowResultEventOutputDataSearchResults is { } __value4)
             {
-                workflowResultEventOutputDataSearchResults?.Invoke(WorkflowResultEventOutputDataSearchResults!);
+                workflowResultEventOutputDataSearchResults?.Invoke(__value4);
             }
-            else if (IsWorkflowResultEventOutputDataArray)
+            else if (WorkflowResultEventOutputDataArray is { } __value5)
             {
-                workflowResultEventOutputDataArray?.Invoke(WorkflowResultEventOutputDataArray!);
+                workflowResultEventOutputDataArray?.Invoke(__value5);
             }
-            else if (IsWorkflowResultEventOutputDataFunctionCall)
+            else if (WorkflowResultEventOutputDataFunctionCall is { } __value6)
             {
-                workflowResultEventOutputDataFunctionCall?.Invoke(WorkflowResultEventOutputDataFunctionCall!);
+                workflowResultEventOutputDataFunctionCall?.Invoke(__value6);
             }
-            else if (IsWorkflowResultEventOutputDataError)
+            else if (WorkflowResultEventOutputDataError is { } __value7)
             {
-                workflowResultEventOutputDataError?.Invoke(WorkflowResultEventOutputDataError!);
+                workflowResultEventOutputDataError?.Invoke(__value7);
             }
         }
 

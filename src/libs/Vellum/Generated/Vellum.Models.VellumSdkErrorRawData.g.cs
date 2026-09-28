@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public object PickVellumSdkErrorRawDataVariant1() => IsVellumSdkErrorRawDataVariant1
-            ? VellumSdkErrorRawDataVariant1!
+        public object PickVellumSdkErrorRawDataVariant1() => VellumSdkErrorRawDataVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public string PickVellumSdkErrorRawDataVariant2() => IsVellumSdkErrorRawDataVariant2
-            ? VellumSdkErrorRawDataVariant2!
+        public string PickVellumSdkErrorRawDataVariant2() => VellumSdkErrorRawDataVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VellumSdkErrorRawDataVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsVellumSdkErrorRawDataVariant1 && vellumSdkErrorRawDataVariant1 != null)
+            if (VellumSdkErrorRawDataVariant1 is { } __value0 && vellumSdkErrorRawDataVariant1 != null)
             {
-                return vellumSdkErrorRawDataVariant1(VellumSdkErrorRawDataVariant1!);
+                return vellumSdkErrorRawDataVariant1(__value0);
             }
-            else if (IsVellumSdkErrorRawDataVariant2 && vellumSdkErrorRawDataVariant2 != null)
+            else if (VellumSdkErrorRawDataVariant2 is { } __value1 && vellumSdkErrorRawDataVariant2 != null)
             {
-                return vellumSdkErrorRawDataVariant2(VellumSdkErrorRawDataVariant2!);
+                return vellumSdkErrorRawDataVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsVellumSdkErrorRawDataVariant1)
+            if (VellumSdkErrorRawDataVariant1 is { } __value0)
             {
-                vellumSdkErrorRawDataVariant1?.Invoke(VellumSdkErrorRawDataVariant1!);
+                vellumSdkErrorRawDataVariant1?.Invoke(__value0);
             }
-            else if (IsVellumSdkErrorRawDataVariant2)
+            else if (VellumSdkErrorRawDataVariant2 is { } __value1)
             {
-                vellumSdkErrorRawDataVariant2?.Invoke(VellumSdkErrorRawDataVariant2!);
+                vellumSdkErrorRawDataVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsVellumSdkErrorRawDataVariant1)
+            if (VellumSdkErrorRawDataVariant1 is { } __value0)
             {
-                vellumSdkErrorRawDataVariant1?.Invoke(VellumSdkErrorRawDataVariant1!);
+                vellumSdkErrorRawDataVariant1?.Invoke(__value0);
             }
-            else if (IsVellumSdkErrorRawDataVariant2)
+            else if (VellumSdkErrorRawDataVariant2 is { } __value1)
             {
-                vellumSdkErrorRawDataVariant2?.Invoke(VellumSdkErrorRawDataVariant2!);
+                vellumSdkErrorRawDataVariant2?.Invoke(__value1);
             }
         }
 

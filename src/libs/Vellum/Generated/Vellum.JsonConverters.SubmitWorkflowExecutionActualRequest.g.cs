@@ -184,19 +184,19 @@ namespace Vellum.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowExecutionActualStringRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowExecutionActualStringRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowExecutionActualStringRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowExecutionActualStringRequest!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkflowExecutionActualStringRequest(), typeInfo);
             }
             else if (value.IsWorkflowExecutionActualJsonRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowExecutionActualJsonRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowExecutionActualJsonRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowExecutionActualJsonRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowExecutionActualJsonRequest!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkflowExecutionActualJsonRequest(), typeInfo);
             }
             else if (value.IsWorkflowExecutionActualChatHistoryRequest)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vellum.WorkflowExecutionActualChatHistoryRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vellum.WorkflowExecutionActualChatHistoryRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vellum.WorkflowExecutionActualChatHistoryRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WorkflowExecutionActualChatHistoryRequest!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWorkflowExecutionActualChatHistoryRequest(), typeInfo);
             }
         }
     }

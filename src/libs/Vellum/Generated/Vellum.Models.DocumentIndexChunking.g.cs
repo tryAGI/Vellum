@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunking PickReductoChunking() => IsReductoChunking
-            ? ReductoChunking!
+        public global::Vellum.ReductoChunking PickReductoChunking() => ReductoChunking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReductoChunking' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunking PickSentenceChunking() => IsSentenceChunking
-            ? SentenceChunking!
+        public global::Vellum.SentenceChunking PickSentenceChunking() => SentenceChunking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SentenceChunking' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunking PickTokenOverlappingWindowChunking() => IsTokenOverlappingWindowChunking
-            ? TokenOverlappingWindowChunking!
+        public global::Vellum.TokenOverlappingWindowChunking PickTokenOverlappingWindowChunking() => TokenOverlappingWindowChunking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenOverlappingWindowChunking' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunking PickDelimiterChunking() => IsDelimiterChunking
-            ? DelimiterChunking!
+        public global::Vellum.DelimiterChunking PickDelimiterChunking() => DelimiterChunking is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DelimiterChunking' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsReductoChunking && reductoChunking != null)
+            if (ReductoChunking is { } __value0 && reductoChunking != null)
             {
-                return reductoChunking(ReductoChunking!);
+                return reductoChunking(__value0);
             }
-            else if (IsSentenceChunking && sentenceChunking != null)
+            else if (SentenceChunking is { } __value1 && sentenceChunking != null)
             {
-                return sentenceChunking(SentenceChunking!);
+                return sentenceChunking(__value1);
             }
-            else if (IsTokenOverlappingWindowChunking && tokenOverlappingWindowChunking != null)
+            else if (TokenOverlappingWindowChunking is { } __value2 && tokenOverlappingWindowChunking != null)
             {
-                return tokenOverlappingWindowChunking(TokenOverlappingWindowChunking!);
+                return tokenOverlappingWindowChunking(__value2);
             }
-            else if (IsDelimiterChunking && delimiterChunking != null)
+            else if (DelimiterChunking is { } __value3 && delimiterChunking != null)
             {
-                return delimiterChunking(DelimiterChunking!);
+                return delimiterChunking(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsReductoChunking)
+            if (ReductoChunking is { } __value0)
             {
-                reductoChunking?.Invoke(ReductoChunking!);
+                reductoChunking?.Invoke(__value0);
             }
-            else if (IsSentenceChunking)
+            else if (SentenceChunking is { } __value1)
             {
-                sentenceChunking?.Invoke(SentenceChunking!);
+                sentenceChunking?.Invoke(__value1);
             }
-            else if (IsTokenOverlappingWindowChunking)
+            else if (TokenOverlappingWindowChunking is { } __value2)
             {
-                tokenOverlappingWindowChunking?.Invoke(TokenOverlappingWindowChunking!);
+                tokenOverlappingWindowChunking?.Invoke(__value2);
             }
-            else if (IsDelimiterChunking)
+            else if (DelimiterChunking is { } __value3)
             {
-                delimiterChunking?.Invoke(DelimiterChunking!);
+                delimiterChunking?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsReductoChunking)
+            if (ReductoChunking is { } __value0)
             {
-                reductoChunking?.Invoke(ReductoChunking!);
+                reductoChunking?.Invoke(__value0);
             }
-            else if (IsSentenceChunking)
+            else if (SentenceChunking is { } __value1)
             {
-                sentenceChunking?.Invoke(SentenceChunking!);
+                sentenceChunking?.Invoke(__value1);
             }
-            else if (IsTokenOverlappingWindowChunking)
+            else if (TokenOverlappingWindowChunking is { } __value2)
             {
-                tokenOverlappingWindowChunking?.Invoke(TokenOverlappingWindowChunking!);
+                tokenOverlappingWindowChunking?.Invoke(__value2);
             }
-            else if (IsDelimiterChunking)
+            else if (DelimiterChunking is { } __value3)
             {
-                delimiterChunking?.Invoke(DelimiterChunking!);
+                delimiterChunking?.Invoke(__value3);
             }
         }
 

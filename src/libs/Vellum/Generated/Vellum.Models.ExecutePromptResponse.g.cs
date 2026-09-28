@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FulfilledExecutePromptResponse PickFulfilledExecutePromptResponse() => IsFulfilledExecutePromptResponse
-            ? FulfilledExecutePromptResponse!
+        public global::Vellum.FulfilledExecutePromptResponse PickFulfilledExecutePromptResponse() => FulfilledExecutePromptResponse is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FulfilledExecutePromptResponse' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.RejectedExecutePromptResponse PickRejectedExecutePromptResponse() => IsRejectedExecutePromptResponse
-            ? RejectedExecutePromptResponse!
+        public global::Vellum.RejectedExecutePromptResponse PickRejectedExecutePromptResponse() => RejectedExecutePromptResponse is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RejectedExecutePromptResponse' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFulfilledExecutePromptResponse && fulfilledExecutePromptResponse != null)
+            if (FulfilledExecutePromptResponse is { } __value0 && fulfilledExecutePromptResponse != null)
             {
-                return fulfilledExecutePromptResponse(FulfilledExecutePromptResponse!);
+                return fulfilledExecutePromptResponse(__value0);
             }
-            else if (IsRejectedExecutePromptResponse && rejectedExecutePromptResponse != null)
+            else if (RejectedExecutePromptResponse is { } __value1 && rejectedExecutePromptResponse != null)
             {
-                return rejectedExecutePromptResponse(RejectedExecutePromptResponse!);
+                return rejectedExecutePromptResponse(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFulfilledExecutePromptResponse)
+            if (FulfilledExecutePromptResponse is { } __value0)
             {
-                fulfilledExecutePromptResponse?.Invoke(FulfilledExecutePromptResponse!);
+                fulfilledExecutePromptResponse?.Invoke(__value0);
             }
-            else if (IsRejectedExecutePromptResponse)
+            else if (RejectedExecutePromptResponse is { } __value1)
             {
-                rejectedExecutePromptResponse?.Invoke(RejectedExecutePromptResponse!);
+                rejectedExecutePromptResponse?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsFulfilledExecutePromptResponse)
+            if (FulfilledExecutePromptResponse is { } __value0)
             {
-                fulfilledExecutePromptResponse?.Invoke(FulfilledExecutePromptResponse!);
+                fulfilledExecutePromptResponse?.Invoke(__value0);
             }
-            else if (IsRejectedExecutePromptResponse)
+            else if (RejectedExecutePromptResponse is { } __value1)
             {
-                rejectedExecutePromptResponse?.Invoke(RejectedExecutePromptResponse!);
+                rejectedExecutePromptResponse?.Invoke(__value1);
             }
         }
 

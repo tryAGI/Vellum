@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunkingRequest PickReductoChunkingRequest() => IsReductoChunkingRequest
-            ? ReductoChunkingRequest!
+        public global::Vellum.ReductoChunkingRequest PickReductoChunkingRequest() => ReductoChunkingRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReductoChunkingRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunkingRequest PickSentenceChunkingRequest() => IsSentenceChunkingRequest
-            ? SentenceChunkingRequest!
+        public global::Vellum.SentenceChunkingRequest PickSentenceChunkingRequest() => SentenceChunkingRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SentenceChunkingRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunkingRequest PickTokenOverlappingWindowChunkingRequest() => IsTokenOverlappingWindowChunkingRequest
-            ? TokenOverlappingWindowChunkingRequest!
+        public global::Vellum.TokenOverlappingWindowChunkingRequest PickTokenOverlappingWindowChunkingRequest() => TokenOverlappingWindowChunkingRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenOverlappingWindowChunkingRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunkingRequest PickDelimiterChunkingRequest() => IsDelimiterChunkingRequest
-            ? DelimiterChunkingRequest!
+        public global::Vellum.DelimiterChunkingRequest PickDelimiterChunkingRequest() => DelimiterChunkingRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DelimiterChunkingRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsReductoChunkingRequest && reductoChunkingRequest != null)
+            if (ReductoChunkingRequest is { } __value0 && reductoChunkingRequest != null)
             {
-                return reductoChunkingRequest(ReductoChunkingRequest!);
+                return reductoChunkingRequest(__value0);
             }
-            else if (IsSentenceChunkingRequest && sentenceChunkingRequest != null)
+            else if (SentenceChunkingRequest is { } __value1 && sentenceChunkingRequest != null)
             {
-                return sentenceChunkingRequest(SentenceChunkingRequest!);
+                return sentenceChunkingRequest(__value1);
             }
-            else if (IsTokenOverlappingWindowChunkingRequest && tokenOverlappingWindowChunkingRequest != null)
+            else if (TokenOverlappingWindowChunkingRequest is { } __value2 && tokenOverlappingWindowChunkingRequest != null)
             {
-                return tokenOverlappingWindowChunkingRequest(TokenOverlappingWindowChunkingRequest!);
+                return tokenOverlappingWindowChunkingRequest(__value2);
             }
-            else if (IsDelimiterChunkingRequest && delimiterChunkingRequest != null)
+            else if (DelimiterChunkingRequest is { } __value3 && delimiterChunkingRequest != null)
             {
-                return delimiterChunkingRequest(DelimiterChunkingRequest!);
+                return delimiterChunkingRequest(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsReductoChunkingRequest)
+            if (ReductoChunkingRequest is { } __value0)
             {
-                reductoChunkingRequest?.Invoke(ReductoChunkingRequest!);
+                reductoChunkingRequest?.Invoke(__value0);
             }
-            else if (IsSentenceChunkingRequest)
+            else if (SentenceChunkingRequest is { } __value1)
             {
-                sentenceChunkingRequest?.Invoke(SentenceChunkingRequest!);
+                sentenceChunkingRequest?.Invoke(__value1);
             }
-            else if (IsTokenOverlappingWindowChunkingRequest)
+            else if (TokenOverlappingWindowChunkingRequest is { } __value2)
             {
-                tokenOverlappingWindowChunkingRequest?.Invoke(TokenOverlappingWindowChunkingRequest!);
+                tokenOverlappingWindowChunkingRequest?.Invoke(__value2);
             }
-            else if (IsDelimiterChunkingRequest)
+            else if (DelimiterChunkingRequest is { } __value3)
             {
-                delimiterChunkingRequest?.Invoke(DelimiterChunkingRequest!);
+                delimiterChunkingRequest?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsReductoChunkingRequest)
+            if (ReductoChunkingRequest is { } __value0)
             {
-                reductoChunkingRequest?.Invoke(ReductoChunkingRequest!);
+                reductoChunkingRequest?.Invoke(__value0);
             }
-            else if (IsSentenceChunkingRequest)
+            else if (SentenceChunkingRequest is { } __value1)
             {
-                sentenceChunkingRequest?.Invoke(SentenceChunkingRequest!);
+                sentenceChunkingRequest?.Invoke(__value1);
             }
-            else if (IsTokenOverlappingWindowChunkingRequest)
+            else if (TokenOverlappingWindowChunkingRequest is { } __value2)
             {
-                tokenOverlappingWindowChunkingRequest?.Invoke(TokenOverlappingWindowChunkingRequest!);
+                tokenOverlappingWindowChunkingRequest?.Invoke(__value2);
             }
-            else if (IsDelimiterChunkingRequest)
+            else if (DelimiterChunkingRequest is { } __value3)
             {
-                delimiterChunkingRequest?.Invoke(DelimiterChunkingRequest!);
+                delimiterChunkingRequest?.Invoke(__value3);
             }
         }
 

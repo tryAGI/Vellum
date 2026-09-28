@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringVellumValue PickStringVellumValue() => IsStringVellumValue
-            ? StringVellumValue!
+        public global::Vellum.StringVellumValue PickStringVellumValue() => StringVellumValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StringVellumValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.JsonVellumValue PickJsonVellumValue() => IsJsonVellumValue
-            ? JsonVellumValue!
+        public global::Vellum.JsonVellumValue PickJsonVellumValue() => JsonVellumValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVellumValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ErrorVellumValue PickErrorVellumValue() => IsErrorVellumValue
-            ? ErrorVellumValue!
+        public global::Vellum.ErrorVellumValue PickErrorVellumValue() => ErrorVellumValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorVellumValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallVellumValue PickFunctionCallVellumValue() => IsFunctionCallVellumValue
-            ? FunctionCallVellumValue!
+        public global::Vellum.FunctionCallVellumValue PickFunctionCallVellumValue() => FunctionCallVellumValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallVellumValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ThinkingVellumValue PickThinkingVellumValue() => IsThinkingVellumValue
-            ? ThinkingVellumValue!
+        public global::Vellum.ThinkingVellumValue PickThinkingVellumValue() => ThinkingVellumValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ThinkingVellumValue' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringVellumValue && stringVellumValue != null)
+            if (StringVellumValue is { } __value0 && stringVellumValue != null)
             {
-                return stringVellumValue(StringVellumValue!);
+                return stringVellumValue(__value0);
             }
-            else if (IsJsonVellumValue && jsonVellumValue != null)
+            else if (JsonVellumValue is { } __value1 && jsonVellumValue != null)
             {
-                return jsonVellumValue(JsonVellumValue!);
+                return jsonVellumValue(__value1);
             }
-            else if (IsErrorVellumValue && errorVellumValue != null)
+            else if (ErrorVellumValue is { } __value2 && errorVellumValue != null)
             {
-                return errorVellumValue(ErrorVellumValue!);
+                return errorVellumValue(__value2);
             }
-            else if (IsFunctionCallVellumValue && functionCallVellumValue != null)
+            else if (FunctionCallVellumValue is { } __value3 && functionCallVellumValue != null)
             {
-                return functionCallVellumValue(FunctionCallVellumValue!);
+                return functionCallVellumValue(__value3);
             }
-            else if (IsThinkingVellumValue && thinkingVellumValue != null)
+            else if (ThinkingVellumValue is { } __value4 && thinkingVellumValue != null)
             {
-                return thinkingVellumValue(ThinkingVellumValue!);
+                return thinkingVellumValue(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringVellumValue)
+            if (StringVellumValue is { } __value0)
             {
-                stringVellumValue?.Invoke(StringVellumValue!);
+                stringVellumValue?.Invoke(__value0);
             }
-            else if (IsJsonVellumValue)
+            else if (JsonVellumValue is { } __value1)
             {
-                jsonVellumValue?.Invoke(JsonVellumValue!);
+                jsonVellumValue?.Invoke(__value1);
             }
-            else if (IsErrorVellumValue)
+            else if (ErrorVellumValue is { } __value2)
             {
-                errorVellumValue?.Invoke(ErrorVellumValue!);
+                errorVellumValue?.Invoke(__value2);
             }
-            else if (IsFunctionCallVellumValue)
+            else if (FunctionCallVellumValue is { } __value3)
             {
-                functionCallVellumValue?.Invoke(FunctionCallVellumValue!);
+                functionCallVellumValue?.Invoke(__value3);
             }
-            else if (IsThinkingVellumValue)
+            else if (ThinkingVellumValue is { } __value4)
             {
-                thinkingVellumValue?.Invoke(ThinkingVellumValue!);
+                thinkingVellumValue?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringVellumValue)
+            if (StringVellumValue is { } __value0)
             {
-                stringVellumValue?.Invoke(StringVellumValue!);
+                stringVellumValue?.Invoke(__value0);
             }
-            else if (IsJsonVellumValue)
+            else if (JsonVellumValue is { } __value1)
             {
-                jsonVellumValue?.Invoke(JsonVellumValue!);
+                jsonVellumValue?.Invoke(__value1);
             }
-            else if (IsErrorVellumValue)
+            else if (ErrorVellumValue is { } __value2)
             {
-                errorVellumValue?.Invoke(ErrorVellumValue!);
+                errorVellumValue?.Invoke(__value2);
             }
-            else if (IsFunctionCallVellumValue)
+            else if (FunctionCallVellumValue is { } __value3)
             {
-                functionCallVellumValue?.Invoke(FunctionCallVellumValue!);
+                functionCallVellumValue?.Invoke(__value3);
             }
-            else if (IsThinkingVellumValue)
+            else if (ThinkingVellumValue is { } __value4)
             {
-                thinkingVellumValue?.Invoke(ThinkingVellumValue!);
+                thinkingVellumValue?.Invoke(__value4);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest PickTestSuiteTestCaseCreateBulkOperationRequest() => IsTestSuiteTestCaseCreateBulkOperationRequest
-            ? TestSuiteTestCaseCreateBulkOperationRequest!
+        public global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest PickTestSuiteTestCaseCreateBulkOperationRequest() => TestSuiteTestCaseCreateBulkOperationRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseCreateBulkOperationRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest PickTestSuiteTestCaseReplaceBulkOperationRequest() => IsTestSuiteTestCaseReplaceBulkOperationRequest
-            ? TestSuiteTestCaseReplaceBulkOperationRequest!
+        public global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest PickTestSuiteTestCaseReplaceBulkOperationRequest() => TestSuiteTestCaseReplaceBulkOperationRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseReplaceBulkOperationRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest PickTestSuiteTestCaseUpsertBulkOperationRequest() => IsTestSuiteTestCaseUpsertBulkOperationRequest
-            ? TestSuiteTestCaseUpsertBulkOperationRequest!
+        public global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest PickTestSuiteTestCaseUpsertBulkOperationRequest() => TestSuiteTestCaseUpsertBulkOperationRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseUpsertBulkOperationRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest PickTestSuiteTestCaseDeleteBulkOperationRequest() => IsTestSuiteTestCaseDeleteBulkOperationRequest
-            ? TestSuiteTestCaseDeleteBulkOperationRequest!
+        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest PickTestSuiteTestCaseDeleteBulkOperationRequest() => TestSuiteTestCaseDeleteBulkOperationRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TestSuiteTestCaseDeleteBulkOperationRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteTestCaseCreateBulkOperationRequest && testSuiteTestCaseCreateBulkOperationRequest != null)
+            if (TestSuiteTestCaseCreateBulkOperationRequest is { } __value0 && testSuiteTestCaseCreateBulkOperationRequest != null)
             {
-                return testSuiteTestCaseCreateBulkOperationRequest(TestSuiteTestCaseCreateBulkOperationRequest!);
+                return testSuiteTestCaseCreateBulkOperationRequest(__value0);
             }
-            else if (IsTestSuiteTestCaseReplaceBulkOperationRequest && testSuiteTestCaseReplaceBulkOperationRequest != null)
+            else if (TestSuiteTestCaseReplaceBulkOperationRequest is { } __value1 && testSuiteTestCaseReplaceBulkOperationRequest != null)
             {
-                return testSuiteTestCaseReplaceBulkOperationRequest(TestSuiteTestCaseReplaceBulkOperationRequest!);
+                return testSuiteTestCaseReplaceBulkOperationRequest(__value1);
             }
-            else if (IsTestSuiteTestCaseUpsertBulkOperationRequest && testSuiteTestCaseUpsertBulkOperationRequest != null)
+            else if (TestSuiteTestCaseUpsertBulkOperationRequest is { } __value2 && testSuiteTestCaseUpsertBulkOperationRequest != null)
             {
-                return testSuiteTestCaseUpsertBulkOperationRequest(TestSuiteTestCaseUpsertBulkOperationRequest!);
+                return testSuiteTestCaseUpsertBulkOperationRequest(__value2);
             }
-            else if (IsTestSuiteTestCaseDeleteBulkOperationRequest && testSuiteTestCaseDeleteBulkOperationRequest != null)
+            else if (TestSuiteTestCaseDeleteBulkOperationRequest is { } __value3 && testSuiteTestCaseDeleteBulkOperationRequest != null)
             {
-                return testSuiteTestCaseDeleteBulkOperationRequest(TestSuiteTestCaseDeleteBulkOperationRequest!);
+                return testSuiteTestCaseDeleteBulkOperationRequest(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteTestCaseCreateBulkOperationRequest)
+            if (TestSuiteTestCaseCreateBulkOperationRequest is { } __value0)
             {
-                testSuiteTestCaseCreateBulkOperationRequest?.Invoke(TestSuiteTestCaseCreateBulkOperationRequest!);
+                testSuiteTestCaseCreateBulkOperationRequest?.Invoke(__value0);
             }
-            else if (IsTestSuiteTestCaseReplaceBulkOperationRequest)
+            else if (TestSuiteTestCaseReplaceBulkOperationRequest is { } __value1)
             {
-                testSuiteTestCaseReplaceBulkOperationRequest?.Invoke(TestSuiteTestCaseReplaceBulkOperationRequest!);
+                testSuiteTestCaseReplaceBulkOperationRequest?.Invoke(__value1);
             }
-            else if (IsTestSuiteTestCaseUpsertBulkOperationRequest)
+            else if (TestSuiteTestCaseUpsertBulkOperationRequest is { } __value2)
             {
-                testSuiteTestCaseUpsertBulkOperationRequest?.Invoke(TestSuiteTestCaseUpsertBulkOperationRequest!);
+                testSuiteTestCaseUpsertBulkOperationRequest?.Invoke(__value2);
             }
-            else if (IsTestSuiteTestCaseDeleteBulkOperationRequest)
+            else if (TestSuiteTestCaseDeleteBulkOperationRequest is { } __value3)
             {
-                testSuiteTestCaseDeleteBulkOperationRequest?.Invoke(TestSuiteTestCaseDeleteBulkOperationRequest!);
+                testSuiteTestCaseDeleteBulkOperationRequest?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsTestSuiteTestCaseCreateBulkOperationRequest)
+            if (TestSuiteTestCaseCreateBulkOperationRequest is { } __value0)
             {
-                testSuiteTestCaseCreateBulkOperationRequest?.Invoke(TestSuiteTestCaseCreateBulkOperationRequest!);
+                testSuiteTestCaseCreateBulkOperationRequest?.Invoke(__value0);
             }
-            else if (IsTestSuiteTestCaseReplaceBulkOperationRequest)
+            else if (TestSuiteTestCaseReplaceBulkOperationRequest is { } __value1)
             {
-                testSuiteTestCaseReplaceBulkOperationRequest?.Invoke(TestSuiteTestCaseReplaceBulkOperationRequest!);
+                testSuiteTestCaseReplaceBulkOperationRequest?.Invoke(__value1);
             }
-            else if (IsTestSuiteTestCaseUpsertBulkOperationRequest)
+            else if (TestSuiteTestCaseUpsertBulkOperationRequest is { } __value2)
             {
-                testSuiteTestCaseUpsertBulkOperationRequest?.Invoke(TestSuiteTestCaseUpsertBulkOperationRequest!);
+                testSuiteTestCaseUpsertBulkOperationRequest?.Invoke(__value2);
             }
-            else if (IsTestSuiteTestCaseDeleteBulkOperationRequest)
+            else if (TestSuiteTestCaseDeleteBulkOperationRequest is { } __value3)
             {
-                testSuiteTestCaseDeleteBulkOperationRequest?.Invoke(TestSuiteTestCaseDeleteBulkOperationRequest!);
+                testSuiteTestCaseDeleteBulkOperationRequest?.Invoke(__value3);
             }
         }
 

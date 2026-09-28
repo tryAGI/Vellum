@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringChatMessageContentRequest PickStringChatMessageContentRequest() => IsStringChatMessageContentRequest
-            ? StringChatMessageContentRequest!
+        public global::Vellum.StringChatMessageContentRequest PickStringChatMessageContentRequest() => StringChatMessageContentRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StringChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallChatMessageContentRequest PickFunctionCallChatMessageContentRequest() => IsFunctionCallChatMessageContentRequest
-            ? FunctionCallChatMessageContentRequest!
+        public global::Vellum.FunctionCallChatMessageContentRequest PickFunctionCallChatMessageContentRequest() => FunctionCallChatMessageContentRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionCallChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioChatMessageContentRequest PickAudioChatMessageContentRequest() => IsAudioChatMessageContentRequest
-            ? AudioChatMessageContentRequest!
+        public global::Vellum.AudioChatMessageContentRequest PickAudioChatMessageContentRequest() => AudioChatMessageContentRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AudioChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoChatMessageContentRequest PickVideoChatMessageContentRequest() => IsVideoChatMessageContentRequest
-            ? VideoChatMessageContentRequest!
+        public global::Vellum.VideoChatMessageContentRequest PickVideoChatMessageContentRequest() => VideoChatMessageContentRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VideoChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageChatMessageContentRequest PickImageChatMessageContentRequest() => IsImageChatMessageContentRequest
-            ? ImageChatMessageContentRequest!
+        public global::Vellum.ImageChatMessageContentRequest PickImageChatMessageContentRequest() => ImageChatMessageContentRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ImageChatMessageContentRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentChatMessageContentRequest PickDocumentChatMessageContentRequest() => IsDocumentChatMessageContentRequest
-            ? DocumentChatMessageContentRequest!
+        public global::Vellum.DocumentChatMessageContentRequest PickDocumentChatMessageContentRequest() => DocumentChatMessageContentRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DocumentChatMessageContentRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -437,29 +437,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringChatMessageContentRequest && stringChatMessageContentRequest != null)
+            if (StringChatMessageContentRequest is { } __value0 && stringChatMessageContentRequest != null)
             {
-                return stringChatMessageContentRequest(StringChatMessageContentRequest!);
+                return stringChatMessageContentRequest(__value0);
             }
-            else if (IsFunctionCallChatMessageContentRequest && functionCallChatMessageContentRequest != null)
+            else if (FunctionCallChatMessageContentRequest is { } __value1 && functionCallChatMessageContentRequest != null)
             {
-                return functionCallChatMessageContentRequest(FunctionCallChatMessageContentRequest!);
+                return functionCallChatMessageContentRequest(__value1);
             }
-            else if (IsAudioChatMessageContentRequest && audioChatMessageContentRequest != null)
+            else if (AudioChatMessageContentRequest is { } __value2 && audioChatMessageContentRequest != null)
             {
-                return audioChatMessageContentRequest(AudioChatMessageContentRequest!);
+                return audioChatMessageContentRequest(__value2);
             }
-            else if (IsVideoChatMessageContentRequest && videoChatMessageContentRequest != null)
+            else if (VideoChatMessageContentRequest is { } __value3 && videoChatMessageContentRequest != null)
             {
-                return videoChatMessageContentRequest(VideoChatMessageContentRequest!);
+                return videoChatMessageContentRequest(__value3);
             }
-            else if (IsImageChatMessageContentRequest && imageChatMessageContentRequest != null)
+            else if (ImageChatMessageContentRequest is { } __value4 && imageChatMessageContentRequest != null)
             {
-                return imageChatMessageContentRequest(ImageChatMessageContentRequest!);
+                return imageChatMessageContentRequest(__value4);
             }
-            else if (IsDocumentChatMessageContentRequest && documentChatMessageContentRequest != null)
+            else if (DocumentChatMessageContentRequest is { } __value5 && documentChatMessageContentRequest != null)
             {
-                return documentChatMessageContentRequest(DocumentChatMessageContentRequest!);
+                return documentChatMessageContentRequest(__value5);
             }
 
             return default(TResult);
@@ -487,29 +487,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringChatMessageContentRequest)
+            if (StringChatMessageContentRequest is { } __value0)
             {
-                stringChatMessageContentRequest?.Invoke(StringChatMessageContentRequest!);
+                stringChatMessageContentRequest?.Invoke(__value0);
             }
-            else if (IsFunctionCallChatMessageContentRequest)
+            else if (FunctionCallChatMessageContentRequest is { } __value1)
             {
-                functionCallChatMessageContentRequest?.Invoke(FunctionCallChatMessageContentRequest!);
+                functionCallChatMessageContentRequest?.Invoke(__value1);
             }
-            else if (IsAudioChatMessageContentRequest)
+            else if (AudioChatMessageContentRequest is { } __value2)
             {
-                audioChatMessageContentRequest?.Invoke(AudioChatMessageContentRequest!);
+                audioChatMessageContentRequest?.Invoke(__value2);
             }
-            else if (IsVideoChatMessageContentRequest)
+            else if (VideoChatMessageContentRequest is { } __value3)
             {
-                videoChatMessageContentRequest?.Invoke(VideoChatMessageContentRequest!);
+                videoChatMessageContentRequest?.Invoke(__value3);
             }
-            else if (IsImageChatMessageContentRequest)
+            else if (ImageChatMessageContentRequest is { } __value4)
             {
-                imageChatMessageContentRequest?.Invoke(ImageChatMessageContentRequest!);
+                imageChatMessageContentRequest?.Invoke(__value4);
             }
-            else if (IsDocumentChatMessageContentRequest)
+            else if (DocumentChatMessageContentRequest is { } __value5)
             {
-                documentChatMessageContentRequest?.Invoke(DocumentChatMessageContentRequest!);
+                documentChatMessageContentRequest?.Invoke(__value5);
             }
         }
 
@@ -530,29 +530,29 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsStringChatMessageContentRequest)
+            if (StringChatMessageContentRequest is { } __value0)
             {
-                stringChatMessageContentRequest?.Invoke(StringChatMessageContentRequest!);
+                stringChatMessageContentRequest?.Invoke(__value0);
             }
-            else if (IsFunctionCallChatMessageContentRequest)
+            else if (FunctionCallChatMessageContentRequest is { } __value1)
             {
-                functionCallChatMessageContentRequest?.Invoke(FunctionCallChatMessageContentRequest!);
+                functionCallChatMessageContentRequest?.Invoke(__value1);
             }
-            else if (IsAudioChatMessageContentRequest)
+            else if (AudioChatMessageContentRequest is { } __value2)
             {
-                audioChatMessageContentRequest?.Invoke(AudioChatMessageContentRequest!);
+                audioChatMessageContentRequest?.Invoke(__value2);
             }
-            else if (IsVideoChatMessageContentRequest)
+            else if (VideoChatMessageContentRequest is { } __value3)
             {
-                videoChatMessageContentRequest?.Invoke(VideoChatMessageContentRequest!);
+                videoChatMessageContentRequest?.Invoke(__value3);
             }
-            else if (IsImageChatMessageContentRequest)
+            else if (ImageChatMessageContentRequest is { } __value4)
             {
-                imageChatMessageContentRequest?.Invoke(ImageChatMessageContentRequest!);
+                imageChatMessageContentRequest?.Invoke(__value4);
             }
-            else if (IsDocumentChatMessageContentRequest)
+            else if (DocumentChatMessageContentRequest is { } __value5)
             {
-                documentChatMessageContentRequest?.Invoke(DocumentChatMessageContentRequest!);
+                documentChatMessageContentRequest?.Invoke(__value5);
             }
         }
 

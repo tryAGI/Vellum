@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PdfSearchResultMetaSourceRequest PickPdfSearchResultMetaSourceRequest() => IsPdfSearchResultMetaSourceRequest
-            ? PdfSearchResultMetaSourceRequest!
+        public global::Vellum.PdfSearchResultMetaSourceRequest PickPdfSearchResultMetaSourceRequest() => PdfSearchResultMetaSourceRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PdfSearchResultMetaSourceRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -102,9 +102,9 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPdfSearchResultMetaSourceRequest && pdfSearchResultMetaSourceRequest != null)
+            if (PdfSearchResultMetaSourceRequest is { } __value0 && pdfSearchResultMetaSourceRequest != null)
             {
-                return pdfSearchResultMetaSourceRequest(PdfSearchResultMetaSourceRequest!);
+                return pdfSearchResultMetaSourceRequest(__value0);
             }
 
             return default(TResult);
@@ -122,9 +122,9 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPdfSearchResultMetaSourceRequest)
+            if (PdfSearchResultMetaSourceRequest is { } __value0)
             {
-                pdfSearchResultMetaSourceRequest?.Invoke(PdfSearchResultMetaSourceRequest!);
+                pdfSearchResultMetaSourceRequest?.Invoke(__value0);
             }
         }
 
@@ -140,9 +140,9 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsPdfSearchResultMetaSourceRequest)
+            if (PdfSearchResultMetaSourceRequest is { } __value0)
             {
-                pdfSearchResultMetaSourceRequest?.Invoke(PdfSearchResultMetaSourceRequest!);
+                pdfSearchResultMetaSourceRequest?.Invoke(__value0);
             }
         }
 

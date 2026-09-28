@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActualStringRequest PickWorkflowExecutionActualStringRequest() => IsWorkflowExecutionActualStringRequest
-            ? WorkflowExecutionActualStringRequest!
+        public global::Vellum.WorkflowExecutionActualStringRequest PickWorkflowExecutionActualStringRequest() => WorkflowExecutionActualStringRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualStringRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActualJsonRequest PickWorkflowExecutionActualJsonRequest() => IsWorkflowExecutionActualJsonRequest
-            ? WorkflowExecutionActualJsonRequest!
+        public global::Vellum.WorkflowExecutionActualJsonRequest PickWorkflowExecutionActualJsonRequest() => WorkflowExecutionActualJsonRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualJsonRequest' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActualChatHistoryRequest PickWorkflowExecutionActualChatHistoryRequest() => IsWorkflowExecutionActualChatHistoryRequest
-            ? WorkflowExecutionActualChatHistoryRequest!
+        public global::Vellum.WorkflowExecutionActualChatHistoryRequest PickWorkflowExecutionActualChatHistoryRequest() => WorkflowExecutionActualChatHistoryRequest is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowExecutionActualChatHistoryRequest' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowExecutionActualStringRequest && workflowExecutionActualStringRequest != null)
+            if (WorkflowExecutionActualStringRequest is { } __value0 && workflowExecutionActualStringRequest != null)
             {
-                return workflowExecutionActualStringRequest(WorkflowExecutionActualStringRequest!);
+                return workflowExecutionActualStringRequest(__value0);
             }
-            else if (IsWorkflowExecutionActualJsonRequest && workflowExecutionActualJsonRequest != null)
+            else if (WorkflowExecutionActualJsonRequest is { } __value1 && workflowExecutionActualJsonRequest != null)
             {
-                return workflowExecutionActualJsonRequest(WorkflowExecutionActualJsonRequest!);
+                return workflowExecutionActualJsonRequest(__value1);
             }
-            else if (IsWorkflowExecutionActualChatHistoryRequest && workflowExecutionActualChatHistoryRequest != null)
+            else if (WorkflowExecutionActualChatHistoryRequest is { } __value2 && workflowExecutionActualChatHistoryRequest != null)
             {
-                return workflowExecutionActualChatHistoryRequest(WorkflowExecutionActualChatHistoryRequest!);
+                return workflowExecutionActualChatHistoryRequest(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowExecutionActualStringRequest)
+            if (WorkflowExecutionActualStringRequest is { } __value0)
             {
-                workflowExecutionActualStringRequest?.Invoke(WorkflowExecutionActualStringRequest!);
+                workflowExecutionActualStringRequest?.Invoke(__value0);
             }
-            else if (IsWorkflowExecutionActualJsonRequest)
+            else if (WorkflowExecutionActualJsonRequest is { } __value1)
             {
-                workflowExecutionActualJsonRequest?.Invoke(WorkflowExecutionActualJsonRequest!);
+                workflowExecutionActualJsonRequest?.Invoke(__value1);
             }
-            else if (IsWorkflowExecutionActualChatHistoryRequest)
+            else if (WorkflowExecutionActualChatHistoryRequest is { } __value2)
             {
-                workflowExecutionActualChatHistoryRequest?.Invoke(WorkflowExecutionActualChatHistoryRequest!);
+                workflowExecutionActualChatHistoryRequest?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsWorkflowExecutionActualStringRequest)
+            if (WorkflowExecutionActualStringRequest is { } __value0)
             {
-                workflowExecutionActualStringRequest?.Invoke(WorkflowExecutionActualStringRequest!);
+                workflowExecutionActualStringRequest?.Invoke(__value0);
             }
-            else if (IsWorkflowExecutionActualJsonRequest)
+            else if (WorkflowExecutionActualJsonRequest is { } __value1)
             {
-                workflowExecutionActualJsonRequest?.Invoke(WorkflowExecutionActualJsonRequest!);
+                workflowExecutionActualJsonRequest?.Invoke(__value1);
             }
-            else if (IsWorkflowExecutionActualChatHistoryRequest)
+            else if (WorkflowExecutionActualChatHistoryRequest is { } __value2)
             {
-                workflowExecutionActualChatHistoryRequest?.Invoke(WorkflowExecutionActualChatHistoryRequest!);
+                workflowExecutionActualChatHistoryRequest?.Invoke(__value2);
             }
         }
 

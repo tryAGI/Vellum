@@ -42,8 +42,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent> PickCreateWorkflowEventRequest0() => IsCreateWorkflowEventRequest0
-            ? CreateWorkflowEventRequest0!
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent> PickCreateWorkflowEventRequest0() => CreateWorkflowEventRequest0 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CreateWorkflowEventRequest0' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEvent PickWorkflowEvent() => IsWorkflowEvent
-            ? WorkflowEvent!.Value
+        public global::Vellum.WorkflowEvent PickWorkflowEvent() => WorkflowEvent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WorkflowEvent' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsCreateWorkflowEventRequest0 && createWorkflowEventRequest0 != null)
+            if (CreateWorkflowEventRequest0 is { } __value0 && createWorkflowEventRequest0 != null)
             {
-                return createWorkflowEventRequest0(CreateWorkflowEventRequest0!);
+                return createWorkflowEventRequest0(__value0);
             }
-            else if (IsWorkflowEvent && workflowEvent != null)
+            else if (WorkflowEvent is { } __value1 && workflowEvent != null)
             {
-                return workflowEvent(WorkflowEvent!);
+                return workflowEvent(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsCreateWorkflowEventRequest0)
+            if (CreateWorkflowEventRequest0 is { } __value0)
             {
-                createWorkflowEventRequest0?.Invoke(CreateWorkflowEventRequest0!);
+                createWorkflowEventRequest0?.Invoke(__value0);
             }
-            else if (IsWorkflowEvent)
+            else if (WorkflowEvent is { } __value1)
             {
-                workflowEvent?.Invoke(WorkflowEvent!);
+                workflowEvent?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Vellum
                 Validate();
             }
 
-            if (IsCreateWorkflowEventRequest0)
+            if (CreateWorkflowEventRequest0 is { } __value0)
             {
-                createWorkflowEventRequest0?.Invoke(CreateWorkflowEventRequest0!);
+                createWorkflowEventRequest0?.Invoke(__value0);
             }
-            else if (IsWorkflowEvent)
+            else if (WorkflowEvent is { } __value1)
             {
-                workflowEvent?.Invoke(WorkflowEvent!);
+                workflowEvent?.Invoke(__value1);
             }
         }
 
