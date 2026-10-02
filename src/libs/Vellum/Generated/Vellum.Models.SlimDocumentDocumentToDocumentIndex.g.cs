@@ -47,6 +47,15 @@ namespace Vellum
         public string? ProcessingState { get; set; }
 
         /// <summary>
+        /// An enum value representing why the document could not be processed for this index. Is null unless processing_state is FAILED.<br/>
+        /// * `EXCEEDED_CHARACTER_LIMIT` - Exceeded Character Limit<br/>
+        /// * `INVALID_FILE` - Invalid File<br/>
+        /// * `INVALID_CREDENTIALS` - Invalid Credentials
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("processing_failure_reason")]
+        public global::Vellum.ProcessingFailureReasonEnum? ProcessingFailureReason { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -73,6 +82,12 @@ namespace Vellum
         /// * `FAILED` - Failed
         /// </param>
         /// <param name="processingState"></param>
+        /// <param name="processingFailureReason">
+        /// An enum value representing why the document could not be processed for this index. Is null unless processing_state is FAILED.<br/>
+        /// * `EXCEEDED_CHARACTER_LIMIT` - Exceeded Character Limit<br/>
+        /// * `INVALID_FILE` - Invalid File<br/>
+        /// * `INVALID_CREDENTIALS` - Invalid Credentials
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -81,13 +96,15 @@ namespace Vellum
             global::System.Guid environmentDocumentIndexId,
             global::System.Guid? documentIndexId,
             global::Vellum.IndexingStateEnum? indexingState,
-            string? processingState)
+            string? processingState,
+            global::Vellum.ProcessingFailureReasonEnum? processingFailureReason)
         {
             this.Id = id;
             this.EnvironmentDocumentIndexId = environmentDocumentIndexId;
             this.DocumentIndexId = documentIndexId;
             this.IndexingState = indexingState;
             this.ProcessingState = processingState;
+            this.ProcessingFailureReason = processingFailureReason;
         }
 
         /// <summary>

@@ -294,6 +294,98 @@
         ]
       }
     },
+    "/v1/prompts/{id}/pull": {
+      "get": {
+        "operationId": "prompts_pull",
+        "summary": "Pull",
+        "description": "Used to pull the definition of a Prompt from Vellum.",
+        "tags": [
+          "prompts"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID of the Prompt to pull from. Prompt Deployment IDs or names, Prompt Sandbox IDs, and Prompt Version IDs are currently supported.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "prompt_variant_id",
+            "in": "query",
+            "description": "The ID of the Prompt Variant within a Prompt Sandbox to pull. Must be included if providing the ID of a Prompt Sandbox.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "release_tag",
+            "in": "query",
+            "description": "The Release Tag to pull when providing a Prompt Deployment ID or name. Defaults to LATEST.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "description": "Set to 'application/yaml' to receive YAML response, otherwise JSON will be returned",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "application/json"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PromptExecConfig"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "description": "Any type"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "description": "Any type"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
+      }
+    },
     "/v1/sandboxes/{id}/prompts/{prompt_variant_id}/deploy": {
       "post": {
         "operationId": "sandboxes_deploy_prompt",
@@ -1117,6 +1209,121 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/SubmitWorkflowExecutionActualsRequest"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "default": []
+          }
+        ]
+      }
+    },
+    "/v1/workflows/{id}/pull": {
+      "get": {
+        "operationId": "workflows_pull",
+        "summary": "Pull",
+        "description": "Used to pull the definition of a Workflow from Vellum. Returns a zip archive of the Workflow's code by default, or a flattened plain-text representation if the Accept header is set to 'text/plain'.",
+        "tags": [
+          "workflows"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "The ID or name of the Workflow Deployment, or the ID of the Workflow Sandbox, to pull from.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "exclude_code",
+            "in": "query",
+            "description": "If true, omit the Workflow's code from the response.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "exclude_display",
+            "in": "query",
+            "description": "If true, omit UI display metadata files when pulling from a Workflow Sandbox.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "include_json",
+            "in": "query",
+            "description": "If true, include a JSON representation of the Workflow's definition alongside its code.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "include_sandbox",
+            "in": "query",
+            "description": "If true, include the Workflow Sandbox's scenarios as sandbox inputs when pulling from a Workflow Sandbox.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "release_tag",
+            "in": "query",
+            "description": "Release tag to use when pulling from deployment (implies deployment-only lookup)",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "strict",
+            "in": "query",
+            "description": "If true, fail on any code generation error instead of returning best-effort code.",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "description": "Semantic version range to validate against the Workflow SDK version (e.g., '>=1.0.0,<1.2.3')",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "description": "Any type"
+                  }
+                }
               }
             }
           }
@@ -3421,6 +3628,9 @@
       "name": "deployments"
     },
     {
+      "name": "prompts"
+    },
+    {
       "name": "sandboxes"
     },
     {
@@ -5330,76 +5540,6 @@
         ],
         "title": "DeploymentProviderPayloadResponse"
       },
-      "DeploySandboxPromptRequest": {
-        "type": "object",
-        "properties": {
-          "prompt_deployment_id": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "format": "uuid",
-            "description": "The Vellum-generated ID of the Prompt Deployment you'd like to update. Cannot specify both this and prompt_deployment_name. Leave null to create a new Prompt Deployment."
-          },
-          "prompt_deployment_name": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1,
-            "description": "The unique name of the Prompt Deployment you'd like to either create or update. Cannot specify both this and prompt_deployment_id. If provided and matches an existing Prompt Deployment, that Prompt Deployment will be updated. Otherwise, a new Prompt Deployment will be created."
-          },
-          "label": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1,
-            "description": "In the event that a new Prompt Deployment is created, this will be the label it's given."
-          },
-          "release_tags": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 150
-            },
-            "description": "Optionally provide the release tags that you'd like to be associated with the latest release of the created/updated Prompt Deployment."
-          },
-          "release_description": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "minLength": 1,
-            "default": "",
-            "description": "Optionally provide a description that details what's new in this Release."
-          }
-        },
-        "title": "DeploySandboxPromptRequest"
-      },
-      "EntityStatus": {
-        "type": "string",
-        "enum": [
-          "ACTIVE",
-          "ARCHIVED",
-          "PENDING_DELETION"
-        ],
-        "description": "* `ACTIVE` - Active\n* `ARCHIVED` - Archived\n* `PENDING_DELETION` - Pending Deletion",
-        "title": "EntityStatus"
-      },
-      "EnvironmentEnum": {
-        "type": "string",
-        "enum": [
-          "DEVELOPMENT",
-          "STAGING",
-          "PRODUCTION"
-        ],
-        "title": "EnvironmentEnum"
-      },
       "VellumVariableType": {
         "type": "string",
         "enum": [
@@ -6224,6 +6364,770 @@
           "type"
         ],
         "title": "VellumVariable"
+      },
+      "PromptParameters": {
+        "type": "object",
+        "properties": {
+          "stop": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "temperature": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "max_tokens": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "top_p": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "top_k": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "frequency_penalty": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "presence_penalty": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "logit_bias": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "custom_parameters": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            }
+          }
+        },
+        "title": "PromptParameters"
+      },
+      "PromptSettings": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "format": "double"
+          },
+          "stream_enabled": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "title": "PromptSettings"
+      },
+      "JinjaEnum": {
+        "type": "string",
+        "enum": [
+          "JINJA"
+        ],
+        "title": "JinjaEnum"
+      },
+      "PromptBlockState": {
+        "type": "string",
+        "enum": [
+          "ENABLED",
+          "DISABLED"
+        ],
+        "description": "* `ENABLED` - Enabled\n* `DISABLED` - Disabled",
+        "title": "PromptBlockState"
+      },
+      "EphemeralPromptCacheConfigTypeEnum": {
+        "type": "string",
+        "enum": [
+          "EPHEMERAL"
+        ],
+        "description": "* `EPHEMERAL` - EPHEMERAL",
+        "title": "EphemeralPromptCacheConfigTypeEnum"
+      },
+      "EphemeralPromptCacheConfig": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "$ref": "#/components/schemas/EphemeralPromptCacheConfigTypeEnum"
+          }
+        },
+        "title": "EphemeralPromptCacheConfig"
+      },
+      "JinjaPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/JinjaEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "template": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "block_type",
+          "template"
+        ],
+        "description": "A block of Jinja template code that is used to generate a prompt",
+        "title": "JinjaPromptBlock"
+      },
+      "ChatMessageEnum": {
+        "type": "string",
+        "enum": [
+          "CHAT_MESSAGE"
+        ],
+        "title": "ChatMessageEnum"
+      },
+      "ChatMessagePromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/ChatMessageEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "chat_role": {
+            "$ref": "#/components/schemas/ChatMessageRole"
+          },
+          "chat_source": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "chat_message_unterminated": {
+            "type": "boolean",
+            "default": false
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PromptBlock"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "chat_role",
+          "blocks"
+        ],
+        "description": "A block that represents a chat message in a prompt template.",
+        "title": "ChatMessagePromptBlock"
+      },
+      "VariableEnum": {
+        "type": "string",
+        "enum": [
+          "VARIABLE"
+        ],
+        "title": "VariableEnum"
+      },
+      "VariablePromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/VariableEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "input_variable": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "block_type",
+          "input_variable"
+        ],
+        "description": "A block that represents a variable in a prompt template.",
+        "title": "VariablePromptBlock"
+      },
+      "RichTextEnum": {
+        "type": "string",
+        "enum": [
+          "RICH_TEXT"
+        ],
+        "title": "RichTextEnum"
+      },
+      "PlainTextEnum": {
+        "type": "string",
+        "enum": [
+          "PLAIN_TEXT"
+        ],
+        "title": "PlainTextEnum"
+      },
+      "PlainTextPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/PlainTextEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "block_type",
+          "text"
+        ],
+        "description": "A block that holds a plain text string value.",
+        "title": "PlainTextPromptBlock"
+      },
+      "RichTextChildBlock": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/VariablePromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/PlainTextPromptBlock"
+          }
+        ],
+        "title": "RichTextChildBlock"
+      },
+      "RichTextPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/RichTextEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RichTextChildBlock"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "blocks"
+        ],
+        "description": "A block that includes a combination of plain text and variable blocks.",
+        "title": "RichTextPromptBlock"
+      },
+      "FunctionCallPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/FunctionCallEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "arguments": {
+            "type": "object",
+            "additionalProperties": {
+              "description": "Any type"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "name",
+          "arguments"
+        ],
+        "description": "A block that represents a function call in a prompt template.",
+        "title": "FunctionCallPromptBlock"
+      },
+      "AudioPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/AudioEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "metadata": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "src"
+        ],
+        "description": "A block that represents an audio file in a prompt template.",
+        "title": "AudioPromptBlock"
+      },
+      "VideoPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/VideoEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "metadata": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "src"
+        ],
+        "description": "A block that represents an video file in a prompt template.",
+        "title": "VideoPromptBlock"
+      },
+      "ImagePromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/ImageEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "metadata": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "src"
+        ],
+        "description": "A block that represents an image in a prompt template.",
+        "title": "ImagePromptBlock"
+      },
+      "DocumentPromptBlock": {
+        "type": "object",
+        "properties": {
+          "block_type": {
+            "$ref": "#/components/schemas/DocumentEnum"
+          },
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "src": {
+            "type": "string",
+            "minLength": 1
+          },
+          "metadata": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            }
+          }
+        },
+        "required": [
+          "block_type",
+          "src"
+        ],
+        "description": "A block that represents a document in a prompt template.",
+        "title": "DocumentPromptBlock"
+      },
+      "PromptBlock": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/JinjaPromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/ChatMessagePromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/VariablePromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/RichTextPromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/FunctionCallPromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/AudioPromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/VideoPromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/ImagePromptBlock"
+          },
+          {
+            "$ref": "#/components/schemas/DocumentPromptBlock"
+          }
+        ],
+        "title": "PromptBlock"
+      },
+      "FunctionDefinition": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "$ref": "#/components/schemas/PromptBlockState"
+          },
+          "cache_config": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/EphemeralPromptCacheConfig"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "The name identifying the function."
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "A description to help guide the model when to invoke this function."
+          },
+          "parameters": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            },
+            "description": "An OpenAPI specification of parameters that are supported by this function."
+          },
+          "inputs": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": {
+              "description": "Any type"
+            },
+            "description": "Optional user defined input mappings for this function."
+          },
+          "forced": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "default": false,
+            "description": "Set this option to true to force the model to return a function call of this function."
+          },
+          "strict": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "default": false,
+            "description": "Set this option to use strict schema decoding when available."
+          }
+        },
+        "description": "The definition of a Function (aka \"Tool Call\") that a Prompt/Model has access to.",
+        "title": "FunctionDefinition"
+      },
+      "PromptExecConfig": {
+        "type": "object",
+        "properties": {
+          "ml_model": {
+            "type": "string"
+          },
+          "input_variables": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VellumVariable"
+            }
+          },
+          "parameters": {
+            "$ref": "#/components/schemas/PromptParameters"
+          },
+          "settings": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/PromptSettings"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PromptBlock"
+            }
+          },
+          "functions": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "$ref": "#/components/schemas/FunctionDefinition"
+            }
+          }
+        },
+        "required": [
+          "ml_model",
+          "input_variables",
+          "parameters",
+          "blocks"
+        ],
+        "title": "PromptExecConfig"
+      },
+      "DeploySandboxPromptRequest": {
+        "type": "object",
+        "properties": {
+          "prompt_deployment_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uuid",
+            "description": "The Vellum-generated ID of the Prompt Deployment you'd like to update. Cannot specify both this and prompt_deployment_name. Leave null to create a new Prompt Deployment."
+          },
+          "prompt_deployment_name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "The unique name of the Prompt Deployment you'd like to either create or update. Cannot specify both this and prompt_deployment_id. If provided and matches an existing Prompt Deployment, that Prompt Deployment will be updated. Otherwise, a new Prompt Deployment will be created."
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "In the event that a new Prompt Deployment is created, this will be the label it's given."
+          },
+          "release_tags": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 150
+            },
+            "description": "Optionally provide the release tags that you'd like to be associated with the latest release of the created/updated Prompt Deployment."
+          },
+          "release_description": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "default": "",
+            "description": "Optionally provide a description that details what's new in this Release."
+          }
+        },
+        "title": "DeploySandboxPromptRequest"
+      },
+      "EntityStatus": {
+        "type": "string",
+        "enum": [
+          "ACTIVE",
+          "ARCHIVED",
+          "PENDING_DELETION"
+        ],
+        "description": "* `ACTIVE` - Active\n* `ARCHIVED` - Archived\n* `PENDING_DELETION` - Pending Deletion",
+        "title": "EntityStatus"
+      },
+      "EnvironmentEnum": {
+        "type": "string",
+        "enum": [
+          "DEVELOPMENT",
+          "STAGING",
+          "PRODUCTION"
+        ],
+        "title": "EnvironmentEnum"
       },
       "DeploymentRead": {
         "type": "object",
@@ -18172,6 +19076,16 @@
         "description": "* `AWAITING_PROCESSING` - Awaiting Processing\n* `QUEUED` - Queued\n* `INDEXING` - Indexing\n* `INDEXED` - Indexed\n* `FAILED` - Failed",
         "title": "IndexingStateEnum"
       },
+      "ProcessingFailureReasonEnum": {
+        "type": "string",
+        "enum": [
+          "EXCEEDED_CHARACTER_LIMIT",
+          "INVALID_FILE",
+          "INVALID_CREDENTIALS"
+        ],
+        "description": "* `EXCEEDED_CHARACTER_LIMIT` - Exceeded Character Limit\n* `INVALID_FILE` - Invalid File\n* `INVALID_CREDENTIALS` - Invalid Credentials",
+        "title": "ProcessingFailureReasonEnum"
+      },
       "DocumentDocumentToDocumentIndex": {
         "type": "object",
         "properties": {
@@ -18208,6 +19122,17 @@
               "string",
               "null"
             ]
+          },
+          "processing_failure_reason": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ProcessingFailureReasonEnum"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "An enum value representing why the document could not be processed for this index. Is null unless processing_state is FAILED.\n\n* `EXCEEDED_CHARACTER_LIMIT` - Exceeded Character Limit\n* `INVALID_FILE` - Invalid File\n* `INVALID_CREDENTIALS` - Invalid Credentials"
           }
         },
         "required": [
@@ -18215,7 +19140,8 @@
           "environment_document_index_id",
           "document_index_id",
           "extracted_text_file_url",
-          "processing_state"
+          "processing_state",
+          "processing_failure_reason"
         ],
         "description": "A detailed representation of the link between a Document and a Document Index it's a member of.",
         "title": "DocumentDocumentToDocumentIndex"
@@ -18291,16 +19217,6 @@
         ],
         "title": "DocumentRead"
       },
-      "ProcessingFailureReasonEnum": {
-        "type": "string",
-        "enum": [
-          "EXCEEDED_CHARACTER_LIMIT",
-          "INVALID_FILE",
-          "INVALID_CREDENTIALS"
-        ],
-        "description": "* `EXCEEDED_CHARACTER_LIMIT` - Exceeded Character Limit\n* `INVALID_FILE` - Invalid File\n* `INVALID_CREDENTIALS` - Invalid Credentials",
-        "title": "ProcessingFailureReasonEnum"
-      },
       "SlimDocumentDocumentToDocumentIndex": {
         "type": "object",
         "properties": {
@@ -18331,13 +19247,25 @@
               "string",
               "null"
             ]
+          },
+          "processing_failure_reason": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/ProcessingFailureReasonEnum"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "An enum value representing why the document could not be processed for this index. Is null unless processing_state is FAILED.\n\n* `EXCEEDED_CHARACTER_LIMIT` - Exceeded Character Limit\n* `INVALID_FILE` - Invalid File\n* `INVALID_CREDENTIALS` - Invalid Credentials"
           }
         },
         "required": [
           "id",
           "environment_document_index_id",
           "document_index_id",
-          "processing_state"
+          "processing_state",
+          "processing_failure_reason"
         ],
         "description": "A slim representation of the link between a Document and a Document Index it's a member of.",
         "title": "SlimDocumentDocumentToDocumentIndex"

@@ -72,6 +72,11 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
+        public PromptsClient Prompts { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public SandboxesClient Sandboxes { get; }
 
         /// <summary>

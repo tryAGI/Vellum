@@ -405,2883 +405,2995 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeploySandboxPromptRequest? Type93 { get; set; }
+        public global::Vellum.VellumVariableType? Type93 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.EntityStatus? Type94 { get; set; }
+        public global::Vellum.NumberEnum? Type94 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.EnvironmentEnum? Type95 { get; set; }
+        public global::Vellum.NumberVellumValue? Type95 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumVariableType? Type96 { get; set; }
+        public global::Vellum.VellumAudio? Type96 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NumberEnum? Type97 { get; set; }
+        public global::Vellum.AudioVellumValue? Type97 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NumberVellumValue? Type98 { get; set; }
+        public global::Vellum.VellumVideo? Type98 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumAudio? Type99 { get; set; }
+        public global::Vellum.VideoVellumValue? Type99 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioVellumValue? Type100 { get; set; }
+        public global::Vellum.VellumImage? Type100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumVideo? Type101 { get; set; }
+        public global::Vellum.ImageVellumValue? Type101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoVellumValue? Type102 { get; set; }
+        public global::Vellum.VellumDocument? Type102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumImage? Type103 { get; set; }
+        public global::Vellum.DocumentVellumValue? Type103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageVellumValue? Type104 { get; set; }
+        public global::Vellum.ArrayVellumValue? Type104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumDocument? Type105 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumValue>? Type105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentVellumValue? Type106 { get; set; }
+        public global::Vellum.VellumValue? Type106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ArrayVellumValue? Type107 { get; set; }
+        public global::Vellum.StringChatMessageContent? Type107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumValue>? Type108 { get; set; }
+        public global::Vellum.FunctionCallChatMessageContentValue? Type108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValue? Type109 { get; set; }
+        public global::Vellum.FunctionCallChatMessageContent? Type109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringChatMessageContent? Type110 { get; set; }
+        public global::Vellum.AudioChatMessageContent? Type110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallChatMessageContentValue? Type111 { get; set; }
+        public global::Vellum.VideoChatMessageContent? Type111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallChatMessageContent? Type112 { get; set; }
+        public global::Vellum.ImageChatMessageContent? Type112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioChatMessageContent? Type113 { get; set; }
+        public global::Vellum.DocumentChatMessageContent? Type113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoChatMessageContent? Type114 { get; set; }
+        public global::Vellum.ArrayChatMessageContentItem? Type114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageChatMessageContent? Type115 { get; set; }
+        public global::Vellum.ArrayChatMessageContent? Type115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentChatMessageContent? Type116 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ArrayChatMessageContentItem>? Type116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ArrayChatMessageContentItem? Type117 { get; set; }
+        public global::Vellum.ChatMessageContent? Type117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ArrayChatMessageContent? Type118 { get; set; }
+        public global::Vellum.ChatMessage? Type118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ArrayChatMessageContentItem>? Type119 { get; set; }
+        public global::Vellum.ChatHistoryVellumValue? Type119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ChatMessageContent? Type120 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ChatMessage>? Type120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ChatMessage? Type121 { get; set; }
+        public global::Vellum.SearchResultsEnum? Type121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ChatHistoryVellumValue? Type122 { get; set; }
+        public global::Vellum.SearchResultDocument? Type122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ChatMessage>? Type123 { get; set; }
+        public global::Vellum.PdfEnum? Type123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultsEnum? Type124 { get; set; }
+        public global::Vellum.PdfSearchResultMetaSource? Type124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultDocument? Type125 { get; set; }
+        public global::Vellum.SearchResultMetaSource? Type125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PdfEnum? Type126 { get; set; }
+        public global::Vellum.SearchResultMeta? Type126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PdfSearchResultMetaSource? Type127 { get; set; }
+        public global::Vellum.SearchResult? Type127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultMetaSource? Type128 { get; set; }
+        public global::Vellum.SearchResultsVellumValue? Type128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultMeta? Type129 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SearchResult>? Type129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResult? Type130 { get; set; }
+        public global::Vellum.VellumVariableExtensions? Type130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultsVellumValue? Type131 { get; set; }
+        public global::Vellum.VellumVariable? Type131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SearchResult>? Type132 { get; set; }
+        public global::Vellum.PromptParameters? Type132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumVariableExtensions? Type133 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, double>? Type133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumVariable? Type134 { get; set; }
+        public global::Vellum.PromptSettings? Type134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeploymentRead? Type135 { get; set; }
+        public global::Vellum.JinjaEnum? Type135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumVariable>? Type136 { get; set; }
+        public global::Vellum.PromptBlockState? Type136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Guid>? Type137 { get; set; }
+        public global::Vellum.EphemeralPromptCacheConfigTypeEnum? Type137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputStringVariableValueRequest? Type138 { get; set; }
+        public global::Vellum.EphemeralPromptCacheConfig? Type138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputJsonVariableValueRequest? Type139 { get; set; }
+        public global::Vellum.JinjaPromptBlock? Type139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest? Type140 { get; set; }
+        public global::Vellum.ChatMessageEnum? Type140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputAudioVariableValueRequest? Type141 { get; set; }
+        public global::Vellum.ChatMessagePromptBlock? Type141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputVideoVariableValueRequest? Type142 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.PromptBlock>? Type142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputImageVariableValueRequest? Type143 { get; set; }
+        public global::Vellum.PromptBlock? Type143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputDocumentVariableValueRequest? Type144 { get; set; }
+        public global::Vellum.VariableEnum? Type144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedScenarioInputRequest? Type145 { get; set; }
+        public global::Vellum.VariablePromptBlock? Type145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UpsertSandboxScenarioRequest? Type146 { get; set; }
+        public global::Vellum.RichTextEnum? Type146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.NamedScenarioInputRequest>? Type147 { get; set; }
+        public global::Vellum.PlainTextEnum? Type147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputStringVariableValue? Type148 { get; set; }
+        public global::Vellum.PlainTextPromptBlock? Type148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputJsonVariableValue? Type149 { get; set; }
+        public global::Vellum.RichTextChildBlock? Type149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputChatHistoryVariableValue? Type150 { get; set; }
+        public global::Vellum.RichTextPromptBlock? Type150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputAudioVariableValue? Type151 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.RichTextChildBlock>? Type151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputVideoVariableValue? Type152 { get; set; }
+        public global::Vellum.FunctionCallPromptBlock? Type152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputImageVariableValue? Type153 { get; set; }
+        public global::Vellum.AudioPromptBlock? Type153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInputDocumentVariableValue? Type154 { get; set; }
+        public global::Vellum.VideoPromptBlock? Type154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScenarioInput? Type155 { get; set; }
+        public global::Vellum.ImagePromptBlock? Type155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SandboxScenario? Type156 { get; set; }
+        public global::Vellum.DocumentPromptBlock? Type156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ScenarioInput>? Type157 { get; set; }
+        public global::Vellum.FunctionDefinition? Type157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SandboxesDeleteSandboxScenarioResponse204? Type158 { get; set; }
+        public global::Vellum.PromptExecConfig? Type158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.V1DeploymentsGetParametersStatus? Type159 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumVariable>? Type159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SlimDeploymentRead? Type160 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.FunctionDefinition>? Type160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedSlimDeploymentReadList? Type161 { get; set; }
+        public global::Vellum.DeploySandboxPromptRequest? Type161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SlimDeploymentRead>? Type162 { get; set; }
+        public global::Vellum.EntityStatus? Type162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseEnvironment? Type163 { get; set; }
+        public global::Vellum.EnvironmentEnum? Type163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseCreatedBy? Type164 { get; set; }
+        public global::Vellum.DeploymentRead? Type164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SandboxEnum? Type165 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Guid>? Type165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptVersionBuildConfigSandbox? Type166 { get; set; }
+        public global::Vellum.NamedScenarioInputStringVariableValueRequest? Type166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptVersionBuildConfig? Type167 { get; set; }
+        public global::Vellum.NamedScenarioInputJsonVariableValueRequest? Type167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptDeploymentReleasePromptVersion? Type168 { get; set; }
+        public global::Vellum.NamedScenarioInputChatHistoryVariableValueRequest? Type168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptDeploymentReleasePromptDeployment? Type169 { get; set; }
+        public global::Vellum.NamedScenarioInputAudioVariableValueRequest? Type169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseTagSource? Type170 { get; set; }
+        public global::Vellum.NamedScenarioInputVideoVariableValueRequest? Type170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseReleaseTag? Type171 { get; set; }
+        public global::Vellum.NamedScenarioInputImageVariableValueRequest? Type171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseReviewReviewer? Type172 { get; set; }
+        public global::Vellum.NamedScenarioInputDocumentVariableValueRequest? Type172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseReviewState? Type173 { get; set; }
+        public global::Vellum.NamedScenarioInputRequest? Type173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SlimReleaseReview? Type174 { get; set; }
+        public global::Vellum.UpsertSandboxScenarioRequest? Type174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptDeploymentRelease? Type175 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.NamedScenarioInputRequest>? Type175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ReleaseReleaseTag>? Type176 { get; set; }
+        public global::Vellum.ScenarioInputStringVariableValue? Type176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SlimReleaseReview>? Type177 { get; set; }
+        public global::Vellum.ScenarioInputJsonVariableValue? Type177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeploymentReleaseTagDeploymentHistoryItem? Type178 { get; set; }
+        public global::Vellum.ScenarioInputChatHistoryVariableValue? Type178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReleaseTagRelease? Type179 { get; set; }
+        public global::Vellum.ScenarioInputAudioVariableValue? Type179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeploymentReleaseTagRead? Type180 { get; set; }
+        public global::Vellum.ScenarioInputVideoVariableValue? Type180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.V1DeploymentsIdReleaseTagsGetParametersSource? Type181 { get; set; }
+        public global::Vellum.ScenarioInputImageVariableValue? Type181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedDeploymentReleaseTagReadList? Type182 { get; set; }
+        public global::Vellum.ScenarioInputDocumentVariableValue? Type182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.DeploymentReleaseTagRead>? Type183 { get; set; }
+        public global::Vellum.ScenarioInput? Type183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PatchedDeploymentReleaseTagUpdateRequest? Type184 { get; set; }
+        public global::Vellum.SandboxScenario? Type184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeploymentHistoryItem? Type185 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ScenarioInput>? Type185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestStringInputRequest? Type186 { get; set; }
+        public global::Vellum.SandboxesDeleteSandboxScenarioResponse204? Type186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestJSONInputRequest? Type187 { get; set; }
+        public global::Vellum.V1DeploymentsGetParametersStatus? Type187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestChatHistoryInputRequest? Type188 { get; set; }
+        public global::Vellum.SlimDeploymentRead? Type188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestNumberInputRequest? Type189 { get; set; }
+        public global::Vellum.PaginatedSlimDeploymentReadList? Type189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestAudioInputRequest? Type190 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SlimDeploymentRead>? Type190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestVideoInputRequest? Type191 { get; set; }
+        public global::Vellum.ReleaseEnvironment? Type191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestImageInputRequest? Type192 { get; set; }
+        public global::Vellum.ReleaseCreatedBy? Type192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestDocumentInputRequest? Type193 { get; set; }
+        public global::Vellum.SandboxEnum? Type193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowRequestInputRequest? Type194 { get; set; }
+        public global::Vellum.PromptVersionBuildConfigSandbox? Type194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExpandMetaRequest? Type195 { get; set; }
+        public global::Vellum.PromptVersionBuildConfig? Type195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowRequest? Type196 { get; set; }
+        public global::Vellum.PromptDeploymentReleasePromptVersion? Type196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowRequestInputRequest>? Type197 { get; set; }
+        public global::Vellum.PromptDeploymentReleasePromptDeployment? Type197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputString? Type198 { get; set; }
+        public global::Vellum.ReleaseTagSource? Type198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputNumber? Type199 { get; set; }
+        public global::Vellum.ReleaseReleaseTag? Type199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputJSON? Type200 { get; set; }
+        public global::Vellum.ReleaseReviewReviewer? Type200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputChatHistory? Type201 { get; set; }
+        public global::Vellum.ReleaseReviewState? Type201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputSearchResults? Type202 { get; set; }
+        public global::Vellum.SlimReleaseReview? Type202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputArray? Type203 { get; set; }
+        public global::Vellum.PromptDeploymentRelease? Type203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputError? Type204 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ReleaseReleaseTag>? Type204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputFunctionCall? Type205 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SlimReleaseReview>? Type205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputImage? Type206 { get; set; }
+        public global::Vellum.DeploymentReleaseTagDeploymentHistoryItem? Type206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputAudio? Type207 { get; set; }
+        public global::Vellum.ReleaseTagRelease? Type207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputVideo? Type208 { get; set; }
+        public global::Vellum.DeploymentReleaseTagRead? Type208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutputDocument? Type209 { get; set; }
+        public global::Vellum.V1DeploymentsIdReleaseTagsGetParametersSource? Type209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowOutput? Type210 { get; set; }
+        public global::Vellum.PaginatedDeploymentReleaseTagReadList? Type210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? Type211 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.DeploymentReleaseTagRead>? Type211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowOutput>? Type212 { get; set; }
+        public global::Vellum.PatchedDeploymentReleaseTagUpdateRequest? Type212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEventErrorRawData? Type213 { get; set; }
+        public global::Vellum.DeploymentHistoryItem? Type213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionEventErrorCode? Type214 { get; set; }
+        public global::Vellum.WorkflowRequestStringInputRequest? Type214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEventError? Type215 { get; set; }
+        public global::Vellum.WorkflowRequestJSONInputRequest? Type215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? Type216 { get; set; }
+        public global::Vellum.WorkflowRequestChatHistoryInputRequest? Type216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowWorkflowResultEvent? Type217 { get; set; }
+        public global::Vellum.WorkflowRequestNumberInputRequest? Type217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowResponse? Type218 { get; set; }
+        public global::Vellum.WorkflowRequestAudioInputRequest? Type218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowErrorResponse? Type219 { get; set; }
+        public global::Vellum.WorkflowRequestVideoInputRequest? Type219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowAsyncRequest? Type220 { get; set; }
+        public global::Vellum.WorkflowRequestImageInputRequest? Type220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowAsyncResponse? Type221 { get; set; }
+        public global::Vellum.WorkflowRequestDocumentInputRequest? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowStreamErrorResponse? Type222 { get; set; }
+        public global::Vellum.WorkflowRequestInputRequest? Type222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionEventType? Type223 { get; set; }
+        public global::Vellum.WorkflowExpandMetaRequest? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowStreamRequest? Type224 { get; set; }
+        public global::Vellum.ExecuteWorkflowRequest? Type224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionEventType>? Type225 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowRequestInputRequest>? Type225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEnum? Type226 { get; set; }
+        public global::Vellum.WorkflowOutputString? Type226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventState? Type227 { get; set; }
+        public global::Vellum.WorkflowOutputNumber? Type227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowNodeResultEventState? Type228 { get; set; }
+        public global::Vellum.WorkflowOutputJSON? Type228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataString? Type229 { get; set; }
+        public global::Vellum.WorkflowOutputChatHistory? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataNumber? Type230 { get; set; }
+        public global::Vellum.WorkflowOutputSearchResults? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataJSON? Type231 { get; set; }
+        public global::Vellum.WorkflowOutputArray? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataChatHistory? Type232 { get; set; }
+        public global::Vellum.WorkflowOutputError? Type232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataSearchResults? Type233 { get; set; }
+        public global::Vellum.WorkflowOutputFunctionCall? Type233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataArray? Type234 { get; set; }
+        public global::Vellum.WorkflowOutputImage? Type234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataFunctionCall? Type235 { get; set; }
+        public global::Vellum.WorkflowOutputAudio? Type235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputDataError? Type236 { get; set; }
+        public global::Vellum.WorkflowOutputVideo? Type236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEventOutputData? Type237 { get; set; }
+        public global::Vellum.WorkflowOutputDocument? Type237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionStringVellumValue? Type238 { get; set; }
+        public global::Vellum.WorkflowOutput? Type238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionNumberVellumValue? Type239 { get; set; }
+        public global::Vellum.FulfilledExecuteWorkflowWorkflowResultEvent? Type239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionJsonVellumValue? Type240 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowOutput>? Type240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionChatHistoryVellumValue? Type241 { get; set; }
+        public global::Vellum.WorkflowEventErrorRawData? Type241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionSearchResultsVellumValue? Type242 { get; set; }
+        public global::Vellum.WorkflowExecutionEventErrorCode? Type242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionErrorVellumValue? Type243 { get; set; }
+        public global::Vellum.WorkflowEventError? Type243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionArrayVellumValue? Type244 { get; set; }
+        public global::Vellum.RejectedExecuteWorkflowWorkflowResultEvent? Type244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionFunctionCallVellumValue? Type245 { get; set; }
+        public global::Vellum.ExecuteWorkflowWorkflowResultEvent? Type245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionThinkingVellumValue? Type246 { get; set; }
+        public global::Vellum.ExecuteWorkflowResponse? Type246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionAudioVellumValue? Type247 { get; set; }
+        public global::Vellum.ExecuteWorkflowErrorResponse? Type247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionVideoVellumValue? Type248 { get; set; }
+        public global::Vellum.ExecuteWorkflowAsyncRequest? Type248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionImageVellumValue? Type249 { get; set; }
+        public global::Vellum.ExecuteWorkflowAsyncResponse? Type249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionDocumentVellumValue? Type250 { get; set; }
+        public global::Vellum.ExecuteWorkflowStreamErrorResponse? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecutionVellumValue? Type251 { get; set; }
+        public global::Vellum.WorkflowExecutionEventType? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowResultEvent? Type252 { get; set; }
+        public global::Vellum.ExecuteWorkflowStreamRequest? Type252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue>? Type253 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionEventType>? Type253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionWorkflowResultEvent? Type254 { get; set; }
+        public global::Vellum.WorkflowEnum? Type254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeEnum? Type255 { get; set; }
+        public global::Vellum.WorkflowResultEventState? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptEnum? Type256 { get; set; }
+        public global::Vellum.WorkflowNodeResultEventState? Type256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptNodeExecutionMeta? Type257 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataString? Type257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptNodeResultData? Type258 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataNumber? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptNodeResult? Type259 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataJSON? Type259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchEnum? Type260 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataChatHistory? Type260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchNodeResultData? Type261 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataSearchResults? Type261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchNodeResult? Type262 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataArray? Type262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingEnum? Type263 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataFunctionCall? Type263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeStringResult? Type264 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputDataError? Type264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeNumberResult? Type265 { get; set; }
+        public global::Vellum.WorkflowResultEventOutputData? Type265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeJsonResult? Type266 { get; set; }
+        public global::Vellum.ExecutionStringVellumValue? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeChatHistoryResult? Type267 { get; set; }
+        public global::Vellum.ExecutionNumberVellumValue? Type267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeSearchResultsResult? Type268 { get; set; }
+        public global::Vellum.ExecutionJsonVellumValue? Type268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeErrorResult? Type269 { get; set; }
+        public global::Vellum.ExecutionChatHistoryVellumValue? Type269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeArrayResult? Type270 { get; set; }
+        public global::Vellum.ExecutionSearchResultsVellumValue? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeFunctionCallResult? Type271 { get; set; }
+        public global::Vellum.ExecutionErrorVellumValue? Type271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeResultOutput? Type272 { get; set; }
+        public global::Vellum.ExecutionArrayVellumValue? Type272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeResultData? Type273 { get; set; }
+        public global::Vellum.ExecutionFunctionCallVellumValue? Type273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TemplatingNodeResult? Type274 { get; set; }
+        public global::Vellum.ExecutionThinkingVellumValue? Type274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionEnum? Type275 { get; set; }
+        public global::Vellum.ExecutionAudioVellumValue? Type275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeStringResult? Type276 { get; set; }
+        public global::Vellum.ExecutionVideoVellumValue? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeNumberResult? Type277 { get; set; }
+        public global::Vellum.ExecutionImageVellumValue? Type277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeJsonResult? Type278 { get; set; }
+        public global::Vellum.ExecutionDocumentVellumValue? Type278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeChatHistoryResult? Type279 { get; set; }
+        public global::Vellum.ExecutionVellumValue? Type279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeSearchResultsResult? Type280 { get; set; }
+        public global::Vellum.WorkflowResultEvent? Type280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeErrorResult? Type281 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ExecutionVellumValue>? Type281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeArrayResult? Type282 { get; set; }
+        public global::Vellum.WorkflowExecutionWorkflowResultEvent? Type282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeFunctionCallResult? Type283 { get; set; }
+        public global::Vellum.NodeEnum? Type283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeResultOutput? Type284 { get; set; }
+        public global::Vellum.PromptEnum? Type284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeResultData? Type285 { get; set; }
+        public global::Vellum.PromptNodeExecutionMeta? Type285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeExecutionNodeResult? Type286 { get; set; }
+        public global::Vellum.PromptNodeResultData? Type286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ConditionalEnum? Type287 { get; set; }
+        public global::Vellum.PromptNodeResult? Type287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ConditionalNodeResultData? Type288 { get; set; }
+        public global::Vellum.SearchEnum? Type288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ConditionalNodeResult? Type289 { get; set; }
+        public global::Vellum.SearchNodeResultData? Type289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiEnum? Type290 { get; set; }
+        public global::Vellum.SearchNodeResult? Type290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiNodeResultData? Type291 { get; set; }
+        public global::Vellum.TemplatingEnum? Type291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiNodeResult? Type292 { get; set; }
+        public global::Vellum.TemplatingNodeStringResult? Type292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalEnum? Type293 { get; set; }
+        public global::Vellum.TemplatingNodeNumberResult? Type293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeStringResult? Type294 { get; set; }
+        public global::Vellum.TemplatingNodeJsonResult? Type294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeNumberResult? Type295 { get; set; }
+        public global::Vellum.TemplatingNodeChatHistoryResult? Type295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeJsonResult? Type296 { get; set; }
+        public global::Vellum.TemplatingNodeSearchResultsResult? Type296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeChatHistoryResult? Type297 { get; set; }
+        public global::Vellum.TemplatingNodeErrorResult? Type297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeSearchResultsResult? Type298 { get; set; }
+        public global::Vellum.TemplatingNodeArrayResult? Type298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeErrorResult? Type299 { get; set; }
+        public global::Vellum.TemplatingNodeFunctionCallResult? Type299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeArrayResult? Type300 { get; set; }
+        public global::Vellum.TemplatingNodeResultOutput? Type300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeFunctionCallResult? Type301 { get; set; }
+        public global::Vellum.TemplatingNodeResultData? Type301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeResultOutput? Type302 { get; set; }
+        public global::Vellum.TemplatingNodeResult? Type302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeResultData? Type303 { get; set; }
+        public global::Vellum.CodeExecutionEnum? Type303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TerminalNodeResult? Type304 { get; set; }
+        public global::Vellum.CodeExecutionNodeStringResult? Type304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MergeEnum? Type305 { get; set; }
+        public global::Vellum.CodeExecutionNodeNumberResult? Type305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MergeNodeResultData? Type306 { get; set; }
+        public global::Vellum.CodeExecutionNodeJsonResult? Type306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MergeNodeResult? Type307 { get; set; }
+        public global::Vellum.CodeExecutionNodeChatHistoryResult? Type307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubworkflowEnum? Type308 { get; set; }
+        public global::Vellum.CodeExecutionNodeSearchResultsResult? Type308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubworkflowNodeResultData? Type309 { get; set; }
+        public global::Vellum.CodeExecutionNodeErrorResult? Type309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubworkflowNodeResult? Type310 { get; set; }
+        public global::Vellum.CodeExecutionNodeArrayResult? Type310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetricEnum? Type311 { get; set; }
+        public global::Vellum.CodeExecutionNodeFunctionCallResult? Type311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetricNodeResult? Type312 { get; set; }
+        public global::Vellum.CodeExecutionNodeResultOutput? Type312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MapEnum? Type313 { get; set; }
+        public global::Vellum.CodeExecutionNodeResultData? Type313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IterationStateEnum? Type314 { get; set; }
+        public global::Vellum.CodeExecutionNodeResult? Type314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MapNodeResultData? Type315 { get; set; }
+        public global::Vellum.ConditionalEnum? Type315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MapNodeResult? Type316 { get; set; }
+        public global::Vellum.ConditionalNodeResultData? Type316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowNodeResultData? Type317 { get; set; }
+        public global::Vellum.ConditionalNodeResult? Type317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledStringValue? Type318 { get; set; }
+        public global::Vellum.ApiEnum? Type318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledNumberValue? Type319 { get; set; }
+        public global::Vellum.ApiNodeResultData? Type319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledJsonValue? Type320 { get; set; }
+        public global::Vellum.ApiNodeResult? Type320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledChatHistoryValue? Type321 { get; set; }
+        public global::Vellum.TerminalEnum? Type321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledSearchResultsValue? Type322 { get; set; }
+        public global::Vellum.TerminalNodeStringResult? Type322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledErrorValue? Type323 { get; set; }
+        public global::Vellum.TerminalNodeNumberResult? Type323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledArrayValue? Type324 { get; set; }
+        public global::Vellum.TerminalNodeJsonResult? Type324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledFunctionCallValue? Type325 { get; set; }
+        public global::Vellum.TerminalNodeChatHistoryResult? Type325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SecretEnum? Type326 { get; set; }
+        public global::Vellum.TerminalNodeSearchResultsResult? Type326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumSecret? Type327 { get; set; }
+        public global::Vellum.TerminalNodeErrorResult? Type327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledSecretValue? Type328 { get; set; }
+        public global::Vellum.TerminalNodeArrayResult? Type328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledAudioValue? Type329 { get; set; }
+        public global::Vellum.TerminalNodeFunctionCallResult? Type329 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledVideoValue? Type330 { get; set; }
+        public global::Vellum.TerminalNodeResultOutput? Type330 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledImageValue? Type331 { get; set; }
+        public global::Vellum.TerminalNodeResultData? Type331 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputCompiledDocumentValue? Type332 { get; set; }
+        public global::Vellum.TerminalNodeResult? Type332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeInputVariableCompiledValue? Type333 { get; set; }
+        public global::Vellum.MergeEnum? Type333 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.InitiatedWorkflowNodeResultEvent? Type334 { get; set; }
+        public global::Vellum.MergeNodeResultData? Type334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.NodeInputVariableCompiledValue>? Type335 { get; set; }
+        public global::Vellum.MergeNodeResult? Type335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledStringValue? Type336 { get; set; }
+        public global::Vellum.SubworkflowEnum? Type336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledNumberValue? Type337 { get; set; }
+        public global::Vellum.SubworkflowNodeResultData? Type337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledJsonValue? Type338 { get; set; }
+        public global::Vellum.SubworkflowNodeResult? Type338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledChatHistoryValue? Type339 { get; set; }
+        public global::Vellum.MetricEnum? Type339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledSearchResultsValue? Type340 { get; set; }
+        public global::Vellum.MetricNodeResult? Type340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledErrorValue? Type341 { get; set; }
+        public global::Vellum.MapEnum? Type341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledArrayValue? Type342 { get; set; }
+        public global::Vellum.IterationStateEnum? Type342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledFunctionCallValue? Type343 { get; set; }
+        public global::Vellum.MapNodeResultData? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledThinkingValue? Type344 { get; set; }
+        public global::Vellum.MapNodeResult? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeOutputCompiledValue? Type345 { get; set; }
+        public global::Vellum.WorkflowNodeResultData? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StreamingWorkflowNodeResultEvent? Type346 { get; set; }
+        public global::Vellum.NodeInputCompiledStringValue? Type346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FulfilledWorkflowNodeResultEvent? Type347 { get; set; }
+        public global::Vellum.NodeInputCompiledNumberValue? Type347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.NodeOutputCompiledValue>? Type348 { get; set; }
+        public global::Vellum.NodeInputCompiledJsonValue? Type348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.RejectedWorkflowNodeResultEvent? Type349 { get; set; }
+        public global::Vellum.NodeInputCompiledChatHistoryValue? Type349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowNodeResultEvent? Type350 { get; set; }
+        public global::Vellum.NodeInputCompiledSearchResultsValue? Type350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionNodeResultEvent? Type351 { get; set; }
+        public global::Vellum.NodeInputCompiledErrorValue? Type351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowStreamEvent? Type352 { get; set; }
+        public global::Vellum.NodeInputCompiledArrayValue? Type352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CheckWorkflowExecutionStatusError? Type353 { get; set; }
+        public global::Vellum.NodeInputCompiledFunctionCallValue? Type353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CheckWorkflowExecutionStatusResponse? Type354 { get; set; }
+        public global::Vellum.SecretEnum? Type354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CheckWorkflowExecutionStatusErrorResponse? Type355 { get; set; }
+        public global::Vellum.VellumSecret? Type355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActualStringRequest? Type356 { get; set; }
+        public global::Vellum.NodeInputCompiledSecretValue? Type356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActualJsonRequest? Type357 { get; set; }
+        public global::Vellum.NodeInputCompiledAudioValue? Type357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActualChatHistoryRequest? Type358 { get; set; }
+        public global::Vellum.NodeInputCompiledVideoValue? Type358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubmitWorkflowExecutionActualRequest? Type359 { get; set; }
+        public global::Vellum.NodeInputCompiledImageValue? Type359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubmitWorkflowExecutionActualsRequest? Type360 { get; set; }
+        public global::Vellum.NodeInputCompiledDocumentValue? Type360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SubmitWorkflowExecutionActualRequest>? Type361 { get; set; }
+        public global::Vellum.NodeInputVariableCompiledValue? Type361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SubmitWorkflowExecutionActualsResponse200? Type362 { get; set; }
+        public global::Vellum.InitiatedWorkflowNodeResultEvent? Type362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeploySandboxWorkflowRequest? Type363 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.NodeInputVariableCompiledValue>? Type363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDisplayIcon? Type364 { get; set; }
+        public global::Vellum.NodeOutputCompiledStringValue? Type364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentDisplayData? Type365 { get; set; }
+        public global::Vellum.NodeOutputCompiledNumberValue? Type365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentRead? Type366 { get; set; }
+        public global::Vellum.NodeOutputCompiledJsonValue? Type366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExecuteWorkflowDeploymentStreamRequest? Type367 { get; set; }
+        public global::Vellum.NodeOutputCompiledChatHistoryValue? Type367 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SpanLinkTypeEnum? Type368 { get; set; }
+        public global::Vellum.NodeOutputCompiledSearchResultsValue? Type368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SpanLink? Type369 { get; set; }
+        public global::Vellum.NodeOutputCompiledErrorValue? Type369 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ParentContext? Type370 { get; set; }
+        public global::Vellum.NodeOutputCompiledArrayValue? Type370 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumCodeResourceDefinition? Type371 { get; set; }
+        public global::Vellum.NodeOutputCompiledFunctionCallValue? Type371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowParentContext? Type372 { get; set; }
+        public global::Vellum.NodeOutputCompiledThinkingValue? Type372 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SpanLink>? Type373 { get; set; }
+        public global::Vellum.NodeOutputCompiledValue? Type373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowNodeEnum? Type374 { get; set; }
+        public global::Vellum.StreamingWorkflowNodeResultEvent? Type374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeParentContext? Type375 { get; set; }
+        public global::Vellum.FulfilledWorkflowNodeResultEvent? Type375 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowReleaseTagEnum? Type376 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.NodeOutputCompiledValue>? Type376 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentParentContext? Type377 { get; set; }
+        public global::Vellum.RejectedWorkflowNodeResultEvent? Type377 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowSandboxEnum? Type378 { get; set; }
+        public global::Vellum.WorkflowNodeResultEvent? Type378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowSandboxParentContext? Type379 { get; set; }
+        public global::Vellum.WorkflowExecutionNodeResultEvent? Type379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptReleaseTagEnum? Type380 { get; set; }
+        public global::Vellum.WorkflowStreamEvent? Type380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptDeploymentParentContext? Type381 { get; set; }
+        public global::Vellum.CheckWorkflowExecutionStatusError? Type381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiRequestEnum? Type382 { get; set; }
+        public global::Vellum.CheckWorkflowExecutionStatusResponse? Type382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiActorTypeEnum? Type383 { get; set; }
+        public global::Vellum.CheckWorkflowExecutionStatusErrorResponse? Type383 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.APIRequestParentContext? Type384 { get; set; }
+        public global::Vellum.WorkflowExecutionActualStringRequest? Type384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExternalEnum? Type385 { get; set; }
+        public global::Vellum.WorkflowExecutionActualJsonRequest? Type385 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExternalParentContext? Type386 { get; set; }
+        public global::Vellum.WorkflowExecutionActualChatHistoryRequest? Type386 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScheduledEnum? Type387 { get; set; }
+        public global::Vellum.SubmitWorkflowExecutionActualRequest? Type387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ScheduledTriggerContext? Type388 { get; set; }
+        public global::Vellum.SubmitWorkflowExecutionActualsRequest? Type388 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IntegrationEnum? Type389 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SubmitWorkflowExecutionActualRequest>? Type389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IntegrationTriggerContext? Type390 { get; set; }
+        public global::Vellum.SubmitWorkflowExecutionActualsResponse200? Type390 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionInitiatedEnum? Type391 { get; set; }
+        public global::Vellum.DeploySandboxWorkflowRequest? Type391 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionInitiatedBody? Type392 { get; set; }
+        public global::Vellum.WorkflowDisplayIcon? Type392 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ApiVersionEnum? Type393 { get; set; }
+        public global::Vellum.WorkflowDeploymentDisplayData? Type393 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionInitiatedEvent? Type394 { get; set; }
+        public global::Vellum.WorkflowDeploymentRead? Type394 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionStreamingEnum? Type395 { get; set; }
+        public global::Vellum.ExecuteWorkflowDeploymentStreamRequest? Type395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BaseOutput? Type396 { get; set; }
+        public global::Vellum.SpanLinkTypeEnum? Type396 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionStreamingBody? Type397 { get; set; }
+        public global::Vellum.SpanLink? Type397 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionStreamingEvent? Type398 { get; set; }
+        public global::Vellum.ParentContext? Type398 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionFulfilledEnum? Type399 { get; set; }
+        public global::Vellum.VellumCodeResourceDefinition? Type399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.InvokedPort? Type400 { get; set; }
+        public global::Vellum.WorkflowParentContext? Type400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionFulfilledBody? Type401 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SpanLink>? Type401 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.InvokedPort>? Type402 { get; set; }
+        public global::Vellum.WorkflowNodeEnum? Type402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionFulfilledEvent? Type403 { get; set; }
+        public global::Vellum.NodeParentContext? Type403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionRejectedEnum? Type404 { get; set; }
+        public global::Vellum.WorkflowReleaseTagEnum? Type404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumSdkErrorRawData? Type405 { get; set; }
+        public global::Vellum.WorkflowDeploymentParentContext? Type405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumSdkErrorCodeEnum? Type406 { get; set; }
+        public global::Vellum.WorkflowSandboxEnum? Type406 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumSdkError? Type407 { get; set; }
+        public global::Vellum.WorkflowSandboxParentContext? Type407 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionRejectedBody? Type408 { get; set; }
+        public global::Vellum.PromptReleaseTagEnum? Type408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionRejectedEvent? Type409 { get; set; }
+        public global::Vellum.PromptDeploymentParentContext? Type409 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionPausedEnum? Type410 { get; set; }
+        public global::Vellum.ApiRequestEnum? Type410 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionPausedBody? Type411 { get; set; }
+        public global::Vellum.ApiActorTypeEnum? Type411 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionPausedEvent? Type412 { get; set; }
+        public global::Vellum.APIRequestParentContext? Type412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionResumedEnum? Type413 { get; set; }
+        public global::Vellum.ExternalEnum? Type413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionResumedBody? Type414 { get; set; }
+        public global::Vellum.ExternalParentContext? Type414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionResumedEvent? Type415 { get; set; }
+        public global::Vellum.ScheduledEnum? Type415 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionLogEnum? Type416 { get; set; }
+        public global::Vellum.ScheduledTriggerContext? Type416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SeverityEnum? Type417 { get; set; }
+        public global::Vellum.IntegrationEnum? Type417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionLogBody? Type418 { get; set; }
+        public global::Vellum.IntegrationTriggerContext? Type418 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionLogEvent? Type419 { get; set; }
+        public global::Vellum.NodeExecutionInitiatedEnum? Type419 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionInitiatedEnum? Type420 { get; set; }
+        public global::Vellum.NodeExecutionInitiatedBody? Type420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionInitiatedBody? Type421 { get; set; }
+        public global::Vellum.ApiVersionEnum? Type421 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionInitiatedEvent? Type422 { get; set; }
+        public global::Vellum.NodeExecutionInitiatedEvent? Type422 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionStreamingEnum? Type423 { get; set; }
+        public global::Vellum.NodeExecutionStreamingEnum? Type423 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionStreamingBody? Type424 { get; set; }
+        public global::Vellum.BaseOutput? Type424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionStreamingEvent? Type425 { get; set; }
+        public global::Vellum.NodeExecutionStreamingBody? Type425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionRejectedEnum? Type426 { get; set; }
+        public global::Vellum.NodeExecutionStreamingEvent? Type426 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionRejectedBody? Type427 { get; set; }
+        public global::Vellum.NodeExecutionFulfilledEnum? Type427 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionRejectedEvent? Type428 { get; set; }
+        public global::Vellum.InvokedPort? Type428 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionFulfilledEnum? Type429 { get; set; }
+        public global::Vellum.NodeExecutionFulfilledBody? Type429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionFulfilledBody? Type430 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.InvokedPort>? Type430 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionFulfilledEvent? Type431 { get; set; }
+        public global::Vellum.NodeExecutionFulfilledEvent? Type431 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionPausedEnum? Type432 { get; set; }
+        public global::Vellum.NodeExecutionRejectedEnum? Type432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CodeResourceDefinition? Type433 { get; set; }
+        public global::Vellum.VellumSdkErrorRawData? Type433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExternalInputDescriptor? Type434 { get; set; }
+        public global::Vellum.VellumSdkErrorCodeEnum? Type434 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.CodeResourceDefinition>? Type435 { get; set; }
+        public global::Vellum.VellumSdkError? Type435 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionPausedBody? Type436 { get; set; }
+        public global::Vellum.NodeExecutionRejectedBody? Type436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ExternalInputDescriptor>? Type437 { get; set; }
+        public global::Vellum.NodeExecutionRejectedEvent? Type437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionPausedEvent? Type438 { get; set; }
+        public global::Vellum.NodeExecutionPausedEnum? Type438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionResumedEnum? Type439 { get; set; }
+        public global::Vellum.NodeExecutionPausedBody? Type439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionResumedBody? Type440 { get; set; }
+        public global::Vellum.NodeExecutionPausedEvent? Type440 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionResumedEvent? Type441 { get; set; }
+        public global::Vellum.NodeExecutionResumedEnum? Type441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSnapshottedEnum? Type442 { get; set; }
+        public global::Vellum.NodeExecutionResumedBody? Type442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSnapshottedBody? Type443 { get; set; }
+        public global::Vellum.NodeExecutionResumedEvent? Type443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSnapshottedEvent? Type444 { get; set; }
+        public global::Vellum.NodeExecutionLogEnum? Type444 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEvent? Type445 { get; set; }
+        public global::Vellum.SeverityEnum? Type445 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.V1WorkflowDeploymentsGetParametersStatus? Type446 { get; set; }
+        public global::Vellum.NodeExecutionLogBody? Type446 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SlimWorkflowDeployment? Type447 { get; set; }
+        public global::Vellum.NodeExecutionLogEvent? Type447 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedSlimWorkflowDeploymentList? Type448 { get; set; }
+        public global::Vellum.WorkflowExecutionInitiatedEnum? Type448 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SlimWorkflowDeployment>? Type449 { get; set; }
+        public global::Vellum.WorkflowExecutionInitiatedBody? Type449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IntegrationName? Type450 { get; set; }
+        public global::Vellum.WorkflowExecutionInitiatedEvent? Type450 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowIntegrationDependency? Type451 { get; set; }
+        public global::Vellum.WorkflowExecutionStreamingEnum? Type451 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ModelProviderEnum? Type452 { get; set; }
+        public global::Vellum.WorkflowExecutionStreamingBody? Type452 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MLModelHostingInterface? Type453 { get; set; }
+        public global::Vellum.WorkflowExecutionStreamingEvent? Type453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowModelProviderDependency? Type454 { get; set; }
+        public global::Vellum.WorkflowExecutionRejectedEnum? Type454 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDependency? Type455 { get; set; }
+        public global::Vellum.WorkflowExecutionRejectedBody? Type455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentReleaseWorkflowVersion? Type456 { get; set; }
+        public global::Vellum.WorkflowExecutionRejectedEvent? Type456 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowDependency>? Type457 { get; set; }
+        public global::Vellum.WorkflowExecutionFulfilledEnum? Type457 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentReleaseWorkflowDeployment? Type458 { get; set; }
+        public global::Vellum.WorkflowExecutionFulfilledBody? Type458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentRelease? Type459 { get; set; }
+        public global::Vellum.WorkflowExecutionFulfilledEvent? Type459 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedWorkflowDeploymentReleaseList? Type460 { get; set; }
+        public global::Vellum.WorkflowExecutionPausedEnum? Type460 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowDeploymentRelease>? Type461 { get; set; }
+        public global::Vellum.CodeResourceDefinition? Type461 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowReleaseTagWorkflowDeploymentHistoryItem? Type462 { get; set; }
+        public global::Vellum.ExternalInputDescriptor? Type462 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowReleaseTagRead? Type463 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.CodeResourceDefinition>? Type463 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.V1WorkflowDeploymentsIdReleaseTagsGetParametersSource? Type464 { get; set; }
+        public global::Vellum.WorkflowExecutionPausedBody? Type464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedWorkflowReleaseTagReadList? Type465 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ExternalInputDescriptor>? Type465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowReleaseTagRead>? Type466 { get; set; }
+        public global::Vellum.WorkflowExecutionPausedEvent? Type466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PatchedWorkflowReleaseTagUpdateRequest? Type467 { get; set; }
+        public global::Vellum.WorkflowExecutionResumedEnum? Type467 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentHistoryItem? Type468 { get; set; }
+        public global::Vellum.WorkflowExecutionResumedBody? Type468 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowInitializationError? Type469 { get; set; }
+        public global::Vellum.WorkflowExecutionResumedEvent? Type469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowError? Type470 { get; set; }
+        public global::Vellum.WorkflowExecutionSnapshottedEnum? Type470 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MLModelUsageWrapper? Type471 { get; set; }
+        public global::Vellum.WorkflowExecutionSnapshottedBody? Type471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionUsageCalculationErrorCodeEnum? Type472 { get; set; }
+        public global::Vellum.WorkflowExecutionSnapshottedEvent? Type472 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionUsageCalculationError? Type473 { get; set; }
+        public global::Vellum.WorkflowEvent? Type473 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionUsageResult? Type474 { get; set; }
+        public global::Vellum.V1WorkflowDeploymentsGetParametersStatus? Type474 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.MLModelUsageWrapper>? Type475 { get; set; }
+        public global::Vellum.SlimWorkflowDeployment? Type475 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.Price>? Type476 { get; set; }
+        public global::Vellum.PaginatedSlimWorkflowDeploymentList? Type476 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionActual? Type477 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SlimWorkflowDeployment>? Type477 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult? Type478 { get; set; }
+        public global::Vellum.IntegrationName? Type478 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SlimWorkflowExecutionRead? Type479 { get; set; }
+        public global::Vellum.WorkflowIntegrationDependency? Type479 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionUsageResult>? Type480 { get; set; }
+        public global::Vellum.ModelProviderEnum? Type480 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult>? Type481 { get; set; }
+        public global::Vellum.MLModelHostingInterface? Type481 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowDeploymentEventExecutionsResponse? Type482 { get; set; }
+        public global::Vellum.WorkflowModelProviderDependency? Type482 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SlimWorkflowExecutionRead>? Type483 { get; set; }
+        public global::Vellum.WorkflowDependency? Type483 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionEnum? Type484 { get; set; }
+        public global::Vellum.WorkflowDeploymentReleaseWorkflowVersion? Type484 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumWorkflowExecutionEvent? Type485 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowDependency>? Type485 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSpanAttributes? Type486 { get; set; }
+        public global::Vellum.WorkflowDeploymentReleaseWorkflowDeployment? Type486 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody? Type487 { get; set; }
+        public global::Vellum.WorkflowDeploymentRelease? Type487 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionSpan? Type488 { get; set; }
+        public global::Vellum.PaginatedWorkflowDeploymentReleaseList? Type488 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumWorkflowExecutionEvent>? Type489 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowDeploymentRelease>? Type489 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionEnum? Type490 { get; set; }
+        public global::Vellum.WorkflowReleaseTagWorkflowDeploymentHistoryItem? Type490 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumNodeExecutionEvent? Type491 { get; set; }
+        public global::Vellum.WorkflowReleaseTagRead? Type491 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionSpanAttributes? Type492 { get; set; }
+        public global::Vellum.V1WorkflowDeploymentsIdReleaseTagsGetParametersSource? Type492 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NodeExecutionSpan? Type493 { get; set; }
+        public global::Vellum.PaginatedWorkflowReleaseTagReadList? Type493 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumNodeExecutionEvent>? Type494 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowReleaseTagRead>? Type494 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumSpan? Type495 { get; set; }
+        public global::Vellum.PatchedWorkflowReleaseTagUpdateRequest? Type495 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowEventExecutionRead? Type496 { get; set; }
+        public global::Vellum.WorkflowDeploymentHistoryItem? Type496 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumSpan>? Type497 { get; set; }
+        public global::Vellum.WorkflowInitializationError? Type497 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ErrorDetailResponse? Type498 { get; set; }
+        public global::Vellum.WorkflowError? Type498 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UpdateActiveWorkspaceResponse? Type499 { get; set; }
+        public global::Vellum.MLModelUsageWrapper? Type499 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowExecutionDetail? Type500 { get; set; }
+        public global::Vellum.WorkflowExecutionUsageCalculationErrorCodeEnum? Type500 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>? Type501 { get; set; }
+        public global::Vellum.WorkflowExecutionUsageCalculationError? Type501 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CreateWorkflowEventRequest? Type502 { get; set; }
+        public global::Vellum.WorkflowExecutionUsageResult? Type502 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.EventCreateResponse? Type503 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.MLModelUsageWrapper>? Type503 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchWeightsRequest? Type504 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.Price>? Type504 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultMergingRequest? Type505 { get; set; }
+        public global::Vellum.WorkflowExecutionActual? Type505 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetadataFilterRuleCombinator? Type506 { get; set; }
+        public global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult? Type506 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.LogicalOperator? Type507 { get; set; }
+        public global::Vellum.SlimWorkflowExecutionRead? Type507 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetadataFilterRuleRequest? Type508 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionUsageResult>? Type508 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.MetadataFilterRuleRequest>? Type509 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult>? Type509 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetadataFilterConfigRequest? Type510 { get; set; }
+        public global::Vellum.WorkflowDeploymentEventExecutionsResponse? Type510 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.LogicalConditionEnum? Type511 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SlimWorkflowExecutionRead>? Type511 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.StringVellumValueRequest? Type512 { get; set; }
+        public global::Vellum.WorkflowExecutionEnum? Type512 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NumberVellumValueRequest? Type513 { get; set; }
+        public global::Vellum.VellumWorkflowExecutionEvent? Type513 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.JsonVellumValueRequest? Type514 { get; set; }
+        public global::Vellum.WorkflowExecutionSpanAttributes? Type514 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AudioVellumValueRequest? Type515 { get; set; }
+        public global::Vellum.WorkflowExecutionUsageCalculationFulfilledBody? Type515 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VideoVellumValueRequest? Type516 { get; set; }
+        public global::Vellum.WorkflowExecutionSpan? Type516 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ImageVellumValueRequest? Type517 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumWorkflowExecutionEvent>? Type517 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentVellumValueRequest? Type518 { get; set; }
+        public global::Vellum.NodeExecutionEnum? Type518 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallRequest? Type519 { get; set; }
+        public global::Vellum.VellumNodeExecutionEvent? Type519 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FunctionCallVellumValueRequest? Type520 { get; set; }
+        public global::Vellum.NodeExecutionSpanAttributes? Type520 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumErrorRequest? Type521 { get; set; }
+        public global::Vellum.NodeExecutionSpan? Type521 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ErrorVellumValueRequest? Type522 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumNodeExecutionEvent>? Type522 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ArrayVellumValueRequest? Type523 { get; set; }
+        public global::Vellum.VellumSpan? Type523 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumValueRequest>? Type524 { get; set; }
+        public global::Vellum.WorkflowEventExecutionRead? Type524 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueRequest? Type525 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumSpan>? Type525 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ChatHistoryVellumValueRequest? Type526 { get; set; }
+        public global::Vellum.ErrorDetailResponse? Type526 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultDocumentRequest? Type527 { get; set; }
+        public global::Vellum.UpdateActiveWorkspaceResponse? Type527 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PdfSearchResultMetaSourceRequest? Type528 { get; set; }
+        public global::Vellum.WorkflowExecutionDetail? Type528 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultMetaSourceRequest? Type529 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.WorkflowEvent>? Type529 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultMetaRequest? Type530 { get; set; }
+        public global::Vellum.CreateWorkflowEventRequest? Type530 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultRequest? Type531 { get; set; }
+        public global::Vellum.EventCreateResponse? Type531 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResultsVellumValueRequest? Type532 { get; set; }
+        public global::Vellum.SearchWeightsRequest? Type532 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SearchResultRequest>? Type533 { get; set; }
+        public global::Vellum.SearchResultMergingRequest? Type533 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ThinkingVellumValueRequest? Type534 { get; set; }
+        public global::Vellum.MetadataFilterRuleCombinator? Type534 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueLogicalConditionRequest? Type535 { get; set; }
+        public global::Vellum.LogicalOperator? Type535 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.LogicalConditionGroupEnum? Type536 { get; set; }
+        public global::Vellum.MetadataFilterRuleRequest? Type536 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ConditionCombinator? Type537 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.MetadataFilterRuleRequest>? Type537 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueLogicalConditionGroupRequest? Type538 { get; set; }
+        public global::Vellum.MetadataFilterConfigRequest? Type538 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.VellumValueLogicalExpressionRequest>? Type539 { get; set; }
+        public global::Vellum.LogicalConditionEnum? Type539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.VellumValueLogicalExpressionRequest? Type540 { get; set; }
+        public global::Vellum.StringVellumValueRequest? Type540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.MetadataFiltersRequest? Type541 { get; set; }
+        public global::Vellum.NumberVellumValueRequest? Type541 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchFiltersRequest? Type542 { get; set; }
+        public global::Vellum.JsonVellumValueRequest? Type542 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchRequestOptionsRequest? Type543 { get; set; }
+        public global::Vellum.AudioVellumValueRequest? Type543 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchRequestBodyRequest? Type544 { get; set; }
+        public global::Vellum.VideoVellumValueRequest? Type544 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchResponse? Type545 { get; set; }
+        public global::Vellum.ImageVellumValueRequest? Type545 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SearchErrorResponse? Type546 { get; set; }
+        public global::Vellum.DocumentVellumValueRequest? Type546 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexesAddDocumentResponse204? Type547 { get; set; }
+        public global::Vellum.FunctionCallRequest? Type547 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerConfigRequest? Type548 { get; set; }
+        public global::Vellum.FunctionCallVellumValueRequest? Type548 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TextEmbedding3SmallEnum? Type549 { get; set; }
+        public global::Vellum.VellumErrorRequest? Type549 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest? Type550 { get; set; }
+        public global::Vellum.ErrorVellumValueRequest? Type550 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TextEmbedding3LargeEnum? Type551 { get; set; }
+        public global::Vellum.ArrayVellumValueRequest? Type551 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest? Type552 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumValueRequest>? Type552 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TextEmbeddingAda002Enum? Type553 { get; set; }
+        public global::Vellum.VellumValueRequest? Type553 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request? Type554 { get; set; }
+        public global::Vellum.ChatHistoryVellumValueRequest? Type554 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IntfloatMultilingualE5LargeEnum? Type555 { get; set; }
+        public global::Vellum.SearchResultDocumentRequest? Type555 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest? Type556 { get; set; }
+        public global::Vellum.PdfSearchResultMetaSourceRequest? Type556 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceTransformersMultiQaMpnetBaseCosV1Enum? Type557 { get; set; }
+        public global::Vellum.SearchResultMetaSourceRequest? Type557 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request? Type558 { get; set; }
+        public global::Vellum.SearchResultMetaRequest? Type558 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceTransformersMultiQaMpnetBaseDotV1Enum? Type559 { get; set; }
+        public global::Vellum.SearchResultRequest? Type559 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request? Type560 { get; set; }
+        public global::Vellum.SearchResultsVellumValueRequest? Type560 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.HkunlpInstructorXlEnum? Type561 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SearchResultRequest>? Type561 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.InstructorVectorizerConfigRequest? Type562 { get; set; }
+        public global::Vellum.ThinkingVellumValueRequest? Type562 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.HkunlpInstructorXlVectorizerRequest? Type563 { get; set; }
+        public global::Vellum.VellumValueLogicalConditionRequest? Type563 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TextEmbedding004Enum? Type564 { get; set; }
+        public global::Vellum.LogicalConditionGroupEnum? Type564 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerConfigRequest? Type565 { get; set; }
+        public global::Vellum.ConditionCombinator? Type565 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request? Type566 { get; set; }
+        public global::Vellum.VellumValueLogicalConditionGroupRequest? Type566 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TextMultilingualEmbedding002Enum? Type567 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.VellumValueLogicalExpressionRequest>? Type567 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request? Type568 { get; set; }
+        public global::Vellum.VellumValueLogicalExpressionRequest? Type568 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GeminiEmbedding001Enum? Type569 { get; set; }
+        public global::Vellum.MetadataFiltersRequest? Type569 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request? Type570 { get; set; }
+        public global::Vellum.SearchFiltersRequest? Type570 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BaaiBgeSmallEnV15Enum? Type571 { get; set; }
+        public global::Vellum.SearchRequestOptionsRequest? Type571 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request? Type572 { get; set; }
+        public global::Vellum.SearchRequestBodyRequest? Type572 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PrivateVectorizerEnum? Type573 { get; set; }
+        public global::Vellum.SearchResponse? Type573 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PrivateVectorizerRequest? Type574 { get; set; }
+        public global::Vellum.SearchErrorResponse? Type574 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IndexingConfigVectorizerRequest? Type575 { get; set; }
+        public global::Vellum.DocumentIndexesAddDocumentResponse204? Type575 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunkerEnum? Type576 { get; set; }
+        public global::Vellum.OpenAIVectorizerConfigRequest? Type576 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunkerConfigRequest? Type577 { get; set; }
+        public global::Vellum.TextEmbedding3SmallEnum? Type577 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunkingRequest? Type578 { get; set; }
+        public global::Vellum.OpenAIVectorizerTextEmbedding3SmallRequest? Type578 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunkerEnum? Type579 { get; set; }
+        public global::Vellum.TextEmbedding3LargeEnum? Type579 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunkerConfigRequest? Type580 { get; set; }
+        public global::Vellum.OpenAIVectorizerTextEmbedding3LargeRequest? Type580 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunkingRequest? Type581 { get; set; }
+        public global::Vellum.TextEmbeddingAda002Enum? Type581 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunkerEnum? Type582 { get; set; }
+        public global::Vellum.OpenAIVectorizerTextEmbeddingAda002Request? Type582 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunkerConfigRequest? Type583 { get; set; }
+        public global::Vellum.IntfloatMultilingualE5LargeEnum? Type583 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunkingRequest? Type584 { get; set; }
+        public global::Vellum.BasicVectorizerIntfloatMultilingualE5LargeRequest? Type584 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunkerEnum? Type585 { get; set; }
+        public global::Vellum.SentenceTransformersMultiQaMpnetBaseCosV1Enum? Type585 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunkerConfigRequest? Type586 { get; set; }
+        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1Request? Type586 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunkingRequest? Type587 { get; set; }
+        public global::Vellum.SentenceTransformersMultiQaMpnetBaseDotV1Enum? Type587 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexChunkingRequest? Type588 { get; set; }
+        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1Request? Type588 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexIndexingConfigRequest? Type589 { get; set; }
+        public global::Vellum.HkunlpInstructorXlEnum? Type589 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexCreateRequest? Type590 { get; set; }
+        public global::Vellum.InstructorVectorizerConfigRequest? Type590 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerConfig? Type591 { get; set; }
+        public global::Vellum.HkunlpInstructorXlVectorizerRequest? Type591 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbedding3Small? Type592 { get; set; }
+        public global::Vellum.TextEmbedding004Enum? Type592 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbedding3Large? Type593 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerConfigRequest? Type593 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.OpenAIVectorizerTextEmbeddingAda002? Type594 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004Request? Type594 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerIntfloatMultilingualE5Large? Type595 { get; set; }
+        public global::Vellum.TextMultilingualEmbedding002Enum? Type595 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1? Type596 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002Request? Type596 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1? Type597 { get; set; }
+        public global::Vellum.GeminiEmbedding001Enum? Type597 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.InstructorVectorizerConfig? Type598 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001Request? Type598 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.HkunlpInstructorXlVectorizer? Type599 { get; set; }
+        public global::Vellum.BaaiBgeSmallEnV15Enum? Type599 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerConfig? Type600 { get; set; }
+        public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15Request? Type600 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004? Type601 { get; set; }
+        public global::Vellum.PrivateVectorizerEnum? Type601 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002? Type602 { get; set; }
+        public global::Vellum.PrivateVectorizerRequest? Type602 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001? Type603 { get; set; }
+        public global::Vellum.IndexingConfigVectorizerRequest? Type603 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15? Type604 { get; set; }
+        public global::Vellum.ReductoChunkerEnum? Type604 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PrivateVectorizer? Type605 { get; set; }
+        public global::Vellum.ReductoChunkerConfigRequest? Type605 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IndexingConfigVectorizer? Type606 { get; set; }
+        public global::Vellum.ReductoChunkingRequest? Type606 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunkerConfig? Type607 { get; set; }
+        public global::Vellum.SentenceChunkerEnum? Type607 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReductoChunking? Type608 { get; set; }
+        public global::Vellum.SentenceChunkerConfigRequest? Type608 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunkerConfig? Type609 { get; set; }
+        public global::Vellum.SentenceChunkingRequest? Type609 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SentenceChunking? Type610 { get; set; }
+        public global::Vellum.TokenOverlappingWindowChunkerEnum? Type610 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunkerConfig? Type611 { get; set; }
+        public global::Vellum.TokenOverlappingWindowChunkerConfigRequest? Type611 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TokenOverlappingWindowChunking? Type612 { get; set; }
+        public global::Vellum.TokenOverlappingWindowChunkingRequest? Type612 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunkerConfig? Type613 { get; set; }
+        public global::Vellum.DelimiterChunkerEnum? Type613 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DelimiterChunking? Type614 { get; set; }
+        public global::Vellum.DelimiterChunkerConfigRequest? Type614 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexChunking? Type615 { get; set; }
+        public global::Vellum.DelimiterChunkingRequest? Type615 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexIndexingConfig? Type616 { get; set; }
+        public global::Vellum.DocumentIndexChunkingRequest? Type616 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexRead? Type617 { get; set; }
+        public global::Vellum.DocumentIndexIndexingConfigRequest? Type617 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.V1DocumentIndexesGetParametersStatus? Type618 { get; set; }
+        public global::Vellum.DocumentIndexCreateRequest? Type618 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedDocumentIndexReadList? Type619 { get; set; }
+        public global::Vellum.OpenAIVectorizerConfig? Type619 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.DocumentIndexRead>? Type620 { get; set; }
+        public global::Vellum.OpenAIVectorizerTextEmbedding3Small? Type620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PatchedDocumentIndexUpdateRequest? Type621 { get; set; }
+        public global::Vellum.OpenAIVectorizerTextEmbedding3Large? Type621 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexUpdateRequest? Type622 { get; set; }
+        public global::Vellum.OpenAIVectorizerTextEmbeddingAda002? Type622 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexesDestroyResponse204? Type623 { get; set; }
+        public global::Vellum.BasicVectorizerIntfloatMultilingualE5Large? Type623 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexesRemoveDocumentResponse204? Type624 { get; set; }
+        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseCosV1? Type624 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UploadDocumentResponse? Type625 { get; set; }
+        public global::Vellum.BasicVectorizerSentenceTransformersMultiQaMpnetBaseDotV1? Type625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UploadDocumentErrorResponse? Type626 { get; set; }
+        public global::Vellum.InstructorVectorizerConfig? Type626 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentProcessingState? Type627 { get; set; }
+        public global::Vellum.HkunlpInstructorXlVectorizer? Type627 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentStatus? Type628 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerConfig? Type628 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.IndexingStateEnum? Type629 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerTextEmbedding004? Type629 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentDocumentToDocumentIndex? Type630 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerTextMultilingualEmbedding002? Type630 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentRead? Type631 { get; set; }
+        public global::Vellum.GoogleVertexAIVectorizerGeminiEmbedding001? Type631 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.DocumentDocumentToDocumentIndex>? Type632 { get; set; }
+        public global::Vellum.FastEmbedVectorizerBAAIBgeSmallEnV15? Type632 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ProcessingFailureReasonEnum? Type633 { get; set; }
+        public global::Vellum.PrivateVectorizer? Type633 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SlimDocumentDocumentToDocumentIndex? Type634 { get; set; }
+        public global::Vellum.IndexingConfigVectorizer? Type634 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SlimDocument? Type635 { get; set; }
+        public global::Vellum.ReductoChunkerConfig? Type635 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SlimDocumentDocumentToDocumentIndex>? Type636 { get; set; }
+        public global::Vellum.ReductoChunking? Type636 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedSlimDocumentList? Type637 { get; set; }
+        public global::Vellum.SentenceChunkerConfig? Type637 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.SlimDocument>? Type638 { get; set; }
+        public global::Vellum.SentenceChunking? Type638 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentsDestroyResponse204? Type639 { get; set; }
+        public global::Vellum.TokenOverlappingWindowChunkerConfig? Type639 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UploadedFileRead? Type640 { get; set; }
+        public global::Vellum.TokenOverlappingWindowChunking? Type640 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseStringVariableValue? Type641 { get; set; }
+        public global::Vellum.DelimiterChunkerConfig? Type641 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseNumberVariableValue? Type642 { get; set; }
+        public global::Vellum.DelimiterChunking? Type642 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseJsonVariableValue? Type643 { get; set; }
+        public global::Vellum.DocumentIndexChunking? Type643 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseChatHistoryVariableValue? Type644 { get; set; }
+        public global::Vellum.DocumentIndexIndexingConfig? Type644 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseSearchResultsVariableValue? Type645 { get; set; }
+        public global::Vellum.DocumentIndexRead? Type645 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseErrorVariableValue? Type646 { get; set; }
+        public global::Vellum.V1DocumentIndexesGetParametersStatus? Type646 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseFunctionCallVariableValue? Type647 { get; set; }
+        public global::Vellum.PaginatedDocumentIndexReadList? Type647 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseArrayVariableValue? Type648 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.DocumentIndexRead>? Type648 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseAudioVariableValue? Type649 { get; set; }
+        public global::Vellum.PatchedDocumentIndexUpdateRequest? Type649 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseImageVariableValue? Type650 { get; set; }
+        public global::Vellum.DocumentIndexUpdateRequest? Type650 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseVideoVariableValue? Type651 { get; set; }
+        public global::Vellum.DocumentIndexesDestroyResponse204? Type651 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseDocumentVariableValue? Type652 { get; set; }
+        public global::Vellum.DocumentIndexesRemoveDocumentResponse204? Type652 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestCaseVariableValue? Type653 { get; set; }
+        public global::Vellum.UploadDocumentResponse? Type653 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCase? Type654 { get; set; }
+        public global::Vellum.UploadDocumentErrorResponse? Type654 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestCaseVariableValue>? Type655 { get; set; }
+        public global::Vellum.DocumentProcessingState? Type655 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedTestSuiteTestCaseList? Type656 { get; set; }
+        public global::Vellum.DocumentStatus? Type656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCase>? Type657 { get; set; }
+        public global::Vellum.IndexingStateEnum? Type657 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseStringVariableValueRequest? Type658 { get; set; }
+        public global::Vellum.ProcessingFailureReasonEnum? Type658 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseNumberVariableValueRequest? Type659 { get; set; }
+        public global::Vellum.DocumentDocumentToDocumentIndex? Type659 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseJsonVariableValueRequest? Type660 { get; set; }
+        public global::Vellum.DocumentRead? Type660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseChatHistoryVariableValueRequest? Type661 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.DocumentDocumentToDocumentIndex>? Type661 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseSearchResultsVariableValueRequest? Type662 { get; set; }
+        public global::Vellum.SlimDocumentDocumentToDocumentIndex? Type662 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseErrorVariableValueRequest? Type663 { get; set; }
+        public global::Vellum.SlimDocument? Type663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseFunctionCallVariableValueRequest? Type664 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SlimDocumentDocumentToDocumentIndex>? Type664 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseArrayVariableValueRequest? Type665 { get; set; }
+        public global::Vellum.PaginatedSlimDocumentList? Type665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseAudioVariableValueRequest? Type666 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.SlimDocument>? Type666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseVideoVariableValueRequest? Type667 { get; set; }
+        public global::Vellum.DocumentsDestroyResponse204? Type667 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseImageVariableValueRequest? Type668 { get; set; }
+        public global::Vellum.UploadedFileRead? Type668 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseDocumentVariableValueRequest? Type669 { get; set; }
+        public global::Vellum.TestCaseStringVariableValue? Type669 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseVariableValueRequest? Type670 { get; set; }
+        public global::Vellum.TestCaseNumberVariableValue? Type670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UpsertTestSuiteTestCaseRequest? Type671 { get; set; }
+        public global::Vellum.TestCaseJsonVariableValue? Type671 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.NamedTestCaseVariableValueRequest>? Type672 { get; set; }
+        public global::Vellum.TestCaseChatHistoryVariableValue? Type672 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CreateEnum? Type673 { get; set; }
+        public global::Vellum.TestCaseSearchResultsVariableValue? Type673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CreateTestSuiteTestCaseRequest? Type674 { get; set; }
+        public global::Vellum.TestCaseErrorVariableValue? Type674 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest? Type675 { get; set; }
+        public global::Vellum.TestCaseFunctionCallVariableValue? Type675 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReplaceEnum? Type676 { get; set; }
+        public global::Vellum.TestCaseArrayVariableValue? Type676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReplaceTestSuiteTestCaseRequest? Type677 { get; set; }
+        public global::Vellum.TestCaseAudioVariableValue? Type677 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest? Type678 { get; set; }
+        public global::Vellum.TestCaseImageVariableValue? Type678 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UpsertEnum? Type679 { get; set; }
+        public global::Vellum.TestCaseVideoVariableValue? Type679 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest? Type680 { get; set; }
+        public global::Vellum.TestCaseDocumentVariableValue? Type680 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeleteEnum? Type681 { get; set; }
+        public global::Vellum.TestCaseVariableValue? Type681 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationDataRequest? Type682 { get; set; }
+        public global::Vellum.TestSuiteTestCase? Type682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest? Type683 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.TestCaseVariableValue>? Type683 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseBulkOperationRequest? Type684 { get; set; }
+        public global::Vellum.PaginatedTestSuiteTestCaseList? Type684 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.CreatedEnum? Type685 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCase>? Type685 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseCreatedBulkResultData? Type686 { get; set; }
+        public global::Vellum.NamedTestCaseStringVariableValueRequest? Type686 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseCreatedBulkResult? Type687 { get; set; }
+        public global::Vellum.NamedTestCaseNumberVariableValueRequest? Type687 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ReplacedEnum? Type688 { get; set; }
+        public global::Vellum.NamedTestCaseJsonVariableValueRequest? Type688 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseReplacedBulkResultData? Type689 { get; set; }
+        public global::Vellum.NamedTestCaseChatHistoryVariableValueRequest? Type689 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseReplacedBulkResult? Type690 { get; set; }
+        public global::Vellum.NamedTestCaseSearchResultsVariableValueRequest? Type690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DeletedEnum? Type691 { get; set; }
+        public global::Vellum.NamedTestCaseErrorVariableValueRequest? Type691 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseDeletedBulkResultData? Type692 { get; set; }
+        public global::Vellum.NamedTestCaseFunctionCallVariableValueRequest? Type692 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseDeletedBulkResult? Type693 { get; set; }
+        public global::Vellum.NamedTestCaseArrayVariableValueRequest? Type693 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseRejectedBulkResult? Type694 { get; set; }
+        public global::Vellum.NamedTestCaseAudioVariableValueRequest? Type694 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteTestCaseBulkResult? Type695 { get; set; }
+        public global::Vellum.NamedTestCaseVideoVariableValueRequest? Type695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuitesDeleteTestSuiteTestCaseResponse204? Type696 { get; set; }
+        public global::Vellum.NamedTestCaseImageVariableValueRequest? Type696 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigTypeEnum? Type697 { get; set; }
+        public global::Vellum.NamedTestCaseDocumentVariableValueRequest? Type697 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigDataRequest? Type698 { get; set; }
+        public global::Vellum.NamedTestCaseVariableValueRequest? Type698 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest? Type699 { get; set; }
+        public global::Vellum.UpsertTestSuiteTestCaseRequest? Type699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxExecConfigTypeEnum? Type700 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.NamedTestCaseVariableValueRequest>? Type700 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxExecConfigDataRequest? Type701 { get; set; }
+        public global::Vellum.CreateEnum? Type701 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest? Type702 { get; set; }
+        public global::Vellum.CreateTestSuiteTestCaseRequest? Type702 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigTypeEnum? Type703 { get; set; }
+        public global::Vellum.TestSuiteTestCaseCreateBulkOperationRequest? Type703 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigDataRequest? Type704 { get; set; }
+        public global::Vellum.ReplaceEnum? Type704 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest? Type705 { get; set; }
+        public global::Vellum.ReplaceTestSuiteTestCaseRequest? Type705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigTypeEnum? Type706 { get; set; }
+        public global::Vellum.TestSuiteTestCaseReplaceBulkOperationRequest? Type706 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigDataRequest? Type707 { get; set; }
+        public global::Vellum.UpsertEnum? Type707 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest? Type708 { get; set; }
+        public global::Vellum.TestSuiteTestCaseUpsertBulkOperationRequest? Type708 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigTypeEnum? Type709 { get; set; }
+        public global::Vellum.DeleteEnum? Type709 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigDataRequest? Type710 { get; set; }
+        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationDataRequest? Type710 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest? Type711 { get; set; }
+        public global::Vellum.TestSuiteTestCaseDeleteBulkOperationRequest? Type711 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigTypeEnum? Type712 { get; set; }
+        public global::Vellum.TestSuiteTestCaseBulkOperationRequest? Type712 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigDataRequest? Type713 { get; set; }
+        public global::Vellum.CreatedEnum? Type713 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest? Type714 { get; set; }
+        public global::Vellum.TestSuiteTestCaseCreatedBulkResultData? Type714 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExternalTestCaseExecutionRequest? Type715 { get; set; }
+        public global::Vellum.TestSuiteTestCaseCreatedBulkResult? Type715 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExternalExecConfigDataRequest? Type716 { get; set; }
+        public global::Vellum.ReplacedEnum? Type716 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ExternalTestCaseExecutionRequest>? Type717 { get; set; }
+        public global::Vellum.TestSuiteTestCaseReplacedBulkResultData? Type717 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExternalExecConfigTypeEnum? Type718 { get; set; }
+        public global::Vellum.TestSuiteTestCaseReplacedBulkResult? Type718 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExternalExecConfigRequest? Type719 { get; set; }
+        public global::Vellum.DeletedEnum? Type719 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecConfigRequest? Type720 { get; set; }
+        public global::Vellum.TestSuiteTestCaseDeletedBulkResultData? Type720 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunCreateRequest? Type721 { get; set; }
+        public global::Vellum.TestSuiteTestCaseDeletedBulkResult? Type721 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunTestSuite? Type722 { get; set; }
+        public global::Vellum.TestSuiteTestCaseRejectedBulkResult? Type722 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunState? Type723 { get; set; }
+        public global::Vellum.TestSuiteTestCaseBulkResult? Type723 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigData? Type724 { get; set; }
+        public global::Vellum.TestSuitesDeleteTestSuiteTestCaseResponse204? Type724 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig? Type725 { get; set; }
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigTypeEnum? Type725 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigData? Type726 { get; set; }
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigDataRequest? Type726 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig? Type727 { get; set; }
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigRequest? Type727 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigData? Type728 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxExecConfigTypeEnum? Type728 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig? Type729 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxExecConfigDataRequest? Type729 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigData? Type730 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxExecConfigRequest? Type730 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig? Type731 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigTypeEnum? Type731 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseStringVariableValue? Type732 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigDataRequest? Type732 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseNumberVariableValue? Type733 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigRequest? Type733 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseJsonVariableValue? Type734 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigTypeEnum? Type734 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseChatHistoryVariableValue? Type735 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigDataRequest? Type735 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseSearchResultsVariableValue? Type736 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigRequest? Type736 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseErrorVariableValue? Type737 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigTypeEnum? Type737 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseFunctionCallVariableValue? Type738 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigDataRequest? Type738 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseArrayVariableValue? Type739 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxExecConfigRequest? Type739 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseAudioVariableValue? Type740 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigTypeEnum? Type740 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseVideoVariableValue? Type741 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigDataRequest? Type741 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseImageVariableValue? Type742 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigRequest? Type742 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseDocumentVariableValue? Type743 { get; set; }
+        public global::Vellum.ExternalTestCaseExecutionRequest? Type743 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.NamedTestCaseVariableValue? Type744 { get; set; }
+        public global::Vellum.TestSuiteRunExternalExecConfigDataRequest? Type744 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.ExternalTestCaseExecution? Type745 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ExternalTestCaseExecutionRequest>? Type745 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.NamedTestCaseVariableValue>? Type746 { get; set; }
+        public global::Vellum.TestSuiteRunExternalExecConfigTypeEnum? Type746 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExternalExecConfigData? Type747 { get; set; }
+        public global::Vellum.TestSuiteRunExternalExecConfigRequest? Type747 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.ExternalTestCaseExecution>? Type748 { get; set; }
+        public global::Vellum.TestSuiteRunExecConfigRequest? Type748 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExternalExecConfig? Type749 { get; set; }
+        public global::Vellum.TestSuiteRunCreateRequest? Type749 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecConfig? Type750 { get; set; }
+        public global::Vellum.TestSuiteRunTestSuite? Type750 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunProgress? Type751 { get; set; }
+        public global::Vellum.TestSuiteRunState? Type751 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunRead? Type752 { get; set; }
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfigData? Type752 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionStringOutput? Type753 { get; set; }
+        public global::Vellum.TestSuiteRunDeploymentReleaseTagExecConfig? Type753 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionNumberOutput? Type754 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfigData? Type754 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionJsonOutput? Type755 { get; set; }
+        public global::Vellum.TestSuiteRunPromptSandboxHistoryItemExecConfig? Type755 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionChatHistoryOutput? Type756 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfigData? Type756 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionSearchResultsOutput? Type757 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowReleaseTagExecConfig? Type757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionErrorOutput? Type758 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfigData? Type758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionFunctionCallOutput? Type759 { get; set; }
+        public global::Vellum.TestSuiteRunWorkflowSandboxHistoryItemExecConfig? Type759 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionArrayOutput? Type760 { get; set; }
+        public global::Vellum.NamedTestCaseStringVariableValue? Type760 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionOutput? Type761 { get; set; }
+        public global::Vellum.NamedTestCaseNumberVariableValue? Type761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricStringOutputTypeEnum? Type762 { get; set; }
+        public global::Vellum.NamedTestCaseJsonVariableValue? Type762 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricStringOutput? Type763 { get; set; }
+        public global::Vellum.NamedTestCaseChatHistoryVariableValue? Type763 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricNumberOutputTypeEnum? Type764 { get; set; }
+        public global::Vellum.NamedTestCaseSearchResultsVariableValue? Type764 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricNumberOutput? Type765 { get; set; }
+        public global::Vellum.NamedTestCaseErrorVariableValue? Type765 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricJSONOutputTypeEnum? Type766 { get; set; }
+        public global::Vellum.NamedTestCaseFunctionCallVariableValue? Type766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricJSONOutput? Type767 { get; set; }
+        public global::Vellum.NamedTestCaseArrayVariableValue? Type767 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricErrorOutputTypeEnum? Type768 { get; set; }
+        public global::Vellum.NamedTestCaseAudioVariableValue? Type768 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricErrorOutput? Type769 { get; set; }
+        public global::Vellum.NamedTestCaseVideoVariableValue? Type769 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricArrayOutputTypeEnum? Type770 { get; set; }
+        public global::Vellum.NamedTestCaseImageVariableValue? Type770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricArrayOutput? Type771 { get; set; }
+        public global::Vellum.NamedTestCaseDocumentVariableValue? Type771 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunMetricOutput? Type772 { get; set; }
+        public global::Vellum.NamedTestCaseVariableValue? Type772 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionMetricDefinition? Type773 { get; set; }
+        public global::Vellum.ExternalTestCaseExecution? Type773 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecutionMetricResult? Type774 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.NamedTestCaseVariableValue>? Type774 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunMetricOutput>? Type775 { get; set; }
+        public global::Vellum.TestSuiteRunExternalExecConfigData? Type775 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteRunExecution? Type776 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.ExternalTestCaseExecution>? Type776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunExecutionOutput>? Type777 { get; set; }
+        public global::Vellum.TestSuiteRunExternalExecConfig? Type777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunExecutionMetricResult>? Type778 { get; set; }
+        public global::Vellum.TestSuiteRunExecConfig? Type778 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedTestSuiteRunExecutionList? Type779 { get; set; }
+        public global::Vellum.TestSuiteRunProgress? Type779 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunExecution>? Type780 { get; set; }
+        public global::Vellum.TestSuiteRunRead? Type780 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.AddEntityToFolderRequest? Type781 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionStringOutput? Type781 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntitiesAddEntityToFolderResponse200? Type782 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionNumberOutput? Type782 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.V1FolderEntitiesGetParametersEntityStatus? Type783 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionJsonOutput? Type783 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEnum? Type784 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionChatHistoryOutput? Type784 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityFolderData? Type785 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionSearchResultsOutput? Type785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityFolder? Type786 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionErrorOutput? Type786 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PromptSandboxEnum? Type787 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionFunctionCallOutput? Type787 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityPromptSandboxData? Type788 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionArrayOutput? Type788 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityPromptSandbox? Type789 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionOutput? Type789 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkflowSandboxDisplayData? Type790 { get; set; }
+        public global::Vellum.TestSuiteRunMetricStringOutputTypeEnum? Type790 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityWorkflowSandboxData? Type791 { get; set; }
+        public global::Vellum.TestSuiteRunMetricStringOutput? Type791 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityWorkflowSandbox? Type792 { get; set; }
+        public global::Vellum.TestSuiteRunMetricNumberOutputTypeEnum? Type792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DocumentIndexEnum? Type793 { get; set; }
+        public global::Vellum.TestSuiteRunMetricNumberOutput? Type793 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityDocumentIndexData? Type794 { get; set; }
+        public global::Vellum.TestSuiteRunMetricJSONOutputTypeEnum? Type794 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityDocumentIndex? Type795 { get; set; }
+        public global::Vellum.TestSuiteRunMetricJSONOutput? Type795 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.TestSuiteEnum? Type796 { get; set; }
+        public global::Vellum.TestSuiteRunMetricErrorOutputTypeEnum? Type796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityTestSuiteData? Type797 { get; set; }
+        public global::Vellum.TestSuiteRunMetricErrorOutput? Type797 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityTestSuite? Type798 { get; set; }
+        public global::Vellum.TestSuiteRunMetricArrayOutputTypeEnum? Type798 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.DatasetEnum? Type799 { get; set; }
+        public global::Vellum.TestSuiteRunMetricArrayOutput? Type799 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityDatasetData? Type800 { get; set; }
+        public global::Vellum.TestSuiteRunMetricOutput? Type800 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntityDataset? Type801 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionMetricDefinition? Type801 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.FolderEntity? Type802 { get; set; }
+        public global::Vellum.TestSuiteRunExecutionMetricResult? Type802 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PaginatedFolderEntityList? Type803 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunMetricOutput>? Type803 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.FolderEntity>? Type804 { get; set; }
+        public global::Vellum.TestSuiteRunExecution? Type804 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.SecretTypeEnum? Type805 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunExecutionOutput>? Type805 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.WorkspaceSecretRead? Type806 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunExecutionMetricResult>? Type806 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PatchedWorkspaceSecretUpdateRequest? Type807 { get; set; }
+        public global::Vellum.PaginatedTestSuiteRunExecutionList? Type807 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.UploadRequest? Type808 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteRunExecution>? Type808 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public byte[]? Type809 { get; set; }
+        public global::Vellum.AddEntityToFolderRequest? Type809 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vellum.PartialUpdateRequest? Type810 { get; set; }
+        public global::Vellum.FolderEntitiesAddEntityToFolderResponse200? Type810 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkOperationRequest>? Type811 { get; set; }
+        public global::Vellum.V1FolderEntitiesGetParametersEntityStatus? Type811 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkResult>? Type812 { get; set; }
+        public global::Vellum.FolderEnum? Type812 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityFolderData? Type813 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityFolder? Type814 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.PromptSandboxEnum? Type815 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityPromptSandboxData? Type816 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityPromptSandbox? Type817 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.WorkflowSandboxDisplayData? Type818 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityWorkflowSandboxData? Type819 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityWorkflowSandbox? Type820 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.DocumentIndexEnum? Type821 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityDocumentIndexData? Type822 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityDocumentIndex? Type823 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.TestSuiteEnum? Type824 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityTestSuiteData? Type825 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityTestSuite? Type826 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.DatasetEnum? Type827 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityDatasetData? Type828 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntityDataset? Type829 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.FolderEntity? Type830 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.PaginatedFolderEntityList? Type831 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Vellum.FolderEntity>? Type832 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.SecretTypeEnum? Type833 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.WorkspaceSecretRead? Type834 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.PatchedWorkspaceSecretUpdateRequest? Type835 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.UploadRequest? Type836 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public byte[]? Type837 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Vellum.PartialUpdateRequest? Type838 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkOperationRequest>? Type839 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Vellum.TestSuiteTestCaseBulkResult>? Type840 { get; set; }
 
         /// <summary>
         ///
@@ -3326,214 +3438,226 @@ namespace Vellum
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.VellumVariable>? ListType10 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.PromptBlock>? ListType10 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::System.Guid>? ListType11 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.RichTextChildBlock>? ListType11 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.NamedScenarioInputRequest>? ListType12 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.VellumVariable>? ListType12 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.ScenarioInput>? ListType13 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.FunctionDefinition>? ListType13 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SlimDeploymentRead>? ListType14 { get; set; }
+        public global::System.Collections.Generic.List<global::System.Guid>? ListType14 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.ReleaseReleaseTag>? ListType15 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.NamedScenarioInputRequest>? ListType15 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SlimReleaseReview>? ListType16 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.ScenarioInput>? ListType16 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.DeploymentReleaseTagRead>? ListType17 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SlimDeploymentRead>? ListType17 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowRequestInputRequest>? ListType18 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.ReleaseReleaseTag>? ListType18 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowOutput>? ListType19 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SlimReleaseReview>? ListType19 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowExecutionEventType>? ListType20 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.DeploymentReleaseTagRead>? ListType20 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.ExecutionVellumValue>? ListType21 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowRequestInputRequest>? ListType21 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.NodeInputVariableCompiledValue>? ListType22 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowOutput>? ListType22 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.NodeOutputCompiledValue>? ListType23 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowExecutionEventType>? ListType23 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SubmitWorkflowExecutionActualRequest>? ListType24 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.ExecutionVellumValue>? ListType24 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SpanLink>? ListType25 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.NodeInputVariableCompiledValue>? ListType25 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.InvokedPort>? ListType26 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.NodeOutputCompiledValue>? ListType26 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.CodeResourceDefinition>? ListType27 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SubmitWorkflowExecutionActualRequest>? ListType27 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.ExternalInputDescriptor>? ListType28 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SpanLink>? ListType28 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SlimWorkflowDeployment>? ListType29 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.InvokedPort>? ListType29 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowDependency>? ListType30 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.CodeResourceDefinition>? ListType30 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowDeploymentRelease>? ListType31 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.ExternalInputDescriptor>? ListType31 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowReleaseTagRead>? ListType32 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SlimWorkflowDeployment>? ListType32 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.MLModelUsageWrapper>? ListType33 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowDependency>? ListType33 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.Price>? ListType34 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowDeploymentRelease>? ListType34 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowExecutionUsageResult>? ListType35 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowReleaseTagRead>? ListType35 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult>? ListType36 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.MLModelUsageWrapper>? ListType36 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SlimWorkflowExecutionRead>? ListType37 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.Price>? ListType37 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.VellumWorkflowExecutionEvent>? ListType38 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowExecutionUsageResult>? ListType38 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.VellumNodeExecutionEvent>? ListType39 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowExecutionViewOnlineEvalMetricResult>? ListType39 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.VellumSpan>? ListType40 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SlimWorkflowExecutionRead>? ListType40 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.WorkflowEvent>? ListType41 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.VellumWorkflowExecutionEvent>? ListType41 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.MetadataFilterRuleRequest>? ListType42 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.VellumNodeExecutionEvent>? ListType42 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.VellumValueRequest>? ListType43 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.VellumSpan>? ListType43 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SearchResultRequest>? ListType44 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.WorkflowEvent>? ListType44 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.VellumValueLogicalExpressionRequest>? ListType45 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.MetadataFilterRuleRequest>? ListType45 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.DocumentIndexRead>? ListType46 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.VellumValueRequest>? ListType46 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.DocumentDocumentToDocumentIndex>? ListType47 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SearchResultRequest>? ListType47 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SlimDocumentDocumentToDocumentIndex>? ListType48 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.VellumValueLogicalExpressionRequest>? ListType48 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.SlimDocument>? ListType49 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.DocumentIndexRead>? ListType49 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestCaseVariableValue>? ListType50 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.DocumentDocumentToDocumentIndex>? ListType50 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCase>? ListType51 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SlimDocumentDocumentToDocumentIndex>? ListType51 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.NamedTestCaseVariableValueRequest>? ListType52 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.SlimDocument>? ListType52 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.ExternalTestCaseExecutionRequest>? ListType53 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.TestCaseVariableValue>? ListType53 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.NamedTestCaseVariableValue>? ListType54 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCase>? ListType54 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.ExternalTestCaseExecution>? ListType55 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.NamedTestCaseVariableValueRequest>? ListType55 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunMetricOutput>? ListType56 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.ExternalTestCaseExecutionRequest>? ListType56 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunExecutionOutput>? ListType57 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.NamedTestCaseVariableValue>? ListType57 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunExecutionMetricResult>? ListType58 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.ExternalTestCaseExecution>? ListType58 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunExecution>? ListType59 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunMetricOutput>? ListType59 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.FolderEntity>? ListType60 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunExecutionOutput>? ListType60 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCaseBulkOperationRequest>? ListType61 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunExecutionMetricResult>? ListType61 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCaseBulkResult>? ListType62 { get; set; }
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteRunExecution>? ListType62 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Vellum.FolderEntity>? ListType63 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCaseBulkOperationRequest>? ListType64 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.List<global::Vellum.TestSuiteTestCaseBulkResult>? ListType65 { get; set; }
     }
 }
