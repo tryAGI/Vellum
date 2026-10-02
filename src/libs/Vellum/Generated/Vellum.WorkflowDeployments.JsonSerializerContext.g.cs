@@ -44,8 +44,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingEnum), TypeInfoPropertyName = "ThinkingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingVellumValue))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EntityStatus), TypeInfoPropertyName = "EntityStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EnvironmentEnum), TypeInfoPropertyName = "EnvironmentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariableType), TypeInfoPropertyName = "VellumVariableType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NumberEnum), TypeInfoPropertyName = "NumberEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NumberVellumValue))]
@@ -86,6 +84,8 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariableExtensions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariable))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.VellumVariable>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EntityStatus), TypeInfoPropertyName = "EntityStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EnvironmentEnum), TypeInfoPropertyName = "EnvironmentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseEnvironment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseCreatedBy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseTagSource), TypeInfoPropertyName = "ReleaseTagSource2")]
@@ -270,8 +270,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumErrorCodeEnum?), TypeInfoPropertyName = "NullableVellumErrorCodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ThinkingEnum?), TypeInfoPropertyName = "NullableThinkingEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EntityStatus?), TypeInfoPropertyName = "NullableEntityStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EnvironmentEnum?), TypeInfoPropertyName = "NullableEnvironmentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumVariableType?), TypeInfoPropertyName = "NullableVellumVariableType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.NumberEnum?), TypeInfoPropertyName = "NullableNumberEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.VellumValue?), TypeInfoPropertyName = "NullableVellumValue2")]
@@ -280,6 +278,8 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultsEnum?), TypeInfoPropertyName = "NullableSearchResultsEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PdfEnum?), TypeInfoPropertyName = "NullablePdfEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.SearchResultMetaSource?), TypeInfoPropertyName = "NullableSearchResultMetaSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EntityStatus?), TypeInfoPropertyName = "NullableEntityStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.EnvironmentEnum?), TypeInfoPropertyName = "NullableEnvironmentEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseTagSource?), TypeInfoPropertyName = "NullableReleaseTagSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReleaseReviewState?), TypeInfoPropertyName = "NullableReleaseReviewState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowEventErrorRawData?), TypeInfoPropertyName = "NullableWorkflowEventErrorRawData2")]
@@ -493,14 +493,6 @@ namespace Vellum
 
                     || typeToConvert == typeof(global::Vellum.ThinkingEnum?)
 
-                    || typeToConvert == typeof(global::Vellum.EntityStatus)
-
-                    || typeToConvert == typeof(global::Vellum.EntityStatus?)
-
-                    || typeToConvert == typeof(global::Vellum.EnvironmentEnum)
-
-                    || typeToConvert == typeof(global::Vellum.EnvironmentEnum?)
-
                     || typeToConvert == typeof(global::Vellum.VellumVariableType)
 
                     || typeToConvert == typeof(global::Vellum.VellumVariableType?)
@@ -516,6 +508,14 @@ namespace Vellum
                     || typeToConvert == typeof(global::Vellum.PdfEnum)
 
                     || typeToConvert == typeof(global::Vellum.PdfEnum?)
+
+                    || typeToConvert == typeof(global::Vellum.EntityStatus)
+
+                    || typeToConvert == typeof(global::Vellum.EntityStatus?)
+
+                    || typeToConvert == typeof(global::Vellum.EnvironmentEnum)
+
+                    || typeToConvert == typeof(global::Vellum.EnvironmentEnum?)
 
                     || typeToConvert == typeof(global::Vellum.ReleaseTagSource)
 
@@ -818,26 +818,6 @@ namespace Vellum
                     return new global::Vellum.JsonConverters.ThinkingEnumNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vellum.EntityStatus))
-                {
-                    return new global::Vellum.JsonConverters.EntityStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vellum.EntityStatus?))
-                {
-                    return new global::Vellum.JsonConverters.EntityStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vellum.EnvironmentEnum))
-                {
-                    return new global::Vellum.JsonConverters.EnvironmentEnumJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vellum.EnvironmentEnum?))
-                {
-                    return new global::Vellum.JsonConverters.EnvironmentEnumNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Vellum.VellumVariableType))
                 {
                     return new global::Vellum.JsonConverters.VellumVariableTypeJsonConverter();
@@ -876,6 +856,26 @@ namespace Vellum
                 if (typeToConvert == typeof(global::Vellum.PdfEnum?))
                 {
                     return new global::Vellum.JsonConverters.PdfEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vellum.EntityStatus))
+                {
+                    return new global::Vellum.JsonConverters.EntityStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vellum.EntityStatus?))
+                {
+                    return new global::Vellum.JsonConverters.EntityStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vellum.EnvironmentEnum))
+                {
+                    return new global::Vellum.JsonConverters.EnvironmentEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vellum.EnvironmentEnum?))
+                {
+                    return new global::Vellum.JsonConverters.EnvironmentEnumNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vellum.ReleaseTagSource))
