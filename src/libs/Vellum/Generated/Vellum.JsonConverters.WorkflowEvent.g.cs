@@ -258,6 +258,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 1)
                 {
@@ -272,6 +276,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 2)
@@ -288,6 +296,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 3)
                 {
@@ -302,6 +314,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 4)
@@ -318,6 +334,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 5)
                 {
@@ -332,6 +352,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 6)
@@ -348,6 +372,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 7)
                 {
@@ -362,6 +390,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 8)
@@ -378,6 +410,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 9)
                 {
@@ -392,6 +428,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 10)
@@ -408,6 +448,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 11)
                 {
@@ -422,6 +466,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 12)
@@ -438,6 +486,10 @@ namespace Vellum.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 13)
                 {
@@ -452,6 +504,10 @@ namespace Vellum.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -471,6 +527,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -487,6 +547,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -505,6 +569,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -521,6 +589,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -539,6 +611,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -555,6 +631,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -573,6 +653,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -589,6 +673,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -607,6 +695,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -623,6 +715,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -641,6 +737,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -657,6 +757,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -675,6 +779,10 @@ namespace Vellum.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (nodeExecutionInitiatedEvent == null && nodeExecutionStreamingEvent == null && nodeExecutionFulfilledEvent == null && nodeExecutionRejectedEvent == null && nodeExecutionPausedEvent == null && nodeExecutionResumedEvent == null && nodeExecutionLogEvent == null && workflowExecutionInitiatedEvent == null && workflowExecutionStreamingEvent == null && workflowExecutionRejectedEvent == null && workflowExecutionFulfilledEvent == null && workflowExecutionPausedEvent == null && workflowExecutionResumedEvent == null && workflowExecutionSnapshottedEvent == null)
@@ -691,6 +799,10 @@ namespace Vellum.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
