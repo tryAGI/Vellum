@@ -12,6 +12,7 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StringEnum), TypeInfoPropertyName = "StringEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.StringInputRequest))]
@@ -510,7 +511,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PaginatedWorkflowReleaseTagReadList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vellum.WorkflowReleaseTagRead>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PatchedWorkflowReleaseTagUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentHistoryItem))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -521,6 +521,7 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowDeploymentHistoryItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowInitializationError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.WorkflowError), TypeInfoPropertyName = "WorkflowError2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.MLModelUsageWrapper))]
@@ -1020,7 +1021,6 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TextEmbedding004Enum?), TypeInfoPropertyName = "NullableTextEmbedding004Enum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.TextMultilingualEmbedding002Enum?), TypeInfoPropertyName = "NullableTextMultilingualEmbedding002Enum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.GeminiEmbedding001Enum?), TypeInfoPropertyName = "NullableGeminiEmbedding001Enum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.BaaiBgeSmallEnV15Enum?), TypeInfoPropertyName = "NullableBaaiBgeSmallEnV15Enum2")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1031,6 +1031,7 @@ namespace Vellum
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.BaaiBgeSmallEnV15Enum?), TypeInfoPropertyName = "NullableBaaiBgeSmallEnV15Enum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.PrivateVectorizerEnum?), TypeInfoPropertyName = "NullablePrivateVectorizerEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.IndexingConfigVectorizerRequest?), TypeInfoPropertyName = "NullableIndexingConfigVectorizerRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vellum.ReductoChunkerEnum?), TypeInfoPropertyName = "NullableReductoChunkerEnum2")]
