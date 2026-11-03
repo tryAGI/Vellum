@@ -6,6 +6,14 @@ namespace Vellum
     public partial class WorkflowDeploymentsClient
     {
 
+        private static readonly global::Vellum.AutoSDKServer[] s_UpdateWorkflowReleaseTagServers = new global::Vellum.AutoSDKServer[]
+        {            new global::Vellum.AutoSDKServer(
+                id: "https-api-vellum-ai",
+                name: "api.vellum.ai",
+                url: "https://api.vellum.ai/",
+                description: ""),
+        };
+
 
         private static readonly global::Vellum.EndPointSecurityRequirement s_UpdateWorkflowReleaseTagSecurityRequirement0 =
             new global::Vellum.EndPointSecurityRequirement
@@ -127,7 +135,9 @@ namespace Vellum
 
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: $"/v1/workflow-deployments/{id}/release-tags/{name}",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_UpdateWorkflowReleaseTagServers,
+                                defaultBaseUrl: "https://api.vellum.ai/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Vellum.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

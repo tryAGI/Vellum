@@ -6,6 +6,14 @@ namespace Vellum
     public partial class DocumentsClient
     {
 
+        private static readonly global::Vellum.AutoSDKServer[] s_UploadServers = new global::Vellum.AutoSDKServer[]
+        {            new global::Vellum.AutoSDKServer(
+                id: "https-documents-vellum-ai",
+                name: "Documents",
+                url: "https://documents.vellum.ai/",
+                description: "Documents"),
+        };
+
 
         private static readonly global::Vellum.EndPointSecurityRequirement s_UploadSecurityRequirement0 =
             new global::Vellum.EndPointSecurityRequirement
@@ -113,7 +121,9 @@ namespace Vellum
 
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: "/v1/upload-document",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_UploadServers,
+                                defaultBaseUrl: "https://documents.vellum.ai/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Vellum.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

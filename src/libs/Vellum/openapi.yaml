@@ -76,6 +76,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
+          }
         ]
       }
     },
@@ -150,6 +156,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
+          }
         ]
       }
     },
@@ -213,6 +225,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
           }
         ]
       }
@@ -978,6 +996,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
+          }
         ]
       }
     },
@@ -1048,6 +1072,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
+          }
         ]
       }
     },
@@ -1114,6 +1144,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
           }
         ]
       }
@@ -1183,6 +1219,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
+          }
         ]
       }
     },
@@ -1216,6 +1258,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
           }
         ]
       }
@@ -1331,6 +1379,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
           }
         ]
       }
@@ -1464,6 +1518,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
           }
         ]
       }
@@ -2292,6 +2352,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://predict.vellum.ai",
+            "description": "Predict"
+          }
         ]
       }
     },
@@ -2383,6 +2449,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://documents.vellum.ai",
+            "description": "Documents"
           }
         ]
       }
@@ -2666,6 +2738,12 @@
           {
             "default": []
           }
+        ],
+        "servers": [
+          {
+            "url": "https://documents.vellum.ai",
+            "description": "Documents"
+          }
         ]
       }
     },
@@ -2797,6 +2875,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://documents.vellum.ai",
+            "description": "Documents"
           }
         ]
       }
@@ -2946,6 +3030,12 @@
         "security": [
           {
             "default": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://documents.vellum.ai",
+            "description": "Documents"
           }
         ]
       }
