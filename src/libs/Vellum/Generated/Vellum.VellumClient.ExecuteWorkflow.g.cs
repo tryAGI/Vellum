@@ -6,6 +6,14 @@ namespace Vellum
     public partial class VellumClient
     {
 
+        private static readonly global::Vellum.AutoSDKServer[] s_ExecuteWorkflowServers = new global::Vellum.AutoSDKServer[]
+        {            new global::Vellum.AutoSDKServer(
+                id: "https-predict-vellum-ai",
+                name: "Predict",
+                url: "https://predict.vellum.ai/",
+                description: "Predict"),
+        };
+
 
         private static readonly global::Vellum.EndPointSecurityRequirement s_ExecuteWorkflowSecurityRequirement0 =
             new global::Vellum.EndPointSecurityRequirement
@@ -111,7 +119,9 @@ namespace Vellum
 
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: "/v1/execute-workflow",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_ExecuteWorkflowServers,
+                                defaultBaseUrl: "https://predict.vellum.ai/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Vellum.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

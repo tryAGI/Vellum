@@ -6,6 +6,14 @@ namespace Vellum
     public partial class DocumentsClient
     {
 
+        private static readonly global::Vellum.AutoSDKServer[] s_DestroyServers = new global::Vellum.AutoSDKServer[]
+        {            new global::Vellum.AutoSDKServer(
+                id: "https-documents-vellum-ai",
+                name: "Documents",
+                url: "https://documents.vellum.ai/",
+                description: "Documents"),
+        };
+
 
         private static readonly global::Vellum.EndPointSecurityRequirement s_DestroySecurityRequirement0 =
             new global::Vellum.EndPointSecurityRequirement
@@ -106,7 +114,9 @@ namespace Vellum
 
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: $"/v1/documents/{id}",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_DestroyServers,
+                                defaultBaseUrl: "https://documents.vellum.ai/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Vellum.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

@@ -34,6 +34,9 @@ namespace Vellum
         /// <inheritdoc/>
         public global::Vellum.AutoSDKClientOptions Options { get; }
 
+
+        internal global::Vellum.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Vellum.AutoSDKServerConfiguration();
+
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
         /// <summary>
@@ -108,10 +111,15 @@ namespace Vellum
         {
 
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
-            HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
+            if (baseUri is not null)
+            {
+                HttpClient.BaseAddress ??= baseUri;
+            }
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Vellum.EndPointAuthorization>();
             Options = options ?? new global::Vellum.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
+
+            AutoSDKServerConfiguration.ExplicitBaseUri = baseUri ?? httpClient?.BaseAddress;
 
             Initialized(HttpClient);
         }

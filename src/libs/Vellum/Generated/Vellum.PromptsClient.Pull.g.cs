@@ -134,7 +134,7 @@ namespace Vellum
 
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: $"/v1/prompts/{id}/pull",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.vellum.ai/", global::System.UriKind.RelativeOrAbsolute));
                             __pathBuilder
                                 .AddOptionalParameter("prompt_variant_id", promptVariantId)
                                 .AddOptionalParameter("release_tag", releaseTag)

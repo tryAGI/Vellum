@@ -10,9 +10,9 @@ namespace Vellum
     public sealed partial class WorkflowsClient : global::Vellum.IWorkflowsClient, global::System.IDisposable
     {
         /// <summary>
-        ///
+        /// Predict
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.vellum.ai/";
+        public const string DefaultBaseUrl = "https://predict.vellum.ai/";
 
         private bool _disposeHttpClient = true;
 
@@ -33,6 +33,9 @@ namespace Vellum
 
         /// <inheritdoc/>
         public global::Vellum.AutoSDKClientOptions Options { get; }
+
+
+        internal global::Vellum.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Vellum.AutoSDKServerConfiguration();
 
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
@@ -108,10 +111,15 @@ namespace Vellum
         {
 
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
-            HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
+            if (baseUri is not null)
+            {
+                HttpClient.BaseAddress ??= baseUri;
+            }
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Vellum.EndPointAuthorization>();
             Options = options ?? new global::Vellum.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
+
+            AutoSDKServerConfiguration.ExplicitBaseUri = baseUri ?? httpClient?.BaseAddress;
 
             Initialized(HttpClient);
         }
@@ -139,5 +147,36 @@ namespace Vellum
             global::System.Net.Http.HttpClient client,
             global::System.Net.Http.HttpResponseMessage response,
             ref string content);
+
+
+        private global::System.Uri? ResolveBaseUri(
+            global::Vellum.AutoSDKServer[] servers,
+            string defaultBaseUrl)
+        {
+            if (AutoSDKServerConfiguration.ExplicitBaseUri is global::System.Uri explicitBaseUri)
+            {
+                return explicitBaseUri;
+            }
+
+            if (AutoSDKServerConfiguration.SelectedServer is global::Vellum.AutoSDKServer selectedServer)
+            {
+                foreach (var server in servers)
+                {
+                    if (string.Equals(server.Id, selectedServer.Id, global::System.StringComparison.Ordinal))
+                    {
+                        return server.Uri;
+                    }
+                }
+            }
+
+            if (servers.Length > 0)
+            {
+                return servers[0].Uri;
+            }
+
+            return string.IsNullOrWhiteSpace(defaultBaseUrl)
+                ? HttpClient.BaseAddress
+                : new global::System.Uri(defaultBaseUrl, global::System.UriKind.RelativeOrAbsolute);
+        }
     }
 }

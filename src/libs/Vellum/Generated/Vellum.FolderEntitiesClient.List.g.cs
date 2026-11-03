@@ -138,7 +138,7 @@ namespace Vellum
 
                             var __pathBuilder = new global::Vellum.PathBuilder(
                                 path: "/v1/folder-entities",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: HttpClient.BaseAddress ?? new global::System.Uri("https://api.vellum.ai/", global::System.UriKind.RelativeOrAbsolute));
                             __pathBuilder
                                 .AddOptionalParameter("entity_status", entityStatus?.ToValueString())
                                 .AddOptionalParameter("limit", limit?.ToString())
