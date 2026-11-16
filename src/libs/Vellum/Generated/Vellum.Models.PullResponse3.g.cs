@@ -4,7 +4,7 @@
 namespace Vellum
 {
     /// <summary>
-    ///
+    /// Any type
     /// </summary>
     public sealed partial class PullResponse3
     {
