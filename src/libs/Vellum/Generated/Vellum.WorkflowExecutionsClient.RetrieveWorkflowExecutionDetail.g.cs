@@ -357,13 +357,13 @@ namespace Vellum
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_404 = global::Vellum.ErrorDetailResponse.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = __content_404 is not { Length: > 0 } ? null : global::Vellum.ErrorDetailResponse.FromJson(__content_404, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_404 = global::Vellum.ErrorDetailResponse.FromJson(__content_404, JsonSerializerContext);
+                                        __value_404 = __content_404 is not { Length: > 0 } ? null : global::Vellum.ErrorDetailResponse.FromJson(__content_404, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -374,7 +374,7 @@ namespace Vellum
 
                                 throw global::Vellum.ApiException<global::Vellum.ErrorDetailResponse>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseObject: __value_404,
@@ -394,13 +394,13 @@ namespace Vellum
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_421 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                        __value_421 = global::Vellum.UpdateActiveWorkspaceResponse.FromJson(__content_421, JsonSerializerContext);
+                                        __value_421 = __content_421 is not { Length: > 0 } ? null : global::Vellum.UpdateActiveWorkspaceResponse.FromJson(__content_421, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_421 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
 
-                                        __value_421 = global::Vellum.UpdateActiveWorkspaceResponse.FromJson(__content_421, JsonSerializerContext);
+                                        __value_421 = __content_421 is not { Length: > 0 } ? null : global::Vellum.UpdateActiveWorkspaceResponse.FromJson(__content_421, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -411,7 +411,7 @@ namespace Vellum
 
                                 throw global::Vellum.ApiException<global::Vellum.UpdateActiveWorkspaceResponse>.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_421 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_421 is { Length: > 0 } ? __content_421 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_421,
                                     responseBody: __content_421,
                                     responseObject: __value_421,
@@ -454,7 +454,7 @@ namespace Vellum
                                 {
                                     throw global::Vellum.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -499,7 +499,7 @@ namespace Vellum
 
                                     throw global::Vellum.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
